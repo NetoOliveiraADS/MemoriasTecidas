@@ -1,0 +1,4511 @@
+fileFormatVersion: 2
+guid: d101e5a13b345e24792ad89906559c99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2676162110676554169
+    second: jogador_diagonais_221_0
+  - first:
+      213: 5978450024975832442
+    second: jogador_diagonais_221_1
+  - first:
+      213: -2729721367165983499
+    second: jogador_diagonais_221_2
+  - first:
+      213: 1443145705174153394
+    second: jogador_diagonais_221_3
+  - first:
+      213: 9008227119649688262
+    second: jogador_diagonais_221_4
+  - first:
+      213: 8790590440538496406
+    second: jogador_diagonais_221_5
+  - first:
+      213: 8114620067301349193
+    second: jogador_diagonais_221_6
+  - first:
+      213: 4751399656187533088
+    second: jogador_diagonais_221_7
+  - first:
+      213: 5674810184061572092
+    second: jogador_diagonais_221_8
+  - first:
+      213: 3309460548055166064
+    second: jogador_diagonais_221_9
+  - first:
+      213: 2119625806220223213
+    second: jogador_diagonais_221_10
+  - first:
+      213: -3079289617830402120
+    second: jogador_diagonais_221_11
+  - first:
+      213: -8576638722295124393
+    second: jogador_diagonais_221_12
+  - first:
+      213: 4777239532345135838
+    second: jogador_diagonais_221_13
+  - first:
+      213: -236029209696837646
+    second: jogador_diagonais_221_14
+  - first:
+      213: -3895350571660716528
+    second: jogador_diagonais_221_15
+  - first:
+      213: 2191733223728262299
+    second: jogador_diagonais_221_16
+  - first:
+      213: -814740410619498412
+    second: jogador_diagonais_221_17
+  - first:
+      213: -6590125787102859287
+    second: jogador_diagonais_221_18
+  - first:
+      213: 2431247523844208768
+    second: jogador_diagonais_221_19
+  - first:
+      213: 2270871164243408361
+    second: jogador_diagonais_221_20
+  - first:
+      213: -5671761483338832359
+    second: jogador_diagonais_221_21
+  - first:
+      213: -651285178137507872
+    second: jogador_diagonais_221_22
+  - first:
+      213: 3909384020678697420
+    second: jogador_diagonais_221_23
+  - first:
+      213: -1933019253295957219
+    second: jogador_diagonais_221_24
+  - first:
+      213: 5975033744954431691
+    second: jogador_diagonais_221_25
+  - first:
+      213: -2589574760833170110
+    second: jogador_diagonais_221_26
+  - first:
+      213: -461293751871918039
+    second: jogador_diagonais_221_27
+  - first:
+      213: -6867598634269196279
+    second: jogador_diagonais_221_28
+  - first:
+      213: -5457681200971947703
+    second: jogador_diagonais_221_29
+  - first:
+      213: -909447104044151557
+    second: jogador_diagonais_221_30
+  - first:
+      213: 7460960133273426573
+    second: jogador_diagonais_221_31
+  - first:
+      213: -286664192334034791
+    second: jogador_diagonais_221_32
+  - first:
+      213: -2086331163205856432
+    second: jogador_diagonais_221_33
+  - first:
+      213: -8216957746353722916
+    second: jogador_diagonais_221_34
+  - first:
+      213: -4475924745048236257
+    second: jogador_diagonais_221_35
+  - first:
+      213: -738616493960365642
+    second: jogador_diagonais_221_36
+  - first:
+      213: -4316138918121117887
+    second: jogador_diagonais_221_37
+  - first:
+      213: -118339133380800833
+    second: jogador_diagonais_221_38
+  - first:
+      213: -2984462449033643751
+    second: jogador_diagonais_221_39
+  - first:
+      213: 5684634946169641606
+    second: jogador_diagonais_221_40
+  - first:
+      213: -1673294117754504702
+    second: jogador_diagonais_221_41
+  - first:
+      213: -6091023362325402492
+    second: jogador_diagonais_221_42
+  - first:
+      213: -7576832053588306654
+    second: jogador_diagonais_221_43
+  - first:
+      213: 4618962368161266620
+    second: jogador_diagonais_221_44
+  - first:
+      213: -4776985385491338988
+    second: jogador_diagonais_221_45
+  - first:
+      213: 5882823523300582305
+    second: jogador_diagonais_221_46
+  - first:
+      213: 3735418301413585323
+    second: jogador_diagonais_221_47
+  - first:
+      213: -6570574240356475396
+    second: jogador_diagonais_221_48
+  - first:
+      213: 197992068876121559
+    second: jogador_diagonais_221_49
+  - first:
+      213: 7199534098852440750
+    second: jogador_diagonais_221_50
+  - first:
+      213: 8218094581244852770
+    second: jogador_diagonais_221_51
+  - first:
+      213: -5233582644037056897
+    second: jogador_diagonais_221_52
+  - first:
+      213: 3821791090893129535
+    second: jogador_diagonais_221_53
+  - first:
+      213: -1661138735491794580
+    second: jogador_diagonais_221_54
+  - first:
+      213: -5081478837826577513
+    second: jogador_diagonais_221_55
+  - first:
+      213: 5824209595722903065
+    second: jogador_diagonais_221_56
+  - first:
+      213: 7303779324697446619
+    second: jogador_diagonais_221_57
+  - first:
+      213: 2125425477707660799
+    second: jogador_diagonais_221_58
+  - first:
+      213: -5113235986949559799
+    second: jogador_diagonais_221_59
+  - first:
+      213: 4407770900098575333
+    second: jogador_diagonais_221_60
+  - first:
+      213: 5166570135070738664
+    second: jogador_diagonais_221_61
+  - first:
+      213: -6081708072220252906
+    second: jogador_diagonais_221_62
+  - first:
+      213: -7340001081601837682
+    second: jogador_diagonais_221_63
+  - first:
+      213: -370880369189979188
+    second: jogador_diagonais_221_64
+  - first:
+      213: 8553853949542240411
+    second: jogador_diagonais_221_65
+  - first:
+      213: -491748053090776161
+    second: jogador_diagonais_221_66
+  - first:
+      213: 2483047222525066206
+    second: jogador_diagonais_221_67
+  - first:
+      213: 2711362234552897678
+    second: jogador_diagonais_221_68
+  - first:
+      213: -1905569255456416546
+    second: jogador_diagonais_221_69
+  - first:
+      213: 8502454954738163441
+    second: jogador_diagonais_221_70
+  - first:
+      213: 6376687766065912315
+    second: jogador_diagonais_221_71
+  - first:
+      213: 8415167829489444675
+    second: jogador_diagonais_221_72
+  - first:
+      213: -8254267543374649344
+    second: jogador_diagonais_221_73
+  - first:
+      213: 5732350191757501298
+    second: jogador_diagonais_221_74
+  - first:
+      213: -1973792580656260548
+    second: jogador_diagonais_221_75
+  - first:
+      213: -8120161818398601619
+    second: jogador_diagonais_221_76
+  - first:
+      213: 2895501132721170838
+    second: jogador_diagonais_221_77
+  - first:
+      213: -3869523308523140582
+    second: jogador_diagonais_221_78
+  - first:
+      213: 2480449766289267320
+    second: jogador_diagonais_221_79
+  - first:
+      213: -3082423314349187391
+    second: jogador_diagonais_221_80
+  - first:
+      213: -5095864522369181738
+    second: jogador_diagonais_221_81
+  - first:
+      213: -3798808234712266016
+    second: jogador_diagonais_221_82
+  - first:
+      213: -107170825439910430
+    second: jogador_diagonais_221_83
+  - first:
+      213: -4306492111922487908
+    second: jogador_diagonais_221_84
+  - first:
+      213: -321241153931602088
+    second: jogador_diagonais_221_85
+  - first:
+      213: 4612149967784917688
+    second: jogador_diagonais_221_86
+  - first:
+      213: -160267645958859932
+    second: jogador_diagonais_221_87
+  - first:
+      213: 2118752112850559358
+    second: jogador_diagonais_221_88
+  - first:
+      213: -2185323341345134091
+    second: jogador_diagonais_221_89
+  - first:
+      213: 8080255886491051962
+    second: jogador_diagonais_221_90
+  - first:
+      213: -8136467953460292961
+    second: jogador_diagonais_221_91
+  - first:
+      213: 7706847574243574317
+    second: jogador_diagonais_221_92
+  - first:
+      213: 6913633185662373421
+    second: jogador_diagonais_221_93
+  - first:
+      213: 9067895061744697167
+    second: jogador_diagonais_221_94
+  - first:
+      213: -1381378200822787158
+    second: jogador_diagonais_221_95
+  - first:
+      213: -8402667019270208043
+    second: jogador_diagonais_221_96
+  - first:
+      213: -8931112612713828844
+    second: jogador_diagonais_221_97
+  - first:
+      213: 2887456555139114364
+    second: jogador_diagonais_221_98
+  - first:
+      213: 8165123855366288012
+    second: jogador_diagonais_221_99
+  - first:
+      213: -4020472653584912064
+    second: jogador_diagonais_221_100
+  - first:
+      213: -2485472906563073890
+    second: jogador_diagonais_221_101
+  - first:
+      213: -7531191775570550400
+    second: jogador_diagonais_221_102
+  - first:
+      213: -4477003181492448320
+    second: jogador_diagonais_221_103
+  - first:
+      213: -4252906845210204318
+    second: jogador_diagonais_221_104
+  - first:
+      213: 4131029795174703166
+    second: jogador_diagonais_221_105
+  - first:
+      213: -7598261645882854774
+    second: jogador_diagonais_221_106
+  - first:
+      213: -6216542221766193666
+    second: jogador_diagonais_221_107
+  - first:
+      213: -7675790800256518848
+    second: jogador_diagonais_221_108
+  - first:
+      213: 4866091759178192360
+    second: jogador_diagonais_221_109
+  - first:
+      213: -5103685652601041219
+    second: jogador_diagonais_221_110
+  - first:
+      213: -3243464908618764021
+    second: jogador_diagonais_221_111
+  - first:
+      213: 5158388959497008204
+    second: jogador_diagonais_221_112
+  - first:
+      213: 1164602988483297868
+    second: jogador_diagonais_221_113
+  - first:
+      213: -424102074241456599
+    second: jogador_diagonais_221_114
+  - first:
+      213: -6453610241461703359
+    second: jogador_diagonais_221_115
+  - first:
+      213: -3510715298175352785
+    second: jogador_diagonais_221_116
+  - first:
+      213: 2282707831985423192
+    second: jogador_diagonais_221_117
+  - first:
+      213: 1475745504109388054
+    second: jogador_diagonais_221_118
+  - first:
+      213: -2957460310913067660
+    second: jogador_diagonais_221_119
+  - first:
+      213: -9079623710532135189
+    second: jogador_diagonais_221_120
+  - first:
+      213: 6817271652603465268
+    second: jogador_diagonais_221_121
+  - first:
+      213: -6349286328078716650
+    second: jogador_diagonais_221_122
+  - first:
+      213: -7668053451605360251
+    second: jogador_diagonais_221_123
+  - first:
+      213: -5634814735182167329
+    second: jogador_diagonais_221_124
+  - first:
+      213: -1620556527651285866
+    second: jogador_diagonais_221_125
+  - first:
+      213: 7602043855431536595
+    second: jogador_diagonais_221_126
+  - first:
+      213: -2845627138695673028
+    second: jogador_diagonais_221_127
+  - first:
+      213: -349257967331947480
+    second: jogador_diagonais_221_128
+  - first:
+      213: 9210992466860932298
+    second: jogador_diagonais_221_129
+  - first:
+      213: -4995562104596481095
+    second: jogador_diagonais_221_130
+  - first:
+      213: -2433443247033975124
+    second: jogador_diagonais_221_131
+  - first:
+      213: 6506751322612517530
+    second: jogador_diagonais_221_132
+  - first:
+      213: -4200595565490756646
+    second: jogador_diagonais_221_133
+  - first:
+      213: -4031762172970836341
+    second: jogador_diagonais_221_134
+  - first:
+      213: -8750677756400709653
+    second: jogador_diagonais_221_135
+  - first:
+      213: 1111644693952519336
+    second: jogador_diagonais_221_136
+  - first:
+      213: 3051909572642045445
+    second: jogador_diagonais_221_137
+  - first:
+      213: 2469725188416307387
+    second: jogador_diagonais_221_138
+  - first:
+      213: -5326922835352826368
+    second: jogador_diagonais_221_139
+  - first:
+      213: 1263425291292393163
+    second: jogador_diagonais_221_140
+  - first:
+      213: 8665979283630031453
+    second: jogador_diagonais_221_141
+  - first:
+      213: -1182024089181570273
+    second: jogador_diagonais_221_142
+  - first:
+      213: -3702782290397678633
+    second: jogador_diagonais_221_143
+  - first:
+      213: -6505566162746661522
+    second: jogador_diagonais_221_144
+  - first:
+      213: 6698436072216388973
+    second: jogador_diagonais_221_145
+  - first:
+      213: 7307897554679101018
+    second: jogador_diagonais_221_146
+  - first:
+      213: -1065721675369635255
+    second: jogador_diagonais_221_147
+  - first:
+      213: -6061250071488114891
+    second: jogador_diagonais_221_148
+  - first:
+      213: 1158638417385347581
+    second: jogador_diagonais_221_149
+  - first:
+      213: 1904941744303744753
+    second: jogador_diagonais_221_150
+  - first:
+      213: 866143633302991914
+    second: jogador_diagonais_221_151
+  - first:
+      213: 9107645108044953508
+    second: jogador_diagonais_221_152
+  - first:
+      213: -3521859297714637518
+    second: jogador_diagonais_221_153
+  - first:
+      213: -3662388903109568618
+    second: jogador_diagonais_221_154
+  - first:
+      213: 6708916892847166717
+    second: jogador_diagonais_221_155
+  - first:
+      213: -801044656373456300
+    second: jogador_diagonais_221_156
+  - first:
+      213: -5745608727067697667
+    second: jogador_diagonais_221_157
+  - first:
+      213: 5336877963757961318
+    second: jogador_diagonais_221_158
+  - first:
+      213: -5279831927904114138
+    second: jogador_diagonais_221_159
+  - first:
+      213: -5999849694702551813
+    second: jogador_diagonais_221_160
+  - first:
+      213: -8394639613500472849
+    second: jogador_diagonais_221_161
+  - first:
+      213: -6680159782826456332
+    second: jogador_diagonais_221_162
+  - first:
+      213: -7533207410880781240
+    second: jogador_diagonais_221_163
+  - first:
+      213: -737512408061487266
+    second: jogador_diagonais_221_164
+  - first:
+      213: -7357305364583428100
+    second: jogador_diagonais_221_165
+  - first:
+      213: 2045998184285337229
+    second: jogador_diagonais_221_166
+  - first:
+      213: -8594763702259244331
+    second: jogador_diagonais_221_167
+  - first:
+      213: -6379040047770262440
+    second: jogador_diagonais_221_168
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jogador_diagonais_221_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1100
+        width: 41
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ea3cf3dbc5cdad0800000000000000
+      internalID: -2676162110676554169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 943
+        width: 202
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a751c1e5f98b7f250800000000000000
+      internalID: 5978450024975832442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1156
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4274611e41e1ad0800000000000000
+      internalID: -2729721367165983499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_3
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 18
+        width: 273
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8390c6f55170410800000000000000
+      internalID: 1443145705174153394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1130
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca82c276d6a30d70800000000000000
+      internalID: 9008227119649688262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_5
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 23
+        width: 375
+        height: 1217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ddd3e5e637ef970800000000000000
+      internalID: 8790590440538496406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_6
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1146
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947d0c645fbec9070800000000000000
+      internalID: 8114620067301349193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_7
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1148
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02798f430dc50f140800000000000000
+      internalID: 4751399656187533088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_8
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1130
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf352c4cbc9f0ce40800000000000000
+      internalID: 5674810184061572092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_9
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 15
+        width: 295
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c6ffc85d09ded20800000000000000
+      internalID: 3309460548055166064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_10
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1172
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2e184c07c6a6d10800000000000000
+      internalID: 2119625806220223213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_11
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1156
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7aba8486a2445d0800000000000000
+      internalID: -3079289617830402120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1128
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e2db6e588a9f880800000000000000
+      internalID: -8576638722295124393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1110
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed292643b0a2c4240800000000000000
+      internalID: 4777239532345135838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1141
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff576f2fa479bcf0800000000000000
+      internalID: -236029209696837646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_15
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1140
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0165c842b4fe0f9c0800000000000000
+      internalID: -3895350571660716528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_16
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1114
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9caeb231c99a6e10800000000000000
+      internalID: 2191733223728262299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_17
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1130
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4507ed8c9e571b4f0800000000000000
+      internalID: -814740410619498412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_18
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1139
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efa79a338b2b84a0800000000000000
+      internalID: -6590125787102859287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_19
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1139
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08838cbddb68db120800000000000000
+      internalID: 2431247523844208768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_20
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1092
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5f763da41c38f10800000000000000
+      internalID: 2270871164243408361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_21
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1114
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916a8de2bfad941b0800000000000000
+      internalID: -5671761483338832359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1122
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e703a5c49b26f6f0800000000000000
+      internalID: -651285178137507872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_23
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1128
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc16423dd0ce04630800000000000000
+      internalID: 3909384020678697420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_24
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1116
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bbd4f0b398c25e0800000000000000
+      internalID: -1933019253295957219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_25
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1095
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc81bf0b8859be250800000000000000
+      internalID: 5975033744954431691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_26
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1110
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245c835a97bff0cd0800000000000000
+      internalID: -2589574760833170110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_27
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1100
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9203196d6c72999f0800000000000000
+      internalID: -461293751871918039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_28
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1098
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9004d60ad6361b0a0800000000000000
+      internalID: -6867598634269196279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_29
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1090
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9416dbe1ddb6244b0800000000000000
+      internalID: -5457681200971947703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_30
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1079
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfcc0756daef063f0800000000000000
+      internalID: -909447104044151557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_31
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1004
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a1d1b16b7aa8760800000000000000
+      internalID: 7460960133273426573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_32
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1044
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9980b169f60950cf0800000000000000
+      internalID: -286664192334034791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_33
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1060
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05399456cdcdb03e0800000000000000
+      internalID: -2086331163205856432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_34
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1030
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9213a077087fd80800000000000000
+      internalID: -8216957746353722916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_35
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1050
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fd40aa82252e1c0800000000000000
+      internalID: -4475924745048236257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_36
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1000
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b97f3c4638efb5f0800000000000000
+      internalID: -738616493960365642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_37
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1034
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147e628958ef914c0800000000000000
+      internalID: -4316138918121117887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_38
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1036
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe4fc76f239b5ef0800000000000000
+      internalID: -118339133380800833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_39
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1038
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9197bd7073f0596d0800000000000000
+      internalID: -2984462449033643751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_40
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1010
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a96347d51e3ee40800000000000000
+      internalID: 5684634946169641606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_41
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1012
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20afd7a8dd347c8e0800000000000000
+      internalID: -1673294117754504702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_42
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1000
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c2df90686587ba0800000000000000
+      internalID: -6091023362325402492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_43
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1018
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225531b146fa9d690800000000000000
+      internalID: -7576832053588306654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_44
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1002
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb36213dc9d91040800000000000000
+      internalID: 4618962368161266620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_45
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 986
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4196e88f91db4bdb0800000000000000
+      internalID: -4776985385491338988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_46
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 994
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3a4ae63dcf3a150800000000000000
+      internalID: 5882823523300582305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_47
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 991
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1ff3f672fd6d330800000000000000
+      internalID: 3735418301413585323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_48
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 301
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd58317a81a0d4a0800000000000000
+      internalID: -6570574240356475396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_49
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 819
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5b4b5dcb86fb200800000000000000
+      internalID: 197992068876121559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_50
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 873
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa696e3e12e9e360800000000000000
+      internalID: 7199534098852440750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_51
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 873
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a79a5fa798c0270800000000000000
+      internalID: 8218094581244852770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_52
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 851
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76858f50549e57b0800000000000000
+      internalID: -5233582644037056897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_53
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 829
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37007a9fbab90530800000000000000
+      internalID: 3821791090893129535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_54
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 853
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69be540f1372f8e0800000000000000
+      internalID: -1661138735491794580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_55
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 837
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b9ea97be5fa79b0800000000000000
+      internalID: -5081478837826577513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 855
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e2c72f4cfb3d050800000000000000
+      internalID: 5824209595722903065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_57
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 845
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd80f66499c3c5560800000000000000
+      internalID: 7303779324697446619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_58
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 851
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd745306370f7d10800000000000000
+      internalID: 2125425477707660799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_59
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 861
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90aa02106f22a09b0800000000000000
+      internalID: -5113235986949559799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_60
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 835
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebedafb74c8b2d30800000000000000
+      internalID: 4407770900098575333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_61
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 837
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e888080a2853b740800000000000000
+      internalID: 5166570135070738664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_62
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 833
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615afa70bbe699ba0800000000000000
+      internalID: -6081708072220252906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_63
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 797
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85b320c7e3132a90800000000000000
+      internalID: -7340001081601837682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_64
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 818
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbf34ce44e5adaf0800000000000000
+      internalID: -370880369189979188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_65
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 813
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90990bc8d465b670800000000000000
+      internalID: 8553853949542240411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_66
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 763
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bc88840c5fc29f0800000000000000
+      internalID: -491748053090776161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_67
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 811
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb702b0b4e857220800000000000000
+      internalID: 2483047222525066206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_68
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 813
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e805fef3691b0a520800000000000000
+      internalID: 2711362234552897678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_69
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 811
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc5d99bbde0e85e0800000000000000
+      internalID: -1905569255456416546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_70
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 813
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe9defbbb9cef570800000000000000
+      internalID: 8502454954738163441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_71
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 771
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf910f3fcbb8e7850800000000000000
+      internalID: 6376687766065912315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_72
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 775
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34763023e8ea8c470800000000000000
+      internalID: 8415167829489444675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_73
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 765
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0082e1cf663f27d80800000000000000
+      internalID: -8254267543374649344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_74
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 757
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27329dbc0266d8f40800000000000000
+      internalID: 5732350191757501298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_75
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a9ea10b1eab94e0800000000000000
+      internalID: -1973792580656260548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_76
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 704
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e49af39d36f4f80800000000000000
+      internalID: -8120161818398601619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_77
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 730
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699269e60f2ee2820800000000000000
+      internalID: 2895501132721170838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_78
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 716
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a42617d01bc4ac0800000000000000
+      internalID: -3869523308523140582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_79
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 708
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a5fd2abe35c6220800000000000000
+      internalID: 2480449766289267320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_80
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 720
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce95d4b3580935d0800000000000000
+      internalID: -3082423314349187391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_81
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 686
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d75ba8473ad749b0800000000000000
+      internalID: -5095864522369181738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_82
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 696
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea8528990ce74bc0800000000000000
+      internalID: -3798808234712266016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_83
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 680
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e56e5bb3b0438ef0800000000000000
+      internalID: -107170825439910430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_84
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 694
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d96d0bd344c34c0800000000000000
+      internalID: -4306492111922487908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_85
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 650
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8579bac5fd8ba8bf0800000000000000
+      internalID: -321241153931602088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_86
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 652
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba36a0a5f5a10040800000000000000
+      internalID: 4612149967784917688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_87
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 584
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46352a5dc6d96cdf0800000000000000
+      internalID: -160267645958859932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_88
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 552
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71e09d22d1576d10800000000000000
+      internalID: 2118752112850559358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_89
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 517
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9e0c7dffb2ca1e0800000000000000
+      internalID: -2185323341345134091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_90
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 544
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7ee80fae5d22070800000000000000
+      internalID: 8080255886491051962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_91
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 554
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9256a35185751f80800000000000000
+      internalID: -8136467953460292961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_92
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 552
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d228ed0490934fa60800000000000000
+      internalID: 7706847574243574317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_93
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 515
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e02ca90c822ff50800000000000000
+      internalID: 6913633185662373421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_94
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 527
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fbfcfc382a7dd70800000000000000
+      internalID: 9067895061744697167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_95
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 542
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa35d7f58db54dce0800000000000000
+      internalID: -1381378200822787158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_96
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 511
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5428e7ddab36b80800000000000000
+      internalID: -8402667019270208043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_97
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 562
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e6e26d5605e0480800000000000000
+      internalID: -8931112612713828844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_98
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 526
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75a071407e421820800000000000000
+      internalID: 2887456555139114364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_99
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 522
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82fc22c2e8505170800000000000000
+      internalID: 8165123855366288012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_100
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 533
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04136e54c696438c0800000000000000
+      internalID: -4020472653584912064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_101
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 548
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9843716f83d18dd0800000000000000
+      internalID: -2485472906563073890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_102
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 542
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08126c96bf4db7790800000000000000
+      internalID: -7531191775570550400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_103
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 543
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c359dc935d7ed1c0800000000000000
+      internalID: -4477003181492448320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_104
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 498
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2672b64d1c3aaf4c0800000000000000
+      internalID: -4252906845210204318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_105
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 534
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3061f926bd545930800000000000000
+      internalID: 4131029795174703166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_106
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 516
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a827da65a4d8d8690800000000000000
+      internalID: -7598261645882854774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_107
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 521
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd886439c76ab9a0800000000000000
+      internalID: -6216542221766193666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_108
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 517
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045bf7c6fec1a7590800000000000000
+      internalID: -7675790800256518848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_109
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 489
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5954e5ca4d78340800000000000000
+      internalID: 4866091759178192360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_110
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 501
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe057f70f01c29b0800000000000000
+      internalID: -5103685652601041219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_111
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 504
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b017558a9d5ecf2d0800000000000000
+      internalID: -3243464908618764021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_112
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 501
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44bd18ad67469740800000000000000
+      internalID: 5158388959497008204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_113
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 497
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42c7e86f30892010800000000000000
+      internalID: 1164602988483297868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_114
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926e45419694d1af0800000000000000
+      internalID: -424102074241456599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_115
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 417
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d2ad69dab2076a0800000000000000
+      internalID: -6453610241461703359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_116
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 387
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f208ab0790f674fc0800000000000000
+      internalID: -3510715298175352785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_117
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 417
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8534e7bcdaecdaf10800000000000000
+      internalID: 2282707831985423192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_118
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 401
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611e15797b6ea7410800000000000000
+      internalID: 1475745504109388054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_119
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 376
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475d5ba348df4f6d0800000000000000
+      internalID: -2957460310913067660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_120
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 381
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be694875752bef180800000000000000
+      internalID: -9079623710532135189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_121
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 345
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e05c6d270db9e50800000000000000
+      internalID: 6817271652603465268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_122
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 353
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611bf9d79bdc2e7a0800000000000000
+      internalID: -6349286328078716650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_123
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 345
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581ca5a430a959590800000000000000
+      internalID: -7668053451605360251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_124
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 324
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd284565add1dc1b0800000000000000
+      internalID: -5634814735182167329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_125
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 290
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69497e69c60a289e0800000000000000
+      internalID: -1620556527651285866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_126
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 278
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df00f1fb92ef7960800000000000000
+      internalID: 7602043855431536595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_127
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 282
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b45d2b13d4288d0800000000000000
+      internalID: -2845627138695673028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_128
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 288
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c443aaabf272bf0800000000000000
+      internalID: -349257967331947480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_129
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 224
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc7b00c8d404df70800000000000000
+      internalID: 9210992466860932298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_130
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 261
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbbf16cbb23caab0800000000000000
+      internalID: -4995562104596481095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_131
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 272
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae777f724caa3ed0800000000000000
+      internalID: -2433443247033975124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_132
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 232
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a4f1a8adf9c4a50800000000000000
+      internalID: 6506751322612517530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_133
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 228
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3a7d1c69c74b5c0800000000000000
+      internalID: -4200595565490756646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_134
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 256
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e57353aad4c08c0800000000000000
+      internalID: -4031762172970836341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_135
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 220
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befc2d191f85f8680800000000000000
+      internalID: -8750677756400709653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_136
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 254
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acdc7b95fa5d6f00800000000000000
+      internalID: 1111644693952519336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_137
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 221
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e71fb269f8a5a20800000000000000
+      internalID: 3051909572642045445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_138
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 220
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0836449f9364220800000000000000
+      internalID: 2469725188416307387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_139
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 228
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ec0ec87e7f216b0800000000000000
+      internalID: -5326922835352826368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_140
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 232
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce3ab7cb96988110800000000000000
+      internalID: 1263425291292393163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_141
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 230
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5289af7e3eb34870800000000000000
+      internalID: 8665979283630031453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_142
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 232
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bb0608a5b989fe0800000000000000
+      internalID: -1182024089181570273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_143
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 208
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d33d3400231d9cc0800000000000000
+      internalID: -3702782290397678633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_144
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 216
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e652faefa0697b5a0800000000000000
+      internalID: -6505566162746661522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_145
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 188
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65ee1b2e10a5fc50800000000000000
+      internalID: 6698436072216388973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_146
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 204
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56f7996b1eda6560800000000000000
+      internalID: 7307897554679101018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_147
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 202
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942a82e58cbc531f0800000000000000
+      internalID: -1065721675369635255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_148
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 198
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fc3228c2d12eba0800000000000000
+      internalID: -6061250071488114891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_149
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 172
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9df5b708f441010800000000000000
+      internalID: 1158638417385347581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_150
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 177
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6a9037c66bf6a10800000000000000
+      internalID: 1904941744303744753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_151
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 150
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24bd73ab09250c00800000000000000
+      internalID: 866143633302991914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_152
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 154
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7f75da8fad46e70800000000000000
+      internalID: 9107645108044953508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_153
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 67
+        width: 39
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235ffcad0a7df1fc0800000000000000
+      internalID: -3521859297714637518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_154
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 136
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69752d062b49c2dc0800000000000000
+      internalID: -3662388903109568618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_155
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 117
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4d5c16e5cda1d50800000000000000
+      internalID: 6708916892847166717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_156
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 102
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452a2af012e12e4f0800000000000000
+      internalID: -801044656373456300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_157
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 91
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfddeb4ed4f7340b0800000000000000
+      internalID: -5745608727067697667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_158
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 85
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66047676b36601a40800000000000000
+      internalID: 5336877963757961318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_159
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 95
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a6287d5d44ab6b0800000000000000
+      internalID: -5279831927904114138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_160
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfcb481cd704cbca0800000000000000
+      internalID: -5999849694702551813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_161
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 83
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1c1eb8fbf308b80800000000000000
+      internalID: -8394639613500472849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_162
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 69
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa47cd021e4b43a0800000000000000
+      internalID: -6680159782826456332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_163
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 69
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8446c1fb5cba47790800000000000000
+      internalID: -7533207410880781240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_164
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 71
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e575d045f54d3c5f0800000000000000
+      internalID: -737512408061487266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_165
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 55
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffcde760c995e990800000000000000
+      internalID: -7357305364583428100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_166
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 53
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86fb692288d46c10800000000000000
+      internalID: 2045998184285337229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_167
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 53
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2aa6623f349b880800000000000000
+      internalID: -8594763702259244331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_diagonais_221_168
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 33
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854a9a8cfd81977a0800000000000000
+      internalID: -6379040047770262440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jogador_diagonais_221_0: -2676162110676554169
+      jogador_diagonais_221_1: 5978450024975832442
+      jogador_diagonais_221_10: 2119625806220223213
+      jogador_diagonais_221_100: -4020472653584912064
+      jogador_diagonais_221_101: -2485472906563073890
+      jogador_diagonais_221_102: -7531191775570550400
+      jogador_diagonais_221_103: -4477003181492448320
+      jogador_diagonais_221_104: -4252906845210204318
+      jogador_diagonais_221_105: 4131029795174703166
+      jogador_diagonais_221_106: -7598261645882854774
+      jogador_diagonais_221_107: -6216542221766193666
+      jogador_diagonais_221_108: -7675790800256518848
+      jogador_diagonais_221_109: 4866091759178192360
+      jogador_diagonais_221_11: -3079289617830402120
+      jogador_diagonais_221_110: -5103685652601041219
+      jogador_diagonais_221_111: -3243464908618764021
+      jogador_diagonais_221_112: 5158388959497008204
+      jogador_diagonais_221_113: 1164602988483297868
+      jogador_diagonais_221_114: -424102074241456599
+      jogador_diagonais_221_115: -6453610241461703359
+      jogador_diagonais_221_116: -3510715298175352785
+      jogador_diagonais_221_117: 2282707831985423192
+      jogador_diagonais_221_118: 1475745504109388054
+      jogador_diagonais_221_119: -2957460310913067660
+      jogador_diagonais_221_12: -8576638722295124393
+      jogador_diagonais_221_120: -9079623710532135189
+      jogador_diagonais_221_121: 6817271652603465268
+      jogador_diagonais_221_122: -6349286328078716650
+      jogador_diagonais_221_123: -7668053451605360251
+      jogador_diagonais_221_124: -5634814735182167329
+      jogador_diagonais_221_125: -1620556527651285866
+      jogador_diagonais_221_126: 7602043855431536595
+      jogador_diagonais_221_127: -2845627138695673028
+      jogador_diagonais_221_128: -349257967331947480
+      jogador_diagonais_221_129: 9210992466860932298
+      jogador_diagonais_221_13: 4777239532345135838
+      jogador_diagonais_221_130: -4995562104596481095
+      jogador_diagonais_221_131: -2433443247033975124
+      jogador_diagonais_221_132: 6506751322612517530
+      jogador_diagonais_221_133: -4200595565490756646
+      jogador_diagonais_221_134: -4031762172970836341
+      jogador_diagonais_221_135: -8750677756400709653
+      jogador_diagonais_221_136: 1111644693952519336
+      jogador_diagonais_221_137: 3051909572642045445
+      jogador_diagonais_221_138: 2469725188416307387
+      jogador_diagonais_221_139: -5326922835352826368
+      jogador_diagonais_221_14: -236029209696837646
+      jogador_diagonais_221_140: 1263425291292393163
+      jogador_diagonais_221_141: 8665979283630031453
+      jogador_diagonais_221_142: -1182024089181570273
+      jogador_diagonais_221_143: -3702782290397678633
+      jogador_diagonais_221_144: -6505566162746661522
+      jogador_diagonais_221_145: 6698436072216388973
+      jogador_diagonais_221_146: 7307897554679101018
+      jogador_diagonais_221_147: -1065721675369635255
+      jogador_diagonais_221_148: -6061250071488114891
+      jogador_diagonais_221_149: 1158638417385347581
+      jogador_diagonais_221_15: -3895350571660716528
+      jogador_diagonais_221_150: 1904941744303744753
+      jogador_diagonais_221_151: 866143633302991914
+      jogador_diagonais_221_152: 9107645108044953508
+      jogador_diagonais_221_153: -3521859297714637518
+      jogador_diagonais_221_154: -3662388903109568618
+      jogador_diagonais_221_155: 6708916892847166717
+      jogador_diagonais_221_156: -801044656373456300
+      jogador_diagonais_221_157: -5745608727067697667
+      jogador_diagonais_221_158: 5336877963757961318
+      jogador_diagonais_221_159: -5279831927904114138
+      jogador_diagonais_221_16: 2191733223728262299
+      jogador_diagonais_221_160: -5999849694702551813
+      jogador_diagonais_221_161: -8394639613500472849
+      jogador_diagonais_221_162: -6680159782826456332
+      jogador_diagonais_221_163: -7533207410880781240
+      jogador_diagonais_221_164: -737512408061487266
+      jogador_diagonais_221_165: -7357305364583428100
+      jogador_diagonais_221_166: 2045998184285337229
+      jogador_diagonais_221_167: -8594763702259244331
+      jogador_diagonais_221_168: -6379040047770262440
+      jogador_diagonais_221_17: -814740410619498412
+      jogador_diagonais_221_18: -6590125787102859287
+      jogador_diagonais_221_19: 2431247523844208768
+      jogador_diagonais_221_2: -2729721367165983499
+      jogador_diagonais_221_20: 2270871164243408361
+      jogador_diagonais_221_21: -5671761483338832359
+      jogador_diagonais_221_22: -651285178137507872
+      jogador_diagonais_221_23: 3909384020678697420
+      jogador_diagonais_221_24: -1933019253295957219
+      jogador_diagonais_221_25: 5975033744954431691
+      jogador_diagonais_221_26: -2589574760833170110
+      jogador_diagonais_221_27: -461293751871918039
+      jogador_diagonais_221_28: -6867598634269196279
+      jogador_diagonais_221_29: -5457681200971947703
+      jogador_diagonais_221_3: 1443145705174153394
+      jogador_diagonais_221_30: -909447104044151557
+      jogador_diagonais_221_31: 7460960133273426573
+      jogador_diagonais_221_32: -286664192334034791
+      jogador_diagonais_221_33: -2086331163205856432
+      jogador_diagonais_221_34: -8216957746353722916
+      jogador_diagonais_221_35: -4475924745048236257
+      jogador_diagonais_221_36: -738616493960365642
+      jogador_diagonais_221_37: -4316138918121117887
+      jogador_diagonais_221_38: -118339133380800833
+      jogador_diagonais_221_39: -2984462449033643751
+      jogador_diagonais_221_4: 9008227119649688262
+      jogador_diagonais_221_40: 5684634946169641606
+      jogador_diagonais_221_41: -1673294117754504702
+      jogador_diagonais_221_42: -6091023362325402492
+      jogador_diagonais_221_43: -7576832053588306654
+      jogador_diagonais_221_44: 4618962368161266620
+      jogador_diagonais_221_45: -4776985385491338988
+      jogador_diagonais_221_46: 5882823523300582305
+      jogador_diagonais_221_47: 3735418301413585323
+      jogador_diagonais_221_48: -6570574240356475396
+      jogador_diagonais_221_49: 197992068876121559
+      jogador_diagonais_221_5: 8790590440538496406
+      jogador_diagonais_221_50: 7199534098852440750
+      jogador_diagonais_221_51: 8218094581244852770
+      jogador_diagonais_221_52: -5233582644037056897
+      jogador_diagonais_221_53: 3821791090893129535
+      jogador_diagonais_221_54: -1661138735491794580
+      jogador_diagonais_221_55: -5081478837826577513
+      jogador_diagonais_221_56: 5824209595722903065
+      jogador_diagonais_221_57: 7303779324697446619
+      jogador_diagonais_221_58: 2125425477707660799
+      jogador_diagonais_221_59: -5113235986949559799
+      jogador_diagonais_221_6: 8114620067301349193
+      jogador_diagonais_221_60: 4407770900098575333
+      jogador_diagonais_221_61: 5166570135070738664
+      jogador_diagonais_221_62: -6081708072220252906
+      jogador_diagonais_221_63: -7340001081601837682
+      jogador_diagonais_221_64: -370880369189979188
+      jogador_diagonais_221_65: 8553853949542240411
+      jogador_diagonais_221_66: -491748053090776161
+      jogador_diagonais_221_67: 2483047222525066206
+      jogador_diagonais_221_68: 2711362234552897678
+      jogador_diagonais_221_69: -1905569255456416546
+      jogador_diagonais_221_7: 4751399656187533088
+      jogador_diagonais_221_70: 8502454954738163441
+      jogador_diagonais_221_71: 6376687766065912315
+      jogador_diagonais_221_72: 8415167829489444675
+      jogador_diagonais_221_73: -8254267543374649344
+      jogador_diagonais_221_74: 5732350191757501298
+      jogador_diagonais_221_75: -1973792580656260548
+      jogador_diagonais_221_76: -8120161818398601619
+      jogador_diagonais_221_77: 2895501132721170838
+      jogador_diagonais_221_78: -3869523308523140582
+      jogador_diagonais_221_79: 2480449766289267320
+      jogador_diagonais_221_8: 5674810184061572092
+      jogador_diagonais_221_80: -3082423314349187391
+      jogador_diagonais_221_81: -5095864522369181738
+      jogador_diagonais_221_82: -3798808234712266016
+      jogador_diagonais_221_83: -107170825439910430
+      jogador_diagonais_221_84: -4306492111922487908
+      jogador_diagonais_221_85: -321241153931602088
+      jogador_diagonais_221_86: 4612149967784917688
+      jogador_diagonais_221_87: -160267645958859932
+      jogador_diagonais_221_88: 2118752112850559358
+      jogador_diagonais_221_89: -2185323341345134091
+      jogador_diagonais_221_9: 3309460548055166064
+      jogador_diagonais_221_90: 8080255886491051962
+      jogador_diagonais_221_91: -8136467953460292961
+      jogador_diagonais_221_92: 7706847574243574317
+      jogador_diagonais_221_93: 6913633185662373421
+      jogador_diagonais_221_94: 9067895061744697167
+      jogador_diagonais_221_95: -1381378200822787158
+      jogador_diagonais_221_96: -8402667019270208043
+      jogador_diagonais_221_97: -8931112612713828844
+      jogador_diagonais_221_98: 2887456555139114364
+      jogador_diagonais_221_99: 8165123855366288012
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

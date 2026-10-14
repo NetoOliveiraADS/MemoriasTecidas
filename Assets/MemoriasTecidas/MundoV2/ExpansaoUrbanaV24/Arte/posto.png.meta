@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 15a2b60bb3624b74a9566567c31146b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6474639731085524543
+    second: posto_0
+  - first:
+      213: -3149669358746915278
+    second: posto_1
+  - first:
+      213: -6043002678578035423
+    second: posto_2
+  - first:
+      213: -5964323345807624061
+    second: posto_3
+  - first:
+      213: 8240333235931482039
+    second: posto_4
+  - first:
+      213: 411024075940076779
+    second: posto_5
+  - first:
+      213: 7033802366931883404
+    second: posto_6
+  - first:
+      213: 763397914523267063
+    second: posto_7
+  - first:
+      213: 4794769321289014816
+    second: posto_8
+  - first:
+      213: -2764928051860117211
+    second: posto_9
+  - first:
+      213: 3617460370071511900
+    second: posto_10
+  - first:
+      213: -3887233967433253004
+    second: posto_11
+  - first:
+      213: -6947058554501174367
+    second: posto_12
+  - first:
+      213: 9169849642330222153
+    second: posto_13
+  - first:
+      213: 5530775747795541405
+    second: posto_14
+  - first:
+      213: -6088328583503618100
+    second: posto_15
+  - first:
+      213: -814502347242617027
+    second: posto_16
+  - first:
+      213: -3586996536694900029
+    second: posto_17
+  - first:
+      213: -414507782224062252
+    second: posto_18
+  - first:
+      213: 8189975699912858768
+    second: posto_19
+  - first:
+      213: -4537765681029062780
+    second: posto_20
+  - first:
+      213: -1588727396790343782
+    second: posto_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: posto_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1759
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ebbf3088a8ad950800000000000000
+      internalID: 6474639731085524543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_1
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 846
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e25f7e7602a44d0800000000000000
+      internalID: -3149669358746915278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_2
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 846
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1254f9eb411f22ca0800000000000000
+      internalID: -6043002678578035423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 823
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388319f64877a3da0800000000000000
+      internalID: -5964323345807624061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_4
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 803
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b78a8e3b6b8b5270800000000000000
+      internalID: 8240333235931482039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_5
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 805
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec9a88283044b500800000000000000
+      internalID: 411024075940076779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 11
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85d64d6cf51d9160800000000000000
+      internalID: 7033802366931883404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_7
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 89
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffee6dcb52289a00800000000000000
+      internalID: 763397914523267063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_8
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 94
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e5f5f3b417a8240800000000000000
+      internalID: 4794769321289014816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_9
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 87
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5296d57069001a9d0800000000000000
+      internalID: -2764928051860117211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_10
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 94
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c536a2b5a0dc33230800000000000000
+      internalID: 3617460370071511900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_11
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 82
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ffe445d45cd0ac0800000000000000
+      internalID: -3887233967433253004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_12
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 65
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab6e114d07179f90800000000000000
+      internalID: -6947058554501174367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_13
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ee5de6aa9d14f70800000000000000
+      internalID: 9169849642330222153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_14
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 48
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9dd2b34d3341cc40800000000000000
+      internalID: 5530775747795541405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_15
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 47
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfd8602969e18ba0800000000000000
+      internalID: -6088328583503618100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_16
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37c1eb3e6e42b4f0800000000000000
+      internalID: -814502347242617027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_17
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 29
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca7eb397ad683ec0800000000000000
+      internalID: -3586996536694900029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_18
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 51
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d856e34e5f5f3af0800000000000000
+      internalID: -414507782224062252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_19
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 47
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c1368b183a8a170800000000000000
+      internalID: 8189975699912858768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fdd4cb72e9601c0800000000000000
+      internalID: -4537765681029062780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posto_21
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 23
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97616d99d4b3f9e0800000000000000
+      internalID: -1588727396790343782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      posto_0: 6474639731085524543
+      posto_1: -3149669358746915278
+      posto_10: 3617460370071511900
+      posto_11: -3887233967433253004
+      posto_12: -6947058554501174367
+      posto_13: 9169849642330222153
+      posto_14: 5530775747795541405
+      posto_15: -6088328583503618100
+      posto_16: -814502347242617027
+      posto_17: -3586996536694900029
+      posto_18: -414507782224062252
+      posto_19: 8189975699912858768
+      posto_2: -6043002678578035423
+      posto_20: -4537765681029062780
+      posto_21: -1588727396790343782
+      posto_3: -5964323345807624061
+      posto_4: 8240333235931482039
+      posto_5: 411024075940076779
+      posto_6: 7033802366931883404
+      posto_7: 763397914523267063
+      posto_8: 4794769321289014816
+      posto_9: -2764928051860117211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

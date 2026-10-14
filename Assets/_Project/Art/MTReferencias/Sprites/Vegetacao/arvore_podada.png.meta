@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: 2148ff57e8d5e21499e573c758baa600
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8132086463175016005
+    second: arvore_podada_0
+  - first:
+      213: -8876056123553034514
+    second: arvore_podada_1
+  - first:
+      213: -8121518197581541167
+    second: arvore_podada_2
+  - first:
+      213: 615970323417246678
+    second: arvore_podada_3
+  - first:
+      213: -6589595135527153506
+    second: arvore_podada_4
+  - first:
+      213: 5997657960878812237
+    second: arvore_podada_5
+  - first:
+      213: 6176264371903553847
+    second: arvore_podada_6
+  - first:
+      213: -1141980091921228929
+    second: arvore_podada_7
+  - first:
+      213: 8313796656932669206
+    second: arvore_podada_8
+  - first:
+      213: 632565579554579108
+    second: arvore_podada_9
+  - first:
+      213: 4669705429167934538
+    second: arvore_podada_10
+  - first:
+      213: 7635385458781924974
+    second: arvore_podada_11
+  - first:
+      213: -5296407174481025610
+    second: arvore_podada_12
+  - first:
+      213: 1530061149283072616
+    second: arvore_podada_13
+  - first:
+      213: -1111030893108468718
+    second: arvore_podada_14
+  - first:
+      213: 3114181506228308969
+    second: arvore_podada_15
+  - first:
+      213: 5080037483957630445
+    second: arvore_podada_16
+  - first:
+      213: -4055944040891532592
+    second: arvore_podada_17
+  - first:
+      213: 2711529444374952621
+    second: arvore_podada_18
+  - first:
+      213: 2391191800132395757
+    second: arvore_podada_19
+  - first:
+      213: -8572399464804231280
+    second: arvore_podada_20
+  - first:
+      213: 2094481247422027517
+    second: arvore_podada_21
+  - first:
+      213: -5701232345877382183
+    second: arvore_podada_22
+  - first:
+      213: 2089242152291685311
+    second: arvore_podada_23
+  - first:
+      213: 3899489004727956504
+    second: arvore_podada_24
+  - first:
+      213: 7261283106565742056
+    second: arvore_podada_25
+  - first:
+      213: 3010646472548151621
+    second: arvore_podada_26
+  - first:
+      213: -4708769562895139425
+    second: arvore_podada_27
+  - first:
+      213: -132680084065420938
+    second: arvore_podada_28
+  - first:
+      213: 6231405226546041145
+    second: arvore_podada_29
+  - first:
+      213: -7867398514220927255
+    second: arvore_podada_30
+  - first:
+      213: 5522158611485255398
+    second: arvore_podada_31
+  - first:
+      213: -7302991192650348117
+    second: arvore_podada_32
+  - first:
+      213: 5186556572165765240
+    second: arvore_podada_33
+  - first:
+      213: -3954404611711114280
+    second: arvore_podada_34
+  - first:
+      213: 2968756080235034401
+    second: arvore_podada_35
+  - first:
+      213: -6862483218165152713
+    second: arvore_podada_36
+  - first:
+      213: 381875620354906261
+    second: arvore_podada_37
+  - first:
+      213: 3705381373593144182
+    second: arvore_podada_38
+  - first:
+      213: -7907671501038324894
+    second: arvore_podada_39
+  - first:
+      213: 5578888264036453895
+    second: arvore_podada_40
+  - first:
+      213: -24802761926573896
+    second: arvore_podada_41
+  - first:
+      213: 3860174809141166874
+    second: arvore_podada_42
+  - first:
+      213: -298394198735451398
+    second: arvore_podada_43
+  - first:
+      213: -4685038656779277885
+    second: arvore_podada_44
+  - first:
+      213: -7090382978928426612
+    second: arvore_podada_45
+  - first:
+      213: 5138679681852969651
+    second: arvore_podada_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.499413, y: 0.092044}
+  spritePixelsToUnits: 567.5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arvore_podada_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 1162
+        height: 1262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1c0b78276052f80800000000000000
+      internalID: -8132086463175016005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_1
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1219
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeec035abf9e1d480800000000000000
+      internalID: -8876056123553034514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_2
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1257
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0184c9a329a4f80800000000000000
+      internalID: -8121518197581541167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_3
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1221
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dba77fdebd5c8800800000000000000
+      internalID: 615970323417246678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_4
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1201
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90134d232e0d84a0800000000000000
+      internalID: -6589595135527153506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_5
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1185
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ca9727326fb3350800000000000000
+      internalID: 5997657960878812237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_6
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1153
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731663619bf76b550800000000000000
+      internalID: 6176264371903553847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1119
+        width: 62
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b9778282fd620f0800000000000000
+      internalID: -1141980091921228929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_8
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 1121
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6174d47d20a806370800000000000000
+      internalID: 8313796656932669206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_9
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 991
+        width: 72
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a26d7a0b0357c800800000000000000
+      internalID: 632565579554579108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_10
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 970
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c844fb8502ec040800000000000000
+      internalID: 4669705429167934538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_11
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 961
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e21e9ee9656f960800000000000000
+      internalID: 7635385458781924974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_12
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 952
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b56a338cb16f76b0800000000000000
+      internalID: -5296407174481025610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_13
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 928
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ab4a7328edb3510800000000000000
+      internalID: 1530061149283072616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 856
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214e8c90a43d490f0800000000000000
+      internalID: -1111030893108468718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_15
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 893
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb44dc849bc73b20800000000000000
+      internalID: 3114181506228308969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_16
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 871
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5b6fc2d2bef7640800000000000000
+      internalID: 5080037483957630445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_17
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 870
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da3cc5526466b7c0800000000000000
+      internalID: -4055944040891532592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_18
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 846
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa3bf1d9a941a520800000000000000
+      internalID: 2711529444374952621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_19
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 816
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2e7bce5483f2120800000000000000
+      internalID: 2391191800132395757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_20
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 816
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0975893fa18b80980800000000000000
+      internalID: -8572399464804231280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_21
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 808
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df69e45f897111d10800000000000000
+      internalID: 2094481247422027517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_22
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 781
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbf20a436721e0b0800000000000000
+      internalID: -5701232345877382183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_23
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 770
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb35e111baa7efc10800000000000000
+      internalID: 2089242152291685311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_24
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 760
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814f954e694cd1630800000000000000
+      internalID: 3899489004727956504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_25
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 662
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed5564738245c460800000000000000
+      internalID: 7261283106565742056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_26
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 654
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541f3840407f7c920800000000000000
+      internalID: 3010646472548151621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_27
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 640
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9db67ad70717aeb0800000000000000
+      internalID: -4708769562895139425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 66
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679f280aa20a82ef0800000000000000
+      internalID: -132680084065420938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_29
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 560
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9311ac3c9066a7650800000000000000
+      internalID: 6231405226546041145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_30
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 544
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6fc6d0cb261d290800000000000000
+      internalID: -7867398514220927255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_31
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 530
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e661fedff5a2ac40800000000000000
+      internalID: 5522158611485255398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_32
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 534
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba90544043096aa90800000000000000
+      internalID: -7302991192650348117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_33
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 530
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878786b09b95af740800000000000000
+      internalID: 5186556572165765240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_34
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 488
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3eaccf4f12f19c0800000000000000
+      internalID: -3954404611711114280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_35
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 478
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127b0330de3233920800000000000000
+      internalID: 2968756080235034401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_36
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 464
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734cf204fdf83c0a0800000000000000
+      internalID: -6862483218165152713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_37
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 442
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598d2ab7ad1bc4500800000000000000
+      internalID: 381875620354906261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_38
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 446
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b4e523ab82c6330800000000000000
+      internalID: 3705381373593144182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_39
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 430
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263712c9aae424290800000000000000
+      internalID: -7907671501038324894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_40
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 446
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e0d7361513c6d40800000000000000
+      internalID: 5578888264036453895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_41
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 434
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b00be9f402e7aff0800000000000000
+      internalID: -24802761926573896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_42
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 416
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1345cd6988129530800000000000000
+      internalID: 3860174809141166874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_43
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa0655ae04ebdbf0800000000000000
+      internalID: -298394198735451398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_44
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 398
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9a2bff9266bfeb0800000000000000
+      internalID: -4685038656779277885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_45
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 376
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81ce734f36e99d90800000000000000
+      internalID: -7090382978928426612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arvore_podada_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b21d5bd1f1405740800000000000000
+      internalID: 5138679681852969651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arvore_podada_0: -8132086463175016005
+      arvore_podada_1: -8876056123553034514
+      arvore_podada_10: 4669705429167934538
+      arvore_podada_11: 7635385458781924974
+      arvore_podada_12: -5296407174481025610
+      arvore_podada_13: 1530061149283072616
+      arvore_podada_14: -1111030893108468718
+      arvore_podada_15: 3114181506228308969
+      arvore_podada_16: 5080037483957630445
+      arvore_podada_17: -4055944040891532592
+      arvore_podada_18: 2711529444374952621
+      arvore_podada_19: 2391191800132395757
+      arvore_podada_2: -8121518197581541167
+      arvore_podada_20: -8572399464804231280
+      arvore_podada_21: 2094481247422027517
+      arvore_podada_22: -5701232345877382183
+      arvore_podada_23: 2089242152291685311
+      arvore_podada_24: 3899489004727956504
+      arvore_podada_25: 7261283106565742056
+      arvore_podada_26: 3010646472548151621
+      arvore_podada_27: -4708769562895139425
+      arvore_podada_28: -132680084065420938
+      arvore_podada_29: 6231405226546041145
+      arvore_podada_3: 615970323417246678
+      arvore_podada_30: -7867398514220927255
+      arvore_podada_31: 5522158611485255398
+      arvore_podada_32: -7302991192650348117
+      arvore_podada_33: 5186556572165765240
+      arvore_podada_34: -3954404611711114280
+      arvore_podada_35: 2968756080235034401
+      arvore_podada_36: -6862483218165152713
+      arvore_podada_37: 381875620354906261
+      arvore_podada_38: 3705381373593144182
+      arvore_podada_39: -7907671501038324894
+      arvore_podada_4: -6589595135527153506
+      arvore_podada_40: 5578888264036453895
+      arvore_podada_41: -24802761926573896
+      arvore_podada_42: 3860174809141166874
+      arvore_podada_43: -298394198735451398
+      arvore_podada_44: -4685038656779277885
+      arvore_podada_45: -7090382978928426612
+      arvore_podada_46: 5138679681852969651
+      arvore_podada_5: 5997657960878812237
+      arvore_podada_6: 6176264371903553847
+      arvore_podada_7: -1141980091921228929
+      arvore_podada_8: 8313796656932669206
+      arvore_podada_9: 632565579554579108
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

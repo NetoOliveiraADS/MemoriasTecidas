@@ -1,0 +1,7 @@
+CONFERENCIA DA EXPANSAO URBANA V2.4
+Entrada da cidade: 15301 células acessíveis; interações e chegadas livres.
+Largo da Vila · Ponta da Rua: 19714 células acessíveis; interações e chegadas livres.
+Mercado Público: 16452 células acessíveis; interações e chegadas livres.
+Prefeitura e Praça: 16618 células acessíveis; interações e chegadas livres.
+Grafo com ida e volta e cinco eventos essenciais do Mercado preservados.
+A conferência é estática. Verifique movimento, animação, iluminação e trocas de região no Play.

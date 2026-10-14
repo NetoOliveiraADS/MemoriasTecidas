@@ -1,0 +1,1365 @@
+fileFormatVersion: 2
+guid: 2d73de01d03167c4d841ea50b076c4b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6913461195549330233
+    second: mobiliario_praca_0
+  - first:
+      213: -8309634757970437292
+    second: mobiliario_praca_1
+  - first:
+      213: 6155579285036944961
+    second: mobiliario_praca_2
+  - first:
+      213: -7558117006318017757
+    second: mobiliario_praca_3
+  - first:
+      213: -8474587581656644133
+    second: mobiliario_praca_4
+  - first:
+      213: 8836860999840746874
+    second: mobiliario_praca_5
+  - first:
+      213: -6151880908666558942
+    second: mobiliario_praca_6
+  - first:
+      213: -1630830027080280994
+    second: mobiliario_praca_7
+  - first:
+      213: 5267547383000108829
+    second: mobiliario_praca_8
+  - first:
+      213: 300206013568723811
+    second: mobiliario_praca_9
+  - first:
+      213: 4586823160407203594
+    second: mobiliario_praca_10
+  - first:
+      213: -7850135287255260120
+    second: mobiliario_praca_11
+  - first:
+      213: -5967163653237349293
+    second: mobiliario_praca_12
+  - first:
+      213: 9049925492271907408
+    second: mobiliario_praca_13
+  - first:
+      213: -5830057297263706980
+    second: mobiliario_praca_14
+  - first:
+      213: 4992658539174322211
+    second: mobiliario_praca_15
+  - first:
+      213: -1080088746308951965
+    second: mobiliario_praca_16
+  - first:
+      213: 1612458478703719
+    second: mobiliario_praca_17
+  - first:
+      213: 1095355538046511434
+    second: mobiliario_praca_18
+  - first:
+      213: -3914777629390496592
+    second: mobiliario_praca_19
+  - first:
+      213: 5408575531369932613
+    second: mobiliario_praca_20
+  - first:
+      213: -661539076502415825
+    second: mobiliario_praca_21
+  - first:
+      213: -3231257068341867670
+    second: mobiliario_praca_22
+  - first:
+      213: 1658883093601460886
+    second: mobiliario_praca_23
+  - first:
+      213: 6804381787000784743
+    second: mobiliario_praca_24
+  - first:
+      213: -7556948241554985321
+    second: mobiliario_praca_25
+  - first:
+      213: -1583159255461178738
+    second: mobiliario_praca_26
+  - first:
+      213: -1255823807806070298
+    second: mobiliario_praca_27
+  - first:
+      213: 4063692738879611660
+    second: mobiliario_praca_28
+  - first:
+      213: -4176686751607078488
+    second: mobiliario_praca_29
+  - first:
+      213: 6571214272208069493
+    second: mobiliario_praca_30
+  - first:
+      213: -2504725291212688903
+    second: mobiliario_praca_31
+  - first:
+      213: 8131541222260175123
+    second: mobiliario_praca_32
+  - first:
+      213: -4612356521570284341
+    second: mobiliario_praca_33
+  - first:
+      213: 6704260614393803557
+    second: mobiliario_praca_34
+  - first:
+      213: -8576787660089555730
+    second: mobiliario_praca_35
+  - first:
+      213: 4285233292133000261
+    second: mobiliario_praca_36
+  - first:
+      213: -1164532882383303634
+    second: mobiliario_praca_37
+  - first:
+      213: 7497054336815654772
+    second: mobiliario_praca_38
+  - first:
+      213: -1616406198250937427
+    second: mobiliario_praca_39
+  - first:
+      213: 4768812191627198175
+    second: mobiliario_praca_40
+  - first:
+      213: -4279229868000535866
+    second: mobiliario_praca_41
+  - first:
+      213: 8459210746631146926
+    second: mobiliario_praca_42
+  - first:
+      213: 5879795444580825684
+    second: mobiliario_praca_43
+  - first:
+      213: 2855166316386143914
+    second: mobiliario_praca_44
+  - first:
+      213: 2724639964162583856
+    second: mobiliario_praca_45
+  - first:
+      213: -5460230054309394117
+    second: mobiliario_praca_46
+  - first:
+      213: -1191873468962012067
+    second: mobiliario_praca_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mobiliario_praca_0
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1229
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4b5d6fba37e00a0800000000000000
+      internalID: -6913461195549330233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_1
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 393
+        width: 453
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bdee5c63f3eac80800000000000000
+      internalID: -8309634757970437292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_2
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1219
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e416ffeb20d6550800000000000000
+      internalID: 6155579285036944961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 869
+        width: 251
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323639b90ac2c1790800000000000000
+      internalID: -7558117006318017757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 960
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd54b69ae77346a80800000000000000
+      internalID: -8474587581656644133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 945
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7dc2097246d2aa70800000000000000
+      internalID: 8836860999840746874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 931
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2262c6a58e020aaa0800000000000000
+      internalID: -6151880908666558942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 961
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54d6da1bb02e59e0800000000000000
+      internalID: -1630830027080280994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 968
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f8249af661a1940800000000000000
+      internalID: 5267547383000108829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 939
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b233e57cb8a2400800000000000000
+      internalID: 300206013568723811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_10
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 939
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f1b93cc5ba7af30800000000000000
+      internalID: 4586823160407203594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 996
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824246c4c87be0390800000000000000
+      internalID: -7850135287255260120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1014
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3546a24d540603da0800000000000000
+      internalID: -5967163653237349293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_13
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1012
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0528e92694bc79d70800000000000000
+      internalID: 9049925492271907408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_14
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 942
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c3c60f6c9771fa0800000000000000
+      internalID: -5830057297263706980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_15
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 982
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3206e483d7c794540800000000000000
+      internalID: 4992658539174322211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_16
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1004
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360ab5ef101c201f0800000000000000
+      internalID: -1080088746308951965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_17
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 861
+        width: 104
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76496deb58ab50000800000000000000
+      internalID: 1612458478703719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 996
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49e404fe0c733f00800000000000000
+      internalID: 1095355538046511434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_19
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 998
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc9889cc7aeba9c0800000000000000
+      internalID: -3914777629390496592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_20
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1013
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547ac283ace1f0b40800000000000000
+      internalID: 5408575531369932613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_21
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 980
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26980407bdb1d6f0800000000000000
+      internalID: -661539076502415825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_22
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 951
+        width: 77
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b4387f0d44823d0800000000000000
+      internalID: -3231257068341867670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_23
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 524
+        width: 387
+        height: 691
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692240e6269850710800000000000000
+      internalID: 1658883093601460886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_24
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 934
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767c1522f250e6e50800000000000000
+      internalID: 6804381787000784743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_25
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 930
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e2a1cdc93502790800000000000000
+      internalID: -7556948241554985321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_26
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 907
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e825d5b8b0d770ae0800000000000000
+      internalID: -1583159255461178738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_27
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 875
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1ad3386ea629ee0800000000000000
+      internalID: -1255823807806070298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 214
+        width: 461
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03e0410403256830800000000000000
+      internalID: 4063692738879611660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 519
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a14168478d6906c0800000000000000
+      internalID: -4176686751607078488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_30
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 49
+        width: 253
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57360f59094a13b50800000000000000
+      internalID: 6571214272208069493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_31
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 558
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1b4554e9d6d3dd0800000000000000
+      internalID: -2504725291212688903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_32
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 24
+        width: 305
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311734da8a909d070800000000000000
+      internalID: 8131541222260175123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_33
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 492
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccc8525e2e9dffb0800000000000000
+      internalID: -4612356521570284341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_34
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 309
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523b59212815a0d50800000000000000
+      internalID: 6704260614393803557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_35
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 256
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4886e901129f880800000000000000
+      internalID: -8576787660089555730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_36
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 320
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544e34d99f4387b30800000000000000
+      internalID: 4285233292133000261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_37
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 0
+        width: 422
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c0840738fb6dfe0800000000000000
+      internalID: -1164532882383303634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_38
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 529
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477e2bfb233ea0860800000000000000
+      internalID: 7497054336815654772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 45
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da36384702f5199e0800000000000000
+      internalID: -1616406198250937427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_40
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 53
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdebd7a0c693e2240800000000000000
+      internalID: 4768812191627198175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_41
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 22
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca169d7b1f1d94c0800000000000000
+      internalID: -4279229868000535866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_42
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 15
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadcd11fa57256570800000000000000
+      internalID: 8459210746631146926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_43
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 71
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a333aedca399150800000000000000
+      internalID: 5879795444580825684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_44
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 79
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae4bde23a69f9720800000000000000
+      internalID: 2855166316386143914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_45
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 19
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d6eb49c9ddfc520800000000000000
+      internalID: 2724639964162583856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_46
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 22
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b390af4f1bd5934b0800000000000000
+      internalID: -5460230054309394117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobiliario_praca_47
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d548e41156d957fe0800000000000000
+      internalID: -1191873468962012067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mobiliario_praca_0: -6913461195549330233
+      mobiliario_praca_1: -8309634757970437292
+      mobiliario_praca_10: 4586823160407203594
+      mobiliario_praca_11: -7850135287255260120
+      mobiliario_praca_12: -5967163653237349293
+      mobiliario_praca_13: 9049925492271907408
+      mobiliario_praca_14: -5830057297263706980
+      mobiliario_praca_15: 4992658539174322211
+      mobiliario_praca_16: -1080088746308951965
+      mobiliario_praca_17: 1612458478703719
+      mobiliario_praca_18: 1095355538046511434
+      mobiliario_praca_19: -3914777629390496592
+      mobiliario_praca_2: 6155579285036944961
+      mobiliario_praca_20: 5408575531369932613
+      mobiliario_praca_21: -661539076502415825
+      mobiliario_praca_22: -3231257068341867670
+      mobiliario_praca_23: 1658883093601460886
+      mobiliario_praca_24: 6804381787000784743
+      mobiliario_praca_25: -7556948241554985321
+      mobiliario_praca_26: -1583159255461178738
+      mobiliario_praca_27: -1255823807806070298
+      mobiliario_praca_28: 4063692738879611660
+      mobiliario_praca_29: -4176686751607078488
+      mobiliario_praca_3: -7558117006318017757
+      mobiliario_praca_30: 6571214272208069493
+      mobiliario_praca_31: -2504725291212688903
+      mobiliario_praca_32: 8131541222260175123
+      mobiliario_praca_33: -4612356521570284341
+      mobiliario_praca_34: 6704260614393803557
+      mobiliario_praca_35: -8576787660089555730
+      mobiliario_praca_36: 4285233292133000261
+      mobiliario_praca_37: -1164532882383303634
+      mobiliario_praca_38: 7497054336815654772
+      mobiliario_praca_39: -1616406198250937427
+      mobiliario_praca_4: -8474587581656644133
+      mobiliario_praca_40: 4768812191627198175
+      mobiliario_praca_41: -4279229868000535866
+      mobiliario_praca_42: 8459210746631146926
+      mobiliario_praca_43: 5879795444580825684
+      mobiliario_praca_44: 2855166316386143914
+      mobiliario_praca_45: 2724639964162583856
+      mobiliario_praca_46: -5460230054309394117
+      mobiliario_praca_47: -1191873468962012067
+      mobiliario_praca_5: 8836860999840746874
+      mobiliario_praca_6: -6151880908666558942
+      mobiliario_praca_7: -1630830027080280994
+      mobiliario_praca_8: 5267547383000108829
+      mobiliario_praca_9: 300206013568723811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

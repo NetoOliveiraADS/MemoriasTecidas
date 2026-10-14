@@ -1,0 +1,857 @@
+{
+  "entradas": [
+    {
+      "id": "jogador",
+      "textura": "jogador_oito_direcoes.png",
+      "alturaMundo": 1.78,
+      "quadros": [
+        {
+          "x": 135,
+          "y": 1344,
+          "largura": 89,
+          "altura": 190,
+          "pivotX": 0.50562,
+          "pivotY": 0.01053
+        },
+        {
+          "x": 356,
+          "y": 1342,
+          "largura": 94,
+          "altura": 192,
+          "pivotX": 0.51596,
+          "pivotY": 0.01042
+        },
+        {
+          "x": 577,
+          "y": 1343,
+          "largura": 95,
+          "altura": 191,
+          "pivotX": 0.52105,
+          "pivotY": 0.01047
+        },
+        {
+          "x": 819,
+          "y": 1342,
+          "largura": 91,
+          "altura": 192,
+          "pivotX": 0.41758,
+          "pivotY": 0.01042
+        },
+        {
+          "x": 134,
+          "y": 1155,
+          "largura": 86,
+          "altura": 187,
+          "pivotX": 0.47093,
+          "pivotY": 0.00535
+        },
+        {
+          "x": 352,
+          "y": 1155,
+          "largura": 94,
+          "altura": 187,
+          "pivotX": 0.40426,
+          "pivotY": 0.00535
+        },
+        {
+          "x": 578,
+          "y": 1155,
+          "largura": 102,
+          "altura": 187,
+          "pivotX": 0.37255,
+          "pivotY": 0.0107
+        },
+        {
+          "x": 819,
+          "y": 1155,
+          "largura": 95,
+          "altura": 187,
+          "pivotX": 0.37368,
+          "pivotY": 0.0107
+        },
+        {
+          "x": 138,
+          "y": 964,
+          "largura": 87,
+          "altura": 190,
+          "pivotX": 0.36236,
+          "pivotY": 0.01053
+        },
+        {
+          "x": 345,
+          "y": 963,
+          "largura": 106,
+          "altura": 192,
+          "pivotX": 0.45755,
+          "pivotY": 0.01042
+        },
+        {
+          "x": 573,
+          "y": 963,
+          "largura": 108,
+          "altura": 192,
+          "pivotX": 0.44907,
+          "pivotY": 0.01042
+        },
+        {
+          "x": 815,
+          "y": 963,
+          "largura": 107,
+          "altura": 192,
+          "pivotX": 0.4465,
+          "pivotY": 0.00521
+        },
+        {
+          "x": 125,
+          "y": 767,
+          "largura": 91,
+          "altura": 196,
+          "pivotX": 0.55495,
+          "pivotY": 0.0102
+        },
+        {
+          "x": 337,
+          "y": 767,
+          "largura": 115,
+          "altura": 196,
+          "pivotX": 0.33043,
+          "pivotY": 0.0051
+        },
+        {
+          "x": 559,
+          "y": 767,
+          "largura": 120,
+          "altura": 196,
+          "pivotX": 0.29729,
+          "pivotY": 0.0051
+        },
+        {
+          "x": 804,
+          "y": 767,
+          "largura": 116,
+          "altura": 196,
+          "pivotX": 0.34483,
+          "pivotY": 0
+        },
+        {
+          "x": 120,
+          "y": 575,
+          "largura": 99,
+          "altura": 192,
+          "pivotX": 0.51515,
+          "pivotY": 0.00521
+        },
+        {
+          "x": 349,
+          "y": 575,
+          "largura": 101,
+          "altura": 192,
+          "pivotX": 0.38614,
+          "pivotY": 0.01042
+        },
+        {
+          "x": 573,
+          "y": 575,
+          "largura": 105,
+          "altura": 192,
+          "pivotX": 0.405,
+          "pivotY": 0.00521
+        },
+        {
+          "x": 810,
+          "y": 575,
+          "largura": 106,
+          "altura": 192,
+          "pivotX": 0.45283,
+          "pivotY": 0.00521
+        },
+        {
+          "x": 120,
+          "y": 383,
+          "largura": 94,
+          "altura": 192,
+          "pivotX": 0.59574,
+          "pivotY": 0.01042
+        },
+        {
+          "x": 341,
+          "y": 383,
+          "largura": 106,
+          "altura": 192,
+          "pivotX": 0.5,
+          "pivotY": 0.01042
+        },
+        {
+          "x": 568,
+          "y": 382,
+          "largura": 110,
+          "altura": 193,
+          "pivotX": 0.24545,
+          "pivotY": 0
+        },
+        {
+          "x": 813,
+          "y": 382,
+          "largura": 105,
+          "altura": 193,
+          "pivotX": 0.40476,
+          "pivotY": 0
+        },
+        {
+          "x": 117,
+          "y": 191,
+          "largura": 93,
+          "altura": 191,
+          "pivotX": 0.55914,
+          "pivotY": 0.00524
+        },
+        {
+          "x": 344,
+          "y": 192,
+          "largura": 112,
+          "altura": 190,
+          "pivotX": 0.50893,
+          "pivotY": 0.01053
+        },
+        {
+          "x": 566,
+          "y": 191,
+          "largura": 112,
+          "altura": 191,
+          "pivotX": 0.49554,
+          "pivotY": 0.00524
+        },
+        {
+          "x": 809,
+          "y": 191,
+          "largura": 113,
+          "altura": 191,
+          "pivotX": 0.51593,
+          "pivotY": 0.01047
+        },
+        {
+          "x": 126,
+          "y": 5,
+          "largura": 92,
+          "altura": 186,
+          "pivotX": 0.55516,
+          "pivotY": 0.01075
+        },
+        {
+          "x": 350,
+          "y": 7,
+          "largura": 104,
+          "altura": 184,
+          "pivotX": 0.60096,
+          "pivotY": 0.01087
+        },
+        {
+          "x": 575,
+          "y": 5,
+          "largura": 101,
+          "altura": 186,
+          "pivotX": 0.64356,
+          "pivotY": 0.01075
+        },
+        {
+          "x": 809,
+          "y": 4,
+          "largura": 108,
+          "altura": 187,
+          "pivotX": 0.62963,
+          "pivotY": 0.0107
+        }
+      ]
+    },
+    {
+      "id": "neto",
+      "textura": "moradores_0.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 136,
+          "y": 1250,
+          "largura": 132,
+          "altura": 279,
+          "pivotX": 0.50379,
+          "pivotY": 0.00717
+        },
+        {
+          "x": 433,
+          "y": 1253,
+          "largura": 146,
+          "altura": 275,
+          "pivotX": 0.5411,
+          "pivotY": 0.00727
+        },
+        {
+          "x": 747,
+          "y": 1250,
+          "largura": 138,
+          "altura": 279,
+          "pivotX": 0.52174,
+          "pivotY": 0.00358
+        }
+      ]
+    },
+    {
+      "id": "andre_lucio",
+      "textura": "moradores_0.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 123,
+          "y": 943,
+          "largura": 154,
+          "altura": 307,
+          "pivotX": 0.51948,
+          "pivotY": 0
+        },
+        {
+          "x": 439,
+          "y": 943,
+          "largura": 139,
+          "altura": 307,
+          "pivotX": 0.52158,
+          "pivotY": 0
+        },
+        {
+          "x": 731,
+          "y": 943,
+          "largura": 163,
+          "altura": 307,
+          "pivotX": 0.54908,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "feliciana",
+      "textura": "moradores_0.png",
+      "alturaMundo": 1.73,
+      "quadros": [
+        {
+          "x": 116,
+          "y": 610,
+          "largura": 174,
+          "altura": 333,
+          "pivotX": 0.48276,
+          "pivotY": 0
+        },
+        {
+          "x": 428,
+          "y": 610,
+          "largura": 177,
+          "altura": 333,
+          "pivotX": 0.47458,
+          "pivotY": 0
+        },
+        {
+          "x": 738,
+          "y": 610,
+          "largura": 180,
+          "altura": 333,
+          "pivotX": 0.48611,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "emilia",
+      "textura": "moradores_0.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 126,
+          "y": 288,
+          "largura": 149,
+          "altura": 322,
+          "pivotX": 0.5,
+          "pivotY": 0
+        },
+        {
+          "x": 441,
+          "y": 288,
+          "largura": 147,
+          "altura": 322,
+          "pivotX": 0.4966,
+          "pivotY": 0
+        },
+        {
+          "x": 741,
+          "y": 288,
+          "largura": 158,
+          "altura": 322,
+          "pivotX": 0.53481,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "ivonete",
+      "textura": "moradores_0.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 133,
+          "y": 4,
+          "largura": 137,
+          "altura": 284,
+          "pivotX": 0.49635,
+          "pivotY": 0.00704
+        },
+        {
+          "x": 442,
+          "y": 7,
+          "largura": 137,
+          "altura": 281,
+          "pivotX": 0.4927,
+          "pivotY": 0.00712
+        },
+        {
+          "x": 753,
+          "y": 6,
+          "largura": 181,
+          "altura": 282,
+          "pivotX": 0.39227,
+          "pivotY": 0.00709
+        }
+      ]
+    },
+    {
+      "id": "simao",
+      "textura": "moradores_1.png",
+      "alturaMundo": 1.86,
+      "quadros": [
+        {
+          "x": 126,
+          "y": 1149,
+          "largura": 209,
+          "altura": 378,
+          "pivotX": 0.54067,
+          "pivotY": 0
+        },
+        {
+          "x": 406,
+          "y": 1149,
+          "largura": 214,
+          "altura": 378,
+          "pivotX": 0.52804,
+          "pivotY": 0.00265
+        },
+        {
+          "x": 701,
+          "y": 1149,
+          "largura": 254,
+          "altura": 378,
+          "pivotX": 0.43701,
+          "pivotY": 0.00265
+        }
+      ]
+    },
+    {
+      "id": "raimundo",
+      "textura": "moradores_1.png",
+      "alturaMundo": 1.86,
+      "quadros": [
+        {
+          "x": 126,
+          "y": 770,
+          "largura": 217,
+          "altura": 379,
+          "pivotX": 0.51152,
+          "pivotY": 0
+        },
+        {
+          "x": 398,
+          "y": 770,
+          "largura": 236,
+          "altura": 379,
+          "pivotX": 0.55085,
+          "pivotY": 0
+        },
+        {
+          "x": 693,
+          "y": 770,
+          "largura": 235,
+          "altura": 379,
+          "pivotX": 0.54043,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "gerardinho",
+      "textura": "moradores_1.png",
+      "alturaMundo": 1.86,
+      "quadros": [
+        {
+          "x": 139,
+          "y": 380,
+          "largura": 185,
+          "altura": 390,
+          "pivotX": 0.51622,
+          "pivotY": 0
+        },
+        {
+          "x": 399,
+          "y": 380,
+          "largura": 221,
+          "altura": 390,
+          "pivotX": 0.57466,
+          "pivotY": 0
+        },
+        {
+          "x": 678,
+          "y": 380,
+          "largura": 237,
+          "altura": 390,
+          "pivotX": 0.5865,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "padre_duceu",
+      "textura": "moradores_1.png",
+      "alturaMundo": 1.86,
+      "quadros": [
+        {
+          "x": 118,
+          "y": 10,
+          "largura": 214,
+          "altura": 370,
+          "pivotX": 0.50935,
+          "pivotY": 0.00541
+        },
+        {
+          "x": 411,
+          "y": 10,
+          "largura": 213,
+          "altura": 370,
+          "pivotX": 0.50469,
+          "pivotY": 0.00541
+        },
+        {
+          "x": 684,
+          "y": 10,
+          "largura": 238,
+          "altura": 370,
+          "pivotX": 0.54622,
+          "pivotY": 0.00541
+        }
+      ]
+    },
+    {
+      "id": "artesa",
+      "textura": "moradores_2.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 173,
+          "y": 1235,
+          "largura": 141,
+          "altura": 293,
+          "pivotX": 0.53546,
+          "pivotY": 0.00341
+        },
+        {
+          "x": 439,
+          "y": 1235,
+          "largura": 144,
+          "altura": 293,
+          "pivotX": 0.54167,
+          "pivotY": 0
+        },
+        {
+          "x": 703,
+          "y": 1235,
+          "largura": 172,
+          "altura": 293,
+          "pivotX": 0.44477,
+          "pivotY": 0.00341
+        }
+      ]
+    },
+    {
+      "id": "guia",
+      "textura": "moradores_2.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 175,
+          "y": 941,
+          "largura": 141,
+          "altura": 294,
+          "pivotX": 0.53191,
+          "pivotY": 0
+        },
+        {
+          "x": 435,
+          "y": 941,
+          "largura": 155,
+          "altura": 294,
+          "pivotX": 0.51935,
+          "pivotY": 0
+        },
+        {
+          "x": 680,
+          "y": 941,
+          "largura": 180,
+          "altura": 294,
+          "pivotX": 0.58333,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "feirante",
+      "textura": "moradores_2.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 146,
+          "y": 630,
+          "largura": 175,
+          "altura": 311,
+          "pivotX": 0.52286,
+          "pivotY": 0
+        },
+        {
+          "x": 402,
+          "y": 630,
+          "largura": 196,
+          "altura": 311,
+          "pivotX": 0.58418,
+          "pivotY": 0
+        },
+        {
+          "x": 684,
+          "y": 630,
+          "largura": 226,
+          "altura": 311,
+          "pivotX": 0.42699,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "cida",
+      "textura": "moradores_2.png",
+      "alturaMundo": 1.73,
+      "quadros": [
+        {
+          "x": 155,
+          "y": 318,
+          "largura": 199,
+          "altura": 312,
+          "pivotX": 0.44724,
+          "pivotY": 0
+        },
+        {
+          "x": 424,
+          "y": 318,
+          "largura": 202,
+          "altura": 312,
+          "pivotX": 0.4552,
+          "pivotY": 0
+        },
+        {
+          "x": 682,
+          "y": 318,
+          "largura": 220,
+          "altura": 312,
+          "pivotX": 0.48864,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "zeca",
+      "textura": "moradores_2.png",
+      "alturaMundo": 1.83,
+      "quadros": [
+        {
+          "x": 173,
+          "y": 8,
+          "largura": 162,
+          "altura": 310,
+          "pivotX": 0.42593,
+          "pivotY": 0.00645
+        },
+        {
+          "x": 435,
+          "y": 8,
+          "largura": 173,
+          "altura": 310,
+          "pivotX": 0.45954,
+          "pivotY": 0.00645
+        },
+        {
+          "x": 698,
+          "y": 8,
+          "largura": 181,
+          "altura": 310,
+          "pivotX": 0.49448,
+          "pivotY": 0.00645
+        }
+      ]
+    },
+    {
+      "id": "cachorro",
+      "textura": "animais.png",
+      "alturaMundo": 0.7,
+      "quadros": [
+        {
+          "x": 76,
+          "y": 796,
+          "largura": 310,
+          "altura": 215,
+          "pivotX": 0.38387,
+          "pivotY": 0.0093
+        },
+        {
+          "x": 443,
+          "y": 798,
+          "largura": 308,
+          "altura": 212,
+          "pivotX": 0.44318,
+          "pivotY": 0.00943
+        },
+        {
+          "x": 814,
+          "y": 797,
+          "largura": 310,
+          "altura": 213,
+          "pivotX": 0.44677,
+          "pivotY": 0.00939
+        },
+        {
+          "x": 1196,
+          "y": 798,
+          "largura": 295,
+          "altura": 214,
+          "pivotX": 0.41017,
+          "pivotY": 0.00935
+        }
+      ]
+    },
+    {
+      "id": "cachorro_costas",
+      "textura": "animais.png",
+      "alturaMundo": 0.7,
+      "quadros": [
+        {
+          "x": 146,
+          "y": 512,
+          "largura": 119,
+          "altura": 271,
+          "pivotX": 0.61345,
+          "pivotY": 0
+        },
+        {
+          "x": 526,
+          "y": 512,
+          "largura": 114,
+          "altura": 270,
+          "pivotX": 0.42105,
+          "pivotY": 0
+        },
+        {
+          "x": 904,
+          "y": 512,
+          "largura": 114,
+          "altura": 271,
+          "pivotX": 0.47368,
+          "pivotY": 0
+        },
+        {
+          "x": 1279,
+          "y": 512,
+          "largura": 120,
+          "altura": 271,
+          "pivotX": 0.36667,
+          "pivotY": 0
+        }
+      ]
+    },
+    {
+      "id": "gato",
+      "textura": "animais.png",
+      "alturaMundo": 0.53,
+      "quadros": [
+        {
+          "x": 44,
+          "y": 288,
+          "largura": 329,
+          "altura": 211,
+          "pivotX": 0.5076,
+          "pivotY": 0.00948
+        },
+        {
+          "x": 413,
+          "y": 287,
+          "largura": 336,
+          "altura": 225,
+          "pivotX": 0.52679,
+          "pivotY": 0.00889
+        },
+        {
+          "x": 810,
+          "y": 288,
+          "largura": 322,
+          "altura": 224,
+          "pivotX": 0.49379,
+          "pivotY": 0.00893
+        },
+        {
+          "x": 1177,
+          "y": 289,
+          "largura": 315,
+          "altura": 223,
+          "pivotX": 0.55238,
+          "pivotY": 0.00897
+        }
+      ]
+    },
+    {
+      "id": "gato_costas",
+      "textura": "animais.png",
+      "alturaMundo": 0.53,
+      "quadros": [
+        {
+          "x": 103,
+          "y": 14,
+          "largura": 146,
+          "altura": 267,
+          "pivotX": 0.75342,
+          "pivotY": 0.00749
+        },
+        {
+          "x": 531,
+          "y": 14,
+          "largura": 147,
+          "altura": 267,
+          "pivotX": 0.27211,
+          "pivotY": 0.00749
+        },
+        {
+          "x": 879,
+          "y": 13,
+          "largura": 126,
+          "altura": 268,
+          "pivotX": 0.65873,
+          "pivotY": 0.00746
+        },
+        {
+          "x": 1290,
+          "y": 14,
+          "largura": 127,
+          "altura": 267,
+          "pivotX": 0.40157,
+          "pivotY": 0.00749
+        }
+      ]
+    }
+  ]
+}

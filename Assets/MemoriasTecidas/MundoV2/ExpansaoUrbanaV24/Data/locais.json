@@ -1,0 +1,4134 @@
+{
+  "versao": 243,
+  "locais": [
+    {
+      "id": "entrada",
+      "nome": "Entrada da cidade",
+      "descricao": "Letreiro, esculturas e entroncamento inspirados nas seis imagens da entrada. Composição de jogo, sem escala geográfica.",
+      "largura": 80,
+      "altura": 52,
+      "seguroX": 0,
+      "seguroY": -6,
+      "mapaX": 0,
+      "mapaY": 1,
+      "pisos": [
+        {
+          "nome": "Base de asfalto",
+          "textura": "asfalto",
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 52,
+          "ordem": -30000,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 8
+        },
+        {
+          "nome": "Passeio ao norte",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 18,
+          "w": 80,
+          "h": 16,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Passeio ao sul",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": -18.5,
+          "w": 80,
+          "h": 15,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Meio-fio amarelo",
+          "textura": "",
+          "x": -13,
+          "y": 4,
+          "w": 26,
+          "h": 11,
+          "ordem": -29490,
+          "r": 0.73,
+          "g": 0.57,
+          "b": 0.21,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Piso do canteiro",
+          "textura": "mosaico_praca",
+          "x": -13,
+          "y": 4,
+          "w": 25.6,
+          "h": 10.6,
+          "ordem": -29480,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 31,
+          "y": -7.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 31,
+          "y": -6.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 31,
+          "y": -5.9,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 31,
+          "y": -5.0,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 31,
+          "y": -4.1,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 31,
+          "y": -3.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 31,
+          "y": -2.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -29,
+          "y": -7.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -29,
+          "y": -6.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -29,
+          "y": -5.9,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -29,
+          "y": -5.0,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -29,
+          "y": -4.1,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -29,
+          "y": -3.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -29,
+          "y": -2.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        }
+      ],
+      "objetos": [
+        {
+          "id": "urb_letreiro",
+          "nome": "Letreiro EU AMO JAGUARUANA",
+          "x": -13,
+          "y": 1.6,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_escultura_azul",
+          "nome": "urb_escultura_azul",
+          "x": -21,
+          "y": 6.5,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_monumento_entrada_duas_figuras",
+          "nome": "Monumento da entrada - duas figuras",
+          "x": -5,
+          "y": 6.5,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": -14,
+          "y": 7.7,
+          "escala": 0.73,
+          "flipX": false
+        },
+        {
+          "id": "urb_posto",
+          "nome": "Posto da entrada",
+          "x": 24,
+          "y": 12,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_mercearia",
+          "nome": "urb_mercearia",
+          "x": -29,
+          "y": 17,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": -13,
+          "y": 18,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": 3,
+          "y": 18,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_sobrado",
+          "nome": "urb_sobrado",
+          "x": -29,
+          "y": -23,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": -11,
+          "y": -23,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_mercearia",
+          "nome": "urb_mercearia",
+          "x": 12,
+          "y": -23,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": 29,
+          "y": -23,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": -33,
+          "y": -14,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": 5,
+          "y": -14,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": 33,
+          "y": -14,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": -29,
+          "y": 11,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": 3,
+          "y": 10,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": -29,
+          "y": -12,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": 27,
+          "y": -12,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": -25,
+          "y": -14,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": 7,
+          "y": -14,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": 10,
+          "y": 11,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "moto",
+          "nome": "moto",
+          "x": 23,
+          "y": 9,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "bicicleta",
+          "nome": "bicicleta",
+          "x": -28,
+          "y": 14,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "lixeiras",
+          "x": 8,
+          "y": -14,
+          "escala": 1,
+          "flipX": false
+        }
+      ],
+      "moverPontos": [
+        {
+          "id": "placa_entrada",
+          "x": -13,
+          "y": 0.2
+        },
+        {
+          "id": "entrada_para_praca",
+          "x": 36,
+          "y": -6
+        },
+        {
+          "id": "entrada_para_largo",
+          "x": -36,
+          "y": -6
+        }
+      ],
+      "novosPontos": [
+        {
+          "id": "placa_entrada",
+          "nome": "Bem-vindo a Jaguaruana",
+          "tipo": "conversa",
+          "x": -13,
+          "y": 0.2,
+          "evento": "boas_vindas",
+          "falas": [
+            "O nome da cidade marca o começo desta caminhada. Que lembranças você vai levar daqui?",
+            "Siga pelas passagens para conhecer o Largo da Vila e a Praça Matriz."
+          ],
+          "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
+          "condicao": "",
+          "noturno": false
+        },
+        {
+          "id": "v24_esculturas",
+          "nome": "Esculturas da entrada",
+          "tipo": "conversa",
+          "x": -23,
+          "y": 5.5,
+          "evento": "v24_v24_esculturas",
+          "falas": [
+            "As esculturas e o letreiro dividem este ponto de chegada. Observe os detalhes antes de continuar a caminhada."
+          ],
+          "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
+          "condicao": "",
+          "noturno": false
+        }
+      ]
+    },
+    {
+      "id": "largo",
+      "nome": "Largo da Vila · Ponta da Rua",
+      "descricao": "Avenida inspirada nas quatro imagens identificadas pela equipe como Largo da Vila / Ponta da Rua. Canteiro, fachadas e travessias adaptados ao RPG.",
+      "largura": 96,
+      "altura": 56,
+      "seguroX": 0,
+      "seguroY": -6,
+      "mapaX": 0,
+      "mapaY": 0,
+      "pisos": [
+        {
+          "nome": "Base de asfalto",
+          "textura": "asfalto",
+          "x": 0,
+          "y": 0,
+          "w": 96,
+          "h": 56,
+          "ordem": -30000,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 8
+        },
+        {
+          "nome": "Passeio largo",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": -14,
+          "w": 96,
+          "h": 7,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Passeio largo",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 12,
+          "w": 96,
+          "h": 7,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Meio-fio amarelo",
+          "textura": "",
+          "x": -33,
+          "y": 0,
+          "w": 21,
+          "h": 3.3,
+          "ordem": -29490,
+          "r": 0.73,
+          "g": 0.57,
+          "b": 0.21,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Piso do canteiro",
+          "textura": "mosaico_praca",
+          "x": -33,
+          "y": 0,
+          "w": 20.6,
+          "h": 2.9,
+          "ordem": -29480,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Meio-fio amarelo",
+          "textura": "",
+          "x": 0,
+          "y": 0,
+          "w": 26,
+          "h": 3.3,
+          "ordem": -29490,
+          "r": 0.73,
+          "g": 0.57,
+          "b": 0.21,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Piso do canteiro",
+          "textura": "mosaico_praca",
+          "x": 0,
+          "y": 0,
+          "w": 25.6,
+          "h": 2.9,
+          "ordem": -29480,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Meio-fio amarelo",
+          "textura": "",
+          "x": 33,
+          "y": 0,
+          "w": 21,
+          "h": 3.3,
+          "ordem": -29490,
+          "r": 0.73,
+          "g": 0.57,
+          "b": 0.21,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Piso do canteiro",
+          "textura": "mosaico_praca",
+          "x": 33,
+          "y": 0,
+          "w": 20.6,
+          "h": 2.9,
+          "ordem": -29480,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": -8.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": -7.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": -6.4,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": -5.5,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": -4.6,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": -3.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": -2.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": 2.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": 3.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": 4.6,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": 5.5,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": 6.4,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": 7.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -18,
+          "y": 8.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": -8.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": -7.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": -6.4,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": -5.5,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": -4.6,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": -3.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": -2.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": 2.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": 3.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": 4.6,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": 5.5,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": 6.4,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": 7.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 18,
+          "y": 8.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        }
+      ],
+      "objetos": [
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": -39,
+          "y": 0,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "Iluminacao do canteiro",
+          "x": -35.5,
+          "y": 0,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": -29,
+          "y": 0,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": -9,
+          "y": 0,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "Iluminacao do canteiro",
+          "x": -5.5,
+          "y": 0,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": 3,
+          "y": 0,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": 25,
+          "y": 0,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "Iluminacao do canteiro",
+          "x": 28.5,
+          "y": 0,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": 37,
+          "y": 0,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "urb_mercearia",
+          "nome": "urb_mercearia",
+          "x": -39,
+          "y": 15,
+          "escala": 0.96,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": -39,
+          "y": -25,
+          "escala": 0.92,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": -26,
+          "y": 15,
+          "escala": 0.96,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": -26,
+          "y": -25,
+          "escala": 0.92,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": -13,
+          "y": 15,
+          "escala": 0.96,
+          "flipX": false
+        },
+        {
+          "id": "urb_sobrado",
+          "nome": "urb_sobrado",
+          "x": -13,
+          "y": -25,
+          "escala": 0.92,
+          "flipX": false
+        },
+        {
+          "id": "urb_sobrado",
+          "nome": "urb_sobrado",
+          "x": 0,
+          "y": 15,
+          "escala": 0.96,
+          "flipX": false
+        },
+        {
+          "id": "urb_mercearia",
+          "nome": "urb_mercearia",
+          "x": 0,
+          "y": -25,
+          "escala": 0.92,
+          "flipX": false
+        },
+        {
+          "id": "urb_mercearia",
+          "nome": "urb_mercearia",
+          "x": 13,
+          "y": 15,
+          "escala": 0.96,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": 13,
+          "y": -25,
+          "escala": 0.92,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": 26,
+          "y": 15,
+          "escala": 0.96,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": 26,
+          "y": -25,
+          "escala": 0.92,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": 39,
+          "y": 15,
+          "escala": 0.96,
+          "flipX": false
+        },
+        {
+          "id": "urb_sobrado",
+          "nome": "urb_sobrado",
+          "x": 39,
+          "y": -25,
+          "escala": 0.92,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": -40,
+          "y": -14,
+          "escala": 0.78,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": -27,
+          "y": -14,
+          "escala": 0.78,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": -14,
+          "y": -14,
+          "escala": 0.78,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": 14,
+          "y": -14,
+          "escala": 0.78,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": 27,
+          "y": -14,
+          "escala": 0.78,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": 40,
+          "y": -14,
+          "escala": 0.78,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": -20,
+          "y": 11,
+          "escala": 0.72,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": 18,
+          "y": 11,
+          "escala": 0.72,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": -33,
+          "y": -13,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": -7,
+          "y": -13,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": 21,
+          "y": -13,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "lixeiras",
+          "x": -31,
+          "y": 0,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "lixeiras",
+          "x": 10,
+          "y": 0,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "lixeiras",
+          "x": 33,
+          "y": 0,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "moto",
+          "nome": "moto",
+          "x": -33,
+          "y": 11,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "moto",
+          "nome": "moto",
+          "x": 20,
+          "y": 11,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "bicicleta",
+          "nome": "bicicleta",
+          "x": -5,
+          "y": -13,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "mesa_cadeiras",
+          "nome": "mesa_cadeiras",
+          "x": 6,
+          "y": 12,
+          "escala": 1,
+          "flipX": false
+        }
+      ],
+      "moverPontos": [
+        {
+          "id": "largo_para_entrada",
+          "x": -44,
+          "y": -6
+        },
+        {
+          "id": "largo_para_praca",
+          "x": 44,
+          "y": -6
+        },
+        {
+          "id": "largo_encontros",
+          "x": 0,
+          "y": -4
+        },
+        {
+          "id": "largo_calcadas",
+          "x": -33,
+          "y": -14.2
+        }
+      ],
+      "novosPontos": [
+        {
+          "id": "largo_encontros",
+          "nome": "Largo da Vila · Ponta da Rua",
+          "tipo": "conversa",
+          "x": 0,
+          "y": -4,
+          "evento": "largo_encontros",
+          "falas": [
+            "As calçadas, as fachadas e o canteiro ajudam a reconhecer este trecho da cidade.",
+            "Caminhe entre os quarteirões e procure um lugar à sombra para observar a rua."
+          ],
+          "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
+          "condicao": "",
+          "noturno": false
+        },
+        {
+          "id": "largo_calcadas",
+          "nome": "Histórias de calçada",
+          "tipo": "conversa",
+          "x": -33,
+          "y": -14.2,
+          "evento": "largo_calcadas",
+          "falas": [
+            "Há memórias nas conversas de calçada e nos caminhos repetidos todos os dias.",
+            "Que mudança neste lugar você gostaria de registrar?"
+          ],
+          "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
+          "condicao": "",
+          "noturno": false
+        }
+      ]
+    },
+    {
+      "id": "mercado",
+      "nome": "Mercado Público",
+      "descricao": "Mercado inspirado nas duas fotografias: fachada creme e verde, portas e cobertura frontal. As três encomendas e os encontros anteriores são mantidos.",
+      "largura": 80,
+      "altura": 56,
+      "seguroX": 0,
+      "seguroY": -6,
+      "mapaX": 2,
+      "mapaY": 1,
+      "pisos": [
+        {
+          "nome": "Base de asfalto",
+          "textura": "asfalto",
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 56,
+          "ordem": -30000,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 8
+        },
+        {
+          "nome": "Passeio e patio do mercado",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 12,
+          "w": 80,
+          "h": 27,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Passeio oposto",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": -18,
+          "w": 80,
+          "h": 20,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -30,
+          "y": -7.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -30,
+          "y": -6.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -30,
+          "y": -5.9,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -30,
+          "y": -5.0,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -30,
+          "y": -4.1,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -30,
+          "y": -3.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": -30,
+          "y": -2.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 29,
+          "y": -7.7,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 29,
+          "y": -6.8,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 29,
+          "y": -5.9,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 29,
+          "y": -5.0,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 29,
+          "y": -4.1,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 29,
+          "y": -3.2,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        },
+        {
+          "nome": "Faixa de pedestre",
+          "textura": "",
+          "x": 29,
+          "y": -2.3,
+          "w": 3.2,
+          "h": 0.43,
+          "ordem": -29460,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.78,
+          "a": 1,
+          "repeticao": 6
+        }
+      ],
+      "objetos": [
+        {
+          "id": "urb_mercado",
+          "nome": "Mercado Publico",
+          "x": -2,
+          "y": 13,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_mercearia",
+          "nome": "urb_mercearia",
+          "x": -30,
+          "y": 16,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_sobrado",
+          "nome": "urb_sobrado",
+          "x": 28,
+          "y": 16,
+          "escala": 0.94,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": -30,
+          "y": -25,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "urb_loja",
+          "nome": "urb_loja",
+          "x": -14,
+          "y": -25,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": 3,
+          "y": -25,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": 21,
+          "y": -25,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "urb_casa",
+          "x": 33,
+          "y": -25,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "banca_frutas",
+          "nome": "Banca de encomendas",
+          "x": -20,
+          "y": 4,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banca_frutas",
+          "nome": "Banca de encomendas",
+          "x": -4,
+          "y": 4,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banca_frutas",
+          "nome": "Banca de encomendas",
+          "x": 12,
+          "y": 4,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": -29,
+          "y": 4,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "arvore_podada",
+          "x": 28,
+          "y": 4,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": -33,
+          "y": -11,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": -13,
+          "y": -11,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": 15,
+          "y": -11,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "poste_amarelo",
+          "nome": "poste_amarelo",
+          "x": 33,
+          "y": -11,
+          "escala": 0.95,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": -23,
+          "y": -14,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": 0,
+          "y": -14,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "banco_verde",
+          "x": 24,
+          "y": -14,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": -34,
+          "y": -16,
+          "escala": 0.85,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "carnauba",
+          "x": 33,
+          "y": -16,
+          "escala": 0.85,
+          "flipX": false
+        },
+        {
+          "id": "caixotes_frutas",
+          "nome": "caixotes_frutas",
+          "x": -25,
+          "y": 13,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "caixotes_frutas",
+          "nome": "caixotes_frutas",
+          "x": -27,
+          "y": 13,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "bicicleta",
+          "nome": "bicicleta",
+          "x": -29,
+          "y": 10,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "moto",
+          "nome": "moto",
+          "x": 22,
+          "y": 11,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "moto",
+          "nome": "moto",
+          "x": 26,
+          "y": 11,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "rede_tecida",
+          "nome": "rede_tecida",
+          "x": 29,
+          "y": 7,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "lixeiras",
+          "x": 17,
+          "y": -14,
+          "escala": 1,
+          "flipX": false
+        }
+      ],
+      "moverPontos": [
+        {
+          "id": "encomenda_1",
+          "x": -20,
+          "y": 2.7
+        },
+        {
+          "id": "encomenda_2",
+          "x": -4,
+          "y": 2.7
+        },
+        {
+          "id": "encomenda_3",
+          "x": 12,
+          "y": 2.7
+        },
+        {
+          "id": "npc_feirante",
+          "x": -4,
+          "y": 0
+        },
+        {
+          "id": "npc_raimundo",
+          "x": 24,
+          "y": 2
+        },
+        {
+          "id": "patio_cargas",
+          "x": -25,
+          "y": 11.6
+        },
+        {
+          "id": "mercado_para_praca",
+          "x": -36,
+          "y": -6
+        },
+        {
+          "id": "mercado_para_fabrica",
+          "x": 36,
+          "y": -6
+        },
+        {
+          "id": "mercado_para_rua",
+          "x": -36,
+          "y": 8
+        }
+      ],
+      "novosPontos": [
+        {
+          "id": "v24_mercado_para_prefeitura",
+          "nome": "Prefeitura e praça",
+          "tipo": "saida",
+          "x": 36,
+          "y": 8,
+          "destino": "prefeitura",
+          "chegadaX": 0,
+          "chegadaY": -6,
+          "evento": "",
+          "falas": [],
+          "condicao": "",
+          "fonte": "",
+          "noturno": false
+        }
+      ]
+    },
+    {
+      "id": "prefeitura",
+      "nome": "Prefeitura e Praça",
+      "descricao": "Praça adaptada das duas fotografias enviadas em 10/10/2026: monumento com relógio e estátua, postes curvos, piso geométrico claro e avermelhado, canteiros arredondados e pequenas coberturas azuis e amarelas. Escala, quantidade de objetos e posição dos percursos ajustadas ao jogo; não é levantamento topográfico.",
+      "largura": 80,
+      "altura": 56,
+      "seguroX": 0,
+      "seguroY": -6,
+      "mapaX": 4,
+      "mapaY": 1,
+      "pisos": [
+        {
+          "nome": "Ruas ao redor da praca",
+          "textura": "asfalto",
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 56,
+          "ordem": -30000,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 8
+        },
+        {
+          "nome": "Calcada sul",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": -26,
+          "w": 80,
+          "h": 3,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Calcada norte",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 22,
+          "w": 80,
+          "h": 11,
+          "ordem": -29500,
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Meio fio arredondado da praca",
+          "textura": "",
+          "x": 0,
+          "y": -1,
+          "w": 63,
+          "h": 40,
+          "ordem": -29495,
+          "r": 0.82,
+          "g": 0.79,
+          "b": 0.65,
+          "a": 1,
+          "repeticao": 5,
+          "contorno": [
+            {
+              "x": 31.5,
+              "y": 17.0
+            },
+            {
+              "x": 31.2716,
+              "y": 18.1481
+            },
+            {
+              "x": 30.6213,
+              "y": 19.1213
+            },
+            {
+              "x": 29.6481,
+              "y": 19.7716
+            },
+            {
+              "x": 28.5,
+              "y": 20.0
+            },
+            {
+              "x": -28.5,
+              "y": 20.0
+            },
+            {
+              "x": -29.6481,
+              "y": 19.7716
+            },
+            {
+              "x": -30.6213,
+              "y": 19.1213
+            },
+            {
+              "x": -31.2716,
+              "y": 18.1481
+            },
+            {
+              "x": -31.5,
+              "y": 17.0
+            },
+            {
+              "x": -31.5,
+              "y": -17.0
+            },
+            {
+              "x": -31.2716,
+              "y": -18.1481
+            },
+            {
+              "x": -30.6213,
+              "y": -19.1213
+            },
+            {
+              "x": -29.6481,
+              "y": -19.7716
+            },
+            {
+              "x": -28.5,
+              "y": -20.0
+            },
+            {
+              "x": 28.5,
+              "y": -20.0
+            },
+            {
+              "x": 29.6481,
+              "y": -19.7716
+            },
+            {
+              "x": 30.6213,
+              "y": -19.1213
+            },
+            {
+              "x": 31.2716,
+              "y": -18.1481
+            },
+            {
+              "x": 31.5,
+              "y": -17.0
+            }
+          ]
+        },
+        {
+          "nome": "Pavimento claro da praca",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": -1,
+          "w": 62.4,
+          "h": 39.4,
+          "ordem": -29490,
+          "r": 0.93,
+          "g": 0.91,
+          "b": 0.83,
+          "a": 1,
+          "repeticao": 3,
+          "contorno": [
+            {
+              "x": 31.2,
+              "y": 16.9
+            },
+            {
+              "x": 30.9869,
+              "y": 17.9715
+            },
+            {
+              "x": 30.3799,
+              "y": 18.8799
+            },
+            {
+              "x": 29.4715,
+              "y": 19.4869
+            },
+            {
+              "x": 28.4,
+              "y": 19.7
+            },
+            {
+              "x": -28.4,
+              "y": 19.7
+            },
+            {
+              "x": -29.4715,
+              "y": 19.4869
+            },
+            {
+              "x": -30.3799,
+              "y": 18.8799
+            },
+            {
+              "x": -30.9869,
+              "y": 17.9715
+            },
+            {
+              "x": -31.2,
+              "y": 16.9
+            },
+            {
+              "x": -31.2,
+              "y": -16.9
+            },
+            {
+              "x": -30.9869,
+              "y": -17.9715
+            },
+            {
+              "x": -30.3799,
+              "y": -18.8799
+            },
+            {
+              "x": -29.4715,
+              "y": -19.4869
+            },
+            {
+              "x": -28.4,
+              "y": -19.7
+            },
+            {
+              "x": 28.4,
+              "y": -19.7
+            },
+            {
+              "x": 29.4715,
+              "y": -19.4869
+            },
+            {
+              "x": 30.3799,
+              "y": -18.8799
+            },
+            {
+              "x": 30.9869,
+              "y": -17.9715
+            },
+            {
+              "x": 31.2,
+              "y": -16.9
+            }
+          ]
+        },
+        {
+          "nome": "Mosaico terracota 01",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 0,
+          "w": 1,
+          "h": 1,
+          "ordem": -29480,
+          "r": 0.59,
+          "g": 0.37,
+          "b": 0.32,
+          "a": 1,
+          "repeticao": 3,
+          "contorno": [
+            {
+              "x": -23,
+              "y": -19
+            },
+            {
+              "x": -2,
+              "y": -3
+            },
+            {
+              "x": -23,
+              "y": 4
+            }
+          ]
+        },
+        {
+          "nome": "Mosaico terracota 02",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 0,
+          "w": 1,
+          "h": 1,
+          "ordem": -29480,
+          "r": 0.59,
+          "g": 0.37,
+          "b": 0.32,
+          "a": 1,
+          "repeticao": 3,
+          "contorno": [
+            {
+              "x": -2,
+              "y": -3
+            },
+            {
+              "x": 0,
+              "y": 16
+            },
+            {
+              "x": 19,
+              "y": 8
+            }
+          ]
+        },
+        {
+          "nome": "Mosaico terracota 03",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 0,
+          "w": 1,
+          "h": 1,
+          "ordem": -29480,
+          "r": 0.59,
+          "g": 0.37,
+          "b": 0.32,
+          "a": 1,
+          "repeticao": 3,
+          "contorno": [
+            {
+              "x": -2,
+              "y": -3
+            },
+            {
+              "x": 23,
+              "y": -19
+            },
+            {
+              "x": 22,
+              "y": 2
+            }
+          ]
+        },
+        {
+          "nome": "Mosaico terracota 04",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 0,
+          "w": 1,
+          "h": 1,
+          "ordem": -29480,
+          "r": 0.59,
+          "g": 0.37,
+          "b": 0.32,
+          "a": 1,
+          "repeticao": 3,
+          "contorno": [
+            {
+              "x": -23,
+              "y": -19
+            },
+            {
+              "x": 1,
+              "y": -19
+            },
+            {
+              "x": -2,
+              "y": -3
+            }
+          ]
+        },
+        {
+          "nome": "Mosaico terracota 05",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 0,
+          "w": 1,
+          "h": 1,
+          "ordem": -29480,
+          "r": 0.59,
+          "g": 0.37,
+          "b": 0.32,
+          "a": 1,
+          "repeticao": 3,
+          "contorno": [
+            {
+              "x": -23,
+              "y": 4
+            },
+            {
+              "x": -19,
+              "y": 16
+            },
+            {
+              "x": -2,
+              "y": -3
+            }
+          ]
+        },
+        {
+          "nome": "Mosaico terracota 06",
+          "textura": "pedra_clara",
+          "x": 0,
+          "y": 0,
+          "w": 1,
+          "h": 1,
+          "ordem": -29480,
+          "r": 0.59,
+          "g": 0.37,
+          "b": 0.32,
+          "a": 1,
+          "repeticao": 3,
+          "contorno": [
+            {
+              "x": 0,
+              "y": 16
+            },
+            {
+              "x": 22,
+              "y": 16
+            },
+            {
+              "x": 19,
+              "y": 8
+            }
+          ]
+        },
+        {
+          "nome": "Borda do jardim 01",
+          "textura": "",
+          "x": -14,
+          "y": -12,
+          "w": 14,
+          "h": 6.6,
+          "ordem": -29460,
+          "r": 0.78,
+          "g": 0.72,
+          "b": 0.57,
+          "a": 1,
+          "repeticao": 5,
+          "contorno": [
+            {
+              "x": 7.0,
+              "y": 0.0
+            },
+            {
+              "x": 6.7615,
+              "y": 0.8541
+            },
+            {
+              "x": 6.0622,
+              "y": 1.65
+            },
+            {
+              "x": 4.9497,
+              "y": 2.3335
+            },
+            {
+              "x": 3.5,
+              "y": 2.8579
+            },
+            {
+              "x": 1.8117,
+              "y": 3.1876
+            },
+            {
+              "x": 0.0,
+              "y": 3.3
+            },
+            {
+              "x": -1.8117,
+              "y": 3.1876
+            },
+            {
+              "x": -3.5,
+              "y": 2.8579
+            },
+            {
+              "x": -4.9497,
+              "y": 2.3335
+            },
+            {
+              "x": -6.0622,
+              "y": 1.65
+            },
+            {
+              "x": -6.7615,
+              "y": 0.8541
+            },
+            {
+              "x": -7.0,
+              "y": 0.0
+            },
+            {
+              "x": -6.7615,
+              "y": -0.8541
+            },
+            {
+              "x": -6.0622,
+              "y": -1.65
+            },
+            {
+              "x": -4.9497,
+              "y": -2.3335
+            },
+            {
+              "x": -3.5,
+              "y": -2.8579
+            },
+            {
+              "x": -1.8117,
+              "y": -3.1876
+            },
+            {
+              "x": -0.0,
+              "y": -3.3
+            },
+            {
+              "x": 1.8117,
+              "y": -3.1876
+            },
+            {
+              "x": 3.5,
+              "y": -2.8579
+            },
+            {
+              "x": 4.9497,
+              "y": -2.3335
+            },
+            {
+              "x": 6.0622,
+              "y": -1.65
+            },
+            {
+              "x": 6.7615,
+              "y": -0.8541
+            }
+          ]
+        },
+        {
+          "nome": "Jardim arredondado 01",
+          "textura": "grama",
+          "x": -14,
+          "y": -12,
+          "w": 13.5,
+          "h": 6.1,
+          "ordem": -29450,
+          "r": 0.91,
+          "g": 0.95,
+          "b": 0.84,
+          "a": 1,
+          "repeticao": 4,
+          "contorno": [
+            {
+              "x": 6.75,
+              "y": 0.0
+            },
+            {
+              "x": 6.52,
+              "y": 0.7894
+            },
+            {
+              "x": 5.8457,
+              "y": 1.525
+            },
+            {
+              "x": 4.773,
+              "y": 2.1567
+            },
+            {
+              "x": 3.375,
+              "y": 2.6414
+            },
+            {
+              "x": 1.747,
+              "y": 2.9461
+            },
+            {
+              "x": 0.0,
+              "y": 3.05
+            },
+            {
+              "x": -1.747,
+              "y": 2.9461
+            },
+            {
+              "x": -3.375,
+              "y": 2.6414
+            },
+            {
+              "x": -4.773,
+              "y": 2.1567
+            },
+            {
+              "x": -5.8457,
+              "y": 1.525
+            },
+            {
+              "x": -6.52,
+              "y": 0.7894
+            },
+            {
+              "x": -6.75,
+              "y": 0.0
+            },
+            {
+              "x": -6.52,
+              "y": -0.7894
+            },
+            {
+              "x": -5.8457,
+              "y": -1.525
+            },
+            {
+              "x": -4.773,
+              "y": -2.1567
+            },
+            {
+              "x": -3.375,
+              "y": -2.6414
+            },
+            {
+              "x": -1.747,
+              "y": -2.9461
+            },
+            {
+              "x": -0.0,
+              "y": -3.05
+            },
+            {
+              "x": 1.747,
+              "y": -2.9461
+            },
+            {
+              "x": 3.375,
+              "y": -2.6414
+            },
+            {
+              "x": 4.773,
+              "y": -2.1567
+            },
+            {
+              "x": 5.8457,
+              "y": -1.525
+            },
+            {
+              "x": 6.52,
+              "y": -0.7894
+            }
+          ]
+        },
+        {
+          "nome": "Borda do jardim 02",
+          "textura": "",
+          "x": 14,
+          "y": -12,
+          "w": 14,
+          "h": 6.6,
+          "ordem": -29460,
+          "r": 0.78,
+          "g": 0.72,
+          "b": 0.57,
+          "a": 1,
+          "repeticao": 5,
+          "contorno": [
+            {
+              "x": 7.0,
+              "y": 0.0
+            },
+            {
+              "x": 6.7615,
+              "y": 0.8541
+            },
+            {
+              "x": 6.0622,
+              "y": 1.65
+            },
+            {
+              "x": 4.9497,
+              "y": 2.3335
+            },
+            {
+              "x": 3.5,
+              "y": 2.8579
+            },
+            {
+              "x": 1.8117,
+              "y": 3.1876
+            },
+            {
+              "x": 0.0,
+              "y": 3.3
+            },
+            {
+              "x": -1.8117,
+              "y": 3.1876
+            },
+            {
+              "x": -3.5,
+              "y": 2.8579
+            },
+            {
+              "x": -4.9497,
+              "y": 2.3335
+            },
+            {
+              "x": -6.0622,
+              "y": 1.65
+            },
+            {
+              "x": -6.7615,
+              "y": 0.8541
+            },
+            {
+              "x": -7.0,
+              "y": 0.0
+            },
+            {
+              "x": -6.7615,
+              "y": -0.8541
+            },
+            {
+              "x": -6.0622,
+              "y": -1.65
+            },
+            {
+              "x": -4.9497,
+              "y": -2.3335
+            },
+            {
+              "x": -3.5,
+              "y": -2.8579
+            },
+            {
+              "x": -1.8117,
+              "y": -3.1876
+            },
+            {
+              "x": -0.0,
+              "y": -3.3
+            },
+            {
+              "x": 1.8117,
+              "y": -3.1876
+            },
+            {
+              "x": 3.5,
+              "y": -2.8579
+            },
+            {
+              "x": 4.9497,
+              "y": -2.3335
+            },
+            {
+              "x": 6.0622,
+              "y": -1.65
+            },
+            {
+              "x": 6.7615,
+              "y": -0.8541
+            }
+          ]
+        },
+        {
+          "nome": "Jardim arredondado 02",
+          "textura": "grama",
+          "x": 14,
+          "y": -12,
+          "w": 13.5,
+          "h": 6.1,
+          "ordem": -29450,
+          "r": 0.91,
+          "g": 0.95,
+          "b": 0.84,
+          "a": 1,
+          "repeticao": 4,
+          "contorno": [
+            {
+              "x": 6.75,
+              "y": 0.0
+            },
+            {
+              "x": 6.52,
+              "y": 0.7894
+            },
+            {
+              "x": 5.8457,
+              "y": 1.525
+            },
+            {
+              "x": 4.773,
+              "y": 2.1567
+            },
+            {
+              "x": 3.375,
+              "y": 2.6414
+            },
+            {
+              "x": 1.747,
+              "y": 2.9461
+            },
+            {
+              "x": 0.0,
+              "y": 3.05
+            },
+            {
+              "x": -1.747,
+              "y": 2.9461
+            },
+            {
+              "x": -3.375,
+              "y": 2.6414
+            },
+            {
+              "x": -4.773,
+              "y": 2.1567
+            },
+            {
+              "x": -5.8457,
+              "y": 1.525
+            },
+            {
+              "x": -6.52,
+              "y": 0.7894
+            },
+            {
+              "x": -6.75,
+              "y": 0.0
+            },
+            {
+              "x": -6.52,
+              "y": -0.7894
+            },
+            {
+              "x": -5.8457,
+              "y": -1.525
+            },
+            {
+              "x": -4.773,
+              "y": -2.1567
+            },
+            {
+              "x": -3.375,
+              "y": -2.6414
+            },
+            {
+              "x": -1.747,
+              "y": -2.9461
+            },
+            {
+              "x": -0.0,
+              "y": -3.05
+            },
+            {
+              "x": 1.747,
+              "y": -2.9461
+            },
+            {
+              "x": 3.375,
+              "y": -2.6414
+            },
+            {
+              "x": 4.773,
+              "y": -2.1567
+            },
+            {
+              "x": 5.8457,
+              "y": -1.525
+            },
+            {
+              "x": 6.52,
+              "y": -0.7894
+            }
+          ]
+        },
+        {
+          "nome": "Borda do jardim 03",
+          "textura": "",
+          "x": -16,
+          "y": 7,
+          "w": 11.0,
+          "h": 6,
+          "ordem": -29460,
+          "r": 0.78,
+          "g": 0.72,
+          "b": 0.57,
+          "a": 1,
+          "repeticao": 5,
+          "contorno": [
+            {
+              "x": 5.5,
+              "y": 0.0
+            },
+            {
+              "x": 5.3126,
+              "y": 0.7765
+            },
+            {
+              "x": 4.7631,
+              "y": 1.5
+            },
+            {
+              "x": 3.8891,
+              "y": 2.1213
+            },
+            {
+              "x": 2.75,
+              "y": 2.5981
+            },
+            {
+              "x": 1.4235,
+              "y": 2.8978
+            },
+            {
+              "x": 0.0,
+              "y": 3.0
+            },
+            {
+              "x": -1.4235,
+              "y": 2.8978
+            },
+            {
+              "x": -2.75,
+              "y": 2.5981
+            },
+            {
+              "x": -3.8891,
+              "y": 2.1213
+            },
+            {
+              "x": -4.7631,
+              "y": 1.5
+            },
+            {
+              "x": -5.3126,
+              "y": 0.7765
+            },
+            {
+              "x": -5.5,
+              "y": 0.0
+            },
+            {
+              "x": -5.3126,
+              "y": -0.7765
+            },
+            {
+              "x": -4.7631,
+              "y": -1.5
+            },
+            {
+              "x": -3.8891,
+              "y": -2.1213
+            },
+            {
+              "x": -2.75,
+              "y": -2.5981
+            },
+            {
+              "x": -1.4235,
+              "y": -2.8978
+            },
+            {
+              "x": -0.0,
+              "y": -3.0
+            },
+            {
+              "x": 1.4235,
+              "y": -2.8978
+            },
+            {
+              "x": 2.75,
+              "y": -2.5981
+            },
+            {
+              "x": 3.8891,
+              "y": -2.1213
+            },
+            {
+              "x": 4.7631,
+              "y": -1.5
+            },
+            {
+              "x": 5.3126,
+              "y": -0.7765
+            }
+          ]
+        },
+        {
+          "nome": "Jardim arredondado 03",
+          "textura": "grama",
+          "x": -16,
+          "y": 7,
+          "w": 10.5,
+          "h": 5.5,
+          "ordem": -29450,
+          "r": 0.91,
+          "g": 0.95,
+          "b": 0.84,
+          "a": 1,
+          "repeticao": 4,
+          "contorno": [
+            {
+              "x": 5.25,
+              "y": 0.0
+            },
+            {
+              "x": 5.0711,
+              "y": 0.7118
+            },
+            {
+              "x": 4.5466,
+              "y": 1.375
+            },
+            {
+              "x": 3.7123,
+              "y": 1.9445
+            },
+            {
+              "x": 2.625,
+              "y": 2.3816
+            },
+            {
+              "x": 1.3588,
+              "y": 2.6563
+            },
+            {
+              "x": 0.0,
+              "y": 2.75
+            },
+            {
+              "x": -1.3588,
+              "y": 2.6563
+            },
+            {
+              "x": -2.625,
+              "y": 2.3816
+            },
+            {
+              "x": -3.7123,
+              "y": 1.9445
+            },
+            {
+              "x": -4.5466,
+              "y": 1.375
+            },
+            {
+              "x": -5.0711,
+              "y": 0.7118
+            },
+            {
+              "x": -5.25,
+              "y": 0.0
+            },
+            {
+              "x": -5.0711,
+              "y": -0.7118
+            },
+            {
+              "x": -4.5466,
+              "y": -1.375
+            },
+            {
+              "x": -3.7123,
+              "y": -1.9445
+            },
+            {
+              "x": -2.625,
+              "y": -2.3816
+            },
+            {
+              "x": -1.3588,
+              "y": -2.6563
+            },
+            {
+              "x": -0.0,
+              "y": -2.75
+            },
+            {
+              "x": 1.3588,
+              "y": -2.6563
+            },
+            {
+              "x": 2.625,
+              "y": -2.3816
+            },
+            {
+              "x": 3.7123,
+              "y": -1.9445
+            },
+            {
+              "x": 4.5466,
+              "y": -1.375
+            },
+            {
+              "x": 5.0711,
+              "y": -0.7118
+            }
+          ]
+        },
+        {
+          "nome": "Borda do jardim 04",
+          "textura": "",
+          "x": 16,
+          "y": 7,
+          "w": 11.0,
+          "h": 6,
+          "ordem": -29460,
+          "r": 0.78,
+          "g": 0.72,
+          "b": 0.57,
+          "a": 1,
+          "repeticao": 5,
+          "contorno": [
+            {
+              "x": 5.5,
+              "y": 0.0
+            },
+            {
+              "x": 5.3126,
+              "y": 0.7765
+            },
+            {
+              "x": 4.7631,
+              "y": 1.5
+            },
+            {
+              "x": 3.8891,
+              "y": 2.1213
+            },
+            {
+              "x": 2.75,
+              "y": 2.5981
+            },
+            {
+              "x": 1.4235,
+              "y": 2.8978
+            },
+            {
+              "x": 0.0,
+              "y": 3.0
+            },
+            {
+              "x": -1.4235,
+              "y": 2.8978
+            },
+            {
+              "x": -2.75,
+              "y": 2.5981
+            },
+            {
+              "x": -3.8891,
+              "y": 2.1213
+            },
+            {
+              "x": -4.7631,
+              "y": 1.5
+            },
+            {
+              "x": -5.3126,
+              "y": 0.7765
+            },
+            {
+              "x": -5.5,
+              "y": 0.0
+            },
+            {
+              "x": -5.3126,
+              "y": -0.7765
+            },
+            {
+              "x": -4.7631,
+              "y": -1.5
+            },
+            {
+              "x": -3.8891,
+              "y": -2.1213
+            },
+            {
+              "x": -2.75,
+              "y": -2.5981
+            },
+            {
+              "x": -1.4235,
+              "y": -2.8978
+            },
+            {
+              "x": -0.0,
+              "y": -3.0
+            },
+            {
+              "x": 1.4235,
+              "y": -2.8978
+            },
+            {
+              "x": 2.75,
+              "y": -2.5981
+            },
+            {
+              "x": 3.8891,
+              "y": -2.1213
+            },
+            {
+              "x": 4.7631,
+              "y": -1.5
+            },
+            {
+              "x": 5.3126,
+              "y": -0.7765
+            }
+          ]
+        },
+        {
+          "nome": "Jardim arredondado 04",
+          "textura": "grama",
+          "x": 16,
+          "y": 7,
+          "w": 10.5,
+          "h": 5.5,
+          "ordem": -29450,
+          "r": 0.91,
+          "g": 0.95,
+          "b": 0.84,
+          "a": 1,
+          "repeticao": 4,
+          "contorno": [
+            {
+              "x": 5.25,
+              "y": 0.0
+            },
+            {
+              "x": 5.0711,
+              "y": 0.7118
+            },
+            {
+              "x": 4.5466,
+              "y": 1.375
+            },
+            {
+              "x": 3.7123,
+              "y": 1.9445
+            },
+            {
+              "x": 2.625,
+              "y": 2.3816
+            },
+            {
+              "x": 1.3588,
+              "y": 2.6563
+            },
+            {
+              "x": 0.0,
+              "y": 2.75
+            },
+            {
+              "x": -1.3588,
+              "y": 2.6563
+            },
+            {
+              "x": -2.625,
+              "y": 2.3816
+            },
+            {
+              "x": -3.7123,
+              "y": 1.9445
+            },
+            {
+              "x": -4.5466,
+              "y": 1.375
+            },
+            {
+              "x": -5.0711,
+              "y": 0.7118
+            },
+            {
+              "x": -5.25,
+              "y": 0.0
+            },
+            {
+              "x": -5.0711,
+              "y": -0.7118
+            },
+            {
+              "x": -4.5466,
+              "y": -1.375
+            },
+            {
+              "x": -3.7123,
+              "y": -1.9445
+            },
+            {
+              "x": -2.625,
+              "y": -2.3816
+            },
+            {
+              "x": -1.3588,
+              "y": -2.6563
+            },
+            {
+              "x": -0.0,
+              "y": -2.75
+            },
+            {
+              "x": 1.3588,
+              "y": -2.6563
+            },
+            {
+              "x": 2.625,
+              "y": -2.3816
+            },
+            {
+              "x": 3.7123,
+              "y": -1.9445
+            },
+            {
+              "x": 4.5466,
+              "y": -1.375
+            },
+            {
+              "x": 5.0711,
+              "y": -0.7118
+            }
+          ]
+        },
+        {
+          "nome": "Travessia para o Mercado 01",
+          "textura": "",
+          "x": -38.0,
+          "y": -6,
+          "w": 0.52,
+          "h": 3,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia para o Mercado 02",
+          "textura": "",
+          "x": -36.9,
+          "y": -6,
+          "w": 0.52,
+          "h": 3,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia para o Mercado 03",
+          "textura": "",
+          "x": -35.8,
+          "y": -6,
+          "w": 0.52,
+          "h": 3,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia para o Mercado 04",
+          "textura": "",
+          "x": -34.7,
+          "y": -6,
+          "w": 0.52,
+          "h": 3,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia para o Mercado 05",
+          "textura": "",
+          "x": -33.6,
+          "y": -6,
+          "w": 0.52,
+          "h": 3,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia para o Mercado 06",
+          "textura": "",
+          "x": -32.5,
+          "y": -6,
+          "w": 0.52,
+          "h": 3,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul -10 01",
+          "textura": "",
+          "x": -10,
+          "y": -24.0,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul -10 02",
+          "textura": "",
+          "x": -10,
+          "y": -23.35,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul -10 03",
+          "textura": "",
+          "x": -10,
+          "y": -22.7,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul -10 04",
+          "textura": "",
+          "x": -10,
+          "y": -22.05,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul -10 05",
+          "textura": "",
+          "x": -10,
+          "y": -21.4,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul 10 01",
+          "textura": "",
+          "x": 10,
+          "y": -24.0,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul 10 02",
+          "textura": "",
+          "x": 10,
+          "y": -23.35,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul 10 03",
+          "textura": "",
+          "x": 10,
+          "y": -22.7,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul 10 04",
+          "textura": "",
+          "x": 10,
+          "y": -22.05,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Travessia sul 10 05",
+          "textura": "",
+          "x": 10,
+          "y": -21.4,
+          "w": 3,
+          "h": 0.32,
+          "ordem": -29440,
+          "r": 0.88,
+          "g": 0.87,
+          "b": 0.79,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul -25",
+          "textura": "",
+          "x": -25,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul -20",
+          "textura": "",
+          "x": -20,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul -15",
+          "textura": "",
+          "x": -15,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul -10",
+          "textura": "",
+          "x": -10,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul -5",
+          "textura": "",
+          "x": -5,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul 0",
+          "textura": "",
+          "x": 0,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul 5",
+          "textura": "",
+          "x": 5,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul 10",
+          "textura": "",
+          "x": 10,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul 15",
+          "textura": "",
+          "x": 15,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul 20",
+          "textura": "",
+          "x": 20,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        },
+        {
+          "nome": "Vaga ao sul 25",
+          "textura": "",
+          "x": 25,
+          "y": -22.5,
+          "w": 0.1,
+          "h": 2.3,
+          "ordem": -29430,
+          "r": 0.71,
+          "g": 0.7,
+          "b": 0.64,
+          "a": 1,
+          "repeticao": 5
+        }
+      ],
+      "objetos": [
+        {
+          "id": "urb_prefeitura",
+          "nome": "Prefeitura de Jaguaruana",
+          "x": 0,
+          "y": 16,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_mercearia",
+          "nome": "Comercio no entorno oeste",
+          "x": -26,
+          "y": 20,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_casa",
+          "nome": "Casa no entorno leste",
+          "x": 26,
+          "y": 20,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_torre_relogio_praca_vertical",
+          "nome": "Monumento com relogio e estatua",
+          "x": -3,
+          "y": 2,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_cobertura_praca_azul",
+          "nome": "Abrigo azul Oeste 01",
+          "x": -27,
+          "y": -16,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_cobertura_praca_azul",
+          "nome": "Abrigo azul Oeste 02",
+          "x": -27,
+          "y": -4,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_cobertura_praca_azul",
+          "nome": "Abrigo azul Oeste 03",
+          "x": -27,
+          "y": 8,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_cobertura_praca_azul",
+          "nome": "Abrigo azul Leste 01",
+          "x": 27,
+          "y": -16,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_cobertura_praca_azul",
+          "nome": "Abrigo azul Leste 02",
+          "x": 27,
+          "y": -4,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_cobertura_praca_azul",
+          "nome": "Abrigo azul Leste 03",
+          "x": 27,
+          "y": 8,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_poste_curvo_praca",
+          "nome": "Poste curvo Oeste 01",
+          "x": -8,
+          "y": -17,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_poste_curvo_praca",
+          "nome": "Poste curvo Oeste 02",
+          "x": -8,
+          "y": -1,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_poste_curvo_praca",
+          "nome": "Poste curvo Oeste 03",
+          "x": -8,
+          "y": 9,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_poste_curvo_praca",
+          "nome": "Poste curvo Leste 01",
+          "x": 8,
+          "y": -17,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_poste_curvo_praca",
+          "nome": "Poste curvo Leste 02",
+          "x": 8,
+          "y": -1,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "urb_poste_curvo_praca",
+          "nome": "Poste curvo Leste 03",
+          "x": 8,
+          "y": 9,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "Arvore de copa arredondada 01",
+          "x": -18,
+          "y": -12,
+          "escala": 0.8,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "Arvore de copa arredondada 02",
+          "x": -10,
+          "y": -12,
+          "escala": 0.72,
+          "flipX": true
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "Arvore de copa arredondada 03",
+          "x": 11,
+          "y": -12,
+          "escala": 0.76,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "Arvore de copa arredondada 04",
+          "x": 19,
+          "y": -12,
+          "escala": 0.82,
+          "flipX": true
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "Arvore de copa arredondada 05",
+          "x": -17,
+          "y": 6,
+          "escala": 0.83,
+          "flipX": false
+        },
+        {
+          "id": "arvore_podada",
+          "nome": "Arvore de copa arredondada 06",
+          "x": 17,
+          "y": 6,
+          "escala": 0.83,
+          "flipX": true
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 01",
+          "x": -20,
+          "y": -9,
+          "escala": 0.85,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 02",
+          "x": 20,
+          "y": -9,
+          "escala": 0.85,
+          "flipX": true
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 03",
+          "x": -13,
+          "y": 8,
+          "escala": 0.9,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 04",
+          "x": 13,
+          "y": 8,
+          "escala": 0.9,
+          "flipX": true
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 05",
+          "x": -22,
+          "y": 13,
+          "escala": 0.83,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 06",
+          "x": 22,
+          "y": 13,
+          "escala": 0.83,
+          "flipX": true
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 07",
+          "x": -22,
+          "y": -18,
+          "escala": 0.78,
+          "flipX": false
+        },
+        {
+          "id": "carnauba",
+          "nome": "Palmeira 08",
+          "x": 22,
+          "y": -18,
+          "escala": 0.78,
+          "flipX": true
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 01",
+          "x": -17,
+          "y": -16.3,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 02",
+          "x": -11,
+          "y": -16.3,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 03",
+          "x": 11,
+          "y": -16.3,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 04",
+          "x": 17,
+          "y": -16.3,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 05",
+          "x": -16,
+          "y": 2,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 06",
+          "x": 16,
+          "y": 2,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 07",
+          "x": -17,
+          "y": 12,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "banco_verde",
+          "nome": "Banco da praca 08",
+          "x": 17,
+          "y": 12,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "Lixeiras 01",
+          "x": -22,
+          "y": -5,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "Lixeiras 02",
+          "x": 22,
+          "y": -5,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "Lixeiras 03",
+          "x": -20,
+          "y": 1,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "lixeiras",
+          "nome": "Lixeiras 04",
+          "x": 20,
+          "y": 1,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "quiosque_amarelo",
+          "nome": "Quiosque na frente da praca",
+          "x": 0,
+          "y": -18,
+          "escala": 0.58,
+          "flipX": false
+        },
+        {
+          "id": "bicicleta",
+          "nome": "Bicicleta ao lado do abrigo oeste",
+          "x": -29.5,
+          "y": -18,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "moto",
+          "nome": "Moto no estacionamento",
+          "x": 15,
+          "y": -23,
+          "escala": 1,
+          "flipX": false
+        },
+        {
+          "id": "moto",
+          "nome": "Moto no estacionamento oeste",
+          "x": -15,
+          "y": -23,
+          "escala": 1,
+          "flipX": true
+        }
+      ],
+      "moverPontos": [],
+      "novosPontos": [
+        {
+          "id": "v24_prefeitura_para_mercado",
+          "nome": "Mercado Público",
+          "tipo": "saida",
+          "x": -36,
+          "y": -6,
+          "destino": "mercado",
+          "chegadaX": 0,
+          "chegadaY": -6,
+          "evento": "",
+          "falas": [],
+          "condicao": "",
+          "fonte": "",
+          "noturno": false
+        },
+        {
+          "id": "v24_fachada_prefeitura",
+          "nome": "Memórias da cidade",
+          "tipo": "conversa",
+          "x": 7.5,
+          "y": 14.7,
+          "evento": "v24_v24_fachada_prefeitura",
+          "falas": [
+            "Uma cidade reúne muitas histórias: nos documentos, nas fotografias e nas lembranças de seus moradores.",
+            "Compare aquilo que você vê com o que as pessoas contam. Cada registro pode revelar outro detalhe."
+          ],
+          "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
+          "condicao": "",
+          "noturno": false
+        },
+        {
+          "id": "v24_praca_prefeitura",
+          "nome": "Uma praça de encontros",
+          "tipo": "conversa",
+          "x": 3,
+          "y": -6.5,
+          "evento": "v24_v24_praca_prefeitura",
+          "falas": [
+            "Os desenhos do piso ligam as áreas de encontro da praça. Observe as cores claras e avermelhadas entre os jardins.",
+            "Bancos, palmeiras, coberturas e árvores fazem parte deste espaço de convivência. O cenário foi adaptado a partir das fotografias."
+          ],
+          "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
+          "condicao": "",
+          "noturno": false
+        },
+        {
+          "id": "v24_descanso_prefeitura",
+          "nome": "Descansar no banco",
+          "tipo": "descanso",
+          "x": 16,
+          "y": 0.8,
+          "evento": "v24_v24_descanso_prefeitura",
+          "falas": [
+            "Fazer uma pausa na praça?"
+          ],
+          "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
+          "condicao": "",
+          "noturno": false
+        },
+        {
+          "id": "v241_monumento_relogio",
+          "nome": "Monumento com relógio",
+          "tipo": "conversa",
+          "x": -3,
+          "y": 0.5,
+          "evento": "v241_memoria_monumento",
+          "falas": [
+            "O monumento se destaca pela torre alta, pelo relógio e pela estátua de braços abertos no alto.",
+            "O desenho deste lugar foi inspirado nas fotografias da praça. Que lembranças você associa a ele?"
+          ],
+          "fonte": "Descrição visual das fotografias enviadas e texto autoral. Nome oficial, autoria e data do monumento não confirmados.",
+          "condicao": "",
+          "noturno": false
+        }
+      ]
+    }
+  ]
+}

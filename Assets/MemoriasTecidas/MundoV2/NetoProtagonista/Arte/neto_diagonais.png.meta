@@ -1,0 +1,3627 @@
+fileFormatVersion: 2
+guid: 2de722dfe77c3bb469ec0dc7225a65d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3095484679053290193
+    second: neto_diagonais_0
+  - first:
+      213: 7033541615464718922
+    second: neto_diagonais_1
+  - first:
+      213: -436237920944553913
+    second: neto_diagonais_2
+  - first:
+      213: -3269665740707645474
+    second: neto_diagonais_3
+  - first:
+      213: -9182056224882084494
+    second: neto_diagonais_4
+  - first:
+      213: -7876798298307628284
+    second: neto_diagonais_5
+  - first:
+      213: -7729455255467000424
+    second: neto_diagonais_6
+  - first:
+      213: -7222247950591021592
+    second: neto_diagonais_7
+  - first:
+      213: 4575256237199959357
+    second: neto_diagonais_8
+  - first:
+      213: -1050548813783320649
+    second: neto_diagonais_9
+  - first:
+      213: 3646893326257749678
+    second: neto_diagonais_10
+  - first:
+      213: 7209742654521136175
+    second: neto_diagonais_11
+  - first:
+      213: 2861781673760844573
+    second: neto_diagonais_12
+  - first:
+      213: 9196767753022660132
+    second: neto_diagonais_13
+  - first:
+      213: -7244614877314839705
+    second: neto_diagonais_14
+  - first:
+      213: 3514076009656973168
+    second: neto_diagonais_15
+  - first:
+      213: -756034074687400788
+    second: neto_diagonais_16
+  - first:
+      213: 1631211245300910172
+    second: neto_diagonais_17
+  - first:
+      213: 5197077880456823755
+    second: neto_diagonais_18
+  - first:
+      213: 452569435519173541
+    second: neto_diagonais_19
+  - first:
+      213: -7621437847444022858
+    second: neto_diagonais_20
+  - first:
+      213: 8233607773082176626
+    second: neto_diagonais_21
+  - first:
+      213: -2305463976781037268
+    second: neto_diagonais_22
+  - first:
+      213: 6201163401960413135
+    second: neto_diagonais_23
+  - first:
+      213: 2533431877636183955
+    second: neto_diagonais_24
+  - first:
+      213: 6907910639745419949
+    second: neto_diagonais_25
+  - first:
+      213: -2603596030046959271
+    second: neto_diagonais_26
+  - first:
+      213: -4311569161058380288
+    second: neto_diagonais_27
+  - first:
+      213: -2206932630774819281
+    second: neto_diagonais_28
+  - first:
+      213: -3058585968378894775
+    second: neto_diagonais_29
+  - first:
+      213: -7869411177936902810
+    second: neto_diagonais_30
+  - first:
+      213: 2871951553782377656
+    second: neto_diagonais_31
+  - first:
+      213: 8694294820016281880
+    second: neto_diagonais_32
+  - first:
+      213: 1904796648862528125
+    second: neto_diagonais_33
+  - first:
+      213: 5338826438671277822
+    second: neto_diagonais_34
+  - first:
+      213: -7274492782455604901
+    second: neto_diagonais_35
+  - first:
+      213: -8851090285601309356
+    second: neto_diagonais_36
+  - first:
+      213: 4422166700706059121
+    second: neto_diagonais_37
+  - first:
+      213: 1783382298741965234
+    second: neto_diagonais_38
+  - first:
+      213: 1084467074851320246
+    second: neto_diagonais_39
+  - first:
+      213: 605054062530999634
+    second: neto_diagonais_40
+  - first:
+      213: 6333307856213003100
+    second: neto_diagonais_41
+  - first:
+      213: -1905540817505774989
+    second: neto_diagonais_42
+  - first:
+      213: -8990530749039596459
+    second: neto_diagonais_43
+  - first:
+      213: 6149833995014145371
+    second: neto_diagonais_44
+  - first:
+      213: 161321435321812858
+    second: neto_diagonais_45
+  - first:
+      213: -561836838767779236
+    second: neto_diagonais_46
+  - first:
+      213: -2623139047276041162
+    second: neto_diagonais_47
+  - first:
+      213: 6869725353093670614
+    second: neto_diagonais_48
+  - first:
+      213: -1863384406100233080
+    second: neto_diagonais_49
+  - first:
+      213: -685065400476374063
+    second: neto_diagonais_50
+  - first:
+      213: -8225524169895877247
+    second: neto_diagonais_51
+  - first:
+      213: 8418556451633504782
+    second: neto_diagonais_52
+  - first:
+      213: -5813144480059612405
+    second: neto_diagonais_53
+  - first:
+      213: -1679572474547158257
+    second: neto_diagonais_54
+  - first:
+      213: 631746790909538206
+    second: neto_diagonais_55
+  - first:
+      213: 1259046578287008490
+    second: neto_diagonais_56
+  - first:
+      213: -4971576386044449154
+    second: neto_diagonais_57
+  - first:
+      213: 7972927700748254111
+    second: neto_diagonais_58
+  - first:
+      213: 4905252877950998861
+    second: neto_diagonais_59
+  - first:
+      213: -7652189655713424002
+    second: neto_diagonais_60
+  - first:
+      213: 6201266559525600669
+    second: neto_diagonais_61
+  - first:
+      213: 6888520214635732782
+    second: neto_diagonais_62
+  - first:
+      213: 1794540784787712729
+    second: neto_diagonais_63
+  - first:
+      213: 8689256491165677118
+    second: neto_diagonais_64
+  - first:
+      213: 575724963346570965
+    second: neto_diagonais_65
+  - first:
+      213: -1966238429814199105
+    second: neto_diagonais_66
+  - first:
+      213: 543403683538004643
+    second: neto_diagonais_67
+  - first:
+      213: -1781227353646248697
+    second: neto_diagonais_68
+  - first:
+      213: 8114896363337230197
+    second: neto_diagonais_69
+  - first:
+      213: -102233424096478346
+    second: neto_diagonais_70
+  - first:
+      213: 1390418830972665152
+    second: neto_diagonais_71
+  - first:
+      213: 3471580825589785836
+    second: neto_diagonais_72
+  - first:
+      213: -9061240804493698389
+    second: neto_diagonais_73
+  - first:
+      213: 3954516725389224816
+    second: neto_diagonais_74
+  - first:
+      213: 7498879260685177069
+    second: neto_diagonais_75
+  - first:
+      213: -8356872641642306255
+    second: neto_diagonais_76
+  - first:
+      213: 3889160574154683918
+    second: neto_diagonais_77
+  - first:
+      213: -2406738856213180805
+    second: neto_diagonais_78
+  - first:
+      213: -9027484892893184373
+    second: neto_diagonais_79
+  - first:
+      213: 4147695766659755079
+    second: neto_diagonais_80
+  - first:
+      213: 2972557543197226511
+    second: neto_diagonais_81
+  - first:
+      213: -3553119055033075362
+    second: neto_diagonais_82
+  - first:
+      213: 5122988698493785797
+    second: neto_diagonais_83
+  - first:
+      213: -9075925930695872636
+    second: neto_diagonais_84
+  - first:
+      213: 4393449646834702087
+    second: neto_diagonais_85
+  - first:
+      213: -8555114250349561430
+    second: neto_diagonais_86
+  - first:
+      213: 4567753125215079425
+    second: neto_diagonais_87
+  - first:
+      213: -4863080190730306121
+    second: neto_diagonais_88
+  - first:
+      213: 4969320699260526549
+    second: neto_diagonais_89
+  - first:
+      213: 557306357227151902
+    second: neto_diagonais_90
+  - first:
+      213: 3066664122477528486
+    second: neto_diagonais_91
+  - first:
+      213: -3975112247109862782
+    second: neto_diagonais_92
+  - first:
+      213: 492765294705151909
+    second: neto_diagonais_93
+  - first:
+      213: 5053663769477386319
+    second: neto_diagonais_94
+  - first:
+      213: 6721022374199645495
+    second: neto_diagonais_95
+  - first:
+      213: 6401408234724554826
+    second: neto_diagonais_96
+  - first:
+      213: 1573548516397852564
+    second: neto_diagonais_97
+  - first:
+      213: -1533408831638631331
+    second: neto_diagonais_98
+  - first:
+      213: 78724684973160194
+    second: neto_diagonais_99
+  - first:
+      213: 76026469367341420
+    second: neto_diagonais_100
+  - first:
+      213: -7661581706692923606
+    second: neto_diagonais_101
+  - first:
+      213: -3330858279614233859
+    second: neto_diagonais_102
+  - first:
+      213: 1915080975202418464
+    second: neto_diagonais_103
+  - first:
+      213: -8642281185655004383
+    second: neto_diagonais_104
+  - first:
+      213: 2232430913149991966
+    second: neto_diagonais_105
+  - first:
+      213: 673425135710522052
+    second: neto_diagonais_106
+  - first:
+      213: 1577087551383333011
+    second: neto_diagonais_107
+  - first:
+      213: 2225690931729167053
+    second: neto_diagonais_108
+  - first:
+      213: -5436374194601509316
+    second: neto_diagonais_109
+  - first:
+      213: -3055301550363638116
+    second: neto_diagonais_110
+  - first:
+      213: -2114437050683286288
+    second: neto_diagonais_111
+  - first:
+      213: 3388345988615232505
+    second: neto_diagonais_112
+  - first:
+      213: 3205421227696352701
+    second: neto_diagonais_113
+  - first:
+      213: -3402483597532084656
+    second: neto_diagonais_114
+  - first:
+      213: 2647192510598189866
+    second: neto_diagonais_115
+  - first:
+      213: 3725184620268414140
+    second: neto_diagonais_116
+  - first:
+      213: 8883184608710168347
+    second: neto_diagonais_117
+  - first:
+      213: -7090047737892040752
+    second: neto_diagonais_118
+  - first:
+      213: -1825351088025538304
+    second: neto_diagonais_119
+  - first:
+      213: 4042646241011132925
+    second: neto_diagonais_120
+  - first:
+      213: 3064411384442133819
+    second: neto_diagonais_121
+  - first:
+      213: -2143852482849761827
+    second: neto_diagonais_122
+  - first:
+      213: 7196091174105504441
+    second: neto_diagonais_123
+  - first:
+      213: 6414721765548140282
+    second: neto_diagonais_124
+  - first:
+      213: 1017113426866428559
+    second: neto_diagonais_125
+  - first:
+      213: 1849840420651937489
+    second: neto_diagonais_126
+  - first:
+      213: -7088717284652865756
+    second: neto_diagonais_127
+  - first:
+      213: -4298269676747402195
+    second: neto_diagonais_128
+  - first:
+      213: 5491177818116225891
+    second: neto_diagonais_129
+  - first:
+      213: -1131427154573949040
+    second: neto_diagonais_130
+  - first:
+      213: -3932071814877799062
+    second: neto_diagonais_131
+  - first:
+      213: 7618990631321443953
+    second: neto_diagonais_132
+  - first:
+      213: -6745482456678180457
+    second: neto_diagonais_133
+  - first:
+      213: 2788613868331013186
+    second: neto_diagonais_134
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neto_diagonais_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1152
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1daa2ae3aee55fa20800000000000000
+      internalID: 3095484679053290193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1193
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42a3be75d82c9160800000000000000
+      internalID: 7033541615464718922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 939
+        width: 243
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7408b841ceb22f9f0800000000000000
+      internalID: -436237920944553913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 710
+        width: 410
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed73bde0550df92d0800000000000000
+      internalID: -3269665740707645474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_4
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1177
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2753d381388c29080800000000000000
+      internalID: -9182056224882084494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1148
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403f8f54eadffa290800000000000000
+      internalID: -7876798298307628284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_6
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 935
+        width: 262
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89dfc96c5657bb490800000000000000
+      internalID: -7729455255467000424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_7
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1157
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edaa3901cb65cb90800000000000000
+      internalID: -7222247950591021592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_8
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1140
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35a1b69e439e7f30800000000000000
+      internalID: 4575256237199959357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_9
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 923
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7bc3f7b63bb61f0800000000000000
+      internalID: -1050548813783320649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1179
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaef55d782e5c9230800000000000000
+      internalID: 3646893326257749678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1165
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24d6b4deb62e0460800000000000000
+      internalID: 7209742654521136175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_12
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1130
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bec39154717b720800000000000000
+      internalID: 2861781673760844573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_13
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1156
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42edea87b8b71af70800000000000000
+      internalID: 9196767753022660132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_14
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1160
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b83271725f57b90800000000000000
+      internalID: -7244614877314839705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_15
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1160
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077735d238184c030800000000000000
+      internalID: 3514076009656973168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_16
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1143
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca49a24c3070285f0800000000000000
+      internalID: -756034074687400788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1158
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5888cd2cf933a610800000000000000
+      internalID: 1631211245300910172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_18
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1096
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc34ba60ccabf1840800000000000000
+      internalID: 5197077880456823755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1076
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3c158f089d74600800000000000000
+      internalID: 452569435519173541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_20
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1142
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9916968a63b3690800000000000000
+      internalID: -7621437847444022858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_21
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1122
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c457665a6a34270800000000000000
+      internalID: 8233607773082176626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_22
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1130
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21c18d5ab85100e0800000000000000
+      internalID: -2305463976781037268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_23
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1142
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7d0084245fe0650800000000000000
+      internalID: 6201163401960413135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_24
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1144
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397d729bede882320800000000000000
+      internalID: 2533431877636183955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_25
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1143
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daaca2e8024dddf50800000000000000
+      internalID: 6907910639745419949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1126
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9590f62843b2edbd0800000000000000
+      internalID: -2603596030046959271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_27
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1128
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006169211ba3a24c0800000000000000
+      internalID: -4311569161058380288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_28
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1126
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26d27317766f51e0800000000000000
+      internalID: -2206932630774819281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_29
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1112
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94628cf4448bd85d0800000000000000
+      internalID: -3058585968378894775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_30
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1128
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66525934a3c3ac290800000000000000
+      internalID: -7869411177936902810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_31
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc645fc8b83bd720800000000000000
+      internalID: 2871951553782377656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_32
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1078
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819d69f031758a870800000000000000
+      internalID: 8694294820016281880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_33
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1050
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d723ec8c5723f6a10800000000000000
+      internalID: 1904796648862528125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 998
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe17721c52571a40800000000000000
+      internalID: 5338826438671277822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_35
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1020
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5937943b5fcb0b90800000000000000
+      internalID: -7274492782455604901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_36
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1030
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45db2d3c74c9a2580800000000000000
+      internalID: -8851090285601309356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_37
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 986
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17355254f21be5d30800000000000000
+      internalID: 4422166700706059121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_38
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 996
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b10c3f70c8dfb810800000000000000
+      internalID: 1783382298741965234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_39
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 966
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1be1f0f0dcc0f00800000000000000
+      internalID: 1084467074851320246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_40
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 964
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2553113d675956800800000000000000
+      internalID: 605054062530999634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_41
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 537
+        width: 287
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b44ce90fd64e750800000000000000
+      internalID: 6333307856213003100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 614
+        width: 198
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3729f83f8b82e85e0800000000000000
+      internalID: -1905540817505774989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_43
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 642
+        width: 188
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ca449eae73b3380800000000000000
+      internalID: -8990530749039596459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_44
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 78
+        width: 375
+        height: 842
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55807c6f69985550800000000000000
+      internalID: 6149833995014145371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_45
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 899
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77430f9df02d3200800000000000000
+      internalID: 161321435321812858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_46
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 903
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52a4833f54f338f0800000000000000
+      internalID: -561836838767779236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_47
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 901
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ca7aa3fecb89bd0800000000000000
+      internalID: -2623139047276041162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_48
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 905
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6a4afafca265f50800000000000000
+      internalID: 6869725353093670614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_49
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 793
+        width: 72
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884b46a51cde326e0800000000000000
+      internalID: -1863384406100233080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_50
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 809
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbe1bcd5a82e76f0800000000000000
+      internalID: -685065400476374063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_51
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 859
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18567f1295119dd80800000000000000
+      internalID: -8225524169895877247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_52
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 797
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0220354d78b4d470800000000000000
+      internalID: 8418556451633504782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_53
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 825
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03260e05ef835fa0800000000000000
+      internalID: -5813144480059612405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 838
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03c710bbb5f0b8e0800000000000000
+      internalID: -1679572474547158257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_55
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 827
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fe724fb5a64c800800000000000000
+      internalID: 631746790909538206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_56
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 821
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aead7763138097110800000000000000
+      internalID: 1259046578287008490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_57
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 805
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ea9101e99610bb0800000000000000
+      internalID: -4971576386044449154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_58
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 805
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bb8fe508785ae60800000000000000
+      internalID: 7972927700748254111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_59
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 710
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d495bbbd085f21440800000000000000
+      internalID: 4905252877950998861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_60
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 753
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d58491d06fdc590800000000000000
+      internalID: -7652189655713424002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_61
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 722
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d380684135f0650800000000000000
+      internalID: 6201266559525600669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_62
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 712
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fd57563a0f89f50800000000000000
+      internalID: 6888520214635732782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_63
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 730
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dae83cf55d77e810800000000000000
+      internalID: 1794540784787712729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_64
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 726
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36ff26bdb0769870800000000000000
+      internalID: 8689256491165677118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_65
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 738
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ded898cdc26df700800000000000000
+      internalID: 575724963346570965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_66
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 736
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbce33fc09486b4e0800000000000000
+      internalID: -1966238429814199105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_67
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 726
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aaebe665ce8a8700800000000000000
+      internalID: 543403683538004643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_68
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 724
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70dc4b1c82fc747e0800000000000000
+      internalID: -1781227353646248697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_69
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 674
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57723d57f37ed9070800000000000000
+      internalID: 8114896363337230197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_70
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 321
+        width: 216
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bbe801e3bc49ef0800000000000000
+      internalID: -102233424096478346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_71
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 666
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04db32d5f82cb4310800000000000000
+      internalID: 1390418830972665152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_72
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 558
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4265e1e588d2030800000000000000
+      internalID: 3471580825589785836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_73
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 262
+        width: 305
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baad0ef2f71004280800000000000000
+      internalID: -9061240804493698389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_74
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 552
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b6a23820441e630800000000000000
+      internalID: 3954516725389224816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_75
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 383
+        width: 75
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de01fa2f4fe511860800000000000000
+      internalID: 7498879260685177069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_76
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 570
+        width: 92
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135eab9eb9c660c80800000000000000
+      internalID: -8356872641642306255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_77
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 535
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06b1f0cfe219f530800000000000000
+      internalID: 3889160574154683918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_78
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 312
+        width: 208
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e884003cb899ed0800000000000000
+      internalID: -2406738856213180805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_79
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 575
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e75efc15ee7b280800000000000000
+      internalID: -9027484892893184373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_80
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 331
+        width: 224
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c652803539f8930800000000000000
+      internalID: 4147695766659755079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_81
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 521
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06bda41655a04920800000000000000
+      internalID: 2972557543197226511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_82
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 552
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59f4107b09c0bec0800000000000000
+      internalID: -3553119055033075362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_83
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 529
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6101a1413881740800000000000000
+      internalID: 5122988698493785797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_84
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 554
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fad1dc375db0280800000000000000
+      internalID: -9075925930695872636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_85
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 525
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707d5222d2ba8fc30800000000000000
+      internalID: 4393449646834702087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_86
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 537
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9380f8ae0264980800000000000000
+      internalID: -8555114250349561430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_87
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 519
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c0022344be36f30800000000000000
+      internalID: 4567753125215079425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_88
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 535
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdf74d055ed28cb0800000000000000
+      internalID: -4863080190730306121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 92
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df5b6ee8d296f440800000000000000
+      internalID: 4969320699260526549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_90
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 470
+        width: 26
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12679ddd23fbb700800000000000000
+      internalID: 557306357227151902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_91
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 497
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a545b185cafe8a20800000000000000
+      internalID: 3066664122477528486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_92
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 497
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a36b8e87095d8c0800000000000000
+      internalID: -3975112247109862782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_93
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 423
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af8a8cbc67a6d600800000000000000
+      internalID: 492765294705151909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_94
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 425
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4016f14c68322640800000000000000
+      internalID: 5053663769477386319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_95
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 415
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7355f956d3ed54d50800000000000000
+      internalID: 6721022374199645495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_96
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 409
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4874059fde56d850800000000000000
+      internalID: 6401408234724554826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_97
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 395
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497acb4e90e56d510800000000000000
+      internalID: 1573548516397852564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_98
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 401
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c8bbebacc38bae0800000000000000
+      internalID: -1533408831638631331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_99
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 382
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20731e21fafa71100800000000000000
+      internalID: 78724684973160194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_100
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 389
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61ea2ccba91e0100800000000000000
+      internalID: 76026469367341420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_101
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 345
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fefe2d7089ca590800000000000000
+      internalID: -7661581706692923606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_102
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 343
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2cc66da0a66c1d0800000000000000
+      internalID: -3330858279614233859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_103
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 353
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f7c0b100cb39a10800000000000000
+      internalID: 1915080975202418464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_104
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 23
+        width: 244
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123edf7ec03701880800000000000000
+      internalID: -8642281185655004383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_105
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 308
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cf7eb66103bfe10800000000000000
+      internalID: 2232430913149991966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_106
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 23
+        width: 225
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca48dcc79c785900800000000000000
+      internalID: 673425135710522052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_107
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 15
+        width: 260
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398e4efa5c0f2e510800000000000000
+      internalID: 1577087551383333011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_108
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 290
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc276853c1e33ee10800000000000000
+      internalID: 2225690931729167053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_109
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 21
+        width: 164
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e3da0297e1e84b0800000000000000
+      internalID: -5436374194601509316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_110
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 220
+        width: 31
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9600e87d636995d0800000000000000
+      internalID: -3055301550363638116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_111
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 176
+        width: 64
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc191684b208a2e0800000000000000
+      internalID: -2114437050683286288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_112
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 255
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbd78379b2d50f20800000000000000
+      internalID: 3388345988615232505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_113
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 188
+        width: 49
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd6650af91fb7c20800000000000000
+      internalID: 3205421227696352701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_114
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 262
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056c107f133f7c0d0800000000000000
+      internalID: -3402483597532084656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_115
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 176
+        width: 46
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23974e1097bcb420800000000000000
+      internalID: 2647192510598189866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_116
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 230
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4e8dddca382b330800000000000000
+      internalID: 3725184620268414140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_117
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 238
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f03642659674b70800000000000000
+      internalID: 8883184608710168347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_118
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 216
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df0266a5271b9d90800000000000000
+      internalID: -7090047737892040752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_119
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 208
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0017dd74bdc0ba6e0800000000000000
+      internalID: -1825351088025538304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_120
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 176
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9690c565d5a1830800000000000000
+      internalID: 4042646241011132925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_121
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 182
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d165f0be9f68a20800000000000000
+      internalID: 3064411384442133819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_122
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 143
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd596e486818f32e0800000000000000
+      internalID: -2143852482849761827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_123
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 136
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bad1ebdbc6add360800000000000000
+      internalID: 7196091174105504441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_124
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 103
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6a678857ba50950800000000000000
+      internalID: 6414721765548140282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_125
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 119
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a57a8d5438d1e00800000000000000
+      internalID: 1017113426866428559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_126
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 111
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de2e1ccf04fba910800000000000000
+      internalID: 1849840420651937489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_127
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 93
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427281fef21df9d90800000000000000
+      internalID: -7088717284652865756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_128
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2453a0908a7954c0800000000000000
+      internalID: -4298269676747402195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_129
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 103
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b725fc125943c40800000000000000
+      internalID: 5491177818116225891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_130
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 99
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097836a5ffc5c40f0800000000000000
+      internalID: -1131427154573949040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_131
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 101
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d12e274897e69c0800000000000000
+      internalID: -3932071814877799062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_132
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 99
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e91feac971cb960800000000000000
+      internalID: 7618990631321443953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_133
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 87
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799511bd17b3362a0800000000000000
+      internalID: -6745482456678180457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_diagonais_134
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 71
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244199dd98523b620800000000000000
+      internalID: 2788613868331013186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      neto_diagonais_0: 3095484679053290193
+      neto_diagonais_1: 7033541615464718922
+      neto_diagonais_10: 3646893326257749678
+      neto_diagonais_100: 76026469367341420
+      neto_diagonais_101: -7661581706692923606
+      neto_diagonais_102: -3330858279614233859
+      neto_diagonais_103: 1915080975202418464
+      neto_diagonais_104: -8642281185655004383
+      neto_diagonais_105: 2232430913149991966
+      neto_diagonais_106: 673425135710522052
+      neto_diagonais_107: 1577087551383333011
+      neto_diagonais_108: 2225690931729167053
+      neto_diagonais_109: -5436374194601509316
+      neto_diagonais_11: 7209742654521136175
+      neto_diagonais_110: -3055301550363638116
+      neto_diagonais_111: -2114437050683286288
+      neto_diagonais_112: 3388345988615232505
+      neto_diagonais_113: 3205421227696352701
+      neto_diagonais_114: -3402483597532084656
+      neto_diagonais_115: 2647192510598189866
+      neto_diagonais_116: 3725184620268414140
+      neto_diagonais_117: 8883184608710168347
+      neto_diagonais_118: -7090047737892040752
+      neto_diagonais_119: -1825351088025538304
+      neto_diagonais_12: 2861781673760844573
+      neto_diagonais_120: 4042646241011132925
+      neto_diagonais_121: 3064411384442133819
+      neto_diagonais_122: -2143852482849761827
+      neto_diagonais_123: 7196091174105504441
+      neto_diagonais_124: 6414721765548140282
+      neto_diagonais_125: 1017113426866428559
+      neto_diagonais_126: 1849840420651937489
+      neto_diagonais_127: -7088717284652865756
+      neto_diagonais_128: -4298269676747402195
+      neto_diagonais_129: 5491177818116225891
+      neto_diagonais_13: 9196767753022660132
+      neto_diagonais_130: -1131427154573949040
+      neto_diagonais_131: -3932071814877799062
+      neto_diagonais_132: 7618990631321443953
+      neto_diagonais_133: -6745482456678180457
+      neto_diagonais_134: 2788613868331013186
+      neto_diagonais_14: -7244614877314839705
+      neto_diagonais_15: 3514076009656973168
+      neto_diagonais_16: -756034074687400788
+      neto_diagonais_17: 1631211245300910172
+      neto_diagonais_18: 5197077880456823755
+      neto_diagonais_19: 452569435519173541
+      neto_diagonais_2: -436237920944553913
+      neto_diagonais_20: -7621437847444022858
+      neto_diagonais_21: 8233607773082176626
+      neto_diagonais_22: -2305463976781037268
+      neto_diagonais_23: 6201163401960413135
+      neto_diagonais_24: 2533431877636183955
+      neto_diagonais_25: 6907910639745419949
+      neto_diagonais_26: -2603596030046959271
+      neto_diagonais_27: -4311569161058380288
+      neto_diagonais_28: -2206932630774819281
+      neto_diagonais_29: -3058585968378894775
+      neto_diagonais_3: -3269665740707645474
+      neto_diagonais_30: -7869411177936902810
+      neto_diagonais_31: 2871951553782377656
+      neto_diagonais_32: 8694294820016281880
+      neto_diagonais_33: 1904796648862528125
+      neto_diagonais_34: 5338826438671277822
+      neto_diagonais_35: -7274492782455604901
+      neto_diagonais_36: -8851090285601309356
+      neto_diagonais_37: 4422166700706059121
+      neto_diagonais_38: 1783382298741965234
+      neto_diagonais_39: 1084467074851320246
+      neto_diagonais_4: -9182056224882084494
+      neto_diagonais_40: 605054062530999634
+      neto_diagonais_41: 6333307856213003100
+      neto_diagonais_42: -1905540817505774989
+      neto_diagonais_43: -8990530749039596459
+      neto_diagonais_44: 6149833995014145371
+      neto_diagonais_45: 161321435321812858
+      neto_diagonais_46: -561836838767779236
+      neto_diagonais_47: -2623139047276041162
+      neto_diagonais_48: 6869725353093670614
+      neto_diagonais_49: -1863384406100233080
+      neto_diagonais_5: -7876798298307628284
+      neto_diagonais_50: -685065400476374063
+      neto_diagonais_51: -8225524169895877247
+      neto_diagonais_52: 8418556451633504782
+      neto_diagonais_53: -5813144480059612405
+      neto_diagonais_54: -1679572474547158257
+      neto_diagonais_55: 631746790909538206
+      neto_diagonais_56: 1259046578287008490
+      neto_diagonais_57: -4971576386044449154
+      neto_diagonais_58: 7972927700748254111
+      neto_diagonais_59: 4905252877950998861
+      neto_diagonais_6: -7729455255467000424
+      neto_diagonais_60: -7652189655713424002
+      neto_diagonais_61: 6201266559525600669
+      neto_diagonais_62: 6888520214635732782
+      neto_diagonais_63: 1794540784787712729
+      neto_diagonais_64: 8689256491165677118
+      neto_diagonais_65: 575724963346570965
+      neto_diagonais_66: -1966238429814199105
+      neto_diagonais_67: 543403683538004643
+      neto_diagonais_68: -1781227353646248697
+      neto_diagonais_69: 8114896363337230197
+      neto_diagonais_7: -7222247950591021592
+      neto_diagonais_70: -102233424096478346
+      neto_diagonais_71: 1390418830972665152
+      neto_diagonais_72: 3471580825589785836
+      neto_diagonais_73: -9061240804493698389
+      neto_diagonais_74: 3954516725389224816
+      neto_diagonais_75: 7498879260685177069
+      neto_diagonais_76: -8356872641642306255
+      neto_diagonais_77: 3889160574154683918
+      neto_diagonais_78: -2406738856213180805
+      neto_diagonais_79: -9027484892893184373
+      neto_diagonais_8: 4575256237199959357
+      neto_diagonais_80: 4147695766659755079
+      neto_diagonais_81: 2972557543197226511
+      neto_diagonais_82: -3553119055033075362
+      neto_diagonais_83: 5122988698493785797
+      neto_diagonais_84: -9075925930695872636
+      neto_diagonais_85: 4393449646834702087
+      neto_diagonais_86: -8555114250349561430
+      neto_diagonais_87: 4567753125215079425
+      neto_diagonais_88: -4863080190730306121
+      neto_diagonais_89: 4969320699260526549
+      neto_diagonais_9: -1050548813783320649
+      neto_diagonais_90: 557306357227151902
+      neto_diagonais_91: 3066664122477528486
+      neto_diagonais_92: -3975112247109862782
+      neto_diagonais_93: 492765294705151909
+      neto_diagonais_94: 5053663769477386319
+      neto_diagonais_95: 6721022374199645495
+      neto_diagonais_96: 6401408234724554826
+      neto_diagonais_97: 1573548516397852564
+      neto_diagonais_98: -1533408831638631331
+      neto_diagonais_99: 78724684973160194
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

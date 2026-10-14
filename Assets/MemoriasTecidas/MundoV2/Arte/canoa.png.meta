@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 19978d73572ecd746bb7f2dad5dd10fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 325523759378450617
+    second: canoa_0
+  - first:
+      213: 4886415822687617827
+    second: canoa_1
+  - first:
+      213: -9092310347931006299
+    second: canoa_2
+  - first:
+      213: -8586703626984188087
+    second: canoa_3
+  - first:
+      213: 213413645812550230
+    second: canoa_4
+  - first:
+      213: -3791119947298281036
+    second: canoa_5
+  - first:
+      213: 6415862427147482959
+    second: canoa_6
+  - first:
+      213: -8614670977233800666
+    second: canoa_7
+  - first:
+      213: -2793980599092623973
+    second: canoa_8
+  - first:
+      213: 3334982649318932566
+    second: canoa_9
+  - first:
+      213: 5657095266904175026
+    second: canoa_10
+  - first:
+      213: 8316767320134909012
+    second: canoa_11
+  - first:
+      213: 3739581269251864012
+    second: canoa_12
+  - first:
+      213: 6466495303684465132
+    second: canoa_13
+  - first:
+      213: -4389047780601806463
+    second: canoa_14
+  - first:
+      213: 595654578766551718
+    second: canoa_15
+  - first:
+      213: -3741306879973581931
+    second: canoa_16
+  - first:
+      213: -9095162824753379978
+    second: canoa_17
+  - first:
+      213: -5429922450339291191
+    second: canoa_18
+  - first:
+      213: 6773798145030254650
+    second: canoa_19
+  - first:
+      213: -2676563377207175719
+    second: canoa_20
+  - first:
+      213: 6765141213231603316
+    second: canoa_21
+  - first:
+      213: -3045368028036658605
+    second: canoa_22
+  - first:
+      213: -1560792120924258102
+    second: canoa_23
+  - first:
+      213: -1484840017805910766
+    second: canoa_24
+  - first:
+      213: 2109809133252085644
+    second: canoa_25
+  - first:
+      213: 7246419943144009012
+    second: canoa_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.15104167}
+  spritePixelsToUnits: 581.4706
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: canoa_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 1985
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8c3bb622e748400800000000000000
+      internalID: 325523759378450617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_1
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 737
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323c4282d4900d340800000000000000
+      internalID: 4886415822687617827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_2
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 752
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aac6f369ef91d180800000000000000
+      internalID: -9092310347931006299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_3
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 705
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9479c0aab86e5d880800000000000000
+      internalID: -8586703626984188087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_4
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 688
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ac0e4849236f200800000000000000
+      internalID: 213413645812550230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_5
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 687
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b963608e7c336bc0800000000000000
+      internalID: -3791119947298281036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_6
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 65
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47b6e182e8b90950800000000000000
+      internalID: 6415862427147482959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_7
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 79
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622bc11836a827880800000000000000
+      internalID: -8614670977233800666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_8
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 79
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9540c1c279c939d0800000000000000
+      internalID: -2793980599092623973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_9
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 69
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6500fb0dc0d384e20800000000000000
+      internalID: 3334982649318932566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_10
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 63
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1fd543c2a028e40800000000000000
+      internalID: 5657095266904175026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_11
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 53
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45cf73440d71b6370800000000000000
+      internalID: 8316767320134909012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_12
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 49
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5367ae959a5e330800000000000000
+      internalID: 3739581269251864012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_13
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 49
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce128ddb73b9db950800000000000000
+      internalID: 6466495303684465132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_14
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 30
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18143073c48f613c0800000000000000
+      internalID: -4389047780601806463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_15
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 33
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa1738fea0344800800000000000000
+      internalID: 595654578766551718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_16
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 30
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b13770735341cc0800000000000000
+      internalID: -3741306879973581931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_17
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 17
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6758c30699d77c180800000000000000
+      internalID: -9095162824753379978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_18
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 13
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf9b95ec4a05a4b0800000000000000
+      internalID: -5429922450339291191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_19
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 29
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a307ab6168d510e50800000000000000
+      internalID: 6773798145030254650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_20
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 25
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d51fba1acfeadad0800000000000000
+      internalID: -2676563377207175719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_21
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 29
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e5606171c92ed50800000000000000
+      internalID: 6765141213231603316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_22
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 33
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a0b8ed9edacb5d0800000000000000
+      internalID: -3045368028036658605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_23
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 27
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0c410e5d3f65ae0800000000000000
+      internalID: -1560792120924258102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dd46eeed9c46be0800000000000000
+      internalID: -1484840017805910766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_25
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 17
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c878d5b7a3c874d10800000000000000
+      internalID: 2109809133252085644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canoa_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 15
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43da76c8b84709460800000000000000
+      internalID: 7246419943144009012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      canoa_0: 325523759378450617
+      canoa_1: 4886415822687617827
+      canoa_10: 5657095266904175026
+      canoa_11: 8316767320134909012
+      canoa_12: 3739581269251864012
+      canoa_13: 6466495303684465132
+      canoa_14: -4389047780601806463
+      canoa_15: 595654578766551718
+      canoa_16: -3741306879973581931
+      canoa_17: -9095162824753379978
+      canoa_18: -5429922450339291191
+      canoa_19: 6773798145030254650
+      canoa_2: -9092310347931006299
+      canoa_20: -2676563377207175719
+      canoa_21: 6765141213231603316
+      canoa_22: -3045368028036658605
+      canoa_23: -1560792120924258102
+      canoa_24: -1484840017805910766
+      canoa_25: 2109809133252085644
+      canoa_26: 7246419943144009012
+      canoa_3: -8586703626984188087
+      canoa_4: 213413645812550230
+      canoa_5: -3791119947298281036
+      canoa_6: 6415862427147482959
+      canoa_7: -8614670977233800666
+      canoa_8: -2793980599092623973
+      canoa_9: 3334982649318932566
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

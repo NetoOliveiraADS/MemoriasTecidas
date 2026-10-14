@@ -1,0 +1,293 @@
+{
+  "alturaMundo": 1.78,
+  "quadros": [
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 140,
+      "y": 936,
+      "largura": 145,
+      "altura": 303,
+      "pivotX": 0.5,
+      "pivotY": 0.023102
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 426,
+      "y": 936,
+      "largura": 152,
+      "altura": 303,
+      "pivotX": 0.513158,
+      "pivotY": 0.023102
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 704,
+      "y": 936,
+      "largura": 152,
+      "altura": 303,
+      "pivotX": 0.519737,
+      "pivotY": 0.023102
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 994,
+      "y": 936,
+      "largura": 148,
+      "altura": 303,
+      "pivotX": 0.513514,
+      "pivotY": 0.023102
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 114,
+      "y": 940,
+      "largura": 141,
+      "altura": 301,
+      "pivotX": 0.510638,
+      "pivotY": 0.036545
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 391,
+      "y": 940,
+      "largura": 169,
+      "altura": 301,
+      "pivotX": 0.497041,
+      "pivotY": 0.036545
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 706,
+      "y": 940,
+      "largura": 160,
+      "altura": 301,
+      "pivotX": 0.49375,
+      "pivotY": 0.036545
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 1001,
+      "y": 940,
+      "largura": 155,
+      "altura": 301,
+      "pivotX": 0.516129,
+      "pivotY": 0.036545
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 139,
+      "y": 624,
+      "largura": 145,
+      "altura": 309,
+      "pivotX": 0.4,
+      "pivotY": 0.009709
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 414,
+      "y": 624,
+      "largura": 163,
+      "altura": 309,
+      "pivotX": 0.429448,
+      "pivotY": 0.009709
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 708,
+      "y": 624,
+      "largura": 153,
+      "altura": 309,
+      "pivotX": 0.385621,
+      "pivotY": 0.009709
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 999,
+      "y": 624,
+      "largura": 155,
+      "altura": 309,
+      "pivotX": 0.412903,
+      "pivotY": 0.009709
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 122,
+      "y": 627,
+      "largura": 139,
+      "altura": 306,
+      "pivotX": 0.431655,
+      "pivotY": 0.039216
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 390,
+      "y": 627,
+      "largura": 179,
+      "altura": 306,
+      "pivotX": 0.469274,
+      "pivotY": 0.039216
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 732,
+      "y": 627,
+      "largura": 145,
+      "altura": 306,
+      "pivotX": 0.386207,
+      "pivotY": 0.039216
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 1006,
+      "y": 627,
+      "largura": 182,
+      "altura": 306,
+      "pivotX": 0.428571,
+      "pivotY": 0.039216
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 123,
+      "y": 322,
+      "largura": 156,
+      "altura": 299,
+      "pivotX": 0.512821,
+      "pivotY": 0.020067
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 404,
+      "y": 322,
+      "largura": 175,
+      "altura": 299,
+      "pivotX": 0.485714,
+      "pivotY": 0.020067
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 692,
+      "y": 322,
+      "largura": 165,
+      "altura": 299,
+      "pivotX": 0.515152,
+      "pivotY": 0.020067
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 996,
+      "y": 322,
+      "largura": 161,
+      "altura": 299,
+      "pivotX": 0.509317,
+      "pivotY": 0.020067
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 110,
+      "y": 329,
+      "largura": 143,
+      "altura": 294,
+      "pivotX": 0.538462,
+      "pivotY": 0.017007
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 389,
+      "y": 329,
+      "largura": 181,
+      "altura": 294,
+      "pivotX": 0.497238,
+      "pivotY": 0.017007
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 696,
+      "y": 329,
+      "largura": 159,
+      "altura": 294,
+      "pivotX": 0.578616,
+      "pivotY": 0.017007
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 991,
+      "y": 329,
+      "largura": 172,
+      "altura": 294,
+      "pivotX": 0.546512,
+      "pivotY": 0.017007
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 121,
+      "y": 17,
+      "largura": 146,
+      "altura": 304,
+      "pivotX": 0.60274,
+      "pivotY": 0.009868
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 405,
+      "y": 17,
+      "largura": 186,
+      "altura": 304,
+      "pivotX": 0.537634,
+      "pivotY": 0.009868
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 694,
+      "y": 17,
+      "largura": 154,
+      "altura": 304,
+      "pivotX": 0.61039,
+      "pivotY": 0.009868
+    },
+    {
+      "textura": "jogador_cardinais_221.png",
+      "x": 994,
+      "y": 17,
+      "largura": 179,
+      "altura": 304,
+      "pivotX": 0.536313,
+      "pivotY": 0.009868
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 112,
+      "y": 34,
+      "largura": 142,
+      "altura": 296,
+      "pivotX": 0.514085,
+      "pivotY": 0.02027
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 397,
+      "y": 34,
+      "largura": 164,
+      "altura": 296,
+      "pivotX": 0.5,
+      "pivotY": 0.02027
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 711,
+      "y": 34,
+      "largura": 152,
+      "altura": 296,
+      "pivotX": 0.506579,
+      "pivotY": 0.02027
+    },
+    {
+      "textura": "jogador_diagonais_221.png",
+      "x": 1004,
+      "y": 34,
+      "largura": 166,
+      "altura": 296,
+      "pivotX": 0.493976,
+      "pivotY": 0.02027
+    }
+  ]
+}

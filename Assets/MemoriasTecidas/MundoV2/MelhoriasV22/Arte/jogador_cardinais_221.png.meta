@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: b130f50fe9c7fbf46a89f1930569f624
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5145649648196743857
+    second: jogador_cardinais_221_0
+  - first:
+      213: 2306399068566072452
+    second: jogador_cardinais_221_1
+  - first:
+      213: 2941277241186416137
+    second: jogador_cardinais_221_2
+  - first:
+      213: 2475831989598315576
+    second: jogador_cardinais_221_3
+  - first:
+      213: 4921381138510248128
+    second: jogador_cardinais_221_4
+  - first:
+      213: 8715579617841901656
+    second: jogador_cardinais_221_5
+  - first:
+      213: 7241861785952885600
+    second: jogador_cardinais_221_6
+  - first:
+      213: 184229040684225960
+    second: jogador_cardinais_221_7
+  - first:
+      213: -3573769511626040247
+    second: jogador_cardinais_221_8
+  - first:
+      213: 6727266439687470120
+    second: jogador_cardinais_221_9
+  - first:
+      213: 5388081193518409830
+    second: jogador_cardinais_221_10
+  - first:
+      213: -6399494699046111828
+    second: jogador_cardinais_221_11
+  - first:
+      213: -3436892242522111436
+    second: jogador_cardinais_221_12
+  - first:
+      213: -4927629923702350258
+    second: jogador_cardinais_221_13
+  - first:
+      213: 1456284839470301387
+    second: jogador_cardinais_221_14
+  - first:
+      213: -6017785707489707224
+    second: jogador_cardinais_221_15
+  - first:
+      213: 5140451389928238882
+    second: jogador_cardinais_221_16
+  - first:
+      213: 3108483995502729056
+    second: jogador_cardinais_221_17
+  - first:
+      213: -3043633569444478618
+    second: jogador_cardinais_221_18
+  - first:
+      213: -7282860075019811148
+    second: jogador_cardinais_221_19
+  - first:
+      213: -3774996638605657651
+    second: jogador_cardinais_221_20
+  - first:
+      213: 8471631700958641885
+    second: jogador_cardinais_221_21
+  - first:
+      213: -3884508466298679662
+    second: jogador_cardinais_221_22
+  - first:
+      213: 6266904696151204831
+    second: jogador_cardinais_221_23
+  - first:
+      213: -2350305297763742623
+    second: jogador_cardinais_221_24
+  - first:
+      213: 316645101028050407
+    second: jogador_cardinais_221_25
+  - first:
+      213: -8554324502610466120
+    second: jogador_cardinais_221_26
+  - first:
+      213: 2036511979633512987
+    second: jogador_cardinais_221_27
+  - first:
+      213: -7484249933973045157
+    second: jogador_cardinais_221_28
+  - first:
+      213: -8762794390698245206
+    second: jogador_cardinais_221_29
+  - first:
+      213: 6796916191185323642
+    second: jogador_cardinais_221_30
+  - first:
+      213: -3797045158253475216
+    second: jogador_cardinais_221_31
+  - first:
+      213: -1409725883773321880
+    second: jogador_cardinais_221_32
+  - first:
+      213: 8766868821713458989
+    second: jogador_cardinais_221_33
+  - first:
+      213: -5687570486821004555
+    second: jogador_cardinais_221_34
+  - first:
+      213: -9020508515939502787
+    second: jogador_cardinais_221_35
+  - first:
+      213: -7183274037650366292
+    second: jogador_cardinais_221_36
+  - first:
+      213: -8142326505950700256
+    second: jogador_cardinais_221_37
+  - first:
+      213: -988600912539390071
+    second: jogador_cardinais_221_38
+  - first:
+      213: 1376548343462293614
+    second: jogador_cardinais_221_39
+  - first:
+      213: -7521076686142500116
+    second: jogador_cardinais_221_40
+  - first:
+      213: 6106663806266890214
+    second: jogador_cardinais_221_41
+  - first:
+      213: -8692644432364000545
+    second: jogador_cardinais_221_42
+  - first:
+      213: -8856998374234128926
+    second: jogador_cardinais_221_43
+  - first:
+      213: 8782920486620472715
+    second: jogador_cardinais_221_44
+  - first:
+      213: 638914004765104729
+    second: jogador_cardinais_221_45
+  - first:
+      213: 7310482635522998064
+    second: jogador_cardinais_221_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jogador_cardinais_221_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 289
+        height: 1224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2716b9715096740800000000000000
+      internalID: 5145649648196743857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1171
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c2c28abb9f10020800000000000000
+      internalID: 2306399068566072452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1164
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9067bda311481d820800000000000000
+      internalID: 2941277241186416137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_3
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 355
+        height: 1240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8346e87b31ceb5220800000000000000
+      internalID: 2475831989598315576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 331
+        width: 267
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8f53522124c4440800000000000000
+      internalID: 4921381138510248128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_5
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1098
+        width: 66
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850f91d3c75f3f870800000000000000
+      internalID: 8715579617841901656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_6
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 15
+        width: 367
+        height: 1224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b9230ece2408460800000000000000
+      internalID: 7241861785952885600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_7
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1147
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a55b4f16538e8200800000000000000
+      internalID: 184229040684225960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1106
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c9866509b676ec0800000000000000
+      internalID: -3573769511626040247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_9
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1114
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c7afe2f2d0c5d50800000000000000
+      internalID: 6727266439687470120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_10
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1127
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668a0a85c4f46ca40800000000000000
+      internalID: 5388081193518409830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_11
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1036
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca57c592a7d6037a0800000000000000
+      internalID: -6399494699046111828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1012
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4328c2107b4bd40d0800000000000000
+      internalID: -3436892242522111436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1008
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ed22d21ba8d9bb0800000000000000
+      internalID: -4927629923702350258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_14
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 998
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc00a648853c53410800000000000000
+      internalID: 1456284839470301387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_15
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 988
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b37aa58c78c7ca0800000000000000
+      internalID: -6017785707489707224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_16
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 972
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fe5d9cd4d865740800000000000000
+      internalID: 5140451389928238882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_17
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 980
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0675de579bd832b20800000000000000
+      internalID: 3108483995502729056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_18
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 980
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661cecaf467d2c5d0800000000000000
+      internalID: -3043633569444478618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_19
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 939
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6c19719551eea90800000000000000
+      internalID: -7282860075019811148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 859
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9bd97de848c9bc0800000000000000
+      internalID: -3774996638605657651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_21
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 859
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddef39bb528419570800000000000000
+      internalID: 8471631700958641885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_22
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 821
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e05438124771ac0800000000000000
+      internalID: -3884508466298679662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_23
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 562
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3e15f1e9488f650800000000000000
+      internalID: 6266904696151204831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 570
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cc21db8c9026fd0800000000000000
+      internalID: -2350305297763742623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_25
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 548
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e505aeaa03f46400800000000000000
+      internalID: 316645101028050407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_26
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 535
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8baab78003fe84980800000000000000
+      internalID: -8554324502610466120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_27
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 519
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1212e60bd4234c10800000000000000
+      internalID: 2036511979633512987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_28
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 521
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50cb4b965a922890800000000000000
+      internalID: -7484249933973045157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_29
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 519
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa345aecdec446680800000000000000
+      internalID: -8762794390698245206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_30
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 515
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76c3b7a34f735e50800000000000000
+      internalID: 6796916191185323642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 519
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a4f22db8f2e4bc0800000000000000
+      internalID: -3797045158253475216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_32
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 505
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d740b17c5af6ce0800000000000000
+      internalID: -1409725883773321880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_33
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 505
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d279da69ebc2aa970800000000000000
+      internalID: 8766868821713458989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_34
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 489
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fad90ab6c0b111b0800000000000000
+      internalID: -5687570486821004555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_35
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 393
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d353a062c47b0d280800000000000000
+      internalID: -9020508515939502787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_36
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 385
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca060954252ef4c90800000000000000
+      internalID: -7183274037650366292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_37
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 372
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d9f87ce25a00f80800000000000000
+      internalID: -8142326505950700256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_38
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 296
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f667735b8c742f0800000000000000
+      internalID: -988600912539390071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_39
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 13
+        width: 168
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60f834dc6b7a1310800000000000000
+      internalID: 1376548343462293614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_40
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 265
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce211023a94cf9790800000000000000
+      internalID: -7521076686142500116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_41
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 263
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7d547906a3fb450800000000000000
+      internalID: 6106663806266890214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_42
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 216
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdaaa22c1f58d5780800000000000000
+      internalID: -8692644432364000545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_43
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 135
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2edff8fa7ee951580800000000000000
+      internalID: -8856998374234128926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_44
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 134
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85a38f06a333e970800000000000000
+      internalID: 8782920486620472715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_45
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 122
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95adb08f6e0edd800800000000000000
+      internalID: 638914004765104729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogador_cardinais_221_46
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 106
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f7203793d047560800000000000000
+      internalID: 7310482635522998064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jogador_cardinais_221_0: 5145649648196743857
+      jogador_cardinais_221_1: 2306399068566072452
+      jogador_cardinais_221_10: 5388081193518409830
+      jogador_cardinais_221_11: -6399494699046111828
+      jogador_cardinais_221_12: -3436892242522111436
+      jogador_cardinais_221_13: -4927629923702350258
+      jogador_cardinais_221_14: 1456284839470301387
+      jogador_cardinais_221_15: -6017785707489707224
+      jogador_cardinais_221_16: 5140451389928238882
+      jogador_cardinais_221_17: 3108483995502729056
+      jogador_cardinais_221_18: -3043633569444478618
+      jogador_cardinais_221_19: -7282860075019811148
+      jogador_cardinais_221_2: 2941277241186416137
+      jogador_cardinais_221_20: -3774996638605657651
+      jogador_cardinais_221_21: 8471631700958641885
+      jogador_cardinais_221_22: -3884508466298679662
+      jogador_cardinais_221_23: 6266904696151204831
+      jogador_cardinais_221_24: -2350305297763742623
+      jogador_cardinais_221_25: 316645101028050407
+      jogador_cardinais_221_26: -8554324502610466120
+      jogador_cardinais_221_27: 2036511979633512987
+      jogador_cardinais_221_28: -7484249933973045157
+      jogador_cardinais_221_29: -8762794390698245206
+      jogador_cardinais_221_3: 2475831989598315576
+      jogador_cardinais_221_30: 6796916191185323642
+      jogador_cardinais_221_31: -3797045158253475216
+      jogador_cardinais_221_32: -1409725883773321880
+      jogador_cardinais_221_33: 8766868821713458989
+      jogador_cardinais_221_34: -5687570486821004555
+      jogador_cardinais_221_35: -9020508515939502787
+      jogador_cardinais_221_36: -7183274037650366292
+      jogador_cardinais_221_37: -8142326505950700256
+      jogador_cardinais_221_38: -988600912539390071
+      jogador_cardinais_221_39: 1376548343462293614
+      jogador_cardinais_221_4: 4921381138510248128
+      jogador_cardinais_221_40: -7521076686142500116
+      jogador_cardinais_221_41: 6106663806266890214
+      jogador_cardinais_221_42: -8692644432364000545
+      jogador_cardinais_221_43: -8856998374234128926
+      jogador_cardinais_221_44: 8782920486620472715
+      jogador_cardinais_221_45: 638914004765104729
+      jogador_cardinais_221_46: 7310482635522998064
+      jogador_cardinais_221_5: 8715579617841901656
+      jogador_cardinais_221_6: 7241861785952885600
+      jogador_cardinais_221_7: 184229040684225960
+      jogador_cardinais_221_8: -3573769511626040247
+      jogador_cardinais_221_9: 6727266439687470120
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

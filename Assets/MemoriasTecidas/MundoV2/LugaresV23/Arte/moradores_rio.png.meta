@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 4e888c5934899704293f0749b6ce56f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3124074945140828035
+    second: moradores_rio_0
+  - first:
+      213: 2556456736462534665
+    second: moradores_rio_1
+  - first:
+      213: 7097370141156547792
+    second: moradores_rio_2
+  - first:
+      213: 721149386752066552
+    second: moradores_rio_3
+  - first:
+      213: 83304983073837709
+    second: moradores_rio_4
+  - first:
+      213: -4649125911380798442
+    second: moradores_rio_5
+  - first:
+      213: 72590667395748964
+    second: moradores_rio_6
+  - first:
+      213: -3976369321841379506
+    second: moradores_rio_7
+  - first:
+      213: 2251149233084329989
+    second: moradores_rio_8
+  - first:
+      213: 8999782870971615054
+    second: moradores_rio_9
+  - first:
+      213: -6138770789439375524
+    second: moradores_rio_10
+  - first:
+      213: -3410786520967320044
+    second: moradores_rio_11
+  - first:
+      213: -6002279671835322674
+    second: moradores_rio_12
+  - first:
+      213: -7242940064051163061
+    second: moradores_rio_13
+  - first:
+      213: 9103623053426330080
+    second: moradores_rio_14
+  - first:
+      213: -2152307939203634102
+    second: moradores_rio_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: moradores_rio_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 225
+        height: 1001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78de23b36e05a4d0800000000000000
+      internalID: -3124074945140828035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 457
+        width: 349
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908f08c6bdb5a7320800000000000000
+      internalID: 2556456736462534665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 453
+        width: 276
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc99173a8cee7260800000000000000
+      internalID: 7097370141156547792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_3
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 521
+        width: 335
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f30953eb89020a00800000000000000
+      internalID: 721149386752066552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_4
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 909
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82d224d075f72100800000000000000
+      internalID: 83304983073837709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_5
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 879
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6145510ad9cfa7fb0800000000000000
+      internalID: -4649125911380798442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_6
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 27
+        width: 245
+        height: 943
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464d120d3d4e10100800000000000000
+      internalID: 72590667395748964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_7
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 879
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4732e36b2911d8c0800000000000000
+      internalID: -3976369321841379506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_8
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 625
+        width: 79
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5007266ec40bd3f10800000000000000
+      internalID: 2251149233084329989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_9
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 551
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4788e796d6a5ec70800000000000000
+      internalID: 8999782870971615054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_10
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 44
+        width: 281
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57fbe9dd74becaa0800000000000000
+      internalID: -6138770789439375524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_11
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 45
+        width: 413
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e6d05fab37aa0d0800000000000000
+      internalID: -3410786520967320044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_12
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 45
+        width: 254
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec615bd907e93bca0800000000000000
+      internalID: -6002279671835322674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_13
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 453
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4019c0f268eb7b90800000000000000
+      internalID: -7242940064051163061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_14
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 69
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9888c1fe0965e70800000000000000
+      internalID: 9103623053426330080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_rio_15
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 40
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ca38c25577122e0800000000000000
+      internalID: -2152307939203634102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      moradores_rio_0: -3124074945140828035
+      moradores_rio_1: 2556456736462534665
+      moradores_rio_10: -6138770789439375524
+      moradores_rio_11: -3410786520967320044
+      moradores_rio_12: -6002279671835322674
+      moradores_rio_13: -7242940064051163061
+      moradores_rio_14: 9103623053426330080
+      moradores_rio_15: -2152307939203634102
+      moradores_rio_2: 7097370141156547792
+      moradores_rio_3: 721149386752066552
+      moradores_rio_4: 83304983073837709
+      moradores_rio_5: -4649125911380798442
+      moradores_rio_6: 72590667395748964
+      moradores_rio_7: -3976369321841379506
+      moradores_rio_8: 2251149233084329989
+      moradores_rio_9: 8999782870971615054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,488 @@
+{
+  "version": "1.0",
+  "targetUnity": "6000.3.25f1",
+  "worldWidth": 32,
+  "worldHeight": 18,
+  "camera": {
+    "x": 0,
+    "y": 2,
+    "z": -10,
+    "orthographicSize": 9,
+    "aspect": "16:9"
+  },
+  "assets": [
+    {
+      "id": "piso_praca",
+      "file": "Sprites/piso_praca.png",
+      "width": 1672,
+      "height": 941,
+      "ppu": 52.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "ground": true,
+      "sheet": false,
+      "frames": []
+    },
+    {
+      "id": "igreja",
+      "file": "Sprites/igreja.png",
+      "width": 1159,
+      "height": 1356,
+      "ppu": 177.70270270270268,
+      "pivotX": 0.5,
+      "pivotY": 0.018436578171091445,
+      "ground": false,
+      "sheet": false,
+      "colliderWidth": 4.45,
+      "colliderHeight": 1.25,
+      "colliderOffsetY": 0.5,
+      "shadowWidth": 4.6,
+      "shadowHeight": 0.9,
+      "frames": [],
+      "visibleHeight": 7.4
+    },
+    {
+      "id": "arvore",
+      "file": "Sprites/arvore.png",
+      "width": 1024,
+      "height": 1536,
+      "ppu": 337.8378378378378,
+      "pivotX": 0.514,
+      "pivotY": 0.1171875,
+      "ground": false,
+      "sheet": false,
+      "colliderWidth": 0.45,
+      "colliderHeight": 0.3,
+      "colliderOffsetY": 0.12,
+      "shadowWidth": 2.1,
+      "shadowHeight": 0.6,
+      "frames": [],
+      "visibleHeight": 3.7
+    },
+    {
+      "id": "banco",
+      "file": "Sprites/banco.png",
+      "width": 1672,
+      "height": 941,
+      "ppu": 663.8095238095237,
+      "pivotX": 0.5,
+      "pivotY": 0.11583421891604676,
+      "ground": false,
+      "sheet": false,
+      "colliderWidth": 2.0,
+      "colliderHeight": 0.48,
+      "colliderOffsetY": 0.2,
+      "shadowWidth": 2.1,
+      "shadowHeight": 0.42,
+      "frames": [],
+      "visibleHeight": 1.05
+    },
+    {
+      "id": "neto",
+      "file": "Sprites/neto.png",
+      "width": 1024,
+      "height": 1536,
+      "ppu": 1051.8518518518517,
+      "pivotX": 0.5,
+      "pivotY": 0.036458333333333336,
+      "ground": false,
+      "sheet": false,
+      "colliderWidth": 0.42,
+      "colliderHeight": 0.25,
+      "colliderOffsetY": 0.12,
+      "shadowWidth": 0.56,
+      "shadowHeight": 0.2,
+      "frames": [],
+      "visibleHeight": 1.35
+    },
+    {
+      "id": "poste",
+      "file": "Sprites/poste.png",
+      "width": 1024,
+      "height": 1536,
+      "ppu": 367.5,
+      "pivotX": 0.43,
+      "pivotY": 0.06380208333333333,
+      "ground": false,
+      "sheet": false,
+      "colliderWidth": 0.34,
+      "colliderHeight": 0.3,
+      "colliderOffsetY": 0.12,
+      "shadowWidth": 0.5,
+      "shadowHeight": 0.25,
+      "frames": [],
+      "visibleHeight": 3.6
+    },
+    {
+      "id": "jogador_folha",
+      "file": "Sprites/jogador_folha.png",
+      "width": 1024,
+      "height": 1536,
+      "ppu": 242.96296296296293,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "sheet": true,
+      "ground": false,
+      "colliderWidth": 0.42,
+      "colliderHeight": 0.25,
+      "colliderOffsetY": 0.12,
+      "shadowWidth": 0.54,
+      "shadowHeight": 0.19,
+      "frames": [
+        {
+          "rect": {
+            "x": 151,
+            "y": 1153,
+            "width": 179,
+            "height": 348
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011494252873563218
+          },
+          "pixelsPorUnidade": 251.85185185185185
+        },
+        {
+          "rect": {
+            "x": 427,
+            "y": 1165,
+            "width": 172,
+            "height": 336
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011904761904761904
+          },
+          "pixelsPorUnidade": 242.96296296296293
+        },
+        {
+          "rect": {
+            "x": 696,
+            "y": 1153,
+            "width": 178,
+            "height": 347
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011527377521613832
+          },
+          "pixelsPorUnidade": 251.1111111111111
+        },
+        {
+          "rect": {
+            "x": 145,
+            "y": 806,
+            "width": 187,
+            "height": 342
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011695906432748537
+          },
+          "pixelsPorUnidade": 247.4074074074074
+        },
+        {
+          "rect": {
+            "x": 441,
+            "y": 796,
+            "width": 157,
+            "height": 353
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.0113314447592068
+          },
+          "pixelsPorUnidade": 255.55555555555554
+        },
+        {
+          "rect": {
+            "x": 708,
+            "y": 806,
+            "width": 187,
+            "height": 341
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011730205278592375
+          },
+          "pixelsPorUnidade": 246.66666666666666
+        },
+        {
+          "rect": {
+            "x": 138,
+            "y": 454,
+            "width": 197,
+            "height": 333
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.012012012012012012
+          },
+          "pixelsPorUnidade": 240.74074074074073
+        },
+        {
+          "rect": {
+            "x": 431,
+            "y": 445,
+            "width": 159,
+            "height": 341
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011730205278592375
+          },
+          "pixelsPorUnidade": 246.66666666666666
+        },
+        {
+          "rect": {
+            "x": 689,
+            "y": 454,
+            "width": 200,
+            "height": 332
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.012048192771084338
+          },
+          "pixelsPorUnidade": 239.99999999999997
+        },
+        {
+          "rect": {
+            "x": 126,
+            "y": 53,
+            "width": 203,
+            "height": 386
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.010362694300518135
+          },
+          "pixelsPorUnidade": 280.0
+        },
+        {
+          "rect": {
+            "x": 423,
+            "y": 87,
+            "width": 181,
+            "height": 352
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011363636363636364
+          },
+          "pixelsPorUnidade": 254.8148148148148
+        },
+        {
+          "rect": {
+            "x": 697,
+            "y": 53,
+            "width": 203,
+            "height": 386
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.010362694300518135
+          },
+          "pixelsPorUnidade": 280.0
+        }
+      ],
+      "framesTopLeft": [
+        [
+          151,
+          35,
+          330,
+          383
+        ],
+        [
+          427,
+          35,
+          599,
+          371
+        ],
+        [
+          696,
+          36,
+          874,
+          383
+        ],
+        [
+          145,
+          388,
+          332,
+          730
+        ],
+        [
+          441,
+          387,
+          598,
+          740
+        ],
+        [
+          708,
+          389,
+          895,
+          730
+        ],
+        [
+          138,
+          749,
+          335,
+          1082
+        ],
+        [
+          431,
+          750,
+          590,
+          1091
+        ],
+        [
+          689,
+          750,
+          889,
+          1082
+        ],
+        [
+          126,
+          1097,
+          329,
+          1483
+        ],
+        [
+          423,
+          1097,
+          604,
+          1449
+        ],
+        [
+          697,
+          1097,
+          900,
+          1483
+        ]
+      ],
+      "visibleHeight": 1.35
+    }
+  ],
+  "instances": [
+    {
+      "name": "Piso_Praca",
+      "asset": "piso_praca",
+      "x": 0,
+      "y": 2
+    },
+    {
+      "name": "Igreja_Matriz_Interpretacao",
+      "asset": "igreja",
+      "x": 0,
+      "y": 2.8
+    },
+    {
+      "name": "Arvore_Oeste_1",
+      "asset": "arvore",
+      "x": -10.7,
+      "y": -3.6
+    },
+    {
+      "name": "Arvore_Oeste_2",
+      "asset": "arvore",
+      "x": -10.7,
+      "y": 1.0
+    },
+    {
+      "name": "Arvore_Oeste_3",
+      "asset": "arvore",
+      "x": -10.7,
+      "y": 5.6
+    },
+    {
+      "name": "Arvore_Leste_1",
+      "asset": "arvore",
+      "x": 10.7,
+      "y": -3.6
+    },
+    {
+      "name": "Arvore_Leste_2",
+      "asset": "arvore",
+      "x": 10.7,
+      "y": 1.0
+    },
+    {
+      "name": "Arvore_Leste_3",
+      "asset": "arvore",
+      "x": 10.7,
+      "y": 5.6
+    },
+    {
+      "name": "Banco_Oeste_1",
+      "asset": "banco",
+      "x": -5.5,
+      "y": -2.8
+    },
+    {
+      "name": "Banco_Oeste_2",
+      "asset": "banco",
+      "x": -5.5,
+      "y": 1.1
+    },
+    {
+      "name": "Banco_Oeste_3",
+      "asset": "banco",
+      "x": -5.5,
+      "y": 5.0
+    },
+    {
+      "name": "Banco_Leste_1",
+      "asset": "banco",
+      "x": 5.5,
+      "y": -2.8
+    },
+    {
+      "name": "Banco_Leste_2",
+      "asset": "banco",
+      "x": 5.5,
+      "y": 1.1
+    },
+    {
+      "name": "Banco_Leste_3",
+      "asset": "banco",
+      "x": 5.5,
+      "y": 5.0
+    },
+    {
+      "name": "Poste_Oeste_1",
+      "asset": "poste",
+      "x": -13.4,
+      "y": -4.0
+    },
+    {
+      "name": "Poste_Oeste_2",
+      "asset": "poste",
+      "x": -13.4,
+      "y": 3.6
+    },
+    {
+      "name": "Poste_Leste_1",
+      "asset": "poste",
+      "x": 13.4,
+      "y": -4.0
+    },
+    {
+      "name": "Poste_Leste_2",
+      "asset": "poste",
+      "x": 13.4,
+      "y": 3.6
+    },
+    {
+      "name": "Neto",
+      "asset": "neto",
+      "x": -1.8,
+      "y": -2.9
+    },
+    {
+      "name": "Jogador_Praca",
+      "asset": "jogador_folha",
+      "x": 0,
+      "y": -4.5
+    }
+  ]
+}

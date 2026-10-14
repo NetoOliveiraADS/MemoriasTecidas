@@ -1,0 +1,7482 @@
+{
+  "versao": "2.1",
+  "artes": [
+    {
+      "id": "piso_praca",
+      "arquivo": "Arte/piso_praca.png",
+      "ppu": 52.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "igreja",
+      "arquivo": "Arte/igreja.png",
+      "ppu": 177.70270270270268,
+      "pivotX": 0.5,
+      "pivotY": 0.018436578171091445,
+      "piso": false,
+      "folha": false,
+      "colW": 4.45,
+      "colH": 1.25,
+      "colY": 0.5,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "arvore",
+      "arquivo": "Arte/arvore.png",
+      "ppu": 337.8378378378378,
+      "pivotX": 0.514,
+      "pivotY": 0.1171875,
+      "piso": false,
+      "folha": false,
+      "colW": 0.45,
+      "colH": 0.3,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0.75,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "banco",
+      "arquivo": "Arte/banco.png",
+      "ppu": 663.8095238095237,
+      "pivotX": 0.5,
+      "pivotY": 0.11583421891604676,
+      "piso": false,
+      "folha": false,
+      "colW": 2.0,
+      "colH": 0.48,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "neto",
+      "arquivo": "Arte/neto.png",
+      "ppu": 825.5813953488372,
+      "pivotX": 0.5,
+      "pivotY": 0.036458333333333336,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.26686316287878786,
+      "rostoY": 0.6096354166666667,
+      "rostoW": 0.4662736742424243,
+      "rostoH": 0.35130208333333335
+    },
+    {
+      "id": "poste",
+      "arquivo": "Arte/poste.png",
+      "ppu": 367.5,
+      "pivotX": 0.43,
+      "pivotY": 0.06380208333333333,
+      "piso": false,
+      "folha": false,
+      "colW": 0.34,
+      "colH": 0.3,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "jogador_folha",
+      "arquivo": "Arte/jogador_folha.png",
+      "ppu": 180,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "piso": false,
+      "folha": true,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "prefeitura",
+      "arquivo": "Arte/prefeitura.png",
+      "ppu": 142.08333,
+      "pivotX": 0.5,
+      "pivotY": 0.1364149,
+      "piso": false,
+      "folha": false,
+      "colW": 11.5,
+      "colH": 1.35,
+      "colY": 0.55,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "letreiro",
+      "arquivo": "Arte/letreiro.png",
+      "ppu": 151.38462,
+      "pivotX": 0.5,
+      "pivotY": 0.0325521,
+      "piso": false,
+      "folha": false,
+      "colW": 12.7,
+      "colH": 0.6,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "carnauba_adulta",
+      "arquivo": "Arte/carnauba_adulta.png",
+      "ppu": 301.4,
+      "pivotX": 0.505,
+      "pivotY": 0.0097656,
+      "piso": false,
+      "folha": false,
+      "colW": 0.3,
+      "colH": 0.28,
+      "colY": 0.1,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0.75,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "carnauba_jovem",
+      "arquivo": "Arte/carnauba_jovem.png",
+      "ppu": 696.0,
+      "pivotX": 0.5,
+      "pivotY": 0.092504,
+      "piso": false,
+      "folha": false,
+      "colW": 0.65,
+      "colH": 0.35,
+      "colY": 0.14,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0.75,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "casario",
+      "arquivo": "Arte/casario.png",
+      "ppu": 196.94444,
+      "pivotX": 0.5,
+      "pivotY": 0.1337891,
+      "piso": false,
+      "folha": false,
+      "colW": 6.9,
+      "colH": 1.0,
+      "colY": 0.45,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "quiosque",
+      "arquivo": "Arte/quiosque.png",
+      "ppu": 265.76923,
+      "pivotX": 0.5,
+      "pivotY": 0.046875,
+      "piso": false,
+      "folha": false,
+      "colW": 4.1,
+      "colH": 0.65,
+      "colY": 0.25,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "poste_praca",
+      "arquivo": "Arte/poste_praca.png",
+      "ppu": 402.77778,
+      "pivotX": 0.5,
+      "pivotY": 0.0260417,
+      "piso": false,
+      "folha": false,
+      "colW": 0.24,
+      "colH": 0.24,
+      "colY": 0.1,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "mulher_cavalo_relato",
+      "arquivo": "Arte/mulher_cavalo_relato.png",
+      "ppu": 845.71429,
+      "pivotX": 0.525,
+      "pivotY": 0.0253906,
+      "piso": false,
+      "folha": false,
+      "colW": 0.45,
+      "colH": 0.3,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "piso_urbano",
+      "arquivo": "Arte/piso_urbano.png",
+      "ppu": 52.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0.0,
+      "colH": 0.0,
+      "colY": 0.0,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "rio_margem",
+      "arquivo": "Arte/rio_margem.png",
+      "ppu": 52.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0.0,
+      "colH": 0.0,
+      "colY": 0.0,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "fabrica",
+      "arquivo": "Arte/fabrica.png",
+      "ppu": 87.3125,
+      "pivotX": 0.5,
+      "pivotY": 0.142578125,
+      "piso": false,
+      "folha": false,
+      "colW": 15.5,
+      "colH": 1,
+      "colY": 0.35,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "mercado",
+      "arquivo": "Arte/mercado.png",
+      "ppu": 89.17647058823529,
+      "pivotX": 0.5,
+      "pivotY": 0.2451171875,
+      "piso": false,
+      "folha": false,
+      "colW": 16,
+      "colH": 0.85,
+      "colY": 0.25,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "memorial",
+      "arquivo": "Arte/memorial.png",
+      "ppu": 143.5,
+      "pivotX": 0.5,
+      "pivotY": 0.1005859375,
+      "piso": false,
+      "folha": false,
+      "colW": 9.4,
+      "colH": 0.85,
+      "colY": 0.3,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "tear",
+      "arquivo": "Arte/tear.png",
+      "ppu": 273.25,
+      "pivotX": 0.5,
+      "pivotY": 0.025518341307814992,
+      "piso": false,
+      "folha": false,
+      "colW": 3.5,
+      "colH": 0.75,
+      "colY": 0.25,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "banca",
+      "arquivo": "Arte/banca.png",
+      "ppu": 347.5,
+      "pivotX": 0.5,
+      "pivotY": 0.03125,
+      "piso": false,
+      "folha": false,
+      "colW": 3.1,
+      "colH": 0.6,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "coreto",
+      "arquivo": "Arte/coreto.png",
+      "ppu": 189.7872340425532,
+      "pivotX": 0.5,
+      "pivotY": 0.05502183406113537,
+      "piso": false,
+      "folha": false,
+      "colW": 4.2,
+      "colH": 0.8,
+      "colY": 0.3,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "cruzeiro",
+      "arquivo": "Arte/cruzeiro.png",
+      "ppu": 225.6140350877193,
+      "pivotX": 0.5,
+      "pivotY": 0.029498525073746312,
+      "piso": false,
+      "folha": false,
+      "colW": 1.7,
+      "colH": 0.8,
+      "colY": 0.3,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "algodoeiro",
+      "arquivo": "Arte/algodoeiro.png",
+      "ppu": 904.0,
+      "pivotX": 0.5,
+      "pivotY": 0.0645933014354067,
+      "piso": false,
+      "folha": false,
+      "colW": 0.7,
+      "colH": 0.5,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 1.15,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "piso_rural",
+      "arquivo": "Arte/piso_rural.png",
+      "ppu": 52.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "piso_serra",
+      "arquivo": "Arte/piso_serra.png",
+      "ppu": 52.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "piso_interior",
+      "arquivo": "Arte/piso_interior.png",
+      "ppu": 52.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "feliciana",
+      "arquivo": "Arte/feliciana.png",
+      "ppu": 834.8837209302326,
+      "pivotX": 0.5,
+      "pivotY": 0.031901041666666664,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.26423626893939395,
+      "rostoY": 0.6115364583333334,
+      "rostoW": 0.4715274621212121,
+      "rostoH": 0.35526041666666663
+    },
+    {
+      "id": "simao",
+      "arquivo": "Arte/simao.png",
+      "ppu": 804.3243243243243,
+      "pivotX": 0.5,
+      "pivotY": 0.020182291666666668,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.3171306818181818,
+      "rostoY": 0.6983072916666666,
+      "rostoW": 0.3857386363636363,
+      "rostoH": 0.29062499999999997
+    },
+    {
+      "id": "artesa",
+      "arquivo": "Arte/artesa.png",
+      "ppu": 847.0930232558139,
+      "pivotX": 0.5,
+      "pivotY": 0.033854166666666664,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.2607884706439394,
+      "rostoY": 0.6219661458333333,
+      "rostoW": 0.4784230587121212,
+      "rostoH": 0.3604557291666666
+    },
+    {
+      "id": "guia",
+      "arquivo": "Arte/guia.png",
+      "ppu": 852.9069767441861,
+      "pivotX": 0.5,
+      "pivotY": 0.028645833333333332,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.2591466619318182,
+      "rostoY": 0.6207942708333333,
+      "rostoW": 0.48170667613636364,
+      "rostoH": 0.36292968750000004
+    },
+    {
+      "id": "feirante",
+      "arquivo": "Arte/feirante.png",
+      "ppu": 830.8139534883721,
+      "pivotX": 0.5,
+      "pivotY": 0.032552083333333336,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.26538553503787876,
+      "rostoY": 0.6093619791666667,
+      "rostoW": 0.4692289299242424,
+      "rostoH": 0.3535286458333333
+    },
+    {
+      "id": "gerardinho",
+      "arquivo": "Arte/gerardinho.png",
+      "ppu": 822.7777777777777,
+      "pivotX": 0.5,
+      "pivotY": 0.013671875,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.30803799715909086,
+      "rostoY": 0.6886067708333333,
+      "rostoW": 0.3839240056818182,
+      "rostoH": 0.2892578125
+    },
+    {
+      "id": "ivonete",
+      "arquivo": "Arte/ivonete.png",
+      "ppu": 832.5581395348837,
+      "pivotX": 0.5,
+      "pivotY": 0.03515625,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.2648929924242424,
+      "rostoY": 0.6131770833333333,
+      "rostoW": 0.4702140151515152,
+      "rostoH": 0.3542708333333333
+    },
+    {
+      "id": "raimundo",
+      "arquivo": "Arte/raimundo.png",
+      "ppu": 841.8604651162791,
+      "pivotX": 0.5,
+      "pivotY": 0.03125,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.2622660984848485,
+      "rostoY": 0.6157291666666667,
+      "rostoW": 0.47546780303030306,
+      "rostoH": 0.35822916666666665
+    },
+    {
+      "id": "padre_duceu",
+      "arquivo": "Arte/padre_duceu.png",
+      "ppu": 828.5714285714286,
+      "pivotX": 0.5,
+      "pivotY": 0.043619791666666664,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.27146022727272723,
+      "rostoY": 0.6054947916666666,
+      "rostoW": 0.4570795454545455,
+      "rostoH": 0.34437500000000004
+    },
+    {
+      "id": "emilia",
+      "arquivo": "Arte/emilia.png",
+      "ppu": 838.3720930232558,
+      "pivotX": 0.5,
+      "pivotY": 0.030598958333333332,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.2632511837121212,
+      "rostoY": 0.61265625,
+      "rostoW": 0.4734976325757576,
+      "rostoH": 0.35674479166666667
+    },
+    {
+      "id": "rede_pronta",
+      "arquivo": "Arte/rede_pronta.png",
+      "ppu": 322.1739130434783,
+      "pivotX": 0.5,
+      "pivotY": 0.15625,
+      "piso": false,
+      "folha": false,
+      "colW": 4.3,
+      "colH": 0.65,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "enfeite_palha",
+      "arquivo": "Arte/enfeite_palha.png",
+      "ppu": 2229.090909090909,
+      "pivotX": 0.5,
+      "pivotY": 0.011164274322169059,
+      "piso": false,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1
+    },
+    {
+      "id": "andre_lucio",
+      "arquivo": "Arte/andre_lucio.png",
+      "ppu": 819.1860465116279,
+      "pivotX": 0.5,
+      "pivotY": 0.048177083333333336,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.2686691524621212,
+      "rostoY": 0.6169140625,
+      "rostoW": 0.46266169507575755,
+      "rostoH": 0.34858072916666666
+    },
+    {
+      "id": "arbusto_florido",
+      "arquivo": "Arte/arbusto_florido.png",
+      "pivotX": 0.5,
+      "pivotY": 0.0654296875,
+      "piso": false,
+      "folha": false,
+      "colW": 1,
+      "colH": 0.6,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 1.15,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 836.551724137931
+    },
+    {
+      "id": "caatinga",
+      "arquivo": "Arte/caatinga.png",
+      "pivotX": 0.5,
+      "pivotY": 0.05078125,
+      "piso": false,
+      "folha": false,
+      "colW": 1.9,
+      "colH": 0.8,
+      "colY": 0.25,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 536.0869565217391
+    },
+    {
+      "id": "caixotes",
+      "arquivo": "Arte/caixotes.png",
+      "pivotX": 0.5,
+      "pivotY": 0.1064453125,
+      "piso": false,
+      "folha": false,
+      "colW": 1.3,
+      "colH": 0.65,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 700.0
+    },
+    {
+      "id": "canoa",
+      "arquivo": "Arte/canoa.png",
+      "pivotX": 0.5,
+      "pivotY": 0.15104166666666666,
+      "piso": false,
+      "folha": false,
+      "colW": 3,
+      "colH": 0.7,
+      "colY": 0.2,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 581.4705882352941
+    },
+    {
+      "id": "casa_azul",
+      "arquivo": "Arte/casa_azul.png",
+      "pivotX": 0.5,
+      "pivotY": 0.1123046875,
+      "piso": false,
+      "folha": false,
+      "colW": 6.2,
+      "colH": 0.9,
+      "colY": 0.3,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 207.14285714285714
+    },
+    {
+      "id": "casa_ocre",
+      "arquivo": "Arte/casa_ocre.png",
+      "pivotX": 0.5,
+      "pivotY": 0.099609375,
+      "piso": false,
+      "folha": false,
+      "colW": 7.3,
+      "colH": 1.1,
+      "colY": 0.3,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 182.5
+    },
+    {
+      "id": "chao_areia",
+      "arquivo": "Arte/chao_areia.png",
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": true,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 313.5
+    },
+    {
+      "id": "chao_calcamento",
+      "arquivo": "Arte/chao_calcamento.png",
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": true,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 313.5
+    },
+    {
+      "id": "chao_ceramica",
+      "arquivo": "Arte/chao_ceramica.png",
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": true,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 313.5
+    },
+    {
+      "id": "chao_passeio",
+      "arquivo": "Arte/chao_passeio.png",
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": true,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 313.5
+    },
+    {
+      "id": "chao_serra",
+      "arquivo": "Arte/chao_serra.png",
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": true,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 313.5
+    },
+    {
+      "id": "chao_vegetacao",
+      "arquivo": "Arte/chao_vegetacao.png",
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "piso": true,
+      "folha": false,
+      "colW": 0,
+      "colH": 0,
+      "colY": 0,
+      "repetivel": true,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 313.5
+    },
+    {
+      "id": "cida",
+      "arquivo": "Arte/cida.png",
+      "pivotX": 0.5,
+      "pivotY": 0.018229166666666668,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.24391205018939396,
+      "rostoY": 0.6502994791666666,
+      "rostoW": 0.4321758996212121,
+      "rostoH": 0.3256119791666667,
+      "ppu": 931.0126582278481
+    },
+    {
+      "id": "deque_rio",
+      "arquivo": "Arte/deque_rio.png",
+      "pivotX": 0.5,
+      "pivotY": 0.0849609375,
+      "piso": false,
+      "folha": false,
+      "colW": 7,
+      "colH": 0.8,
+      "colY": 0.25,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 173.0
+    },
+    {
+      "id": "muro_jardim",
+      "arquivo": "Arte/muro_jardim.png",
+      "pivotX": 0.5,
+      "pivotY": 0.2638105975197294,
+      "piso": false,
+      "folha": false,
+      "colW": 4.8,
+      "colH": 0.45,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 337.6
+    },
+    {
+      "id": "oficina_varanda",
+      "arquivo": "Arte/oficina_varanda.png",
+      "pivotX": 0.5,
+      "pivotY": 0.1484375,
+      "piso": false,
+      "folha": false,
+      "colW": 8,
+      "colH": 1.1,
+      "colY": 0.35,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 167.77777777777777
+    },
+    {
+      "id": "sobrado_comercio",
+      "arquivo": "Arte/sobrado_comercio.png",
+      "pivotX": 0.5,
+      "pivotY": 0.056640625,
+      "piso": false,
+      "folha": false,
+      "colW": 5.6,
+      "colH": 1,
+      "colY": 0.3,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 135.7377049180328
+    },
+    {
+      "id": "varal_redes",
+      "arquivo": "Arte/varal_redes.png",
+      "pivotX": 0.5,
+      "pivotY": 0.014656144306651634,
+      "piso": false,
+      "folha": false,
+      "colW": 4.4,
+      "colH": 0.4,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0.55,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 335.20833333333337
+    },
+    {
+      "id": "vasos",
+      "arquivo": "Arte/vasos.png",
+      "pivotX": 0.5,
+      "pivotY": 0.060546875,
+      "piso": false,
+      "folha": false,
+      "colW": 0.7,
+      "colH": 0.45,
+      "colY": 0.1,
+      "repetivel": false,
+      "personagem": false,
+      "vento": 0,
+      "rostoX": 0,
+      "rostoY": 0,
+      "rostoW": 1,
+      "rostoH": 1,
+      "ppu": 1058.888888888889
+    },
+    {
+      "id": "zeca",
+      "arquivo": "Arte/zeca.png",
+      "pivotX": 0.5,
+      "pivotY": 0.022786458333333332,
+      "piso": false,
+      "folha": false,
+      "colW": 0.42,
+      "colH": 0.25,
+      "colY": 0.12,
+      "repetivel": false,
+      "personagem": true,
+      "vento": 0,
+      "rostoX": 0.3279083806818182,
+      "rostoY": 0.6981770833333334,
+      "rostoW": 0.3841832386363636,
+      "rostoH": 0.289453125,
+      "ppu": 796.7741935483871
+    }
+  ],
+  "areas": [
+    {
+      "id": "entrada",
+      "nome": "Entrada da cidade",
+      "piso": "chao_areia",
+      "mapaX": 0,
+      "mapaY": 1,
+      "descricao": "O letreiro apresenta a cidade e dá passagem à praça.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "letreiro",
+          "x": 0,
+          "y": 0.5,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -12,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 12,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -10,
+          "y": 2.5,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 10,
+          "y": 2.5,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_jovem",
+          "x": -7,
+          "y": -3.5,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_jovem",
+          "x": 7,
+          "y": -3.5,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -12,
+          "y": -6,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 12,
+          "y": -6,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": -18,
+          "y": 3,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -21,
+          "y": -0.2,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": 18,
+          "y": 3,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 15,
+          "y": -0.2,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -16,
+          "y": -9,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -6,
+          "y": -9,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 6,
+          "y": -9,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 16,
+          "y": -9,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -21,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -15,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -9,
+          "y": 11.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -3,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 3,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 9,
+          "y": 11.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 15,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 21,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "placa_entrada",
+          "nome": "Conhecer a cidade",
+          "x": 0,
+          "y": -1.2,
+          "evento": "boas_vindas",
+          "falas": [
+            "Jaguaruana é lembrada pela produção de redes e por suas memórias culturais.",
+            "Siga até a Praça Matriz. Neto espera você perto do caminho central."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false
+        },
+        {
+          "id": "entrada_para_praca",
+          "nome": "Praça Matriz",
+          "x": 21.4,
+          "y": -5.5,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "praca",
+          "chegadaX": -19.2,
+          "chegadaY": -6
+        },
+        {
+          "id": "entrada_para_largo",
+          "nome": "Largo da Vila",
+          "x": -18,
+          "y": 8,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "largo",
+          "chegadaX": -19.2,
+          "chegadaY": -8
+        }
+      ],
+      "agua": [],
+      "largura": 48,
+      "altura": 28,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_calcamento",
+          "x": 0,
+          "y": -6,
+          "largura": 48,
+          "altura": 6.4,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0,
+          "y": -2.0,
+          "largura": 48,
+          "altura": 1.65,
+          "ordem": -28999
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0,
+          "y": -10.0,
+          "largura": 48,
+          "altura": 1.65,
+          "ordem": -28998
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0,
+          "y": 0,
+          "largura": 18,
+          "altura": 7,
+          "ordem": -28997
+        }
+      ],
+      "luzes": [
+        {
+          "x": -16,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -6,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 6,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 16,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -12,
+          "y": -4.9,
+          "raio": 5.3,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 12,
+          "y": -4.9,
+          "raio": 5.3,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ],
+      "bioma": "urbano"
+    },
+    {
+      "id": "praca",
+      "nome": "Praça Matriz",
+      "piso": "chao_areia",
+      "mapaX": 1,
+      "mapaY": 1,
+      "descricao": "A igreja orienta a chegada; o adro reúne os encontros e os passeios levam aos bairros.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "igreja",
+          "x": 0,
+          "y": 5.4,
+          "escala": 0.92,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "coreto",
+          "x": -9,
+          "y": 0.6,
+          "escala": 0.88,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casario",
+          "x": 10,
+          "y": 7.8,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": -10.5,
+          "y": 8.3,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": -19,
+          "y": -13.4,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": 16,
+          "y": -13.4,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arvore",
+          "x": -14,
+          "y": 1,
+          "escala": 0.82,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arvore",
+          "x": 14.7,
+          "y": 0.3,
+          "escala": 0.78,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": -5.5,
+          "y": -3.2,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": 11,
+          "y": -3.4,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "enfeite_palha",
+          "x": -9,
+          "y": -0.7,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "neto",
+          "x": -1.6,
+          "y": -3.6,
+          "escala": 1,
+          "nome": "Neto",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "feliciana",
+          "x": -4.2,
+          "y": 0.4,
+          "escala": 1,
+          "nome": "Dona Feliciana · memória",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "simao",
+          "x": 4.4,
+          "y": 0.4,
+          "escala": 1,
+          "nome": "Simão de Góis · memória",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "andre_lucio",
+          "x": 8,
+          "y": -2.1,
+          "escala": 1,
+          "nome": "André Lúcio",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "padre_duceu",
+          "x": -3.5,
+          "y": 4.4,
+          "escala": 1,
+          "nome": "Padre Ducéu · memória",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -16,
+          "y": -3.2,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 16,
+          "y": -3.2,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -7,
+          "y": -8.7,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 7,
+          "y": -8.7,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -17,
+          "y": 7,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 17,
+          "y": 7,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -22,
+          "y": -11,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -21,
+          "y": 11,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -15,
+          "y": 11.5,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 17,
+          "y": 11.5,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 22,
+          "y": -11,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -13,
+          "y": -1.3,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 13,
+          "y": -1.5,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -6.6,
+          "y": 4.3,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 5.7,
+          "y": 4.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -12,
+          "y": 6,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 13.5,
+          "y": 6,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "npc_neto",
+          "nome": "Neto",
+          "x": -1.6,
+          "y": -3.6,
+          "evento": "neto",
+          "falas": [
+            "Bem-vindo a Memórias Tecidas! Vamos conhecer Jaguaruana pelos lugares, pelas pessoas e pelo trabalho de fazer uma rede.",
+            "Alguns encontros são memórias de outras épocas. Comece conversando com Dona Feliciana e Simão de Góis aqui na praça.",
+            "Quando precisar de orientação, abra o mapa com M. As saídas têm o nome do lugar: aproxime-se e pressione E."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Falas adaptadas para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "npc_feliciana",
+          "nome": "Dona Feliciana · memória",
+          "x": -4.2,
+          "y": 0.4,
+          "evento": "feliciana",
+          "falas": [
+            "Minha presença aqui é uma memória do passado. A história local associa Dona Feliciana Soares da Costa à doação de terras para a antiga capela.",
+            "Olhe ao redor: uma cidade se constrói com muitos encontros. Procure Simão de Góis para começar o caminho da serra."
+          ],
+          "tipo": "conversa",
+          "condicao": "neto",
+          "fonte": "Encontro de memória · falas adaptadas.",
+          "noturno": false
+        },
+        {
+          "id": "npc_simao",
+          "nome": "Simão de Góis · memória",
+          "x": 4.4,
+          "y": 0.4,
+          "evento": "simao",
+          "falas": [
+            "Vamos seguir os caminhos da memória. Saia pelo mercado, passe pelo pátio da fábrica e encontre a trilha no Sítio do Algodão.",
+            "Na Serra Dantas, visite o Cruzeiro. Ao voltar, procure André Lúcio: ele conta uma das lendas lembradas em Jaguaruana."
+          ],
+          "tipo": "conversa",
+          "condicao": "feliciana",
+          "fonte": "Encontro de memória · falas adaptadas.",
+          "noturno": false
+        },
+        {
+          "id": "npc_andre_lucio",
+          "nome": "André Lúcio",
+          "x": 8,
+          "y": -2.1,
+          "evento": "andre",
+          "falas": [
+            "Muita gente conhece histórias da Mulher-Cavalo. No relato reunido na pesquisa do projeto, ela aparece com corpo humano e cabeça de cavalo.",
+            "Um dos casos fala de um rapaz voltando do circo; outro relato foi contado no rádio. São narrativas populares, com versões que mudam de pessoa para pessoa.",
+            "Neste jogo, a lenda ganha uma presença perto do rio durante a noite. Você pode observá-la e registrar o encontro, sem precisar lutar.",
+            "Se quiser esperar a noite, use o banco de descanso da praça. Depois siga pelo carnaubal até a margem do rio."
+          ],
+          "tipo": "conversa",
+          "condicao": "cruzeiro",
+          "fonte": "Falas adaptadas para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "npc_padre_duceu",
+          "nome": "Padre Ducéu · memória",
+          "x": -3.5,
+          "y": 4.4,
+          "evento": "padre_duceu",
+          "falas": [
+            "Esta é uma representação de memória do Padre Raimundo Sales Façanha, conhecido como Padre Ducéu.",
+            "As festas e celebrações também ajudam a contar a história de uma comunidade. Observe os lugares onde as pessoas se encontram.",
+            "No diário, guarde a lembrança deste encontro. A festa da praça pode ser o próximo capítulo da aventura."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Encontro de memória · falas adaptadas.",
+          "noturno": false
+        },
+        {
+          "id": "banco_descanso",
+          "nome": "Descansar até outro período",
+          "x": -5.5,
+          "y": -3.95,
+          "evento": "",
+          "falas": [],
+          "tipo": "descanso",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false
+        },
+        {
+          "id": "coleta_enfeite",
+          "nome": "Enfeite de palha",
+          "x": -9,
+          "y": -0.7,
+          "evento": "enfeite",
+          "falas": [
+            "Você encontrou um enfeite de palha ao lado do coreto.",
+            "Guarde-o para decorar a rede quando chegar à oficina."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Objeto e atividade criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "praca_para_entrada",
+          "nome": "Entrada da cidade",
+          "x": -21.4,
+          "y": -6,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "entrada",
+          "chegadaX": 19.2,
+          "chegadaY": -5.5
+        },
+        {
+          "id": "praca_para_mercado",
+          "nome": "Mercado e prefeitura",
+          "x": 21.4,
+          "y": -6,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "mercado",
+          "chegadaX": -19.2,
+          "chegadaY": -6
+        },
+        {
+          "id": "praca_para_carnaubal",
+          "nome": "Carnaubal",
+          "x": 2.5,
+          "y": -13.3,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "carnaubal",
+          "chegadaX": -19.2,
+          "chegadaY": -5.5
+        },
+        {
+          "id": "praca_para_memorias",
+          "nome": "Casa das Memórias",
+          "x": 9,
+          "y": 6.4,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "memorias",
+          "chegadaX": 0,
+          "chegadaY": -5.3
+        },
+        {
+          "id": "praca_para_rua",
+          "nome": "Rua do Comércio",
+          "x": 21.4,
+          "y": 7,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "rua",
+          "chegadaX": -27.2,
+          "chegadaY": -6
+        },
+        {
+          "id": "praca_para_largo",
+          "nome": "Largo da Vila",
+          "x": -21.4,
+          "y": 7,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "largo",
+          "chegadaX": 19.2,
+          "chegadaY": -8
+        }
+      ],
+      "agua": [],
+      "largura": 48,
+      "altura": 30,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_passeio",
+          "x": 0.0,
+          "y": -6.0,
+          "largura": 55.3,
+          "altura": 7.3,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_calcamento",
+          "x": 0.0,
+          "y": -6.0,
+          "largura": 52.8,
+          "altura": 4.8,
+          "ordem": -28999
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0,
+          "y": 0.6,
+          "largura": 31,
+          "altura": 10.8,
+          "ordem": -28998
+        },
+        {
+          "arte": "chao_passeio",
+          "x": -19.7,
+          "y": 7.0,
+          "largura": 6.199999999999998,
+          "altura": 2.8,
+          "ordem": -28997
+        },
+        {
+          "arte": "chao_passeio",
+          "x": -18.0,
+          "y": 0.5,
+          "largura": 2.8,
+          "altura": 15.8,
+          "ordem": -28996
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 19.7,
+          "y": 7.0,
+          "largura": 6.199999999999998,
+          "altura": 2.8,
+          "ordem": -28995
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 18.0,
+          "y": 0.5,
+          "largura": 2.8,
+          "altura": 15.8,
+          "ordem": -28994
+        },
+        {
+          "arte": "chao_areia",
+          "x": 2.5,
+          "y": -9.65,
+          "largura": 3.4,
+          "altura": 10.700000000000001,
+          "ordem": -28993
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 9.0,
+          "y": 1.7000000000000002,
+          "largura": 2.8,
+          "altura": 12.2,
+          "ordem": -28992
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0.0,
+          "y": -0.8500000000000001,
+          "largura": 3.2,
+          "altura": 13.5,
+          "ordem": -28991
+        }
+      ],
+      "luzes": [
+        {
+          "x": -16,
+          "y": -2.1,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 16,
+          "y": -2.1,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -7,
+          "y": -7.6,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 7,
+          "y": -7.6,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -17,
+          "y": 8.1,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 17,
+          "y": 8.1,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ],
+      "bioma": "urbano"
+    },
+    {
+      "id": "mercado",
+      "nome": "Mercado e prefeitura",
+      "piso": "chao_areia",
+      "mapaX": 2,
+      "mapaY": 1,
+      "descricao": "Feira diante do mercado, prefeitura ao lado e um pátio lateral de apoio ao comércio.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "mercado",
+          "x": -4.5,
+          "y": 3.2,
+          "escala": 0.94,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "prefeitura",
+          "x": 14.5,
+          "y": 6.3,
+          "escala": 0.66,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": -16,
+          "y": 8.9,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "oficina_varanda",
+          "x": 14,
+          "y": -12.6,
+          "escala": 0.82,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": -14,
+          "y": -12.6,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banca",
+          "x": -10,
+          "y": -2,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banca",
+          "x": -2,
+          "y": -2,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banca",
+          "x": 6,
+          "y": -2,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "feirante",
+          "x": -2,
+          "y": -0.2,
+          "escala": 1,
+          "nome": "Seu Bento",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "raimundo",
+          "x": 13,
+          "y": 3.8,
+          "escala": 1,
+          "nome": "Raimundo Jaguaribe · memória",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -15,
+          "y": 5.5,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -20,
+          "y": 6,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "rede_pronta",
+          "x": 13,
+          "y": 0.6,
+          "escala": 0.6,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -19,
+          "y": -3.8,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 10,
+          "y": -3.6,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -8,
+          "y": -9,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 8,
+          "y": -9,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 19,
+          "y": 5.2,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -22,
+          "y": 10,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -20,
+          "y": -11,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 21,
+          "y": -11,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 21,
+          "y": 10,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -17,
+          "y": 1.5,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 17,
+          "y": -11,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -13,
+          "y": -0.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 17,
+          "y": 3.5,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 8,
+          "y": 1.6,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "encomenda_1",
+          "nome": "Conferir encomenda 1",
+          "x": -10,
+          "y": -3,
+          "evento": "pacote1",
+          "falas": [
+            "Você conferiu a encomenda desta banca.",
+            "Depois de verificar as três bancas, converse com Seu Bento."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Atividade fictícia inspirada no roteiro enviado.",
+          "noturno": false
+        },
+        {
+          "id": "encomenda_2",
+          "nome": "Conferir encomenda 2",
+          "x": -2,
+          "y": -3,
+          "evento": "pacote2",
+          "falas": [
+            "Você conferiu a encomenda desta banca.",
+            "Depois de verificar as três bancas, converse com Seu Bento."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Atividade fictícia inspirada no roteiro enviado.",
+          "noturno": false
+        },
+        {
+          "id": "encomenda_3",
+          "nome": "Conferir encomenda 3",
+          "x": 6,
+          "y": -3,
+          "evento": "pacote3",
+          "falas": [
+            "Você conferiu a encomenda desta banca.",
+            "Depois de verificar as três bancas, converse com Seu Bento."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Atividade fictícia inspirada no roteiro enviado.",
+          "noturno": false
+        },
+        {
+          "id": "npc_feirante",
+          "nome": "Seu Bento",
+          "x": -2,
+          "y": -0.2,
+          "evento": "mercado_entrega",
+          "falas": [
+            "Obrigado por conferir as três encomendas. Aqui estão os punhos para sua rede.",
+            "O trabalho passa por muitas mãos. Na oficina, Rosa vai ajudar você com os fios e o tear."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Personagem fictício.",
+          "noturno": false
+        },
+        {
+          "id": "npc_raimundo",
+          "nome": "Raimundo Jaguaribe · memória",
+          "x": 13,
+          "y": 3.8,
+          "evento": "raimundo",
+          "falas": [
+            "Uma memória de Raimundo Francisco Freitas Jaguaribe, nome ligado à vida pública de Jaguaruana.",
+            "Ao observar uma cidade, procure conhecer as decisões e as pessoas que transformaram seus espaços. Escute diferentes versões e compare os registros."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Encontro de memória · falas adaptadas.",
+          "noturno": false
+        },
+        {
+          "id": "mercado_para_praca",
+          "nome": "Praça Matriz",
+          "x": -21.4,
+          "y": -6,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "praca",
+          "chegadaX": 19.2,
+          "chegadaY": -6
+        },
+        {
+          "id": "mercado_para_fabrica",
+          "nome": "Pátio da fábrica",
+          "x": 21.4,
+          "y": -6,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "fabrica",
+          "chegadaX": -19.2,
+          "chegadaY": -5.5
+        },
+        {
+          "id": "mercado_para_rua",
+          "nome": "Rua do Comércio",
+          "x": 21.4,
+          "y": 7,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "rua",
+          "chegadaX": 27.2,
+          "chegadaY": -4
+        },
+        {
+          "id": "patio_cargas",
+          "nome": "Pátio das encomendas",
+          "x": -15,
+          "y": 4.4,
+          "tipo": "conversa",
+          "evento": "patio_cargas",
+          "condicao": "",
+          "falas": [
+            "Neste pátio da aventura, materiais chegam, são separados e seguem para as bancas.",
+            "O lugar ajuda a perceber o caminho entre a produção, a venda e o uso de uma peça."
+          ],
+          "noturno": false,
+          "fonte": "Cena e atividade fictícias criadas para Memórias Tecidas; não é citação histórica."
+        }
+      ],
+      "agua": [],
+      "largura": 48,
+      "altura": 28,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_passeio",
+          "x": 0.0,
+          "y": -6.0,
+          "largura": 55.2,
+          "altura": 7.199999999999999,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_calcamento",
+          "x": 0.0,
+          "y": -6.0,
+          "largura": 52.8,
+          "altura": 4.8,
+          "ordem": -28999
+        },
+        {
+          "arte": "chao_passeio",
+          "x": -2,
+          "y": -0.7,
+          "largura": 28,
+          "altura": 7.8,
+          "ordem": -28998
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 20.7,
+          "y": 7.0,
+          "largura": 4.199999999999998,
+          "altura": 2.8,
+          "ordem": -28997
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 20.0,
+          "y": 0.5,
+          "largura": 2.8,
+          "altura": 15.8,
+          "ordem": -28996
+        },
+        {
+          "arte": "chao_areia",
+          "x": -18.0,
+          "y": -0.7999999999999998,
+          "largura": 2.6,
+          "altura": 13.0,
+          "ordem": -28995
+        },
+        {
+          "arte": "chao_areia",
+          "x": -16.5,
+          "y": 4.4,
+          "largura": 5.6,
+          "altura": 2.6,
+          "ordem": -28994
+        }
+      ],
+      "luzes": [
+        {
+          "x": -19,
+          "y": -2.6999999999999997,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 10,
+          "y": -2.5,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -8,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 8,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 19,
+          "y": 6.300000000000001,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ],
+      "bioma": "urbano"
+    },
+    {
+      "id": "fabrica",
+      "nome": "Pátio da fábrica",
+      "piso": "chao_vegetacao",
+      "mapaX": 3,
+      "mapaY": 1,
+      "descricao": "Área produtiva com entrada para a oficina e caminho rural.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "fabrica",
+          "x": 0,
+          "y": -0.7,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -12,
+          "y": 1,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_jovem",
+          "x": -12,
+          "y": -4,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 12,
+          "y": 1,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_jovem",
+          "x": 12,
+          "y": -4,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "oficina_varanda",
+          "x": -16,
+          "y": 5,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": 16,
+          "y": 5,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -16,
+          "y": -8,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -12,
+          "y": -8,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 12,
+          "y": -8,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 16,
+          "y": -8,
+          "escala": 1,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "varal_redes",
+          "x": -13,
+          "y": -2,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "varal_redes",
+          "x": 13,
+          "y": -2,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -15,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 0,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 15,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -21,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -15,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -9,
+          "y": 11.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -3,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 3,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 9,
+          "y": 11.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 15,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 21,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "painel_producao",
+          "nome": "Sobre as redes",
+          "x": -7,
+          "y": -3.2,
+          "evento": "producao",
+          "falas": [
+            "Na produção de uma rede, há diferentes etapas, ferramentas e pessoas.",
+            "Esta fábrica é uma adaptação visual da foto enviada. A oficina do jogo usa um tear artesanal para a atividade educativa."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Adaptação didática; arquitetura inspirada na foto do projeto.",
+          "noturno": false
+        },
+        {
+          "id": "fabrica_para_mercado",
+          "nome": "Mercado e prefeitura",
+          "x": -21.4,
+          "y": -5.5,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "mercado",
+          "chegadaX": 19.2,
+          "chegadaY": -6
+        },
+        {
+          "id": "fabrica_para_oficina",
+          "nome": "Oficina de redes",
+          "x": 0,
+          "y": -1.9,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "oficina",
+          "chegadaX": 0,
+          "chegadaY": -5.3
+        },
+        {
+          "id": "fabrica_para_sitio",
+          "nome": "Sítio do Algodão",
+          "x": 21.4,
+          "y": -5.5,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "sitio",
+          "chegadaX": 19.2,
+          "chegadaY": 3.7
+        }
+      ],
+      "agua": [],
+      "largura": 48,
+      "altura": 28,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_areia",
+          "x": 0,
+          "y": -5,
+          "largura": 48,
+          "altura": 4,
+          "ordem": -29000
+        }
+      ],
+      "luzes": [
+        {
+          "x": -15,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 0,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 15,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ],
+      "bioma": "rural"
+    },
+    {
+      "id": "oficina",
+      "nome": "Oficina de redes",
+      "piso": "piso_interior",
+      "mapaX": 3,
+      "mapaY": 0,
+      "descricao": "Fiar o algodão, aprender sobre a produção e usar o tear.",
+      "interior": true,
+      "objetos": [
+        {
+          "arte": "tear",
+          "x": 6,
+          "y": 1.3,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "tear",
+          "x": -7,
+          "y": 1.3,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banca",
+          "x": 11,
+          "y": 1.7,
+          "escala": 0.75,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banco",
+          "x": 0,
+          "y": 3.5,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "rede_pronta",
+          "x": -8,
+          "y": -3.9,
+          "escala": 1,
+          "nome": "Rede_Modelo_Da_Oficina",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "artesa",
+          "x": -2,
+          "y": -1.5,
+          "escala": 1,
+          "nome": "Rosa · artesã",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -11,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 11,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "npc_artesa",
+          "nome": "Rosa · artesã",
+          "x": -2,
+          "y": -1.5,
+          "evento": "fiar",
+          "falas": [
+            "Você trouxe o algodão. Na produção real, é preciso preparar as fibras antes de obter o fio.",
+            "Vamos representar essa preparação de forma simples: seis algodões se transformam em três conjuntos de fios.",
+            "Confirme para guardar os fios. Depois, use o tear à direita quando tiver todos os materiais."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Personagem fictício.",
+          "noturno": false
+        },
+        {
+          "id": "estacao_tear",
+          "nome": "Montar sua rede",
+          "x": 6,
+          "y": 0.2,
+          "evento": "tecer",
+          "falas": [
+            "Separe os fios, a corda, o pano, os punhos e o enfeite. Esta sequência resume o processo para a atividade do jogo.",
+            "Primeiro, organize os fios e acompanhe o entrelaçar da trama. Depois, reúna o pano e prepare os punhos.",
+            "Agora confira as amarrações e coloque o enfeite. A qualidade do trabalho vem da atenção a cada etapa.",
+            "Confirme para concluir sua rede e guardar a lembrança na bolsa. Depois, mostre o resultado a Neto."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Sequência textual de produção; receita didática simplificada.",
+          "noturno": false
+        },
+        {
+          "id": "oficina_para_fabrica",
+          "nome": "Pátio da fábrica",
+          "x": 0,
+          "y": -7.3,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "fabrica",
+          "chegadaX": 0,
+          "chegadaY": -3.5
+        }
+      ],
+      "agua": [],
+      "largura": 32,
+      "altura": 18,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_ceramica",
+          "x": 0,
+          "y": -2,
+          "largura": 32,
+          "altura": 14,
+          "ordem": -29000
+        }
+      ],
+      "luzes": [
+        {
+          "x": -10,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        },
+        {
+          "x": 10,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        }
+      ],
+      "bioma": "interior"
+    },
+    {
+      "id": "carnaubal",
+      "nome": "Carnaubal",
+      "piso": "chao_vegetacao",
+      "mapaX": 1,
+      "mapaY": 2,
+      "descricao": "Palmeiras e pavilhão inspirado no Memorial Carnaúba.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "memorial",
+          "x": 0,
+          "y": 0.8,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -12,
+          "y": 1,
+          "escala": 0.9,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 12,
+          "y": 1,
+          "escala": 0.9,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -8,
+          "y": 2,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 8,
+          "y": 2,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -10,
+          "y": -3.5,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 10,
+          "y": -3.5,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_jovem",
+          "x": -7,
+          "y": -4.8,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_jovem",
+          "x": 7,
+          "y": -4.8,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -18,
+          "y": 3.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -18,
+          "y": 8,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -13,
+          "y": 3.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -13,
+          "y": 8,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 13,
+          "y": 3.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 13,
+          "y": 8,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 18,
+          "y": 3.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 18,
+          "y": 8,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "muro_jardim",
+          "x": -15,
+          "y": -8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "muro_jardim",
+          "x": 15,
+          "y": -8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -6,
+          "y": -8.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 6,
+          "y": -8.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -21,
+          "y": 12.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -15,
+          "y": 12.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -9,
+          "y": 12.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -3,
+          "y": 12.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 3,
+          "y": 12.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 9,
+          "y": 12.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 15,
+          "y": 12.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 21,
+          "y": 12.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "placa_carnaubal",
+          "nome": "Conhecer a carnaúba",
+          "x": -5,
+          "y": -2.4,
+          "evento": "carnaubal",
+          "falas": [
+            "A carnaúba liga paisagem, trabalho e memória. O memorial reúne iniciativas de preservação e educação sobre essa palmeira.",
+            "Entre no pavilhão para conversar com Lia e conhecer a exposição."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Referência: Memorial Carnaúba e MAUC/UFC. Texto adaptado.",
+          "noturno": false
+        },
+        {
+          "id": "carnaubal_para_praca",
+          "nome": "Praça Matriz",
+          "x": -21.4,
+          "y": -5.5,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "praca",
+          "chegadaX": 2.5,
+          "chegadaY": -11.3
+        },
+        {
+          "id": "carnaubal_para_museu",
+          "nome": "Memorial Carnaúba",
+          "x": 0,
+          "y": -0.65,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "museu",
+          "chegadaX": 0,
+          "chegadaY": -5.3
+        },
+        {
+          "id": "carnaubal_para_rio",
+          "nome": "Rio Jaguaribe",
+          "x": 21.4,
+          "y": -5.5,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "rio",
+          "chegadaX": -19.2,
+          "chegadaY": -6.4
+        },
+        {
+          "id": "carnaubal_para_vila",
+          "nome": "Vila das Tecelãs",
+          "x": -21.4,
+          "y": 3,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "vila",
+          "chegadaX": -27.2,
+          "chegadaY": -6
+        }
+      ],
+      "agua": [],
+      "largura": 48,
+      "altura": 30,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_areia",
+          "x": 0,
+          "y": -5,
+          "largura": 48,
+          "altura": 4,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_areia",
+          "x": 0,
+          "y": 0,
+          "largura": 4,
+          "altura": 28,
+          "ordem": -28999
+        }
+      ],
+      "luzes": [
+        {
+          "x": -6,
+          "y": -7.4,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 6,
+          "y": -7.4,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ],
+      "bioma": "rural"
+    },
+    {
+      "id": "museu",
+      "nome": "Memorial Carnaúba",
+      "piso": "piso_interior",
+      "mapaX": 0,
+      "mapaY": 2,
+      "descricao": "Exposição interpretativa da palha, da cera e do trabalho.",
+      "interior": true,
+      "objetos": [
+        {
+          "arte": "carnauba_jovem",
+          "x": -7,
+          "y": 1.2,
+          "escala": 1.3,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banca",
+          "x": 6,
+          "y": 1.5,
+          "escala": 1.2,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banco",
+          "x": -7,
+          "y": -3.7,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banco",
+          "x": 7,
+          "y": -3.7,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "guia",
+          "x": 0,
+          "y": -1.6,
+          "escala": 1,
+          "nome": "Lia · guia do memorial",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "enfeite_palha",
+          "x": 6,
+          "y": 0.3,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -11,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 11,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "npc_guia",
+          "nome": "Lia · guia do memorial",
+          "x": 0,
+          "y": -1.6,
+          "evento": "guia_museu",
+          "falas": [
+            "Bem-vindo! Este espaço do jogo foi criado para apresentar a carnaúba e as memórias do trabalho ligado a ela.",
+            "Examine a peça de palha na exposição à direita. A cera e o artesanato ajudam a mostrar diferentes usos dessa palmeira."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Personagem fictício.",
+          "noturno": false
+        },
+        {
+          "id": "peca_museu",
+          "nome": "Peça de palha do acervo",
+          "x": 6,
+          "y": 0.3,
+          "evento": "museu",
+          "falas": [
+            "Você observa o trançado de uma peça de palha. O objeto permanece no acervo.",
+            "Lia registra a visita e entrega uma amostra simbólica de cera de carnaúba para a bolsa. Ela é uma lembrança deste aprendizado."
+          ],
+          "tipo": "conversa",
+          "condicao": "guia_museu",
+          "fonte": "Exposição interpretativa criada para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "museu_para_carnaubal",
+          "nome": "Carnaubal",
+          "x": 0,
+          "y": -7.3,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "carnaubal",
+          "chegadaX": 0,
+          "chegadaY": -2.25
+        }
+      ],
+      "agua": [],
+      "largura": 32,
+      "altura": 18,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_ceramica",
+          "x": 0,
+          "y": -2,
+          "largura": 32,
+          "altura": 14,
+          "ordem": -29000
+        }
+      ],
+      "luzes": [
+        {
+          "x": -10,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        },
+        {
+          "x": 10,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        }
+      ],
+      "bioma": "interior"
+    },
+    {
+      "id": "rio",
+      "nome": "Rio Jaguaribe",
+      "piso": "rio_margem",
+      "mapaX": 2,
+      "mapaY": 2,
+      "descricao": "Margem para observar a paisagem e a lenda durante a noite.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "quiosque",
+          "x": -9,
+          "y": -3.1,
+          "escala": 0.9,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -13,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 9,
+          "y": -2.8,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 13,
+          "y": -4.5,
+          "escala": 0.75,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "carnauba_jovem",
+          "x": 8,
+          "y": -6.3,
+          "escala": 0.7,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "mulher_cavalo_relato",
+          "x": 4.6,
+          "y": -3.2,
+          "escala": 1,
+          "nome": "",
+          "noturno": true,
+          "semColisao": true
+        },
+        {
+          "arte": "poste_praca",
+          "x": -18,
+          "y": -10,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -10,
+          "y": -10,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 0,
+          "y": -10,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 10,
+          "y": -10,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 18,
+          "y": -10,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -15,
+          "y": -6,
+          "escala": 0.65,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 15,
+          "y": -6,
+          "escala": 0.65,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "canoa",
+          "x": -3,
+          "y": -8.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "lenda_rio",
+          "nome": "Observar a Mulher-Cavalo",
+          "x": 4.6,
+          "y": -3.2,
+          "evento": "aparicao",
+          "falas": [
+            "Entre as sombras, você distingue uma figura: a Mulher-Cavalo das histórias contadas por André Lúcio.",
+            "Você observa de longe. Esta aparição pertence ao universo da lenda e à imaginação do jogo.",
+            "O encontro fica registrado no diário. Continue conhecendo os trabalhos e as pessoas da cidade."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Lenda popular adaptada. A cena não representa um acontecimento comprovado.",
+          "noturno": true
+        },
+        {
+          "id": "paisagem_rio",
+          "nome": "Observar o rio",
+          "x": -3,
+          "y": -3.6,
+          "evento": "paisagem_rio",
+          "falas": [
+            "O rio faz parte da paisagem e das memórias da região.",
+            "Esta margem tem posição e distâncias adaptadas para a aventura. Observe a paisagem sem entrar na água."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false
+        },
+        {
+          "id": "rio_para_carnaubal",
+          "nome": "Carnaubal",
+          "x": -21.4,
+          "y": -6.4,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "carnaubal",
+          "chegadaX": 19.2,
+          "chegadaY": -5.5
+        },
+        {
+          "id": "rio_para_sitio",
+          "nome": "Sítio do Algodão",
+          "x": 21.4,
+          "y": -6.7,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "sitio",
+          "chegadaX": -19.2,
+          "chegadaY": -5.5
+        },
+        {
+          "id": "rio_para_beira",
+          "nome": "Beira-Rio",
+          "x": 21.4,
+          "y": -10,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "beira",
+          "chegadaX": 19.2,
+          "chegadaY": -10
+        }
+      ],
+      "agua": [
+        {
+          "x": -24.0,
+          "y": 14.0
+        },
+        {
+          "x": 24.0,
+          "y": 14.0
+        },
+        {
+          "x": 24.0,
+          "y": 1.5555555555555556
+        },
+        {
+          "x": 18.0,
+          "y": -0.07777777777777778
+        },
+        {
+          "x": 12.0,
+          "y": -1.4000000000000001
+        },
+        {
+          "x": 6.0,
+          "y": -2.2555555555555555
+        },
+        {
+          "x": 0.0,
+          "y": -2.022222222222222
+        },
+        {
+          "x": -6.0,
+          "y": -1.8666666666666667
+        },
+        {
+          "x": -12.0,
+          "y": -0.9333333333333333
+        },
+        {
+          "x": -18.0,
+          "y": 0.4666666666666667
+        },
+        {
+          "x": -24.0,
+          "y": 3.111111111111111
+        }
+      ],
+      "largura": 48,
+      "altura": 28,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [],
+      "luzes": [
+        {
+          "x": -18,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -10,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 0,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 10,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 18,
+          "y": -8.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ],
+      "bioma": "rio"
+    },
+    {
+      "id": "sitio",
+      "nome": "Sítio do Algodão",
+      "piso": "chao_vegetacao",
+      "mapaX": 3,
+      "mapaY": 2,
+      "descricao": "Espaço fictício de aprendizagem da coleta, ligado à serra.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "casario",
+          "x": -8,
+          "y": 3.5,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "arvore",
+          "x": 11,
+          "y": 2.2,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "arvore",
+          "x": -13,
+          "y": 0,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "algodoeiro",
+          "x": -7,
+          "y": -2,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "algodoeiro",
+          "x": -3,
+          "y": -2,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "algodoeiro",
+          "x": 3,
+          "y": -2,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "algodoeiro",
+          "x": 7,
+          "y": -2,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "algodoeiro",
+          "x": -3,
+          "y": 1.2,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "algodoeiro",
+          "x": 3,
+          "y": 1.2,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "oficina_varanda",
+          "x": 13,
+          "y": 6,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "varal_redes",
+          "x": -11,
+          "y": -9,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -15,
+          "y": 4,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -11,
+          "y": 4,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 11,
+          "y": 4,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 15,
+          "y": 4,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -9,
+          "y": -9,
+          "escala": 0.65,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 9,
+          "y": -9,
+          "escala": 0.65,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -21,
+          "y": 12.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -15,
+          "y": 12.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -9,
+          "y": 12.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -3,
+          "y": 12.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 3,
+          "y": 12.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 9,
+          "y": 12.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 15,
+          "y": 12.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 21,
+          "y": 12.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "coleta_algodao_1",
+          "nome": "Colher algodão 1",
+          "x": -7,
+          "y": -2.55,
+          "evento": "algodao_1",
+          "falas": [
+            "Você recolheu um algodão para a atividade da oficina.",
+            "Cada planta fornece uma coleta nesta jornada. Encontre as seis e leve o material a Rosa."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Sítio fictício; coleta didática, sem simulação agrícola.",
+          "noturno": false
+        },
+        {
+          "id": "coleta_algodao_2",
+          "nome": "Colher algodão 2",
+          "x": -3,
+          "y": -2.55,
+          "evento": "algodao_2",
+          "falas": [
+            "Você recolheu um algodão para a atividade da oficina.",
+            "Cada planta fornece uma coleta nesta jornada. Encontre as seis e leve o material a Rosa."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Sítio fictício; coleta didática, sem simulação agrícola.",
+          "noturno": false
+        },
+        {
+          "id": "coleta_algodao_3",
+          "nome": "Colher algodão 3",
+          "x": 3,
+          "y": -2.55,
+          "evento": "algodao_3",
+          "falas": [
+            "Você recolheu um algodão para a atividade da oficina.",
+            "Cada planta fornece uma coleta nesta jornada. Encontre as seis e leve o material a Rosa."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Sítio fictício; coleta didática, sem simulação agrícola.",
+          "noturno": false
+        },
+        {
+          "id": "coleta_algodao_4",
+          "nome": "Colher algodão 4",
+          "x": 7,
+          "y": -2.55,
+          "evento": "algodao_4",
+          "falas": [
+            "Você recolheu um algodão para a atividade da oficina.",
+            "Cada planta fornece uma coleta nesta jornada. Encontre as seis e leve o material a Rosa."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Sítio fictício; coleta didática, sem simulação agrícola.",
+          "noturno": false
+        },
+        {
+          "id": "coleta_algodao_5",
+          "nome": "Colher algodão 5",
+          "x": -3,
+          "y": 0.6499999999999999,
+          "evento": "algodao_5",
+          "falas": [
+            "Você recolheu um algodão para a atividade da oficina.",
+            "Cada planta fornece uma coleta nesta jornada. Encontre as seis e leve o material a Rosa."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Sítio fictício; coleta didática, sem simulação agrícola.",
+          "noturno": false
+        },
+        {
+          "id": "coleta_algodao_6",
+          "nome": "Colher algodão 6",
+          "x": 3,
+          "y": 0.6499999999999999,
+          "evento": "algodao_6",
+          "falas": [
+            "Você recolheu um algodão para a atividade da oficina.",
+            "Cada planta fornece uma coleta nesta jornada. Encontre as seis e leve o material a Rosa."
+          ],
+          "tipo": "coleta",
+          "condicao": "",
+          "fonte": "Sítio fictício; coleta didática, sem simulação agrícola.",
+          "noturno": false
+        },
+        {
+          "id": "placa_sitio",
+          "nome": "Sobre o cultivo",
+          "x": -9,
+          "y": -4.5,
+          "evento": "sitio",
+          "falas": [
+            "Este sítio é um espaço criado para o jogo. Ele aproxima o cultivo do algodão e a aprendizagem sobre as redes.",
+            "A trilha para a Serra Dantas fica ao sul."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false
+        },
+        {
+          "id": "sitio_para_fabrica",
+          "nome": "Pátio da fábrica",
+          "x": 21.4,
+          "y": 3.7,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "fabrica",
+          "chegadaX": 19.2,
+          "chegadaY": -5.5
+        },
+        {
+          "id": "sitio_para_rio",
+          "nome": "Rio Jaguaribe",
+          "x": -21.4,
+          "y": -5.5,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "rio",
+          "chegadaX": 19.2,
+          "chegadaY": -6.7
+        },
+        {
+          "id": "sitio_para_serra",
+          "nome": "Serra Dantas",
+          "x": 0,
+          "y": -13.3,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "serra",
+          "chegadaX": 0,
+          "chegadaY": -10.3
+        }
+      ],
+      "agua": [],
+      "largura": 48,
+      "altura": 30,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_areia",
+          "x": 0,
+          "y": -5,
+          "largura": 48,
+          "altura": 4,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_areia",
+          "x": 0,
+          "y": -8.5,
+          "largura": 4,
+          "altura": 12,
+          "ordem": -28999
+        }
+      ],
+      "luzes": [
+        {
+          "x": -9,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 9,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 1.0,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ],
+      "bioma": "rural"
+    },
+    {
+      "id": "serra",
+      "nome": "Serra Dantas",
+      "piso": "chao_serra",
+      "mapaX": 3,
+      "mapaY": 3,
+      "descricao": "Clareira de trilha e Cruzeiro adaptados para o jogo.",
+      "interior": false,
+      "objetos": [
+        {
+          "arte": "cruzeiro",
+          "x": 0,
+          "y": 0.9,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banco",
+          "x": -5,
+          "y": -1.3,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -13,
+          "y": -2,
+          "escala": 1.25,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 13,
+          "y": -2,
+          "escala": 1.25,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -17,
+          "y": 6,
+          "escala": 1.25,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 17,
+          "y": 6,
+          "escala": 1.25,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -10,
+          "y": 9,
+          "escala": 1.25,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 10,
+          "y": 9,
+          "escala": 1.25,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -10,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": -1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22.2,
+          "y": 7,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -21,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -15,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -9,
+          "y": 11.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -3,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 3,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 9,
+          "y": 11.8,
+          "escala": 1.06,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 15,
+          "y": 11.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 21,
+          "y": 11.8,
+          "escala": 0.93,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "visita_cruzeiro",
+          "nome": "Visitar o Cruzeiro",
+          "x": 0,
+          "y": -0.2,
+          "evento": "cruzeiro",
+          "falas": [
+            "No alto da Serra Dantas, o Cruzeiro lembra práticas de fé e encontros da comunidade. A missa de Cristo Rei é uma tradição registrada pelo município.",
+            "Você registra o lugar no diário. Para a jornada do jogo, recebe corda e pano que serão usados na oficina.",
+            "Volte à praça para ouvir André Lúcio. O mapa ajuda a encontrar o caminho de retorno."
+          ],
+          "tipo": "conversa",
+          "condicao": "simao",
+          "fonte": "Fonte histórica: Prefeitura de Jaguaruana. Recompensa fictícia.",
+          "noturno": false
+        },
+        {
+          "id": "mirante",
+          "nome": "Olhar a paisagem",
+          "x": -7,
+          "y": -3.6,
+          "evento": "mirante",
+          "falas": [
+            "A trilha dá lugar a uma pausa. As pedras, a vegetação e os caminhos também guardam memórias.",
+            "Este cenário é uma interpretação visual das fotos da Serra Dantas enviadas ao projeto."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false
+        },
+        {
+          "id": "serra_para_sitio",
+          "nome": "Sítio do Algodão",
+          "x": 0,
+          "y": -12.3,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "sitio",
+          "chegadaX": 0,
+          "chegadaY": -11.3
+        }
+      ],
+      "agua": [],
+      "largura": 48,
+      "altura": 28,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_areia",
+          "x": 0,
+          "y": -5,
+          "largura": 48,
+          "altura": 4,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_areia",
+          "x": 0,
+          "y": -7.5,
+          "largura": 4,
+          "altura": 13,
+          "ordem": -28999
+        }
+      ],
+      "luzes": [],
+      "bioma": "serra"
+    },
+    {
+      "id": "memorias",
+      "nome": "Casa das Memórias",
+      "piso": "piso_interior",
+      "mapaX": 1,
+      "mapaY": 0,
+      "descricao": "Espaço fictício para encontros literários, educacionais e jornalísticos.",
+      "interior": true,
+      "objetos": [
+        {
+          "arte": "banco",
+          "x": -9,
+          "y": 3.3,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banco",
+          "x": 0,
+          "y": 3.3,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banco",
+          "x": 9,
+          "y": 3.3,
+          "escala": 1,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "banca",
+          "x": 11,
+          "y": -3.5,
+          "escala": 0.8,
+          "nome": "",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "gerardinho",
+          "x": -8,
+          "y": 0.5,
+          "escala": 1,
+          "nome": "Mestre Gerardinho · memória",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "ivonete",
+          "x": 0,
+          "y": 0.5,
+          "escala": 1,
+          "nome": "Ivonete Maia · memória",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "emilia",
+          "x": 8,
+          "y": 0.5,
+          "escala": 1,
+          "nome": "Emília Freitas · memória",
+          "noturno": false,
+          "semColisao": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -11,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 11,
+          "y": -2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "npc_gerardinho",
+          "nome": "Mestre Gerardinho · memória",
+          "x": -8,
+          "y": 0.5,
+          "evento": "gerardinho",
+          "falas": [
+            "Uma memória do professor Gerardo Correia Lima, lembrado como Mestre Gerardinho.",
+            "Relatos locais recordam seu trabalho na educação. Aprender a ouvir quem veio antes também é uma forma de aprender sobre a cidade."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Encontro de memória · falas adaptadas.",
+          "noturno": false
+        },
+        {
+          "id": "npc_ivonete",
+          "nome": "Ivonete Maia · memória",
+          "x": 0,
+          "y": 0.5,
+          "evento": "ivonete",
+          "falas": [
+            "Uma memória de Ivonete Maia, jornalista e educadora ligada à história da imprensa cearense.",
+            "Escutar uma história é um começo. Anote de onde ela veio, procure outros registros e preserve também as diferenças entre as versões."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Encontro de memória · falas adaptadas.",
+          "noturno": false
+        },
+        {
+          "id": "npc_emilia",
+          "nome": "Emília Freitas · memória",
+          "x": 8,
+          "y": 0.5,
+          "evento": "emilia",
+          "falas": [
+            "Uma memória da escritora Emília Freitas, autora de A Rainha do Ignoto, publicado em 1899.",
+            "A imaginação cria lugares e possibilidades. Que história você levaria de Jaguaruana para escrever depois desta aventura?"
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Encontro de memória · falas adaptadas.",
+          "noturno": false
+        },
+        {
+          "id": "memorias_para_praca",
+          "nome": "Praça Matriz",
+          "x": 0,
+          "y": -7.3,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "",
+          "noturno": false,
+          "destino": "praca",
+          "chegadaX": 9,
+          "chegadaY": 4.800000000000001
+        }
+      ],
+      "agua": [],
+      "largura": 32,
+      "altura": 18,
+      "seguroX": 0,
+      "seguroY": -6,
+      "pisos": [
+        {
+          "arte": "chao_ceramica",
+          "x": 0,
+          "y": -2,
+          "largura": 32,
+          "altura": 14,
+          "ordem": -29000
+        }
+      ],
+      "luzes": [
+        {
+          "x": -10,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        },
+        {
+          "x": 10,
+          "y": 2,
+          "raio": 7,
+          "intensidade": 0.5,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": true
+        }
+      ],
+      "bioma": "interior"
+    },
+    {
+      "id": "rua",
+      "nome": "Rua do Comércio",
+      "piso": "chao_areia",
+      "largura": 64,
+      "altura": 36,
+      "mapaX": 2,
+      "mapaY": 0,
+      "descricao": "Uma rua com pequena mudança de direção, fachadas agrupadas e um largo de trabalho acessível por dois lados.",
+      "interior": false,
+      "seguroX": 0,
+      "seguroY": -6,
+      "bioma": "urbano",
+      "objetos": [
+        {
+          "arte": "casa_azul",
+          "x": -25,
+          "y": 0.6,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "sobrado_comercio",
+          "x": -14,
+          "y": 1,
+          "escala": 0.77,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "oficina_varanda",
+          "x": -2.4,
+          "y": 8.3,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": 7.6,
+          "y": 8.8,
+          "escala": 0.85,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "sobrado_comercio",
+          "x": 12,
+          "y": 0.9,
+          "escala": 0.79,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": 24,
+          "y": 1.1,
+          "escala": 0.88,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": -22,
+          "y": -14,
+          "escala": 0.82,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": -12,
+          "y": -14,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": 13,
+          "y": -14,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": 24,
+          "y": -14,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banca",
+          "x": -14,
+          "y": -1.2,
+          "escala": 0.65,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banca",
+          "x": 24,
+          "y": -1.2,
+          "escala": 0.65,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "tear",
+          "x": -1.8,
+          "y": 4,
+          "escala": 0.6,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "rede_pronta",
+          "x": 5.3,
+          "y": 5,
+          "escala": 0.68,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": 1.3,
+          "y": 1.2,
+          "escala": 0.86,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": 9.3,
+          "y": -0.8,
+          "escala": 0.65,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "zeca",
+          "x": 1,
+          "y": -0.7,
+          "escala": 1,
+          "nome": "Zeca · morador",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -27,
+          "y": -2.6,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -9,
+          "y": -9,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 7,
+          "y": -7.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 20,
+          "y": -7.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -7.5,
+          "y": 4.5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 16,
+          "y": 5.3,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -29,
+          "y": 11,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -21,
+          "y": 11,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -13,
+          "y": 11,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 15,
+          "y": 11,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 23,
+          "y": 11,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -4,
+          "y": -11,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 3,
+          "y": -11,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 29,
+          "y": 12,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -22,
+          "y": -0.6,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -10,
+          "y": 0.4,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 10,
+          "y": 7,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 26,
+          "y": -0.3,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -5.5,
+          "y": 7.3,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 6,
+          "y": -0.4,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "npc_zeca",
+          "nome": "Zeca · morador",
+          "x": 1,
+          "y": -0.7,
+          "evento": "zeca",
+          "falas": [
+            "Sou Zeca. Esta rua foi imaginada para a aventura: lojas, oficinas e casas ajudam a mostrar como o trabalho se mistura à vida cotidiana.",
+            "Olhe as fachadas, os varais e os materiais das bancas. Você também pode conhecer a Vila das Tecelãs pelo carnaubal."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "rua_oficios",
+          "nome": "Ler sobre os ofícios",
+          "x": -1.8,
+          "y": 3,
+          "evento": "rua_oficios",
+          "falas": [
+            "Uma oficina não se resume a uma ferramenta. O saber passa entre pessoas, gestos e lembranças.",
+            "As fachadas desta rua são criações artísticas inspiradas na arquitetura da região."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "rua_para_praca",
+          "nome": "Praça Matriz",
+          "x": -29.4,
+          "y": -6,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "praca",
+          "chegadaX": 19.2,
+          "chegadaY": 7
+        },
+        {
+          "id": "rua_para_mercado",
+          "nome": "Mercado e prefeitura",
+          "x": 29.4,
+          "y": -4,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "mercado",
+          "chegadaX": 19.2,
+          "chegadaY": 7
+        },
+        {
+          "id": "rua_expositor",
+          "nome": "Mostruário de redes",
+          "x": 5.3,
+          "y": 3.9,
+          "tipo": "conversa",
+          "evento": "rua_expositor",
+          "condicao": "",
+          "falas": [
+            "O mostruário aproxima o trabalho da oficina de quem passa pela rua.",
+            "Cores, acabamentos e modos de uso também contam histórias. Converse com Zeca e depois conheça os quintais da vila."
+          ],
+          "noturno": false,
+          "fonte": "Cena e atividade fictícias criadas para Memórias Tecidas; não é citação histórica."
+        }
+      ],
+      "agua": [],
+      "pisos": [
+        {
+          "arte": "chao_passeio",
+          "x": -20.0,
+          "y": -6.0,
+          "largura": 31.2,
+          "altura": 7.199999999999999,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_passeio",
+          "x": -8.0,
+          "y": -5.0,
+          "largura": 7.199999999999999,
+          "altura": 9.2,
+          "ordem": -28999
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 12.0,
+          "y": -4.0,
+          "largura": 47.2,
+          "altura": 7.199999999999999,
+          "ordem": -28998
+        },
+        {
+          "arte": "chao_calcamento",
+          "x": -20.0,
+          "y": -6.0,
+          "largura": 28.8,
+          "altura": 4.8,
+          "ordem": -28997
+        },
+        {
+          "arte": "chao_calcamento",
+          "x": -8.0,
+          "y": -5.0,
+          "largura": 4.8,
+          "altura": 6.8,
+          "ordem": -28996
+        },
+        {
+          "arte": "chao_calcamento",
+          "x": 12.0,
+          "y": -4.0,
+          "largura": 44.8,
+          "altura": 4.8,
+          "ordem": -28995
+        },
+        {
+          "arte": "chao_passeio",
+          "x": -6.0,
+          "y": 1.0,
+          "largura": 2.8,
+          "altura": 12.8,
+          "ordem": -28994
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 6.0,
+          "y": 6.0,
+          "largura": 26.8,
+          "altura": 2.8,
+          "ordem": -28993
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 18.0,
+          "y": 1.0,
+          "largura": 2.8,
+          "altura": 12.8,
+          "ordem": -28992
+        },
+        {
+          "arte": "chao_areia",
+          "x": -28.0,
+          "y": -10.9,
+          "largura": 2.2,
+          "altura": 12.0,
+          "ordem": -28991
+        },
+        {
+          "arte": "chao_areia",
+          "x": 0.0,
+          "y": -15.8,
+          "largura": 58.2,
+          "altura": 2.2,
+          "ordem": -28990
+        },
+        {
+          "arte": "chao_areia",
+          "x": 28.0,
+          "y": -9.9,
+          "largura": 2.2,
+          "altura": 14.0,
+          "ordem": -28989
+        },
+        {
+          "arte": "chao_ceramica",
+          "x": 2,
+          "y": 3,
+          "largura": 10,
+          "altura": 8,
+          "ordem": -28988
+        }
+      ],
+      "luzes": [
+        {
+          "x": -27,
+          "y": -1.5,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -9,
+          "y": -7.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 7,
+          "y": -6.4,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 20,
+          "y": -6.4,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -7.5,
+          "y": 5.6,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 16,
+          "y": 6.4,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ]
+    },
+    {
+      "id": "vila",
+      "nome": "Vila das Tecelãs",
+      "piso": "chao_vegetacao",
+      "largura": 64,
+      "altura": 36,
+      "mapaX": 0,
+      "mapaY": 3,
+      "descricao": "Grupos de casas acompanham caminhos de terra; o quintal de tecelagem é o centro da vida da vila.",
+      "interior": false,
+      "seguroX": 0,
+      "seguroY": -6,
+      "bioma": "rural",
+      "objetos": [
+        {
+          "arte": "casa_ocre",
+          "x": -24,
+          "y": 0.9,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "oficina_varanda",
+          "x": -13,
+          "y": 1,
+          "escala": 0.85,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": -25,
+          "y": 8.8,
+          "escala": 0.78,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": 14,
+          "y": 1.7,
+          "escala": 0.92,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "oficina_varanda",
+          "x": 25,
+          "y": 3.4,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": 14,
+          "y": 10.5,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": 25.5,
+          "y": 11,
+          "escala": 0.75,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": -24,
+          "y": -14,
+          "escala": 0.85,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": -13,
+          "y": -13,
+          "escala": 0.85,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": 13,
+          "y": -14,
+          "escala": 0.84,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": 24,
+          "y": -12.8,
+          "escala": 0.84,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "varal_redes",
+          "x": 0.7,
+          "y": 5.5,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "tear",
+          "x": -4.5,
+          "y": 2.8,
+          "escala": 0.62,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "rede_pronta",
+          "x": 4,
+          "y": 2.7,
+          "escala": 0.6,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": 1.8,
+          "y": -0.4,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caixotes",
+          "x": -6.7,
+          "y": 1,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "muro_jardim",
+          "x": 25,
+          "y": 8.8,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "cida",
+          "x": -1.4,
+          "y": 0.1,
+          "escala": 1,
+          "nome": "Dona Cida · moradora",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -21,
+          "y": -2,
+          "escala": 0.67,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -8,
+          "y": -8.7,
+          "escala": 0.67,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 7,
+          "y": -7.8,
+          "escala": 0.67,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 22,
+          "y": -8.8,
+          "escala": 0.67,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -7,
+          "y": 7.8,
+          "escala": 0.67,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 21,
+          "y": 8.5,
+          "escala": 0.67,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -30,
+          "y": 12,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -20,
+          "y": 13,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -10,
+          "y": 12,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -2,
+          "y": 12,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 7,
+          "y": 13,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 28,
+          "y": 14,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -6,
+          "y": -11,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 2,
+          "y": -11,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 29,
+          "y": -10,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -29,
+          "y": 1,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 29,
+          "y": 0.4,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 18,
+          "y": -11,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -18,
+          "y": -10,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -27.3,
+          "y": -0.6,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -10.2,
+          "y": -0.2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 11,
+          "y": -0.1,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 27.5,
+          "y": 1.9,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 22,
+          "y": 8.3,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 26.4,
+          "y": 7.2,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "npc_cida",
+          "nome": "Dona Cida · moradora",
+          "x": -1.4,
+          "y": 0.1,
+          "evento": "cida",
+          "falas": [
+            "Sou Cida. Gosto de cuidar das plantas e de conversar na calçada enquanto o trabalho descansa um pouco.",
+            "Esta vila foi criada para o jogo. As redes nos quintais e as oficinas lembram que a produção também faz parte das casas e das famílias."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "varais_vila",
+          "nome": "Observar os varais",
+          "x": 0.7,
+          "y": 4.4,
+          "evento": "varais_vila",
+          "falas": [
+            "Os varais transformam o quintal em um lugar de trabalho e convivência.",
+            "Observe as redes e o tear. Para preparar os fios da sua encomenda, procure Rosa na oficina da fábrica."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "jardins_vila",
+          "nome": "Conhecer os quintais",
+          "x": 25,
+          "y": 7.7,
+          "evento": "jardins_vila",
+          "falas": [
+            "Os quintais dão lugar a plantas, encontros e pequenas tarefas.",
+            "A vila é uma criação da aventura, sem pretender reproduzir um endereço específico."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "vila_para_carnaubal",
+          "nome": "Carnaubal",
+          "x": -29.4,
+          "y": -6,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "carnaubal",
+          "chegadaX": -19.2,
+          "chegadaY": 3
+        },
+        {
+          "id": "vila_para_beira",
+          "nome": "Beira-Rio",
+          "x": 29.4,
+          "y": -5,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "beira",
+          "chegadaX": -19.2,
+          "chegadaY": -10
+        },
+        {
+          "id": "tear_quintal",
+          "nome": "Tear do quintal",
+          "x": -4.5,
+          "y": 1.8,
+          "tipo": "conversa",
+          "evento": "tear_quintal",
+          "condicao": "",
+          "falas": [
+            "O tear ocupa um canto protegido, perto dos fios e das peças em exposição.",
+            "Este é um lugar de observação. Rosa acompanha a preparação da sua rede na oficina da fábrica."
+          ],
+          "noturno": false,
+          "fonte": "Cena e atividade fictícias criadas para Memórias Tecidas; não é citação histórica."
+        }
+      ],
+      "agua": [],
+      "pisos": [
+        {
+          "arte": "chao_areia",
+          "x": -21.0,
+          "y": -6.0,
+          "largura": 26.8,
+          "altura": 4.8,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_areia",
+          "x": -10.0,
+          "y": -5.0,
+          "largura": 4.8,
+          "altura": 6.8,
+          "ordem": -28999
+        },
+        {
+          "arte": "chao_areia",
+          "x": 2.0,
+          "y": -4.0,
+          "largura": 28.8,
+          "altura": 4.8,
+          "ordem": -28998
+        },
+        {
+          "arte": "chao_areia",
+          "x": 14.0,
+          "y": -4.5,
+          "largura": 4.8,
+          "altura": 5.8,
+          "ordem": -28997
+        },
+        {
+          "arte": "chao_areia",
+          "x": 23.0,
+          "y": -5.0,
+          "largura": 22.8,
+          "altura": 4.8,
+          "ordem": -28996
+        },
+        {
+          "arte": "chao_calcamento",
+          "x": -26.5,
+          "y": -6.0,
+          "largura": 15.5,
+          "altura": 4.5,
+          "ordem": -28995
+        },
+        {
+          "arte": "chao_areia",
+          "x": -19.0,
+          "y": 0.25,
+          "largura": 2.8,
+          "altura": 15.3,
+          "ordem": -28994
+        },
+        {
+          "arte": "chao_areia",
+          "x": -5.25,
+          "y": 6.5,
+          "largura": 30.3,
+          "altura": 2.8,
+          "ordem": -28993
+        },
+        {
+          "arte": "chao_areia",
+          "x": 8.5,
+          "y": 1.25,
+          "largura": 2.8,
+          "altura": 13.3,
+          "ordem": -28992
+        },
+        {
+          "arte": "chao_areia",
+          "x": 8.5,
+          "y": 2.25,
+          "largura": 2.7,
+          "altura": 15.2,
+          "ordem": -28991
+        },
+        {
+          "arte": "chao_areia",
+          "x": 14.5,
+          "y": 8.5,
+          "largura": 14.7,
+          "altura": 2.7,
+          "ordem": -28990
+        },
+        {
+          "arte": "chao_areia",
+          "x": 20.5,
+          "y": 1.75,
+          "largura": 2.7,
+          "altura": 16.2,
+          "ordem": -28989
+        },
+        {
+          "arte": "chao_areia",
+          "x": -28.0,
+          "y": -10.75,
+          "largura": 2.1,
+          "altura": 11.6,
+          "ordem": -28988
+        },
+        {
+          "arte": "chao_areia",
+          "x": 0.0,
+          "y": -15.5,
+          "largura": 58.1,
+          "altura": 2.1,
+          "ordem": -28987
+        },
+        {
+          "arte": "chao_areia",
+          "x": 28.0,
+          "y": -10.25,
+          "largura": 2.1,
+          "altura": 12.6,
+          "ordem": -28986
+        },
+        {
+          "arte": "chao_ceramica",
+          "x": -1,
+          "y": 1.8,
+          "largura": 13,
+          "altura": 6.8,
+          "ordem": -28985
+        }
+      ],
+      "luzes": [
+        {
+          "x": -21,
+          "y": -0.8999999999999999,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -8,
+          "y": -7.6,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 7,
+          "y": -6.699999999999999,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 22,
+          "y": -7.700000000000001,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -7,
+          "y": 8.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 21,
+          "y": 9.6,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ]
+    },
+    {
+      "id": "largo",
+      "nome": "Largo da Vila",
+      "piso": "chao_vegetacao",
+      "largura": 48,
+      "altura": 30,
+      "mapaX": 0,
+      "mapaY": 0,
+      "descricao": "Um espaço de pausa com coreto visível, bancos nas bordas e casas voltadas para o largo.",
+      "interior": false,
+      "seguroX": 0,
+      "seguroY": -6,
+      "bioma": "urbano",
+      "objetos": [
+        {
+          "arte": "coreto",
+          "x": 0,
+          "y": 3,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": -18,
+          "y": 8.9,
+          "escala": 0.73,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_ocre",
+          "x": -8,
+          "y": 8.9,
+          "escala": 0.73,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "oficina_varanda",
+          "x": 8,
+          "y": 8.9,
+          "escala": 0.73,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "casa_azul",
+          "x": 18,
+          "y": 8.9,
+          "escala": 0.73,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": -9.4,
+          "y": -2.4,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arvore",
+          "x": -14.4,
+          "y": -0.4,
+          "escala": 0.85,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": 9.4,
+          "y": -2.4,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arvore",
+          "x": 14.4,
+          "y": -0.4,
+          "escala": 0.85,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -17,
+          "y": -6,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 17,
+          "y": -6,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -5.6,
+          "y": -4.7,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 5.6,
+          "y": -4.7,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -13,
+          "y": 7,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 13,
+          "y": 7,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -19,
+          "y": -2.5,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 19,
+          "y": -2.5,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -19,
+          "y": -11,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 19,
+          "y": -11,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": -6,
+          "y": -0.5,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "arbusto_florido",
+          "x": 6,
+          "y": -0.5,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -16,
+          "y": 7.5,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 16,
+          "y": 7.5,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": -4.3,
+          "y": 2.5,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "vasos",
+          "x": 4.3,
+          "y": 2.5,
+          "escala": 0.8,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "largo_encontros",
+          "nome": "Lugar de encontros",
+          "x": 0,
+          "y": 1.7,
+          "evento": "largo_encontros",
+          "falas": [
+            "Um largo pode reunir uma conversa, uma pausa e uma celebração.",
+            "Este cenário amplia os espaços cotidianos da aventura. Uma festa poderá ser acrescentada depois que a jornada principal estiver concluída."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "largo_para_entrada",
+          "nome": "Entrada da cidade",
+          "x": -21.4,
+          "y": -8,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "entrada",
+          "chegadaX": -15.8,
+          "chegadaY": 8
+        },
+        {
+          "id": "largo_para_praca",
+          "nome": "Praça Matriz",
+          "x": 21.4,
+          "y": -8,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "praca",
+          "chegadaX": -19.2,
+          "chegadaY": 7
+        },
+        {
+          "id": "largo_calcadas",
+          "nome": "Histórias de calçada",
+          "x": -9.4,
+          "y": -3.4,
+          "tipo": "conversa",
+          "evento": "largo_calcadas",
+          "condicao": "",
+          "falas": [
+            "Sentar perto da rua permite ver a vida passar e encontrar quem chega.",
+            "Neste largo fictício, a conversa e a pausa também fazem parte da aventura."
+          ],
+          "noturno": false,
+          "fonte": "Cena e atividade fictícias criadas para Memórias Tecidas; não é citação histórica."
+        }
+      ],
+      "agua": [],
+      "pisos": [
+        {
+          "arte": "chao_passeio",
+          "x": 0.0,
+          "y": -8.0,
+          "largura": 54.8,
+          "altura": 6.800000000000001,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_calcamento",
+          "x": 0.0,
+          "y": -8.0,
+          "largura": 52.4,
+          "altura": 4.4,
+          "ordem": -28999
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0,
+          "y": 0.1,
+          "largura": 26,
+          "altura": 11,
+          "ordem": -28998
+        },
+        {
+          "arte": "chao_passeio",
+          "x": -12.0,
+          "y": -3.4,
+          "largura": 2.8,
+          "altura": 12.0,
+          "ordem": -28997
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0.0,
+          "y": 1.2,
+          "largura": 26.8,
+          "altura": 2.8,
+          "ordem": -28996
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 12.0,
+          "y": -3.4,
+          "largura": 2.8,
+          "altura": 12.0,
+          "ordem": -28995
+        },
+        {
+          "arte": "chao_areia",
+          "x": -12.0,
+          "y": 4.3,
+          "largura": 2.5,
+          "altura": 8.7,
+          "ordem": -28994
+        },
+        {
+          "arte": "chao_areia",
+          "x": 0.0,
+          "y": 7.4,
+          "largura": 26.5,
+          "altura": 2.5,
+          "ordem": -28993
+        },
+        {
+          "arte": "chao_areia",
+          "x": 12.0,
+          "y": 4.3,
+          "largura": 2.5,
+          "altura": 8.7,
+          "ordem": -28992
+        }
+      ],
+      "luzes": [
+        {
+          "x": -17,
+          "y": -4.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 17,
+          "y": -4.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -5.6,
+          "y": -3.6,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 5.6,
+          "y": -3.6,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -13,
+          "y": 8.1,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 13,
+          "y": 8.1,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ]
+    },
+    {
+      "id": "beira",
+      "nome": "Beira-Rio",
+      "piso": "rio_margem",
+      "largura": 48,
+      "altura": 28,
+      "mapaX": 2,
+      "mapaY": 3,
+      "descricao": "Um passeio compacto à margem, com chegada ao deque e um canto de canoas para observar a paisagem.",
+      "interior": false,
+      "seguroX": 0,
+      "seguroY": -10,
+      "bioma": "rio",
+      "objetos": [
+        {
+          "arte": "deque_rio",
+          "x": 0,
+          "y": -6.4,
+          "escala": 0.78,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "canoa",
+          "x": -12,
+          "y": -6.3,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "canoa",
+          "x": -17,
+          "y": -6.6,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": -20,
+          "y": -2.8,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 18,
+          "y": -3.4,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 12,
+          "y": -5,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "carnauba_adulta",
+          "x": 21,
+          "y": -11.9,
+          "escala": 0.72,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": 9,
+          "y": -7.5,
+          "escala": 0.9,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "banco",
+          "x": -7,
+          "y": -8,
+          "escala": 0.86,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -20,
+          "y": -8.2,
+          "escala": 0.68,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": -5.5,
+          "y": -7,
+          "escala": 0.68,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 5.5,
+          "y": -7,
+          "escala": 0.68,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "poste_praca",
+          "x": 19,
+          "y": -8,
+          "escala": 0.68,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -21,
+          "y": -6,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": -20,
+          "y": -12,
+          "escala": 0.8099999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 15,
+          "y": -12,
+          "escala": 0.9199999999999999,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        },
+        {
+          "arte": "caatinga",
+          "x": 22,
+          "y": -5,
+          "escala": 0.7,
+          "nome": "",
+          "semColisao": false,
+          "noturno": false
+        }
+      ],
+      "pontos": [
+        {
+          "id": "paisagem_beira",
+          "nome": "Pausa na Beira-Rio",
+          "x": 0,
+          "y": -7.5,
+          "evento": "paisagem_beira",
+          "falas": [
+            "As canoas, a sombra e a margem criam outro ritmo para a caminhada.",
+            "Este passeio é uma composição fictícia inspirada na relação da cidade com o rio. As canoas são decorativas; não existe navegação nesta versão."
+          ],
+          "tipo": "conversa",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false
+        },
+        {
+          "id": "beira_para_vila",
+          "nome": "Vila das Tecelãs",
+          "x": -21.4,
+          "y": -10,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "vila",
+          "chegadaX": 27.2,
+          "chegadaY": -5
+        },
+        {
+          "id": "beira_para_rio",
+          "nome": "Rio Jaguaribe",
+          "x": 21.4,
+          "y": -10,
+          "evento": "",
+          "falas": [],
+          "tipo": "saida",
+          "condicao": "",
+          "fonte": "Espaço e atividade fictícios criados para o jogo.",
+          "noturno": false,
+          "destino": "rio",
+          "chegadaX": 19.2,
+          "chegadaY": -10
+        },
+        {
+          "id": "beira_canoas",
+          "nome": "Canto das canoas",
+          "x": -12,
+          "y": -7.8,
+          "tipo": "conversa",
+          "evento": "beira_canoas",
+          "condicao": "",
+          "falas": [
+            "As canoas descansam junto à margem nesta cena da aventura.",
+            "Repare na mudança do chão, na sombra das palmeiras e na distância entre o passeio e a água."
+          ],
+          "noturno": false,
+          "fonte": "Cena e atividade fictícias criadas para Memórias Tecidas; não é citação histórica."
+        }
+      ],
+      "agua": [
+        {
+          "x": -24.0,
+          "y": 14.0
+        },
+        {
+          "x": 24.0,
+          "y": 14.0
+        },
+        {
+          "x": 24.0,
+          "y": 1.5555555555555556
+        },
+        {
+          "x": 18.0,
+          "y": -0.07777777777777778
+        },
+        {
+          "x": 12.0,
+          "y": -1.4000000000000001
+        },
+        {
+          "x": 6.0,
+          "y": -2.2555555555555555
+        },
+        {
+          "x": 0.0,
+          "y": -2.022222222222222
+        },
+        {
+          "x": -6.0,
+          "y": -1.8666666666666667
+        },
+        {
+          "x": -12.0,
+          "y": -0.9333333333333333
+        },
+        {
+          "x": -18.0,
+          "y": 0.4666666666666667
+        },
+        {
+          "x": -24.0,
+          "y": 3.111111111111111
+        }
+      ],
+      "pisos": [
+        {
+          "arte": "chao_areia",
+          "x": 0.0,
+          "y": -10.0,
+          "largura": 51.5,
+          "altura": 3.5,
+          "ordem": -29000
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0.0,
+          "y": -8.7,
+          "largura": 2.6,
+          "altura": 5.199999999999999,
+          "ordem": -28999
+        },
+        {
+          "arte": "chao_areia",
+          "x": -12.0,
+          "y": -8.9,
+          "largura": 2.4,
+          "altura": 4.6,
+          "ordem": -28998
+        },
+        {
+          "arte": "chao_passeio",
+          "x": 0,
+          "y": -8.1,
+          "largura": 11,
+          "altura": 2.4,
+          "ordem": -28997
+        }
+      ],
+      "luzes": [
+        {
+          "x": -20,
+          "y": -7.1,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": -5.5,
+          "y": -5.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 5.5,
+          "y": -5.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        },
+        {
+          "x": 19,
+          "y": -6.9,
+          "raio": 5.5,
+          "intensidade": 0.9,
+          "r": 1,
+          "g": 0.72,
+          "b": 0.38,
+          "sempre": false
+        }
+      ]
+    }
+  ],
+  "quadros": [
+    {
+      "x": 95,
+      "y": 947,
+      "largura": 164,
+      "altura": 310,
+      "pivotX": 0.4806350582253784,
+      "pivotY": 0.0032258064516129032,
+      "ppu": 179.06976744186048
+    },
+    {
+      "x": 389,
+      "y": 960,
+      "largura": 163,
+      "altura": 296,
+      "pivotX": 0.48248201140111974,
+      "pivotY": 0.0033783783783783786,
+      "ppu": 170.93023255813955
+    },
+    {
+      "x": 685,
+      "y": 948,
+      "largura": 165,
+      "altura": 308,
+      "pivotX": 0.471812413940261,
+      "pivotY": 0.003246753246753247,
+      "ppu": 177.90697674418604
+    },
+    {
+      "x": 980,
+      "y": 948,
+      "largura": 166,
+      "altura": 309,
+      "pivotX": 0.5020699159877068,
+      "pivotY": 0.003236245954692557,
+      "ppu": 178.48837209302326
+    },
+    {
+      "x": 86,
+      "y": 649,
+      "largura": 177,
+      "altura": 295,
+      "pivotX": 0.4223334462532309,
+      "pivotY": 0.003389830508474576,
+      "ppu": 170.34883720930233
+    },
+    {
+      "x": 391,
+      "y": 649,
+      "largura": 162,
+      "altura": 296,
+      "pivotX": 0.43582192604482917,
+      "pivotY": 0.0033783783783783786,
+      "ppu": 170.93023255813955
+    },
+    {
+      "x": 686,
+      "y": 651,
+      "largura": 175,
+      "altura": 294,
+      "pivotX": 0.4209242671655277,
+      "pivotY": 0.003401360544217687,
+      "ppu": 169.7674418604651
+    },
+    {
+      "x": 997,
+      "y": 651,
+      "largura": 163,
+      "altura": 294,
+      "pivotX": 0.4268655051381829,
+      "pivotY": 0.003401360544217687,
+      "ppu": 169.7674418604651
+    },
+    {
+      "x": 81,
+      "y": 349,
+      "largura": 182,
+      "altura": 288,
+      "pivotX": 0.5880388841927304,
+      "pivotY": 0.003472222222222222,
+      "ppu": 166.27906976744185
+    },
+    {
+      "x": 386,
+      "y": 349,
+      "largura": 168,
+      "altura": 290,
+      "pivotX": 0.5556834387400793,
+      "pivotY": 0.0034482758620689655,
+      "ppu": 167.4418604651163
+    },
+    {
+      "x": 668,
+      "y": 351,
+      "largura": 186,
+      "altura": 287,
+      "pivotX": 0.5511403190428259,
+      "pivotY": 0.003484320557491289,
+      "ppu": 165.69767441860466
+    },
+    {
+      "x": 978,
+      "y": 351,
+      "largura": 179,
+      "altura": 287,
+      "pivotX": 0.5659066406493638,
+      "pivotY": 0.003484320557491289,
+      "ppu": 165.69767441860466
+    },
+    {
+      "x": 85,
+      "y": 22,
+      "largura": 173,
+      "altura": 321,
+      "pivotX": 0.48625966551868877,
+      "pivotY": 0.003115264797507788,
+      "ppu": 185.46511627906978
+    },
+    {
+      "x": 391,
+      "y": 33,
+      "largura": 166,
+      "altura": 308,
+      "pivotX": 0.4760862252428517,
+      "pivotY": 0.003246753246753247,
+      "ppu": 177.90697674418604
+    },
+    {
+      "x": 683,
+      "y": 17,
+      "largura": 171,
+      "altura": 326,
+      "pivotX": 0.4806242744217996,
+      "pivotY": 0.003067484662576687,
+      "ppu": 188.37209302325581
+    },
+    {
+      "x": 977,
+      "y": 22,
+      "largura": 176,
+      "altura": 321,
+      "pivotX": 0.5291155669814341,
+      "pivotY": 0.003115264797507788,
+      "ppu": 185.46511627906978
+    }
+  ],
+  "folhaLargura": 1240,
+  "folhaAltura": 1269
+}

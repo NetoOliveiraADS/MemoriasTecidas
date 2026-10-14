@@ -1,0 +1,1885 @@
+fileFormatVersion: 2
+guid: f7cba3e31eb8f7e489d996e5d2ebdff1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9091395909267127964
+    second: mercado_0
+  - first:
+      213: 1627823023550256329
+    second: mercado_1
+  - first:
+      213: -38362299765296402
+    second: mercado_2
+  - first:
+      213: -4999858431886617924
+    second: mercado_3
+  - first:
+      213: -2606342101900252701
+    second: mercado_4
+  - first:
+      213: -2425713157566305515
+    second: mercado_5
+  - first:
+      213: 1705898625963187560
+    second: mercado_6
+  - first:
+      213: 6564018393364443809
+    second: mercado_7
+  - first:
+      213: 421933737399435790
+    second: mercado_8
+  - first:
+      213: -6935378385326593379
+    second: mercado_9
+  - first:
+      213: -6507940612446141642
+    second: mercado_10
+  - first:
+      213: -8192638875101696254
+    second: mercado_11
+  - first:
+      213: -6226626633293638560
+    second: mercado_12
+  - first:
+      213: 1215104500290666082
+    second: mercado_13
+  - first:
+      213: 1984547725698997249
+    second: mercado_14
+  - first:
+      213: 3748825015618267313
+    second: mercado_15
+  - first:
+      213: 4435744456874287654
+    second: mercado_16
+  - first:
+      213: -6458947546125151284
+    second: mercado_17
+  - first:
+      213: -7350802463558875777
+    second: mercado_18
+  - first:
+      213: -2150199874494521260
+    second: mercado_19
+  - first:
+      213: -7143648723351564884
+    second: mercado_20
+  - first:
+      213: 7515030017849685048
+    second: mercado_21
+  - first:
+      213: 1657799066503676388
+    second: mercado_22
+  - first:
+      213: -8246084699604578042
+    second: mercado_23
+  - first:
+      213: 3027783298718446239
+    second: mercado_24
+  - first:
+      213: 842724752181961332
+    second: mercado_25
+  - first:
+      213: -325315845365974626
+    second: mercado_26
+  - first:
+      213: 296431420828960826
+    second: mercado_27
+  - first:
+      213: 5150356295718231931
+    second: mercado_28
+  - first:
+      213: -4094190563743309725
+    second: mercado_29
+  - first:
+      213: 5098608862911059850
+    second: mercado_30
+  - first:
+      213: -8796306772147173830
+    second: mercado_31
+  - first:
+      213: -3624805413573525079
+    second: mercado_32
+  - first:
+      213: -4913408258705645893
+    second: mercado_33
+  - first:
+      213: 6525969693636490513
+    second: mercado_34
+  - first:
+      213: -8550402110895421985
+    second: mercado_35
+  - first:
+      213: -50104522564587013
+    second: mercado_36
+  - first:
+      213: 6036945705790253196
+    second: mercado_37
+  - first:
+      213: 615025140007835632
+    second: mercado_38
+  - first:
+      213: 7526078440639929591
+    second: mercado_39
+  - first:
+      213: 4538460964761922298
+    second: mercado_40
+  - first:
+      213: -1629952691252750508
+    second: mercado_41
+  - first:
+      213: 6953024387804211973
+    second: mercado_42
+  - first:
+      213: -8237534871205160818
+    second: mercado_43
+  - first:
+      213: 2038190053525465462
+    second: mercado_44
+  - first:
+      213: 7871343397194372706
+    second: mercado_45
+  - first:
+      213: -7755781543794765623
+    second: mercado_46
+  - first:
+      213: 1601779612921315852
+    second: mercado_47
+  - first:
+      213: -3653679705388110774
+    second: mercado_48
+  - first:
+      213: -3711211680553970710
+    second: mercado_49
+  - first:
+      213: -3249535850934050152
+    second: mercado_50
+  - first:
+      213: -1783021357409115071
+    second: mercado_51
+  - first:
+      213: 6447387113033037533
+    second: mercado_52
+  - first:
+      213: 1325057306200118520
+    second: mercado_53
+  - first:
+      213: 220198519919234105
+    second: mercado_54
+  - first:
+      213: -553413822442684815
+    second: mercado_55
+  - first:
+      213: 5319190907954267372
+    second: mercado_56
+  - first:
+      213: -419774878411235924
+    second: mercado_57
+  - first:
+      213: -8748875816855260909
+    second: mercado_58
+  - first:
+      213: -4411259435973179297
+    second: mercado_59
+  - first:
+      213: -1524454087114077108
+    second: mercado_60
+  - first:
+      213: -2592650124860774169
+    second: mercado_61
+  - first:
+      213: -7305241973566700181
+    second: mercado_62
+  - first:
+      213: 5038836554062652522
+    second: mercado_63
+  - first:
+      213: -2523580573225089047
+    second: mercado_64
+  - first:
+      213: -1734741835758160698
+    second: mercado_65
+  - first:
+      213: -6298971103583004599
+    second: mercado_66
+  - first:
+      213: 3991518037919386159
+    second: mercado_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mercado_0
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 887
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e7e4449602b2e70800000000000000
+      internalID: 9091395909267127964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 876
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c45ae35a60379610800000000000000
+      internalID: 1627823023550256329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 981
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2f8bd01b5b77ff0800000000000000
+      internalID: -38362299765296402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_3
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 842
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb218202f3fec9ab0800000000000000
+      internalID: -4999858431886617924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_4
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 949
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e92715daa964dbd0800000000000000
+      internalID: -2606342101900252701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_5
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 881
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51be4443cb2265ed0800000000000000
+      internalID: -2425713157566305515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 945
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ddc5713c19ca710800000000000000
+      internalID: 1705898625963187560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_7
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 891
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a23e9b73f3181b50800000000000000
+      internalID: 6564018393364443809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_8
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 973
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e024278af720bd500800000000000000
+      internalID: 421933737399435790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 965
+        width: 149
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9aafaf8a1690cf90800000000000000
+      internalID: -6935378385326593379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_10
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 844
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6334fc75e762fa5a0800000000000000
+      internalID: -6507940612446141642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_11
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 911
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20fe18c7956ed4e80800000000000000
+      internalID: -8192638875101696254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_12
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 861
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064db8d21149699a0800000000000000
+      internalID: -6226626633293638560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 911
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ebdc8ea1becd010800000000000000
+      internalID: 1215104500290666082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_14
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 845
+        width: 80
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c191654a78a8b10800000000000000
+      internalID: 1984547725698997249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_15
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 913
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b866055d70860430800000000000000
+      internalID: 3748825015618267313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_16
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 903
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622666af41eee8d30800000000000000
+      internalID: 4435744456874287654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_17
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 901
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc354528d653d56a0800000000000000
+      internalID: -6458947546125151284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_18
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 975
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75c1890b14bcf990800000000000000
+      internalID: -7350802463558875777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_19
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 831
+        width: 183
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4502aac3b94f822e0800000000000000
+      internalID: -2150199874494521260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_20
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 895
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad0574b559acdc90800000000000000
+      internalID: -7143648723351564884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_21
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 921
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834f3522cffba4860800000000000000
+      internalID: 7515030017849685048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_22
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 909
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e10de3b77fa10710800000000000000
+      internalID: 1657799066503676388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_23
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 975
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6011944c7a5009d80800000000000000
+      internalID: -8246084699604578042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_24
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 977
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9239f84ed8d40a20800000000000000
+      internalID: 3027783298718446239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_25
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 919
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4722c3972b5f1bb00800000000000000
+      internalID: 842724752181961332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_26
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 917
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99b72556fe3c7bf0800000000000000
+      internalID: -325315845365974626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_27
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 975
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3846c28ec22d1400800000000000000
+      internalID: 296431420828960826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_28
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 933
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f5bf063cdb97740800000000000000
+      internalID: 5150356295718231931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_29
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 913
+        width: 99
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360e25dcf538e27c0800000000000000
+      internalID: -4094190563743309725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_30
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 975
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87d87a4fb5e1c640800000000000000
+      internalID: 5098608862911059850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_31
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 919
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a360ec6789d3de580800000000000000
+      internalID: -8796306772147173830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_32
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 949
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a189007eaa12bdc0800000000000000
+      internalID: -3624805413573525079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_33
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 913
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe1167983110dbb0800000000000000
+      internalID: -4913408258705645893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_34
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 867
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115fa2c3cd6e09a50800000000000000
+      internalID: 6525969693636490513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_35
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 872
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd50455059ed65980800000000000000
+      internalID: -8550402110895421985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_36
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 919
+        width: 99
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1b5e2c33efd4ff0800000000000000
+      internalID: -50104522564587013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_37
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 877
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88a2f1622a87c350800000000000000
+      internalID: 6036945705790253196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_38
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 983
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f71a163b12098800800000000000000
+      internalID: 615025140007835632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_39
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 865
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc91168770027860800000000000000
+      internalID: 7526078440639929591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_40
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 975
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa6c9f933adbfe30800000000000000
+      internalID: 4538460964761922298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_41
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 877
+        width: 69
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4571035c9ae3169e0800000000000000
+      internalID: -1629952691252750508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_42
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 978
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ba2bd87da1e7060800000000000000
+      internalID: 6953024387804211973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_43
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 905
+        width: 137
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e885ce0dda56ead80800000000000000
+      internalID: -8237534871205160818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_44
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 887
+        width: 111
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679ae1d0e0b194c10800000000000000
+      internalID: 2038190053525465462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 1527
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26613e69d11ac3d60800000000000000
+      internalID: 7871343397194372706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_46
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 865
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0159e17cded5490800000000000000
+      internalID: -7755781543794765623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_47
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 865
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0243a4421aaa3610800000000000000
+      internalID: 1601779612921315852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_48
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 865
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ca94d7aa58b4dc0800000000000000
+      internalID: -3653679705388110774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_49
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 863
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3dc4ea3a02f7cc0800000000000000
+      internalID: -3711211680553970710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_50
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 845
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892ed204c5457e2d0800000000000000
+      internalID: -3249535850934050152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_51
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 857
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144e1b4b58f6147e0800000000000000
+      internalID: -1783021357409115071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_52
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 865
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6f3c96b68b97950800000000000000
+      internalID: 6447387113033037533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_53
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 863
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4181b799c836210800000000000000
+      internalID: 1325057306200118520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_54
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 837
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c4adf136d4e0300800000000000000
+      internalID: 220198519919234105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_55
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 847
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e33838f01e158f0800000000000000
+      internalID: -553413822442684815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_56
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 846
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce40a11d2ff81d940800000000000000
+      internalID: 5319190907954267372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 831
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad5aaed8f8ac2af0800000000000000
+      internalID: -419774878411235924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_58
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 833
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31136505ccfb59680800000000000000
+      internalID: -8748875816855260909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_59
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 844
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f588ab23aee08c2c0800000000000000
+      internalID: -4411259435973179297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_60
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 837
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c4c2da51d08dae0800000000000000
+      internalID: -1524454087114077108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_61
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 831
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e82dc8a27e050cd0800000000000000
+      internalID: -2592650124860774169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_62
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 833
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65884f31219e9a90800000000000000
+      internalID: -7305241973566700181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_63
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 815
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a646826262b8de540800000000000000
+      internalID: 5038836554062652522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_64
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 143
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e787d2d6d07afcd0800000000000000
+      internalID: -2523580573225089047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_65
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 135
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c430aecd75fce7e0800000000000000
+      internalID: -1734741835758160698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_66
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 81
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9481c78972f8598a0800000000000000
+      internalID: -6298971103583004599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mercado_67
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 69
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2acfbce188b46730800000000000000
+      internalID: 3991518037919386159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mercado_0: 9091395909267127964
+      mercado_1: 1627823023550256329
+      mercado_10: -6507940612446141642
+      mercado_11: -8192638875101696254
+      mercado_12: -6226626633293638560
+      mercado_13: 1215104500290666082
+      mercado_14: 1984547725698997249
+      mercado_15: 3748825015618267313
+      mercado_16: 4435744456874287654
+      mercado_17: -6458947546125151284
+      mercado_18: -7350802463558875777
+      mercado_19: -2150199874494521260
+      mercado_2: -38362299765296402
+      mercado_20: -7143648723351564884
+      mercado_21: 7515030017849685048
+      mercado_22: 1657799066503676388
+      mercado_23: -8246084699604578042
+      mercado_24: 3027783298718446239
+      mercado_25: 842724752181961332
+      mercado_26: -325315845365974626
+      mercado_27: 296431420828960826
+      mercado_28: 5150356295718231931
+      mercado_29: -4094190563743309725
+      mercado_3: -4999858431886617924
+      mercado_30: 5098608862911059850
+      mercado_31: -8796306772147173830
+      mercado_32: -3624805413573525079
+      mercado_33: -4913408258705645893
+      mercado_34: 6525969693636490513
+      mercado_35: -8550402110895421985
+      mercado_36: -50104522564587013
+      mercado_37: 6036945705790253196
+      mercado_38: 615025140007835632
+      mercado_39: 7526078440639929591
+      mercado_4: -2606342101900252701
+      mercado_40: 4538460964761922298
+      mercado_41: -1629952691252750508
+      mercado_42: 6953024387804211973
+      mercado_43: -8237534871205160818
+      mercado_44: 2038190053525465462
+      mercado_45: 7871343397194372706
+      mercado_46: -7755781543794765623
+      mercado_47: 1601779612921315852
+      mercado_48: -3653679705388110774
+      mercado_49: -3711211680553970710
+      mercado_5: -2425713157566305515
+      mercado_50: -3249535850934050152
+      mercado_51: -1783021357409115071
+      mercado_52: 6447387113033037533
+      mercado_53: 1325057306200118520
+      mercado_54: 220198519919234105
+      mercado_55: -553413822442684815
+      mercado_56: 5319190907954267372
+      mercado_57: -419774878411235924
+      mercado_58: -8748875816855260909
+      mercado_59: -4411259435973179297
+      mercado_6: 1705898625963187560
+      mercado_60: -1524454087114077108
+      mercado_61: -2592650124860774169
+      mercado_62: -7305241973566700181
+      mercado_63: 5038836554062652522
+      mercado_64: -2523580573225089047
+      mercado_65: -1734741835758160698
+      mercado_66: -6298971103583004599
+      mercado_67: 3991518037919386159
+      mercado_7: 6564018393364443809
+      mercado_8: 421933737399435790
+      mercado_9: -6935378385326593379
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

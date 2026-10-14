@@ -1,0 +1,4199 @@
+fileFormatVersion: 2
+guid: bb2a479f19d876e4283e9b394afc1064
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8400756689754796474
+    second: neto_cardinais_0
+  - first:
+      213: 3614538095696999970
+    second: neto_cardinais_1
+  - first:
+      213: 777369803360930219
+    second: neto_cardinais_2
+  - first:
+      213: -2012016802821472934
+    second: neto_cardinais_3
+  - first:
+      213: -7968737047275471196
+    second: neto_cardinais_4
+  - first:
+      213: -9034894034752758824
+    second: neto_cardinais_5
+  - first:
+      213: 3233458151672911034
+    second: neto_cardinais_6
+  - first:
+      213: -1120325662672430670
+    second: neto_cardinais_7
+  - first:
+      213: -2140798308911040492
+    second: neto_cardinais_8
+  - first:
+      213: 7683205890488505947
+    second: neto_cardinais_9
+  - first:
+      213: -3581619680209880032
+    second: neto_cardinais_10
+  - first:
+      213: 7472031954006054501
+    second: neto_cardinais_11
+  - first:
+      213: 227195280347394773
+    second: neto_cardinais_12
+  - first:
+      213: 4887502554428355021
+    second: neto_cardinais_13
+  - first:
+      213: -8265158621215650824
+    second: neto_cardinais_14
+  - first:
+      213: -8423722930678270278
+    second: neto_cardinais_15
+  - first:
+      213: 1476996809794069149
+    second: neto_cardinais_16
+  - first:
+      213: -3454910198027927526
+    second: neto_cardinais_17
+  - first:
+      213: 6440056448183803928
+    second: neto_cardinais_18
+  - first:
+      213: -6776638519632011977
+    second: neto_cardinais_19
+  - first:
+      213: -5009765636794282202
+    second: neto_cardinais_20
+  - first:
+      213: 1464891084550701555
+    second: neto_cardinais_21
+  - first:
+      213: -3165637517654755325
+    second: neto_cardinais_22
+  - first:
+      213: -2786706716568610886
+    second: neto_cardinais_23
+  - first:
+      213: -1829754514257012471
+    second: neto_cardinais_24
+  - first:
+      213: -6866642631439421794
+    second: neto_cardinais_25
+  - first:
+      213: -7155366351443216973
+    second: neto_cardinais_26
+  - first:
+      213: -5796234541080024856
+    second: neto_cardinais_27
+  - first:
+      213: 6634781110520169863
+    second: neto_cardinais_28
+  - first:
+      213: 3331880495706733125
+    second: neto_cardinais_29
+  - first:
+      213: -1698290938854096701
+    second: neto_cardinais_30
+  - first:
+      213: 3552228942755582615
+    second: neto_cardinais_31
+  - first:
+      213: 697276061810279734
+    second: neto_cardinais_32
+  - first:
+      213: -3575426390968341708
+    second: neto_cardinais_33
+  - first:
+      213: -2237728184616209484
+    second: neto_cardinais_34
+  - first:
+      213: -5449547889148447333
+    second: neto_cardinais_35
+  - first:
+      213: -1384759317469981812
+    second: neto_cardinais_36
+  - first:
+      213: 1164521860941241522
+    second: neto_cardinais_37
+  - first:
+      213: 3663202159984157929
+    second: neto_cardinais_38
+  - first:
+      213: 368759630427998863
+    second: neto_cardinais_39
+  - first:
+      213: -7500032749553222232
+    second: neto_cardinais_40
+  - first:
+      213: 7548064237097426670
+    second: neto_cardinais_41
+  - first:
+      213: -6188926173959035383
+    second: neto_cardinais_42
+  - first:
+      213: -6185549632772734902
+    second: neto_cardinais_43
+  - first:
+      213: -3995159110540493957
+    second: neto_cardinais_44
+  - first:
+      213: 8571917394986716763
+    second: neto_cardinais_45
+  - first:
+      213: 1982592934446161088
+    second: neto_cardinais_46
+  - first:
+      213: -7501778016263248731
+    second: neto_cardinais_47
+  - first:
+      213: 6563859392379351279
+    second: neto_cardinais_48
+  - first:
+      213: -4162495776118430264
+    second: neto_cardinais_49
+  - first:
+      213: -7842073525618902755
+    second: neto_cardinais_50
+  - first:
+      213: -8175653591176847232
+    second: neto_cardinais_51
+  - first:
+      213: -2448683251796696246
+    second: neto_cardinais_52
+  - first:
+      213: -3326410428336381223
+    second: neto_cardinais_53
+  - first:
+      213: -4414505195489468218
+    second: neto_cardinais_54
+  - first:
+      213: 3270004873963561948
+    second: neto_cardinais_55
+  - first:
+      213: 6987080239384143678
+    second: neto_cardinais_56
+  - first:
+      213: 3473000705111533666
+    second: neto_cardinais_57
+  - first:
+      213: -5877211997972880487
+    second: neto_cardinais_58
+  - first:
+      213: -2205399046103724530
+    second: neto_cardinais_59
+  - first:
+      213: 5025345453240923408
+    second: neto_cardinais_60
+  - first:
+      213: 1853182084829341681
+    second: neto_cardinais_61
+  - first:
+      213: -2627040079019629879
+    second: neto_cardinais_62
+  - first:
+      213: 1418806740969621545
+    second: neto_cardinais_63
+  - first:
+      213: -8710291032432971871
+    second: neto_cardinais_64
+  - first:
+      213: 8984626084248431180
+    second: neto_cardinais_65
+  - first:
+      213: -4159794297443708294
+    second: neto_cardinais_66
+  - first:
+      213: -724879140200337225
+    second: neto_cardinais_67
+  - first:
+      213: 2043518571976537186
+    second: neto_cardinais_68
+  - first:
+      213: 2547324545163197842
+    second: neto_cardinais_69
+  - first:
+      213: -8266136553462322392
+    second: neto_cardinais_70
+  - first:
+      213: 6241135214745197720
+    second: neto_cardinais_71
+  - first:
+      213: 4821568577659382074
+    second: neto_cardinais_72
+  - first:
+      213: -7249090750344614110
+    second: neto_cardinais_73
+  - first:
+      213: -7474916508518722812
+    second: neto_cardinais_74
+  - first:
+      213: 1226478060727204057
+    second: neto_cardinais_75
+  - first:
+      213: 8089462462833879639
+    second: neto_cardinais_76
+  - first:
+      213: -6743881037421091112
+    second: neto_cardinais_77
+  - first:
+      213: 2244599769628652197
+    second: neto_cardinais_78
+  - first:
+      213: -7319477105943474539
+    second: neto_cardinais_79
+  - first:
+      213: -7694113150191504248
+    second: neto_cardinais_80
+  - first:
+      213: 7709099814662146826
+    second: neto_cardinais_81
+  - first:
+      213: -3781447303907345413
+    second: neto_cardinais_82
+  - first:
+      213: -5127314344671378868
+    second: neto_cardinais_83
+  - first:
+      213: -3585174567326243792
+    second: neto_cardinais_84
+  - first:
+      213: 5332368270995341705
+    second: neto_cardinais_85
+  - first:
+      213: -8644372067065842301
+    second: neto_cardinais_86
+  - first:
+      213: 1724998062491761606
+    second: neto_cardinais_87
+  - first:
+      213: 4264389094998115617
+    second: neto_cardinais_88
+  - first:
+      213: -4930505709100635924
+    second: neto_cardinais_89
+  - first:
+      213: -7201842150328984997
+    second: neto_cardinais_90
+  - first:
+      213: 3150300871201034120
+    second: neto_cardinais_91
+  - first:
+      213: -562333650580052134
+    second: neto_cardinais_92
+  - first:
+      213: 102428432416072887
+    second: neto_cardinais_93
+  - first:
+      213: 1836911106111662743
+    second: neto_cardinais_94
+  - first:
+      213: 8829452190530263795
+    second: neto_cardinais_95
+  - first:
+      213: -4768412968505847661
+    second: neto_cardinais_96
+  - first:
+      213: 1233815106186895134
+    second: neto_cardinais_97
+  - first:
+      213: 4631448181703977250
+    second: neto_cardinais_98
+  - first:
+      213: -5993846990176721015
+    second: neto_cardinais_99
+  - first:
+      213: -4586257983199651575
+    second: neto_cardinais_100
+  - first:
+      213: -2482270934515249553
+    second: neto_cardinais_101
+  - first:
+      213: 5541548693142713499
+    second: neto_cardinais_102
+  - first:
+      213: 2139905470269387117
+    second: neto_cardinais_103
+  - first:
+      213: 8908136503774404502
+    second: neto_cardinais_104
+  - first:
+      213: -5592440121097060489
+    second: neto_cardinais_105
+  - first:
+      213: -7848537687773067418
+    second: neto_cardinais_106
+  - first:
+      213: 9182871659719538889
+    second: neto_cardinais_107
+  - first:
+      213: 1151744167145994110
+    second: neto_cardinais_108
+  - first:
+      213: -700399001138321176
+    second: neto_cardinais_109
+  - first:
+      213: 8887579423390341893
+    second: neto_cardinais_110
+  - first:
+      213: 2294253931125351571
+    second: neto_cardinais_111
+  - first:
+      213: -6853503945872696145
+    second: neto_cardinais_112
+  - first:
+      213: -4131142422313459216
+    second: neto_cardinais_113
+  - first:
+      213: -4923504973201205506
+    second: neto_cardinais_114
+  - first:
+      213: -350850439901230534
+    second: neto_cardinais_115
+  - first:
+      213: 7103651448642699736
+    second: neto_cardinais_116
+  - first:
+      213: 6231008432196580041
+    second: neto_cardinais_117
+  - first:
+      213: 3015855707196420304
+    second: neto_cardinais_118
+  - first:
+      213: 1320791505921842217
+    second: neto_cardinais_119
+  - first:
+      213: -5406200971531477778
+    second: neto_cardinais_120
+  - first:
+      213: -2621752227335273363
+    second: neto_cardinais_121
+  - first:
+      213: -5618071576849576624
+    second: neto_cardinais_122
+  - first:
+      213: 6567081555838903023
+    second: neto_cardinais_123
+  - first:
+      213: -4298981261895054295
+    second: neto_cardinais_124
+  - first:
+      213: -267327551669859509
+    second: neto_cardinais_125
+  - first:
+      213: 6486568469469552796
+    second: neto_cardinais_126
+  - first:
+      213: 1741229648149421702
+    second: neto_cardinais_127
+  - first:
+      213: -8500628632492363150
+    second: neto_cardinais_128
+  - first:
+      213: 6532084478843651598
+    second: neto_cardinais_129
+  - first:
+      213: -9032756855217827479
+    second: neto_cardinais_130
+  - first:
+      213: 6902533926308064554
+    second: neto_cardinais_131
+  - first:
+      213: 7138789711568452048
+    second: neto_cardinais_132
+  - first:
+      213: -3345806024363629771
+    second: neto_cardinais_133
+  - first:
+      213: 5911793616331830418
+    second: neto_cardinais_134
+  - first:
+      213: -4466642796773507535
+    second: neto_cardinais_135
+  - first:
+      213: -5157703193023745088
+    second: neto_cardinais_136
+  - first:
+      213: -5676102204590274755
+    second: neto_cardinais_137
+  - first:
+      213: 155489806578191271
+    second: neto_cardinais_138
+  - first:
+      213: 582564723566843295
+    second: neto_cardinais_139
+  - first:
+      213: 6191414990309379134
+    second: neto_cardinais_140
+  - first:
+      213: 5787332269039472479
+    second: neto_cardinais_141
+  - first:
+      213: 1378528046254853303
+    second: neto_cardinais_142
+  - first:
+      213: 8450288256581071614
+    second: neto_cardinais_143
+  - first:
+      213: 3271285261166238060
+    second: neto_cardinais_144
+  - first:
+      213: -4113573631979787641
+    second: neto_cardinais_145
+  - first:
+      213: 4149644213082255104
+    second: neto_cardinais_146
+  - first:
+      213: 5406230692001527213
+    second: neto_cardinais_147
+  - first:
+      213: 33455393246183595
+    second: neto_cardinais_148
+  - first:
+      213: 6889916081108341439
+    second: neto_cardinais_149
+  - first:
+      213: 3559997616254733057
+    second: neto_cardinais_150
+  - first:
+      213: 4628919684613014744
+    second: neto_cardinais_151
+  - first:
+      213: 329407255129756267
+    second: neto_cardinais_152
+  - first:
+      213: -796668446388121616
+    second: neto_cardinais_153
+  - first:
+      213: -6581574847000968238
+    second: neto_cardinais_154
+  - first:
+      213: 6430192570305019522
+    second: neto_cardinais_155
+  - first:
+      213: 3798148706363901040
+    second: neto_cardinais_156
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neto_cardinais_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 945
+        width: 222
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1325143bb759470800000000000000
+      internalID: 8400756689754796474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1189
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226f2255f3b692230800000000000000
+      internalID: 3614538095696999970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1180
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9817ca7b5c9ca00800000000000000
+      internalID: 777369803360930219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_3
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1187
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d75b1c061e314e0800000000000000
+      internalID: -2012016802821472934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_4
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1195
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae76ac20eb596190800000000000000
+      internalID: -7968737047275471196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1096
+        width: 44
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db144b8ebb9d9280800000000000000
+      internalID: -9034894034752758824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_6
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 947
+        width: 190
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab41e8eae0d8fdc20800000000000000
+      internalID: 3233458151672911034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_7
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1140
+        width: 71
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9d7abdebdc370f0800000000000000
+      internalID: -1120325662672430670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_8
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1175
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418b99dc74b5a42e0800000000000000
+      internalID: -2140798308911040492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_9
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 939
+        width: 260
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5691cecc0b30aa60800000000000000
+      internalID: 7683205890488505947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_10
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1159
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02cba8880e78b4ec0800000000000000
+      internalID: -3581619680209880032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_11
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1173
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56616e0497df1b760800000000000000
+      internalID: 7472031954006054501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_12
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1196
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d270cb57e8272300800000000000000
+      internalID: 227195280347394773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_13
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1181
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1348b9da5e3d340800000000000000
+      internalID: 4887502554428355021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_14
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 867
+        width: 265
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb0f2256024c4d80800000000000000
+      internalID: -8265158621215650824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_15
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1196
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6fb9610ace81b80800000000000000
+      internalID: -8423722930678270278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_16
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1185
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d922926e5c85f7410800000000000000
+      internalID: 1476996809794069149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_17
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1197
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10cba3da71bd00d0800000000000000
+      internalID: -3454910198027927526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_18
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1134
+        width: 27
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810a57ff73daf5950800000000000000
+      internalID: 6440056448183803928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_19
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1136
+        width: 76
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73dda1aab2b84f1a0800000000000000
+      internalID: -6776638519632011977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_20
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1122
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f0bea32bcb97ab0800000000000000
+      internalID: -5009765636794282202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_21
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1173
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f108491ea6545410800000000000000
+      internalID: 1464891084550701555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_22
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1169
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308f98033756114d0800000000000000
+      internalID: -3165637517654755325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_23
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1156
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab79bb18101a359d0800000000000000
+      internalID: -2786706716568610886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_24
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1096
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9091b87b6f76b96e0800000000000000
+      internalID: -1829754514257012471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_25
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1140
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9eef7168e8c4b0a0800000000000000
+      internalID: -6866642631439421794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_26
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1052
+        width: 67
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5b170d63803bc90800000000000000
+      internalID: -7155366351443216973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_27
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1116
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e863180563af8fa0800000000000000
+      internalID: -5796234541080024856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_28
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1068
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785c607744a731c50800000000000000
+      internalID: 6634781110520169863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_29
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1068
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54af6a468a73d3e20800000000000000
+      internalID: 3331880495706733125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_30
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1058
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0465893657e68e0800000000000000
+      internalID: -1698290938854096701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_31
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1044
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792dec5276d0c4130800000000000000
+      internalID: 3552228942755582615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_32
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1063
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635c59642e83da900800000000000000
+      internalID: 697276061810279734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_33
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 1064
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b66cd04a8816ec0800000000000000
+      internalID: -3575426390968341708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1044
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b33214721ef1f0e0800000000000000
+      internalID: -2237728184616209484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_35
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1038
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95b3d851115f54b0800000000000000
+      internalID: -5449547889148447333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_36
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1020
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c831aceccb858cce0800000000000000
+      internalID: -1384759317469981812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_37
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 953
+        width: 88
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc549e6676392010800000000000000
+      internalID: 1164521860941241522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_38
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1015
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4ac4eb4fe46d230800000000000000
+      internalID: 3663202159984157929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_39
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 960
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a4a2b1ee81e1500800000000000000
+      internalID: 368759630427998863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_40
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 917
+        width: 34
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad751f73f78ae790800000000000000
+      internalID: -7500032749553222232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_41
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1034
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee950aae6c10c860800000000000000
+      internalID: 7548064237097426670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_42
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 960
+        width: 47
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906ed046f648c1aa0800000000000000
+      internalID: -6188926173959035383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_43
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 998
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a408806a163882aa0800000000000000
+      internalID: -6185549632772734902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_44
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 964
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b711bc4f75e88c0800000000000000
+      internalID: -3995159110540493957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_45
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 997
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ecc2c647195f670800000000000000
+      internalID: 8571917394986716763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_46
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1044
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ccdcd705c5938b10800000000000000
+      internalID: 1982592934446161088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_47
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1045
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a46bcce3a454e790800000000000000
+      internalID: -7501778016263248731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_48
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 981
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0f16e2753871b50800000000000000
+      internalID: 6563859392379351279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_49
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 976
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5a56d3528db36c0800000000000000
+      internalID: -4162495776118430264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_50
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 951
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d197df27dab5b2390800000000000000
+      internalID: -7842073525618902755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_51
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 959
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080e143106e3a8e80800000000000000
+      internalID: -8175653591176847232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_52
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 978
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43a5316e87840ed0800000000000000
+      internalID: -2448683251796696246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_53
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 958
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d2ead9e65736d1d0800000000000000
+      internalID: -3326410428336381223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_54
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 964
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0ebbbe9e68cb2c0800000000000000
+      internalID: -4414505195489468218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_55
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 628
+        width: 194
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3e46e8b14616d20800000000000000
+      internalID: 3270004873963561948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_56
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 923
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37a4a5657817f060800000000000000
+      internalID: 6987080239384143678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_57
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 569
+        width: 301
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268aad49db3923030800000000000000
+      internalID: 3473000705111533666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_58
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 562
+        width: 321
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993a92f93d2ff6ea0800000000000000
+      internalID: -5877211997972880487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_59
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 618
+        width: 317
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e80059049d461e0800000000000000
+      internalID: -2205399046103724530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_60
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 842
+        width: 45
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015bc06701d9db540800000000000000
+      internalID: 5025345453240923408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_61
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 881
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7ee5e9943d7b910800000000000000
+      internalID: 1853182084829341681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_62
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 840
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2225f77f0ea8bd0800000000000000
+      internalID: -2627040079019629879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_63
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 826
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9288c68b63d90b310800000000000000
+      internalID: 1418806740969621545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_64
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 885
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afef818474de1780800000000000000
+      internalID: -8710291032432971871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_65
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 825
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a265f22ddcfac70800000000000000
+      internalID: 8984626084248431180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_66
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 821
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a721c2240217546c0800000000000000
+      internalID: -4159794297443708294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_67
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 690
+        width: 56
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0b4473346b0f5f0800000000000000
+      internalID: -724879140200337225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_68
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 779
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264339e60590c5c10800000000000000
+      internalID: 2043518571976537186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_69
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 763
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29df5127d2ae95320800000000000000
+      internalID: 2547324545163197842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_70
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 738
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ba10ab998c84d80800000000000000
+      internalID: -8266136553462322392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_71
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 743
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c911e2967fc9650800000000000000
+      internalID: 6241135214745197720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_72
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 741
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39a29b5317a9e240800000000000000
+      internalID: 4821568577659382074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_73
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 734
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fa321be5e066b90800000000000000
+      internalID: -7249090750344614110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_74
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 724
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403d9001a03c34890800000000000000
+      internalID: -7474916508518722812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_75
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 734
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8747e4c43550110800000000000000
+      internalID: 1226478060727204057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_76
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 730
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ae119004b834070800000000000000
+      internalID: 8089462462833879639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_77
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 690
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6e5055debe862a0800000000000000
+      internalID: -6743881037421091112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_78
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 726
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2b3ab199b662f10800000000000000
+      internalID: 2244599769628652197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_79
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 682
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e82a63a5efb6a90800000000000000
+      internalID: -7319477105943474539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_80
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 724
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8847c25ead4093590800000000000000
+      internalID: -7694113150191504248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_81
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 658
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b87f6df693cfa60800000000000000
+      internalID: 7709099814662146826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_82
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 636
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb7eb946b9958bc0800000000000000
+      internalID: -3781447303907345413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_83
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 626
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42091ae4ce18d8b0800000000000000
+      internalID: -5127314344671378868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_84
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 634
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03421c0e9b6ee3ec0800000000000000
+      internalID: -3585174567326243792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_85
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 546
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981cd3cb0b0600a40800000000000000
+      internalID: 5332368270995341705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 335
+        width: 142
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3853b34a765090880800000000000000
+      internalID: -8644372067065842301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_87
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 586
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbfe01399c60f710800000000000000
+      internalID: 1724998062491761606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_88
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 576
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1258967c9472e2b30800000000000000
+      internalID: 4264389094998115617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_89
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 596
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce865063e23539bb0800000000000000
+      internalID: -4930505709100635924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_90
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 566
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a9435a8baed0c90800000000000000
+      internalID: -7201842150328984997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_91
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 327
+        width: 198
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f8a8b83fd18bb20800000000000000
+      internalID: 3150300871201034120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_92
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 566
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a576def26803238f0800000000000000
+      internalID: -562333650580052134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_93
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 339
+        width: 105
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b46f09dd16eb6100800000000000000
+      internalID: 102428432416072887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_94
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 592
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a61cb2be40e7910800000000000000
+      internalID: 1836911106111662743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_95
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 329
+        width: 184
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fad9d1acf3888a70800000000000000
+      internalID: 8829452190530263795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_96
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 578
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390d7d55ba133ddb0800000000000000
+      internalID: -4768412968505847661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_97
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 160
+        width: 297
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fd7c25d446f1110800000000000000
+      internalID: 1233815106186895134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_98
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 505
+        width: 29
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22928123595364040800000000000000
+      internalID: 4631448181703977250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_99
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 546
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987e8705be391dca0800000000000000
+      internalID: -5993846990176721015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_100
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 558
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909d51fc9a65a50c0800000000000000
+      internalID: -4586257983199651575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_101
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 504
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e01f79cb33d8dd0800000000000000
+      internalID: -2482270934515249553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_102
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 401
+        width: 102
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b943d401d2987ec40800000000000000
+      internalID: 5541548693142713499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_103
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 568
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61725000b872bd10800000000000000
+      internalID: 2139905470269387117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_104
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 542
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fd92ee3fe00ab70800000000000000
+      internalID: 8908136503774404502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_105
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 568
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ffd520759a362b0800000000000000
+      internalID: -5592440121097060489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_106
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 570
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667450a6e84641390800000000000000
+      internalID: -7848537687773067418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_107
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 568
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8b59f1f1d107f70800000000000000
+      internalID: 9182871659719538889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_108
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 548
+        width: 88
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e777dd2c731dbff00800000000000000
+      internalID: 1151744167145994110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_109
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 500
+        width: 38
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8ac10c1dea746f0800000000000000
+      internalID: -700399001138321176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_110
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 537
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b904ca566075b70800000000000000
+      internalID: 8887579423390341893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_111
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 546
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394254d7bc3d6df10800000000000000
+      internalID: 2294253931125351571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_112
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 551
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac158ff87673e0a0800000000000000
+      internalID: -6853503945872696145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_113
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 527
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1a579cadb3ba6c0800000000000000
+      internalID: -4131142422313459216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_114
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 535
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6197e00523cabb0800000000000000
+      internalID: -4923504973201205506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_115
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 449
+        width: 78
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ac5604267812bf0800000000000000
+      internalID: -350850439901230534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_116
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 423
+        width: 55
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d189841b5d359260800000000000000
+      internalID: 7103651448642699736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_117
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 511
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c27a81e72df87650800000000000000
+      internalID: 6231008432196580041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 423
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0f64979c87ad920800000000000000
+      internalID: 3015855707196420304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_119
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 441
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c13d470e4645210800000000000000
+      internalID: 1320791505921842217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_120
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 441
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec9e731cd059f4b0800000000000000
+      internalID: -5406200971531477778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_121
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 387
+        width: 58
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6487986d3aad9bd0800000000000000
+      internalID: -2621752227335273363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_122
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 443
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d892baaa99802b0800000000000000
+      internalID: -5618071576849576624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_123
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 399
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe22cc291e5f22b50800000000000000
+      internalID: 6567081555838903023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_124
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 441
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c4facb153f654c0800000000000000
+      internalID: -4298981261895054295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_125
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 365
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b0b0412034a4cf0800000000000000
+      internalID: -267327551669859509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_126
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 407
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c906bf9d7abe40a50800000000000000
+      internalID: 6486568469469552796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_127
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 368
+        width: 64
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e135ab3271a2810800000000000000
+      internalID: 1741229648149421702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_128
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 304
+        width: 59
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27237c80c43b70a80800000000000000
+      internalID: -8500628632492363150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_129
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 369
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06815c9930a6aa50800000000000000
+      internalID: 6532084478843651598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_130
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 385
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961544e6f7335a280800000000000000
+      internalID: -9032756855217827479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_131
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 361
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2daca7e80abacf50800000000000000
+      internalID: 6902533926308064554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_132
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 331
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d930447b63121360800000000000000
+      internalID: 7138789711568452048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_133
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 337
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533a17ec52f4191d0800000000000000
+      internalID: -3345806024363629771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_134
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 343
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29471e6d8f8ea0250800000000000000
+      internalID: 5911793616331830418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_135
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 345
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ef1c7aa0c4302c0800000000000000
+      internalID: -4466642796773507535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_136
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 304
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3fbeac5482c68b0800000000000000
+      internalID: -5157703193023745088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_137
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 329
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37c5924e1f6a31b0800000000000000
+      internalID: -5676102204590274755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_138
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 315
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab894fb729682200800000000000000
+      internalID: 155489806578191271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_139
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 230
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9510ee878fa51800800000000000000
+      internalID: 582564723566843295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_140
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 17
+        width: 338
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c4b6251235ce550800000000000000
+      internalID: 6191414990309379134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_141
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 258
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fc04d390cb05050800000000000000
+      internalID: 5787332269039472479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_142
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 254
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc0fed44f3812310800000000000000
+      internalID: 1378528046254853303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_143
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 256
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef27b27d564754570800000000000000
+      internalID: 8450288256581071614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_144
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 17
+        width: 252
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69d8ceec90f56d20800000000000000
+      internalID: 3271285261166238060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_145
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 0
+        width: 234
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a6e6c8396a9e6c0800000000000000
+      internalID: -4113573631979787641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_146
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 216
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fe5011d6f769930800000000000000
+      internalID: 4149644213082255104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_147
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 161
+        width: 73
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5b092cb2ac60b40800000000000000
+      internalID: 5406230692001527213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_148
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 234
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0824eb08bd67000800000000000000
+      internalID: 33455393246183595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_149
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 222
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2d6b2eb26ed9f50800000000000000
+      internalID: 6889916081108341439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_150
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 208
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bc91668f6a76130800000000000000
+      internalID: 3559997616254733057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_151
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 128
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d40c279de93d3040800000000000000
+      internalID: 4628919684613014744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_152
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 140
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62127c372a429400800000000000000
+      internalID: 329407255129756267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_153
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 132
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff0649d44aa1f4f0800000000000000
+      internalID: -796668446388121616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_154
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 121
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d38cdd1c8c89a4a0800000000000000
+      internalID: -6581574847000968238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_155
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 117
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ef266f212ac3950800000000000000
+      internalID: 6430192570305019522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neto_cardinais_156
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 87
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0740eeeff1cb5b430800000000000000
+      internalID: 3798148706363901040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      neto_cardinais_0: 8400756689754796474
+      neto_cardinais_1: 3614538095696999970
+      neto_cardinais_10: -3581619680209880032
+      neto_cardinais_100: -4586257983199651575
+      neto_cardinais_101: -2482270934515249553
+      neto_cardinais_102: 5541548693142713499
+      neto_cardinais_103: 2139905470269387117
+      neto_cardinais_104: 8908136503774404502
+      neto_cardinais_105: -5592440121097060489
+      neto_cardinais_106: -7848537687773067418
+      neto_cardinais_107: 9182871659719538889
+      neto_cardinais_108: 1151744167145994110
+      neto_cardinais_109: -700399001138321176
+      neto_cardinais_11: 7472031954006054501
+      neto_cardinais_110: 8887579423390341893
+      neto_cardinais_111: 2294253931125351571
+      neto_cardinais_112: -6853503945872696145
+      neto_cardinais_113: -4131142422313459216
+      neto_cardinais_114: -4923504973201205506
+      neto_cardinais_115: -350850439901230534
+      neto_cardinais_116: 7103651448642699736
+      neto_cardinais_117: 6231008432196580041
+      neto_cardinais_118: 3015855707196420304
+      neto_cardinais_119: 1320791505921842217
+      neto_cardinais_12: 227195280347394773
+      neto_cardinais_120: -5406200971531477778
+      neto_cardinais_121: -2621752227335273363
+      neto_cardinais_122: -5618071576849576624
+      neto_cardinais_123: 6567081555838903023
+      neto_cardinais_124: -4298981261895054295
+      neto_cardinais_125: -267327551669859509
+      neto_cardinais_126: 6486568469469552796
+      neto_cardinais_127: 1741229648149421702
+      neto_cardinais_128: -8500628632492363150
+      neto_cardinais_129: 6532084478843651598
+      neto_cardinais_13: 4887502554428355021
+      neto_cardinais_130: -9032756855217827479
+      neto_cardinais_131: 6902533926308064554
+      neto_cardinais_132: 7138789711568452048
+      neto_cardinais_133: -3345806024363629771
+      neto_cardinais_134: 5911793616331830418
+      neto_cardinais_135: -4466642796773507535
+      neto_cardinais_136: -5157703193023745088
+      neto_cardinais_137: -5676102204590274755
+      neto_cardinais_138: 155489806578191271
+      neto_cardinais_139: 582564723566843295
+      neto_cardinais_14: -8265158621215650824
+      neto_cardinais_140: 6191414990309379134
+      neto_cardinais_141: 5787332269039472479
+      neto_cardinais_142: 1378528046254853303
+      neto_cardinais_143: 8450288256581071614
+      neto_cardinais_144: 3271285261166238060
+      neto_cardinais_145: -4113573631979787641
+      neto_cardinais_146: 4149644213082255104
+      neto_cardinais_147: 5406230692001527213
+      neto_cardinais_148: 33455393246183595
+      neto_cardinais_149: 6889916081108341439
+      neto_cardinais_15: -8423722930678270278
+      neto_cardinais_150: 3559997616254733057
+      neto_cardinais_151: 4628919684613014744
+      neto_cardinais_152: 329407255129756267
+      neto_cardinais_153: -796668446388121616
+      neto_cardinais_154: -6581574847000968238
+      neto_cardinais_155: 6430192570305019522
+      neto_cardinais_156: 3798148706363901040
+      neto_cardinais_16: 1476996809794069149
+      neto_cardinais_17: -3454910198027927526
+      neto_cardinais_18: 6440056448183803928
+      neto_cardinais_19: -6776638519632011977
+      neto_cardinais_2: 777369803360930219
+      neto_cardinais_20: -5009765636794282202
+      neto_cardinais_21: 1464891084550701555
+      neto_cardinais_22: -3165637517654755325
+      neto_cardinais_23: -2786706716568610886
+      neto_cardinais_24: -1829754514257012471
+      neto_cardinais_25: -6866642631439421794
+      neto_cardinais_26: -7155366351443216973
+      neto_cardinais_27: -5796234541080024856
+      neto_cardinais_28: 6634781110520169863
+      neto_cardinais_29: 3331880495706733125
+      neto_cardinais_3: -2012016802821472934
+      neto_cardinais_30: -1698290938854096701
+      neto_cardinais_31: 3552228942755582615
+      neto_cardinais_32: 697276061810279734
+      neto_cardinais_33: -3575426390968341708
+      neto_cardinais_34: -2237728184616209484
+      neto_cardinais_35: -5449547889148447333
+      neto_cardinais_36: -1384759317469981812
+      neto_cardinais_37: 1164521860941241522
+      neto_cardinais_38: 3663202159984157929
+      neto_cardinais_39: 368759630427998863
+      neto_cardinais_4: -7968737047275471196
+      neto_cardinais_40: -7500032749553222232
+      neto_cardinais_41: 7548064237097426670
+      neto_cardinais_42: -6188926173959035383
+      neto_cardinais_43: -6185549632772734902
+      neto_cardinais_44: -3995159110540493957
+      neto_cardinais_45: 8571917394986716763
+      neto_cardinais_46: 1982592934446161088
+      neto_cardinais_47: -7501778016263248731
+      neto_cardinais_48: 6563859392379351279
+      neto_cardinais_49: -4162495776118430264
+      neto_cardinais_5: -9034894034752758824
+      neto_cardinais_50: -7842073525618902755
+      neto_cardinais_51: -8175653591176847232
+      neto_cardinais_52: -2448683251796696246
+      neto_cardinais_53: -3326410428336381223
+      neto_cardinais_54: -4414505195489468218
+      neto_cardinais_55: 3270004873963561948
+      neto_cardinais_56: 6987080239384143678
+      neto_cardinais_57: 3473000705111533666
+      neto_cardinais_58: -5877211997972880487
+      neto_cardinais_59: -2205399046103724530
+      neto_cardinais_6: 3233458151672911034
+      neto_cardinais_60: 5025345453240923408
+      neto_cardinais_61: 1853182084829341681
+      neto_cardinais_62: -2627040079019629879
+      neto_cardinais_63: 1418806740969621545
+      neto_cardinais_64: -8710291032432971871
+      neto_cardinais_65: 8984626084248431180
+      neto_cardinais_66: -4159794297443708294
+      neto_cardinais_67: -724879140200337225
+      neto_cardinais_68: 2043518571976537186
+      neto_cardinais_69: 2547324545163197842
+      neto_cardinais_7: -1120325662672430670
+      neto_cardinais_70: -8266136553462322392
+      neto_cardinais_71: 6241135214745197720
+      neto_cardinais_72: 4821568577659382074
+      neto_cardinais_73: -7249090750344614110
+      neto_cardinais_74: -7474916508518722812
+      neto_cardinais_75: 1226478060727204057
+      neto_cardinais_76: 8089462462833879639
+      neto_cardinais_77: -6743881037421091112
+      neto_cardinais_78: 2244599769628652197
+      neto_cardinais_79: -7319477105943474539
+      neto_cardinais_8: -2140798308911040492
+      neto_cardinais_80: -7694113150191504248
+      neto_cardinais_81: 7709099814662146826
+      neto_cardinais_82: -3781447303907345413
+      neto_cardinais_83: -5127314344671378868
+      neto_cardinais_84: -3585174567326243792
+      neto_cardinais_85: 5332368270995341705
+      neto_cardinais_86: -8644372067065842301
+      neto_cardinais_87: 1724998062491761606
+      neto_cardinais_88: 4264389094998115617
+      neto_cardinais_89: -4930505709100635924
+      neto_cardinais_9: 7683205890488505947
+      neto_cardinais_90: -7201842150328984997
+      neto_cardinais_91: 3150300871201034120
+      neto_cardinais_92: -562333650580052134
+      neto_cardinais_93: 102428432416072887
+      neto_cardinais_94: 1836911106111662743
+      neto_cardinais_95: 8829452190530263795
+      neto_cardinais_96: -4768412968505847661
+      neto_cardinais_97: 1233815106186895134
+      neto_cardinais_98: 4631448181703977250
+      neto_cardinais_99: -5993846990176721015
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

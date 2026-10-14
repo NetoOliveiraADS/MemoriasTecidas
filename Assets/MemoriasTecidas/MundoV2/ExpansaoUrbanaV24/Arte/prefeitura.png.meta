@@ -1,0 +1,2899 @@
+fileFormatVersion: 2
+guid: e66f1f5fcef323e47b11fc18347554ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2073554276793710452
+    second: prefeitura_0
+  - first:
+      213: 1688475329464622539
+    second: prefeitura_1
+  - first:
+      213: 855473800206853831
+    second: prefeitura_2
+  - first:
+      213: 601303782984234525
+    second: prefeitura_3
+  - first:
+      213: 4400921405597363692
+    second: prefeitura_4
+  - first:
+      213: -5571010721848881567
+    second: prefeitura_5
+  - first:
+      213: -8549135144015874353
+    second: prefeitura_6
+  - first:
+      213: 1022608037502509707
+    second: prefeitura_7
+  - first:
+      213: 3486398229600459773
+    second: prefeitura_8
+  - first:
+      213: -1737960698832078538
+    second: prefeitura_9
+  - first:
+      213: -3623462260696629531
+    second: prefeitura_10
+  - first:
+      213: -3550982665329332964
+    second: prefeitura_11
+  - first:
+      213: 2953774679736377870
+    second: prefeitura_12
+  - first:
+      213: 6287603254550860049
+    second: prefeitura_13
+  - first:
+      213: -1852743243713568096
+    second: prefeitura_14
+  - first:
+      213: 1339036088460238300
+    second: prefeitura_15
+  - first:
+      213: -5037455138270694201
+    second: prefeitura_16
+  - first:
+      213: 4099353554628686666
+    second: prefeitura_17
+  - first:
+      213: -8770977370723988711
+    second: prefeitura_18
+  - first:
+      213: -7629780956657879465
+    second: prefeitura_19
+  - first:
+      213: -8038648250317583847
+    second: prefeitura_20
+  - first:
+      213: -8467858572457449372
+    second: prefeitura_21
+  - first:
+      213: 555835642810959902
+    second: prefeitura_22
+  - first:
+      213: 2090754303996258803
+    second: prefeitura_23
+  - first:
+      213: 1027093455954637861
+    second: prefeitura_24
+  - first:
+      213: 907819468247149092
+    second: prefeitura_25
+  - first:
+      213: -5553246516043884719
+    second: prefeitura_26
+  - first:
+      213: 880941600693735995
+    second: prefeitura_27
+  - first:
+      213: -4216863763304526197
+    second: prefeitura_28
+  - first:
+      213: -6598941975974123061
+    second: prefeitura_29
+  - first:
+      213: -5074265959206968682
+    second: prefeitura_30
+  - first:
+      213: -5131928622195948203
+    second: prefeitura_31
+  - first:
+      213: 6450743383771224128
+    second: prefeitura_32
+  - first:
+      213: -7760571168386808910
+    second: prefeitura_33
+  - first:
+      213: 2350948717620873883
+    second: prefeitura_34
+  - first:
+      213: 274856472222301417
+    second: prefeitura_35
+  - first:
+      213: -6405920927059843523
+    second: prefeitura_36
+  - first:
+      213: 495905404404320235
+    second: prefeitura_37
+  - first:
+      213: -1386411748788951437
+    second: prefeitura_38
+  - first:
+      213: 3416787238931770809
+    second: prefeitura_39
+  - first:
+      213: -8080583654857976421
+    second: prefeitura_40
+  - first:
+      213: 2623968428849784119
+    second: prefeitura_41
+  - first:
+      213: -2914739052902126524
+    second: prefeitura_42
+  - first:
+      213: 4042466799428339956
+    second: prefeitura_43
+  - first:
+      213: -3899150984145067818
+    second: prefeitura_44
+  - first:
+      213: 8006632964726866442
+    second: prefeitura_45
+  - first:
+      213: -7577380470192184960
+    second: prefeitura_46
+  - first:
+      213: -5083989191716953053
+    second: prefeitura_47
+  - first:
+      213: -7659328875602310753
+    second: prefeitura_48
+  - first:
+      213: 1581359116109830688
+    second: prefeitura_49
+  - first:
+      213: -1812635134879931500
+    second: prefeitura_50
+  - first:
+      213: 5218392918832150764
+    second: prefeitura_51
+  - first:
+      213: 5416810440749319204
+    second: prefeitura_52
+  - first:
+      213: -4515812546900378112
+    second: prefeitura_53
+  - first:
+      213: -6709860950577249220
+    second: prefeitura_54
+  - first:
+      213: -898774341012788504
+    second: prefeitura_55
+  - first:
+      213: -8585931090549662491
+    second: prefeitura_56
+  - first:
+      213: -3542950400928557333
+    second: prefeitura_57
+  - first:
+      213: -3285339169000657170
+    second: prefeitura_58
+  - first:
+      213: -7824253200993220019
+    second: prefeitura_59
+  - first:
+      213: 761784068399378642
+    second: prefeitura_60
+  - first:
+      213: 8057641382741672651
+    second: prefeitura_61
+  - first:
+      213: -9002126140235153798
+    second: prefeitura_62
+  - first:
+      213: -3214154604806578172
+    second: prefeitura_63
+  - first:
+      213: -5910389381673475332
+    second: prefeitura_64
+  - first:
+      213: 5836824215007267965
+    second: prefeitura_65
+  - first:
+      213: -7686391144754738983
+    second: prefeitura_66
+  - first:
+      213: 2749772475480117914
+    second: prefeitura_67
+  - first:
+      213: 2713168910825929741
+    second: prefeitura_68
+  - first:
+      213: -1588900232374917586
+    second: prefeitura_69
+  - first:
+      213: 2956772672536223418
+    second: prefeitura_70
+  - first:
+      213: -5092082318980027456
+    second: prefeitura_71
+  - first:
+      213: -6093295046010472554
+    second: prefeitura_72
+  - first:
+      213: -59652887228560843
+    second: prefeitura_73
+  - first:
+      213: 5942337388509387359
+    second: prefeitura_74
+  - first:
+      213: -6222673175359629415
+    second: prefeitura_75
+  - first:
+      213: 6331881230323273468
+    second: prefeitura_76
+  - first:
+      213: 2127960154548153447
+    second: prefeitura_77
+  - first:
+      213: -7900756019343936301
+    second: prefeitura_78
+  - first:
+      213: -7489782030095243040
+    second: prefeitura_79
+  - first:
+      213: -2929022728704420024
+    second: prefeitura_80
+  - first:
+      213: 6860665369851520088
+    second: prefeitura_81
+  - first:
+      213: -541942727434186804
+    second: prefeitura_82
+  - first:
+      213: -429021329719418369
+    second: prefeitura_83
+  - first:
+      213: -1394687093479870939
+    second: prefeitura_84
+  - first:
+      213: 3407347695914559640
+    second: prefeitura_85
+  - first:
+      213: 4592441626974292434
+    second: prefeitura_86
+  - first:
+      213: -6428623225498198248
+    second: prefeitura_87
+  - first:
+      213: -1095960606605445216
+    second: prefeitura_88
+  - first:
+      213: 6162057305788614516
+    second: prefeitura_89
+  - first:
+      213: -5393431377272536867
+    second: prefeitura_90
+  - first:
+      213: 3360103009234052930
+    second: prefeitura_91
+  - first:
+      213: -98409385082485747
+    second: prefeitura_92
+  - first:
+      213: -4177488852457359058
+    second: prefeitura_93
+  - first:
+      213: -6118328003315234866
+    second: prefeitura_94
+  - first:
+      213: -3953034456020697811
+    second: prefeitura_95
+  - first:
+      213: 8473778657326308798
+    second: prefeitura_96
+  - first:
+      213: -1815898228045992523
+    second: prefeitura_97
+  - first:
+      213: 5175010599974569219
+    second: prefeitura_98
+  - first:
+      213: 6662729978762501585
+    second: prefeitura_99
+  - first:
+      213: 1206267448791633231
+    second: prefeitura_100
+  - first:
+      213: -7297002895381637051
+    second: prefeitura_101
+  - first:
+      213: -6751303085971458713
+    second: prefeitura_102
+  - first:
+      213: 616410700154784286
+    second: prefeitura_103
+  - first:
+      213: -8281178205239266549
+    second: prefeitura_104
+  - first:
+      213: -8993392124415125683
+    second: prefeitura_105
+  - first:
+      213: 654988513649190259
+    second: prefeitura_106
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prefeitura_0
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 966
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8808351f514933e0800000000000000
+      internalID: -2073554276793710452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 973
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcddfb0cd5bae6710800000000000000
+      internalID: 1688475329464622539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 967
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6abf783e04fdb00800000000000000
+      internalID: 855473800206853831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 969
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16bfd2da92485800800000000000000
+      internalID: 601303782984234525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 959
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced2b0983b6331d30800000000000000
+      internalID: 4400921405597363692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_5
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 976
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e0e44d34bcfa2b0800000000000000
+      internalID: -5571010721848881567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_6
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 996
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6302cb1ee5b5980800000000000000
+      internalID: -8549135144015874353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_7
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 989
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82ebc39798013e00800000000000000
+      internalID: 1022608037502509707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_8
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 985
+        width: 81
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfbd2e4d7bc226030800000000000000
+      internalID: 3486398229600459773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_9
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 895
+        width: 117
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6393688d3f581e7e0800000000000000
+      internalID: -1737960698832078538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1521
+        height: 991
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eeb4269540e6bdc0800000000000000
+      internalID: -3623462260696629531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 966
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1da97d641068bec0800000000000000
+      internalID: -3550982665329332964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_12
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 976
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02ea34eb6aedf820800000000000000
+      internalID: 2953774679736377870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 975
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111181cc8dd024750800000000000000
+      internalID: 6287603254550860049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_14
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 955
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2a27a06dbb946e0800000000000000
+      internalID: -1852743243713568096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 967
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddd91a5a36359210800000000000000
+      internalID: 1339036088460238300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 977
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4b867cd3d571ab0800000000000000
+      internalID: -5037455138270694201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_17
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 978
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43b060b654d3e830800000000000000
+      internalID: 4099353554628686666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_18
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 966
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bc10d4d8a374680800000000000000
+      internalID: -8770977370723988711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_19
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 961
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756fd5ce4a29d1690800000000000000
+      internalID: -7629780956657879465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_20
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 961
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a4185c10cf07090800000000000000
+      internalID: -8038648250317583847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_21
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 943
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4686d643e7f1c7a80800000000000000
+      internalID: -8467858572457449372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_22
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 935
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e188f3b7299b6b700800000000000000
+      internalID: 555835642810959902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_23
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 949
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9e05256f9d30d10800000000000000
+      internalID: 2090754303996258803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_24
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 945
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524fd417e08f04e00800000000000000
+      internalID: 1027093455954637861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_25
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 937
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a2e0d1ff8399c00800000000000000
+      internalID: 907819468247149092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_26
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 939
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157570d47b7eee2b0800000000000000
+      internalID: -5553246516043884719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_27
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 945
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32d639e7bbb93c00800000000000000
+      internalID: 880941600693735995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_28
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 942
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e440acfb0ba75c0800000000000000
+      internalID: -4216863763304526197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_29
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 929
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9e5ac4c39db64a0800000000000000
+      internalID: -6598941975974123061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_30
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 938
+        width: 41
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692ac95aef59499b0800000000000000
+      internalID: -5074265959206968682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_31
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 927
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555c955bb1ab7c8b0800000000000000
+      internalID: -5131928622195948203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_32
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 941
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04892e61ee4a58950800000000000000
+      internalID: 6450743383771224128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_33
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 949
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b38a2eb3a9ec4490800000000000000
+      internalID: -7760571168386808910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_34
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 935
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ac3fe176f30a020800000000000000
+      internalID: 2350948717620873883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_35
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 937
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecf607518c70d300800000000000000
+      internalID: 274856472222301417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_36
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 946
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d366b5b5bd89917a0800000000000000
+      internalID: -6405920927059843523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_37
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 934
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be747bf765fc1e600800000000000000
+      internalID: 495905404404320235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_38
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 945
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376a1092cd972cce0800000000000000
+      internalID: -1386411748788951437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_39
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 935
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bdad9114edda6f20800000000000000
+      internalID: 3416787238931770809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_40
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 936
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95dc5a8afffbdf80800000000000000
+      internalID: -8080583654857976421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 935
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7356e6732653a6420800000000000000
+      internalID: 2623968428849784119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_42
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 935
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c6fca3644cc87d0800000000000000
+      internalID: -2914739052902126524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_43
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 935
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f88c3cd22ab91830800000000000000
+      internalID: 4042466799428339956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_44
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 918
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d02b68a6de63e9c0800000000000000
+      internalID: -3899150984145067818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_45
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 935
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a024a7da2464d1f60800000000000000
+      internalID: 8006632964726866442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_46
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 938
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081663aeb9cb7d690800000000000000
+      internalID: -7577380470192184960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_47
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 911
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32429c924ca0279b0800000000000000
+      internalID: -5083989191716953053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_48
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 919
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9905dfe7f894b590800000000000000
+      internalID: -7659328875602310753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_49
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 909
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a5d0adcbd12f510800000000000000
+      internalID: 1581359116109830688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_50
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 919
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493e616d2f938d6e0800000000000000
+      internalID: -1812635134879931500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_51
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 907
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8776126b47b6840800000000000000
+      internalID: 5218392918832150764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_52
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 909
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4248d7875606c2b40800000000000000
+      internalID: 5416810440749319204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_53
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 909
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e30c51a6c9451c0800000000000000
+      internalID: -4515812546900378112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_54
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 911
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34049c0409c1e2a0800000000000000
+      internalID: -6709860950577249220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_55
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 899
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea62beaf79e683f0800000000000000
+      internalID: -898774341012788504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_56
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 887
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec1ec1d925a8d880800000000000000
+      internalID: -8585931090549662491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_57
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 913
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be653d7b169e4dec0800000000000000
+      internalID: -3542950400928557333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_58
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 903
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeee909ae612862d0800000000000000
+      internalID: -3285339169000657170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_59
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 895
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a061a1b2baa6390800000000000000
+      internalID: -7824253200993220019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_60
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 887
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d03f78f296629a00800000000000000
+      internalID: 761784068399378642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_61
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 881
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc20ec9752e72df60800000000000000
+      internalID: 8057641382741672651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_62
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 883
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e760488f5021380800000000000000
+      internalID: -9002126140235153798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_63
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 879
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400615f8a670563d0800000000000000
+      internalID: -3214154604806578172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_64
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 887
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2ac150c241afda0800000000000000
+      internalID: -5910389381673475332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c08efd2b0900150800000000000000
+      internalID: 5836824215007267965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_66
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 135
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d88f246af3745590800000000000000
+      internalID: -7686391144754738983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_67
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92932e5f77292620800000000000000
+      internalID: 2749772475480117914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_68
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 127
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cb969dfbc17a520800000000000000
+      internalID: 2713168910825929741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_69
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 117
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26e1c138a713f9e0800000000000000
+      internalID: -1588900232374917586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_70
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 65
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe9a1c7411980920800000000000000
+      internalID: 2956772672536223418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_71
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 77
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbe5222c1a4559b0800000000000000
+      internalID: -5092082318980027456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_72
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 97
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697f5e67074407ba0800000000000000
+      internalID: -6093295046010472554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_73
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 97
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a4aeed3021c2ff0800000000000000
+      internalID: -59652887228560843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_74
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 12
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5adf99fe5c677250800000000000000
+      internalID: 5942337388509387359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_75
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 95
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997565557bf94a9a0800000000000000
+      internalID: -6222673175359629415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_76
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 83
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfec1656e6c5fd750800000000000000
+      internalID: 6331881230323273468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_77
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 65
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c27047c78088d10800000000000000
+      internalID: 2127960154548153447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_78
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 45
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4b9f9a240ea5290800000000000000
+      internalID: -7900756019343936301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_79
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 43
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8a11b1de2fe0890800000000000000
+      internalID: -7489782030095243040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_80
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 63
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847178cc8550a57d0800000000000000
+      internalID: -2929022728704420024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_81
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 37
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854e2d4fdcaf53f50800000000000000
+      internalID: 6860665369851520088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_82
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 77
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfcda2f5f1aa78f0800000000000000
+      internalID: -541942727434186804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_83
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 63
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff12209af5fcb0af0800000000000000
+      internalID: -429021329719418369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_84
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 61
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e6f445a7315ace0800000000000000
+      internalID: -1394687093479870939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_85
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 55
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898ab313da4594f20800000000000000
+      internalID: 3407347695914559640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_86
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 47
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d90583f351abbf30800000000000000
+      internalID: 4592441626974292434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_87
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 61
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f9a599c31f8c6a0800000000000000
+      internalID: -6428623225498198248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_88
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 65
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7f57b82ad5ac0f0800000000000000
+      internalID: -1095960606605445216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_89
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 47
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477812db876048550800000000000000
+      internalID: 6162057305788614516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_90
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 27
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0893decbea625b0800000000000000
+      internalID: -5393431377272536867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_91
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 63
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247ed1262eb71ae20800000000000000
+      internalID: 3360103009234052930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_92
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 38
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0408978f2162aef0800000000000000
+      internalID: -98409385082485747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_93
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 45
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29ff10a5049606c0800000000000000
+      internalID: -4177488852457359058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_94
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 47
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec70217e815571ba0800000000000000
+      internalID: -6118328003315234866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2db1083b100429c0800000000000000
+      internalID: -3953034456020697811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_96
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 7
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd9837fac8e89570800000000000000
+      internalID: 8473778657326308798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_97
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 15
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdae01ce22acc6e0800000000000000
+      internalID: -1815898228045992523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_98
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 26
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3058d58e8b451d740800000000000000
+      internalID: 5175010599974569219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_99
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 18
+        width: 37
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd1c727d95c67c50800000000000000
+      internalID: 6662729978762501585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_100
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 18
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d87558ad58db010800000000000000
+      internalID: 1206267448791633231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_101
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 9
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548d7cf1786dbba90800000000000000
+      internalID: -7297002895381637051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_102
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 7
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7653cadfc9d8e42a0800000000000000
+      internalID: -6751303085971458713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_103
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ac972144eed8800800000000000000
+      internalID: 616410700154784286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_104
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03b1034c48531d80800000000000000
+      internalID: -8281178205239266549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_105
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 7
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47d07a038d013380800000000000000
+      internalID: -8993392124415125683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prefeitura_106
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 71
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3756508359cf61900800000000000000
+      internalID: 654988513649190259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      prefeitura_0: -2073554276793710452
+      prefeitura_1: 1688475329464622539
+      prefeitura_10: -3623462260696629531
+      prefeitura_100: 1206267448791633231
+      prefeitura_101: -7297002895381637051
+      prefeitura_102: -6751303085971458713
+      prefeitura_103: 616410700154784286
+      prefeitura_104: -8281178205239266549
+      prefeitura_105: -8993392124415125683
+      prefeitura_106: 654988513649190259
+      prefeitura_11: -3550982665329332964
+      prefeitura_12: 2953774679736377870
+      prefeitura_13: 6287603254550860049
+      prefeitura_14: -1852743243713568096
+      prefeitura_15: 1339036088460238300
+      prefeitura_16: -5037455138270694201
+      prefeitura_17: 4099353554628686666
+      prefeitura_18: -8770977370723988711
+      prefeitura_19: -7629780956657879465
+      prefeitura_2: 855473800206853831
+      prefeitura_20: -8038648250317583847
+      prefeitura_21: -8467858572457449372
+      prefeitura_22: 555835642810959902
+      prefeitura_23: 2090754303996258803
+      prefeitura_24: 1027093455954637861
+      prefeitura_25: 907819468247149092
+      prefeitura_26: -5553246516043884719
+      prefeitura_27: 880941600693735995
+      prefeitura_28: -4216863763304526197
+      prefeitura_29: -6598941975974123061
+      prefeitura_3: 601303782984234525
+      prefeitura_30: -5074265959206968682
+      prefeitura_31: -5131928622195948203
+      prefeitura_32: 6450743383771224128
+      prefeitura_33: -7760571168386808910
+      prefeitura_34: 2350948717620873883
+      prefeitura_35: 274856472222301417
+      prefeitura_36: -6405920927059843523
+      prefeitura_37: 495905404404320235
+      prefeitura_38: -1386411748788951437
+      prefeitura_39: 3416787238931770809
+      prefeitura_4: 4400921405597363692
+      prefeitura_40: -8080583654857976421
+      prefeitura_41: 2623968428849784119
+      prefeitura_42: -2914739052902126524
+      prefeitura_43: 4042466799428339956
+      prefeitura_44: -3899150984145067818
+      prefeitura_45: 8006632964726866442
+      prefeitura_46: -7577380470192184960
+      prefeitura_47: -5083989191716953053
+      prefeitura_48: -7659328875602310753
+      prefeitura_49: 1581359116109830688
+      prefeitura_5: -5571010721848881567
+      prefeitura_50: -1812635134879931500
+      prefeitura_51: 5218392918832150764
+      prefeitura_52: 5416810440749319204
+      prefeitura_53: -4515812546900378112
+      prefeitura_54: -6709860950577249220
+      prefeitura_55: -898774341012788504
+      prefeitura_56: -8585931090549662491
+      prefeitura_57: -3542950400928557333
+      prefeitura_58: -3285339169000657170
+      prefeitura_59: -7824253200993220019
+      prefeitura_6: -8549135144015874353
+      prefeitura_60: 761784068399378642
+      prefeitura_61: 8057641382741672651
+      prefeitura_62: -9002126140235153798
+      prefeitura_63: -3214154604806578172
+      prefeitura_64: -5910389381673475332
+      prefeitura_65: 5836824215007267965
+      prefeitura_66: -7686391144754738983
+      prefeitura_67: 2749772475480117914
+      prefeitura_68: 2713168910825929741
+      prefeitura_69: -1588900232374917586
+      prefeitura_7: 1022608037502509707
+      prefeitura_70: 2956772672536223418
+      prefeitura_71: -5092082318980027456
+      prefeitura_72: -6093295046010472554
+      prefeitura_73: -59652887228560843
+      prefeitura_74: 5942337388509387359
+      prefeitura_75: -6222673175359629415
+      prefeitura_76: 6331881230323273468
+      prefeitura_77: 2127960154548153447
+      prefeitura_78: -7900756019343936301
+      prefeitura_79: -7489782030095243040
+      prefeitura_8: 3486398229600459773
+      prefeitura_80: -2929022728704420024
+      prefeitura_81: 6860665369851520088
+      prefeitura_82: -541942727434186804
+      prefeitura_83: -429021329719418369
+      prefeitura_84: -1394687093479870939
+      prefeitura_85: 3407347695914559640
+      prefeitura_86: 4592441626974292434
+      prefeitura_87: -6428623225498198248
+      prefeitura_88: -1095960606605445216
+      prefeitura_89: 6162057305788614516
+      prefeitura_9: -1737960698832078538
+      prefeitura_90: -5393431377272536867
+      prefeitura_91: 3360103009234052930
+      prefeitura_92: -98409385082485747
+      prefeitura_93: -4177488852457359058
+      prefeitura_94: -6118328003315234866
+      prefeitura_95: -3953034456020697811
+      prefeitura_96: 8473778657326308798
+      prefeitura_97: -1815898228045992523
+      prefeitura_98: 5175010599974569219
+      prefeitura_99: 6662729978762501585
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

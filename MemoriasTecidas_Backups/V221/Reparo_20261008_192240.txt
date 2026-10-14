@@ -1,0 +1,75 @@
+Memórias Tecidas — reparo V2.2.1
+Backup: Assets/MemoriasTecidas/Backups_V221/Jaguaruana_Mundo_Conectado_V2_20261008_192236.unity
+Construções com controles próprios de escala: 46
+Saída entrada_para_praca: (25.68, -6.60) -> (25.85, -6.65); caminho livre desde o ponto seguro.
+Saída entrada_para_largo: (-21.60, 9.60) -> (-21.65, 9.85); caminho livre desde o ponto seguro.
+Saída praca_para_entrada: (-25.68, -7.20) -> (-25.65, -7.35); caminho livre desde o ponto seguro.
+Saída praca_para_mercado: (25.68, -7.20) -> (25.85, -7.35); caminho livre desde o ponto seguro.
+Saída praca_para_carnaubal: (3.00, -15.96) -> (2.85, -15.85); caminho livre desde o ponto seguro.
+Saída praca_para_memorias: (10.80, 7.68) -> (10.85, 7.65); caminho livre desde o ponto seguro.
+Saída praca_para_rua: (25.68, 8.40) -> (25.85, 8.65); caminho livre desde o ponto seguro.
+Saída praca_para_largo: (-25.68, 8.40) -> (-25.65, 8.65); caminho livre desde o ponto seguro.
+Saída mercado_para_praca: (-25.68, -7.20) -> (-25.65, -7.15); caminho livre desde o ponto seguro.
+Saída mercado_para_fabrica: (25.68, -7.20) -> (25.85, -7.15); caminho livre desde o ponto seguro.
+Saída mercado_para_rua: (25.68, 8.40) -> (25.85, 8.35); caminho livre desde o ponto seguro.
+Saída fabrica_para_mercado: (-25.68, -6.60) -> (-25.65, -6.65); caminho livre desde o ponto seguro.
+Saída fabrica_para_oficina: (0.00, -2.28) -> (-0.15, -2.15); caminho livre desde o ponto seguro.
+Saída fabrica_para_sitio: (25.68, -6.60) -> (25.85, -6.65); caminho livre desde o ponto seguro.
+Saída oficina_para_fabrica: (0.00, -8.76) -> (-0.05, -8.65); caminho livre desde o ponto seguro.
+Saída carnaubal_para_praca: (-25.68, -6.60) -> (-25.65, -6.85); caminho livre desde o ponto seguro.
+Saída carnaubal_para_museu: (0.00, -0.78) -> (-0.15, -0.85); caminho livre desde o ponto seguro.
+Saída carnaubal_para_rio: (25.68, -6.60) -> (25.85, -6.85); caminho livre desde o ponto seguro.
+Saída carnaubal_para_vila: (-25.68, 3.60) -> (-25.65, 3.65); caminho livre desde o ponto seguro.
+Saída museu_para_carnaubal: (0.00, -8.76) -> (-0.05, -8.65); caminho livre desde o ponto seguro.
+Saída rio_para_carnaubal: (-25.68, -7.68) -> (-25.65, -7.65); caminho livre desde o ponto seguro.
+Saída rio_para_sitio: (25.68, -8.04) -> (25.85, -8.15); caminho livre desde o ponto seguro.
+Saída rio_para_beira: (25.68, -12.00) -> (25.85, -12.15); caminho livre desde o ponto seguro.
+Saída sitio_para_fabrica: (25.68, 4.44) -> (25.85, 4.65); caminho livre desde o ponto seguro.
+Saída sitio_para_rio: (-25.68, -6.60) -> (-25.65, -6.85); caminho livre desde o ponto seguro.
+Saída sitio_para_serra: (0.00, -15.96) -> (-0.15, -15.85); caminho livre desde o ponto seguro.
+Saída serra_para_sitio: (0.00, -14.76) -> (-0.15, -14.65); caminho livre desde o ponto seguro.
+Saída memorias_para_praca: (0.00, -8.76) -> (-0.05, -8.65); caminho livre desde o ponto seguro.
+Saída rua_para_praca: (-35.28, -7.20) -> (-35.25, -6.95); caminho livre desde o ponto seguro.
+Saída rua_para_mercado: (35.28, -4.80) -> (35.25, -4.95); caminho livre desde o ponto seguro.
+Saída vila_para_carnaubal: (-35.28, -7.20) -> (-35.25, -6.95); caminho livre desde o ponto seguro.
+Saída vila_para_beira: (35.28, -6.00) -> (35.25, -5.95); caminho livre desde o ponto seguro.
+Saída largo_para_entrada: (-25.68, -9.60) -> (-25.65, -9.85); caminho livre desde o ponto seguro.
+Saída largo_para_praca: (25.68, -9.60) -> (25.85, -9.85); caminho livre desde o ponto seguro.
+Saída beira_para_vila: (-25.68, -12.00) -> (-25.65, -12.15); caminho livre desde o ponto seguro.
+Saída beira_para_rio: (25.68, -12.00) -> (25.85, -12.15); caminho livre desde o ponto seguro.
+Chegada entrada_para_praca: (-23.15, -7.35); fora dos obstáculos e afastada das saídas.
+Chegada entrada_para_largo: (-23.15, -9.85); fora dos obstáculos e afastada das saídas.
+Chegada praca_para_entrada: (22.85, -6.65); fora dos obstáculos e afastada das saídas.
+Chegada praca_para_mercado: (-23.15, -7.15); fora dos obstáculos e afastada das saídas.
+Chegada praca_para_carnaubal: (-23.15, -6.85); fora dos obstáculos e afastada das saídas.
+Chegada praca_para_memorias: (-0.05, -6.15); fora dos obstáculos e afastada das saídas.
+Chegada praca_para_rua: (-32.75, -6.95); fora dos obstáculos e afastada das saídas.
+Chegada praca_para_largo: (22.85, -9.85); fora dos obstáculos e afastada das saídas.
+Chegada mercado_para_praca: (22.85, -7.35); fora dos obstáculos e afastada das saídas.
+Chegada mercado_para_fabrica: (-23.15, -6.65); fora dos obstáculos e afastada das saídas.
+Chegada mercado_para_rua: (32.75, -4.95); fora dos obstáculos e afastada das saídas.
+Chegada fabrica_para_mercado: (22.85, -7.15); fora dos obstáculos e afastada das saídas.
+Chegada fabrica_para_oficina: (-0.05, -6.15); fora dos obstáculos e afastada das saídas.
+Chegada fabrica_para_sitio: (22.85, 4.65); fora dos obstáculos e afastada das saídas.
+Chegada oficina_para_fabrica: (-0.15, -4.15); fora dos obstáculos e afastada das saídas.
+Chegada carnaubal_para_praca: (2.85, -13.35); fora dos obstáculos e afastada das saídas.
+Chegada carnaubal_para_museu: (-0.05, -6.15); fora dos obstáculos e afastada das saídas.
+Chegada carnaubal_para_rio: (-23.15, -7.65); fora dos obstáculos e afastada das saídas.
+Chegada carnaubal_para_vila: (-32.75, -6.95); fora dos obstáculos e afastada das saídas.
+Chegada museu_para_carnaubal: (-0.15, -2.85); fora dos obstáculos e afastada das saídas.
+Chegada rio_para_carnaubal: (22.85, -6.85); fora dos obstáculos e afastada das saídas.
+Chegada rio_para_sitio: (-23.15, -6.85); fora dos obstáculos e afastada das saídas.
+Chegada rio_para_beira: (22.85, -12.15); fora dos obstáculos e afastada das saídas.
+Chegada sitio_para_fabrica: (22.85, -6.65); fora dos obstáculos e afastada das saídas.
+Chegada sitio_para_rio: (22.85, -8.15); fora dos obstáculos e afastada das saídas.
+Chegada sitio_para_serra: (-0.15, -12.15); fora dos obstáculos e afastada das saídas.
+Chegada serra_para_sitio: (-0.15, -13.35); fora dos obstáculos e afastada das saídas.
+Chegada memorias_para_praca: (10.85, 5.65); fora dos obstáculos e afastada das saídas.
+Chegada rua_para_praca: (22.85, 8.65); fora dos obstáculos e afastada das saídas.
+Chegada rua_para_mercado: (22.85, 8.35); fora dos obstáculos e afastada das saídas.
+Chegada vila_para_carnaubal: (-23.15, 3.65); fora dos obstáculos e afastada das saídas.
+Chegada vila_para_beira: (-23.15, -12.15); fora dos obstáculos e afastada das saídas.
+Chegada largo_para_entrada: (-19.15, 9.85); fora dos obstáculos e afastada das saídas.
+Chegada largo_para_praca: (-23.15, 8.65); fora dos obstáculos e afastada das saídas.
+Chegada beira_para_vila: (32.75, -5.95); fora dos obstáculos e afastada das saídas.
+Chegada beira_para_rio: (22.85, -12.15); fora dos obstáculos e afastada das saídas.

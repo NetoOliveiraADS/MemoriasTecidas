@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: d90649e6f938ade499ed565ddcb8ba46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9009362986775739885
+    second: moradores_2_0
+  - first:
+      213: -2225599924947117449
+    second: moradores_2_1
+  - first:
+      213: -5403734019762520358
+    second: moradores_2_2
+  - first:
+      213: 7491616956775271499
+    second: moradores_2_3
+  - first:
+      213: 4895680363793667783
+    second: moradores_2_4
+  - first:
+      213: -1048847144673776538
+    second: moradores_2_5
+  - first:
+      213: -1770682133115941197
+    second: moradores_2_6
+  - first:
+      213: -3740179991867114766
+    second: moradores_2_7
+  - first:
+      213: 7518344761580476379
+    second: moradores_2_8
+  - first:
+      213: -7790531470565064694
+    second: moradores_2_9
+  - first:
+      213: -2887000467057913672
+    second: moradores_2_10
+  - first:
+      213: 8880657720275291528
+    second: moradores_2_11
+  - first:
+      213: 5990309210093449994
+    second: moradores_2_12
+  - first:
+      213: 50710567388193313
+    second: moradores_2_13
+  - first:
+      213: -1884098548555379345
+    second: moradores_2_14
+  - first:
+      213: -4510233099234106287
+    second: moradores_2_15
+  - first:
+      213: 5268087282031095731
+    second: moradores_2_16
+  - first:
+      213: 6345330436719324433
+    second: moradores_2_17
+  - first:
+      213: 4057900111953198047
+    second: moradores_2_18
+  - first:
+      213: -9107717918956398555
+    second: moradores_2_19
+  - first:
+      213: -4306930178149696867
+    second: moradores_2_20
+  - first:
+      213: -1462226905994760235
+    second: moradores_2_21
+  - first:
+      213: 123458149956383830
+    second: moradores_2_22
+  - first:
+      213: -7046743404229388722
+    second: moradores_2_23
+  - first:
+      213: 7354758612311311342
+    second: moradores_2_24
+  - first:
+      213: 2580576576171892148
+    second: moradores_2_25
+  - first:
+      213: 202082143618936464
+    second: moradores_2_26
+  - first:
+      213: -4681777552655844519
+    second: moradores_2_27
+  - first:
+      213: -5316454385675996068
+    second: moradores_2_28
+  - first:
+      213: -2021785412363767490
+    second: moradores_2_29
+  - first:
+      213: 4321608328135019878
+    second: moradores_2_30
+  - first:
+      213: -287317168124505491
+    second: moradores_2_31
+  - first:
+      213: -2890655011405174808
+    second: moradores_2_32
+  - first:
+      213: 8766887901816914714
+    second: moradores_2_33
+  - first:
+      213: 6767167195205140633
+    second: moradores_2_34
+  - first:
+      213: -923486917825983833
+    second: moradores_2_35
+  - first:
+      213: -2767178068328134044
+    second: moradores_2_36
+  - first:
+      213: 8246705784656242332
+    second: moradores_2_37
+  - first:
+      213: 6610628826133065319
+    second: moradores_2_38
+  - first:
+      213: 4291250963117709765
+    second: moradores_2_39
+  - first:
+      213: -277995311381378497
+    second: moradores_2_40
+  - first:
+      213: 2818919371938378257
+    second: moradores_2_41
+  - first:
+      213: 2765559372493632466
+    second: moradores_2_42
+  - first:
+      213: -580566611871775910
+    second: moradores_2_43
+  - first:
+      213: 7901457434446889325
+    second: moradores_2_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: moradores_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 375
+        height: 1536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3120ea0e81058f280800000000000000
+      internalID: -9009362986775739885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 289
+        height: 1536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a1465f8a41d11e0800000000000000
+      internalID: -2225599924947117449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_2
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1435
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade7c5b0a841205b0800000000000000
+      internalID: -5403734019762520358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_3
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 0
+        width: 357
+        height: 1536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c02ed0ee197f760800000000000000
+      internalID: 7491616956775271499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_4
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1454
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6d6c93a53f0f340800000000000000
+      internalID: 4895680363793667783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_5
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1455
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c6906341fb171f0800000000000000
+      internalID: -1048847144673776538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_6
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1457
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be4e7d3bf54d67e0800000000000000
+      internalID: -1770682133115941197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1429
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fabcbc1d16381cc0800000000000000
+      internalID: -3740179991867114766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1433
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd75cec0ab6865860800000000000000
+      internalID: 7518344761580476379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1433
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00c77d47e872e390800000000000000
+      internalID: -7790531470565064694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_10
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1295
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b050a60f505fe7d0800000000000000
+      internalID: -2887000467057913672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_11
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 1307
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88dc6d4152f6e3b70800000000000000
+      internalID: 8880657720275291528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_12
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1285
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03fe521d7ad12350800000000000000
+      internalID: 5990309210093449994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_13
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1263
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122288b0ef824b000800000000000000
+      internalID: 50710567388193313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_14
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1251
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d078b3a565ad5e0800000000000000
+      internalID: -1884098548555379345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1215
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15421f974ee6861c0800000000000000
+      internalID: -4510233099234106287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_16
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1142
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf6733b8710c1940800000000000000
+      internalID: 5268087282031095731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_17
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1161
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d2127c9642f0850800000000000000
+      internalID: 6345330436719324433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1125
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbfcf2f6ae805830800000000000000
+      internalID: 4057900111953198047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_19
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1135
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528d426bec2ea9180800000000000000
+      internalID: -9107717918956398555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_20
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1121
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a3af272d5ba34c0800000000000000
+      internalID: -4306930178149696867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_21
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1131
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfe92f406025bbe0800000000000000
+      internalID: -1462226905994760235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_22
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1119
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654f6c4888c96b100800000000000000
+      internalID: 123458149956383830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_23
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1113
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4694978530f43e90800000000000000
+      internalID: -7046743404229388722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1004
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee38f8f9df9511660800000000000000
+      internalID: 7354758612311311342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_25
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 999
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd5b6a39bc00d320800000000000000
+      internalID: 2580576576171892148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_26
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 934
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e2bd193a0fdc200800000000000000
+      internalID: 202082143618936464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_27
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 888
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bfc88fe1cf60fb0800000000000000
+      internalID: -4681777552655844519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_28
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 886
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54f63d67e82836b0800000000000000
+      internalID: -5316454385675996068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_29
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 766
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31bdfb11ec21f3e0800000000000000
+      internalID: -2021785412363767490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_30
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 577
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d8bd8a0ef69fb30800000000000000
+      internalID: 4321608328135019878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_31
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 567
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d625110de8e330cf0800000000000000
+      internalID: -287317168124505491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_32
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 433
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7edfc159452e7d0800000000000000
+      internalID: -2890655011405174808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_33
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 336
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a138775091e3aa970800000000000000
+      internalID: 8766887901816914714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_34
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 350
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99001e5c5bec9ed50800000000000000
+      internalID: 6767167195205140633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_35
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 255
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa03448a8d1f23f0800000000000000
+      internalID: -923486917825983833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_36
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 223
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46acc0f35320999d0800000000000000
+      internalID: -2767178068328134044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_37
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 239
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96289dd73f227270800000000000000
+      internalID: 8246705784656242332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 83
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e6e9b84ebadbb50800000000000000
+      internalID: 6610628826133065319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_39
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 71
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c91fa2d3069d8b30800000000000000
+      internalID: 4291250963117709765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_40
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 89
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a83e7bcbc542cf0800000000000000
+      internalID: -277995311381378497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_41
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 71
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112bad6cb30de1720800000000000000
+      internalID: 2818919371938378257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_42
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 41
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d33cb2c89d316620800000000000000
+      internalID: 2765559372493632466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_43
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 33
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a534ee21eb961f7f0800000000000000
+      internalID: -580566611871775910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moradores_2_44
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 47
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6183144cad97ad60800000000000000
+      internalID: 7901457434446889325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      moradores_2_0: -9009362986775739885
+      moradores_2_1: -2225599924947117449
+      moradores_2_10: -2887000467057913672
+      moradores_2_11: 8880657720275291528
+      moradores_2_12: 5990309210093449994
+      moradores_2_13: 50710567388193313
+      moradores_2_14: -1884098548555379345
+      moradores_2_15: -4510233099234106287
+      moradores_2_16: 5268087282031095731
+      moradores_2_17: 6345330436719324433
+      moradores_2_18: 4057900111953198047
+      moradores_2_19: -9107717918956398555
+      moradores_2_2: -5403734019762520358
+      moradores_2_20: -4306930178149696867
+      moradores_2_21: -1462226905994760235
+      moradores_2_22: 123458149956383830
+      moradores_2_23: -7046743404229388722
+      moradores_2_24: 7354758612311311342
+      moradores_2_25: 2580576576171892148
+      moradores_2_26: 202082143618936464
+      moradores_2_27: -4681777552655844519
+      moradores_2_28: -5316454385675996068
+      moradores_2_29: -2021785412363767490
+      moradores_2_3: 7491616956775271499
+      moradores_2_30: 4321608328135019878
+      moradores_2_31: -287317168124505491
+      moradores_2_32: -2890655011405174808
+      moradores_2_33: 8766887901816914714
+      moradores_2_34: 6767167195205140633
+      moradores_2_35: -923486917825983833
+      moradores_2_36: -2767178068328134044
+      moradores_2_37: 8246705784656242332
+      moradores_2_38: 6610628826133065319
+      moradores_2_39: 4291250963117709765
+      moradores_2_4: 4895680363793667783
+      moradores_2_40: -277995311381378497
+      moradores_2_41: 2818919371938378257
+      moradores_2_42: 2765559372493632466
+      moradores_2_43: -580566611871775910
+      moradores_2_44: 7901457434446889325
+      moradores_2_5: -1048847144673776538
+      moradores_2_6: -1770682133115941197
+      moradores_2_7: -3740179991867114766
+      moradores_2_8: 7518344761580476379
+      moradores_2_9: -7790531470565064694
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

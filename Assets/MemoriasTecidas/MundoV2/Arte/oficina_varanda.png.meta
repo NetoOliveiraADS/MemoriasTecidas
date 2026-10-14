@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 22c93a8309b231e409585776143f83a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1770948405088862033
+    second: oficina_varanda_0
+  - first:
+      213: -2841255592252042387
+    second: oficina_varanda_1
+  - first:
+      213: 3836161257597835318
+    second: oficina_varanda_2
+  - first:
+      213: -7306482781262141854
+    second: oficina_varanda_3
+  - first:
+      213: 811069507545584141
+    second: oficina_varanda_4
+  - first:
+      213: -4519887507586628207
+    second: oficina_varanda_5
+  - first:
+      213: -3521584503821713545
+    second: oficina_varanda_6
+  - first:
+      213: -6589356168033478369
+    second: oficina_varanda_7
+  - first:
+      213: 4487038332317528400
+    second: oficina_varanda_8
+  - first:
+      213: 7061055320787594786
+    second: oficina_varanda_9
+  - first:
+      213: 7660598190152873316
+    second: oficina_varanda_10
+  - first:
+      213: -6100637388339525626
+    second: oficina_varanda_11
+  - first:
+      213: -1063860527452818601
+    second: oficina_varanda_12
+  - first:
+      213: -8911765394451006659
+    second: oficina_varanda_13
+  - first:
+      213: -8737600460561697592
+    second: oficina_varanda_14
+  - first:
+      213: -7792443125488986902
+    second: oficina_varanda_15
+  - first:
+      213: 4568364808436245901
+    second: oficina_varanda_16
+  - first:
+      213: -3126996910934223224
+    second: oficina_varanda_17
+  - first:
+      213: -164528259305624897
+    second: oficina_varanda_18
+  - first:
+      213: 9113441988042042028
+    second: oficina_varanda_19
+  - first:
+      213: -1860461477478197580
+    second: oficina_varanda_20
+  - first:
+      213: -9030426710617121505
+    second: oficina_varanda_21
+  - first:
+      213: -5307267273813407139
+    second: oficina_varanda_22
+  - first:
+      213: -9176769668694110622
+    second: oficina_varanda_23
+  - first:
+      213: 2712035731552577582
+    second: oficina_varanda_24
+  - first:
+      213: 1086893866165725503
+    second: oficina_varanda_25
+  - first:
+      213: -21299436502733493
+    second: oficina_varanda_26
+  - first:
+      213: 1874938138516225819
+    second: oficina_varanda_27
+  - first:
+      213: -3862591496286677052
+    second: oficina_varanda_28
+  - first:
+      213: 6471847192791902424
+    second: oficina_varanda_29
+  - first:
+      213: 7089983659936902394
+    second: oficina_varanda_30
+  - first:
+      213: 1337857435292984971
+    second: oficina_varanda_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.1484375}
+  spritePixelsToUnits: 167.77777
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oficina_varanda_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 1004
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fbdd8013ca39810800000000000000
+      internalID: 1770948405088862033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_1
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 988
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6399bba715d198d0800000000000000
+      internalID: -2841255592252042387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_2
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 981
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6381c34c658cc3530800000000000000
+      internalID: 3836161257597835318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 935
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266ac513f982a9a90800000000000000
+      internalID: -7306482781262141854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_4
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 945
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02d76d7b6f714b00800000000000000
+      internalID: 811069507545584141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_5
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 959
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195c29d52422641c0800000000000000
+      internalID: -4519887507586628207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 926
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fbf2b4d81d02fc0800000000000000
+      internalID: -3521584503821713545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_7
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 944
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19d5d12a77ed84a0800000000000000
+      internalID: -6589356168033478369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_8
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 941
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051f8530799254e30800000000000000
+      internalID: 4487038332317528400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_9
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 927
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e2de63768edf160800000000000000
+      internalID: 7061055320787594786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_10
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 935
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465ff036779ef4a60800000000000000
+      internalID: 7660598190152873316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_11
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 895
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6084e8c2e9e265ba0800000000000000
+      internalID: -6100637388339525626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 929
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7537d92ac786c31f0800000000000000
+      internalID: -1063860527452818601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_13
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 929
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bf02e179c035480800000000000000
+      internalID: -8911765394451006659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_14
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 933
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c43ee6ccaecdb680800000000000000
+      internalID: -8737600460561697592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_15
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 915
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae45bc4734eabd390800000000000000
+      internalID: -7792443125488986902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_16
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 919
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85ec3bc697166f30800000000000000
+      internalID: 4568364808436245901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_17
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 911
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886950680ecaa94d0800000000000000
+      internalID: -3126996910934223224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_18
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 917
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba239c7b6a77bdf0800000000000000
+      internalID: -164528259305624897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_19
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 913
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa206af333797e70800000000000000
+      internalID: 9113441988042042028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_20
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 909
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b61d94b4205e26e0800000000000000
+      internalID: -1860461477478197580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_21
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 919
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d977f70ca7da280800000000000000
+      internalID: -9030426710617121505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 909
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5acb48988cc856b0800000000000000
+      internalID: -5307267273813407139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_23
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 889
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e88ef5b9095a080800000000000000
+      internalID: -9176769668694110622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_24
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 905
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28ab5df02613a520800000000000000
+      internalID: 2712035731552577582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_25
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 895
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39eb51763c651f00800000000000000
+      internalID: 1086893866165725503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_26
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 902
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4da65d764454bff0800000000000000
+      internalID: -21299436502733493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_27
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 881
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f771a9d4e150a10800000000000000
+      internalID: 1874938138516225819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_28
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 885
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7536fbf71556ac0800000000000000
+      internalID: -3862591496286677052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_29
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 880
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d868f68bbe90d950800000000000000
+      internalID: 6471847192791902424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_30
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 102
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcecd9039ea46260800000000000000
+      internalID: 7089983659936902394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oficina_varanda_31
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 41
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86e0c6cf36019210800000000000000
+      internalID: 1337857435292984971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      oficina_varanda_0: 1770948405088862033
+      oficina_varanda_1: -2841255592252042387
+      oficina_varanda_10: 7660598190152873316
+      oficina_varanda_11: -6100637388339525626
+      oficina_varanda_12: -1063860527452818601
+      oficina_varanda_13: -8911765394451006659
+      oficina_varanda_14: -8737600460561697592
+      oficina_varanda_15: -7792443125488986902
+      oficina_varanda_16: 4568364808436245901
+      oficina_varanda_17: -3126996910934223224
+      oficina_varanda_18: -164528259305624897
+      oficina_varanda_19: 9113441988042042028
+      oficina_varanda_2: 3836161257597835318
+      oficina_varanda_20: -1860461477478197580
+      oficina_varanda_21: -9030426710617121505
+      oficina_varanda_22: -5307267273813407139
+      oficina_varanda_23: -9176769668694110622
+      oficina_varanda_24: 2712035731552577582
+      oficina_varanda_25: 1086893866165725503
+      oficina_varanda_26: -21299436502733493
+      oficina_varanda_27: 1874938138516225819
+      oficina_varanda_28: -3862591496286677052
+      oficina_varanda_29: 6471847192791902424
+      oficina_varanda_3: -7306482781262141854
+      oficina_varanda_30: 7089983659936902394
+      oficina_varanda_31: 1337857435292984971
+      oficina_varanda_4: 811069507545584141
+      oficina_varanda_5: -4519887507586628207
+      oficina_varanda_6: -3521584503821713545
+      oficina_varanda_7: -6589356168033478369
+      oficina_varanda_8: 4487038332317528400
+      oficina_varanda_9: 7061055320787594786
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

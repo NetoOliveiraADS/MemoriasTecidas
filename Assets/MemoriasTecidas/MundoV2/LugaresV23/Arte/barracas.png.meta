@@ -1,0 +1,2405 @@
+fileFormatVersion: 2
+guid: e2dcb34c895375b49ab79494b507a2da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1755214405459362264
+    second: barracas_0
+  - first:
+      213: -3241967550970728031
+    second: barracas_1
+  - first:
+      213: 5558797533314971259
+    second: barracas_2
+  - first:
+      213: -2235380746593935785
+    second: barracas_3
+  - first:
+      213: -8394407244755180676
+    second: barracas_4
+  - first:
+      213: -6754606635806508758
+    second: barracas_5
+  - first:
+      213: 8441904758535237320
+    second: barracas_6
+  - first:
+      213: -7916400496276810938
+    second: barracas_7
+  - first:
+      213: -5098171269443774840
+    second: barracas_8
+  - first:
+      213: -5306328455501109181
+    second: barracas_9
+  - first:
+      213: -4036359126480757494
+    second: barracas_10
+  - first:
+      213: -6198931759988332644
+    second: barracas_11
+  - first:
+      213: 2983857831789957533
+    second: barracas_12
+  - first:
+      213: 8965937930963405990
+    second: barracas_13
+  - first:
+      213: -4346818482142454825
+    second: barracas_14
+  - first:
+      213: 604863707930223497
+    second: barracas_15
+  - first:
+      213: 3600425340243204803
+    second: barracas_16
+  - first:
+      213: 4094279971868500925
+    second: barracas_17
+  - first:
+      213: -873976094966755306
+    second: barracas_18
+  - first:
+      213: -5260805167789617829
+    second: barracas_19
+  - first:
+      213: -562988970081773731
+    second: barracas_20
+  - first:
+      213: -5036034074039059217
+    second: barracas_21
+  - first:
+      213: 6098359095074070716
+    second: barracas_22
+  - first:
+      213: -1282715436355750365
+    second: barracas_23
+  - first:
+      213: 9184155421392896610
+    second: barracas_24
+  - first:
+      213: 6734987719265991862
+    second: barracas_25
+  - first:
+      213: 6271587613658928432
+    second: barracas_26
+  - first:
+      213: -2261260363154453228
+    second: barracas_27
+  - first:
+      213: 2369916377025222901
+    second: barracas_28
+  - first:
+      213: -4755615323771993506
+    second: barracas_29
+  - first:
+      213: -3827538927113319098
+    second: barracas_30
+  - first:
+      213: 6493618411807192052
+    second: barracas_31
+  - first:
+      213: 5542746130109225811
+    second: barracas_32
+  - first:
+      213: 5524419299240921990
+    second: barracas_33
+  - first:
+      213: 5210852681791706588
+    second: barracas_34
+  - first:
+      213: 4606689535824638408
+    second: barracas_35
+  - first:
+      213: -2281976353141357518
+    second: barracas_36
+  - first:
+      213: 2216044324038123840
+    second: barracas_37
+  - first:
+      213: -2909488362285410799
+    second: barracas_38
+  - first:
+      213: 6574452499491376081
+    second: barracas_39
+  - first:
+      213: 5827993560293025203
+    second: barracas_40
+  - first:
+      213: -3702867458241686159
+    second: barracas_41
+  - first:
+      213: -7244249928627967864
+    second: barracas_42
+  - first:
+      213: 8802036328588570310
+    second: barracas_43
+  - first:
+      213: -486373732679627498
+    second: barracas_44
+  - first:
+      213: 3842240588909997750
+    second: barracas_45
+  - first:
+      213: -1188054881624985353
+    second: barracas_46
+  - first:
+      213: -66211219496387677
+    second: barracas_47
+  - first:
+      213: -5872714233176504704
+    second: barracas_48
+  - first:
+      213: -6438466932957680353
+    second: barracas_49
+  - first:
+      213: -4410012724192667327
+    second: barracas_50
+  - first:
+      213: 2109102300596838807
+    second: barracas_51
+  - first:
+      213: 8413141652303558696
+    second: barracas_52
+  - first:
+      213: 3709410137762003494
+    second: barracas_53
+  - first:
+      213: 2440970055622237829
+    second: barracas_54
+  - first:
+      213: 8853577554350917708
+    second: barracas_55
+  - first:
+      213: -8036426068984000894
+    second: barracas_56
+  - first:
+      213: 3140001978014598090
+    second: barracas_57
+  - first:
+      213: -4346661383690045495
+    second: barracas_58
+  - first:
+      213: 474570934967500967
+    second: barracas_59
+  - first:
+      213: 6494979743689629550
+    second: barracas_60
+  - first:
+      213: -1341502357058792736
+    second: barracas_61
+  - first:
+      213: -4231951897325676900
+    second: barracas_62
+  - first:
+      213: 8848924273482329230
+    second: barracas_63
+  - first:
+      213: -2971929173690639429
+    second: barracas_64
+  - first:
+      213: 5327091745231389156
+    second: barracas_65
+  - first:
+      213: 2325755346845400617
+    second: barracas_66
+  - first:
+      213: -8778035710548326617
+    second: barracas_67
+  - first:
+      213: -10846757925541251
+    second: barracas_68
+  - first:
+      213: -3097332075109579018
+    second: barracas_69
+  - first:
+      213: 6660190513261382732
+    second: barracas_70
+  - first:
+      213: -8927381016859266811
+    second: barracas_71
+  - first:
+      213: -4066164961686892556
+    second: barracas_72
+  - first:
+      213: 8922309023630752193
+    second: barracas_73
+  - first:
+      213: 7260382428165557480
+    second: barracas_74
+  - first:
+      213: -5510235672399987650
+    second: barracas_75
+  - first:
+      213: -5147607931547549033
+    second: barracas_76
+  - first:
+      213: 6568622932206923790
+    second: barracas_77
+  - first:
+      213: 8537568624532431188
+    second: barracas_78
+  - first:
+      213: -7936893365394464167
+    second: barracas_79
+  - first:
+      213: -1724098067365403901
+    second: barracas_80
+  - first:
+      213: 5115939284667004159
+    second: barracas_81
+  - first:
+      213: 3634354562539348163
+    second: barracas_82
+  - first:
+      213: -8818679999504755356
+    second: barracas_83
+  - first:
+      213: 4023543623869928562
+    second: barracas_84
+  - first:
+      213: -3868745615756332660
+    second: barracas_85
+  - first:
+      213: 34444882936146016
+    second: barracas_86
+  - first:
+      213: -3525038575361037048
+    second: barracas_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barracas_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1124
+        width: 47
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1cd06c336cb5810800000000000000
+      internalID: 1755214405459362264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1130
+        width: 272
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1fb0760b73203d0800000000000000
+      internalID: -3241967550970728031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_2
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1124
+        width: 96
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b767e8f97e0d42d40800000000000000
+      internalID: 5558797533314971259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_3
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1124
+        width: 164
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e5585fd055af0e0800000000000000
+      internalID: -2235380746593935785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_4
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1207
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73e66c1613118b80800000000000000
+      internalID: -8394407244755180676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_5
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1189
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29b14b5d01d242a0800000000000000
+      internalID: -6754606635806508758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_6
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1091
+        width: 245
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce2c2896aba72570800000000000000
+      internalID: 8441904758535237320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_7
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1193
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643d1b701bb432290800000000000000
+      internalID: -7916400496276810938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_8
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1193
+        width: 64
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88693b0ed38af39b0800000000000000
+      internalID: -5098171269443774840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1124
+        width: 98
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3482f4442622c56b0800000000000000
+      internalID: -5306328455501109181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_10
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1188
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d553092c8fbf7c0800000000000000
+      internalID: -4036359126480757494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_11
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1191
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97220b5868f8f9a0800000000000000
+      internalID: -6198931759988332644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_12
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1164
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d919b1c83eac86920800000000000000
+      internalID: 2983857831789957533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_13
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1157
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac464d6b096d6c70800000000000000
+      internalID: 8965937930963405990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1140
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbdbc4fe9ffca3c0800000000000000
+      internalID: -4346818482142454825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_15
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1136
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983e4b07658e46800800000000000000
+      internalID: 604863707930223497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_16
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1140
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cad28565c747f130800000000000000
+      internalID: 3600425340243204803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_17
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1128
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3e73621fdc1d830800000000000000
+      internalID: 4094279971868500925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_18
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1130
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610d2554f530fd3f0800000000000000
+      internalID: -873976094966755306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_19
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1126
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d4c55a29dddf6b0800000000000000
+      internalID: -5260805167789617829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 799
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5710d9b38cdf28f0800000000000000
+      internalID: -562988970081773731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1104
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec732411b96c1ab0800000000000000
+      internalID: -5036034074039059217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1110
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0a9a65949b1a450800000000000000
+      internalID: 6098359095074070716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_23
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 497
+        width: 443
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326fa145b11e23ee0800000000000000
+      internalID: -1282715436355750365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_24
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1092
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2620a1e22bca47f70800000000000000
+      internalID: 9184155421392896610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_25
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1049
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bcb77da5ab777d50800000000000000
+      internalID: 6734987719265991862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_26
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 749
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03551e1d4b7290750800000000000000
+      internalID: 6271587613658928432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_27
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 742
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d028d2ea36e90e0800000000000000
+      internalID: -2261260363154453228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_28
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 660
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f818f77362a3e020800000000000000
+      internalID: 2369916377025222901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_29
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 634
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e528a223f09a00eb0800000000000000
+      internalID: -4755615323771993506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_30
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 600
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d4e6dff99d1eac0800000000000000
+      internalID: -3827538927113319098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_31
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 616
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f334b67a87fd1a50800000000000000
+      internalID: 6493618411807192052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_32
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 608
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bd4551d3acbec40800000000000000
+      internalID: 5542746130109225811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_33
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 580
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b4191451eaaac40800000000000000
+      internalID: 5524419299240921990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_34
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 585
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd51613e7eaa05840800000000000000
+      internalID: 5210852681791706588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_35
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 584
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1365db9bf3eef30800000000000000
+      internalID: 4606689535824638408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_36
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 578
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2340b25e89ac450e0800000000000000
+      internalID: -2281976353141357518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_37
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 592
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04120d45298f0ce10800000000000000
+      internalID: 2216044324038123840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_38
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 584
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11658d7efbb6f97d0800000000000000
+      internalID: -2909488362285410799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_39
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 562
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbccd027b52d3b50800000000000000
+      internalID: 6574452499491376081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_40
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 526
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5a78ad34131e050800000000000000
+      internalID: 5827993560293025203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_41
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 572
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17596255aa5cc9cc0800000000000000
+      internalID: -3702867458241686159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_42
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 554
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8882bf35211477b90800000000000000
+      internalID: -7244249928627967864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_43
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 558
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ceea99d76d172a70800000000000000
+      internalID: 8802036328588570310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_44
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 545
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61dcc83caad0049f0800000000000000
+      internalID: -486373732679627498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 538
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be61936571625530800000000000000
+      internalID: 3842240588909997750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_46
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 533
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0f217316e238fe0800000000000000
+      internalID: -1188054881624985353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_47
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 536
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abb5c52f35c41ff0800000000000000
+      internalID: -66211219496387677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_48
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 529
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0864228158def7ea0800000000000000
+      internalID: -5872714233176504704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_49
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 536
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d65fadf68f5a6a0800000000000000
+      internalID: -6438466932957680353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_50
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 535
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1491b87eacc7cc2c0800000000000000
+      internalID: -4410012724192667327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_51
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 544
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791a80e2e59054d10800000000000000
+      internalID: 2109102300596838807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_52
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 542
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828b89e02cb71c470800000000000000
+      internalID: 8413141652303558696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_53
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 528
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a7983fdd87a7330800000000000000
+      internalID: 3709410137762003494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_54
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 525
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e9ab0355110e120800000000000000
+      internalID: 2440970055622237829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_55
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 525
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48457e90e93eda70800000000000000
+      internalID: 8853577554350917708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_56
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 497
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e058ea111e87090800000000000000
+      internalID: -8036426068984000894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_57
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 527
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3859d9927839b20800000000000000
+      internalID: 3140001978014598090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_58
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 526
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c73f3a408e8da3c0800000000000000
+      internalID: -4346661383690045495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_59
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 530
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0867f30c3069600800000000000000
+      internalID: 474570934967500967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_60
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 499
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f5afd3aadc22a50800000000000000
+      internalID: 6494979743689629550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_61
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 532
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2592eb6b6026de0800000000000000
+      internalID: -1341502357058792736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_62
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 532
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96dc55db261545c0800000000000000
+      internalID: -4231951897325676900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_63
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 513
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cee3d3eb1bdca70800000000000000
+      internalID: 8848924273482329230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_64
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 513
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb9c88992691c6d0800000000000000
+      internalID: -2971929173690639429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_65
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 497
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1ce68d7b1ade940800000000000000
+      internalID: 5327091745231389156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_66
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 516
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e7f236a2eb64020800000000000000
+      internalID: 2325755346845400617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_67
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 503
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727c21f77072e2680800000000000000
+      internalID: -8778035710548326617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_68
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 503
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a22ee5ee679dff0800000000000000
+      internalID: -10846757925541251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_69
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 501
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f68ba753e01405d0800000000000000
+      internalID: -3097332075109579018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_70
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 483
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c0f5f0cffbd6c50800000000000000
+      internalID: 6660190513261382732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_71
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 489
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501b983b3429b1480800000000000000
+      internalID: -8927381016859266811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_72
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 489
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff4384c2841297c0800000000000000
+      internalID: -4066164961686892556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_73
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 505
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9f5c9d8c862db70800000000000000
+      internalID: 8922309023630752193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_74
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 455
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eccb4ce95f02c460800000000000000
+      internalID: 7260382428165557480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 1239
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3cb9e5b9d5b783b0800000000000000
+      internalID: -5510235672399987650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 489
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79200250cd50098b0800000000000000
+      internalID: -5147607931547549033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_77
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 483
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00bda931cf682b50800000000000000
+      internalID: 6568622932206923790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_78
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 90
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451a6c61e698b7670800000000000000
+      internalID: 8537568624532431188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_79
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 81
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952228f198d7ad190800000000000000
+      internalID: -7936893365394464167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_80
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 47
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3036fb041f5c218e0800000000000000
+      internalID: -1724098067365403901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_81
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 45
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4fa0b8ca77ff640800000000000000
+      internalID: 5115939284667004159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_82
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 49
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c06aff0832df6230800000000000000
+      internalID: 3634354562539348163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_83
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 45
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4655da98341cd9580800000000000000
+      internalID: -8818679999504755356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_84
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 45
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2741e07bb9f76d730800000000000000
+      internalID: 4023543623869928562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_85
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 49
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c817e762c547f4ac0800000000000000
+      internalID: -3868745615756332660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_86
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 49
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0682db3407f5a7000800000000000000
+      internalID: 34444882936146016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barracas_87
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 45
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d6e08971c841fc0800000000000000
+      internalID: -3525038575361037048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      barracas_0: 1755214405459362264
+      barracas_1: -3241967550970728031
+      barracas_10: -4036359126480757494
+      barracas_11: -6198931759988332644
+      barracas_12: 2983857831789957533
+      barracas_13: 8965937930963405990
+      barracas_14: -4346818482142454825
+      barracas_15: 604863707930223497
+      barracas_16: 3600425340243204803
+      barracas_17: 4094279971868500925
+      barracas_18: -873976094966755306
+      barracas_19: -5260805167789617829
+      barracas_2: 5558797533314971259
+      barracas_20: -562988970081773731
+      barracas_21: -5036034074039059217
+      barracas_22: 6098359095074070716
+      barracas_23: -1282715436355750365
+      barracas_24: 9184155421392896610
+      barracas_25: 6734987719265991862
+      barracas_26: 6271587613658928432
+      barracas_27: -2261260363154453228
+      barracas_28: 2369916377025222901
+      barracas_29: -4755615323771993506
+      barracas_3: -2235380746593935785
+      barracas_30: -3827538927113319098
+      barracas_31: 6493618411807192052
+      barracas_32: 5542746130109225811
+      barracas_33: 5524419299240921990
+      barracas_34: 5210852681791706588
+      barracas_35: 4606689535824638408
+      barracas_36: -2281976353141357518
+      barracas_37: 2216044324038123840
+      barracas_38: -2909488362285410799
+      barracas_39: 6574452499491376081
+      barracas_4: -8394407244755180676
+      barracas_40: 5827993560293025203
+      barracas_41: -3702867458241686159
+      barracas_42: -7244249928627967864
+      barracas_43: 8802036328588570310
+      barracas_44: -486373732679627498
+      barracas_45: 3842240588909997750
+      barracas_46: -1188054881624985353
+      barracas_47: -66211219496387677
+      barracas_48: -5872714233176504704
+      barracas_49: -6438466932957680353
+      barracas_5: -6754606635806508758
+      barracas_50: -4410012724192667327
+      barracas_51: 2109102300596838807
+      barracas_52: 8413141652303558696
+      barracas_53: 3709410137762003494
+      barracas_54: 2440970055622237829
+      barracas_55: 8853577554350917708
+      barracas_56: -8036426068984000894
+      barracas_57: 3140001978014598090
+      barracas_58: -4346661383690045495
+      barracas_59: 474570934967500967
+      barracas_6: 8441904758535237320
+      barracas_60: 6494979743689629550
+      barracas_61: -1341502357058792736
+      barracas_62: -4231951897325676900
+      barracas_63: 8848924273482329230
+      barracas_64: -2971929173690639429
+      barracas_65: 5327091745231389156
+      barracas_66: 2325755346845400617
+      barracas_67: -8778035710548326617
+      barracas_68: -10846757925541251
+      barracas_69: -3097332075109579018
+      barracas_7: -7916400496276810938
+      barracas_70: 6660190513261382732
+      barracas_71: -8927381016859266811
+      barracas_72: -4066164961686892556
+      barracas_73: 8922309023630752193
+      barracas_74: 7260382428165557480
+      barracas_75: -5510235672399987650
+      barracas_76: -5147607931547549033
+      barracas_77: 6568622932206923790
+      barracas_78: 8537568624532431188
+      barracas_79: -7936893365394464167
+      barracas_8: -5098171269443774840
+      barracas_80: -1724098067365403901
+      barracas_81: 5115939284667004159
+      barracas_82: 3634354562539348163
+      barracas_83: -8818679999504755356
+      barracas_84: 4023543623869928562
+      barracas_85: -3868745615756332660
+      barracas_86: 34444882936146016
+      barracas_87: -3525038575361037048
+      barracas_9: -5306328455501109181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

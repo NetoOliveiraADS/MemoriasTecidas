@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: cbabfcc0b811df3489721fe6435aa5b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9209195373841123079
+    second: vegetacao_0
+  - first:
+      213: -8619970474944106579
+    second: vegetacao_1
+  - first:
+      213: -3344528626965601591
+    second: vegetacao_2
+  - first:
+      213: 911427488170680229
+    second: vegetacao_3
+  - first:
+      213: 8079071914414590568
+    second: vegetacao_4
+  - first:
+      213: 1674656642313069126
+    second: vegetacao_5
+  - first:
+      213: -5542007627621582548
+    second: vegetacao_6
+  - first:
+      213: -6260139791984270305
+    second: vegetacao_7
+  - first:
+      213: -5801642191924722916
+    second: vegetacao_8
+  - first:
+      213: 776569776421343162
+    second: vegetacao_9
+  - first:
+      213: 3603626198074976025
+    second: vegetacao_10
+  - first:
+      213: -107915231689746555
+    second: vegetacao_11
+  - first:
+      213: -1843054566995055861
+    second: vegetacao_12
+  - first:
+      213: -6411877919801845093
+    second: vegetacao_13
+  - first:
+      213: -1828520202788860679
+    second: vegetacao_14
+  - first:
+      213: -5950220262503356055
+    second: vegetacao_15
+  - first:
+      213: -2101030032113557154
+    second: vegetacao_16
+  - first:
+      213: -279166799108846934
+    second: vegetacao_17
+  - first:
+      213: 8058706633797420787
+    second: vegetacao_18
+  - first:
+      213: -4374642720356810189
+    second: vegetacao_19
+  - first:
+      213: 5580364225977313819
+    second: vegetacao_20
+  - first:
+      213: 2258925581387878551
+    second: vegetacao_21
+  - first:
+      213: -3086151801262960856
+    second: vegetacao_22
+  - first:
+      213: -278387751828149851
+    second: vegetacao_23
+  - first:
+      213: -5698794054551021263
+    second: vegetacao_24
+  - first:
+      213: -243999536239896745
+    second: vegetacao_25
+  - first:
+      213: -243558961564196278
+    second: vegetacao_26
+  - first:
+      213: 2971832641219410419
+    second: vegetacao_27
+  - first:
+      213: 5453609318377681910
+    second: vegetacao_28
+  - first:
+      213: 655038769652628572
+    second: vegetacao_29
+  - first:
+      213: 7542727262910099699
+    second: vegetacao_30
+  - first:
+      213: -2125438665372268675
+    second: vegetacao_31
+  - first:
+      213: 4489522944950357077
+    second: vegetacao_32
+  - first:
+      213: -1034811651045805074
+    second: vegetacao_33
+  - first:
+      213: -5995711900304457867
+    second: vegetacao_34
+  - first:
+      213: 3567254072720434063
+    second: vegetacao_35
+  - first:
+      213: 811966815218905958
+    second: vegetacao_36
+  - first:
+      213: -8339812303670781164
+    second: vegetacao_37
+  - first:
+      213: -3285965981457898289
+    second: vegetacao_38
+  - first:
+      213: -7597441673167507870
+    second: vegetacao_39
+  - first:
+      213: 8420047964827201818
+    second: vegetacao_40
+  - first:
+      213: -776968601138761215
+    second: vegetacao_41
+  - first:
+      213: -273243011641599194
+    second: vegetacao_42
+  - first:
+      213: 1670828669518306701
+    second: vegetacao_43
+  - first:
+      213: 7116143748936346358
+    second: vegetacao_44
+  - first:
+      213: -5724022733650974312
+    second: vegetacao_45
+  - first:
+      213: -46711856400494084
+    second: vegetacao_46
+  - first:
+      213: 8230209242760256844
+    second: vegetacao_47
+  - first:
+      213: 163085804300491929
+    second: vegetacao_48
+  - first:
+      213: -1753953868785251127
+    second: vegetacao_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vegetacao_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1005
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70788fc6662adcf70800000000000000
+      internalID: 9209195373841123079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 731
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafe99a0686bf5880800000000000000
+      internalID: -8619970474944106579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_2
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 327
+        width: 825
+        height: 689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c227901fe8d591d0800000000000000
+      internalID: -3344528626965601591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_3
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 963
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af90f6b87a06ac00800000000000000
+      internalID: 911427488170680229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_4
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 945
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a4485f911ae1070800000000000000
+      internalID: 8079071914414590568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 743
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642a1dde7539d3710800000000000000
+      internalID: 1674656642313069126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 687
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c293c1dec65d613b0800000000000000
+      internalID: -5542007627621582548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 673
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f146d7ed6048f19a0800000000000000
+      internalID: -6260139791984270305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_8
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 671
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1388643a2d6c7fa0800000000000000
+      internalID: -5801642191924722916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_9
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 539
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf06e2e81ee6ca00800000000000000
+      internalID: 776569776421343162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_10
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 526
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917ec8f2fe6a20230800000000000000
+      internalID: 3603626198074976025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 464
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58757452bab908ef0800000000000000
+      internalID: -107915231689746555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_12
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 519
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b2990e2a72c66e0800000000000000
+      internalID: -1843054566995055861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_13
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 401
+        width: 89
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a5a07e00f6407a0800000000000000
+      internalID: -6411877919801845093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_14
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 479
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc0520409acf96e0800000000000000
+      internalID: -1828520202788860679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_15
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 487
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969e72662329c6da0800000000000000
+      internalID: -5950220262503356055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_16
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 485
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51a1794154a7d2e0800000000000000
+      internalID: -2101030032113557154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_17
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 453
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaac80a7643302cf0800000000000000
+      internalID: -279166799108846934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 361
+        width: 43
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f644909cf646df60800000000000000
+      internalID: 8058706633797420787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_19
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 412
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33242e9af952a43c0800000000000000
+      internalID: -4374642720356810189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_20
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 412
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1aecae82bf617d40800000000000000
+      internalID: 5580364225977313819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_21
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 414
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790daa419d0595f10800000000000000
+      internalID: 2258925581387878551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_22
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 415
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f0ac2b949cb25d0800000000000000
+      internalID: -3086151801262960856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_23
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 389
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9a67e80d7f22cf0800000000000000
+      internalID: -278387751828149851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_24
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 400
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139d06a3001d9e0b0800000000000000
+      internalID: -5698794054551021263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_25
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 0
+        width: 787
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7579f0de6b32d9cf0800000000000000
+      internalID: -243999536239896745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_26
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 375
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a426a163a64be9cf0800000000000000
+      internalID: -243558961564196278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_27
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 385
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f93bcfaa021e3920800000000000000
+      internalID: 2971832641219410419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_28
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 373
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f379a5d7cc1fab40800000000000000
+      internalID: 5453609318377681910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_29
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 373
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cf04b5a4a271900800000000000000
+      internalID: 655038769652628572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_30
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 353
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f039678b762da860800000000000000
+      internalID: 7542727262910099699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_31
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 357
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d770b9e7bcce082e0800000000000000
+      internalID: -2125438665372268675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_32
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 334
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c4bb8f45dfd4e30800000000000000
+      internalID: 4489522944950357077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_33
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 293
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3baf9394c93a1f0800000000000000
+      internalID: -1034811651045805074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_34
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 309
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f35c61bc3facca0800000000000000
+      internalID: -5995711900304457867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_35
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 310
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f832114ddae618130800000000000000
+      internalID: 3567254072720434063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_36
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 263
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6633786348fa44b00800000000000000
+      internalID: 811966815218905958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 231
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b554265e8034c80800000000000000
+      internalID: -8339812303670781164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_38
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 149
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc42f238957e562d0800000000000000
+      internalID: -3285965981457898289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_39
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 161
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ee91d1d07709690800000000000000
+      internalID: -7597441673167507870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_40
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 145
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11b64f33050ad470800000000000000
+      internalID: 8420047964827201818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_41
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 97
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102fd7f7c27a735f0800000000000000
+      internalID: -776968601138761215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_42
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 110
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b9eb9bdee353cf0800000000000000
+      internalID: -273243011641599194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_43
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 91
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d5d2f82d9ff2710800000000000000
+      internalID: 1670828669518306701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_44
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 63
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6faa7f5690f91c260800000000000000
+      internalID: 7116143748936346358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_45
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 95
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8992972a6af2090b0800000000000000
+      internalID: -5724022733650974312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_46
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 95
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1137860db0a5ff0800000000000000
+      internalID: -46711856400494084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_47
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 71
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d9cd563b3973270800000000000000
+      internalID: 8230209242760256844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_48
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 41
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c5d39cca5634200800000000000000
+      internalID: 163085804300491929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetacao_49
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 33
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc02aacf34b8a7e0800000000000000
+      internalID: -1753953868785251127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vegetacao_0: 9209195373841123079
+      vegetacao_1: -8619970474944106579
+      vegetacao_10: 3603626198074976025
+      vegetacao_11: -107915231689746555
+      vegetacao_12: -1843054566995055861
+      vegetacao_13: -6411877919801845093
+      vegetacao_14: -1828520202788860679
+      vegetacao_15: -5950220262503356055
+      vegetacao_16: -2101030032113557154
+      vegetacao_17: -279166799108846934
+      vegetacao_18: 8058706633797420787
+      vegetacao_19: -4374642720356810189
+      vegetacao_2: -3344528626965601591
+      vegetacao_20: 5580364225977313819
+      vegetacao_21: 2258925581387878551
+      vegetacao_22: -3086151801262960856
+      vegetacao_23: -278387751828149851
+      vegetacao_24: -5698794054551021263
+      vegetacao_25: -243999536239896745
+      vegetacao_26: -243558961564196278
+      vegetacao_27: 2971832641219410419
+      vegetacao_28: 5453609318377681910
+      vegetacao_29: 655038769652628572
+      vegetacao_3: 911427488170680229
+      vegetacao_30: 7542727262910099699
+      vegetacao_31: -2125438665372268675
+      vegetacao_32: 4489522944950357077
+      vegetacao_33: -1034811651045805074
+      vegetacao_34: -5995711900304457867
+      vegetacao_35: 3567254072720434063
+      vegetacao_36: 811966815218905958
+      vegetacao_37: -8339812303670781164
+      vegetacao_38: -3285965981457898289
+      vegetacao_39: -7597441673167507870
+      vegetacao_4: 8079071914414590568
+      vegetacao_40: 8420047964827201818
+      vegetacao_41: -776968601138761215
+      vegetacao_42: -273243011641599194
+      vegetacao_43: 1670828669518306701
+      vegetacao_44: 7116143748936346358
+      vegetacao_45: -5724022733650974312
+      vegetacao_46: -46711856400494084
+      vegetacao_47: 8230209242760256844
+      vegetacao_48: 163085804300491929
+      vegetacao_49: -1753953868785251127
+      vegetacao_5: 1674656642313069126
+      vegetacao_6: -5542007627621582548
+      vegetacao_7: -6260139791984270305
+      vegetacao_8: -5801642191924722916
+      vegetacao_9: 776569776421343162
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

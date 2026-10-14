@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: 8b89d0ec461350949a1dd71344ada7a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7767042015365919325
+    second: cobertura_verde_0
+  - first:
+      213: 1770205782868641437
+    second: cobertura_verde_1
+  - first:
+      213: -5449749488461089137
+    second: cobertura_verde_2
+  - first:
+      213: -2078291997871851608
+    second: cobertura_verde_3
+  - first:
+      213: 167105831483289540
+    second: cobertura_verde_4
+  - first:
+      213: -2062336712699687095
+    second: cobertura_verde_5
+  - first:
+      213: -8293742735832067660
+    second: cobertura_verde_6
+  - first:
+      213: -5642026398612897938
+    second: cobertura_verde_7
+  - first:
+      213: -1733094868243475720
+    second: cobertura_verde_8
+  - first:
+      213: -3302161581254866761
+    second: cobertura_verde_9
+  - first:
+      213: 3591595878721394599
+    second: cobertura_verde_10
+  - first:
+      213: 1387288253566898373
+    second: cobertura_verde_11
+  - first:
+      213: 7789938317390443199
+    second: cobertura_verde_12
+  - first:
+      213: -2671192254703199111
+    second: cobertura_verde_13
+  - first:
+      213: 3999735946448015775
+    second: cobertura_verde_14
+  - first:
+      213: -5172772650903287502
+    second: cobertura_verde_15
+  - first:
+      213: 3191541770110518782
+    second: cobertura_verde_16
+  - first:
+      213: -1187576637125866365
+    second: cobertura_verde_17
+  - first:
+      213: 6961753729110566184
+    second: cobertura_verde_18
+  - first:
+      213: -7883910997014559425
+    second: cobertura_verde_19
+  - first:
+      213: 4523677053726391637
+    second: cobertura_verde_20
+  - first:
+      213: 7807492684401230045
+    second: cobertura_verde_21
+  - first:
+      213: 7148482429042987396
+    second: cobertura_verde_22
+  - first:
+      213: 1319605739164513091
+    second: cobertura_verde_23
+  - first:
+      213: -3949313675062796470
+    second: cobertura_verde_24
+  - first:
+      213: 6577187850535703030
+    second: cobertura_verde_25
+  - first:
+      213: -8905046501341758937
+    second: cobertura_verde_26
+  - first:
+      213: 7963015595378037684
+    second: cobertura_verde_27
+  - first:
+      213: 9031288637442666907
+    second: cobertura_verde_28
+  - first:
+      213: -7807604188752933407
+    second: cobertura_verde_29
+  - first:
+      213: -5291687565359971024
+    second: cobertura_verde_30
+  - first:
+      213: 8125409270810057777
+    second: cobertura_verde_31
+  - first:
+      213: -264905452269936483
+    second: cobertura_verde_32
+  - first:
+      213: -7621246483405825890
+    second: cobertura_verde_33
+  - first:
+      213: 8694099400456253061
+    second: cobertura_verde_34
+  - first:
+      213: -4731432338335458195
+    second: cobertura_verde_35
+  - first:
+      213: 1741451754712725074
+    second: cobertura_verde_36
+  - first:
+      213: 5533620862174510592
+    second: cobertura_verde_37
+  - first:
+      213: -4995054240413236057
+    second: cobertura_verde_38
+  - first:
+      213: -6194358754518365952
+    second: cobertura_verde_39
+  - first:
+      213: 3217778782249348536
+    second: cobertura_verde_40
+  - first:
+      213: -2720863274995207507
+    second: cobertura_verde_41
+  - first:
+      213: -6075019081903855249
+    second: cobertura_verde_42
+  - first:
+      213: 6484045878564572918
+    second: cobertura_verde_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cobertura_verde_0
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 947
+        width: 153
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d527b69bf831acb60800000000000000
+      internalID: 7767042015365919325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 997
+        width: 87
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d964a33d7c8019810800000000000000
+      internalID: 1770205782868641437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_2
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 935
+        width: 55
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86f869d6b99e54b0800000000000000
+      internalID: -5449749488461089137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_3
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 893
+        width: 205
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7bf4f607c6823e0800000000000000
+      internalID: -2078291997871851608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_4
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1005
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf257d4edda15200800000000000000
+      internalID: 167105831483289540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 963
+        width: 83
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fc940cfab1163e0800000000000000
+      internalID: -2062336712699687095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_6
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 975
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1d0448ce4b6ec80800000000000000
+      internalID: -8293742735832067660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_7
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1013
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f3d4912ee73b1b0800000000000000
+      internalID: -5642026398612897938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_8
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 993
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f29b40566fc2f7e0800000000000000
+      internalID: -1733094868243475720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_9
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 979
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b88c56998d5c22d0800000000000000
+      internalID: -3302161581254866761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_10
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 977
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a712ff2c69e7d130800000000000000
+      internalID: 3591595878721394599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_11
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 975
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c05de20153a04310800000000000000
+      internalID: 1387288253566898373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_12
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 989
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2f24670ab6b1c60800000000000000
+      internalID: 7789938317390443199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_13
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 990
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c14a30cc40eead0800000000000000
+      internalID: -2671192254703199111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_14
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 991
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91156bd6aae18730800000000000000
+      internalID: 3999735946448015775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_15
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 975
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239cd073eae9638b0800000000000000
+      internalID: -5172772650903287502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_16
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 983
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef542459452aa4c20800000000000000
+      internalID: 3191541770110518782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 855
+        width: 71
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c4f803751e48fe0800000000000000
+      internalID: -1187576637125866365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_18
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 895
+        width: 141
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 825e265b12e1d9060800000000000000
+      internalID: 6961753729110566184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_19
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 975
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35c62e08b8b69290800000000000000
+      internalID: -7883910997014559425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_20
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 975
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d72f9105457ce30800000000000000
+      internalID: 4523677053726391637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_21
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 927
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd042380b39c95c60800000000000000
+      internalID: 7807492684401230045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_22
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 893
+        width: 169
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4819a3a15e2843360800000000000000
+      internalID: 7148482429042987396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_23
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 927
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343b77e9d6e205210800000000000000
+      internalID: 1319605739164513091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_24
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 959
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f1a4b03283139c0800000000000000
+      internalID: -3949313675062796470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_25
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 935
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1123ca08dd64b50800000000000000
+      internalID: 6577187850535703030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_26
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 897
+        width: 63
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a7033536bea6480800000000000000
+      internalID: -8905046501341758937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_27
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 957
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3576f7e70528e60800000000000000
+      internalID: 7963015595378037684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_28
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 943
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91baca7a25955d70800000000000000
+      internalID: 9031288637442666907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_29
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 897
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed87865b51d5a390800000000000000
+      internalID: -7807604188752933407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_30
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 927
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0350e5422362096b0800000000000000
+      internalID: -5291687565359971024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_31
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 921
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c9c497ea043c070800000000000000
+      internalID: 8125409270810057777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_32
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 947
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90e26a05edd25cf0800000000000000
+      internalID: -264905452269936483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_33
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 911
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9896e2d3b4eb3690800000000000000
+      internalID: -7621246483405825890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_34
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 893
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ea1266755a7a870800000000000000
+      internalID: 8694099400456253061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_35
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 889
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c18b24b53965eb0800000000000000
+      internalID: -4731432338335458195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1521
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256f121f421ea2810800000000000000
+      internalID: 1741451754712725074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_37
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 891
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e3a931bde5bcc40800000000000000
+      internalID: 5533620862174510592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_38
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 887
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a44c5e12a00eaab0800000000000000
+      internalID: -4995054240413236057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_39
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 863
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0090a992887390aa0800000000000000
+      internalID: -6194358754518365952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_40
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 847
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bde2c101c8d7ac20800000000000000
+      internalID: 3217778782249348536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_41
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 849
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da23183644d8d3ad0800000000000000
+      internalID: -2720863274995207507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_42
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 133
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69a663f45231bba0800000000000000
+      internalID: -6075019081903855249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobertura_verde_43
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 39
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe4d236f55fbf950800000000000000
+      internalID: 6484045878564572918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cobertura_verde_0: 7767042015365919325
+      cobertura_verde_1: 1770205782868641437
+      cobertura_verde_10: 3591595878721394599
+      cobertura_verde_11: 1387288253566898373
+      cobertura_verde_12: 7789938317390443199
+      cobertura_verde_13: -2671192254703199111
+      cobertura_verde_14: 3999735946448015775
+      cobertura_verde_15: -5172772650903287502
+      cobertura_verde_16: 3191541770110518782
+      cobertura_verde_17: -1187576637125866365
+      cobertura_verde_18: 6961753729110566184
+      cobertura_verde_19: -7883910997014559425
+      cobertura_verde_2: -5449749488461089137
+      cobertura_verde_20: 4523677053726391637
+      cobertura_verde_21: 7807492684401230045
+      cobertura_verde_22: 7148482429042987396
+      cobertura_verde_23: 1319605739164513091
+      cobertura_verde_24: -3949313675062796470
+      cobertura_verde_25: 6577187850535703030
+      cobertura_verde_26: -8905046501341758937
+      cobertura_verde_27: 7963015595378037684
+      cobertura_verde_28: 9031288637442666907
+      cobertura_verde_29: -7807604188752933407
+      cobertura_verde_3: -2078291997871851608
+      cobertura_verde_30: -5291687565359971024
+      cobertura_verde_31: 8125409270810057777
+      cobertura_verde_32: -264905452269936483
+      cobertura_verde_33: -7621246483405825890
+      cobertura_verde_34: 8694099400456253061
+      cobertura_verde_35: -4731432338335458195
+      cobertura_verde_36: 1741451754712725074
+      cobertura_verde_37: 5533620862174510592
+      cobertura_verde_38: -4995054240413236057
+      cobertura_verde_39: -6194358754518365952
+      cobertura_verde_4: 167105831483289540
+      cobertura_verde_40: 3217778782249348536
+      cobertura_verde_41: -2720863274995207507
+      cobertura_verde_42: -6075019081903855249
+      cobertura_verde_43: 6484045878564572918
+      cobertura_verde_5: -2062336712699687095
+      cobertura_verde_6: -8293742735832067660
+      cobertura_verde_7: -5642026398612897938
+      cobertura_verde_8: -1733094868243475720
+      cobertura_verde_9: -3302161581254866761
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

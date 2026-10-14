@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 1086d270837f9a042a73373c7ed6020f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5121373810782811107
+    second: fachadas_0
+  - first:
+      213: -8705237145951639235
+    second: fachadas_1
+  - first:
+      213: -8991467142159560843
+    second: fachadas_2
+  - first:
+      213: -3030838685929350269
+    second: fachadas_3
+  - first:
+      213: -4714780628047596946
+    second: fachadas_4
+  - first:
+      213: 9001412703243101605
+    second: fachadas_5
+  - first:
+      213: 1457152164934633772
+    second: fachadas_6
+  - first:
+      213: -6252940026846132402
+    second: fachadas_7
+  - first:
+      213: 8091789674697003487
+    second: fachadas_8
+  - first:
+      213: 3319978911841185434
+    second: fachadas_9
+  - first:
+      213: 3585101787726414959
+    second: fachadas_10
+  - first:
+      213: 2290328015245727498
+    second: fachadas_11
+  - first:
+      213: 5841894769302430412
+    second: fachadas_12
+  - first:
+      213: 153931108336371985
+    second: fachadas_13
+  - first:
+      213: -1658756725492313321
+    second: fachadas_14
+  - first:
+      213: -8564896428597497659
+    second: fachadas_15
+  - first:
+      213: -4938671403902571447
+    second: fachadas_16
+  - first:
+      213: 2913768294267121792
+    second: fachadas_17
+  - first:
+      213: -1626446478526438586
+    second: fachadas_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fachadas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 521
+        width: 741
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c4d4e37a93de8b0800000000000000
+      internalID: -5121373810782811107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_1
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 487
+        width: 507
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39640620f8c03780800000000000000
+      internalID: -8705237145951639235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_2
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1206
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f8bf5e544e73380800000000000000
+      internalID: -8991467142159560843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1201
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b5ba1f54c40f5d0800000000000000
+      internalID: -3030838685929350269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_4
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1201
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62745faffbb19eb0800000000000000
+      internalID: -4714780628047596946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_5
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1154
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a56e7d79217bec70800000000000000
+      internalID: 9001412703243101605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_6
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1150
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29ce967c28d83410800000000000000
+      internalID: 1457152164934633772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_7
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1122
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47c302dc281939a0800000000000000
+      internalID: -6252940026846132402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_8
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1116
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd11d7546dfcb4070800000000000000
+      internalID: 8091789674697003487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_9
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1108
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ee416fa3fe21e20800000000000000
+      internalID: 3319978911841185434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_10
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1100
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f640d0dc417d0c130800000000000000
+      internalID: 3585101787726414959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_11
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1072
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07d8d7f131e8cf10800000000000000
+      internalID: 2290328015245727498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_12
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 980
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2eb7b4754921150800000000000000
+      internalID: 5841894769302430412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_13
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 542
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1198548078fd22200800000000000000
+      internalID: 153931108336371985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 680
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7139d30fb89eaf8e0800000000000000
+      internalID: -1658756725492313321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_15
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 433
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c03f63b310632980800000000000000
+      internalID: -8564896428597497659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 0
+        width: 556
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ce10c3680567bb0800000000000000
+      internalID: -4938671403902571447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_17
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 184
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080769963d8cf6820800000000000000
+      internalID: 2913768294267121792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fachadas_18
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 85
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6432f398b83bd69e0800000000000000
+      internalID: -1626446478526438586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fachadas_0: -5121373810782811107
+      fachadas_1: -8705237145951639235
+      fachadas_10: 3585101787726414959
+      fachadas_11: 2290328015245727498
+      fachadas_12: 5841894769302430412
+      fachadas_13: 153931108336371985
+      fachadas_14: -1658756725492313321
+      fachadas_15: -8564896428597497659
+      fachadas_16: -4938671403902571447
+      fachadas_17: 2913768294267121792
+      fachadas_18: -1626446478526438586
+      fachadas_2: -8991467142159560843
+      fachadas_3: -3030838685929350269
+      fachadas_4: -4714780628047596946
+      fachadas_5: 9001412703243101605
+      fachadas_6: 1457152164934633772
+      fachadas_7: -6252940026846132402
+      fachadas_8: 8091789674697003487
+      fachadas_9: 3319978911841185434
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
