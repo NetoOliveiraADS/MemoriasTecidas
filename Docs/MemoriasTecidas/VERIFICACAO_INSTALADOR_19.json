@@ -1,0 +1,63 @@
+{
+  "revisao": 19,
+  "data": "2026-10-28",
+  "ambiente": "PowerShell 7.6.9 no Linux; projetos temporarios",
+  "testes": [
+    {
+      "teste": "Reproducao da revisao 18",
+      "resultado": "passou",
+      "detalhe": "Dois conflitos de narrativa; nenhum arquivo alterado."
+    },
+    {
+      "teste": "Atualizacao com narrativa personalizada",
+      "resultado": "passou",
+      "detalhe": "C# local intacto; textos reconhecidos revisados; recompensas, eventos, chaves, escapes, BOM e CRLF preservados; backups iguais aos originais."
+    },
+    {
+      "teste": "Reaplicacao",
+      "resultado": "passou",
+      "detalhe": "Nenhuma segunda alteracao ou backup desnecessario."
+    },
+    {
+      "teste": "Textos totalmente personalizados",
+      "resultado": "passou",
+      "detalhe": "JSONs sem frases reconhecidas ficam integralmente intactos; restante da atualizacao instalado."
+    },
+    {
+      "teste": "Conflito em outro script",
+      "resultado": "passou",
+      "detalhe": "Interrupcao antes de qualquer gravacao; protecao dos demais arquivos mantida."
+    },
+    {
+      "teste": "JSON invalido",
+      "resultado": "passou",
+      "detalhe": "Falha explicita antes de qualquer copia."
+    },
+    {
+      "teste": "Dependencia ausente",
+      "resultado": "passou",
+      "detalhe": "Projeto incompleto recusado sem alteracoes."
+    },
+    {
+      "teste": "Restauracao apos falha de copia",
+      "resultado": "passou",
+      "detalhe": "Falha simulada depois de alterar arquivos; bytes originais restaurados e arquivos novos removidos."
+    },
+    {
+      "teste": "Escopo completo em versao conhecida",
+      "resultado": "passou",
+      "detalhe": "Comportamento cumulativo anterior preservado."
+    },
+    {
+      "teste": "Escopo completo em versao desconhecida",
+      "resultado": "passou",
+      "detalhe": "Continua recusando substituicao de narrativa desconhecida."
+    }
+  ],
+  "assets_alterados_em_relacao_a_revisao_18": 0,
+  "limites": [
+    "Os arquivos reais do computador do usuario nao foram recebidos.",
+    "Windows PowerShell 5.1 e o launcher CMD nao executados.",
+    "Unity, compilacao C#/shaders, validadores do Editor, Play e build nao executados."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "revisao": 18,
+  "data": "2026-10-28",
+  "sintaxe_csharp": {
+    "arquivos": 99,
+    "erros": [],
+    "compilacao_executada": false
+  },
+  "narrativa": {
+    "missoes": 24,
+    "campos_de_texto_revisados": 9,
+    "estrutura_ids_eventos_requisitos_e_recompensas_preservados": true,
+    "alteracoes": [
+      {
+        "caminho": "trama_01/titulo",
+        "antes": "Jaguaruana — entre memórias e lendas",
+        "depois": "Jaguaruana Rede de Memórias • Entre Memórias e Lendas"
+      },
+      {
+        "caminho": "trama_01/missoes/0/descricao",
+        "antes": "Dona Feliciana apresenta a cidade. Encontre Simão de Góis na mesma Praça Matriz.",
+        "depois": "Dona Feliciana apresenta a cidade e indica um encontro com Simão de Góis, na Praça Matriz."
+      },
+      {
+        "caminho": "trama_01/missoes/2/etapas/1/falas/1",
+        "antes": "A memória do lugar também passa pelos encontros e pelas práticas de fé. A cena e os diálogos são dramatizações.",
+        "depois": "Os encontros e as práticas de fé também fazem parte das memórias deste lugar."
+      },
+      {
+        "caminho": "trama_01/missoes/2/etapas/2/falas/4",
+        "antes": "Visitante: Algumas visitas são ligadas à missa e aos encontros da comunidade. Registre esse relato para conferir com a pesquisa local.",
+        "depois": "Visitante: Algumas visitas são ligadas à missa e aos encontros da comunidade. Converse com as pessoas para conhecer melhor o lugar."
+      },
+      {
+        "caminho": "trama_01/missoes/12/etapas/3/falas/0",
+        "antes": "Cada parte tem uma função na montagem didática.",
+        "depois": "Cada parte tem uma função na montagem da rede."
+      },
+      {
+        "caminho": "trama_01/dialogos/0/fonte",
+        "antes": "Diálogo ficcional de apoio.",
+        "depois": "Rede de Memorias - Memorias Tecidas"
+      },
+      {
+        "caminho": "trama_01/dialogos/0/falas/0",
+        "antes": "Miguel: Dona Feliciana pode ajudar você a começar a jornada. Encontre-a na Praça Matriz.",
+        "depois": "Miguel: Procure Dona Feliciana para dar os primeiros passos. O mapa mostra onde encontrá-la."
+      },
+      {
+        "caminho": "trama_01/dialogos/0/falas/1",
+        "antes": "O caderno mostra as missões, os lugares e os registros que você já encontrou.",
+        "depois": "No caderno, você pode acompanhar as missões e rever os lugares e as lembranças da jornada."
+      },
+      {
+        "caminho": "abertura_memorias/fonte",
+        "antes": "Cena e diálogos ficcionais do jogo. A amostra é uma atividade didática, sem atribuição de técnica ou padrão histórico.",
+        "depois": "Rede de Memorias - Memorias Tecidas"
+      }
+    ]
+  },
+  "preservacao": {
+    "assets_anteriores_identicos": 140,
+    "imagens_shaders_cenas_e_prefabs_do_pacote_inalterados": true,
+    "metas_anteriores_inalterados": true,
+    "novos_guids_unicos": true
+  },
+  "continuidade": {
+    "campos_aditivos_no_save": true,
+    "versao_do_save_mantida": 1,
+    "carregador_anterior_inalterado": true,
+    "posicao_relativa_a_regiao": true,
+    "validacao_de_limites_e_colisao": true,
+    "retorno_ao_ponto_seguro": true,
+    "missao_e_destino_persistidos": true,
+    "conversa_intermediaria_persistida": false
+  },
+  "interface": {
+    "rodape": "Rede de Memorias - Memorias Tecidas",
+    "nome_sem_complemento": true,
+    "mapa_removido_da_abertura": true,
+    "mapa_do_jogo_preservado": true,
+    "previas": [
+      "Previa_Menu_UIUX.png",
+      "Previa_Dialogo_18.png"
+    ],
+    "previas_inspecionadas_visualmente": true,
+    "capturas_unity": false
+  },
+  "validador_unity_incluido": "Memorias Tecidas/Interface/Validar diálogos e continuidade",
+  "pendente": [
+    "Compilação C# e shaders na Unity",
+    "Execução do validador no Editor",
+    "Instalador PowerShell no Windows",
+    "Play, incluindo salvamento e colisões na retomada",
+    "Build"
+  ],
+  "assets_alterados": [
+    "Assets/MemoriasTecidas/MundoV2/Editor/MTMInterfaceEditor.cs",
+    "Assets/MemoriasTecidas/MundoV2/MelhoriasV22/Runtime/MTMJogoVidaV22.cs",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/abertura_memorias.json",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/trama_01.json",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMEstado.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogo.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoInterface.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMapaMenu.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMenus.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoNarrativa.cs"
+  ],
+  "assets_novos": [
+    "Assets/MemoriasTecidas/MundoV2/Editor/MTMDialogosContinuidadeEditor.cs",
+    "Assets/MemoriasTecidas/MundoV2/Editor/MTMDialogosContinuidadeEditor.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoContinuidade.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoContinuidade.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoDialogos.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoDialogos.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMTextoDialogo.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMTextoDialogo.cs.meta"
+  ]
+}

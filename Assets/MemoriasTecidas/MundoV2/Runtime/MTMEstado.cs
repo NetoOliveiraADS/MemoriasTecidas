@@ -8,10 +8,33 @@ namespace MemoriasTecidas.MundoV2
     {
         public int versao = 1, dia = 1;
         public string area = "praca";
+        // Campos adicionais: saves antigos continuam válidos, sem posição exata.
+        public bool temPosicao;
+        public float posicaoX, posicaoY;
+        public string salvoEmUtc = "", missaoAcompanhada = "", destinoAcompanhado = "";
         public float relogio = 8f / 24f;
         public int algodao, fio, corda, pano, punho, enfeite, cera;
         public bool rede;
         public List<string> marcos = new List<string>();
+        public int versaoRoteiro;
+        public List<MTMQuantidadeTecida> colecao = new List<MTMQuantidadeTecida>();
+
+        public int QuantidadeExtra(string id)
+        { var q=colecao==null?null:colecao.Find(x=>x!=null&&x.id==id);return q==null?0:Math.Max(0,q.quantidade); }
+        public void DefinirQuantidade(string id,int quantidade)
+        {
+            quantidade=Math.Max(0,quantidade);
+            switch(id)
+            {
+                case "algodao":algodao=quantidade;return;case "fio":fio=quantidade;return;
+                case "corda":corda=quantidade;return;case "pano":pano=quantidade;return;
+                case "punho":punho=quantidade;return;case "enfeite":enfeite=quantidade;return;
+                case "cera":cera=quantidade;return;
+            }
+            if(colecao==null)colecao=new List<MTMQuantidadeTecida>();
+            var q=colecao.Find(x=>x!=null&&x.id==id);
+            if(q==null){q=new MTMQuantidadeTecida{id=id};colecao.Add(q);}q.quantidade=quantidade;
+        }
 
         public bool Tem(string id) { return !string.IsNullOrEmpty(id) && marcos != null && marcos.Contains(id); }
         public bool PodeTecelagem { get { return !rede && fio >= 3 && corda >= 1 && pano >= 1 && punho >= 1 && enfeite >= 1; } }

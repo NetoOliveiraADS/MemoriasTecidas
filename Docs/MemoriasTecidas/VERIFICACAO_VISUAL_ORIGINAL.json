@@ -1,0 +1,67 @@
+{
+  "revisao": 13,
+  "data": "2026-10-23",
+  "etapa": "Artes originais de Jaguaruana e refinamento de textura",
+  "sintaxe": {
+    "scripts": 67,
+    "erros": [],
+    "metodo": "tree-sitter-c-sharp; não equivale a compilação"
+  },
+  "perfil": {
+    "preservarCenarioOriginal": true,
+    "regras_de_substituicao": 0,
+    "chamadas_guardadas": [
+      "cartoes.Add(c.regiao, Textura(c.textura))",
+      "AplicarObjeto(sr, regiao)",
+      "AplicarPiso(sr)",
+      "AplicarSuperficie(sup)"
+    ],
+    "neto_32_quadros_preservados": true
+  },
+  "qualidade": {
+    "ativo": true,
+    "nitidez": 0.32,
+    "relevo": 0.22
+  },
+  "guids_unicos": 660,
+  "arquivos_anteriores_protegidos": 81,
+  "referencias_originais_sha256": {
+    "vegetacao.png": "d72c0e7fa3b70f75244d1df0f037e0e1478a11b2bbf73eaad6bd49f24b9b6a62",
+    "igreja_matriz.png": "628015df1822413a9354a6689a727d805cf20b04baa84de19bd3c0505c1373a0",
+    "agua_rio.png": "d741b054a7dac593dc20906f970da674ef0474df8ec2f2d5c7238fbc24d8c23d",
+    "objetos_comercio.png": "adba82760d44b3ab139a8d6df8a7c77ade783c80812eea34ead857a3e2472d09",
+    "mosaico_praca.png": "51309d75c3935e81e2ee7baa5dfe5eb4e765049652fb176d2c45a21bb822f0e4",
+    "pedra_clara.png": "703454c8d16d9a179105c2d9a658bb082a184570419fbac9b3eab3c664bccde1"
+  },
+  "pngs_verificados": 46,
+  "includes_shader_resolvidos": 9,
+  "assets_alterados": [
+    "Assets/MemoriasTecidas/MundoV2/Editor/MTMKitHD2DEditor.cs",
+    "Assets/MemoriasTecidas/MundoV2/Gerados/Shaders/PintadoV2.shader",
+    "Assets/MemoriasTecidas/MundoV2/LugaresV23/Gerados/Shaders/SuperficieV23.shader",
+    "Assets/MemoriasTecidas/MundoV2/MelhoriasV22/Gerados/Shaders/PintadoV2.shader",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/kit_hd2d.json",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoInterface.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoKitHD2D.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMKitHD2D.cs"
+  ],
+  "assets_novos": [
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMAcabamentoOriginal.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMAcabamentoOriginal.cs",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/acabamento_original.json",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/acabamento_original.json.meta",
+    "Assets/MemoriasTecidas/MundoV2/Qualidade/Shaders/MTMDetalheOriginal.cginc",
+    "Assets/MemoriasTecidas/MundoV2/Qualidade/Shaders/MTMDetalheOriginal.cginc.meta"
+  ],
+  "preservacao": {
+    "pngs_anteriores_identicos": true,
+    "metas_anteriores_identicos": true,
+    "cenas_prefabs_narrativa_preservados": true,
+    "mapa_e_interface_areia_preservados": true
+  },
+  "limites": [
+    "Compilação C#/shaders, PowerShell, Play, build e FPS não executados.",
+    "O realce é de renderização; não aumenta a resolução nem cria detalhes novos nas imagens.",
+    "Materiais personalizados precisam de conferência na Unity; o realce dos sprites só marca materiais compatíveis."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "locais": [
+    {
+      "id": "entrada",
+      "nome": "Entrada da cidade",
+      "x": 0.343074,
+      "y": 0.620239
+    },
+    {
+      "id": "fabrica",
+      "nome": "Fábrica de redes",
+      "x": 0.222677,
+      "y": 0.650707
+    },
+    {
+      "id": "oficina",
+      "nome": "Oficina de tecelagem",
+      "x": 0.144944,
+      "y": 0.704026
+    },
+    {
+      "id": "museu",
+      "nome": "Museu Carnaubal",
+      "x": 0.227937,
+      "y": 0.317737
+    },
+    {
+      "id": "carnaubal",
+      "nome": "Carnaubal",
+      "x": 0.056108,
+      "y": 0.369967
+    },
+    {
+      "id": "sitio",
+      "nome": "Sítio do Algodão",
+      "x": 0.049094,
+      "y": 0.800871
+    },
+    {
+      "id": "vila",
+      "nome": "Vila das Tecelãs",
+      "x": 0.407364,
+      "y": 0.818281
+    },
+    {
+      "id": "praca",
+      "nome": "Praça Matriz",
+      "x": 0.521333,
+      "y": 0.273123
+    },
+    {
+      "id": "prefeitura",
+      "nome": "Prefeitura",
+      "x": 0.516072,
+      "y": 0.418934
+    },
+    {
+      "id": "mercado",
+      "nome": "Mercado",
+      "x": 0.501461,
+      "y": 0.510337
+    },
+    {
+      "id": "beira",
+      "nome": "Beira-Rio",
+      "x": 0.654588,
+      "y": 0.475517
+    },
+    {
+      "id": "memorias",
+      "nome": "Casa das Memórias",
+      "x": 0.517241,
+      "y": 0.151251
+    },
+    {
+      "id": "serra",
+      "nome": "Serra Dantas",
+      "x": 0.895383,
+      "y": 0.401523
+    },
+    {
+      "id": "rio",
+      "nome": "Rio Jaguaribe",
+      "x": 0.642899,
+      "y": 0.70185
+    },
+    {
+      "id": "rua",
+      "nome": "Rua do Comércio",
+      "x": 0.5827,
+      "y": 0.4679
+    },
+    {
+      "id": "largo",
+      "nome": "Avenida Simão de Góis",
+      "x": 0.4436,
+      "y": 0.458107
+    }
+  ]
+}

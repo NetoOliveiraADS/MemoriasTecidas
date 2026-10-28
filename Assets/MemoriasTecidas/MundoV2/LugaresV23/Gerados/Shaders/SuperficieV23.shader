@@ -4,53 +4,46 @@ Shader "MemoriasTecidas/LugaresV23/Superficie"
     {
         [PerRendererData] _MainTex("Textura",2D)="white"{}
         _Color("Cor",Color)=(1,1,1,1)
-        _Agua("Agua",Float)=0
-        _Ondulacao("Ondulacao",Float)=.009
+        _Agua("Água",Float)=0
+        _Ondulacao("Ondulação",Float)=.009
         _Velocidade("Velocidade",Float)=.65
     }
     SubShader
     {
-        Tags { "Queue"="Transparent" "RenderType"="Transparent"  }
+        Tags { "Queue"="Transparent" "RenderType"="Transparent" }
         Cull Off ZWrite Off Blend SrcAlpha OneMinusSrcAlpha
         Pass
         {
             Tags { "LightMode"="Always" }
-
             CGPROGRAM
-            #include "UnityCG.cginc"
-            sampler2D _MainTex;
-            #define SAMPLE_TEX(uv) tex2D(_MainTex,uv)
-            #define TO_CLIP(pos) UnityObjectToClipPos(pos)
-            #define TO_WORLD(pos) mul(unity_ObjectToWorld,pos).xyz
-            float4 _Color; float _Agua,_Ondulacao,_Velocidade;
-
             #pragma vertex vert
             #pragma fragment frag
             #pragma target 3.0
-            struct A { float4 pos:POSITION; float2 uv:TEXCOORD0; };
-            struct V { float4 pos:SV_POSITION; float2 uv:TEXCOORD0; float2 world:TEXCOORD1; };
-            float4 _MTV_Ambient,_MTV_Lights[16],_MTV_Colors[16];
-            float _MTV_Active,_MTV_Time,_MTV_Quality; int _MTV_Count;
-            V vert(A a){V o;o.pos=TO_CLIP(a.pos);o.uv=a.uv;o.world=TO_WORLD(a.pos).xy;return o;}
+            #include "UnityCG.cginc"
+            #include "Assets/MemoriasTecidas/MundoV2/Qualidade/Shaders/MTMIluminacao.cginc"
+            #include "Assets/MemoriasTecidas/MundoV2/Qualidade/Shaders/MTMDetalheOriginal.cginc"
+            sampler2D _MainTex;float4 _MainTex_TexelSize,_Color;
+            float _Agua,_Ondulacao,_Velocidade;
+            struct A{float4 pos:POSITION;float2 uv:TEXCOORD0;};
+            struct V{float4 pos:SV_POSITION;float2 uv:TEXCOORD0;float2 world:TEXCOORD1;};
+            V vert(A a){V o;o.pos=UnityObjectToClipPos(a.pos);o.uv=a.uv;o.world=mul(unity_ObjectToWorld,a.pos).xy;return o;}
             float4 frag(V i):SV_Target
             {
-                float w=_Agua*step(.5,_MTV_Quality),t=_MTV_Time*_Velocidade;
-                float2 uv=i.uv;
-                uv+=float2(sin(i.world.y*1.9+t),sin(i.world.x*1.3-t*.8))*_Ondulacao*w;
-                float4 c=SAMPLE_TEX(uv)*_Color;
-                float3 luz=lerp(float3(1,1,1),_MTV_Ambient.rgb,saturate(_MTV_Active));
-                [loop] for(int n=0;n<16;n++)
+                float movimento=step(.5,_MTV_Quality)*_MTV_Motion;
+                float t=_MTV_Time*_Velocidade*movimento;
+                float2 onda=float2(sin(i.world.y*1.7+t)+.35*sin(i.world.x*2.9-t*.7),sin(i.world.x*1.2-t*.8));
+                float2 uv=i.uv+onda*_Ondulacao*_Agua*movimento;
+                float4 amostra=tex2D(_MainTex,uv);
+                amostra=MTMDetalharOriginal(_MainTex,uv,amostra,_MainTex_TexelSize,float4(0,0,1,1),1,_Agua);
+                float4 c=amostra*_Color;
+                if(_Agua>.5)
                 {
-                    if(n>=_MTV_Count)break;
-                    float2 d=i.world-_MTV_Lights[n].xy;
-                    float f=saturate(1-dot(d,d)/max(.01,_MTV_Lights[n].z*_MTV_Lights[n].z));
-                    luz+=_MTV_Colors[n].rgb*f*f*_MTV_Lights[n].w;
+                    float reflexo=pow(saturate(sin(i.world.y*4.8+t*.8+sin(i.world.x*.6))),12);
+                    c.rgb+=reflexo*.014*movimento*_MTV_Sun.y;
                 }
-                c.rgb*=min(luz,float3(1.45,1.45,1.45));
-                c.rgb+=.009*sin(i.world.x*5+t)*sin(i.world.y*3-t)*w;
-                return c;
+                c.rgb=MTMPintura(c.rgb,i.world);return c;
             }
-ENDCG
+            ENDCG
         }
     }
 }

@@ -1,0 +1,4592 @@
+{
+    "versao": 2,
+    "titulo": "Jaguaruana Rede de Memórias • Entre Memórias e Lendas",
+    "subtitulo": "MEMÓRIAS TECIDAS",
+    "paleta": {
+        "petroleo": "#163C3B",
+        "profundo": "#102B2B",
+        "algodao": "#F4E9D5",
+        "papel": "#EADCC0",
+        "ouro": "#D9AF68",
+        "terracota": "#B96C4D",
+        "folha": "#718A70",
+        "texto": "#193D3A"
+    },
+    "missoes": [
+        {
+            "id": "m01",
+            "titulo": "O início da jornada",
+            "descricao": "Dona Feliciana apresenta a cidade e indica um encontro com Simão de Góis, na Praça Matriz.",
+            "recompensa": "Fio simples, guardado como lembrança inicial.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 1,
+            "opcional": false,
+            "requerMissoes": [],
+            "etapas": [
+                {
+                    "texto": "Conversar com Dona Feliciana",
+                    "regiao": "entrada",
+                    "ponto": "npc_feliciana",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com Dona Feliciana.",
+                    "eventos": [
+                        "r24_m01_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Dona Feliciana: Você está conhecendo Jaguaruana? Então não olhe apenas para os caminhos. Nossa cidade guarda histórias em cada canto.",
+                        "Neto: E por onde eu começo?",
+                        "Dona Feliciana: Procure Simão de Góis, na Praça Matriz. Ele conhece histórias antigas que muita gente já esqueceu.",
+                        "Neto: Vou procurar por ele."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar Simão de Góis na Praça Matriz",
+                    "regiao": "praca",
+                    "ponto": "npc_simao",
+                    "horario": "dia",
+                    "acao": "aproximar",
+                    "atividade": "",
+                    "registro": "Dona Feliciana indicou Simão. O fio simples marca o início da jornada; não substitui os fios preparados para o tear.",
+                    "eventos": [
+                        "r24_m01_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Encontrar Simão de Góis na Praça Matriz."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "fio_simples",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m02",
+            "titulo": "Uma história antiga",
+            "descricao": "Simão recomenda conhecer a Serra Dantas antes de investigar as histórias da noite.",
+            "recompensa": "Corda; acesso à Serra Dantas.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 2,
+            "opcional": false,
+            "requerMissoes": [
+                "m01"
+            ],
+            "etapas": [
+                {
+                    "texto": "Ouvir Simão e receber a corda",
+                    "regiao": "praca",
+                    "ponto": "npc_simao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Ouvir Simão e receber a corda.",
+                    "eventos": [
+                        "r24_m02_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Dona Feliciana pediu que eu viesse falar com você.",
+                        "Simão de Góis: Conheço algumas histórias. Mas existem histórias que parecem diferentes quando a noite chega.",
+                        "Neto: Você está falando das lendas?",
+                        "Simão de Góis: Talvez. Antes disso, vá até a Serra Dantas e observe o lugar. Converse com quem encontrar e depois volte."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "corda",
+                            "quantidade": 1,
+                            "minimo": true
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Chegar à trilha da Serra Dantas",
+                    "regiao": "serra",
+                    "ponto": "pdf_trilha_serra",
+                    "horario": "dia",
+                    "acao": "aproximar",
+                    "atividade": "",
+                    "registro": "Chegar à trilha da Serra Dantas.",
+                    "eventos": [
+                        "r24_m02_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Chegar à trilha da Serra Dantas."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m03",
+            "titulo": "O que existe na Serra?",
+            "descricao": "Explore a trilha, observe o Cruzeiro e converse com um visitante.",
+            "recompensa": "Pano e registro da Serra.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 3,
+            "opcional": false,
+            "requerMissoes": [
+                "m02"
+            ],
+            "etapas": [
+                {
+                    "texto": "Observar a trilha",
+                    "regiao": "serra",
+                    "ponto": "pdf_trilha_serra",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Referência da trilha: um marco de pedra fica à esquerda de quem retorna do Cruzeiro.",
+                    "eventos": [
+                        "r24_m03_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "A trilha passa por pedras e vegetação. Um marco de pedra à esquerda ajuda a reconhecer o retorno."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Chegar ao Cruzeiro",
+                    "regiao": "serra",
+                    "ponto": "visita_cruzeiro",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Chegar ao Cruzeiro.",
+                    "eventos": [
+                        "r24_m03_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você observa o Cruzeiro e registra os caminhos usados pelos visitantes.",
+                        "Os encontros e as práticas de fé também fazem parte das memórias deste lugar."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Conversar com o visitante da Serra",
+                    "regiao": "serra",
+                    "ponto": "pdf_visitante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Serra Dantas: trilha, Cruzeiro e relato de um visitante sobre encontros e missa. Texto ficcional; os detalhes culturais devem ser validados pela pesquisa.",
+                    "eventos": [
+                        "r24_m03_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Você costuma vir aqui?",
+                        "Morador: Muita gente vem. Há visitantes, fiéis e pessoas que sobem até o Cruzeiro.",
+                        "Neto: Vim conhecer as histórias deste lugar.",
+                        "Morador: Então observe com calma. A memória de uma cidade também está nos lugares que as pessoas continuam visitando.",
+                        "Visitante: Algumas visitas são ligadas à missa e aos encontros da comunidade. Converse com as pessoas para conhecer melhor o lugar."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "pano",
+                            "quantidade": 1,
+                            "minimo": true
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m04",
+            "titulo": "A história da Mulher-Cavalo",
+            "descricao": "Volte a Simão no entardecer e observe a praça durante a noite.",
+            "recompensa": "Moedas e acesso ao Museu da Carnaúba.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 4,
+            "opcional": false,
+            "requerMissoes": [
+                "m03"
+            ],
+            "etapas": [
+                {
+                    "texto": "Ouvir Simão no entardecer ou à noite",
+                    "regiao": "praca",
+                    "ponto": "npc_simao",
+                    "horario": "entardecer",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Ouvir Simão no entardecer ou à noite.",
+                    "eventos": [
+                        "r24_m04_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Voltei da Serra. Você disse que tinha uma história para contar.",
+                        "Simão de Góis: A história da Mulher-Cavalo é contada por diferentes pessoas. Algumas dizem que a viram, e outras acreditam que é apenas uma lenda.",
+                        "Neto: E você acredita?",
+                        "Simão de Góis: Acredito que essas histórias fazem parte da memória de um lugar. O que você viu ou ouviu precisa ser investigado com cuidado."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Observar a silhueta noturna na praça",
+                    "regiao": "praca",
+                    "ponto": "pdf_aparicao_praca",
+                    "horario": "noite",
+                    "acao": "aparicao",
+                    "atividade": "",
+                    "registro": "Uma aparição ficcional foi observada na praça. Sua identidade e explicação permanecem em aberto.",
+                    "eventos": [
+                        "r24_m04_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Uma silhueta aparece ao longe e desaparece.",
+                        "Neto: Vi uma forma, mas não posso dizer quem ou o que era. A história continua sendo uma lenda."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "moedas",
+                            "quantidade": 10,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m05",
+            "titulo": "Segredos da Carnaúba",
+            "descricao": "Conheça o museu e ajude a guia a localizar uma peça de palha.",
+            "recompensa": "Cera de carnaúba e registro cultural.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 5,
+            "opcional": false,
+            "requerMissoes": [
+                "m04"
+            ],
+            "etapas": [
+                {
+                    "texto": "Conversar com a guia Lia",
+                    "regiao": "museu",
+                    "ponto": "npc_guia",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com a guia Lia.",
+                    "eventos": [
+                        "r24_m05_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Estou procurando informações sobre a cidade.",
+                        "Guia: Então conheça os objetos e as histórias que ajudam a entender a região.",
+                        "Neto: A carnaúba tem tanta importância assim?",
+                        "Guia: Ela está presente em muitos aspectos da vida das pessoas daqui. Ajude-me a localizar um objeto nesta sala."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Localizar a peça solicitada na exposição",
+                    "regiao": "museu",
+                    "ponto": "peca_museu",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Localizar a peça solicitada na exposição.",
+                    "eventos": [
+                        "r24_m05_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você localiza a peça de palha indicada pela guia."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "objeto_museu",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Devolver a peça à guia e registrar a visita",
+                    "regiao": "museu",
+                    "ponto": "npc_guia",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Devolver a peça à guia e registrar a visita.",
+                    "eventos": [
+                        "r24_m05_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Lia: Obrigada. Vamos guardar a peça e registrar a visita.",
+                        "A cera é uma lembrança cultural. Ela não faz parte da receita da sua rede."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "cera",
+                            "quantidade": 1,
+                            "minimo": true
+                        }
+                    ],
+                    "consumir": [
+                        {
+                            "id": "objeto_museu",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m06",
+            "titulo": "Histórias do Mercado",
+            "descricao": "Ajude o comerciante a recuperar três objetos espalhados pelo mercado.",
+            "recompensa": "Punho para a rede.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 6,
+            "opcional": false,
+            "requerMissoes": [
+                "m05"
+            ],
+            "etapas": [
+                {
+                    "texto": "Aceitar a tarefa de Seu Bento",
+                    "regiao": "mercado",
+                    "ponto": "npc_feirante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Aceitar a tarefa de Seu Bento.",
+                    "eventos": [
+                        "r24_m06_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Estou procurando materiais para construir uma rede.",
+                        "Comerciante: Posso ajudar, mas primeiro preciso que encontre alguns objetos que foram separados e estão espalhados pelo mercado.",
+                        "Neto: Vou procurar. Depois você pode me orientar sobre os materiais?",
+                        "Comerciante: Combinado. Se você quer entender a cidade, também precisa conhecer as pessoas que trabalham aqui."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar o objeto da banca 1",
+                    "regiao": "mercado",
+                    "ponto": "encomenda_1",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar o objeto da banca 1.",
+                    "eventos": [
+                        "r24_m06_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recolhe o objeto separado na banca 1."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "objeto_mercado_1",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar o objeto da banca 2",
+                    "regiao": "mercado",
+                    "ponto": "encomenda_2",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar o objeto da banca 2.",
+                    "eventos": [
+                        "r24_m06_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recolhe o objeto separado na banca 2."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "objeto_mercado_2",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar o objeto da banca 3",
+                    "regiao": "mercado",
+                    "ponto": "encomenda_3",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar o objeto da banca 3.",
+                    "eventos": [
+                        "r24_m06_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recolhe o objeto separado na banca 3."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "objeto_mercado_3",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Devolver os três objetos ao comerciante",
+                    "regiao": "mercado",
+                    "ponto": "npc_feirante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Devolver os três objetos ao comerciante.",
+                    "eventos": [
+                        "r24_m06_05"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Seu Bento: Está tudo conferido. Estes punhos ajudam na montagem da sua rede."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "punho",
+                            "quantidade": 1,
+                            "minimo": true
+                        }
+                    ],
+                    "consumir": [
+                        {
+                            "id": "objeto_mercado_1",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "objeto_mercado_2",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "objeto_mercado_3",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m07",
+            "titulo": "O enfeite perdido da Praça",
+            "descricao": "Simão indica um enfeite de palha próximo aos bancos da praça.",
+            "recompensa": "Enfeite de palha, que permanece na bolsa até a fabricação.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 7,
+            "opcional": false,
+            "requerMissoes": [
+                "m06"
+            ],
+            "etapas": [
+                {
+                    "texto": "Ouvir a indicação de Simão",
+                    "regiao": "praca",
+                    "ponto": "npc_simao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Ouvir a indicação de Simão.",
+                    "eventos": [
+                        "r24_m07_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Simão, qual é a próxima tarefa?",
+                        "Simão de Góis: Procure um pequeno enfeite feito de palha de carnaúba que foi deixado na praça.",
+                        "Neto: Para que ele vai servir?",
+                        "Simão de Góis: Guarde-o. Ainda faltam materiais, e cada um terá seu propósito."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar e guardar o enfeite de palha",
+                    "regiao": "praca",
+                    "ponto": "coleta_enfeite",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar e guardar o enfeite de palha.",
+                    "eventos": [
+                        "r24_m07_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você guarda o enfeite de palha para usar na rede. Ele é diferente das decorações da festa."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "enfeite",
+                            "quantidade": 1,
+                            "minimo": true
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m08",
+            "titulo": "A procissão perdida",
+            "descricao": "Recupere três placas, ordene o percurso e acompanhe a comunidade, ajudando nos imprevistos.",
+            "recompensa": "Fita da Padroeira. Uma única missão de procissão.",
+            "capitulo": "Chegadas e encontros",
+            "numero": 8,
+            "opcional": false,
+            "requerMissoes": [
+                "m07"
+            ],
+            "etapas": [
+                {
+                    "texto": "Conversar com a moradora sobre a procissão",
+                    "regiao": "praca",
+                    "ponto": "pdf_moradora",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com a moradora sobre a procissão.",
+                    "eventos": [
+                        "r24_m08_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Moradora: A procissão vai começar, mas as placas que indicam o caminho desapareceram!",
+                        "Neto: Quantas placas precisamos encontrar?",
+                        "Moradora: Três. Procure na praça, no Mercado Velho e na rua próxima à igreja. Uma delas está com alguém que caminha pelo mapa.",
+                        "Neto: Vou encontrar as placas e colocá-las na ordem correta."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Recuperar a placa do Sol",
+                    "regiao": "praca",
+                    "ponto": "pdf_placa_praca",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Recuperar a placa do Sol.",
+                    "eventos": [
+                        "r24_m08_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recupera a placa do Sol.",
+                        "A orientação comunitária diz: primeiro o Sol, depois a Folha e por último o Sino."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "placa_sol",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Recuperar a placa do Folha",
+                    "regiao": "mercado",
+                    "ponto": "pdf_placa_mercado",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Recuperar a placa do Folha.",
+                    "eventos": [
+                        "r24_m08_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recupera a placa do Folha.",
+                        "A orientação comunitária diz: primeiro o Sol, depois a Folha e por último o Sino."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "placa_folha",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Recuperar a placa do Sino",
+                    "regiao": "rua",
+                    "ponto": "pdf_morador_placa",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Recuperar a placa do Sino.",
+                    "eventos": [
+                        "r24_m08_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recupera a placa do Sino.",
+                        "A orientação comunitária diz: primeiro o Sol, depois a Folha e por último o Sino."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "placa_sino",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Ordenar as três placas com Padre Ducéu",
+                    "regiao": "praca",
+                    "ponto": "npc_padre_duceu",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "procissao_ordem",
+                    "registro": "Ordenar as três placas com Padre Ducéu.",
+                    "eventos": [
+                        "r24_m08_05"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Padre Ducéu: Confira a orientação das placas e organize o percurso."
+                    ],
+                    "falasConclusao": [
+                        "Padre Ducéu: Agora o percurso está organizado. Obrigado por ajudar a comunidade."
+                    ],
+                    "conceder": [],
+                    "consumir": [
+                        {
+                            "id": "placa_sol",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "placa_folha",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "placa_sino",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Acompanhar a procissão pela praça",
+                    "regiao": "praca",
+                    "ponto": "pdf_proc_praca",
+                    "horario": "dia",
+                    "acao": "escolta",
+                    "atividade": "",
+                    "registro": "Acompanhar a procissão pela praça.",
+                    "eventos": [
+                        "r24_m08_06"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Acompanhar a procissão pela praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": [
+                        {
+                            "x": 0.0,
+                            "y": -10.0
+                        },
+                        {
+                            "x": 6.0,
+                            "y": -10.0
+                        },
+                        {
+                            "x": 12.0,
+                            "y": -10.0
+                        }
+                    ]
+                },
+                {
+                    "texto": "Liberar o banco que ocupa o percurso",
+                    "regiao": "praca",
+                    "ponto": "pdf_ajuda_banco",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Liberar o banco que ocupa o percurso.",
+                    "eventos": [
+                        "r24_m08_07"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Vou colocar o banco junto à lateral para liberar a passagem.",
+                        "O percurso está livre. A comunidade pode seguir até o mercado."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Acompanhar a comunidade pelo mercado",
+                    "regiao": "mercado",
+                    "ponto": "pdf_proc_mercado",
+                    "horario": "dia",
+                    "acao": "escolta",
+                    "atividade": "",
+                    "registro": "Acompanhar a comunidade pelo mercado.",
+                    "eventos": [
+                        "r24_m08_08"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Acompanhar a comunidade pelo mercado."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": [
+                        {
+                            "x": -16.0,
+                            "y": -7.0
+                        },
+                        {
+                            "x": -11.0,
+                            "y": -7.0
+                        },
+                        {
+                            "x": -6.0,
+                            "y": -7.0
+                        }
+                    ]
+                },
+                {
+                    "texto": "Ajudar o morador a firmar a placa",
+                    "regiao": "mercado",
+                    "ponto": "pdf_ajuda_morador",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Ajudar o morador a firmar a placa.",
+                    "eventos": [
+                        "r24_m08_09"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Morador: A placa está solta. Pode me ajudar a firmá-la?",
+                        "Neto: Pronto. Agora ela indica o caminho com segurança."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Acompanhar o retorno pela rua da igreja",
+                    "regiao": "rua",
+                    "ponto": "pdf_proc_rua",
+                    "horario": "dia",
+                    "acao": "escolta",
+                    "atividade": "",
+                    "registro": "Acompanhar o retorno pela rua da igreja.",
+                    "eventos": [
+                        "r24_m08_10"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Acompanhar o retorno pela rua da igreja."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": [
+                        {
+                            "x": -20.0,
+                            "y": -6.0
+                        },
+                        {
+                            "x": -14.0,
+                            "y": -6.0
+                        },
+                        {
+                            "x": -8.0,
+                            "y": -6.0
+                        }
+                    ]
+                },
+                {
+                    "texto": "Encerrar a procissão com Padre Ducéu",
+                    "regiao": "praca",
+                    "ponto": "npc_padre_duceu",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Encerrar a procissão com Padre Ducéu.",
+                    "eventos": [
+                        "r24_m08_11"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Padre Ducéu: O percurso foi concluído. Obrigado por ajudar a comunidade."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "fita_padroeira",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m09",
+            "titulo": "Conhecendo as redes",
+            "descricao": "Conheça o trabalho da fábrica antes de usar o tear.",
+            "recompensa": "Registro de tecelagem e acesso ao tutorial.",
+            "capitulo": "Saberes do tear",
+            "numero": 9,
+            "opcional": false,
+            "requerMissoes": [
+                "m08"
+            ],
+            "etapas": [
+                {
+                    "texto": "Conversar com o artesão na fábrica",
+                    "regiao": "fabrica",
+                    "ponto": "pdf_artesao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Receita didática: 3 fios preparados, 1 corda, 1 pano, 1 conjunto de punhos e 1 enfeite de palha. Fio simples, cera e itens de festa ficam fora da receita.",
+                    "eventos": [
+                        "r24_m09_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Uma rede não aparece pronta. Existe todo um trabalho por trás dela.",
+                        "Neto: Você pode me ensinar?",
+                        "Artesão: Posso. Primeiro, aprenda como os fios são organizados no tear."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m10",
+            "titulo": "O ponto que faltava",
+            "descricao": "Aprenda a organizar os fios com Rosa na oficina.",
+            "recompensa": "Aprendizado de tecelagem.",
+            "capitulo": "Saberes do tear",
+            "numero": 10,
+            "opcional": false,
+            "requerMissoes": [
+                "m09"
+            ],
+            "etapas": [
+                {
+                    "texto": "Completar o primeiro padrão com Rosa",
+                    "regiao": "oficina",
+                    "ponto": "npc_artesa",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "tear_tutorial",
+                    "registro": "Completar o primeiro padrão com Rosa.",
+                    "eventos": [
+                        "r24_m10_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesã: Cada fio tem seu lugar. Observe o padrão e organize-os na sequência correta.",
+                        "Neto: Vou prestar atenção."
+                    ],
+                    "falasConclusao": [
+                        "Artesã: Muito bem! A fabricação exige paciência e conhecimento."
+                    ],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m11",
+            "titulo": "O desafio do artesão",
+            "descricao": "Pratique um padrão mais longo. Errar permite tentar novamente.",
+            "recompensa": "Novo padrão guardado no caderno.",
+            "capitulo": "Saberes do tear",
+            "numero": 11,
+            "opcional": true,
+            "requerMissoes": [
+                "m10"
+            ],
+            "etapas": [
+                {
+                    "texto": "Resolver o padrão avançado do artesão",
+                    "regiao": "fabrica",
+                    "ponto": "pdf_artesao",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "tear_avancado",
+                    "registro": "Resolver o padrão avançado do artesão.",
+                    "eventos": [
+                        "r24_m11_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Agora quero ver se consegue usar o que aprendeu sem minha ajuda.",
+                        "Neto: E se eu errar?",
+                        "Artesão: Pode tentar novamente. Observe o padrão e aprenda com cada tentativa."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "padrao_avancado",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m12",
+            "titulo": "A encomenda esquecida",
+            "descricao": "Recupere a caixa e entregue a encomenda ao artesão. O comerciante completa somente os materiais que faltam.",
+            "recompensa": "Materiais faltantes para a rede, sem duplicar o que já foi obtido.",
+            "capitulo": "Saberes do tear",
+            "numero": 12,
+            "opcional": false,
+            "requerMissoes": [
+                "m10"
+            ],
+            "etapas": [
+                {
+                    "texto": "Receber a encomenda de Seu Bento",
+                    "regiao": "mercado",
+                    "ponto": "npc_feirante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Receber a encomenda de Seu Bento.",
+                    "eventos": [
+                        "r24_m12_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Comerciante: Esta encomenda está aqui há dias. Leve-a ao artesão, por favor.",
+                        "Neto: Vou entregar. Ele ainda precisa de materiais?",
+                        "Comerciante: Precisa de fios e tecido. Vou separar o que tenho depois que você recuperar a caixa no depósito."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Recuperar a caixa no depósito",
+                    "regiao": "mercado",
+                    "ponto": "pdf_caixa",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Recuperar a caixa no depósito.",
+                    "eventos": [
+                        "r24_m12_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recupera a caixa da encomenda."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "caixa_encomenda",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Buscar os materiais separados pelo comerciante",
+                    "regiao": "mercado",
+                    "ponto": "npc_feirante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Buscar os materiais separados pelo comerciante.",
+                    "eventos": [
+                        "r24_m12_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Seu Bento: Vou completar somente os materiais que ainda faltam para a sua rede.",
+                        "Você confere a bolsa antes de seguir para a fábrica."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": true,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Entregar a encomenda e observar o tecido",
+                    "regiao": "fabrica",
+                    "ponto": "pdf_artesao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "A encomenda chegou à fábrica. Os materiais foram conferidos e reservados para a rede do jogador. Uma marca no tecido foi observada, mas seu significado ainda não é conhecido.",
+                    "eventos": [
+                        "r24_m12_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: A encomenda chegou! Com os materiais que você trouxe, consigo continuar o trabalho.",
+                        "Neto: Encontrei também uma marca estranha em um dos materiais.",
+                        "Artesão: Guarde essa informação. Já ouvi alguém mencionar uma marca parecida perto do rio.",
+                        "Artesão: Os materiais conferidos ficam reservados com você para montar a própria rede no tear."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [
+                        {
+                            "id": "caixa_encomenda",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m13",
+            "titulo": "Construindo a própria rede",
+            "descricao": "Use o tear somente depois de aprender e reunir todos os materiais. Complete as cinco fases da montagem.",
+            "recompensa": "Rede própria; os materiais são consumidos apenas na conclusão.",
+            "capitulo": "Saberes do tear",
+            "numero": 13,
+            "opcional": false,
+            "requerMissoes": [
+                "m12"
+            ],
+            "etapas": [
+                {
+                    "texto": "Selecionar os materiais no tear",
+                    "regiao": "oficina",
+                    "ponto": "estacao_tear",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "rede_selecionar",
+                    "registro": "Selecionar os materiais no tear.",
+                    "eventos": [
+                        "r24_m13_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Você reuniu os materiais necessários?",
+                        "Neto: Tenho fios, corda, pano, punho e o enfeite.",
+                        "Artesão: Então vamos transformar esses materiais em uma rede."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": true,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Organizar os fios da rede",
+                    "regiao": "oficina",
+                    "ponto": "estacao_tear",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "rede_organizar",
+                    "registro": "Organizar os fios da rede.",
+                    "eventos": [
+                        "r24_m13_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Rosa: Agora organize os fios antes de entrelaçar."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": true,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Entrelaçar a trama alternada",
+                    "regiao": "oficina",
+                    "ponto": "estacao_tear",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "rede_entrelacar",
+                    "registro": "Entrelaçar a trama alternada.",
+                    "eventos": [
+                        "r24_m13_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você alterna as passagens por cima e por baixo."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": true,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Montar as partes da rede",
+                    "regiao": "oficina",
+                    "ponto": "estacao_tear",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "rede_montar",
+                    "registro": "Montar as partes da rede.",
+                    "eventos": [
+                        "r24_m13_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Cada parte tem uma função na montagem da rede."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": true,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Finalizar a própria rede",
+                    "regiao": "oficina",
+                    "ponto": "estacao_tear",
+                    "horario": "dia",
+                    "acao": "atividade",
+                    "atividade": "rede_finalizar",
+                    "registro": "Rede própria concluída após seleção, organização, entrelaçamento, montagem e conferência. Receita didática simplificada.",
+                    "eventos": [
+                        "r24_m13_05"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Confira a trama, os punhos e o acabamento para finalizar sua rede."
+                    ],
+                    "falasConclusao": [
+                        "Neto: Agora entendo que cada parte exige cuidado.",
+                        "Artesão: E que o trabalho guarda conhecimento e tradição."
+                    ],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": true,
+                    "fabricarRede": true,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m14",
+            "titulo": "A festa precisa continuar",
+            "descricao": "Reúna os itens da celebração, prepare a praça e converse com os moradores.",
+            "recompensa": "Enfeite da festa e celebração comunitária.",
+            "capitulo": "Uma cidade que celebra",
+            "numero": 14,
+            "opcional": false,
+            "requerMissoes": [
+                "m13"
+            ],
+            "etapas": [
+                {
+                    "texto": "Conversar com a moradora sobre a festa",
+                    "regiao": "praca",
+                    "ponto": "pdf_moradora",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com a moradora sobre a festa.",
+                    "eventos": [
+                        "r24_m14_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Moradora: A festa está chegando, mas ainda faltam enfeites, bancos, luminárias e flores.",
+                        "Neto: Vou procurar os itens pela cidade."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Buscar flores para a festa",
+                    "regiao": "vila",
+                    "ponto": "pdf_flores",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Buscar flores para a festa.",
+                    "eventos": [
+                        "r24_m14_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você reúne flores para levar à praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "flores_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Buscar bancos para a festa",
+                    "regiao": "mercado",
+                    "ponto": "pdf_bancos",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Buscar bancos para a festa.",
+                    "eventos": [
+                        "r24_m14_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você reúne bancos para levar à praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "bancos_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Buscar luminárias para a festa",
+                    "regiao": "rua",
+                    "ponto": "pdf_luminarias",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Buscar luminárias para a festa.",
+                    "eventos": [
+                        "r24_m14_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você reúne luminárias para levar à praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "luminarias_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Buscar decorações para a festa",
+                    "regiao": "largo",
+                    "ponto": "pdf_decoracoes",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Buscar decorações para a festa.",
+                    "eventos": [
+                        "r24_m14_05"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você reúne decorações para levar à praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "decoracoes_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Entregar os itens a Padre Ducéu",
+                    "regiao": "praca",
+                    "ponto": "npc_padre_duceu",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "A praça foi preparada para a celebração. A festa é um evento distinto da procissão.",
+                    "eventos": [
+                        "r24_m14_06"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Padre Ducéu: Quando tudo estiver pronto, a praça poderá receber os moradores.",
+                        "Neto: Consegui reunir o que faltava."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [
+                        {
+                            "id": "flores_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "bancos_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "luminarias_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "decoracoes_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Conversar com os moradores na celebração",
+                    "regiao": "praca",
+                    "ponto": "pdf_moradora",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com os moradores na celebração.",
+                    "eventos": [
+                        "r24_m14_07"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Moradora: Graças à sua ajuda, podemos começar a celebração!",
+                        "Moradora: Os moradores já podem se reunir na praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "enfeite_festa",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m15",
+            "titulo": "O caminho das lembranças",
+            "descricao": "Revisite o mosaico da praça, a igreja e o mercado e registre um elemento de cada lugar.",
+            "recompensa": "Três registros de memória, sem pista obrigatória do mistério.",
+            "capitulo": "Uma cidade que celebra",
+            "numero": 15,
+            "opcional": true,
+            "requerMissoes": [
+                "m14"
+            ],
+            "etapas": [
+                {
+                    "texto": "Ouvir a proposta de Simão",
+                    "regiao": "praca",
+                    "ponto": "npc_simao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Ouvir a proposta de Simão.",
+                    "eventos": [
+                        "r24_m15_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Simão de Góis: Visite três lugares que você já conhece e observe o que cada um representa.",
+                        "Neto: Preciso encontrar algo específico?",
+                        "Simão de Góis: Observe o cenário. Às vezes, o lugar já conta uma história."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Observar o mosaico da praça",
+                    "regiao": "praca",
+                    "ponto": "pdf_mem_praca",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "O mosaico marca um espaço de encontro na representação da praça.",
+                    "eventos": [
+                        "r24_m15_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "O mosaico marca um espaço de encontro na representação da praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Observar a fachada da igreja",
+                    "regiao": "praca",
+                    "ponto": "pdf_mem_igreja",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "A fachada da igreja integra o cenário e as memórias de convivência da praça.",
+                    "eventos": [
+                        "r24_m15_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "A fachada da igreja integra o cenário e as memórias de convivência da praça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Observar as bancas do mercado",
+                    "regiao": "mercado",
+                    "ponto": "pdf_mem_mercado",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "As bancas aproximam trabalho, circulação e conversas na cidade.",
+                    "eventos": [
+                        "r24_m15_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "As bancas aproximam trabalho, circulação e conversas na cidade."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m16",
+            "titulo": "O recado do Mercado Velho",
+            "descricao": "Examine o bilhete encontrado entre as mercadorias e leve-o ao museu.",
+            "recompensa": "Bilhete e amostra de tecido para comparar o símbolo.",
+            "capitulo": "Os fios do mistério",
+            "numero": 16,
+            "opcional": false,
+            "requerMissoes": [
+                "m14"
+            ],
+            "etapas": [
+                {
+                    "texto": "Examinar o bilhete com Seu Bento",
+                    "regiao": "mercado",
+                    "ponto": "npc_feirante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Examinar o bilhete com Seu Bento.",
+                    "eventos": [
+                        "r24_m16_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Comerciante: Encontrei este bilhete entre as mercadorias. O desenho parece com uma marca que vi em outro lugar.",
+                        "Neto: Estou investigando uma marca parecida. Vou levar o bilhete ao guia do museu."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "bilhete",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "amostra_tecido",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "bilhete",
+                    "percurso": []
+                },
+                {
+                    "texto": "Levar o bilhete à guia do museu",
+                    "regiao": "museu",
+                    "ponto": "npc_guia",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "A guia recomenda comparar o bilhete com uma fotografia dos arquivos. Ainda faltam elementos para identificar o desenho.",
+                    "eventos": [
+                        "r24_m16_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Guia: Ainda não sei o que significa, mas uma fotografia antiga pode ajudar a comparar os desenhos.",
+                        "Comerciante: Procure nos arquivos do museu e volte quando souber mais."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m17",
+            "titulo": "O tear parado",
+            "descricao": "Investigue o desaparecimento da peça do tear, recupere-a e devolva-a à fábrica.",
+            "recompensa": "Peça devolvida à fábrica e pista registrada.",
+            "capitulo": "Os fios do mistério",
+            "numero": 17,
+            "opcional": false,
+            "requerMissoes": [
+                "m16"
+            ],
+            "etapas": [
+                {
+                    "texto": "Ouvir o artesão sobre o tear parado",
+                    "regiao": "fabrica",
+                    "ponto": "pdf_artesao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Ouvir o artesão sobre o tear parado.",
+                    "eventos": [
+                        "r24_m17_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Uma peça de madeira desapareceu e não consigo continuar o trabalho.",
+                        "Neto: O comerciante esteve aqui?"
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Perguntar ao comerciante sobre a peça",
+                    "regiao": "mercado",
+                    "ponto": "npc_feirante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Perguntar ao comerciante sobre a peça.",
+                    "eventos": [
+                        "r24_m17_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Comerciante: Vi alguém saindo apressado. A pessoa deixou um pedaço de corda.",
+                        "Neto: Vou seguir as marcas e procurar a peça."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Seguir as marcas próximas ao depósito",
+                    "regiao": "mercado",
+                    "ponto": "pdf_marcas_mercado",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Seguir as marcas próximas ao depósito.",
+                    "eventos": [
+                        "r24_m17_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Um pedaço de corda e marcas no chão indicam o depósito próximo."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Recuperar a peça de madeira",
+                    "regiao": "mercado",
+                    "ponto": "pdf_peca_tear",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Recuperar a peça de madeira.",
+                    "eventos": [
+                        "r24_m17_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você recupera a peça. Um símbolo foi gravado em uma das faces."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "peca_madeira",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Devolver a peça e comparar o símbolo",
+                    "regiao": "fabrica",
+                    "ponto": "pdf_artesao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Devolver a peça e comparar o símbolo.",
+                    "eventos": [
+                        "r24_m17_05"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Você encontrou a peça! Há um símbolo gravado nela.",
+                        "Neto: Já vi uma marca parecida no bilhete.",
+                        "Artesão: Um morador mencionou algo parecido perto do rio."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [
+                        {
+                            "id": "peca_madeira",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "tear",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m18",
+            "titulo": "Os sons do rio",
+            "descricao": "Investigue a margem durante o dia, volte à noite e use as pistas para escolher a passagem.",
+            "recompensa": "Papel da margem, peça com símbolo e registro do rio.",
+            "capitulo": "Os fios do mistério",
+            "numero": 18,
+            "opcional": false,
+            "requerMissoes": [
+                "m17"
+            ],
+            "etapas": [
+                {
+                    "texto": "Conversar com o morador da margem",
+                    "regiao": "rio",
+                    "ponto": "pdf_morador_rio",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com o morador da margem.",
+                    "eventos": [
+                        "r24_m18_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: O artesão disse que você encontrou uma marca por aqui.",
+                        "Morador: Tenho escutado sons estranhos à noite. Encontrei este papel perto da margem.",
+                        "Neto: Vou examinar o lugar durante o dia e voltar quando escurecer."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "papel_rio",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "papel_rio",
+                    "percurso": []
+                },
+                {
+                    "texto": "Examinar as marcas durante o dia",
+                    "regiao": "rio",
+                    "ponto": "pdf_rio_dia1",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Examinar as marcas durante o dia.",
+                    "eventos": [
+                        "r24_m18_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "As marcas acompanham a margem. O ruído pode vir de outra direção."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Registrar as pedras secas do caminho",
+                    "regiao": "rio",
+                    "ponto": "pdf_rio_dia2",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Registrar as pedras secas do caminho.",
+                    "eventos": [
+                        "r24_m18_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você registra as pedras secas e a margem como referências para voltar à noite."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Resolver o obstáculo da margem à noite",
+                    "regiao": "rio",
+                    "ponto": "pdf_obstaculo_rio",
+                    "horario": "noite",
+                    "acao": "atividade",
+                    "atividade": "rio_passagem",
+                    "registro": "Resolver o obstáculo da margem à noite.",
+                    "eventos": [
+                        "r24_m18_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: O caminho mudou. Preciso usar as pistas, não seguir o som sem pensar."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Recolher a peça marcada junto ao rio",
+                    "regiao": "rio",
+                    "ponto": "pdf_peca_rio",
+                    "horario": "noite",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Recolher a peça marcada junto ao rio.",
+                    "eventos": [
+                        "r24_m18_05"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Você encontra uma pequena peça com o mesmo símbolo.",
+                        "Uma figura passa ao longe. Ainda não é possível identificá-la."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "peca_rio",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "rio",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m19",
+            "titulo": "A fotografia esquecida",
+            "descricao": "Compare o bilhete e a peça do rio, encontre a fotografia e apresente-a a Simão.",
+            "recompensa": "Fotografia e frase registradas.",
+            "capitulo": "Os fios do mistério",
+            "numero": 19,
+            "opcional": false,
+            "requerMissoes": [
+                "m18"
+            ],
+            "etapas": [
+                {
+                    "texto": "Pedir à guia acesso aos arquivos",
+                    "regiao": "museu",
+                    "ponto": "npc_guia",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Pedir à guia acesso aos arquivos.",
+                    "eventos": [
+                        "r24_m19_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Guia: Com o bilhete e a peça do rio, podemos comparar os desenhos. Procure a fotografia entre os arquivos."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar a fotografia e ler o verso",
+                    "regiao": "museu",
+                    "ponto": "pdf_foto",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar a fotografia e ler o verso.",
+                    "eventos": [
+                        "r24_m19_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Encontrei uma frase no verso: ‘Procure onde as histórias se encontram’.",
+                        "Guia: Não sabemos ainda o que significa. Leve a fotografia a Simão."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "fotografia",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "fotografia",
+                    "percurso": []
+                },
+                {
+                    "texto": "Apresentar a fotografia a Simão",
+                    "regiao": "praca",
+                    "ponto": "npc_simao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Apresentar a fotografia a Simão.",
+                    "eventos": [
+                        "r24_m19_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Simão de Góis: Não tire conclusões antes de conhecer todas as pistas. Continue investigando."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m20",
+            "titulo": "O visitante da Serra",
+            "descricao": "Procure o fragmento na trilha e peça a Dona Feliciana que observe o desenho.",
+            "recompensa": "Fragmento de mapa.",
+            "capitulo": "Os fios do mistério",
+            "numero": 20,
+            "opcional": false,
+            "requerMissoes": [
+                "m19"
+            ],
+            "etapas": [
+                {
+                    "texto": "Conversar com o visitante da Serra",
+                    "regiao": "serra",
+                    "ponto": "pdf_visitante",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com o visitante da Serra.",
+                    "eventos": [
+                        "r24_m20_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Estou procurando uma marca que pode estar relacionada a este lugar.",
+                        "Visitante: Encontrei algo parecido perto do caminho que leva ao Cruzeiro."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar o fragmento na trilha",
+                    "regiao": "serra",
+                    "ponto": "pdf_fragmento",
+                    "horario": "dia",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar o fragmento na trilha.",
+                    "eventos": [
+                        "r24_m20_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Este papel parece um fragmento de mapa."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "fragmento_mapa",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "mapa",
+                    "percurso": []
+                },
+                {
+                    "texto": "Mostrar o fragmento a Dona Feliciana",
+                    "regiao": "praca",
+                    "ponto": "npc_feliciana",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Mostrar o fragmento a Dona Feliciana.",
+                    "eventos": [
+                        "r24_m20_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Dona Feliciana: O desenho me lembra um caminho antigo, mas não posso afirmar para onde leva."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m21",
+            "titulo": "A passagem que desapareceu",
+            "descricao": "Volte à trilha à noite. Compare as referências do dia e encontre uma passagem alternativa.",
+            "recompensa": "Chave antiga.",
+            "capitulo": "Os fios do mistério",
+            "numero": 21,
+            "opcional": false,
+            "requerMissoes": [
+                "m20"
+            ],
+            "etapas": [
+                {
+                    "texto": "Comparar o fragmento com a passagem noturna",
+                    "regiao": "serra",
+                    "ponto": "pdf_passagem",
+                    "horario": "noite",
+                    "acao": "atividade",
+                    "atividade": "serra_passagem",
+                    "registro": "Comparar o fragmento com a passagem noturna.",
+                    "eventos": [
+                        "r24_m21_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: O mapa indica este caminho, mas a passagem não está como antes.",
+                        "Voz misteriosa: Nem todo caminho continua aberto depois que o sol se põe.",
+                        "Neto: Quem está falando?",
+                        "Voz misteriosa: Procure o caminho que você deixou para trás."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar a chave no caminho alternativo",
+                    "regiao": "serra",
+                    "ponto": "pdf_chave",
+                    "horario": "noite",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar a chave no caminho alternativo.",
+                    "eventos": [
+                        "r24_m21_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Encontrei uma chave. Vou guardá-la até descobrir o que abre."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "chave_antiga",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "chave",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m22",
+            "titulo": "O baú da oficina",
+            "descricao": "Use a chave no baú da oficina e leve os registros ao museu.",
+            "recompensa": "Documento antigo e tecido marcado no caderno.",
+            "capitulo": "Os fios do mistério",
+            "numero": 22,
+            "opcional": false,
+            "requerMissoes": [
+                "m21"
+            ],
+            "etapas": [
+                {
+                    "texto": "Conversar com o artesão sobre o baú",
+                    "regiao": "fabrica",
+                    "ponto": "pdf_artesao",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Conversar com o artesão sobre o baú.",
+                    "eventos": [
+                        "r24_m22_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Encontrei um baú trancado enquanto organizava a oficina.",
+                        "Neto: Talvez esta chave funcione."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Abrir o baú com a chave antiga",
+                    "regiao": "oficina",
+                    "ponto": "pdf_bau",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Abrir o baú com a chave antiga.",
+                    "eventos": [
+                        "r24_m22_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Artesão: Dentro há um documento e um tecido com o símbolo."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "documento_antigo",
+                            "quantidade": 1,
+                            "minimo": false
+                        },
+                        {
+                            "id": "tecido_marcado",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [
+                        {
+                            "id": "chave_antiga",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "documento",
+                    "percurso": []
+                },
+                {
+                    "texto": "Registrar o documento e o tecido no museu",
+                    "regiao": "museu",
+                    "ponto": "npc_guia",
+                    "horario": "dia",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Registrar o documento e o tecido no museu.",
+                    "eventos": [
+                        "r24_m22_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Guia: Precisamos registrar tudo com cuidado. Ainda não podemos afirmar o que significa."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m23",
+            "titulo": "A sombra na praça",
+            "descricao": "Compare as evidências à noite, escolha o caminho indicado e encontre Simão.",
+            "recompensa": "Medalhão e acesso ao novo ponto de investigação.",
+            "capitulo": "Os fios do mistério",
+            "numero": 23,
+            "opcional": false,
+            "requerMissoes": [
+                "m22"
+            ],
+            "etapas": [
+                {
+                    "texto": "Comparar as pistas na praça à noite",
+                    "regiao": "praca",
+                    "ponto": "pdf_comparar_praca",
+                    "horario": "noite",
+                    "acao": "atividade",
+                    "atividade": "praca_pistas",
+                    "registro": "Comparar as pistas na praça à noite.",
+                    "eventos": [
+                        "r24_m23_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: A sombra apareceu de novo. Encontrei o símbolo no bilhete, na fábrica, perto do rio e no tecido.",
+                        "Simão de Góis: Você está começando a perceber que as histórias se cruzam.",
+                        "Neto: Por que isso acontece à noite?",
+                        "Simão de Góis: Ainda não temos uma resposta. Compare as pistas e observe os caminhos."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Escolher o caminho indicado pelas pistas",
+                    "regiao": "praca",
+                    "ponto": "pdf_comparar_praca",
+                    "horario": "noite",
+                    "acao": "atividade",
+                    "atividade": "praca_caminho",
+                    "registro": "Escolher o caminho indicado pelas pistas.",
+                    "eventos": [
+                        "r24_m23_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Vou comparar as anotações antes de seguir a sombra."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar o medalhão junto ao mosaico",
+                    "regiao": "praca",
+                    "ponto": "pdf_medalhao",
+                    "horario": "noite",
+                    "acao": "coleta",
+                    "atividade": "",
+                    "registro": "Encontrar o medalhão junto ao mosaico.",
+                    "eventos": [
+                        "r24_m23_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Um medalhão com o símbolo foi deixado próximo ao mosaico da praça.",
+                        "Não há informação suficiente para dizer quem o deixou."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "medalhao",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "medalhao",
+                    "percurso": []
+                },
+                {
+                    "texto": "Encontrar Simão e registrar o novo caminho",
+                    "regiao": "praca",
+                    "ponto": "npc_simao",
+                    "horario": "noite",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Encontrar Simão e registrar o novo caminho.",
+                    "eventos": [
+                        "r24_m23_04"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Neto: Não descobri quem era, mas agora sei que preciso investigar o próximo lugar."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        },
+        {
+            "id": "m24",
+            "titulo": "Quando todas as histórias se encontram",
+            "descricao": "Reúna Dona Feliciana, Simão, o artesão e o comerciante. Organize as evidências e marque o próximo destino.",
+            "recompensa": "Novo capítulo desbloqueado; o mistério continua em aberto.",
+            "capitulo": "Os fios do mistério",
+            "numero": 24,
+            "opcional": false,
+            "requerMissoes": [
+                "m23"
+            ],
+            "etapas": [
+                {
+                    "texto": "Reunir os personagens na Praça Matriz",
+                    "regiao": "praca",
+                    "ponto": "pdf_reuniao",
+                    "horario": "livre",
+                    "acao": "conversa",
+                    "atividade": "",
+                    "registro": "Reunir os personagens na Praça Matriz.",
+                    "eventos": [
+                        "r24_m24_01"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Dona Feliciana: Você tem andado bastante pela cidade. O que descobriu?",
+                        "Neto: Encontrei bilhete, fotografia, documento, mapa e marcas iguais em lugares diferentes.",
+                        "Artesão: Reconheço o desenho que apareceu na peça da fábrica.",
+                        "Comerciante: E eu vi uma marca parecida no bilhete.",
+                        "Simão de Góis: Essas pistas parecem relacionadas, mas ainda precisamos descobrir quem as deixou e por quê.",
+                        "Neto: Então vamos continuar. Agora sabemos que existe um caminho a seguir."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Organizar as evidências e revelar o próximo destino",
+                    "regiao": "praca",
+                    "ponto": "pdf_reuniao",
+                    "horario": "livre",
+                    "acao": "atividade",
+                    "atividade": "convergencia",
+                    "registro": "As evidências foram organizadas. Um novo caminho de investigação foi marcado. A origem do símbolo e a identidade da figura permanecem desconhecidas.",
+                    "eventos": [
+                        "r24_m24_02"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Simão de Góis: Vamos ordenar os registros e comparar os caminhos."
+                    ],
+                    "falasConclusao": [
+                        "Simão de Góis: Agora sabemos que as pistas se relacionam. Ainda precisamos descobrir quem as deixou e por quê.",
+                        "Neto: Vamos continuar. O próximo caminho ficou marcado no mapa."
+                    ],
+                    "conceder": [
+                        {
+                            "id": "capitulo_seguinte",
+                            "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                }
+            ]
+        }
+    ],
+    "itens": [
+        {
+            "id": "fio_simples",
+            "nome": "Fio simples",
+            "categoria": "lembranca",
+            "descricao": "Lembrança inicial da jornada. Não substitui os fios preparados para o tear.",
+            "regiao": "praca",
+            "origem": "Dona Feliciana",
+            "dica": "",
+            "icone": "novelo",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "algodao",
+            "nome": "Algodão",
+            "categoria": "material",
+            "descricao": "Matéria-prima que pode ser preparada na oficina após o tutorial.",
+            "regiao": "sitio",
+            "origem": "Sítio do Algodão",
+            "dica": "Seis algodões permitem completar até três fios preparados.",
+            "icone": "algodao",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "fio",
+            "nome": "Fios preparados",
+            "categoria": "material",
+            "descricao": "Três fios preparados para a trama da rede.",
+            "regiao": "mercado",
+            "origem": "Encomenda de Seu Bento",
+            "dica": "A encomenda completa apenas os materiais ainda faltantes.",
+            "icone": "carretel",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "corda",
+            "nome": "Corda",
+            "categoria": "material",
+            "descricao": "Material de sustentação recebido na introdução à Serra.",
+            "regiao": "praca",
+            "origem": "Simão de Góis",
+            "dica": "A encomenda completa apenas os materiais ainda faltantes.",
+            "icone": "corda",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "pano",
+            "nome": "Pano",
+            "categoria": "material",
+            "descricao": "Material de acabamento recebido ao conhecer a Serra.",
+            "regiao": "serra",
+            "origem": "Visitante da Serra",
+            "dica": "A encomenda completa apenas os materiais ainda faltantes.",
+            "icone": "pano",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "punho",
+            "nome": "Punhos",
+            "categoria": "material",
+            "descricao": "Conjunto usado na montagem das extremidades.",
+            "regiao": "mercado",
+            "origem": "Objetos devolvidos ao comerciante",
+            "dica": "A encomenda completa apenas os materiais ainda faltantes.",
+            "icone": "punho",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "enfeite",
+            "nome": "Enfeite de palha",
+            "categoria": "material",
+            "descricao": "Enfeite de palha de carnaúba que permanece na bolsa até a fabricação.",
+            "regiao": "praca",
+            "origem": "Próximo aos bancos da Praça Matriz",
+            "dica": "A encomenda completa apenas os materiais ainda faltantes.",
+            "icone": "palha",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "rede",
+            "nome": "Rede própria",
+            "categoria": "lembranca",
+            "descricao": "Resultado das cinco fases da montagem didática. Ela permanece com o jogador.",
+            "regiao": "oficina",
+            "origem": "Tear da fábrica",
+            "dica": "",
+            "icone": "rede",
+            "ocultoAteObter": false
+        },
+        {
+            "id": "cera",
+            "nome": "Cera de carnaúba",
+            "categoria": "lembranca",
+            "descricao": "Lembrança cultural do museu. Não entra na receita da rede.",
+            "regiao": "museu",
+            "origem": "Registro da jornada",
+            "dica": "",
+            "icone": "cera",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "moedas",
+            "nome": "Moedas",
+            "categoria": "lembranca",
+            "descricao": "Recompensa da introdução noturna. Não são exigidas para fabricar a rede.",
+            "regiao": "praca",
+            "origem": "Registro da jornada",
+            "dica": "",
+            "icone": "moedas",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "fita_padroeira",
+            "nome": "Fita da Padroeira",
+            "categoria": "lembranca",
+            "descricao": "Lembrança da única missão de procissão.",
+            "regiao": "praca",
+            "origem": "Registro da jornada",
+            "dica": "",
+            "icone": "fita",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "enfeite_festa",
+            "nome": "Enfeite da festa",
+            "categoria": "lembranca",
+            "descricao": "Lembrança da celebração, diferente do enfeite de palha usado na rede.",
+            "regiao": "praca",
+            "origem": "Registro da jornada",
+            "dica": "",
+            "icone": "bandeiras",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "padrao_avancado",
+            "nome": "Padrão avançado",
+            "categoria": "lembranca",
+            "descricao": "Padrão conquistado no desafio opcional do artesão.",
+            "regiao": "fabrica",
+            "origem": "Registro da jornada",
+            "dica": "",
+            "icone": "padrao",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "capitulo_seguinte",
+            "nome": "Novo capítulo",
+            "categoria": "lembranca",
+            "descricao": "As evidências abriram um novo caminho de investigação.",
+            "regiao": "praca",
+            "origem": "Registro da jornada",
+            "dica": "",
+            "icone": "caminho",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "objeto_museu",
+            "nome": "Peça do museu",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "museu",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "vaso",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "objeto_mercado_1",
+            "nome": "Objeto da banca 1",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "mercado",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "cesto",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "objeto_mercado_2",
+            "nome": "Objeto da banca 2",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "mercado",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "vaso",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "objeto_mercado_3",
+            "nome": "Objeto da banca 3",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "mercado",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "novelo",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "placa_sol",
+            "nome": "Placa do Sol",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "praca",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "sol",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "placa_folha",
+            "nome": "Placa da Folha",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "mercado",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "folha",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "placa_sino",
+            "nome": "Placa do Sino",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "rua",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "sino",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "caixa_encomenda",
+            "nome": "Caixa da encomenda",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "mercado",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "caixa",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "flores_festa",
+            "nome": "Flores da festa",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "vila",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "flores",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "bancos_festa",
+            "nome": "Bancos da festa",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "mercado",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "banco",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "luminarias_festa",
+            "nome": "Luminárias da festa",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "rua",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "lanterna",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "decoracoes_festa",
+            "nome": "Decorações da festa",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "largo",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "bandeiras",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "peca_madeira",
+            "nome": "Peça de madeira",
+            "categoria": "missao",
+            "descricao": "Objeto temporário para entregar durante a missão. A entrega retira o objeto físico da bolsa.",
+            "regiao": "mercado",
+            "origem": "Tarefa em andamento",
+            "dica": "",
+            "icone": "madeira",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "bilhete",
+            "nome": "Bilhete",
+            "categoria": "pista",
+            "descricao": "Primeiro registro formal do símbolo.",
+            "regiao": "mercado",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "bilhete",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "amostra_tecido",
+            "nome": "Amostra de tecido",
+            "categoria": "pista",
+            "descricao": "Amostra destinada à comparação do desenho, não ao consumo na receita.",
+            "regiao": "mercado",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "amostra",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "papel_rio",
+            "nome": "Papel da margem",
+            "categoria": "pista",
+            "descricao": "Indica as pedras secas como referência da passagem.",
+            "regiao": "rio",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "papel",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "peca_rio",
+            "nome": "Peça do rio",
+            "categoria": "pista",
+            "descricao": "Objeto com o símbolo encontrado na margem.",
+            "regiao": "rio",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "pedra",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "fotografia",
+            "nome": "Fotografia antiga",
+            "categoria": "pista",
+            "descricao": "No verso: “Procure onde as histórias se encontram”. Imagem e relato ficcionais.",
+            "regiao": "museu",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "foto",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "fragmento_mapa",
+            "nome": "Fragmento de mapa",
+            "categoria": "pista",
+            "descricao": "Indica o Cruzeiro, o marco de pedra e a trilha de retorno.",
+            "regiao": "serra",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "fragmento",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "chave_antiga",
+            "nome": "Chave antiga",
+            "categoria": "pista",
+            "descricao": "Abre o baú da oficina; o registro permanece depois do uso.",
+            "regiao": "serra",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "chave",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "documento_antigo",
+            "nome": "Documento antigo",
+            "categoria": "pista",
+            "descricao": "Documento ficcional com uma anotação sobre o mosaico da praça.",
+            "regiao": "oficina",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "documento",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "tecido_marcado",
+            "nome": "Tecido marcado",
+            "categoria": "pista",
+            "descricao": "Tecido do baú usado para comparar o símbolo.",
+            "regiao": "oficina",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "simbolo",
+            "ocultoAteObter": true
+        },
+        {
+            "id": "medalhao",
+            "nome": "Medalhão",
+            "categoria": "pista",
+            "descricao": "Encontrado na praça. Ainda não revela quem deixou as pistas.",
+            "regiao": "praca",
+            "origem": "Investigação do símbolo",
+            "dica": "Consulte a aba Pistas no caderno.",
+            "icone": "medalhao",
+            "ocultoAteObter": true
+        }
+    ],
+    "personagens": [
+        {
+            "id": "npc_cida",
+            "nome": "Dona Cida",
+            "papel": "Moradora da vila",
+            "natureza": "Ficção",
+            "descricao": "Recebe quem passa pelos quintais e apresenta a convivência na vila.",
+            "regiao": "vila",
+            "evento": "cida"
+        },
+        {
+            "id": "npc_artesa",
+            "nome": "Rosa",
+            "papel": "Tutorial de tecelagem na oficina",
+            "natureza": "Ficção",
+            "descricao": "Ajuda a preparar os fios e orienta o uso do tear.",
+            "regiao": "oficina",
+            "evento": "r24_m10_01"
+        },
+        {
+            "id": "npc_zeca",
+            "nome": "Zeca",
+            "papel": "Morador da rua",
+            "natureza": "Ficção",
+            "descricao": "Apresenta os encontros cotidianos da Rua do Comércio.",
+            "regiao": "rua",
+            "evento": "zeca"
+        },
+        {
+            "id": "npc_guia",
+            "nome": "Lia",
+            "papel": "Guia do Museu da Carnaúba",
+            "natureza": "Ficção",
+            "descricao": "Convida a observar o acervo e registrar a origem dos relatos.",
+            "regiao": "museu",
+            "evento": "r24_m05_01"
+        },
+        {
+            "id": "npc_feliciana",
+            "nome": "Dona Feliciana",
+            "papel": "Encontro de memória",
+            "natureza": "Representação artística",
+            "descricao": "Convida a observar a praça. Caracterização e falas dependem da pesquisa do projeto.",
+            "regiao": "praca",
+            "evento": "r24_m01_01"
+        },
+        {
+            "id": "npc_andre_lucio",
+            "nome": "André Lúcio",
+            "papel": "Narrador da lenda",
+            "natureza": "Representação artística",
+            "descricao": "Apresenta a versão da Mulher-Cavalo usada na aventura. Falas adaptadas.",
+            "regiao": "praca",
+            "evento": "andre"
+        },
+        {
+            "id": "npc_neto",
+            "nome": "Miguel",
+            "papel": "Organizador da mostra",
+            "natureza": "Ficção",
+            "descricao": "Miguel é um morador de apoio. A jornada principal começa com Dona Feliciana.",
+            "regiao": "praca",
+            "evento": "neto"
+        },
+        {
+            "id": "npc_padre_duceu",
+            "nome": "Padre Ducéu",
+            "papel": "Encontro de memória",
+            "natureza": "Representação artística",
+            "descricao": "Convida a pensar nos espaços de encontro e celebração.",
+            "regiao": "praca",
+            "evento": "r24_m08_05"
+        },
+        {
+            "id": "npc_simao",
+            "nome": "Simão de Góis",
+            "papel": "Memórias, lenda e comparação de pistas",
+            "natureza": "Representação artística",
+            "descricao": "Indica o percurso até a serra dentro da narrativa do jogo.",
+            "regiao": "praca",
+            "evento": "r24_m02_01"
+        },
+        {
+            "id": "npc_feirante",
+            "nome": "Seu Bento",
+            "papel": "Feirante",
+            "natureza": "Ficção",
+            "descricao": "Organiza as encomendas e entrega os punhos da rede.",
+            "regiao": "mercado",
+            "evento": "r24_m06_01"
+        },
+        {
+            "id": "npc_raimundo",
+            "nome": "Raimundo Jaguaribe",
+            "papel": "Encontro de memória",
+            "natureza": "Representação artística",
+            "descricao": "Propõe observar os registros e as transformações da cidade.",
+            "regiao": "mercado",
+            "evento": "raimundo"
+        },
+        {
+            "id": "npc_ivonete",
+            "nome": "Ivonete Maia",
+            "papel": "Encontro de memória",
+            "natureza": "Representação artística",
+            "descricao": "Convida a escutar relatos e comparar suas fontes.",
+            "regiao": "memorias",
+            "evento": "ivonete"
+        },
+        {
+            "id": "npc_gerardinho",
+            "nome": "Mestre Gerardinho",
+            "papel": "Encontro de memória",
+            "natureza": "Representação artística",
+            "descricao": "Participa dos encontros na Casa das Memórias.",
+            "regiao": "memorias",
+            "evento": "gerardinho"
+        },
+        {
+            "id": "npc_emilia",
+            "nome": "Emília Freitas",
+            "papel": "Encontro de memória",
+            "natureza": "Representação artística",
+            "descricao": "Abre espaço para imaginar e escrever sobre a jornada.",
+            "regiao": "memorias",
+            "evento": "emilia"
+        },
+        {
+            "id": "pdf_artesao",
+            "nome": "Artesão",
+            "papel": "Aprendizagem, encomenda e investigação",
+            "natureza": "Personagem ficcional",
+            "descricao": "Aprendizagem, encomenda e investigação. Diálogo autoral baseado no roteiro fornecido.",
+            "regiao": "fabrica",
+            "evento": "r24_m09_01"
+        },
+        {
+            "id": "pdf_visitante",
+            "nome": "Visitante da Serra",
+            "papel": "Memória do lugar e fragmento de mapa",
+            "natureza": "Personagem ficcional",
+            "descricao": "Memória do lugar e fragmento de mapa. Diálogo autoral baseado no roteiro fornecido.",
+            "regiao": "serra",
+            "evento": "r24_m03_03"
+        },
+        {
+            "id": "pdf_moradora",
+            "nome": "Moradora",
+            "papel": "Organização comunitária",
+            "natureza": "Personagem ficcional",
+            "descricao": "Organização comunitária. Diálogo autoral baseado no roteiro fornecido.",
+            "regiao": "praca",
+            "evento": "r24_m08_01"
+        },
+        {
+            "id": "pdf_morador_rio",
+            "nome": "Morador da margem",
+            "papel": "Referências do rio",
+            "natureza": "Personagem ficcional",
+            "descricao": "Referências do rio. Diálogo autoral baseado no roteiro fornecido.",
+            "regiao": "rio",
+            "evento": "r24_m18_01"
+        },
+        {
+            "id": "pdf_morador_placa",
+            "nome": "Morador com a placa",
+            "papel": "Caminha pela Rua do Comércio",
+            "natureza": "Personagem ficcional",
+            "descricao": "Caminha pela Rua do Comércio. Diálogo autoral baseado no roteiro fornecido.",
+            "regiao": "rua",
+            "evento": "r24_m08_04"
+        }
+    ],
+    "lugares": [
+        {
+            "id": "vila",
+            "nomeCurto": "Vila das Tecelãs",
+            "nome": "Vila das Tecelãs",
+            "grupo": "Saberes e ofícios",
+            "descricao": "Moradia e convivência das tecelãs, onde as histórias de trabalho se encontram com as da família.",
+            "ambiente": "Quintais · tecidos · conversa à porta"
+        },
+        {
+            "id": "oficina",
+            "nomeCurto": "Fábrica · oficina",
+            "nome": "Fábrica de redes · oficina",
+            "grupo": "Saberes e ofícios",
+            "descricao": "Lugar de aprender a preparar os fios e tecer a própria rede com Rosa.",
+            "ambiente": "Algodão · tear · fios · trabalho manual"
+        },
+        {
+            "id": "rio",
+            "nomeCurto": "Rio Jaguaribe",
+            "nome": "Rio Jaguaribe",
+            "grupo": "Paisagem e matéria-prima",
+            "descricao": "A margem do Jaguaribe convida à observação. À noite, o percurso revela outros indícios.",
+            "ambiente": "Água · pedras · margem · silêncio"
+        },
+        {
+            "id": "rua",
+            "nomeCurto": "Rua do Comércio",
+            "nome": "Rua do Comércio",
+            "grupo": "Centro e convivência",
+            "descricao": "Liga as conversas cotidianas, o comércio e o percurso da procissão.",
+            "ambiente": "Fachadas · movimento · estandartes"
+        },
+        {
+            "id": "museu",
+            "nomeCurto": "Museu da Carnaúba",
+            "nome": "Museu da Carnaúba",
+            "grupo": "Memória e investigação",
+            "descricao": "Objetos, fotografias e conversas com Lia ajudam a conhecer a carnaúba e comparar vestígios.",
+            "ambiente": "Acervo · papel · madeira · luz recolhida"
+        },
+        {
+            "id": "carnaubal",
+            "nomeCurto": "Carnaubal",
+            "nome": "Carnaubal",
+            "grupo": "Paisagem e matéria-prima",
+            "descricao": "Paisagem de carnaúbas que aproxima a jornada dos saberes sobre a palha e a cera.",
+            "ambiente": "Palha · folhas · sombra · vento"
+        },
+        {
+            "id": "largo",
+            "nomeCurto": "Av. Simão de Góis",
+            "nome": "Avenida Simão de Góis (Centro)",
+            "grupo": "Centro e convivência",
+            "descricao": "Espaço de passagem e de preparação coletiva para a festa.",
+            "ambiente": "Avenida · sombra · decoração"
+        },
+        {
+            "id": "praca",
+            "nomeCurto": "Praça Matriz",
+            "nome": "Praça Matriz",
+            "grupo": "Centro e convivência",
+            "descricao": "Encontro da comunidade, da igreja, do mosaico e das histórias que atravessam a jornada.",
+            "ambiente": "Convívio · bancos · mosaico · celebração"
+        },
+        {
+            "id": "mercado",
+            "nomeCurto": "Mercado Velho",
+            "nome": "Mercado Velho",
+            "grupo": "Centro e convivência",
+            "descricao": "Trocas, materiais e encomendas. As bancas também guardam os primeiros sinais da investigação.",
+            "ambiente": "Madeira · bancas · cestos · cores de terra"
+        },
+        {
+            "id": "entrada",
+            "nomeCurto": "Entrada",
+            "nome": "Entrada da cidade",
+            "grupo": "Portas da cidade",
+            "descricao": "Ponto de chegada, acolhimento e orientação para os primeiros encontros.",
+            "ambiente": "Acolhimento · caminhos de terra · luz quente"
+        },
+        {
+            "id": "sitio",
+            "nomeCurto": "Sítio do Algodão",
+            "nome": "Sítio do Algodão",
+            "grupo": "Paisagem e matéria-prima",
+            "descricao": "Origem do algodão e começo do caminho da matéria-prima até a rede.",
+            "ambiente": "Plantio · algodão · caminhos rurais"
+        },
+        {
+            "id": "beira",
+            "nomeCurto": "Beira-Rio",
+            "nome": "Beira-Rio · Polo de Lazer",
+            "grupo": "Paisagem e matéria-prima",
+            "descricao": "Trecho de passagem e contemplação junto ao rio, ligado aos caminhos da cidade.",
+            "ambiente": "Brisa · água · vegetação ribeirinha"
+        },
+        {
+            "id": "memorias",
+            "nomeCurto": "Casa das Memórias",
+            "nome": "Casa das Memórias",
+            "grupo": "Memória e investigação",
+            "descricao": "Casa de encontros e relatos: uma coleção de pessoas e lembranças da cidade.",
+            "ambiente": "Retratos · escuta · papel · afeto"
+        },
+        {
+            "id": "prefeitura",
+            "nomeCurto": "Prefeitura e Praça",
+            "nome": "Prefeitura e Praça",
+            "grupo": "Centro e convivência",
+            "descricao": "Um respiro na caminhada pela cidade e um ponto de referência entre os caminhos.",
+            "ambiente": "Praça aberta · orientação · vida cotidiana"
+        },
+        {
+            "id": "fabrica",
+            "nomeCurto": "Fábrica · pátio",
+            "nome": "Fábrica de redes · pátio",
+            "grupo": "Saberes e ofícios",
+            "descricao": "Pátio de encontro com o artesão, das encomendas e dos desafios de tecelagem.",
+            "ambiente": "Ofício · madeira · secagem · tramas"
+        },
+        {
+            "id": "serra",
+            "nomeCurto": "Serra Dantas",
+            "nome": "Serra Dantas",
+            "grupo": "Paisagem e matéria-prima",
+            "descricao": "Trilha, Cruzeiro e encontros que ajudam a conectar a memória do lugar às pistas.",
+            "ambiente": "Pedra · subida · horizonte · mistério"
+        }
+    ],
+    "dialogos": [
+        {
+            "id": "npc_neto",
+            "nome": "Miguel · morador",
+            "fonte": "Rede de Memorias - Memorias Tecidas",
+            "falas": [
+                "Miguel: Procure Dona Feliciana para dar os primeiros passos. O mapa mostra onde encontrá-la.",
+                "No caderno, você pode acompanhar as missões e rever os lugares e as lembranças da jornada."
+            ]
+        }
+    ],
+    "encerramento": [
+        "A primeira investigação abriu um novo caminho. O símbolo e a figura noturna continuam sem explicação."
+    ],
+    "pontosNovos": [
+        {
+            "id": "pdf_visitante",
+            "nome": "Visitante da Serra",
+            "regiao": "serra",
+            "tipo": "roteiro",
+            "modeloRegiao": "praca",
+            "modeloPonto": "npc_andre_lucio",
+            "modeloObjeto": "",
+            "visual": "pessoa",
+            "habilitarEvento": "",
+            "x": -5.0,
+            "y": -4.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_moradora",
+            "nome": "Moradora · organização comunitária",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "vila",
+            "modeloPonto": "npc_cida",
+            "modeloObjeto": "",
+            "visual": "pessoa",
+            "habilitarEvento": "",
+            "x": -6.0,
+            "y": -8.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_artesao",
+            "nome": "Artesão · fábrica de redes",
+            "regiao": "fabrica",
+            "tipo": "roteiro",
+            "modeloRegiao": "mercado",
+            "modeloPonto": "npc_feirante",
+            "modeloObjeto": "",
+            "visual": "pessoa",
+            "habilitarEvento": "",
+            "x": -8.0,
+            "y": -6.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_morador_rio",
+            "nome": "Morador da margem",
+            "regiao": "rio",
+            "tipo": "roteiro",
+            "modeloRegiao": "rua",
+            "modeloPonto": "npc_zeca",
+            "modeloObjeto": "",
+            "visual": "pessoa",
+            "habilitarEvento": "",
+            "x": -7.0,
+            "y": -17.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_morador_placa",
+            "nome": "Morador com a placa",
+            "regiao": "rua",
+            "tipo": "roteiro",
+            "modeloRegiao": "rua",
+            "modeloPonto": "npc_zeca",
+            "modeloObjeto": "",
+            "visual": "pessoa",
+            "habilitarEvento": "",
+            "x": 7.0,
+            "y": -5.0,
+            "andar": true,
+            "patrulha": [
+                {
+                    "x": 7.0,
+                    "y": -5.0
+                },
+                {
+                    "x": 13.0,
+                    "y": -5.0
+                },
+                {
+                    "x": 13.0,
+                    "y": -7.0
+                },
+                {
+                    "x": 7.0,
+                    "y": -7.0
+                }
+            ]
+        },
+        {
+            "id": "pdf_trilha_serra",
+            "nome": "Observar a trilha",
+            "regiao": "serra",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "pedra",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": -4.0,
+            "y": -8.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_aparicao_praca",
+            "nome": "Observar a silhueta distante",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "silhueta",
+            "habilitarEvento": "",
+            "x": 12.0,
+            "y": -12.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_placa_praca",
+            "nome": "Placa do Sol",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": 9.0,
+            "y": -10.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_placa_mercado",
+            "nome": "Placa da Folha",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": -12.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_proc_praca",
+            "nome": "Acompanhar a procissão · praça",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "praca",
+            "modeloPonto": "npc_padre_duceu",
+            "modeloObjeto": "",
+            "visual": "procissao",
+            "habilitarEvento": "",
+            "x": 0.0,
+            "y": -10.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_proc_mercado",
+            "nome": "Acompanhar a procissão · mercado",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "praca",
+            "modeloPonto": "npc_padre_duceu",
+            "modeloObjeto": "",
+            "visual": "procissao",
+            "habilitarEvento": "",
+            "x": -16.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_proc_rua",
+            "nome": "Acompanhar a procissão · rua da igreja",
+            "regiao": "rua",
+            "tipo": "roteiro",
+            "modeloRegiao": "praca",
+            "modeloPonto": "npc_padre_duceu",
+            "modeloObjeto": "",
+            "visual": "procissao",
+            "habilitarEvento": "",
+            "x": -20.0,
+            "y": -6.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_ajuda_banco",
+            "nome": "Liberar o banco do percurso",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "banco",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": 12.0,
+            "y": -10.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_ajuda_morador",
+            "nome": "Ajudar o morador com a placa",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "rua",
+            "modeloPonto": "npc_zeca",
+            "modeloObjeto": "",
+            "visual": "pessoa",
+            "habilitarEvento": "",
+            "x": -6.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_caixa",
+            "nome": "Caixa da encomenda",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "caixotes",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": -23.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_flores",
+            "nome": "Flores da comunidade",
+            "regiao": "vila",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "arbusto_florido",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": -4.0,
+            "y": -6.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_bancos",
+            "nome": "Bancos para a festa",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "banco",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": 8.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_luminarias",
+            "nome": "Luminárias para a festa",
+            "regiao": "rua",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "poste_praca",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": 5.0,
+            "y": -6.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_decoracoes",
+            "nome": "Decorações para a festa",
+            "regiao": "largo",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "varal_redes",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": -6.0,
+            "y": -6.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_mem_praca",
+            "nome": "Registrar o mosaico da praça",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": -1.0,
+            "y": -5.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_mem_igreja",
+            "nome": "Registrar a fachada da igreja",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": 0.0,
+            "y": 6.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_mem_mercado",
+            "nome": "Registrar as bancas do mercado",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": -12.0,
+            "y": 0.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_marcas_mercado",
+            "nome": "Marcas próximas ao depósito",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": -16.0,
+            "y": -8.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_peca_tear",
+            "nome": "Peça de madeira do tear",
+            "regiao": "mercado",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "caixotes",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": -26.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_rio_dia1",
+            "nome": "Marcas de passagem na margem",
+            "regiao": "rio",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": -4.0,
+            "y": -15.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_rio_dia2",
+            "nome": "Pedras e referência do caminho",
+            "regiao": "rio",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": 4.0,
+            "y": -16.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_obstaculo_rio",
+            "nome": "Escolher a passagem da margem",
+            "regiao": "rio",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": 8.0,
+            "y": -16.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_peca_rio",
+            "nome": "Peça marcada junto à margem",
+            "regiao": "rio",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": 13.0,
+            "y": -16.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_foto",
+            "nome": "Arquivos de fotografias",
+            "regiao": "museu",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "caixotes",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": -7.0,
+            "y": -2.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_fragmento",
+            "nome": "Fragmento na trilha",
+            "regiao": "serra",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": 6.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_passagem",
+            "nome": "Comparar o mapa com a trilha",
+            "regiao": "serra",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": -10.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_chave",
+            "nome": "Chave no caminho alternativo",
+            "regiao": "serra",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": -16.0,
+            "y": -7.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_bau",
+            "nome": "Baú da oficina",
+            "regiao": "oficina",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "caixotes",
+            "visual": "objeto",
+            "habilitarEvento": "",
+            "x": -7.0,
+            "y": -4.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_comparar_praca",
+            "nome": "Comparar pistas na praça",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "",
+            "x": 0.0,
+            "y": -8.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_medalhao",
+            "nome": "Medalhão junto ao mosaico",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "vestigio",
+            "habilitarEvento": "",
+            "x": -2.0,
+            "y": -4.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_reuniao",
+            "nome": "Reunir as histórias",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "reuniao",
+            "habilitarEvento": "",
+            "x": 0.0,
+            "y": -1.7999999523162842,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_fiar",
+            "nome": "Preparar fios de algodão",
+            "regiao": "oficina",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "tear",
+            "visual": "objeto",
+            "habilitarEvento": "r24_m10_01",
+            "x": -6.0,
+            "y": -5.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_figura_rio",
+            "nome": "Figura distante na margem",
+            "regiao": "rio",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "sombra",
+            "habilitarEvento": "r24_m18_03",
+            "x": 16.0,
+            "y": -12.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_figura_praca",
+            "nome": "Sombra distante na praça",
+            "regiao": "praca",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "sombra",
+            "habilitarEvento": "r24_m22_03",
+            "x": 12.0,
+            "y": -12.0,
+            "andar": false,
+            "patrulha": []
+        },
+        {
+            "id": "pdf_proximo_capitulo",
+            "nome": "Novo caminho de investigação",
+            "regiao": "serra",
+            "tipo": "roteiro",
+            "modeloRegiao": "",
+            "modeloPonto": "",
+            "modeloObjeto": "",
+            "visual": "placa",
+            "habilitarEvento": "r24_m23_04",
+            "x": -20.0,
+            "y": -9.0,
+            "andar": false,
+            "patrulha": []
+        }
+    ],
+    "atividades": [
+        {
+            "id": "procissao_ordem",
+            "tipo": "sequencia",
+            "titulo": "Organizar as placas",
+            "instrucao": "Monte o percurso usando as placas recuperadas.",
+            "dica": "O percurso começa no Sol, passa pela Folha e termina no Sino.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Sino",
+                "Sol",
+                "Folha"
+            ],
+            "cores": [],
+            "requerPistas": [],
+            "resposta": [
+                1,
+                2,
+                0
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "tear_tutorial",
+            "tipo": "sequencia",
+            "titulo": "O ponto que faltava",
+            "instrucao": "Selecione os fios para repetir o modelo do tear.",
+            "dica": "Comece pelo creme e alterne com o dourado.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Creme",
+                "Dourado",
+                "Terracota"
+            ],
+            "cores": [
+                "#F4E9D5",
+                "#D9AF68",
+                "#B96C4D"
+            ],
+            "requerPistas": [],
+            "resposta": [
+                0,
+                1,
+                0,
+                1
+            ],
+            "mostrarModelo": true
+        },
+        {
+            "id": "tear_avancado",
+            "tipo": "sequencia",
+            "titulo": "O desafio do artesão",
+            "instrucao": "Crie dois blocos iguais: creme, dourado, terracota, dourado.",
+            "dica": "Repita duas vezes o bloco descrito. Você pode desfazer e tentar novamente.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Creme",
+                "Dourado",
+                "Terracota"
+            ],
+            "cores": [
+                "#F4E9D5",
+                "#D9AF68",
+                "#B96C4D"
+            ],
+            "requerPistas": [],
+            "resposta": [
+                0,
+                1,
+                2,
+                1,
+                0,
+                1,
+                2,
+                1
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "rede_selecionar",
+            "tipo": "conjunto",
+            "titulo": "1 · Selecionar os materiais",
+            "instrucao": "Escolha os cinco materiais da receita. A cera e os itens da festa não entram na rede.",
+            "dica": "Confira a receita na bolsa.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "3 fios preparados",
+                "Corda",
+                "Pano",
+                "Punhos",
+                "Enfeite de palha",
+                "Cera",
+                "Fita da Padroeira"
+            ],
+            "cores": [],
+            "requerPistas": [],
+            "resposta": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "rede_organizar",
+            "tipo": "sequencia",
+            "titulo": "2 · Organizar os fios",
+            "instrucao": "Prepare a sequência indicada para a trama.",
+            "dica": "Dois fios creme e um dourado; repita o bloco.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Creme",
+                "Dourado",
+                "Terracota"
+            ],
+            "cores": [
+                "#F4E9D5",
+                "#D9AF68",
+                "#B96C4D"
+            ],
+            "requerPistas": [],
+            "resposta": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+            ],
+            "mostrarModelo": true
+        },
+        {
+            "id": "rede_entrelacar",
+            "tipo": "grade",
+            "titulo": "3 · Entrelaçar",
+            "instrucao": "Marque as passagens por cima na grade 3 × 3. Alterne por cima e por baixo como um tabuleiro.",
+            "dica": "Comece pelo canto superior esquerdo. A linha seguinte começa por baixo.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "cores": [],
+            "requerPistas": [],
+            "resposta": [
+                0,
+                2,
+                4,
+                6,
+                8
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "rede_montar",
+            "tipo": "sequencia",
+            "titulo": "4 · Montar a rede",
+            "instrucao": "Monte na ordem: corpo da trama, pano de acabamento, corda, punhos e enfeite.",
+            "dica": "Siga a ordem descrita para unir as partes.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Punhos",
+                "Corpo da trama",
+                "Enfeite de palha",
+                "Corda",
+                "Pano de acabamento"
+            ],
+            "cores": [],
+            "requerPistas": [],
+            "resposta": [
+                1,
+                4,
+                3,
+                0,
+                2
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "rede_finalizar",
+            "tipo": "conjunto",
+            "titulo": "5 · Conferir e finalizar",
+            "instrucao": "Confirme os três cuidados antes de finalizar.",
+            "dica": "A rede só é entregue quando todos os cuidados forem conferidos.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Trama organizada",
+                "Punhos presos",
+                "Acabamento conferido"
+            ],
+            "cores": [],
+            "requerPistas": [],
+            "resposta": [
+                0,
+                1,
+                2
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "rio_passagem",
+            "tipo": "escolha",
+            "titulo": "Os sons do rio",
+            "instrucao": "É noite. Compare o papel e as observações do dia para escolher o caminho.",
+            "dica": "O papel e o registro do dia indicam as pedras secas.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Seguir o som para dentro da água",
+                "Seguir as pedras secas junto à margem",
+                "Abandonar as referências e seguir a figura"
+            ],
+            "cores": [],
+            "requerPistas": [
+                "papel_rio"
+            ],
+            "resposta": [
+                1
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "serra_passagem",
+            "tipo": "sequencia",
+            "titulo": "A passagem que desapareceu",
+            "instrucao": "Ordene as referências do fragmento para reencontrar a trilha.",
+            "dica": "Consulte o fragmento: comece no Cruzeiro, passe pelo marco e retorne.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Trilha de retorno",
+                "Cruzeiro",
+                "Marco de pedra à esquerda"
+            ],
+            "cores": [],
+            "requerPistas": [
+                "mapa"
+            ],
+            "resposta": [
+                1,
+                2,
+                0
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "praca_pistas",
+            "tipo": "conjunto",
+            "titulo": "A sombra na praça · comparar",
+            "instrucao": "Selecione as quatro evidências que relacionam o símbolo a lugares diferentes.",
+            "dica": "As lembranças da festa não são evidências do símbolo.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Bilhete do mercado",
+                "Registro da peça do tear",
+                "Peça do rio",
+                "Documento e tecido do baú",
+                "Fita da Padroeira",
+                "Enfeite da festa"
+            ],
+            "cores": [],
+            "requerPistas": [
+                "bilhete",
+                "tear",
+                "rio",
+                "documento"
+            ],
+            "resposta": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "praca_caminho",
+            "tipo": "escolha",
+            "titulo": "Escolher o caminho da praça",
+            "instrucao": "Use a fotografia, o fragmento e a anotação do documento.",
+            "dica": "O documento menciona o mosaico; a fotografia fala do encontro das histórias.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Seguir para as bancas do mercado",
+                "Seguir até o mosaico, encontro dos caminhos",
+                "Voltar diretamente ao rio"
+            ],
+            "cores": [],
+            "requerPistas": [
+                "fotografia",
+                "mapa",
+                "documento"
+            ],
+            "resposta": [
+                1
+            ],
+            "mostrarModelo": false
+        },
+        {
+            "id": "convergencia",
+            "tipo": "sequencia",
+            "titulo": "Quando todas as histórias se encontram",
+            "instrucao": "Organize a cadeia de investigação: bilhete, fábrica, rio, fotografia, mapa, chave, documento e medalhão.",
+            "dica": "Use a ordem dos registros no caderno.",
+            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "opcoes": [
+                "Fotografia",
+                "Bilhete",
+                "Mapa",
+                "Peça do tear",
+                "Documento",
+                "Chave",
+                "Peça do rio",
+                "Medalhão"
+            ],
+            "cores": [],
+            "requerPistas": [
+                "bilhete",
+                "tear",
+                "rio",
+                "fotografia",
+                "mapa",
+                "chave",
+                "documento",
+                "medalhao"
+            ],
+            "resposta": [
+                1,
+                3,
+                6,
+                0,
+                2,
+                5,
+                4,
+                7
+            ],
+            "mostrarModelo": false
+        }
+    ],
+    "pistas": [
+        {
+            "id": "bilhete",
+            "titulo": "Bilhete do mercado",
+            "texto": "O bilhete apresenta um símbolo de quatro traços entrelaçados. Uma seta aponta para uma borda do desenho; ainda não há explicação de origem.",
+            "evento": "r24_m16_01",
+            "lugar": "Mercado Velho",
+            "ordem": 1
+        },
+        {
+            "id": "tear",
+            "titulo": "Símbolo na peça do tear",
+            "texto": "O desenho da peça de madeira coincide com os quatro traços do bilhete. A peça voltou à fábrica; o registro permanece no caderno.",
+            "evento": "r24_m17_05",
+            "lugar": "Fábrica de redes",
+            "ordem": 2
+        },
+        {
+            "id": "papel_rio",
+            "titulo": "Papel da margem",
+            "texto": "O papel indica: siga as pedras secas junto à margem; não procure uma passagem dentro da água. Um desenho repete o entrelaçado do bilhete.",
+            "evento": "r24_m18_01",
+            "lugar": "Rio Jaguaribe",
+            "ordem": 3
+        },
+        {
+            "id": "rio",
+            "titulo": "Peça encontrada no rio",
+            "texto": "A peça confirma que o símbolo também aparece na margem. O registro separa o objeto encontrado da figura que não foi identificada.",
+            "evento": "r24_m18_05",
+            "lugar": "Rio Jaguaribe",
+            "ordem": 4
+        },
+        {
+            "id": "fotografia",
+            "titulo": "Fotografia esquecida",
+            "texto": "No verso: “Procure onde as histórias se encontram”. A imagem ficcional mostra caminhos que chegam a um espaço de encontro; a frase não identifica quem deixou as pistas.",
+            "evento": "r24_m19_02",
+            "lugar": "Museu da Carnaúba",
+            "ordem": 5
+        },
+        {
+            "id": "mapa",
+            "titulo": "Fragmento do caminho",
+            "texto": "O fragmento registra Cruzeiro → marco de pedra à esquerda → trilha de retorno. Seu canto traz o mesmo símbolo entrelaçado. A praça aparece como ponto onde os caminhos se cruzam.",
+            "evento": "r24_m20_02",
+            "lugar": "Serra Dantas",
+            "ordem": 6
+        },
+        {
+            "id": "chave",
+            "titulo": "Chave antiga",
+            "texto": "A chave foi encontrada depois de comparar o mapa com a trilha de retorno. Ainda é necessário descobrir o que ela abre.",
+            "evento": "r24_m21_02",
+            "lugar": "Trilha da Serra Dantas",
+            "ordem": 7
+        },
+        {
+            "id": "documento",
+            "titulo": "Documento e tecido do baú",
+            "texto": "O documento contém a anotação: “No mosaico da praça, quatro caminhos encontram a mesma trama”. O tecido repete o símbolo do bilhete, da peça do tear e do objeto do rio. É uma pista ficcional, não uma explicação de origem.",
+            "evento": "r24_m22_02",
+            "lugar": "Oficina da fábrica",
+            "ordem": 8
+        },
+        {
+            "id": "medalhao",
+            "titulo": "Medalhão da praça",
+            "texto": "O medalhão foi encontrado no local indicado ao combinar fotografia, mapa e documento. Ele confirma a relação entre as pistas; não revela a identidade da figura.",
+            "evento": "r24_m23_03",
+            "lugar": "Praça Matriz",
+            "ordem": 9
+        }
+    ],
+    "bloqueios": [
+        {
+            "regiao": "serra",
+            "evento": "r24_m02_01",
+            "mensagem": "Converse com Simão na Praça Matriz antes de seguir para a Serra."
+        },
+        {
+            "regiao": "museu",
+            "evento": "r24_m04_02",
+            "mensagem": "Conclua a primeira noite na praça para abrir a visita ao museu."
+        }
+    ],
+    "proximoCapitulo": {
+        "regiao": "serra",
+        "ponto": "pdf_proximo_capitulo",
+        "nome": "Novo caminho de investigação",
+        "descricao": "Uma trilha foi marcada depois da comparação das pistas. A investigação continua no próximo capítulo.",
+        "revelarEvento": "r24_m24_02",
+        "x": -20.0,
+        "y": -9.0
+    },
+    "eventoFesta": "r24_m14_06",
+    "eventoNovaArea": "r24_m23_04"
+}

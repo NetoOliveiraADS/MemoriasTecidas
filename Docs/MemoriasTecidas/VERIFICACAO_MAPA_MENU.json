@@ -1,0 +1,37 @@
+{
+  "etapa": "Mapa de Jaguaruana no menu",
+  "data": "2026-10-21",
+  "sintaxe_cs": {
+    "arquivos_mesclados": 61,
+    "erros": [],
+    "metodo": "tree-sitter-c-sharp; não é compilação"
+  },
+  "mapa": {
+    "arquivo": "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/Interface/MapaJaguaruana.png",
+    "dimensoes": [
+      1711,
+      919
+    ],
+    "sha256": "8de480b898b18558a16fed3c8b5c634e9ee7d8fda982b02fd4a8986b3d4f745d",
+    "imagem_gerada_incluida_sem_alteracao": true
+  },
+  "dados_narrativos_preservados_byte_a_byte": [
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/abertura_memorias.json",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/trama_01.json"
+  ],
+  "metadados_anteriores_preservados_byte_a_byte": 44,
+  "guids_unicos": 638,
+  "cenas_e_prefabs_incluidos": 0,
+  "revisao_codigo": [
+    "Enquadramento preserva proporção; zoom de 1 a 3; deslocamento limitado às bordas.",
+    "Mapa entra no bloqueio de movimento, câmera por atalhos e relógio.",
+    "Retorno dedicado para tela inicial ou pausa; nenhuma gravação de campanha ao abrir a imagem.",
+    "Arraste captura o mouse e libera ao soltar, sair da tela ou perder o foco.",
+    "Setas deixam de percorrer botões nesta tela; Tab permanece disponível."
+  ],
+  "limites": [
+    "Unity Editor, compilador C#, Play e build indisponíveis.",
+    "PowerShell indisponível; o instalador não foi executado.",
+    "Verificações de arquivos e código não substituem o roteiro no Play em MAPA_MENU.md."
+  ]
+}

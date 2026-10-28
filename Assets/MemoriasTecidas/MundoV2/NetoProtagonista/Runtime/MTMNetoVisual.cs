@@ -11,6 +11,9 @@ namespace MemoriasTecidas.MundoV2
         public Material material;
         [Header("Tamanho — sem esticar rosto ou corpo")]
         [Range(.75f, 1.25f)] public float escalaVisual = 1f;
+        [Header("Acabamento do Neto — rosto original preservado")]
+        [Range(0f,.035f)] public float alongamentoPescoco = .018f;
+        [Range(0f,.18f)] public float luzPreenchimento = .10f;
         [Header("Postura da corrida")]
         [Range(0f, 14f)] public float inclinacaoCorridaGraus = 8f;
         [Range(0f, .6f)] public float projecaoFrenteCostas = .35f;
@@ -27,6 +30,9 @@ namespace MemoriasTecidas.MundoV2
         private MaterialPropertyBlock propriedades, propriedadesSombra;
         private Vector3[] baseVertices, vertices;
         private Vector2[] uvLocal;
+        private Vector2[] uvs;
+        private Color[] cores;
+        private int[] indices;
         private Sprite spriteAnterior;
         private Vector3 posicaoAnterior;
         private Vector2 velocidadeSuave, inclinacao;
@@ -90,11 +96,15 @@ namespace MemoriasTecidas.MundoV2
             float cos = Mathf.Cos(radianos), sin = Mathf.Sin(radianos);
             float frenteCostas = inclinacao.y * Mathf.Sin(inclinacaoCorridaGraus * Mathf.Deg2Rad) * altura * projecaoFrenteCostas;
             float vento = vida != null ? vida.intensidadeVento : 0f;
-            if (MTMAmbienteV2.Qualidade == 0) vento = 0f;
+            if (MTMAmbienteV2.Qualidade == 0||MTMConfiguracaoVisual.Atual.reduzirMovimento) vento = 0f;
+            vento*=MTMConfiguracaoVisual.Atual.vento;
             for (int i = 0; i < vertices.Length; i++)
             {
                 Vector3 v = baseVertices[i] * escalaVisual;
                 Vector2 uv = uvLocal[i];
+                // Translada a cabeça inteira; só a faixa entre gola e barba alonga.
+                // Os pés e o pivô continuam no mesmo lugar, sem acumular deformação.
+                v.y+=altura*alongamentoPescoco*PesoPescoco(uv.y);
                 // Pes e parte inferior das pernas ficam fixos. Torso e cabeca giram juntos.
                 float peso = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(.16f, .48f, uv.y));
                 float dx = v.x, dy = v.y - quadril;
@@ -113,7 +123,9 @@ namespace MemoriasTecidas.MundoV2
             pintura.enabled = fonte.enabled;
             pintura.sortingLayerID = fonte.sortingLayerID; pintura.sortingOrder = fonte.sortingOrder;
             propriedades.SetTexture("_MainTex", fonte.sprite.texture);
-            propriedades.SetColor("_Color", fonte.color); pintura.SetPropertyBlock(propriedades);
+            propriedades.SetColor("_Color", fonte.color);
+            propriedades.SetFloat("_MTM_LuzNeto",Mathf.Clamp(luzPreenchimento,0f,.18f));
+            pintura.SetPropertyBlock(propriedades);
             var espelho = new Vector3(fonte.flipX ? -1f : 1f, fonte.flipY ? -1f : 1f, 1f);
             objetoPintura.transform.localScale = espelho;
             if (fonteSombra != null && sombra != null)
@@ -128,6 +140,9 @@ namespace MemoriasTecidas.MundoV2
                 objetoSombra.transform.localScale = espelho;
             }
         }
+
+        public static float PesoPescoco(float alturaNormalizada)
+        { return Mathf.SmoothStep(0f,1f,Mathf.InverseLerp(.58f,.66f,alturaNormalizada)); }
 
         private void AtualizarInclinacao()
         {
@@ -154,7 +169,7 @@ namespace MemoriasTecidas.MundoV2
             int n = (Colunas + 1) * (Linhas + 1);
             if (vertices == null || vertices.Length != n)
             { vertices = new Vector3[n]; baseVertices = new Vector3[n]; uvLocal = new Vector2[n]; }
-            var uvs = new Vector2[n]; var cores = new Color[n]; var indices = new int[Colunas * Linhas * 6];
+            if(uvs==null||uvs.Length!=n){uvs=new Vector2[n];cores=new Color[n];indices=new int[Colunas*Linhas*6];}
             int k = 0;
             for (int y = 0; y <= Linhas; y++) for (int x = 0; x <= Colunas; x++)
             {

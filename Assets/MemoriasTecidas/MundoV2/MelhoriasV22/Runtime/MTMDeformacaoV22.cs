@@ -26,12 +26,16 @@ namespace MemoriasTecidas.MundoV2
         private Sprite anterior;
         private Vector3[] baseVertices, vertices;
         private Vector2[] uvLocal;
+        private Vector2[] uvs;
+        private Color[] cores;
+        private int[] indices;
         private MaterialPropertyBlock propriedades;
         private float fase;
         private MTMCaminhanteV22 caminhante;
         private MTMVisualV2 visualAntigo;
         private Quaternion rotacaoBase;
         private Vector3 escalaBase;
+        private Bounds limitesRepouso;
         private const int Colunas = 12, Linhas = 20;
 
         private void OnEnable()
@@ -61,12 +65,21 @@ namespace MemoriasTecidas.MundoV2
             fonte.forceRenderingOff = true;
             renderizador.enabled = fonte.enabled;
             renderizador.sortingLayerID = fonte.sortingLayerID; renderizador.sortingOrder = fonte.sortingOrder;
+            fonte.GetPropertyBlock(propriedades);
             propriedades.SetTexture("_MainTex", fonte.sprite.texture);
-            propriedades.SetColor("_Color", fonte.color); renderizador.SetPropertyBlock(propriedades);
+            propriedades.SetColor("_Color", fonte.color);
             filho.transform.localScale = new Vector3(fonte.flipX ? -1f : 1f, fonte.flipY ? -1f : 1f, 1f);
             float vento = vida != null ? vida.intensidadeVento : 1f;
-            if (MTMAmbienteV2.Qualidade == 0) vento = 0f;
-            float onda = Mathf.Sin(Time.time * 1.5f + fase);
+            if (MTMAmbienteV2.Qualidade == 0||MTMConfiguracaoVisual.Atual.reduzirMovimento) vento = 0f;
+            if(tipo!=Tipo.Pessoa)
+            {
+                propriedades.SetVector("_MTM_Deform",new Vector4(tipo==Tipo.Copa?1f:2f,amplitude*vento,inicioDoMovimento,fase));
+                renderizador.SetPropertyBlock(propriedades);
+                Bounds limite=limitesRepouso;limite.Expand(new Vector3(amplitude*vento*MTMConfiguracaoVisual.Atual.vento*3f,amplitude*vento*MTMConfiguracaoVisual.Atual.vento*.8f+.05f,0f));malha.bounds=limite;
+                return; // Copas e redes são deformadas no shader; a malha base permanece imutável.
+            }
+            propriedades.SetVector("_MTM_Deform",Vector4.zero);renderizador.SetPropertyBlock(propriedades);
+            vento*=MTMConfiguracaoVisual.Atual.vento;
             float andar = caminhante != null ? Mathf.Clamp01(caminhante.Velocidade.magnitude * 2f) : 0f;
             float altura = fonte.sprite.rect.height / fonte.sprite.pixelsPerUnit;
             float largura = fonte.sprite.rect.width / fonte.sprite.pixelsPerUnit;
@@ -74,21 +87,6 @@ namespace MemoriasTecidas.MundoV2
             for (int i = 0; i < vertices.Length; i++)
             {
                 Vector3 v = baseVertices[i]; Vector2 uv = uvLocal[i];
-                if (tipo == Tipo.Copa)
-                {
-                    float peso = Mathf.SmoothStep(0f,1f,Mathf.InverseLerp(inicioDoMovimento,1f,uv.y));
-                    v.x += (onda + .25f*Mathf.Sin(Time.time*3.4f+uv.x*8f+fase))*amplitude*peso*vento;
-                    v.y += Mathf.Sin(Time.time*1.9f+uv.x*6f+fase)*amplitude*.22f*peso*vento;
-                }
-                else if (tipo == Tipo.Rede)
-                {
-                    float peso = Mathf.Pow(Mathf.Sin(uv.x*Mathf.PI),2f);
-                    // Topo e laterais fixos, maior movimento no tecido pendurado.
-                    peso *= 1f-Mathf.SmoothStep(0f,1f,Mathf.InverseLerp(.74f,.98f,uv.y));
-                    v.x += onda*amplitude*peso*vento;
-                    v.y += Mathf.Sin(Time.time*1.5f+fase+.4f)*amplitude*.35f*peso*vento;
-                }
-                else
                 {
                     const float pescoco = .70f;
                     float pesoCabeca = Mathf.SmoothStep(0f,1f,Mathf.InverseLerp(pescoco,.83f,uv.y));
@@ -112,7 +110,7 @@ namespace MemoriasTecidas.MundoV2
             anterior = fonte.sprite; var s = anterior; var r = s.rect;
             int n = (Colunas+1)*(Linhas+1);
             if (vertices == null || vertices.Length != n) { vertices=new Vector3[n]; baseVertices=new Vector3[n]; uvLocal=new Vector2[n]; }
-            var uvs = new Vector2[n]; var cores = new Color[n]; var indices = new int[Colunas*Linhas*6];
+            if(uvs==null||uvs.Length!=n){uvs=new Vector2[n];cores=new Color[n];indices=new int[Colunas*Linhas*6];}
             int k=0;
             for (int y=0;y<=Linhas;y++) for(int x=0;x<=Colunas;x++)
             {
@@ -122,12 +120,13 @@ namespace MemoriasTecidas.MundoV2
                 uvs[i]=new Vector2((r.x+u*r.width)/s.texture.width,(r.y+v*r.height)/s.texture.height); cores[i]=Color.white;
                 if(x<Colunas&&y<Linhas){int a=i,b=i+1,c=i+Colunas+1,d=c+1;indices[k++]=a;indices[k++]=c;indices[k++]=b;indices[k++]=b;indices[k++]=c;indices[k++]=d;}
             }
-            malha.Clear(); malha.vertices=vertices;malha.uv=uvs;malha.colors=cores;malha.triangles=indices;
+            malha.Clear(); malha.vertices=vertices;malha.uv=uvs;malha.colors=cores;malha.triangles=indices;malha.uv2=uvLocal;malha.RecalculateBounds();limitesRepouso=malha.bounds;
         }
         private void OnDisable()
         {
             if(fonte!=null)fonte.forceRenderingOff=false;
-            if(filho!=null)Destroy(filho); if(malha!=null)Destroy(malha);
+            if(filho!=null){if(Application.isPlaying)Destroy(filho);else DestroyImmediate(filho);}
+            if(malha!=null){if(Application.isPlaying)Destroy(malha);else DestroyImmediate(malha);}
         }
     }
 }

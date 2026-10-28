@@ -12,7 +12,7 @@ namespace MemoriasTecidas.MundoV2
         private void Start()
         {
             if(copa==null||copa.sprite==null||material==null)return;
-            var go=new GameObject("Folhas_Ocasionais_V22");go.transform.SetParent(transform,false);
+            var go=new GameObject("Folhas_Ocasionais_V22");go.hideFlags=HideFlags.DontSave;go.transform.SetParent(transform,false);
             go.transform.position=new Vector3(copa.bounds.center.x,copa.bounds.min.y+copa.bounds.size.y*.75f,0);
             folhas=go.AddComponent<ParticleSystem>();folhas.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
             var m=folhas.main;m.loop=true;m.startLifetime=new ParticleSystem.MinMaxCurve(3f,5f);m.startSpeed=0f;
@@ -31,7 +31,8 @@ namespace MemoriasTecidas.MundoV2
         private void Update()
         {
             if(folhas==null)return;var em=folhas.emission;
-            em.rateOverTime=MTMAmbienteV2.Qualidade==0||vida==null||vida.intensidadeVento<.01f?0f:MTMAmbienteV2.Qualidade==2?.16f:.07f;
+            if(MTMConfiguracaoVisual.Atual.reduzirMovimento&&folhas.particleCount>0)folhas.Clear();
+            em.rateOverTime=MTMAmbienteV2.Qualidade==0||MTMConfiguracaoVisual.Atual.reduzirMovimento||vida==null||vida.intensidadeVento<.01f?0f:MTMAmbienteV2.Qualidade==2?.16f:.07f;
         }
         private void OnDisable(){if(folhas!=null)folhas.Stop(true,ParticleSystemStopBehavior.StopEmitting);}
         private void OnEnable(){if(folhas!=null)folhas.Play();}

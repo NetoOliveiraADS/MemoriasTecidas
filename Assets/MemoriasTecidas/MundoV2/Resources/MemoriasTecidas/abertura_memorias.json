@@ -1,0 +1,41 @@
+{
+  "versao": 1,
+  "titulo": "O primeiro fio",
+  "npc": "npc_feliciana",
+  "eventoEncontro": "r24_m01_01",
+  "fonte": "Rede de Memorias - Memorias Tecidas",
+  "convite": [
+    "Dona Feliciana: Antes de seguir para Simão, quer guardar uma lembrança deste encontro? Observe a pequena amostra de tecido aqui perto.",
+    "Neto: Vou olhar como os fios se encontram.",
+    "Dona Feliciana: Experimente repetir as quatro passagens e depois me mostre. Você pode tentar quantas vezes quiser."
+  ],
+  "observacao": [
+    "Na amostra, os fios verticais permanecem estendidos. Quatro passagens coloridas atravessam esses fios.",
+    "Neto: Creme, dourado, creme e terracota. Vou observar o modelo enquanto experimento.",
+    "Escolha uma cor por vez. O desenho aparece conforme você acrescenta as passagens; é possível desfazer sem perder materiais."
+  ],
+  "conclusao": [
+    "A pequena amostra ganhou forma. As quatro passagens repetem o modelo observado.",
+    "Neto: Agora quero mostrar a Dona Feliciana. Essa vai ser a primeira lembrança da minha rede."
+  ],
+  "reencontro": [
+    "Dona Feliciana: Você reparou nos detalhes e voltou para compartilhar o que fez.",
+    "Neto: Quero guardar os encontros que tiver pelo caminho.",
+    "Dona Feliciana: Então leve esta lembrança. Quando conhecer outras pessoas e lugares, sua rede terá novas histórias.",
+    "Neto: Vou procurar Simão. Minha jornada está só começando."
+  ],
+  "nomes": ["Creme", "Dourado", "Terracota"],
+  "cores": ["#F4E9D5", "#D9AF68", "#B96C4D"],
+  "padrao": [0, 1, 0, 2],
+  "motivos": [
+    {"id":"chegada","titulo":"Um encontro para começar","resumo":"A conversa com Dona Feliciana abriu o caminho para conhecer pessoas e registrar lembranças. O primeiro motivo guarda esse acolhimento.","cor":"#D9AF68","icone":"pessoa","registro":"r24_m01_01","eventos":["abertura_fio_memoria","r24_m01_02"]},
+    {"id":"serra","titulo":"Caminhos da Serra","resumo":"A trilha, o Cruzeiro e o encontro com um visitante passaram a fazer parte do caderno. Este motivo reúne as referências observadas na Serra.","cor":"#718A70","icone":"mapa","registro":"r24_m03_03","eventos":["r24_m03_03"]},
+    {"id":"carnauba","titulo":"Vestígios e materiais","resumo":"A visita ao Museu da Carnaúba deixou novos registros. Objetos e materiais também convidam a perguntar sobre quem os produziu e utilizou.","cor":"#B96C4D","icone":"cera","registro":"r24_m05_03","eventos":["r24_m05_03"]},
+    {"id":"comunidade","titulo":"Um caminho compartilhado","resumo":"As placas e a caminhada da comunidade aproximaram pessoas e lugares. Este motivo guarda a participação na procissão da narrativa.","cor":"#D9AF68","icone":"pessoa","registro":"r24_m08_11","eventos":["r24_m08_11"]},
+    {"id":"oficio","titulo":"As mãos que ensinam","resumo":"Os materiais reunidos e o aprendizado na oficina se encontraram na rede pronta. Este motivo registra o trabalho e as pessoas que ajudaram nessa etapa.","cor":"#B96C4D","icone":"rede","registro":"r24_m13_05","eventos":["r24_m13_05"]},
+    {"id":"festa","titulo":"Preparar o encontro","resumo":"A preparação da festa reuniu tarefas, objetos e moradores. A cidade passa a mostrar o resultado dessa colaboração.","cor":"#718A70","icone":"bandeiras","registro":"r24_m14_07","eventos":["r24_m14_07"]},
+    {"id":"rio","titulo":"Escutar a margem","resumo":"Observar durante o dia ajudou a reconhecer o caminho à noite. Os sons, as referências e as descobertas do rio agora se cruzam na investigação.","cor":"#69938C","icone":"pedra","registro":"r24_m18_05","eventos":["r24_m18_05"]},
+    {"id":"fotografia","titulo":"Uma imagem, novas perguntas","resumo":"A fotografia esquecida aproximou lembranças e lugares. O registro permite voltar ao relato e comparar o que foi descoberto.","cor":"#D9AF68","icone":"foto","registro":"r24_m19_03","eventos":["r24_m19_03"]},
+    {"id":"encontro","titulo":"Histórias que se encontram","resumo":"Os registros foram comparados na praça. A rede reúne o caminho percorrido, enquanto a investigação apresenta uma nova direção para a jornada.","cor":"#B96C4D","icone":"novelo","registro":"r24_m24_02","eventos":["r24_m24_02"]}
+  ]
+}

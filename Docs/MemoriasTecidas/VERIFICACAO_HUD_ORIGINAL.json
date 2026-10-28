@@ -1,0 +1,60 @@
+{
+  "revisao": 17,
+  "data": "2026-10-28",
+  "hud_independente_de_3d": true,
+  "csharp_sintaxe": {
+    "arquivos": 95,
+    "erros": [],
+    "compilacao_executada": false
+  },
+  "preservacao": {
+    "arquivos_de_arte_dados_e_cenas_identicos": 248,
+    "imagens": 118,
+    "materiais": 15,
+    "cenas_e_prefabs": 102,
+    "arquivos_originais_confirmados_por_hash": {
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogo.cs": "a8baed7a7caaa4c69ca6c9787c9ec7c351eeab87dd76d356796ce55aa780a087",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMapaGuiado.cs": "e5746113ac5b7bd7638d29b68a950966315331250517cd6c310262298c63d40c",
+      "Assets/MemoriasTecidas/MundoV2/MelhoriasV22/Runtime/MTMAtorV22.cs": "07ed0891a78e4834e6e34a7703d2589a093a9cc7380324a0980aa92d81560751",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoInterface.cs": "f77a1078d327af2c7c1a243232fb5ae5eaf76b5ce951f282b1fec8736e3fffc5"
+    },
+    "camera_e_movimento": "métodos preservados; Update inclui somente B como atalho adicional",
+    "mudancas_de_asset_em_relacao_a_16": [
+      "Assets/MemoriasTecidas/MundoV2/Editor/MTMKitHD2DEditor.cs",
+      "Assets/MemoriasTecidas/MundoV2/MelhoriasV22/Runtime/MTMAtorV22.cs",
+      "Assets/MemoriasTecidas/MundoV2/Qualidade/Shaders/MTMDetalheOriginal.cginc",
+      "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/ContatoSuave.shader",
+      "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/acabamento_original.json",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMAcabamentoOriginal.cs",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogo.cs",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoApresentacao.cs",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoInterface.cs",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMapaGuiado.cs"
+    ],
+    "novo_modulo_hud": [
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoHUDCompacta.cs",
+      "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoHUDCompacta.cs.meta"
+    ]
+  },
+  "contraste_hud": {
+    "texto": 11.33,
+    "secundario": 7.43,
+    "dourado": 7.09,
+    "foco": 7.4,
+    "interacao": 8.34
+  },
+  "acabamento": {
+    "aumento_de_resolucao": false,
+    "ganho_maximo_textura": 0.045,
+    "desligavel_no_menu": true,
+    "modelos_3d_incluidos": false
+  },
+  "pendente": [
+    "Compilação C# na Unity",
+    "Compilação dos shaders na Unity",
+    "Instalador PowerShell no Windows",
+    "Play",
+    "Build"
+  ],
+  "observacao": "Análise sintática e comparações de arquivo não substituem compilação, desempenho e testes visuais na Unity."
+}

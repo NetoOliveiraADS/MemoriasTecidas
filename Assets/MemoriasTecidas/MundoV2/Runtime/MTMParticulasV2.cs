@@ -7,13 +7,15 @@ namespace MemoriasTecidas.MundoV2
         public ParticleSystem poeira, vagalumes;
         public bool interior, natural;
         private int ultimaQualidade=-1;
+        private bool ultimaReducao;
         private float ultimaNoite=-1f;
         private void Update()
         {
-            int qualidade=MTMAmbienteV2.Qualidade;
+            int qualidade=MTMAmbienteV2.Qualidade;bool reduzir=MTMConfiguracaoVisual.Atual.reduzirMovimento;
             float noite=MTMAmbienteV2.Sol<.25f?1f:0f;
-            if(qualidade==ultimaQualidade && noite==ultimaNoite)return;
-            ultimaQualidade=qualidade;ultimaNoite=noite;
+            if(qualidade==ultimaQualidade && noite==ultimaNoite&&reduzir==ultimaReducao)return;
+            ultimaQualidade=qualidade;ultimaNoite=noite;ultimaReducao=reduzir;
+            if(reduzir)qualidade=0;
             Configurar(poeira,qualidade==0?0:interior?1f:qualidade==1?4f:8f,qualidade==2?120:65);
             Configurar(vagalumes,natural&&noite>.5f&&qualidade>0?(qualidade==2?3f:1.5f):0f,36);
         }

@@ -10,7 +10,7 @@ namespace MemoriasTecidas.MundoV2
         private Vector2 rolagemMapaV22, rolagemFalaV22;
         private string falaAnteriorV22;
         private GUIStyle nomeV22, ajudaV22, falaV22;
-        public bool V22Bloqueado { get { return Bloqueado || !pronto; } }
+        public bool V22Bloqueado { get { return Bloqueado || !pronto || !possuiFoco; } }
         public bool V22Interior { get { return atual != null && atual.dados.interior; } }
         public bool V22FalandoCom(string nome) { return falas != null && locutor == nome; }
 
@@ -76,37 +76,15 @@ namespace MemoriasTecidas.MundoV2
             return true;
         }
 
-        private void DialogoVidaV22()
-        {
-            Rect quadro = new Rect(40,365,1200,350);
-            Fundo(new Rect(62,400,1156,228),new Color(.035f,.11f,.12f,.98f));
-            if(vidaV22.painelTecido!=null)GUI.DrawTexture(quadro,vidaV22.painelTecido,ScaleMode.StretchToFill,true);
-            else { Fundo(new Rect(44,378,1192,280),tinta);Fundo(new Rect(44,378,1192,4),ouro); }
-            float x=retratoAtual!=null?246f:86f;
-            if(retratoAtual!=null)
-            {
-                Fundo(new Rect(80,417,144,164),new Color(.14f,.24f,.24f,.8f));
-                GUI.DrawTextureWithTexCoords(new Rect(84,421,136,155),retratoAtual,recorteAtual,true);
-            }
-            GUI.Label(new Rect(x,409,1120-x,35),locutor,tituloUI);
-            string fala= falas[pagina] ?? "";
-            if(falaAnteriorV22!=fala){rolagemFalaV22=Vector2.zero;falaAnteriorV22=fala;}
-            float largura=1134-x;
-            float altura=Mathf.Max(103f,falaV22.CalcHeight(new GUIContent(fala),largura-22));
-            rolagemFalaV22=GUI.BeginScrollView(new Rect(x,452,largura,103),rolagemFalaV22,new Rect(0,0,largura-22,altura));
-            GUI.Label(new Rect(0,0,largura-22,altura),fala,falaV22);GUI.EndScrollView();
-            GUI.Label(new Rect(x,558,1130-x,35),contexto??"",pequenoUI);
-            GUI.Label(new Rect(86,596,740,28),"E / Enter: continuar   •   Esc: sair   •   "+(pagina+1)+" / "+falas.Length,pequenoUI);
-            if(GUI.Button(new Rect(970,589,198,35),pagina+1==falas.Length?"Concluir":"Continuar",botaoUI))Avancar();
-        }
+        private void DialogoVidaV22() { DialogoUI(); }
         private void PainelVidaV22()
         {
             Fundo(new Rect(44,108,1192,556),tinta);
             Fundo(new Rect(44,108,1192,4),ouro);
             Fundo(new Rect(44,660,1192,4),new Color(.72f,.36f,.23f));
-            string titulo=painel=="mapa"?"Caminhos de Jaguaruana":painel=="bolsa"?"Sua bolsa":"Diário de memórias";
+            string titulo=painel=="mapa"?"Redes de Memórias":painel=="bolsa"?"Sua bolsa":"Diário de memórias";
             GUI.Label(new Rect(70,126,1015,42),titulo,tituloUI);
-            if(GUI.Button(new Rect(1104,126,104,36),"Fechar",botaoUI)){painel="";return;}
+            if(BotaoTecido(new Rect(1104,126,104,36),"Fechar")){painel="";return;}
             if(painel=="mapa")MapaVidaV22();else if(painel=="bolsa")BolsaUI();else DiarioUI();
         }
         private void MapaVidaV22()

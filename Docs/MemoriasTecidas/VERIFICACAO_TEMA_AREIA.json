@@ -1,0 +1,64 @@
+{
+  "etapa": "Tema areia, HUD compacto e identidade facial do Neto",
+  "data": "2026-10-23",
+  "sintaxe": {
+    "scripts": 63,
+    "erros": [],
+    "metodo": "tree-sitter-c-sharp; análise de sintaxe, não compilação"
+  },
+  "guids_unicos": 641,
+  "recursos_anteriores_protegidos_conferidos": 52,
+  "arquivos_assets_alterados": [
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/Interface/InicioTecida.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/Interface/MapaJaguaruana.png",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoAtividades.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoInterface.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMapaGuiado.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMapaMenu.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMenus.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoNavegacaoUI.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoRedeMemorias.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoRedeUI.cs"
+  ],
+  "arquivos_assets_novos": [
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoTemaAreia.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoTemaAreia.cs"
+  ],
+  "mapa": {
+    "marcadores": 16,
+    "regioes_na_base": 15,
+    "coordenadas_preservadas": true,
+    "rota_previa_validada": [
+      "entrada",
+      "praca",
+      "mercado",
+      "fabrica"
+    ]
+  },
+  "contraste_estimado_srgb": {
+    "texto_no_creme": 11.87,
+    "texto_na_areia": 8.5,
+    "destaque_na_areia": 5.35,
+    "botao_principal": 6.63,
+    "botao_principal_hover": 4.57,
+    "hud_fundo_preto_97_por_cento": 11.12,
+    "amostra_texto_claro": 7.26,
+    "contraste_reforcado_texto": 16.27,
+    "contraste_reforcado_botao": 10.3
+  },
+  "nota_contraste": "Combinações principais; não é auditoria integral de acessibilidade.",
+  "rotulos_literais_conferidos": 109,
+  "estimativa_encaixe_previas_sem_excesso": true,
+  "neto": {
+    "referencias": "Retrato e folha cardinal do projeto organizado",
+    "poses_detectadas": 16,
+    "direcoes": 4,
+    "animacao_instalada": false
+  },
+  "previas": "Composições renderizadas e inspecionadas; não são capturas da Unity. O cenário da HUD é ilustrativo.",
+  "limites": [
+    "Unity, compilação C#/shaders, Play, build e PowerShell não executados.",
+    "Nova folha do Neto requer ajuste de pivôs, quadros e direções antes de trocar a animação existente.",
+    "Edições locais do usuário não recebidas são protegidas pela comparação do instalador."
+  ]
+}

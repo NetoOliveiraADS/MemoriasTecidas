@@ -78,6 +78,7 @@ namespace MemoriasTecidas.MundoV2
         public static int[] Triangular(Vector2[] p)
         {
             if(p==null||p.Length<3||p.Length>256)throw new ArgumentException("Use de 3 a 256 vértices no contorno.");
+            ValidarContorno(p);
             float area=0;for(int i=0;i<p.Length;i++)area+=Cruz(p[i],p[(i+1)%p.Length]);
             if(Mathf.Abs(area)<.00001f)throw new ArgumentException("Contorno sem área.");
             var vivos=new List<int>();for(int i=0;i<p.Length;i++)vivos.Add(area>0?i:p.Length-1-i);
@@ -97,6 +98,30 @@ namespace MemoriasTecidas.MundoV2
             }
             tr.AddRange(vivos);return tr.ToArray();
         }
+        private static void ValidarContorno(Vector2[] p)
+        {
+            const float eps=.00001f;
+            for(int i=0;i<p.Length;i++)
+            {
+                if(float.IsNaN(p[i].x)||float.IsNaN(p[i].y)||float.IsInfinity(p[i].x)||float.IsInfinity(p[i].y))throw new ArgumentException("Vértice com coordenada inválida.");
+                for(int j=i+1;j<p.Length;j++)
+                {
+                    if((p[i]-p[j]).sqrMagnitude<eps*eps)throw new ArgumentException("O contorno tem vértices repetidos.");
+                    int a=(i+1)%p.Length,b=(j+1)%p.Length;
+                    if(a==j||b==i)continue;
+                    if(CruzaSegmentos(p[i],p[a],p[j],p[b],eps))throw new ArgumentException("As bordas do contorno não podem se cruzar.");
+                }
+            }
+        }
+        private static bool CruzaSegmentos(Vector2 a,Vector2 b,Vector2 c,Vector2 d,float e)
+        {
+            float u=Cruz(b-a,c-a),v=Cruz(b-a,d-a),w=Cruz(d-c,a-c),z=Cruz(d-c,b-c);
+            if(((u>e&&v<-e)||(u<-e&&v>e))&&((w>e&&z<-e)||(w<-e&&z>e)))return true;
+            return (Mathf.Abs(u)<=e&&NoSegmento(c,a,b,e))||(Mathf.Abs(v)<=e&&NoSegmento(d,a,b,e))
+                ||(Mathf.Abs(w)<=e&&NoSegmento(a,c,d,e))||(Mathf.Abs(z)<=e&&NoSegmento(b,c,d,e));
+        }
+        private static bool NoSegmento(Vector2 p,Vector2 a,Vector2 b,float e)
+        {return p.x>=Mathf.Min(a.x,b.x)-e&&p.x<=Mathf.Max(a.x,b.x)+e&&p.y>=Mathf.Min(a.y,b.y)-e&&p.y<=Mathf.Max(a.y,b.y)+e;}
         private static float Cruz(Vector2 a,Vector2 b){return a.x*b.y-a.y*b.x;}
         private static bool Dentro(Vector2 p,Vector2 a,Vector2 b,Vector2 c)
         {return Cruz(b-a,p-a)>=-.000001f&&Cruz(c-b,p-b)>=-.000001f&&Cruz(a-c,p-c)>=-.000001f;}

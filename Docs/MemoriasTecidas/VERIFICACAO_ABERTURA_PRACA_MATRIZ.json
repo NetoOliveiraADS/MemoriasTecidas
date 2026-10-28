@@ -1,0 +1,52 @@
+{
+  "revisao": 15,
+  "data": "2026-10-23",
+  "etapa": "Ilustração da Praça Matriz na abertura",
+  "imagem": {
+    "caminho": "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/Interface/InicioTecida.png",
+    "dimensoes": [
+      1672,
+      940
+    ],
+    "sha256": "061639e06c15290c8cb6552120a7bf80077dd8427cb8dae7cd2399c87aa1f37c",
+    "guid": "a745af6ac54a55ba902685c862557c40"
+  },
+  "referencias_fotograficas": [
+    {
+      "nome": "igrejaMatriz.jpg",
+      "dimensoes": [
+        800,
+        568
+      ],
+      "sha256": "61bceb6dd5e8e9709ec2651b7614274087e0deeb4c50e04c59a7e3ceca2ca4e5"
+    },
+    {
+      "nome": "igrejaMatriz2.jpg",
+      "dimensoes": [
+        600,
+        450
+      ],
+      "sha256": "9f7224fd3751d7435159c15056431ad373a654392bb181a1de6a38d4eb8dbc05"
+    }
+  ],
+  "assets_alterados": [
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/Interface/InicioTecida.png"
+  ],
+  "assets_anteriores_protegidos": 147,
+  "preservacao": {
+    "scripts_e_shaders_identicos": true,
+    "mapa_identico": true,
+    "metas_identicos": true,
+    "personagens_identicos": true,
+    "dados_de_jogo_identicos": true
+  },
+  "pngs_verificados": 48,
+  "excessos_de_texto_na_previa": 0,
+  "inspecao_visual": "Imagem e prévia do menu conferidas: torre completa, praça visível, título e botões legíveis.",
+  "instalador": "Mesma lógica da revisão 14; apenas mensagem de versão atualizada; hashes e histórico de arquivos atualizados.",
+  "limites": [
+    "Prévia SVG/PNG é uma composição do layout, não captura da Unity.",
+    "Compilação, execução de PowerShell, Play e build não executados.",
+    "A ilustração adapta o enquadramento da fotografia; não é reconstrução métrica."
+  ]
+}

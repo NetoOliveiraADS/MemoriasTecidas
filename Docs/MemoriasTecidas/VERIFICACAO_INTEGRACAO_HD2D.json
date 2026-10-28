@@ -1,0 +1,136 @@
+{
+  "revisao": 12,
+  "data": "2026-10-23",
+  "etapa": "Integração do kit HD2D no projeto existente",
+  "sintaxe": {
+    "scripts": 66,
+    "erros": [],
+    "metodo": "tree-sitter-c-sharp; análise de sintaxe, não compilação"
+  },
+  "guids_unicos": 657,
+  "arquivos_anteriores_protegidos": 53,
+  "neto": {
+    "quadros": 32,
+    "direcoes": 8,
+    "ordem": [
+      "S",
+      "SW",
+      "W",
+      "NW",
+      "N",
+      "NE",
+      "E",
+      "SE"
+    ],
+    "aplicacao_implementada": "MTMJogo.Start → PrepararKitHD2D → MTMKitHD2D.Aplicar → MTMAtorV22.quadros",
+    "pivot": "tronco em X, pés em Y; escala baseada na altura anterior e na pose parada de cada direção"
+  },
+  "objetos_recortados": 9,
+  "texturas_runtime": 10,
+  "superficies_correspondentes_na_cena_base": {
+    "Calcamento": 20,
+    "AguaRio": 4,
+    "ChaoSertao": 2
+  },
+  "mapa": {
+    "marcadores_preservados": 16,
+    "rota_base_conferida": [
+      "entrada",
+      "praca",
+      "mercado",
+      "fabrica"
+    ],
+    "ilustracoes_ligadas": [
+      {
+        "regiao": "praca",
+        "textura": "PracaMatriz"
+      },
+      {
+        "regiao": "oficina",
+        "textura": "OficinaRedes"
+      },
+      {
+        "regiao": "rio",
+        "textura": "RioPonte"
+      },
+      {
+        "regiao": "beira",
+        "textura": "RioPonte"
+      }
+    ]
+  },
+  "previa": {
+    "execucao": "Script original da prévia em adaptador DOM mínimo com Canvas nativo; não é teste de layout em navegador.",
+    "imagens": 3,
+    "quadros": [
+      {
+        "estado": "parado",
+        "fps": 0,
+        "direcoes": 8
+      },
+      {
+        "estado": "caminhando",
+        "fps": 7,
+        "direcoes": 8
+      },
+      {
+        "estado": "correndo",
+        "fps": 10,
+        "direcoes": 8
+      }
+    ],
+    "objetos": 9
+  },
+  "pngs_verificados": 40,
+  "assets_alterados": [
+    "Assets/MemoriasTecidas/MundoV2/MelhoriasV22/Runtime/MTMJogoVidaV22.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogo.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoInterface.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMapaGuiado.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoMenus.cs"
+  ],
+  "assets_novos": [
+    "Assets/MemoriasTecidas/MundoV2/Editor/MTMKitHD2DEditor.cs",
+    "Assets/MemoriasTecidas/MundoV2/Editor/MTMKitHD2DEditor.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMKitHD2D.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMKitHD2D.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoKitHD2D.cs",
+    "Assets/MemoriasTecidas/MundoV2/Runtime/MTMJogoKitHD2D.cs.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/NetoCardinais.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/PracaMatriz.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/AguaRio.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/RioPonte.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/ObjetosOficinaVegetacao.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/RioPonte.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/PracaMatriz.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/AguaRio.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/Calcamento.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/kit_hd2d.json",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/NetoCardinais.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/ChaoSertao.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/Calcamento.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/NetoDiagonais.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/OficinaRedes.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/NetoDiagonais.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/OficinaRedes.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/ObjetosOficinaVegetacao.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/TerrenoDetalhe.shader.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/FelicianaRetrato.png.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/FelicianaRetrato.png",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/kit_hd2d.json.meta",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/TerrenoDetalhe.shader",
+    "Assets/MemoriasTecidas/MundoV2/Resources/MemoriasTecidas/HD2D/ChaoSertao.png.meta"
+  ],
+  "preservacao": {
+    "jsons_e_metas_anteriores_iguais": true,
+    "cenas_e_prefabs_fora_do_pacote": true,
+    "narrativa_preservada": true
+  },
+  "limites": [
+    "Unity, compilação C#/shaders, Play, build, FPS e PowerShell não executados.",
+    "Prévia Canvas executada com renderizador nativo e adaptador DOM; layout completo do HTML não foi testado em navegador.",
+    "Contagens da cena base não incluem a expansão de todos os prefabs e não substituem as contagens no Play.",
+    "Ajustes visuais de transição da animação, colisão aparente, sombra e emendas precisam de conferência no Play."
+  ]
+}

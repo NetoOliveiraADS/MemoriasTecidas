@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 0d3f317e673e41f5bc490db156198d0c
+TextureImporter:
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+  isReadable: 0
+  streamingMipmaps: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  compressionQuality: 70
+  spriteMode: 0
+  alphaIsTransparency: 1
+  textureType: 0
+  textureShape: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 70
+    crunchedCompression: 0
+    overridden: 0
+  userData: Kit HD2D integrado; ver Docs/MemoriasTecidas/INTEGRACAO_HD2D.md
+  assetBundleName:
+  assetBundleVariant:
