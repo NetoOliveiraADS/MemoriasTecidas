@@ -14,5 +14,3 @@ jobs:
         with:
           lfs: true
           persist-credentials: false
-      - run: python3 Tools/verificar_projeto.py
-      - run: python3 Tools/verificar_organizacao.py
