@@ -8,6 +8,9 @@ namespace MemoriasTecidas.MundoV2
         private Vector2 antecipacaoCamera;
         private float velocidadeZoom,zoomPreferido=1f;
         private bool possuiFoco=true;
+        private Vector2 ultimaPosicaoCamera;
+        private bool primeiraMedicaoCamera=true;
+        public MTMRegiao RegiaoAtualVisual { get { return atual; } }
         private const string ChaveVisual="MemoriasTecidas.Visual.";
 
         private void PrepararApresentacao()
@@ -55,6 +58,12 @@ namespace MemoriasTecidas.MundoV2
         private void AtualizarCameraFluida()
         {
             if(!pronto||atual==null||cameraDoMapa==null)return;
+            Vector2 posicaoVisual=transform.position;
+            Vector2 deslocamento=primeiraMedicaoCamera?Vector2.zero:posicaoVisual-ultimaPosicaoCamera;
+            primeiraMedicaoCamera=false;ultimaPosicaoCamera=posicaoVisual;
+            Vector2 velocidadeVista=MTMFluidez21.MedirVelocidade(deslocamento,Time.deltaTime,velocidade*1.8f);
+            // Menus e perda de foco mantêm o enquadramento. Conversas conservam o foco suave.
+            if(!possuiFoco||inicioAbertoUI||(painel.Length>0&&falas==null))return;
             float dt=Mathf.Min(Time.unscaledDeltaTime,.1f);
             if(dt<=0f)return;
             if(!Bloqueado&&possuiFoco)
@@ -62,26 +71,29 @@ namespace MemoriasTecidas.MundoV2
             float fator=1f;
             if(!apresentacao.reduzirMovimento)
             {
-                float corrida=corpo!=null?Mathf.InverseLerp(velocidade,velocidade*1.55f,corpo.linearVelocity.magnitude):0f;
+                float corrida=Mathf.InverseLerp(velocidade,velocidade*1.55f,velocidadeVista.magnitude);
                 fator+=corrida*apresentacao.aberturaCorrida*.1f;
                 if(falas!=null&&apresentacao.aproximarConversas)fator*=.94f;
             }
             float tamanho=Mathf.Clamp(tamanhoCamera*zoomPreferido*fator,2f,TamanhoMaximoCamera());
             cameraDoMapa.orthographicSize=Mathf.Min(TamanhoMaximoCamera(),Mathf.SmoothDamp(cameraDoMapa.orthographicSize,tamanho,ref velocidadeZoom,.24f,Mathf.Infinity,dt));
-            Vector2 frente=Bloqueado||corpo==null||apresentacao.reduzirMovimento?Vector2.zero:Vector2.ClampMagnitude(corpo.linearVelocity*apresentacao.antecipacao,1.4f);
+            Vector2 frente=Bloqueado||apresentacao.reduzirMovimento?Vector2.zero:Vector2.ClampMagnitude(velocidadeVista*apresentacao.antecipacao,1.4f);
             antecipacaoCamera=Vector2.Lerp(antecipacaoCamera,frente,1f-Mathf.Exp(-8f*dt));
             Vector3 alvo=AlvoCamera(),pos=cameraDoMapa.transform.position;
             Vector2 zona=apresentacao.reduzirMovimento?Vector2.zero:apresentacao.zonaMorta;
             alvo.x=ZonaMorta(pos.x,alvo.x,Mathf.Max(0f,zona.x));
             alvo.y=ZonaMorta(pos.y,alvo.y,Mathf.Max(0f,zona.y));
             pos=Vector3.SmoothDamp(pos,alvo,ref velocidadeCamera,Mathf.Max(.04f,apresentacao.suavidadeCamera),Mathf.Infinity,dt);
-            cameraDoMapa.transform.position=ConterCamera(pos);
+            Vector3 contida=ConterCamera(pos);
+            MTMFluidez21.LimitarInerciaCamera(pos,contida,ref velocidadeCamera);
+            cameraDoMapa.transform.position=contida;
         }
         private static float ZonaMorta(float atual,float alvo,float margem)
         {float delta=alvo-atual;return Mathf.Abs(delta)<=margem?atual:alvo-Mathf.Sign(delta)*margem;}
         private void CentralizarCamera()
         {
             velocidadeCamera=Vector3.zero;antecipacaoCamera=Vector2.zero;velocidadeZoom=0f;
+            primeiraMedicaoCamera=true;
             if(atual==null||cameraDoMapa==null)return;
             AjustarCamera();cameraDoMapa.orthographicSize=Mathf.Clamp(tamanhoCamera*zoomPreferido,1f,TamanhoMaximoCamera());
             cameraDoMapa.transform.position=AlvoCamera();

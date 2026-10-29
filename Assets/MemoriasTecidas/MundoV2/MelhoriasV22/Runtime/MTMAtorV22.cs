@@ -22,6 +22,8 @@ namespace MemoriasTecidas.MundoV2
         private Vector3 posicaoAnterior;
         private float tempo,fase;
         private bool primeiraLeitura=true,andava;
+        public float RapidezReal { get; private set; }
+        public float FaseCaminhada { get; private set; }
 
         private void Awake()
         {
@@ -32,7 +34,7 @@ namespace MemoriasTecidas.MundoV2
             fase=Mathf.Abs(raizMovimento.position.x*.831f+raizMovimento.position.y*.53f);
             posicaoAnterior=raizMovimento.position;
         }
-        private void OnEnable(){primeiraLeitura=true;andava=false;tempo=0;}
+        private void OnEnable(){primeiraLeitura=true;andava=false;tempo=0;RapidezReal=0;FaseCaminhada=0;}
 
         // Um novo movimento já exibe a passada 1; o quadro 0 é o repouso/apoio.
         // Método puro compartilhado com a verificação no Editor.
@@ -51,30 +53,38 @@ namespace MemoriasTecidas.MundoV2
             Vector2 delta=primeiraLeitura?Vector2.zero:(Vector2)(pos-posicaoAnterior);
             primeiraLeitura=false;posicaoAnterior=pos;
             if(delta.sqrMagnitude>1f){delta=Vector2.zero;tempo=0;andava=false;}
-            Vector2 medida=Time.deltaTime>.00001f?delta/Time.deltaTime:Vector2.zero;
+            float limite=tipo==Tipo.Jogador&&jogo!=null?jogo.velocidade*1.8f:8f;
+            Vector2 medida=MTMFluidez21.MedirVelocidade(delta,Time.deltaTime,limite);
             // O Rigidbody já interpola o deslocamento visível. Outra suavização atrasava
             // a primeira passada e mantinha a animação depois de parar.
-            Vector2 velocidade=tipo==Tipo.Jogador?medida:caminhante!=null?caminhante.Velocidade:Vector2.zero;
-            if(tipo==Tipo.Jogador)
-            {
-                // A passada segue o deslocamento efetivo. Teclas contra uma parede não simulam caminhada.
-                if(jogo!=null&&jogo.V22Bloqueado)velocidade=Vector2.zero;
-            }
+            Vector2 velocidade=medida;
+            // Inclui moradores movidos pelo roteiro: a pose acompanha o deslocamento que foi visto.
+            if(jogo!=null&&jogo.V22Bloqueado)velocidade=Vector2.zero;
             bool andando=velocidade.sqrMagnitude>(tipo==Tipo.Jogador ? .0001f : .01f);
+            RapidezReal=andando?velocidade.magnitude:0f;
+            float percurso=andando?RapidezReal*Time.deltaTime:0f;
+            if(andando)
+            {
+                float altura=desenho.sprite!=null?desenho.sprite.bounds.size.y*Mathf.Abs(transform.lossyScale.y):1.6f;
+                float passada=Mathf.Max(.35f,altura*.45f);
+                FaseCaminhada=Mathf.Repeat(FaseCaminhada+percurso/passada*Mathf.PI*2f,Mathf.PI*2f);
+            }
+            else FaseCaminhada=0f;
             quadroAtual=0;
             if(tipo==Tipo.Jogador&&quadros.Length>=32)
             {
-                float fps=fpsCaminhada,proporcao=0f;
+                float fps=fpsCaminhada;
+                float baseAndar=jogo!=null?Mathf.Max(.1f,jogo.velocidade):3.5f;
+                float distanciaQuadro=baseAndar/Mathf.Max(1f,fpsCaminhada);
                 if(andando)
                 {
-                    float angulo=Mathf.Atan2(-velocidade.x,-velocidade.y)*Mathf.Rad2Deg;
-                    direcaoAtual=(Mathf.RoundToInt(angulo/45f)+8)%8;
-                    float baseAndar=jogo!=null?Mathf.Max(.1f,jogo.velocidade):3.5f;
+                    direcaoAtual=MTMFluidez21.DirecaoOito(velocidade,direcaoAtual);
                     float rapidez=velocidade.magnitude;
-                    fps=Mathf.Lerp(fpsCaminhada,fpsCorrida,Mathf.InverseLerp(baseAndar,baseAndar*1.55f,rapidez));
-                    proporcao=rapidez/baseAndar;
+                    float corrida=Mathf.InverseLerp(baseAndar,baseAndar*1.55f,rapidez);
+                    fps=Mathf.Lerp(fpsCaminhada,fpsCorrida,corrida);
+                    distanciaQuadro=Mathf.Lerp(baseAndar,baseAndar*1.55f,corrida)/Mathf.Max(1f,fps);
                 }
-                int passo=AvancarPasso(andando,andava,cicloCompleto,Time.deltaTime,fps,proporcao,ref tempo);
+                int passo=MTMFluidez21.PassoPorDistancia(andando,andava,cicloCompleto,percurso,distanciaQuadro,ref tempo);
                 quadroAtual=direcaoAtual*4+passo;
             }
             else if(tipo==Tipo.Morador)
@@ -85,12 +95,13 @@ namespace MemoriasTecidas.MundoV2
             }
             else if(tipo==Tipo.Animal)
             {
-                tempo=andando?tempo+Time.deltaTime*7f:0;
+                tempo=andando?Mathf.Repeat(tempo+percurso/.12f,quadros.Length):0;
                 quadroAtual=andando?Mathf.FloorToInt(tempo)%quadros.Length:0;
                 if(Mathf.Abs(velocidade.x)>.02f)desenho.flipX=velocidade.x<0;
             }
             andava=andando;
-            desenho.sprite=quadros[Mathf.Clamp(quadroAtual,0,quadros.Length-1)];
+            Sprite proximo=quadros[Mathf.Clamp(quadroAtual,0,quadros.Length-1)];
+            if(desenho.sprite!=proximo)desenho.sprite=proximo;
         }
     }
 }

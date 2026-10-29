@@ -20,6 +20,10 @@ namespace MemoriasTecidas.MundoV2
         [Range(0f,.04f)] public float ondulacao=.009f;
         [Range(0f,2f)] public float velocidadeAgua=.65f;
         private Mesh malha;
+        private Texture2D distanciaBorda;
+        private Color32[] dadosBorda;
+        private Vector2[] pontosBorda;
+        private Vector2 eixoXBorda,eixoYBorda;
         private MaterialPropertyBlock bloco;
         private bool reconstruir=true;
         private void OnEnable(){reconstruir=true;}
@@ -40,15 +44,31 @@ namespace MemoriasTecidas.MundoV2
         {
             Vector2[] pontos=Pontos();int[] indices=MTMTriangulacaoV23.Triangular(pontos);
             if(malha==null){malha=new Mesh{name="Superficie_V23",hideFlags=HideFlags.DontSave};}
-            var vertices=new Vector3[pontos.Length];var uv=new Vector2[pontos.Length];
-            for(int i=0;i<pontos.Length;i++){vertices[i]=pontos[i];uv[i]=pontos[i]/Mathf.Max(.1f,unidadesPorRepeticao);}
-            malha.Clear();malha.vertices=vertices;malha.uv=uv;malha.triangles=indices;malha.RecalculateBounds();
+            var vertices=new Vector3[pontos.Length];var uv=new Vector2[pontos.Length];var uvBorda=new Vector2[pontos.Length];
+            Rect limites=MTMContornoVisual.Limites(pontos);
+            for(int i=0;i<pontos.Length;i++)
+            {
+                vertices[i]=pontos[i];uv[i]=pontos[i]/Mathf.Max(.1f,unidadesPorRepeticao);
+                uvBorda[i]=new Vector2((pontos[i].x-limites.xMin)/limites.width,(pontos[i].y-limites.yMin)/limites.height);
+            }
+            malha.Clear();malha.vertices=vertices;malha.uv=uv;malha.uv2=uvBorda;malha.triangles=indices;malha.RecalculateBounds();
             GetComponent<MeshFilter>().sharedMesh=malha;
             var r=GetComponent<MeshRenderer>();r.sharedMaterial=material;r.sortingOrder=ordem;
             if(bloco==null)bloco=new MaterialPropertyBlock();
             bloco.SetTexture("_MainTex",textura!=null?textura:Texture2D.whiteTexture);
             bloco.SetColor("_Color",cor);bloco.SetFloat("_Agua",agua?1f:0f);
-            bloco.SetFloat("_Ondulacao",ondulacao);bloco.SetFloat("_Velocidade",velocidadeAgua);r.SetPropertyBlock(bloco);
+            bloco.SetFloat("_Ondulacao",ondulacao);bloco.SetFloat("_Velocidade",velocidadeAgua);
+            string nomeTextura=textura!=null?textura.name.ToLowerInvariant():"";
+            bool natural=agua||nomeTextura.Contains("areia")||nomeTextura.Contains("grama")||nomeTextura.Contains("terra");
+            if(natural)
+            {
+                PrepararBorda(pontos,limites);
+                bloco.SetTexture("_MTM_DistanciaBorda",distanciaBorda);
+            }
+            else LiberarBorda();
+            bloco.SetFloat("_MTM_ContornoAtivo",natural?1f:0f);
+            bloco.SetFloat("_MTM_LarguraBorda",agua ? .08f : .12f);
+            r.SetPropertyBlock(bloco);
             var c=GetComponent<PolygonCollider2D>();
             if(bloquearPassagem)
             {
@@ -59,13 +79,32 @@ namespace MemoriasTecidas.MundoV2
             reconstruir=false;
         }
         private void OnDisable(){LiberarMalha();}
-        private void OnDestroy(){LiberarMalha();}
+        private void OnDestroy(){LiberarMalha();dadosBorda=null;pontosBorda=null;}
         private void LiberarMalha()
         {
+            LiberarBorda();
             if(malha==null)return;
             var filtro=GetComponent<MeshFilter>();if(filtro!=null&&filtro.sharedMesh==malha)filtro.sharedMesh=null;
             if(Application.isPlaying)Destroy(malha);else DestroyImmediate(malha);
             malha=null;reconstruir=true;
+        }
+        private void PrepararBorda(Vector2[] pontos,Rect limites)
+        {
+            // Guarda os dados em memória gerenciada; libera a textura nativa no OnDisable.
+            // Voltar à região só exige reenviar os dados, sem repetir o cálculo de distâncias.
+            Vector2 x=transform.TransformVector(Vector3.right),y=transform.TransformVector(Vector3.up);
+            bool igual=dadosBorda!=null&&pontosBorda!=null&&pontosBorda.Length==pontos.Length&&x==eixoXBorda&&y==eixoYBorda;
+            if(igual)for(int i=0;i<pontos.Length;i++)if(pontos[i]!=pontosBorda[i]){igual=false;break;}
+            if(igual&&distanciaBorda!=null)return;
+            LiberarBorda();
+            distanciaBorda=MTMContornoVisual.Criar(pontos,transform,limites,out dadosBorda,igual?dadosBorda:null);
+            pontosBorda=(Vector2[])pontos.Clone();eixoXBorda=x;eixoYBorda=y;
+        }
+        private void LiberarBorda()
+        {
+            if(distanciaBorda==null)return;
+            if(Application.isPlaying)Destroy(distanciaBorda);else DestroyImmediate(distanciaBorda);
+            distanciaBorda=null;
         }
         private void OnDrawGizmosSelected()
         {

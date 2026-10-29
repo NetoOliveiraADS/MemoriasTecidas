@@ -18,28 +18,38 @@ namespace MemoriasTecidas.MundoV2
         private float espera;
         private readonly RaycastHit2D[] acertos = new RaycastHit2D[24];
         private Rigidbody2D corpo;
+        private float rapidezAtual,fasePausa;
 
         private void Awake()
         {
             corpo = GetComponent<Rigidbody2D>();
+            if(corpo!=null&&corpo.bodyType==RigidbodyType2D.Kinematic&&corpo.interpolation==RigidbodyInterpolation2D.None)
+                corpo.interpolation=RigidbodyInterpolation2D.Interpolate;
+            fasePausa=Mathf.Repeat(Mathf.Abs(transform.position.x*.31f+transform.position.y*.73f),1f);
             espera = Mathf.Abs(transform.position.x * .7f) % pausa;
         }
-        private void OnDisable() { Velocidade = Vector2.zero; if(corpo!=null)corpo.linearVelocity=Vector2.zero; }
-        private void FixedUpdate()
+        private void OnDisable() { rapidezAtual=0f;Velocidade = Vector2.zero; if(corpo!=null)corpo.linearVelocity=Vector2.zero; }
+        private void FixedUpdate(){if(corpo!=null)Mover(Time.fixedDeltaTime);}
+        private void Update(){if(corpo==null)Mover(Time.deltaTime);}
+        private void Mover(float dt)
         {
             Velocidade = Vector2.zero;
             if(corpo!=null)corpo.linearVelocity=Vector2.zero;
-            if (vida == null || !vida.isActiveAndEnabled || pontos == null || pontos.Length < 2) return;
-            if (animal ? !vida.animaisAndando : !vida.moradoresAndando) return;
-            if (vida.jogo != null && vida.jogo.V22Bloqueado) return;
-            if (Vector2.Distance(transform.position, vida.transform.position) < (animal ? 1.1f : 2.5f)) return;
-            if (espera > 0f) { espera -= Time.fixedDeltaTime; return; }
+            if(dt<=0f||dt>.25f){rapidezAtual=0f;return;}
+            if (vida == null || !vida.isActiveAndEnabled || pontos == null || pontos.Length < 2) {rapidezAtual=0f;return;}
+            if (animal ? !vida.animaisAndando : !vida.moradoresAndando) {rapidezAtual=0f;return;}
+            if (vida.jogo != null && vida.jogo.V22Bloqueado) {rapidezAtual=0f;return;}
+            if ((transform.position-vida.transform.position).sqrMagnitude < (animal ? 1.21f : 6.25f)) {rapidezAtual=0f;return;}
+            if (espera > 0f) { espera -= dt;rapidezAtual=0f;return; }
             Vector2 alvo = transform.parent != null ? (Vector2)transform.parent.TransformPoint(pontos[destino]) : pontos[destino];
             Vector2 pos = corpo != null ? corpo.position : (Vector2)transform.position;
             Vector2 delta = alvo - pos;
             float rapidez = animal ? velocidade : vida.velocidadeMoradores;
-            float passo = Mathf.Min(delta.magnitude, rapidez * Time.fixedDeltaTime);
-            if (delta.magnitude < .06f) { Proximo(); return; }
+            float distancia=delta.magnitude;
+            if (distancia < .06f) { Proximo(); return; }
+            float desejada=Mathf.Min(rapidez,Mathf.Sqrt(2f*2.4f*Mathf.Max(0f,distancia-.03f)));
+            rapidezAtual=Mathf.MoveTowards(rapidezAtual,desejada,2.4f*dt);
+            float passo = Mathf.Min(distancia, rapidezAtual * dt);
             var filtro = new ContactFilter2D();
             filtro.SetLayerMask(obstaculos); filtro.useTriggers = false;
             int n = Physics2D.CircleCast(pos + Vector2.up * .1f, raio, delta.normalized, filtro, acertos, passo + .07f);
@@ -50,12 +60,16 @@ namespace MemoriasTecidas.MundoV2
                 // Não atravessa água, edifícios ou outros personagens.
                 Proximo(); return;
             }
-            Velocidade = delta.normalized * rapidez;
+            Velocidade = delta.normalized * (passo/dt);
             Vector2 chegada = pos + delta.normalized * passo;
             if (corpo != null) corpo.MovePosition(chegada);
             else transform.position = new Vector3(chegada.x, chegada.y, transform.position.z);
         }
-        private void Proximo() { destino = (destino + 1) % pontos.Length; espera = pausa; }
+        private void Proximo()
+        {
+            destino = (destino + 1) % pontos.Length;rapidezAtual=0f;
+            espera = pausa*Mathf.Lerp(.85f,1.15f,Mathf.Repeat(fasePausa+destino*.618034f,1f));
+        }
         private void OnDrawGizmosSelected()
         {
             if (pontos == null || pontos.Length < 2) return;

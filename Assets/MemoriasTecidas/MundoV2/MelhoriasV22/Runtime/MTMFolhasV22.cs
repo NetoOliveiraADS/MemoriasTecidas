@@ -9,6 +9,7 @@ namespace MemoriasTecidas.MundoV2
         public Material material;
         public MTMVidaV22 vida;
         private ParticleSystem folhas;
+        private float ultimaTaxa=-1f;
         private void Start()
         {
             if(copa==null||copa.sprite==null||material==null)return;
@@ -30,11 +31,13 @@ namespace MemoriasTecidas.MundoV2
         }
         private void Update()
         {
-            if(folhas==null)return;var em=folhas.emission;
+            if(folhas==null)return;
             if(MTMConfiguracaoVisual.Atual.reduzirMovimento&&folhas.particleCount>0)folhas.Clear();
-            em.rateOverTime=MTMAmbienteV2.Qualidade==0||MTMConfiguracaoVisual.Atual.reduzirMovimento||vida==null||vida.intensidadeVento<.01f?0f:MTMAmbienteV2.Qualidade==2?.16f:.07f;
+            float taxa=MTMAmbienteV2.Qualidade==0||MTMConfiguracaoVisual.Atual.reduzirMovimento||vida==null||vida.intensidadeVento<.01f?0f:MTMAmbienteV2.Qualidade==2?.16f:.07f;
+            if(Mathf.Approximately(taxa,ultimaTaxa))return;
+            var em=folhas.emission;em.rateOverTime=taxa;ultimaTaxa=taxa;
         }
         private void OnDisable(){if(folhas!=null)folhas.Stop(true,ParticleSystemStopBehavior.StopEmitting);}
-        private void OnEnable(){if(folhas!=null)folhas.Play();}
+        private void OnEnable(){ultimaTaxa=-1f;if(folhas!=null)folhas.Play();}
     }
 }

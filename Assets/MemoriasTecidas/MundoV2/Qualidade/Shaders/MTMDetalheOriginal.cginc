@@ -29,8 +29,9 @@ float4 MTMDetalharOriginal(sampler2D textura,float2 uv,float4 centro,float4 texe
     float4 viz=float4(dot(l.rgb,lum),dot(r.rgb,lum),dot(b.rgb,lum),dot(t.rgb,lum));
     float detalhe=clamp(c-dot(viz,float4(.25,.25,.25,.25)),-.08,.08);
     float nitidez=detalhe/max(.12,c)*_MTM_DetalheOriginal.x;
-    float gradiente=clamp((viz.x-viz.y)*-.6+(viz.z-viz.w)*.8,-.1,.1);
-    float relevo=gradiente*_MTM_DetalheOriginal.y*step(1.5,_MTV_Quality)*saturate(_MTV_Sun.y)*(1-saturate(agua));
+    float gradiente=clamp((viz.x-viz.y)*-_MTV_Sun.x*.6+(viz.z-viz.w)*.8,-.1,.1);
+    float solExterior=saturate(_MTV_Sun.y)*(1-saturate(_MTV_Sun.z));
+    float relevo=gradiente*_MTM_DetalheOriginal.y*step(1.5,_MTV_Quality)*solExterior*(1-saturate(agua));
     float ganho=clamp((nitidez+relevo)*peso*saturate(_MTV_Art.z),-.06,.06);
     if(_MTM_RefinoOriginal.x>.5)
     {
@@ -43,7 +44,7 @@ float4 MTMDetalharOriginal(sampler2D textura,float2 uv,float4 centro,float4 texe
         float3 luz=normalize(float3(-_MTV_Sun.x,.65,1.2));
         float resposta=dot(normal,luz)-luz.z;
         float nivel=lerp(.45,1,step(1.5,_MTV_Quality));
-        float luzLocal=resposta*_MTM_RefinoOriginal.y*nivel*saturate(_MTV_Sun.y)*(1-saturate(agua));
+        float luzLocal=resposta*_MTM_RefinoOriginal.y*nivel*solExterior*(1-saturate(agua));
         float cavidade=min(0,detalhe)*.12*_MTM_RefinoOriginal.y*nivel*(1-saturate(agua));
         ganho=clamp((nitidez*(1-bordaForte*.7)+luzLocal+cavidade)*peso*saturate(_MTV_Art.z),-.045,.045);
     }

@@ -40,8 +40,15 @@ namespace MemoriasTecidas.MundoV2
             // Soltar a tecla encerra o comando sem uma cauda de deslizamento.
             if(entrada.sqrMagnitude<.0001f||rapidez<=0f)return Vector2.zero;
             Vector2 alvo=Vector2.ClampMagnitude(entrada,1f)*Mathf.Max(0f,rapidez);
-            bool freando=alvo.sqrMagnitude<atual.sqrMagnitude||Vector2.Dot(atual,alvo)<0f;
-            return Vector2.MoveTowards(atual,alvo,Mathf.Max(1f,freando?frear:acelerar)*Mathf.Max(0f,dt));
+            if(dt<=0f)return atual;
+            Vector2 direcao=alvo.normalized;
+            // A direção responde ao comando; a aceleração ajusta a rapidez.
+            // Retira o impulso contrário/lateral que fazia o personagem escorregar ao girar.
+            float atualNaDirecao=Mathf.Max(0f,Vector2.Dot(atual,direcao));
+            float destino=alvo.magnitude;
+            float nova=Mathf.MoveTowards(atualNaDirecao,destino,
+                Mathf.Max(1f,atualNaDirecao>destino?frear:acelerar)*dt);
+            return direcao*nova;
         }
         public static Vector3 ConterCamera(Vector3 alvo,Vector2 centro,Vector2 dimensoes,float tamanho,float aspecto)
         {

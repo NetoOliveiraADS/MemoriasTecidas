@@ -6,6 +6,7 @@ namespace MemoriasTecidas.MundoV2
     {
         public static int Qualidade=1;
         public static float Sol=1f,Fase=.33f;
+        public static bool Interior { get; private set; }
         public static readonly string[] Nomes={"Leve","Equilibrada","Alta"};
         private readonly Vector4[] posicoes=new Vector4[16],cores=new Vector4[16];
         private bool[] usadas;
@@ -16,6 +17,7 @@ namespace MemoriasTecidas.MundoV2
         public void Atualizar(MTMAreaDados area,float relogio)
         {
             if(area==null)return;
+            Interior=area.interior;
             var arte=MTMConfiguracaoVisual.Atual;
             Qualidade=Mathf.Clamp(Qualidade,0,2);Fase=Mathf.Repeat(relogio,1f);Sol=MTMCalculosVisuais.Sol(Fase);
             float hora=Fase*24f;
@@ -32,7 +34,8 @@ namespace MemoriasTecidas.MundoV2
             Shader.SetGlobalFloat("_MTV_Motion",arte.reduzirMovimento?0f:1f);
             Shader.SetGlobalColor("_MTV_Ambient",luzAtual);
             Shader.SetGlobalVector("_MTV_Art",new Vector4(arte.exposicao,arte.saturacao,arte.detalhe,vento));
-            Shader.SetGlobalVector("_MTV_Sun",new Vector4(Mathf.Sin((Fase-.25f)*Mathf.PI*2f),Sol,area.interior?1f:0f,arte.sombrasContato));
+            // Direção horizontal troca de lado ao meio-dia; Sol controla a intensidade, não a altura.
+            Shader.SetGlobalVector("_MTV_Sun",new Vector4(Mathf.Sin((Fase-.5f)*Mathf.PI*2f),Sol,area.interior?1f:0f,arte.sombrasContato));
             int limite=Qualidade==0?4:Qualidade==1?8:16,count=0;
             if(cameraPrincipal==null)cameraPrincipal=Camera.main;
             Vector2 centro=cameraPrincipal!=null?(Vector2)cameraPrincipal.transform.position:Vector2.zero;
@@ -65,6 +68,7 @@ namespace MemoriasTecidas.MundoV2
         }
         private void OnDisable()
         {
+            Interior=false;
             anterior=null;Shader.SetGlobalFloat("_MTV_Active",0f);Shader.SetGlobalInt("_MTV_Count",0);
             Shader.SetGlobalFloat("_MTV_Time",0f);Shader.SetGlobalFloat("_MTV_Motion",0f);
         }
