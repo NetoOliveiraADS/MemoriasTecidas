@@ -17,7 +17,7 @@
             "id": "m01",
             "titulo": "O início da jornada",
             "descricao": "Dona Feliciana apresenta a cidade e indica um encontro com Simão de Góis, na Praça Matriz.",
-            "recompensa": "Fio simples, guardado como lembrança inicial.",
+            "recompensa": "Primeiro registro no diário e indicação do próximo destino",
             "capitulo": "Chegadas e encontros",
             "numero": 1,
             "opcional": false,
@@ -25,7 +25,7 @@
             "etapas": [
                 {
                     "texto": "Conversar com Dona Feliciana",
-                    "regiao": "entrada",
+                    "regiao": "entrada da cidade",
                     "ponto": "npc_feliciana",
                     "horario": "dia",
                     "acao": "conversa",
@@ -36,10 +36,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Dona Feliciana: Você está conhecendo Jaguaruana? Então não olhe apenas para os caminhos. Nossa cidade guarda histórias em cada canto.",
-                        "Neto: E por onde eu começo?",
-                        "Dona Feliciana: Procure Simão de Góis, na Praça Matriz. Ele conhece histórias antigas que muita gente já esqueceu.",
-                        "Neto: Vou procurar por ele."
+                        "Dona Feliciana: Seja bem-vindo a Jaguaruana! Nossa cidade guarda histórias que passam de geração em geração. Algumas estão nos livros, outras vivem na memória do povo.",
+                        "Neto: Quero conhecer a cidade. Por onde devo começar?",
+                        "Dona Feliciana:Procure Simão de Góis. Ele conhece muitas histórias antigas e poderá ajudar você a entender melhor a cidade.",
+                        "Neto: O caminho está bloqueado por essas caixas.",
+                        "Dona Feliciana: Os comerciantes devem tê-las deixado aí. Afaste as caixas menores e procure uma passagem livre.",
+                        "Neto: Pronto! Agora consigo passar",
+                        "Dona Feliciana: Muito bem!, Siga até Simão e conte que eu indiquei o caminho. Sua jornada está apenas começando"
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -109,10 +112,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Neto: Dona Feliciana pediu que eu viesse falar com você.",
-                        "Simão de Góis: Conheço algumas histórias. Mas existem histórias que parecem diferentes quando a noite chega.",
-                        "Neto: Você está falando das lendas?",
-                        "Simão de Góis: Talvez. Antes disso, vá até a Serra Dantas e observe o lugar. Converse com quem encontrar e depois volte."
+                        "Simão de Góis: Dona Feliciana me contou que você gostaria de conhecer melhor Jaguaruana.",
+                        "Neto: Sim! Quero descobrir as histórias e os lugares importantes da cidade.",
+                        "Simão de Góis: Existem muitas histórias que ainda precisam ser reconhecidas.",
+                        "Neto: Por onde podemos começar?",
+                        "Simão de Góis: Recomendo visitar a Serra Dantas e conhecer o Cruzeiro",
+                        "Neto: Devo procurar alguém por lá?",
+                        "Simão de Góis: Converse com os visitantes e observe o caminho. Cada detalhe pode guardar uma lembrança."
                     ],
                     "falasConclusao": [],
                     "conceder": [
@@ -233,11 +239,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Neto: Você costuma vir aqui?",
-                        "Morador: Muita gente vem. Há visitantes, fiéis e pessoas que sobem até o Cruzeiro.",
-                        "Neto: Vim conhecer as histórias deste lugar.",
-                        "Morador: Então observe com calma. A memória de uma cidade também está nos lugares que as pessoas continuam visitando.",
-                        "Visitante: Algumas visitas são ligadas à missa e aos encontros da comunidade. Converse com as pessoas para conhecer melhor o lugar."
+                        "Visitante: Você também veio conhecer a Serra Dantas? Este lugar tem paisagens muito bonitas",
+                        "Neto: Simão pediu que eu explorasse a trilha e observasse o cruzeiro",
+                        "Visitante: Então siga por aquele caminho e tenha cuidado com as pedras",
+                        "Neto: Há alguns obstáculos bloqueando a passagem",
+                        "Visitante: Contorne as pedras e procure as referências ao longo da trilha.",
+                        "Neto: Encontrei o Cruzeiro! A vista daqui é muito bonita",
+                        "Visitante: Agora você conhece mais um lugar importante da nossa cidade."
                     ],
                     "falasConclusao": [],
                     "conceder": [
@@ -282,10 +290,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Neto: Voltei da Serra. Você disse que tinha uma história para contar.",
-                        "Simão de Góis: A história da Mulher-Cavalo é contada por diferentes pessoas. Algumas dizem que a viram, e outras acreditam que é apenas uma lenda.",
-                        "Neto: E você acredita?",
-                        "Simão de Góis: Acredito que essas histórias fazem parte da memória de um lugar. O que você viu ou ouviu precisa ser investigado com cuidado."
+                        "Simão de Góis: Existe uma antiga história sobre uma figura que aparece a noite, alguns moradores a chamam de Mulher-Cavalo",
+                        "Neto: Essa história é verdadeira ou apenas uma lenda?",
+                        "Simão de Góis: Não podemos afirmar. Volte ao entardecer e observe a praça com atenção",
+                        "Neto: Está ficando escuro. Acho que vi alguma coisa perto da Igreja!",
+                        "Simão de Góis: Fique próximo às luzes e não tente seguir qualquer figura que aparecer",
+                        "Neto: Uma silhueta passou rapidamente! Não consegui ver quem era",
+                        "Simão de Góis: Registre o que aconteceu, ainda precisamos descobrir o que existe por trás dessa história"
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -356,10 +367,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Neto: Estou procurando informações sobre a cidade.",
-                        "Guia: Então conheça os objetos e as histórias que ajudam a entender a região.",
-                        "Neto: A carnaúba tem tanta importância assim?",
-                        "Guia: Ela está presente em muitos aspectos da vida das pessoas daqui. Ajude-me a localizar um objeto nesta sala."
+                        "Guia: Bem-Vindo ao Memorial da Carnaúba! Estamos preparando uma exposição sobre os trabalhos tradicionais da região",
+                        "Neto: Posso ajudar? Parece que ainda falta alguma coisa",
+                        "Guia: Uma peça de palha desapareceu entre os materiais da exposição",
+                        "Neto: Onde devo procurar?",
+                        "Guia: Verifique as caixas e observe as etiquetas para identificar a peça correta",
+                        "Neto: Encontrei! EStava misturada com outros materiais",
+                        "Guia: Excelente! Agora podemos completar a exposição e preservar mais uma parte da nossa história."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -467,10 +481,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Neto: Estou procurando materiais para construir uma rede.",
-                        "Comerciante: Posso ajudar, mas primeiro preciso que encontre alguns objetos que foram separados e estão espalhados pelo mercado.",
-                        "Neto: Vou procurar. Depois você pode me orientar sobre os materiais?",
-                        "Comerciante: Combinado. Se você quer entender a cidade, também precisa conhecer as pessoas que trabalham aqui."
+                        "Comerciante: Ainda bem que você chegou! Três objetos desapareceram das minhas bancas",
+                        "Neto: Quais objetos estão faltando?",
+                        "Comerciante: Uma pequena caixa, um tecido e uma ferramenta. Eles devem estar espalados pelo mercado.",
+                        "Neto: Vou procurar. Mas há um carrinho bloqueando a passagem",
+                        "Comerciante: Afaste o carrinho e procure perto das caixas e das bancas",
+                        "Neto: Encontrei os três objetos!",
+                        "Comerciante: Muito obrigado! Agora posso organizar novamente minha banca."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -649,10 +666,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Neto: Simão, qual é a próxima tarefa?",
-                        "Simão de Góis: Procure um pequeno enfeite feito de palha de carnaúba que foi deixado na praça.",
-                        "Neto: Para que ele vai servir?",
-                        "Simão de Góis: Guarde-o. Ainda faltam materiais, e cada um terá seu propósito."
+                        "Simão de Góis: Preciso de sua ajuda. Um enefeite de palha que seria utilizado na decoração da praça desapareceu",
+                        "Neto: Você sabe onde ele foi visto pela última vez?.",
+                        "Simão de Góis: Acredito que tenha caído próximo aos bancos",
+                        "Neto: Vou procurar por lá, há alguns objetos espalhados pelo caminho",
+                        "Simão de Góis: Observe com atenção e afaste o que estiver bloqueando a passagem.",
+                        "Neto: Encontrei o enfeite perto de um dos bancos.",
+                        "Simão de Góis: Muito bem! Agora podemos cmpletar a decoração da praça." 
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -722,10 +742,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Moradora: A procissão vai começar, mas as placas que indicam o caminho desapareceram!",
+                        "Moradora: Estamos organizando uma porcissão, mas algumas placas que indicam o percurso desapareceram",
                         "Neto: Quantas placas precisamos encontrar?",
-                        "Moradora: Três. Procure na praça, no Mercado Velho e na rua próxima à igreja. Uma delas está com alguém que caminha pelo mapa.",
-                        "Neto: Vou encontrar as placas e colocá-las na ordem correta."
+                        "Padre Ducéu: São três. Sem elas a comunidade pode acabar seguindo pelo caminho errado",
+                        "Neto: Vou procurar as placas e descobrir a ordem correta.",
+                        "Moradora: Depois, ajude a organizar o percurso e fique atento aos imprevistos.",
+                        "Neto: Encontrei as três placas e organizei a sequência!",
+                        "Padre Ducéu: Excelente! Agora a comunidade poderá continuar a procissão com segurança"
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -1100,9 +1123,10 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Artesão: Uma rede não aparece pronta. Existe todo um trabalho por trás dela.",
-                        "Neto: Você pode me ensinar?",
-                        "Artesão: Posso. Primeiro, aprenda como os fios são organizados no tear."
+                        "Artesão: Antes de aprender a utilizar o tear, você precisa conhecer como funciona a produção das redes",
+                        "Neto: Quero aprender! Quais materiais são utilizados?",
+                        "Artesão: Fios, ferramentas e diferentes peças fazem parte desse trabalho"
+
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -2224,6 +2248,7 @@
                     "pista": "rio",
                     "percurso": []
                 }
+            
             ]
         },
         {
