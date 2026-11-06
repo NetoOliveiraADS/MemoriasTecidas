@@ -3,5 +3,11 @@
   "nitidez": 0.32,
   "relevo": 0.22,
   "natural": true,
-  "luzTextura": 0.35
+  "luzTextura": 0.35,
+  "personagens": {
+    "ativo": true,
+    "saturacao": 0.94,
+    "suavizacao": 0.12,
+    "luzPreenchimento": 0.03
+  }
 }

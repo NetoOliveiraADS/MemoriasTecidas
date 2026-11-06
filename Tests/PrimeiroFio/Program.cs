@@ -158,6 +158,34 @@ Teste("Modelo do save aceita campo ausente e mantém progresso ao retomar", () =
     tear.Restaurar(recarregado.amostraPrimeiroFio);
     Exigir(tear.Passagens.SequenceEqual(new[] { 0, 1, 0 }) && recarregado.fio == 3, "Passagens não persistiram.");
 });
+Teste("Perfil de personagens carrega a configuração real e permite desativar", () =>
+{
+    using var arquivo = JsonDocument.Parse(File.ReadAllText(Path.Combine(recursos, "acabamento_original.json")));
+    var perfil = JsonSerializer.Deserialize<MTMPerfilPersonagens>(arquivo.RootElement.GetProperty("personagens").GetRawText(), json);
+    perfil.Validar();
+    Exigir(perfil.ativo && perfil.saturacao > 0f, "Perfil de produção não está ativo.");
+    perfil.ativo = false;
+    perfil.Validar();
+    Exigir(!perfil.ativo, "Não foi possível manter o perfil desativado.");
+    new MTMPerfilPersonagens().Validar();
+});
+Teste("Perfil rejeita números inválidos antes de enviar parâmetros aos shaders", () =>
+{
+    var alteracoes = new Action<MTMPerfilPersonagens>[]
+    {
+        p => p.saturacao = float.NaN, p => p.saturacao = 1.01f,
+        p => p.suavizacao = -.01f, p => p.suavizacao = .36f,
+        p => p.luzPreenchimento = float.PositiveInfinity, p => p.luzPreenchimento = .19f
+    };
+    foreach (var alterar in alteracoes)
+    {
+        var perfil = new MTMPerfilPersonagens();
+        alterar(perfil);
+        bool recusou = false;
+        try { perfil.Validar(); } catch (InvalidOperationException) { recusou = true; }
+        Exigir(recusou, "Parâmetro inválido foi aceito.");
+    }
+});
 Teste("Sintaxe de todos os scripts nas variantes de entrada e Editor", () =>
 {
     var variantes = new[]

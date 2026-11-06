@@ -46,6 +46,11 @@ namespace MemoriasTecidas.MundoV2
 
         private void Start()
         {
+            if (tipo != Tipo.Animal && GetComponent<MTMAcabamentoPersonagem>() == null)
+            {
+                var acabamento = gameObject.AddComponent<MTMAcabamentoPersonagem>();
+                acabamento.hideFlags = HideFlags.DontSave;
+            }
             if (tipo != Tipo.Animal && GetComponent<MTMContatoPersonagem>() == null)
             {
                 var contato = gameObject.AddComponent<MTMContatoPersonagem>();

@@ -12,6 +12,8 @@ Shader "MemoriasTecidas/Neto/Pintado"
         _MTM_Base("Base do cenário",Vector)=(0,1,0,0)
         _MTM_Relevo("Relevo pintado",Range(0,1))=0
         [PerRendererData] _MTM_LuzNeto("Luz de preenchimento do Neto",Range(0,.18))=0
+        [PerRendererData] _MTM_Pessoa("Acabamento de personagem",Float)=0
+        [PerRendererData] _MTM_RecortePessoa("Limites do personagem",Vector)=(0,0,1,1)
     }
     SubShader
     {
@@ -26,6 +28,7 @@ Shader "MemoriasTecidas/Neto/Pintado"
             #pragma target 3.0
             #include "UnityCG.cginc"
             #include "Assets/MemoriasTecidas/Shaders/Includes/MTMIluminacao.cginc"
+            #include "Assets/MemoriasTecidas/Shaders/Includes/MTMPersonagens.cginc"
             sampler2D _MainTex;float4 _MainTex_TexelSize,_Color,_MTM_Base;
             float _Efeito,_Sombra,_Agua,_CorteAlfa,_MTM_Relevo,_MTM_LuzNeto;
             struct A{float4 pos:POSITION;float2 uv:TEXCOORD0;float2 local:TEXCOORD1;float4 color:COLOR;};
@@ -40,7 +43,9 @@ Shader "MemoriasTecidas/Neto/Pintado"
                 if(_Efeito>.5){float2 q=i.uv*2-1;float a=saturate(1-dot(q,q));return float4(i.color.rgb,i.color.a*a*a);}
                 float water=smoothstep(.53,.62,i.uv.y)*_Agua*step(.5,_MTV_Quality)*_MTV_Motion;
                 float2 uv=i.uv+float2(sin(i.world.y*2.4+_MTV_Time*.65)*.0009,sin(i.world.x*1.8+_MTV_Time*.5)*.0006)*water;
-                float4 c=tex2D(_MainTex,uv)*i.color;
+                float4 amostra=tex2D(_MainTex,uv);
+                if(_Sombra<.5) amostra=MTMPrepararPessoa(_MainTex,uv,amostra,_MainTex_TexelSize);
+                float4 c=amostra*i.color;
                 clip(c.a-_CorteAlfa);
                 if(_Sombra>.5)return float4(i.color.rgb,c.a);
                 if(_MTM_Relevo>.001&&_MTV_Quality>1.5)
@@ -52,10 +57,8 @@ Shader "MemoriasTecidas/Neto/Pintado"
                 float baseSuja=1-smoothstep(_MTM_Base.x,_MTM_Base.x+max(.1,_MTM_Base.y)*.24,i.world.y);
                 c.rgb*=1-baseSuja*saturate(_MTM_Base.z)*.13;
                 c.rgb=MTMPintura(c.rgb,i.world);
-                // Pequeno ganho de luz após a iluminação da cena. Preserva matiz,
-                // noite, linhas escuras e sombras; limita pelo canal mais claro.
-                float pico=max(c.r,max(c.g,c.b));
-                c.rgb*=min(1+clamp(_MTM_LuzNeto,0,.18),1/max(.001,pico));
+                // Perfil comum aos moradores; o preenchimento anterior é o fallback.
+                c.rgb=MTMPreencherPessoa(c.rgb,clamp(_MTM_LuzNeto,0,.18));
                 c.rgb+=.006*sin(i.world.x*9+_MTV_Time)*sin(i.world.y*6-_MTV_Time)*water*_MTV_Sun.y;
                 return c;
             }

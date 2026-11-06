@@ -11,6 +11,7 @@ namespace MemoriasTecidas.MundoV2
         public float nitidez = .32f, relevo = .22f;
         public bool natural = true;
         public float luzTextura = .35f;
+        public MTMPerfilPersonagens personagens = new MTMPerfilPersonagens();
     }
 
     // Apenas parâmetros de desenho: não troca imagens, sprites, materiais ou geometria.
@@ -20,6 +21,7 @@ namespace MemoriasTecidas.MundoV2
         private readonly List<Action> restaurar = new List<Action>();
         private Vector4 globalAnterior;
         private Vector4 refinoAnterior;
+        private Vector4 pessoasAnterior;
         private MTMAcabamentoOriginalDados configuracao;
         public bool Natural { get; private set; }
 
@@ -35,6 +37,8 @@ namespace MemoriasTecidas.MundoV2
             var d = JsonUtility.FromJson<MTMAcabamentoOriginalDados>(texto.text);
             if (d == null || !Valido(d.nitidez) || !Valido(d.relevo) || !Valido(d.luzTextura))
                 throw new InvalidOperationException("Nitidez, relevo e luzTextura devem ser números entre 0 e 1.");
+            if (d.personagens == null) d.personagens = new MTMPerfilPersonagens();
+            d.personagens.Validar();
             return d;
         }
 
@@ -50,6 +54,7 @@ namespace MemoriasTecidas.MundoV2
             var dados = LerConfiguracao();
             configuracao = dados;
             refinoAnterior = Shader.GetGlobalVector("_MTM_RefinoOriginal");
+            pessoasAnterior = Shader.GetGlobalVector("_MTM_PerfilPersonagens");
             globalAnterior = Shader.GetGlobalVector("_MTM_DetalheOriginal");
             aplicado = true;
             DefinirNatural(PlayerPrefs.GetInt("MemoriasTecidas.Visual.AcabamentoNatural", dados.natural ? 1 : 0) == 1, false);
@@ -116,6 +121,10 @@ namespace MemoriasTecidas.MundoV2
         {
             Natural = valor;
             Shader.SetGlobalVector("_MTM_RefinoOriginal", configuracao != null && configuracao.ativo && valor ? new Vector4(1f, configuracao.luzTextura, 0f, 0f) : Vector4.zero);
+            var pessoas = configuracao != null ? configuracao.personagens : null;
+            Shader.SetGlobalVector("_MTM_PerfilPersonagens",
+                configuracao != null && configuracao.ativo && valor && pessoas != null && pessoas.ativo ?
+                new Vector4(1f, pessoas.saturacao, pessoas.suavizacao, pessoas.luzPreenchimento) : Vector4.zero);
             if (salvar)
             {
                 PlayerPrefs.SetInt("MemoriasTecidas.Visual.AcabamentoNatural", valor ? 1 : 0);
@@ -132,6 +141,8 @@ namespace MemoriasTecidas.MundoV2
                 Shader.SetGlobalVector("_MTM_DetalheOriginal", globalAnterior);
             if (aplicado)
                 Shader.SetGlobalVector("_MTM_RefinoOriginal", refinoAnterior);
+            if (aplicado)
+                Shader.SetGlobalVector("_MTM_PerfilPersonagens", pessoasAnterior);
             aplicado = false;
             Objetos = Superficies = 0;
         }

@@ -43,7 +43,7 @@ Na raiz do repositório, com .NET SDK 8:
 dotnet run --project Tests/PrimeiroFio/PrimeiroFio.Tests.csproj --configuration Release -- .
 ```
 
-São 12 verificações, compilando as regras reais: seleção, gesto incompleto, conclusão única, sentido alternado, correção, desfazer, retomada, dados inválidos, referências do roteiro, progressão sem consumo de materiais, modelo de save e sintaxe dos scripts em quatro variantes de entrada/Editor.
+São 14 verificações, compilando as regras reais: seleção, gesto incompleto, conclusão única, sentido alternado, correção, desfazer, retomada, dados inválidos, referências do roteiro, progressão sem consumo de materiais, modelo de save, parâmetros do acabamento dos personagens e sintaxe dos scripts em quatro variantes de entrada/Editor.
 
 A serialização portátil usa System.Text.Json; o carregamento por JsonUtility precisa ser conferido no Play. A análise de sintaxe não resolve APIs Unity, shaders, assets ou referências de cena. O workflow de validação executa o comando em push e pull request.
 
@@ -61,7 +61,7 @@ Abrir `Assets/MemoriasTecidas/Cenas/Jaguaruana.unity` na versão de `ProjectSett
 
 ## Pendências de integração
 
-- O cartão “Postais da cidade · 0/3” das capturas não foi localizado nos scripts da main usada como base. Seus scripts locais são necessários para integrar o ajuste de quando o cartão aparece.
+- Postais da cidade foi retirado do escopo a pedido do autor.
 - Os retratos receberam enquadramento comum. Uniformizar o estilo da ilustração de Feliciana e do sprite de Neto ainda exige a produção/substituição das imagens e comparação no jogo.
 - Esta entrega trabalha o primeiro encontro e os sistemas compartilhados de interface/apresentação. Novas atividades de outras histórias devem ser desenvolvidas a partir de cada missão, preservando as fontes históricas.
 - Play, aparência final, desempenho, JsonUtility e build Unity não foram executados neste ambiente.

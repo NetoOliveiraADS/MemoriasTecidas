@@ -159,6 +159,8 @@ namespace MemoriasTecidas.MundoV2
             pintura.enabled = fonte.enabled;
             pintura.sortingLayerID = fonte.sortingLayerID;
             pintura.sortingOrder = fonte.sortingOrder;
+            // Compartilha o perfil e o recorte do SpriteRenderer, como as malhas dos moradores.
+            fonte.GetPropertyBlock(propriedades);
             propriedades.SetTexture("_MainTex", fonte.sprite.texture);
             propriedades.SetColor("_Color", fonte.color);
             propriedades.SetFloat("_MTM_LuzNeto", Mathf.Clamp(luzPreenchimento, 0f, .18f));

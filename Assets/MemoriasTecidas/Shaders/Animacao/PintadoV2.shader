@@ -13,6 +13,8 @@ Shader "MemoriasTecidas/VidaV22/Pintado"
         _MTM_Relevo("Relevo pintado",Range(0,1))=0
         _MTM_ArteOriginal("Acabamento original",Float)=0
         _MTM_RecorteOriginal("Limites da arte",Vector)=(0,0,1,1)
+        [PerRendererData] _MTM_Pessoa("Acabamento de personagem",Float)=0
+        [PerRendererData] _MTM_RecortePessoa("Limites do personagem",Vector)=(0,0,1,1)
     }
     SubShader
     {
@@ -28,6 +30,7 @@ Shader "MemoriasTecidas/VidaV22/Pintado"
             #include "UnityCG.cginc"
             #include "Assets/MemoriasTecidas/Shaders/Includes/MTMIluminacao.cginc"
             #include "Assets/MemoriasTecidas/Shaders/Includes/MTMDetalheOriginal.cginc"
+            #include "Assets/MemoriasTecidas/Shaders/Includes/MTMPersonagens.cginc"
             sampler2D _MainTex;float4 _MainTex_TexelSize,_Color,_MTM_Base;
             float _Efeito,_Sombra,_Agua,_CorteAlfa,_MTM_Relevo,_MTM_ArteOriginal;
             float4 _MTM_RecorteOriginal;
@@ -46,6 +49,7 @@ Shader "MemoriasTecidas/VidaV22/Pintado"
                 float4 amostra=tex2D(_MainTex,uv);
                 if(_MTM_ArteOriginal>.5&&_Sombra<.5)
                     amostra=MTMDetalharOriginal(_MainTex,uv,amostra,_MainTex_TexelSize,_MTM_RecorteOriginal,0,_Agua);
+                amostra=MTMPrepararPessoa(_MainTex,uv,amostra,_MainTex_TexelSize);
                 float4 c=amostra*i.color;
                 clip(c.a-_CorteAlfa);
                 if(_Sombra>.5)return float4(i.color.rgb,c.a);
@@ -58,6 +62,7 @@ Shader "MemoriasTecidas/VidaV22/Pintado"
                 float baseSuja=1-smoothstep(_MTM_Base.x,_MTM_Base.x+max(.1,_MTM_Base.y)*.24,i.world.y);
                 c.rgb*=1-baseSuja*saturate(_MTM_Base.z)*.13;
                 c.rgb=MTMPintura(c.rgb,i.world);
+                c.rgb=MTMPreencherPessoa(c.rgb,0);
                 c.rgb+=.006*sin(i.world.x*9+_MTV_Time)*sin(i.world.y*6-_MTV_Time)*water*_MTV_Sun.y;
                 return c;
             }

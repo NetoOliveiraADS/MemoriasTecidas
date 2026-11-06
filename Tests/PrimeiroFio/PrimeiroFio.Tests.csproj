@@ -11,6 +11,7 @@
     <Compile Include="../../Assets/MemoriasTecidas/Codigo/Runtime/Narrativa/MTMTrama.cs" Link="Producao/MTMTrama.cs" />
     <Compile Include="../../Assets/MemoriasTecidas/Codigo/Runtime/Persistencia/MTMEstado.cs" Link="Producao/MTMEstado.cs" />
     <!-- Roslyn já vem no SDK; não adiciona pacotes ao projeto Unity. -->
+    <Compile Include="../../Assets/MemoriasTecidas/Codigo/Runtime/Apresentacao/MTMPerfilPersonagens.cs" Link="Producao/MTMPerfilPersonagens.cs" />
     <Reference Include="Microsoft.CodeAnalysis">
       <HintPath>$(MSBuildSDKsPath)/../Roslyn/bincore/Microsoft.CodeAnalysis.dll</HintPath>
     </Reference>
