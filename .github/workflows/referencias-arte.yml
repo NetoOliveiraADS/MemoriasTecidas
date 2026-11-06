@@ -1,0 +1,29 @@
+name: Preparar referências de arte
+on:
+  push:
+    branches: [codex/primeiro-fio-interativo]
+    paths: [.github/workflows/referencias-arte.yml]
+permissions:
+  contents: read
+jobs:
+  referencias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          lfs: true
+          persist-credentials: false
+      - uses: actions/upload-artifact@v7
+        with:
+          name: referencias-personagens
+          retention-days: 3
+          if-no-files-found: error
+          path: |
+            Assets/MemoriasTecidas/Resources/MemoriasTecidas/HD2D/NetoCardinais.png
+            Assets/MemoriasTecidas/Resources/MemoriasTecidas/HD2D/NetoDiagonais.png
+            Assets/MemoriasTecidas/Resources/MemoriasTecidas/HD2D/FelicianaRetrato.png
+            Assets/MemoriasTecidas/Resources/MemoriasTecidas/HD2D/kit_hd2d.json
+            Assets/MemoriasTecidas/Arte/Animacao/moradores_*.png
+            Assets/MemoriasTecidas/Arte/Personagens/Moradores/Base/feliciana.png
+            Assets/MemoriasTecidas/Arte/Personagens/Protagonista/Base/neto.png
