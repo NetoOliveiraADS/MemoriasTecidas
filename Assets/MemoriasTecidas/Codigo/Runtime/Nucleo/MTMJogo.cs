@@ -96,6 +96,7 @@ namespace MemoriasTecidas.MundoV2
         {
             if (!pronto)
                 return;
+            AtualizarPassagemPrimeiroFio();
             if (!possuiFoco)
             {
                 Parar();

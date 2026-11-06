@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/MemoriasTecidas/Codigo/Runtime/Narrativa/MTMSessaoTecido.cs" Link="Producao/MTMSessaoTecido.cs" />
+    <Compile Include="../../Assets/MemoriasTecidas/Codigo/Runtime/Narrativa/MTMPrimeiroFio.cs" Link="Producao/MTMPrimeiroFio.cs" />
+    <Compile Include="../../Assets/MemoriasTecidas/Codigo/Runtime/Narrativa/MTMTrama.cs" Link="Producao/MTMTrama.cs" />
+    <Compile Include="../../Assets/MemoriasTecidas/Codigo/Runtime/Persistencia/MTMEstado.cs" Link="Producao/MTMEstado.cs" />
+    <!-- Roslyn já vem no SDK; não adiciona pacotes ao projeto Unity. -->
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>$(MSBuildSDKsPath)/../Roslyn/bincore/Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp">
+      <HintPath>$(MSBuildSDKsPath)/../Roslyn/bincore/Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

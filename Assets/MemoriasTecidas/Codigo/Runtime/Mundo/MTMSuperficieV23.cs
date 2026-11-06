@@ -111,6 +111,8 @@ namespace MemoriasTecidas.MundoV2
             bloco.SetFloat("_Ondulacao", ondulacao);
             bloco.SetFloat("_Velocidade", velocidadeAgua);
             string nomeTextura = textura != null ? textura.name.ToLowerInvariant() : "";
+            bloco.SetFloat("_MTM_SuavizarSolo", agua ? 0f :
+                nomeTextura.Contains("asfalto") ? .48f : nomeTextura.Contains("mosaico") ? .18f : 0f);
             bool natural = agua || nomeTextura.Contains("areia") || nomeTextura.Contains("grama") || nomeTextura.Contains("terra");
             if (natural)
             {

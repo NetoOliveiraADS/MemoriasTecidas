@@ -16,6 +16,8 @@ namespace MemoriasTecidas.MundoV2
         public float relogio = 8f / 24f;
         public int algodao, fio, corda, pano, punho, enfeite, cera;
         public bool rede;
+        // Campo adicional; ausente ou nulo em saves anteriores.
+        public List<int> amostraPrimeiroFio = new List<int>();
         public List<string> marcos = new List<string>();
         public int versaoRoteiro;
         public List<MTMQuantidadeTecida> colecao = new List<MTMQuantidadeTecida>();

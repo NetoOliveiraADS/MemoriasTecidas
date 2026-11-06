@@ -1,87 +1,176 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MemoriasTecidas.MundoV2
 {
     public sealed partial class MTMJogo
     {
-        private void PrimeiroFioUI()
+        private void SoltarArrastoPrimeiroFioSeInativo()
         {
-            if (aberturaMemorias == null)
+            if (controleArrastoPrimeiroFio != 0 &&
+                (painel != "primeiro_fio" || !possuiFoco || !tearPrimeiroFio.Passando))
             {
-                painel = "";
-                return;
+                if (GUIUtility.hotControl == controleArrastoPrimeiroFio) GUIUtility.hotControl = 0;
+                controleArrastoPrimeiroFio = 0;
             }
-
-            Fundo(new Rect(0, 0, 1280, 720), new Color(.16f, .12f, .09f, .60f));
-            PainelTecido(new Rect(28, 32, 1224, 656), algodaoUI);
-            Fundo(new Rect(28, 32, 1224, 138), tinta);
-            TramaFaixa(new Rect(28, 170, 1224, 8));
-            TextoTecido(new Rect(58, 54, 1000, 22), "PRIMEIRO ENCONTRO  /  OBSERVAR · EXPERIMENTAR · COMPARTILHAR", 12, acentoTextoUI, true);
-            TextoTecido(new Rect(58, 90, 1000, 46), aberturaMemorias.titulo, 32, textoSuperficieUI, true);
-            if (BotaoTecido(new Rect(1080, 80, 138, 40), "Voltar"))
-            {
-                LimparPrimeiroFio();
-                painel = "";
-                return;
-            }
-
-            TextoTecido(new Rect(58, 192, 1150, 38), "Escolha uma cor por passagem. A amostra vai ganhando forma conforme você tece.", 19, textoPapelUI);
-            Fundo(new Rect(58, 244, 692, 278), CorTecido("#6A4E38", textoPapelUI));
-            TextoTecido(new Rect(82, 258, 640, 24), "SUA AMOSTRA  ·  " + passagensPrimeiroFio.Count + " / 4 PASSAGENS", 12, algodaoUI, true);
-            DesenharAmostraUI(new Rect(128, 312, 550, 162));
-            TextoTecido(new Rect(82, 490, 640, 20), "Uma pequena experiência com as cores do jogo", 12, algodaoUI, false, TextAnchor.MiddleCenter);
-            Fundo(new Rect(774, 244, 444, 278), papelUI);
-            CosturaTecido(new Rect(774, 244, 444, 278), AlfaTecido(terracotaUI, .5f));
-            TextoTecido(new Rect(796, 262, 398, 28), "Observe o modelo", 22, textoPapelUI, true);
-            for (int i = 0; i < 4; i++)
-            {
-                int indice = aberturaMemorias.padrao[i];
-                float y = 304 + i * 41;
-                TextoTecido(new Rect(800, y, 36, 28), (i + 1).ToString("00"), 15, terracotaUI, true);
-                Rect amostra = new Rect(846, y + 2, 84, 22);
-                Fundo(amostra, CorTecido(aberturaMemorias.cores[indice], ouro));
-                BordaTecido(amostra, AlfaTecido(tinta, .4f));
-                TextoTecido(new Rect(950, y, 240, 28), aberturaMemorias.nomes[indice], 18, textoPapelUI, true);
-            }
-
-            TextoTecido(new Rect(796, 478, 398, 28), "Leia de cima para baixo.", 14, textoPapelUI);
-            for (int i = 0; i < 3; i++)
-            {
-                Rect botao = new Rect(58 + i * 232, 536, 216, 44);
-                if (BotaoTecido(botao, (i + 1) + "  ·  " + aberturaMemorias.nomes[i], false, passagensPrimeiroFio.Count < 4))
-                    EscolherPassagemPrimeiroFio(i);
-                Fundo(new Rect(botao.x + 1, botao.yMax - 5, botao.width - 2, 4), CorTecido(aberturaMemorias.cores[i], ouro));
-            }
-
-            TextoTecido(new Rect(774, 540, 444, 40), "Sem tempo limite. Você pode desfazer e experimentar de novo.", 14, textoPapelUI);
-            TextoTecido(new Rect(58, 590, 1160, 32), retornoPrimeiroFio, 15, terracotaUI, true);
-            if (BotaoTecido(new Rect(58, 626, 216, 36), "Desfazer  [U]", false, passagensPrimeiroFio.Count > 0))
-                DesfazerPrimeiroFio();
-            if (BotaoTecido(new Rect(290, 626, 216, 36), "Recomeçar"))
-                LimparPrimeiroFio();
-            if (BotaoTecido(new Rect(774, 622, 444, 40), "Conferir a amostra  [Enter]", true))
-                ConferirPrimeiroFio();
-            TextoTecido(new Rect(526, 628, 226, 32), "1 / 2 / 3 · escolher cor", 12, textoPapelUI, false, TextAnchor.MiddleCenter);
-            TextoTecido(new Rect(58, 670, 1150, 14), "Esc sai da atividade. A observação já registrada permanece salva. Esta amostra não usa os materiais da bolsa.", 10, AlfaTecido(textoPapelUI, .8f));
         }
 
-        private void DesenharAmostraUI(Rect r)
+        private void GestoBastidorUI(Rect r)
         {
-            Fundo(new Rect(r.x - 12, r.y - 12, r.width + 24, 8), terracotaUI);
-            Fundo(new Rect(r.x - 12, r.yMax + 6, r.width + 24, 8), terracotaUI);
-            for (int coluna = 0; coluna < 18; coluna++)
-                Fundo(new Rect(r.x + coluna * (r.width / 17f), r.y - 5, 2, r.height + 16), AlfaTecido(algodaoUI, .72f));
+            int controle = GUIUtility.GetControlID("MTM.Bastidor".GetHashCode(), FocusType.Passive, r);
+            Event e = Event.current;
+            int linha = tearPrimeiroFio.LinhaAtiva;
+            if (linha >= 4 || !possuiFoco) return;
+            float x = linha % 2 == 0 ? r.x : r.xMax;
+            float y = r.y + (linha + .5f) * r.height / 4f;
+            Rect lancadeira = new Rect(x - 28, y - 20, 56, 40);
+            if (e.type == EventType.MouseDown && e.button == 0 && lancadeira.Contains(e.mousePosition) &&
+                GUIUtility.hotControl == 0 && tearPrimeiroFio.IniciarPassagem())
+            {
+                passagemAutomaticaPrimeiroFio = false;
+                controleArrastoPrimeiroFio = controle;
+                GUIUtility.hotControl = controle;
+                e.Use();
+            }
+            else if (controleArrastoPrimeiroFio == controle && GUIUtility.hotControl == controle)
+            {
+                if (e.type == EventType.MouseDrag)
+                {
+                    float progresso = MTMSessaoTecido.ProgressoDoGesto(e.mousePosition.x, r.x, r.width, linha);
+                    if (tearPrimeiroFio.Percorrer(progresso))
+                    {
+                        GUIUtility.hotControl = 0;
+                        controleArrastoPrimeiroFio = 0;
+                        AoTerminarPassagemPrimeiroFio();
+                    }
+                    e.Use();
+                }
+                else if (e.rawType == EventType.MouseUp)
+                {
+                    tearPrimeiroFio.Cancelar();
+                    GUIUtility.hotControl = 0;
+                    controleArrastoPrimeiroFio = 0;
+                    retornoPrimeiroFio = "Continue até a outra borda. Você também pode usar E para passar o fio.";
+                    e.Use();
+                }
+            }
+        }
+
+        private void PrimeiroFioUI()
+        {
+            if (aberturaMemorias == null) { painel = ""; return; }
+            Fundo(new Rect(0, 0, 1280, 720), new Color(.16f, .12f, .09f, .45f));
+            PainelTecido(new Rect(28, 32, 1224, 656), algodaoUI);
+            TextoTecido(new Rect(58, 54, 900, 42), aberturaMemorias.titulo, 30, acentoTextoUI, true);
+            TramaFaixa(new Rect(28, 112, 1224, 5));
+            if (BotaoTecido(new Rect(1080, 56, 138, 40), "Voltar"))
+            {
+                LimparPrimeiroFio();
+                painel = "";
+                return;
+            }
+            TextoTecido(new Rect(58, 138, 1150, 34),
+                "Escolha um fio. Arraste a lançadeira até a outra borda ou pressione E.", 18, textoPapelUI);
+            Fundo(new Rect(58, 188, 692, 344), CorTecido("#6A4E38", textoPapelUI));
+            TextoTecido(new Rect(82, 204, 640, 24),
+                "SUA AMOSTRA · " + passagensPrimeiroFio.Count + " / 4 PASSAGENS", 13, algodaoUI, true);
+            Rect bastidor = new Rect(122, 250, 556, 224);
+            GestoBastidorUI(bastidor);
+            DesenharTramaInterativaUI(bastidor, passagensPrimeiroFio, true);
+            TextoTecido(new Rect(82, 498, 640, 24),
+                "Toque uma linha pronta ou use Tab para corrigir essa passagem.", 13, algodaoUI, false, TextAnchor.MiddleCenter);
+
+            Fundo(new Rect(774, 188, 444, 344), papelUI);
+            TextoTecido(new Rect(798, 204, 396, 28), "Amostra de referência", 22, textoPapelUI, true);
+            DesenharTramaInterativaUI(new Rect(832, 258, 320, 180), aberturaMemorias.padrao, false);
+            TextoTecido(new Rect(798, 464, 396, 48),
+                "Observe de cima para baixo. O modelo fica visível durante toda a experiência.", 14, textoPapelUI);
+
+            for (int i = 0; i < 3; i++)
+            {
+                Rect botao = new Rect(58 + i * 232, 548, 216, 46);
+                if (BotaoTecido(botao, (i + 1) + " · " + aberturaMemorias.nomes[i],
+                    tearPrimeiroFio.CorSelecionada == i, !tearPrimeiroFio.Passando))
+                    EscolherPassagemPrimeiroFio(i);
+                Fundo(new Rect(botao.x + 1, botao.yMax - 5, botao.width - 2, 4),
+                    CorTecido(aberturaMemorias.cores[i], ouro));
+            }
+            TextoTecido(new Rect(774, 548, 444, 42),
+                "Sem tempo limite. As passagens completas ficam salvas ao sair.", 14, textoPapelUI);
+            TextoTecido(new Rect(58, 600, 1160, 26), retornoPrimeiroFio, 14, acentoTextoUI, true);
+            if (BotaoTecido(new Rect(58, 636, 216, 36), "Desfazer [U]", false, passagensPrimeiroFio.Count > 0))
+                DesfazerPrimeiroFio();
+            if (BotaoTecido(new Rect(290, 636, 216, 36), "Recomeçar"))
+                RecomecarAmostraPrimeiroFio();
+            bool completa = passagensPrimeiroFio.Count == 4 && tearPrimeiroFio.LinhaEmEdicao < 0;
+            if (BotaoTecido(new Rect(774, 632, 444, 40),
+                completa ? "Conferir a amostra [E / Enter]" : "Passar o fio [E / Enter]",
+                true, !tearPrimeiroFio.Passando))
+                PassarOuConcluirPrimeiroFio();
+            TextoTecido(new Rect(526, 638, 226, 30), "1 / 2 / 3 · escolher fio", 12, textoPapelUI, false, TextAnchor.MiddleCenter);
+        }
+
+        private void DesenharTramaInterativaUI(Rect r, IList<int> linhas, bool interativa)
+        {
+            Color madeira = CorTecido("#8A472E", terracotaUI);
+            Fundo(new Rect(r.x - 12, r.y - 12, r.width + 24, 8), madeira);
+            Fundo(new Rect(r.x - 12, r.yMax + 6, r.width + 24, 8), madeira);
+            for (int coluna = 0; coluna < 22; coluna++)
+                Fundo(new Rect(r.x + coluna * r.width / 21f, r.y - 5, 2, r.height + 16), AlfaTecido(algodaoUI, .75f));
+            float passo = r.height / 4f;
             for (int linha = 0; linha < 4; linha++)
             {
-                float y = r.y + linha * 40;
-                bool inserida = linha < passagensPrimeiroFio.Count;
-                Color cor = inserida ? CorTecido(aberturaMemorias.cores[passagensPrimeiroFio[linha]], ouro) : AlfaTecido(algodaoUI, .10f);
-                Fundo(new Rect(r.x - 4, y, r.width + 10, 27), cor);
-                for (int coluna = 0; coluna < 18; coluna++)
-                    if ((linha + coluna) % 2 == 0)
-                        Fundo(new Rect(r.x + coluna * (r.width / 17f), y, 2, 27), AlfaTecido(algodaoUI, .9f));
-                TextoTecido(new Rect(r.x - 46, y, 30, 25), (linha + 1).ToString(), 16, algodaoUI, true, TextAnchor.MiddleCenter);
+                float y = r.y + linha * passo + 5f;
+                Rect faixa = new Rect(r.x - 4, y, r.width + 8, passo - 10);
+                bool ativa = interativa && tearPrimeiroFio.LinhaAtiva == linha;
+                bool animando = ativa && tearPrimeiroFio.Passando;
+                int cor = animando ? tearPrimeiroFio.CorSelecionada : linha < linhas.Count ? linhas[linha] : -1;
+                float progresso = animando ? tearPrimeiroFio.Progresso : cor >= 0 ? 1f : 0f;
+                float inicio = linha % 2 == 0 ? faixa.x : faixa.xMax - faixa.width * progresso;
+                Color tintaFio = cor >= 0 ? CorTecido(aberturaMemorias.cores[cor], ouro) : algodaoUI;
+                Fundo(faixa, AlfaTecido(algodaoUI, .08f));
+                if (progresso > 0f)
+                {
+                    Rect tecido = new Rect(inicio, y, faixa.width * progresso, faixa.height);
+                    Fundo(tecido, tintaFio);
+                    for (int fio = 1; fio < 6; fio++)
+                        Fundo(new Rect(tecido.x, y + fio * faixa.height / 6f, tecido.width, 1), AlfaTecido(textoPapelUI, .13f));
+                    for (int coluna = 0; coluna < 22; coluna++)
+                    {
+                        float x = r.x + coluna * r.width / 21f;
+                        if ((linha + coluna) % 2 == 0 && x >= tecido.x && x < tecido.xMax)
+                            Fundo(new Rect(x, y, 2, faixa.height), AlfaTecido(algodaoUI, .85f));
+                    }
+                }
+                TextoTecido(new Rect(r.x - 40, y + 4, 28, 26), (linha + 1).ToString(), 16,
+                    interativa ? algodaoUI : textoPapelUI, true, TextAnchor.MiddleCenter);
+                if (!interativa && cor >= 0)
+                    TextoTecido(new Rect(r.x + 8, y + 2, r.width - 16, faixa.height - 4),
+                        aberturaMemorias.nomes[cor], 14, cor == 2 ? algodaoUI : textoPapelUI, true, TextAnchor.MiddleCenter);
+                if (interativa && linha < linhas.Count)
+                {
+                    if (linha == linhaDiferentePrimeiroFio || tearPrimeiroFio.LinhaEmEdicao == linha)
+                        BordaTecido(faixa, ouro, 3);
+                    bool habilitado = GUI.enabled;
+                    GUI.enabled = habilitado && !tearPrimeiroFio.Passando;
+                    if (AcaoTecido(faixa, "primeirofio:linha:" + linha))
+                    {
+                        tearPrimeiroFio.EditarLinha(linha);
+                        retornoPrimeiroFio = "Linha " + (linha + 1) + ": escolha o fio e faça a passagem novamente.";
+                    }
+                    GUI.enabled = habilitado;
+                }
+                if (ativa && tearPrimeiroFio.CorSelecionada >= 0)
+                {
+                    float x = linha % 2 == 0 ? Mathf.Lerp(r.x, r.xMax, tearPrimeiroFio.Progresso) :
+                        Mathf.Lerp(r.xMax, r.x, tearPrimeiroFio.Progresso);
+                    Rect lancadeira = new Rect(x - 24, y + faixa.height * .5f - 12, 48, 24);
+                    Fundo(lancadeira, madeira);
+                    BordaTecido(lancadeira, ouro, 2);
+                    Fundo(new Rect(x - 12, lancadeira.y + 5, 24, 14),
+                        CorTecido(aberturaMemorias.cores[tearPrimeiroFio.CorSelecionada], ouro));
+                }
             }
         }
 

@@ -14,3 +14,9 @@ jobs:
         with:
           lfs: true
           persist-credentials: false
+      - name: Preparar .NET para as regras independentes de Unity
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '8.0.x'
+      - name: Validar tecelagem, dados e sintaxe C#
+        run: dotnet run --project Tests/PrimeiroFio/PrimeiroFio.Tests.csproj --configuration Release -- .

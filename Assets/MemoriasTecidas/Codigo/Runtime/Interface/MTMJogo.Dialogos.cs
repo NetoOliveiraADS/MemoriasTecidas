@@ -9,6 +9,19 @@ namespace MemoriasTecidas.MundoV2
         private string linhaPreparadaDialogo, locutorPreparadoDialogo, nomeExibidoDialogo, textoExibidoDialogo;
         private Texture2D retratoExibidoDialogo;
         private Rect recorteExibidoDialogo;
+        // Normaliza o enquadramento sem substituir a arte autoral.
+        private Rect RecorteBustoDialogo()
+        {
+            Rect recorte = recorteExibidoDialogo;
+            if (retratoExibidoDialogo == null) return recorte;
+            float aspecto = retratoExibidoDialogo.height * recorte.height /
+                Mathf.Max(1f, retratoExibidoDialogo.width * recorte.width);
+            float fracao = nomeExibidoDialogo == "Neto" ? .47f : aspecto > 1.65f ? .58f : 1f;
+            recorte.y += recorte.height * (1f - fracao);
+            recorte.height *= fracao;
+            return recorte;
+        }
+
         private void PrepararFalaLegivelUI()
         {
             string linha = falas[pagina] ?? "";

@@ -379,7 +379,11 @@ namespace MemoriasTecidas.MundoV2
                 return true;
             }
 
-            Abrir(ponto.dados.nome, FonteRoteiro, e.falas, () =>
+            string[] falasEncontro = e.falas;
+            if (aberturaMemorias != null && e.ponto == aberturaMemorias.npc &&
+                Array.IndexOf(e.eventos, aberturaMemorias.eventoEncontro) >= 0 && e.falas.Length > 2)
+                falasEncontro = new[] { e.falas[0], e.falas[1] };
+            Abrir(ponto.dados.nome, FonteRoteiro, falasEncontro, () =>
             {
                 if (e.acao == "atividade")
                     AbrirAtividadeRoteiro(m, e);

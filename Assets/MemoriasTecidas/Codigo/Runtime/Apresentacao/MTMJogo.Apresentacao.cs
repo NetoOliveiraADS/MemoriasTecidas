@@ -69,7 +69,7 @@ namespace MemoriasTecidas.MundoV2
         {
             Vector3 alvo = transform.position + (Vector3)antecipacaoCamera;
             if (falas != null && perto != null && apresentacao.aproximarConversas && !apresentacao.reduzirMovimento)
-                alvo = Vector3.Lerp(transform.position, perto.transform.position, .35f) + Vector3.up * .6f;
+                alvo = Vector3.Lerp(transform.position, perto.transform.position, .45f) - Vector3.up * cameraDoMapa.orthographicSize * .22f;
             alvo.z = -10f;
             return ConterCamera(alvo);
         }
@@ -97,7 +97,13 @@ namespace MemoriasTecidas.MundoV2
                 float corrida = Mathf.InverseLerp(velocidade, velocidade * 1.55f, velocidadeVista.magnitude);
                 fator += corrida * apresentacao.aberturaCorrida * .1f;
                 if (falas != null && apresentacao.aproximarConversas)
-                    fator *= .94f;
+                    fator *= .84f;
+                else if (GuiaPrimeiroFioAtivo() && atual == LocalPrimeiroFio())
+                {
+                    var pessoa = FelicianaPrimeiroFio();
+                    if (pessoa != null && Vector2.Distance(transform.position, pessoa.transform.position) < 7f)
+                        fator *= .90f;
+                }
             }
 
             float tamanho = Mathf.Clamp(tamanhoCamera * zoomPreferido * fator, 2f, TamanhoMaximoCamera());
