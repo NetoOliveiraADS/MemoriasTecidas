@@ -1,0 +1,40 @@
+{
+  "versao": 1,
+  "etapa": "Estudos visuais; não integrados aos atlas de animação",
+  "ferramenta": "Geração de imagem integrada ao ChatGPT",
+  "artefatos": [
+    {
+      "personagem": "Neto",
+      "tipo": "Folha de modelo em quatro vistas",
+      "arquivoGerado": "exec-4ab62b41-2ed3-404d-adb7-af141127f966.png",
+      "dimensoes": [
+        1254,
+        1254
+      ],
+      "transparencia": true,
+      "referencias": [
+        "Captura enviada pelo usuário: diálogo de Neto",
+        "Captura enviada pelo usuário: diálogo de Dona Feliciana",
+        "Painel visual de Neto e Dona Feliciana"
+      ],
+      "prompt": "Use case: style-transfer.\nAsset type: a single consistent character turnaround/model sheet for the Brazilian HD 2D exploration game Memórias Tecidas, preliminary art master, not a finished walk-cycle spritesheet.\nInput 1 is the original Neto character and his actual game city, especially the full body drawing in the lower left dialogue portrait. Input 2 is the existing painterly Feliciana portrait and city materials to match in finish. Input 3 is a previous finish concept, useful ONLY for matte painterly technique; restore Neto's ORIGINAL simple short-sleeve petrol teal T-shirt with small V neck from input 1, NOT the collared button-up shirt in input 3.\nCreate ONE character, Neto, shown in exactly FOUR full-body neutral standing views on a genuinely transparent background, in a clean equally spaced 2 by 2 layout. Upper left: SOUTH/front facing viewer; upper right: WEST/facing screen left; lower left: EAST/facing screen right; lower right: NORTH/back toward viewer. Do not include any diagonals, walking poses, face closeups, extra characters, text, labels, grids, rulers, panels or environment.\nAll four views must clearly depict the SAME adult man with consistent face, body, outfit, hair volume, beard, backpack and shoe size. Adult stylized proportions around 5.5 heads tall, comfortably sturdy build and natural hands, anatomically coherent, reduced chibi head. Preserve original identifying dark swept-up wavy hair, thick eyebrows, full short dark beard, warm medium tan complexion, short-sleeve petrol teal V-neck T-shirt, brown trousers, worn brown shoes with narrow pale soles, copper brown simple backpack with two straps. No hat, no weapons, no jewelry, no invented logos. Do NOT turn his simple modern clothes into historical or adventurer costume.\nCamera: orthographic elevated RPG view, about 30–35 degrees downward, the SAME elevation for every view. Show tops of head and shoulders and upper shoe surfaces. The body should look down toward the ground plane in front of it rather than tilt its face up at the camera. Leg and torso foreshortening must remain coherent. Do not use a side-scrolling eye-level drawing or photographic perspective.\nStyle: premium high resolution hand-painted 2D game character, softly modeled volumes, matte cotton, restrained brushed leather, subtly textured cloth folds, edges painted in material colors, no heavy black cartoon contours, not pixel art, not photorealistic collage, not glossy 3D. Warm restrained palette matching the original Jaguaruana city. Fine texture must not obscure the eyes or read as grain across the whole body. Broad gentle neutral lighting from above with soft internal form shading, no hard baked sun direction.\nLayout: a square 2048 by 2048 model sheet if supported, four equal cells without visible cell borders, each figure centered within its own quadrant, consistent ground baseline within each row and consistent height, generous transparent padding between figures and at outer edges. Each head and both shoes fully visible, never touching other figures. Ground is ABSENT: no ground contact shadow, no gray oval, no floor, no solid background, no checkerboard drawn into image. Preserve real alpha. A clean source-quality preliminary four-view character design sheet."
+    },
+    {
+      "personagem": "Dona Feliciana",
+      "tipo": "Folha de modelo em quatro vistas",
+      "arquivoGerado": "exec-9f8b348d-4824-415c-abcf-0d4d691c8d06.png",
+      "dimensoes": [
+        1254,
+        1254
+      ],
+      "transparencia": true,
+      "referencias": [
+        "Captura enviada pelo usuário: diálogo de Dona Feliciana",
+        "Painel visual de Neto e Dona Feliciana",
+        "Folha de modelo de Neto produzida nesta etapa"
+      ],
+      "prompt": "Use case: style-transfer.\nAsset type: one preliminary four-view character turnaround/model sheet for Memórias Tecidas, a hand-painted high-resolution 2D game about Jaguaruana, Ceará, Brazil.\nReference roles: Image 1 (the game dialogue screenshot) is the identity and costume source for Dona Feliciana, especially her bust portrait at bottom left; preserve that elderly woman's face and identifying clothing. Image 2 (the concept board) supplies the long terracotta skirt and the same elderly face, shawl, blouse and matte painterly material treatment. Image 3 (Neto's transparent four-view sheet) is the exact camera-elevation, layout, rendering-quality and outline-treatment reference; make Feliciana belong in the same game as Neto.\nCreate ONE woman in exactly FOUR full-body neutral standing views, separated on a genuinely transparent square background, a tidy 2 by 2 layout: upper left SOUTH/front toward viewer, upper right WEST/facing screen left, lower left EAST/facing screen right, lower right NORTH/back toward viewer. Maintain the SAME elevated orthographic RPG camera in all quadrants, about 30–35 degrees down, as in Neto's sheet, show the top of her head and shoulders. Natural foreshortening; never turn this into a side-view game or camera-height portrait.\nIdentity: Dona Feliciana is an elderly Brazilian woman with warm medium-brown complexion, kind eyes, distinctive lined face and smile from the screenshot, grey/silver wavy hair gathered low at the back of her head, a gently rounded mature build, a relaxed upright posture with a slight natural bend. Preserve age, facial character, hair and skin tone. Do not rejuvenate, glamourize, add a hat or turn her into a fantasy character.\nClothing: warm cream cotton blouse with the original embroidered neckline and sleeve details, dark petrol/forest-green woven shawl draped around both shoulders with subtle muted gold border stripes and small fringes, ankle-length terracotta/cinnamon skirt, simple worn brown flat shoes. The same shawl drape and lengths must make anatomical sense in every orientation; the shawl is NOT a cape with a hood. No new ornaments, bracelets, props or logos. Hands relaxed in front/at sides and consistent around the turn.\nStyle and material finish: painterly HD 2D matching the Neto sheet; gentle dimensional form, restrained textured cotton, fine woven shawl, matte natural skin, hand-painted edges in the material colors, no heavy black outlines, no photorealistic cutout, no pixel art, no glossy plastic. Use broad gentle neutral overhead light, diffuse shadows within folds only, no baked directional sun. Keep facial wrinkles legible and respectful, do not cover the face in noise.\nLayout: same framing and even quadrant spacing as Neto's reference. Complete figures from head through both shoes, consistent height and floor baseline within each row. Plenty of empty transparent space between all silhouettes and around all canvas edges. No close-up portraits, captions, labels, cell borders, rulers, text, decorative panels, city objects or swatches. Real alpha background, no floor, no backdrop, no painted checkerboard, no ground shadow or oval under the feet. This is a coherent four-view MODEL study, not four walking frames."
+    }
+  ]
+}
+

@@ -70,6 +70,17 @@ Essa camada aproxima cor, microtextura e luz. A mudança de anatomia, traço, ro
 
 Os testes portáteis validam os parâmetros e a sintaxe C#. Play, shaders compilados pelo Unity, aspecto visual, desempenho e build continuam dependendo do Editor.
 
+## Estudos produzidos nesta etapa
+
+Foram produzidas duas folhas de modelo, uma de Neto e uma de Dona Feliciana, apresentadas na conversa. Cada folha contém quatro vistas em repouso, com fundo transparente: sul no quadrante superior esquerdo, oeste no superior direito, leste no inferior esquerdo e norte no inferior direito.
+
+Os arquivos gerados têm 1254 × 1254 pixels, em RGBA. A transparência foi conferida; as quatro silhuetas estão separadas e inteiras. Neto conserva a camiseta de manga curta com gola em V da referência original. A câmera foi aproximada visualmente da vista elevada do jogo, mas ainda precisa ser calibrada dentro do Unity.
+
+Esses estudos são referências para produção. Não foram inseridos como substitutos dos atlas ativos. Ainda precisam de diagonais, passos de caminhada, ajuste dos pivôs e conferência na câmera real. A linha dos pés varia alguns pixels entre as vistas; não usar recortes iguais automaticamente sem revisar o contato com o chão. O alfa interior é predominantemente próximo de 253/255; revisar a opacidade e as bordas na etapa de exportação dos sprites finais.
+
+Os [prompts de produção](Prompts-personagens.json) registram as instruções exatas e o papel de cada referência. A identidade visual deve ser conferida com as imagens originais das pessoas, especialmente nos retratos.
+
+
 ## Próxima produção de arte
 
 Concluir um modelo de Neto e um de Feliciana na câmera real; derivar deles retratos e animações; depois aplicar a mesma direção aos demais moradores. Conferir cada lote na cidade antes de substituir o seguinte. As pessoas históricas devem continuar reconhecíveis nas referências originais.
