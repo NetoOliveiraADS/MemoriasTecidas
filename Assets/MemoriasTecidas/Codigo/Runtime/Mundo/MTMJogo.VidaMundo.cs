@@ -26,9 +26,14 @@ namespace MemoriasTecidas.MundoV2
             }
         }
 
+        public Vector2 DirecaoDoEncontro
+        {
+            get { return falas != null && perto != null ? (Vector2)(perto.transform.position - transform.position) : Vector2.zero; }
+        }
+
         public bool V22FalandoCom(string nome)
         {
-            return falas != null && locutor == nome;
+            return falas != null && MTMTextoDialogo.NomeLimpo(locutor) == MTMTextoDialogo.NomeLimpo(nome);
         }
 
         // O instalador insere UMA chamada no OnGUI original. O restante do jogo não é substituído.

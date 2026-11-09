@@ -4,6 +4,7 @@ Shader "MemoriasTecidas/LugaresV23/Superficie"
     {
         [PerRendererData] _MainTex("Textura",2D)="white"{}
         _Color("Cor",Color)=(1,1,1,1)
+        [PerRendererData] _MTM_SuavizarSolo("Leitura do piso",Range(0,1))=0
         _Agua("Água",Float)=0
         _Ondulacao("Ondulação",Float)=.009
         _Velocidade("Velocidade",Float)=.65
@@ -26,6 +27,7 @@ Shader "MemoriasTecidas/LugaresV23/Superficie"
             #include "Assets/MemoriasTecidas/Shaders/Includes/MTMIluminacao.cginc"
             #include "Assets/MemoriasTecidas/Shaders/Includes/MTMDetalheOriginal.cginc"
             sampler2D _MainTex,_MTM_DistanciaBorda;float4 _MainTex_TexelSize,_Color;
+            float _MTM_SuavizarSolo;
             float _Agua,_Ondulacao,_Velocidade,_MTM_ContornoAtivo,_MTM_LarguraBorda;
             struct A{float4 pos:POSITION;float2 uv:TEXCOORD0;float2 borda:TEXCOORD1;};
             struct V{float4 pos:SV_POSITION;float2 uv:TEXCOORD0;float2 world:TEXCOORD1;float2 borda:TEXCOORD2;};
@@ -53,6 +55,16 @@ Shader "MemoriasTecidas/LugaresV23/Superficie"
                 float4 detalhe=MTMDetalharOriginal(_MainTex,uv,amostra,_MainTex_TexelSize,float4(0,0,1,1),1,_Agua);
                 float emenda=max(abs(frac(uv.x)-.5),abs(frac(uv.y)-.5))*2;
                 amostra=lerp(detalhe,amostra,smoothstep(.9,1,emenda));
+                if(_Agua<.5 && _MTM_SuavizarSolo>.001 && _MTV_Quality>.5 &&
+                    _MTM_RefinoOriginal.x>.5 && _MTM_DetalheOriginal.z>.5)
+                {
+                    float2 passo=_MainTex_TexelSize.xy*2;
+                    float3 media=(tex2D(_MainTex,uv+float2(passo.x,0)).rgb+
+                        tex2D(_MainTex,uv-float2(passo.x,0)).rgb+
+                        tex2D(_MainTex,uv+float2(0,passo.y)).rgb+
+                        tex2D(_MainTex,uv-float2(0,passo.y)).rgb)*.25;
+                    amostra.rgb=lerp(amostra.rgb,media,saturate(_MTM_SuavizarSolo));
+                }
                 float4 c=amostra*_Color;
                 float distancia=tex2D(_MTM_DistanciaBorda,i.borda).r*.6;
                 if(_MTM_ContornoAtivo>.5)

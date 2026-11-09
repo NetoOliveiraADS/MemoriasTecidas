@@ -9,6 +9,20 @@ namespace MemoriasTecidas.MundoV2
         private string linhaPreparadaDialogo, locutorPreparadoDialogo, nomeExibidoDialogo, textoExibidoDialogo;
         private Texture2D retratoExibidoDialogo;
         private Rect recorteExibidoDialogo;
+        // Normaliza o enquadramento sem substituir a arte autoral.
+        private Rect RecorteBustoDialogo()
+        {
+            Rect recorte = recorteExibidoDialogo;
+            if (retratoExibidoDialogo == null || retratoExibidoDialogo == kitHD2D?.RetratoNeto)
+                return recorte;
+            float aspecto = retratoExibidoDialogo.height * recorte.height /
+                Mathf.Max(1f, retratoExibidoDialogo.width * recorte.width);
+            float fracao = nomeExibidoDialogo == "Neto" ? .47f : aspecto > 1.65f ? .58f : 1f;
+            recorte.y += recorte.height * (1f - fracao);
+            recorte.height *= fracao;
+            return recorte;
+        }
+
         private void PrepararFalaLegivelUI()
         {
             string linha = falas[pagina] ?? "";
@@ -25,6 +39,12 @@ namespace MemoriasTecidas.MundoV2
             rolagemDialogo = Vector2.zero;
             retratoExibidoDialogo = null;
             recorteExibidoDialogo = new Rect(0, 0, 1, 1);
+            if (nomeExibidoDialogo == "Neto" && kitHD2D?.RetratoNeto != null)
+            {
+                retratoExibidoDialogo = kitHD2D.RetratoNeto;
+                return;
+            }
+
             if (string.Equals(nomeExibidoDialogo, MTMTextoDialogo.NomeLimpo(locutor), StringComparison.OrdinalIgnoreCase))
             {
                 retratoExibidoDialogo = retratoAtual;

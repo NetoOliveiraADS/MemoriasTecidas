@@ -298,6 +298,7 @@ namespace MemoriasTecidas.MundoV2
 
         private void OnGUI()
         {
+            SoltarArrastoPrimeiroFioSeInativo();
             if (!pronto || atual == null || cameraDoMapa == null || (!interfaceVisivel && !Bloqueado))
                 return;
             if (painel != "bolsa")
@@ -456,31 +457,34 @@ namespace MemoriasTecidas.MundoV2
         private void DialogoUI()
         {
             PrepararFalaLegivelUI();
-            PainelTecido(new Rect(24, 402, 1232, 294), tinta);
-            TramaFaixa(new Rect(24, 402, 1232, 8));
-            Fundo(new Rect(48, 432, 162, 220), profundoUI);
-            CosturaTecido(new Rect(48, 432, 162, 220), AlfaTecido(ouro, .55f));
+            const float larguraTexto = 894f;
+            float alturaTexto = AlturaTecido(textoExibidoDialogo, larguraTexto, tamanhoDialogoUI);
+            float visivel = Mathf.Clamp(alturaTexto, 46f, 150f);
+            float alturaPainel = Mathf.Max(184f, visivel + 116f);
+            float y = 696f - alturaPainel;
+            PainelTecido(new Rect(64, y, 1152, alturaPainel), algodaoUI);
+            TramaFaixa(new Rect(64, y, 1152, 5));
+            Rect moldura = new Rect(82, y + 20, 136, 144);
+            Fundo(moldura, papelUI);
+            CosturaTecido(moldura, AlfaTecido(ouro, .40f));
             if (retratoExibidoDialogo != null)
-                DesenharRetratoTecido(new Rect(61, 447, 136, 188), retratoExibidoDialogo, recorteExibidoDialogo);
-            else
-                IconeTecido("diario", new Rect(87, 482, 84, 84), acentoTextoUI);
-            TextoTecido(new Rect(238, 428, 970, 36), nomeExibidoDialogo, 26, acentoTextoUI, true);
-            Fundo(new Rect(238, 470, 970, 1), AlfaTecido(ouro, .35f));
-            float altura = Mathf.Max(126, AlturaTecido(textoExibidoDialogo, 946, tamanhoDialogoUI));
-            rolagemDialogo = IniciarRolagemUI(new Rect(238, 482, 970, 126), rolagemDialogo, new Rect(0, 0, 946, altura));
-            TextoTecido(new Rect(0, 0, 946, altura), textoExibidoDialogo, tamanhoDialogoUI, textoSuperficieUI);
+                DesenharRetratoTecido(new Rect(91, y + 29, 118, 126), retratoExibidoDialogo, RecorteBustoDialogo());
+            else IconeTecido("diario", new Rect(112, y + 48, 76, 76), acentoTextoUI);
+            TextoTecido(new Rect(242, y + 18, 930, 32), nomeExibidoDialogo, 24, acentoTextoUI, true);
+            rolagemDialogo = IniciarRolagemUI(new Rect(242, y + 58, 930, visivel),
+                rolagemDialogo, new Rect(0, 0, larguraTexto, Mathf.Max(visivel, alturaTexto)));
+            TextoTecido(new Rect(0, 0, larguraTexto, Mathf.Max(visivel, alturaTexto)),
+                textoExibidoDialogo, tamanhoDialogoUI, textoPapelUI);
             TerminarRolagemUI();
-            TextoTecido(new Rect(238, 614, 760, 22), MTMTextoDialogo.Assinatura, 13, AlfaTecido(textoSuperficieUI, .85f));
-            if (altura > 127)
-                TextoTecido(new Rect(1020, 614, 188, 22), "Role para ler", 12, acentoTextoUI, false, TextAnchor.UpperRight);
-            TextoTecido(new Rect(238, 652, 560, 24), "E / Enter · avançar    Esc · fechar    " + (pagina + 1) + " de " + falas.Length, 13, textoSuperficieUI);
-            if (pagina > 0 && BotaoTecido(new Rect(824, 646, 148, 34), "Anterior"))
+            if (alturaTexto > visivel + 1f)
+                TextoTecido(new Rect(982, y + 24, 190, 24), "Role para ler", 12, acentoTextoUI, false, TextAnchor.UpperRight);
+            TextoTecido(new Rect(242, 655, 470, 24), "E / Enter · continuar   Esc · sair", 13, textoPapelUI);
+            if (pagina > 0 && BotaoTecido(new Rect(808, 644, 144, 36), "Anterior"))
             {
                 pagina--;
                 quadroDaAcao = Time.frameCount;
             }
-
-            if (BotaoTecido(new Rect(988, 642, 220, 40), pagina + 1 == falas.Length ? "Concluir" : "Continuar →"))
+            if (BotaoTecido(new Rect(968, 644, 218, 36), pagina + 1 == falas.Length ? "Concluir" : "Continuar →", true))
                 Avancar();
         }
 

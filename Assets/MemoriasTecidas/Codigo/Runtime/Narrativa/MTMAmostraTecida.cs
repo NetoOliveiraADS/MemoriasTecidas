@@ -13,10 +13,14 @@ namespace MemoriasTecidas.MundoV2
         private readonly List<Color> cores = new List<Color>();
         private readonly List<int> indices = new List<int>();
         private bool pronta, criada;
-        public void Mostrar(bool tecida, MTMAberturaMemorias dados)
+        private int assinaturaAnterior;
+        public void Mostrar(bool tecida, MTMAberturaMemorias dados, IList<int> passagens = null)
         {
-            if (criada && pronta == tecida)
-                return;
+            int assinatura = 0;
+            if (!tecida && passagens != null)
+                foreach (int cor in passagens) assinatura = assinatura * 4 + cor + 1;
+            if (criada && pronta == tecida && assinatura == assinaturaAnterior) return;
+            assinaturaAnterior = assinatura;
             if (malha == null)
             {
                 var shader = Resources.Load<Shader>("MemoriasTecidas/AmostraTecida");
@@ -59,9 +63,11 @@ namespace MemoriasTecidas.MundoV2
             for (int linha = 0; linha < 4; linha++)
             {
                 Color cor;
-                ColorUtility.TryParseHtmlString(dados.cores[dados.padrao[linha]], out cor);
-                if (!tecida)
-                    cor = Color.Lerp(fundo, fio, .36f);
+                bool inserida = tecida || (passagens != null && linha < passagens.Count &&
+                    passagens[linha] >= 0 && passagens[linha] < dados.cores.Length);
+                int indiceCor = tecida ? dados.padrao[linha] : inserida ? passagens[linha] : 0;
+                ColorUtility.TryParseHtmlString(dados.cores[indiceCor], out cor);
+                if (!inserida) cor = Color.Lerp(fundo, fio, .18f);
                 float y = 1.18f - linha * .20f;
                 Quad(-.65f, y, 1.30f, .14f, cor);
                 for (int coluna = 0; coluna < 12; coluna++)

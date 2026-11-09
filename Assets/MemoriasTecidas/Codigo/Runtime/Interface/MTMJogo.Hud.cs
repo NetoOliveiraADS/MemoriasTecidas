@@ -37,62 +37,36 @@ namespace MemoriasTecidas.MundoV2
             GUI.color = antiga;
         }
 
+        private string AcaoProximaHUD()
+        {
+            if (perto == null || perto.dados == null) return "";
+            var d = perto.dados;
+            if (d.tipo == "saida") return "Atravessar";
+            if (d.tipo == "descanso") return "Descansar";
+            if (d.id == IdAmostraPrimeiroFio)
+                return estado.Tem(MTMPrimeiroFio.Teceu) ? "Rever amostra" : "Observar tecido";
+            bool pessoa = tramaTecida != null && tramaTecida.personagens != null &&
+                System.Array.Exists(tramaTecida.personagens, x => x != null && x.id == d.id);
+            return pessoa ? "Conversar" : d.tipo == "coleta" ? "Recolher" : "Examinar";
+        }
+
         private void HUDCompacta()
         {
-            Color fundo = new Color(.14f, .13f, .11f, contrasteUI ? 1f : .94f);
-            Color claro = new Color(.97f, .92f, .8f), dourado = new Color(.91f, .70f, .43f), fraco = new Color(.8f, .75f, .65f);
-            var missao = MissaoAtualTecido();
+            Color fundo = new Color(.14f, .13f, .11f, contrasteUI ? 1f : .92f);
+            Color claro = new Color(.97f, .92f, .8f), dourado = new Color(.91f, .70f, .43f);
             bool primeiro = GuiaPrimeiroFioAtivo();
-            Fundo(new Rect(24, 22, 340, mostrarObjetivoTecido ? 220 : 132), fundo);
-            string[] atalhos =
-            {
-                "receita",
-                "diario",
-                "mapa",
-                "bolsa"
-            }, icones =
-            {
-                "fio",
-                "diario",
-                "mapa",
-                "bolsa"
-            }, rotulos =
-            {
-                "Rede",
-                "Caderno",
-                "Mapa",
-                "Bolsa"
-            };
-            for (int i = 0; i < 4; i++)
-            {
-                Rect r = new Rect(34 + i * 55, 30, 44, 44);
-                int foco = EstadoAcaoUI(r, "hudcompacta:" + atalhos[i], GUI.enabled);
-                LosangoCompacta(r, foco > 0 ? dourado : fraco);
-                LosangoCompacta(new Rect(r.x + 2, r.y + 2, 40, 40), foco > 0 ? new Color(.36f, .25f, .16f) : fundo);
-                IconeTecido(icones[i], new Rect(r.x + 11, r.y + 11, 22, 22), claro);
-                TextoTecido(new Rect(r.x - 3, 76, 50, 18), rotulos[i], 12, claro, false, TextAnchor.MiddleCenter);
-                if (AcaoTecido(r, "hudcompacta:" + atalhos[i]))
-                    AlternarPainel(atalhos[i]);
-            }
-
-            int concluidas = 0, total = tramaTecida.missoes == null ? 0 : tramaTecida.missoes.Length;
-            if (tramaTecida.missoes != null)
-                foreach (var m in tramaTecida.missoes)
-                    if (MTMTrama.Concluida(estado, m))
-                        concluidas++;
-            TextoTecido(new Rect(264, 32, 88, 20), "MEMÓRIAS", 12, dourado, true);
-            TextoTecido(new Rect(264, 52, 88, 24), concluidas + " / " + total, 19, claro, true);
-            Fundo(new Rect(36, 109, 316, 3), new Color(.36f, .31f, .24f));
-            Fundo(new Rect(36, 109, 316 * (total == 0 ? 0 : concluidas / (float)total), 3), dourado);
+            var missao = MissaoAtualTecido();
             if (mostrarObjetivoTecido)
             {
-                string titulo = primeiro ? aberturaMemorias.titulo : missao == null ? "As histórias continuam" : missao.titulo;
-                TextoTecido(new Rect(38, 127, 312, 24), ResumoHUDClaroUI(titulo, 312, 24, 17, true), 17, claro, true);
-                TextoTecido(new Rect(38, 157, 312, 44), ResumoHUDClaroUI(primeiro ? ObjetivoPrimeiroFio() : ObjetivoTecido(), 312, 44, 14), 14, claro);
-                if (AcaoTecido(new Rect(30, 122, 330, 84), "hudcompacta:objetivo"))
+                Fundo(new Rect(24, 22, 398, 92), fundo);
+                Fundo(new Rect(24, 22, 3, 92), dourado);
+                string titulo = primeiro ? aberturaMemorias.titulo : missao == null ? "Sua jornada" : missao.titulo;
+                TextoTecido(new Rect(40, 34, 366, 25), ResumoHUDClaroUI(titulo, 366, 25, 18, true), 18, claro, true);
+                TextoTecido(new Rect(40, 66, 366, 40),
+                    ResumoHUDClaroUI(primeiro ? ObjetivoPrimeiroFio() : ObjetivoTecido(), 366, 40, 15), 15, claro);
+                if (AcaoTecido(new Rect(24, 22, 398, 92), "hud:objetivo"))
                 {
-                    if (primeiro)
-                        AbrirRedeMemorias();
+                    if (primeiro) AbrirRedeMemorias();
                     else
                     {
                         abaCaderno = "missoes";
@@ -101,88 +75,66 @@ namespace MemoriasTecidas.MundoV2
                     }
                 }
             }
-
-            string[] materiais =
-            {
-                "fio",
-                "corda",
-                "pano",
-                "punho",
-                "enfeite"
-            };
-            for (int i = 0; i < 5; i++)
-            {
-                bool completo = estado.rede || MTMTrama.Quantidade(estado, materiais[i]) >= MTMAutoriaRoteiro.Receita(materiais[i]);
-                LosangoCompacta(new Rect(38 + i * 22, mostrarObjetivoTecido ? 214 : 122, 12, 12), completo ? dourado : fraco);
-                if (!completo)
-                    LosangoCompacta(new Rect(40 + i * 22, mostrarObjetivoTecido ? 216 : 124, 8, 8), fundo);
-            }
-
-            Rect receita = new Rect(28, mostrarObjetivoTecido ? 210 : 118, 330, 27);
-            TextoTecido(new Rect(154, receita.y + 2, 170, 20), "Materiais da rede", 12, claro);
-            if (AcaoTecido(receita, "hudcompacta:materiais"))
-                AlternarPainel("receita");
-            Fundo(new Rect(1104, 22, 152, 60), fundo);
-            IconeTecido(Noite ? "noite" : "sol", new Rect(1115, 38, 24, 24), dourado);
+            Fundo(new Rect(1130, 22, 126, 48), fundo);
+            IconeTecido(Noite ? "noite" : "sol", new Rect(1142, 34, 22, 22), dourado);
             int minutos = Mathf.FloorToInt(estado.relogio * 1440f);
-            TextoTecido(new Rect(1150, 29, 96, 25), (minutos / 60).ToString("00") + ":" + (minutos % 60).ToString("00"), 20, claro, true);
-            TextoTecido(new Rect(1150, 56, 96, 18), "Dia " + estado.dia, 12, fraco);
-            Fundo(new Rect(24, 644, 310, 54), fundo);
-            Fundo(new Rect(24, 644, 3, 54), dourado);
-            TextoTecido(new Rect(39, 651, 280, 29), ResumoHUDClaroUI(atual.dados.nome, 280, 29, 20, true), 20, claro, true);
-            TextoTecido(new Rect(39, 680, 280, 16), "JAGUARUANA • REDE DE MEMÓRIAS", 12, fraco);
-            string[] nomes =
-            {
-                "B  Bolsa",
-                "M  Mapa",
-                "J  Caderno"
-            };
-            for (int i = 0; i < 3; i++)
-            {
-                Rect r = new Rect(866 + i * 132, 660, 126, 38);
-                int foco = EstadoAcaoUI(r, "hudcompacta:rodape:" + i, true);
-                Fundo(r, foco > 0 ? new Color(.38f, .27f, .17f) : fundo);
-                TextoTecido(r, nomes[i], 14, claro, true, TextAnchor.MiddleCenter);
-                if (AcaoTecido(r, "hudcompacta:rodape:" + i))
-                    AlternarPainel(i == 0 ? "bolsa" : i == 1 ? "mapa" : "diario");
-            }
+            TextoTecido(new Rect(1174, 31, 74, 28),
+                (minutos / 60).ToString("00") + ":" + (minutos % 60).ToString("00"), 20, claro, true);
 
+            Fundo(new Rect(24, 654, 352, 42), fundo);
+            TextoTecido(new Rect(38, 663, 324, 26),
+                ResumoHUDClaroUI(atual.dados.nome, 324, 26, 18, true), 18, claro, true);
+            string[] nomes = { "B · Bolsa", "M · Mapa", "J · Caderno" };
+            string[] ids = { "bolsa", "mapa", "diario" };
+            for (int i = 0; i < ids.Length; i++)
+            {
+                Rect r = new Rect(782 + i * 160, 654, 154, 42);
+                Fundo(r, fundo);
+                TextoTecido(r, nomes[i], 15, claro, true, TextAnchor.MiddleCenter);
+                if (AcaoTecido(r, "hud:atalho:" + ids[i])) AlternarPainel(ids[i]);
+            }
+            // A receita só aparece depois de ser apresentada na campanha.
+            if (!primeiro && estado.Tem("r24_m09_01") && !estado.rede)
+            {
+                Rect receita = new Rect(24, 610, 224, 32);
+                Fundo(receita, fundo);
+                TextoTecido(receita, "Conferir materiais da rede", 13, claro, false, TextAnchor.MiddleCenter);
+                if (AcaoTecido(receita, "hud:receita")) AlternarPainel("receita");
+            }
             if (perto != null && Disponivel(perto))
             {
-                Vector3 proj = cameraDoMapa.WorldToScreenPoint(perto.transform.position + Vector3.up * 2.2f);
-                Vector2 pos = CoordenadaHUDCompacta(proj);
+                Vector3 proj = cameraDoMapa.WorldToScreenPoint(perto.transform.position + Vector3.up * 1.2f);
                 if (proj.z > 0)
                 {
-                    Rect r = new Rect(Mathf.Clamp(pos.x - 145, 370, 940), Mathf.Clamp(pos.y - 42, 250, avisoAte > Time.unscaledTime ? 476 : 570), 290, 38);
+                    Vector2 pos = CoordenadaHUDCompacta(proj);
+                    Rect r = new Rect(Mathf.Clamp(pos.x - 100, 24, 1056),
+                        Mathf.Clamp(pos.y - 44, 128, avisoAte > Time.unscaledTime ? 492 : 560), 200, 36);
                     Fundo(r, fundo);
-                    LosangoCompacta(new Rect(r.x + 7, r.y + 5, 28, 28), dourado);
-                    TextoTecido(new Rect(r.x + 7, r.y + 5, 28, 28), "E", 14, new Color(.16f, .13f, .1f), true, TextAnchor.MiddleCenter);
-                    TextoTecido(new Rect(r.x + 44, r.y + 8, 236, 24), ResumoHUDClaroUI(perto.dados.nome, 236, 24, 14, true), 14, claro, true);
-                    if (AcaoTecido(r, "hudcompacta:interagir"))
-                        Interagir(perto);
+                    TextoTecido(r, "E · " + AcaoProximaHUD(), 15, claro, true, TextAnchor.MiddleCenter);
+                    if (AcaoTecido(r, "hud:interagir")) Interagir(perto);
                 }
             }
             else
             {
                 var local = primeiro ? LocalPrimeiroFio() : null;
-                string destino = !string.IsNullOrEmpty(destinoGuiadoTecido) ? destinoGuiadoTecido : local != null ? local.dados.id : RegiaoDaEtapaTecido(EtapaAtualTecido(missao));
+                string destino = !string.IsNullOrEmpty(destinoGuiadoTecido) ? destinoGuiadoTecido :
+                    local != null ? local.dados.id : RegiaoDaEtapaTecido(EtapaAtualTecido(missao));
                 MTMPonto alvo = ProximaSaidaTecido(destino);
                 if (alvo == null && destino == atual.dados.id)
                     alvo = primeiro && string.IsNullOrEmpty(destinoGuiadoTecido) ? AlvoPrimeiroFio() : AlvoDaEtapaTecido(EtapaAtualTecido(missao));
                 if (alvo != null && alvo.gameObject.activeInHierarchy)
                 {
-                    Fundo(new Rect(440, 608, 400, 32), fundo);
-                    string texto = (alvo.dados.tipo == "saida" ? "Caminho para " + NomeMapaGuia(alvo.dados.destino) : alvo.dados.nome) + " · " + Mathf.CeilToInt(Vector2.Distance(transform.position, alvo.transform.position)) + " m";
-                    TextoTecido(new Rect(451, 613, 378, 22), ResumoHUDClaroUI(texto, 378, 22, 13), 13, claro, false, TextAnchor.MiddleCenter);
-                    if (AcaoTecido(new Rect(440, 608, 400, 32), "hudcompacta:rota"))
-                        AlternarPainel("mapa");
+                    Rect rota = new Rect(434, 608, 412, 32);
+                    Fundo(rota, fundo);
+                    string texto = alvo.dados.tipo == "saida" ? "Caminho para " + NomeMapaGuia(alvo.dados.destino) : alvo.dados.nome;
+                    TextoTecido(new Rect(446, 613, 388, 22), ResumoHUDClaroUI(texto, 388, 22, 13), 13, claro, false, TextAnchor.MiddleCenter);
+                    if (AcaoTecido(rota, "hud:rota")) AlternarPainel("mapa");
                 }
             }
-
             if (avisoAte > Time.unscaledTime)
             {
-                Fundo(new Rect(390, 524, 500, 62), fundo);
-                TextoTecido(new Rect(405, 533, 470, 46), ResumoHUDClaroUI(aviso, 470, 46, 14), 14, claro, false, TextAnchor.MiddleCenter);
+                Fundo(new Rect(390, 536, 500, 54), fundo);
+                TextoTecido(new Rect(406, 544, 468, 38), ResumoHUDClaroUI(aviso, 468, 38, 14), 14, claro, false, TextAnchor.MiddleCenter);
             }
         }
     }

@@ -44,6 +44,15 @@ namespace MemoriasTecidas.MundoV2
             posicaoAnterior = raizMovimento.position;
         }
 
+        private void Start()
+        {
+            if (tipo != Tipo.Animal && GetComponent<MTMContatoPersonagem>() == null)
+            {
+                var contato = gameObject.AddComponent<MTMContatoPersonagem>();
+                contato.hideFlags = HideFlags.DontSave;
+            }
+        }
+
         private void OnEnable()
         {
             primeiraLeitura = true;
@@ -123,6 +132,8 @@ namespace MemoriasTecidas.MundoV2
                     distanciaQuadro = Mathf.Lerp(baseAndar, baseAndar * 1.55f, corrida) / Mathf.Max(1f, fps);
                 }
 
+                if (!andando && jogo != null && jogo.DirecaoDoEncontro.sqrMagnitude > .01f)
+                    direcaoAtual = MTMCalculosMovimento.DirecaoOito(jogo.DirecaoDoEncontro, direcaoAtual);
                 int passo = MTMCalculosMovimento.PassoPorDistancia(andando, andava, cicloCompleto, percurso, distanciaQuadro, ref tempo);
                 quadroAtual = direcaoAtual * 4 + passo;
             }

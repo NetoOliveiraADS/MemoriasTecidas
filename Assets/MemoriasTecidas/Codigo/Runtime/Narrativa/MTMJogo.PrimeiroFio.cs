@@ -11,7 +11,11 @@ namespace MemoriasTecidas.MundoV2
         private MTMPonto amostraPrimeiroFio;
         private MTMAmostraTecida visualAmostraPrimeiroFio;
         private bool amostraComFeliciana;
-        private readonly List<int> passagensPrimeiroFio = new List<int>();
+        private readonly MTMSessaoTecido tearPrimeiroFio = new MTMSessaoTecido();
+        private IList<int> passagensPrimeiroFio { get { return tearPrimeiroFio.Passagens; } }
+        private bool passagemAutomaticaPrimeiroFio;
+        private int controleArrastoPrimeiroFio;
+        private int linhaDiferentePrimeiroFio = -1;
         private string retornoPrimeiroFio = "", motivoSelecionadoRede = "";
         private void PrepararPrimeiroFio()
         {
@@ -168,7 +172,7 @@ namespace MemoriasTecidas.MundoV2
         private void AtualizarAmostraPrimeiroFio()
         {
             if (visualAmostraPrimeiroFio != null)
-                visualAmostraPrimeiroFio.Mostrar(estado.Tem(MTMPrimeiroFio.Teceu), aberturaMemorias);
+                visualAmostraPrimeiroFio.Mostrar(estado.Tem(MTMPrimeiroFio.Teceu), aberturaMemorias, estado.amostraPrimeiroFio);
         }
 
         private bool GuiaPrimeiroFioAtivo()
@@ -191,12 +195,12 @@ namespace MemoriasTecidas.MundoV2
         {
             int etapa = MTMPrimeiroFio.Etapa(estado);
             if (etapa == 0)
-                return "Converse com Dona Feliciana para guardar uma primeira lembrança.";
+                return "Converse com Dona Feliciana.";
             if (etapa == 1)
                 return amostraComFeliciana ? "Converse com Feliciana para observar a amostra." : "Observe a amostra de tecido perto de Dona Feliciana.";
             if (etapa == 2)
-                return amostraComFeliciana ? "Converse com Feliciana para experimentar as quatro passagens." : "Use a amostra e repita as quatro passagens do modelo.";
-            return "Volte a Dona Feliciana para guardar o primeiro motivo na rede.";
+                return amostraComFeliciana ? "Converse com Feliciana para experimentar as quatro passagens." : "Experimente tecer na amostra ao lado.";
+            return "Mostre sua amostra a Dona Feliciana.";
         }
 
         private MTMPonto AlvoPrimeiroFio()
@@ -329,50 +333,103 @@ namespace MemoriasTecidas.MundoV2
 
         private void AbrirPrimeiroFio()
         {
-            passagensPrimeiroFio.Clear();
-            retornoPrimeiroFio = "";
+            tearPrimeiroFio.Restaurar(estado.amostraPrimeiroFio);
+            LimparPrimeiroFio();
             painel = "primeiro_fio";
             quadroDaAcao = Time.frameCount;
             Parar();
         }
 
+        // Fechar cancela o gesto inacabado; as linhas completas já estão salvas.
         private void LimparPrimeiroFio()
         {
-            passagensPrimeiroFio.Clear();
+            tearPrimeiroFio.Cancelar();
+            passagemAutomaticaPrimeiroFio = false;
             retornoPrimeiroFio = "";
+            linhaDiferentePrimeiroFio = -1;
+        }
+
+        private void RecomecarAmostraPrimeiroFio()
+        {
+            LimparPrimeiroFio();
+            tearPrimeiroFio.Reiniciar();
+            GuardarPassagensPrimeiroFio();
+        }
+
+        private void GuardarPassagensPrimeiroFio()
+        {
+            estado.amostraPrimeiroFio = new List<int>(passagensPrimeiroFio);
+            AtualizarAmostraPrimeiroFio();
+            Salvar();
         }
 
         private void EscolherPassagemPrimeiroFio(int cor)
         {
-            if (cor >= 0 && cor < 3 && passagensPrimeiroFio.Count < 4)
-            {
-                passagensPrimeiroFio.Add(cor);
-                retornoPrimeiroFio = "";
-            }
+            tearPrimeiroFio.SelecionarCor(cor);
+            retornoPrimeiroFio = "";
         }
 
         private void DesfazerPrimeiroFio()
         {
-            if (passagensPrimeiroFio.Count > 0)
-                passagensPrimeiroFio.RemoveAt(passagensPrimeiroFio.Count - 1);
+            tearPrimeiroFio.Desfazer();
+            passagemAutomaticaPrimeiroFio = false;
+            linhaDiferentePrimeiroFio = -1;
             retornoPrimeiroFio = "";
+            GuardarPassagensPrimeiroFio();
+        }
+
+        private void PassarOuConcluirPrimeiroFio()
+        {
+            if (quadroDaAcao == Time.frameCount || tearPrimeiroFio.Passando) return;
+            if (passagensPrimeiroFio.Count == 4 && tearPrimeiroFio.LinhaEmEdicao < 0)
+            {
+                ConferirPrimeiroFio();
+                return;
+            }
+            if (tearPrimeiroFio.IniciarPassagem())
+            {
+                quadroDaAcao = Time.frameCount;
+                passagemAutomaticaPrimeiroFio = true;
+                retornoPrimeiroFio = "";
+            }
+            else retornoPrimeiroFio = "Escolha um fio: 1 Creme, 2 Dourado ou 3 Terracota.";
+        }
+
+        private void AtualizarPassagemPrimeiroFio()
+        {
+            if (painel != "primeiro_fio" || !possuiFoco)
+            {
+                tearPrimeiroFio.Cancelar();
+                passagemAutomaticaPrimeiroFio = false;
+                return;
+            }
+            if (passagemAutomaticaPrimeiroFio && tearPrimeiroFio.Passando)
+            {
+                float progresso = apresentacao.reduzirMovimento ? 1f :
+                    tearPrimeiroFio.Progresso + Mathf.Min(Time.unscaledDeltaTime, .1f) / .5f;
+                if (tearPrimeiroFio.Percorrer(progresso)) AoTerminarPassagemPrimeiroFio();
+            }
+        }
+
+        private void AoTerminarPassagemPrimeiroFio()
+        {
+            passagemAutomaticaPrimeiroFio = false;
+            linhaDiferentePrimeiroFio = -1;
+            retornoPrimeiroFio = passagensPrimeiroFio.Count == 4 ?
+                "Amostra pronta para conferir. Você pode tocar uma linha para corrigi-la." :
+                "Passagem concluída. Escolha o próximo fio.";
+            GuardarPassagensPrimeiroFio();
         }
 
         private void TeclasPrimeiroFio()
         {
             Parar();
-            if (quadroDaAcao == Time.frameCount)
-                return;
-            if (MTMEntrada.Apertou('1'))
-                EscolherPassagemPrimeiroFio(0);
-            else if (MTMEntrada.Apertou('2'))
-                EscolherPassagemPrimeiroFio(1);
-            else if (MTMEntrada.Apertou('3'))
-                EscolherPassagemPrimeiroFio(2);
-            else if (MTMEntrada.Apertou('u'))
-                DesfazerPrimeiroFio();
-            else if (MTMEntrada.Apertou('e'))
-                ConferirPrimeiroFio();
+            if (quadroDaAcao == Time.frameCount) return;
+            if (MTMEntrada.Apertou('1')) EscolherPassagemPrimeiroFio(0);
+            else if (MTMEntrada.Apertou('2')) EscolherPassagemPrimeiroFio(1);
+            else if (MTMEntrada.Apertou('3')) EscolherPassagemPrimeiroFio(2);
+            else if (MTMEntrada.Apertou('u')) DesfazerPrimeiroFio();
+            else if (MTMEntrada.Apertou('e')) PassarOuConcluirPrimeiroFio();
         }
 
         private void ConferirPrimeiroFio()
@@ -389,7 +446,8 @@ namespace MemoriasTecidas.MundoV2
                     int diferente = 0;
                     while (diferente < 4 && passagensPrimeiroFio[diferente] == aberturaMemorias.padrao[diferente])
                         diferente++;
-                    retornoPrimeiroFio = "Observe a passagem " + (diferente + 1) + ": no modelo ela é " + aberturaMemorias.nomes[aberturaMemorias.padrao[diferente]] + ". Use Desfazer para corrigir.";
+                    linhaDiferentePrimeiroFio = diferente;
+                    retornoPrimeiroFio = "Observe a linha " + (diferente + 1) + ". Toque nela ou use Tab para corrigir só essa passagem.";
                 }
 
                 return;

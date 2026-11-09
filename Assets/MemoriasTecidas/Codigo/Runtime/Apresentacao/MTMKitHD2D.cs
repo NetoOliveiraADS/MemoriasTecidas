@@ -53,10 +53,17 @@ namespace MemoriasTecidas.MundoV2
         public string regiao, textura;
     }
 
+    [Serializable]
+    internal sealed class MTMArtePersonagensHD2D
+    {
+        public MTMQuadroHD2D[] neto, feliciana;
+    }
+
     // Instâncias apenas durante o Play. Não grava cenas, prefabs nem dados de missões.
     public sealed class MTMKitHD2D : IDisposable
     {
         public const string Pasta = "MemoriasTecidas/HD2D/";
+        private const string PastaPersonagens = "PersonagensRevisados/";
         private readonly Dictionary<string, Texture2D> texturas = new Dictionary<string, Texture2D>();
         private readonly Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
         private readonly Dictionary<string, MTMQuadroHD2D> objetos = new Dictionary<string, MTMQuadroHD2D>();
@@ -64,6 +71,9 @@ namespace MemoriasTecidas.MundoV2
         private readonly List<Action> restaurar = new List<Action>();
         private Material materialPiso;
         private MTMKitHD2DDados dados;
+        private MTMArtePersonagensHD2D artePersonagens;
+        private Texture2D retratoNeto;
+        public Texture2D RetratoNeto => aplicado ? retratoNeto : null;
         private bool aplicado;
         public int Personagens { get; private set; }
         public int Objetos { get; private set; }
@@ -144,8 +154,48 @@ namespace MemoriasTecidas.MundoV2
             else
                 cartoes.Clear();
             Textura("FelicianaRetrato");
+            ValidarArtePersonagens();
             if (!dados.preservarCenarioOriginal && Resources.Load<Shader>(Pasta + "TerrenoDetalhe") == null)
                 throw new InvalidOperationException("Shader TerrenoDetalhe ausente.");
+        }
+
+        private void ValidarArtePersonagens()
+        {
+            artePersonagens = null;
+            retratoNeto = null;
+            var json = Resources.Load<TextAsset>(Pasta + PastaPersonagens + "quadros");
+            if (json == null)
+                return;
+
+            try
+            {
+                var arte = JsonUtility.FromJson<MTMArtePersonagensHD2D>(json.text);
+                if (arte == null || arte.neto == null || arte.neto.Length != dados.neto.Length ||
+                    arte.feliciana == null || arte.feliciana.Length != 3)
+                    throw new InvalidOperationException("Folhas de personagens incompletas.");
+
+                var ids = new HashSet<string>();
+                for (int i = 0; i < arte.neto.Length; i++)
+                {
+                    ValidarQuadro(arte.neto[i], ids);
+                    if (arte.neto[i].id != dados.neto[i].id)
+                        throw new InvalidOperationException("Ordem das poses do Neto incorreta.");
+                }
+
+                for (int i = 0; i < arte.feliciana.Length; i++)
+                {
+                    ValidarQuadro(arte.feliciana[i], ids);
+                    if (arte.feliciana[i].id != "Feliciana_" + i.ToString("00"))
+                        throw new InvalidOperationException("Ordem das poses da Feliciana incorreta.");
+                }
+
+                retratoNeto = Textura(PastaPersonagens + "NetoRetrato");
+                artePersonagens = arte;
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning("HD2D: o kit anterior de personagens foi mantido. " + e.Message);
+            }
         }
 
         private void ValidarSuperficie(MTMSuperficieHD2D s)
@@ -223,7 +273,13 @@ namespace MemoriasTecidas.MundoV2
                     }
 
                 foreach (var ponto in pontos)
+                {
+                    if (ponto == null || ponto.dados == null || ponto.dados.id != "npc_feliciana")
+                        continue;
                     AplicarRetrato(ponto);
+                    if (artePersonagens != null)
+                        AplicarFeliciana(jogo, ponto);
+                }
                 aplicado = true;
                 if (Personagens == 0)
                     Debug.LogWarning("HD2D: não foi encontrado o animador MTMAtorV22 do Neto. A aparência anterior foi mantida.", jogo);
@@ -241,15 +297,36 @@ namespace MemoriasTecidas.MundoV2
 
         private void AplicarNeto(MTMAtorV22 ator)
         {
+            if (AplicarQuadros(ator, artePersonagens?.neto ?? dados.neto))
+                Personagens++;
+        }
+
+        private void AplicarFeliciana(MTMJogo jogo, MTMPonto ponto)
+        {
+            var regiao = MTMVinculosRegiao.RegiaoAncestral(ponto.transform) ??
+                MTMVinculosRegiao.RegiaoDoPonto(jogo.regioes, ponto.dados.id);
+            if (regiao == null)
+                return;
+
+            foreach (var ator in regiao.GetComponentsInChildren<MTMAtorV22>(true))
+                if (ator.tipo == MTMAtorV22.Tipo.Morador && ator.nomeDaConversa == ponto.dados.nome)
+                {
+                    AplicarQuadros(ator, artePersonagens.feliciana);
+                    return;
+                }
+        }
+
+        private bool AplicarQuadros(MTMAtorV22 ator, MTMQuadroHD2D[] quadros)
+        {
             var sr = ator.GetComponent<SpriteRenderer>();
             if (sr == null || sr.sprite == null)
-                return;
+                return false;
             Sprite anterior = sr.sprite;
             Sprite[] anteriores = ator.quadros;
             float altura = Mathf.Max(.1f, anterior.rect.height / anterior.pixelsPerUnit);
-            var novos = new Sprite[32];
+            var novos = new Sprite[quadros.Length];
             for (int i = 0; i < novos.Length; i++)
-                novos[i] = CriarSprite(dados.neto[i], dados.neto[i].alturaReferencia / altura, "neto:" + ator.GetInstanceID() + ":" + i);
+                novos[i] = CriarSprite(quadros[i], quadros[i].alturaReferencia / altura, ator.GetInstanceID() + ":" + quadros[i].id);
             restaurar.Add(() =>
             {
                 if (ator != null)
@@ -259,7 +336,7 @@ namespace MemoriasTecidas.MundoV2
             });
             ator.quadros = novos;
             sr.sprite = novos[0];
-            Personagens++;
+            return true;
         }
 
         private static bool Sombra(SpriteRenderer sr)
@@ -383,8 +460,6 @@ namespace MemoriasTecidas.MundoV2
 
         private void AplicarRetrato(MTMPonto ponto)
         {
-            if (ponto == null || ponto.dados == null || ponto.dados.id != "npc_feliciana")
-                return;
             var anterior = ponto.retrato;
             var recorte = ponto.recorteRosto;
             restaurar.Add(() =>
@@ -419,6 +494,8 @@ namespace MemoriasTecidas.MundoV2
             texturas.Clear();
             objetos.Clear();
             cartoes.Clear();
+            retratoNeto = null;
+            artePersonagens = null;
             Personagens = Objetos = Superficies = Pisos = Retratos = 0;
             aplicado = false;
         }
