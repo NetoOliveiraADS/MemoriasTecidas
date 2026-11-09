@@ -1125,7 +1125,11 @@
                     "falas": [
                         "Artesão: Antes de aprender a utilizar o tear, você precisa conhecer como funciona a produção das redes",
                         "Neto: Quero aprender! Quais materiais são utilizados?",
-                        "Artesão: Fios, ferramentas e diferentes peças fazem parte desse trabalho"
+                        "Artesão: Fios, ferramentas e diferentes peças fazem parte desse trabalho",
+                        "Neto: Alguns materiais estão espalhados pelo pátio",
+                        "Artesão: Organize cada peça e observe como elas são utilizadas durante a produção.",
+                        "Joagador: Terminei de organizar tudo. Agora entendi melhor o processo.",
+                        "Artesão: Muito bem! Na próxima etapa, você poderá conhecer o funcionamento do tear."
 
                     ],
                     "falasConclusao": [],
@@ -1165,8 +1169,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Artesã: Cada fio tem seu lugar. Observe o padrão e organize-os na sequência correta.",
-                        "Neto: Vou prestar atenção."
+                        "Rosa: Uma rede precisa de atenção. Cada fio tem seu lugar, e um único ponto errado pode comprometer o trabalho",
+                        "Neto: Você pode me ajudar a tecer?",
+                        "Rosa: Claro! Primeiro, organize os fios e deixe a passagem livre",
+                        "Neto: Já está tudo organizado. Qual é o próximo passo?",
+                        "Rosa: Agora siga o padrão que vou mostrar e combine os fios na sequência correta.",
+                        "Neto: Consegui completar o padrão.",
+                        "Rosa: Muito bem! Guarde esta amostra para consultar quando precisar."
                     ],
                     "falasConclusao": [
                         "Artesã: Muito bem! A fabricação exige paciência e conhecimento."
@@ -1207,9 +1216,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Artesão: Agora quero ver se consegue usar o que aprendeu sem minha ajuda.",
-                        "Neto: E se eu errar?",
-                        "Artesão: Pode tentar novamente. Observe o padrão e aprenda com cada tentativa."
+                        "Artesão: Você já aprendeu o ponto básico. Agora vamos tentar um padrão mais longo",
+                        "Neto: Parece mais difícil, será que vou conseguir?",
+                        "Artesão: Observe a sequência e escolha os fios na ordem correta.",
+                        "Neto: Acho que errei um dos pontos",
+                        "Artesão: Não tem problema, você pode tentar novamente até completar o padrão",
+                        "Neto: Agora consegui! O desenho ficou completo",
+                        "Artesão: Excelente! Você está aprendendo a trabalhar com mais precisão"
                     ],
                     "falasConclusao": [],
                     "conceder": [
@@ -1254,9 +1267,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Comerciante: Esta encomenda está aqui há dias. Leve-a ao artesão, por favor.",
-                        "Neto: Vou entregar. Ele ainda precisa de materiais?",
-                        "Comerciante: Precisa de fios e tecido. Vou separar o que tenho depois que você recuperar a caixa no depósito."
+                        "Comerciante: Uma encomenda destinada ao artesão ficou esquecida entre as caixas do mercado.",
+                        "Neto: Como posso identificar a caixa correta?",
+                        "Comerciante: Procure aquela que possui a etiqueta da oficina de redes.",
+                        "Neto: Encontrei a caixa! Vou levá-la até o artesão",
+                        "Comerciante: Era exatamente o que eu estava esperando. Obrigado por trazer a encomenda",
+                        "Neto: Está faltando algum material para continuar o trabalho?",
+                        "Comerciante: Vou completar os materiais que faltam. Assim, a produção poderá continuar"
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -1386,9 +1403,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Artesão: Você reuniu os materiais necessários?",
-                        "Neto: Tenho fios, corda, pano, punho e o enfeite.",
-                        "Artesão: Então vamos transformar esses materiais em uma rede."
+                        "Artesão: Você já conhece os materiais e aprendeu os pontos básicos. Agora chegou a hora de construir sua própria rede",
+                        "Neto: Tenho todos os materiais necessários. Podemos começar?",
+                        "Artesão: Sim! Utilize o tear e siga as cinco fases da montagem.",
+                        "Neto: A primeira etapa está pronta, qual é a próxima?",
+                        "Artesão: Continue seguindo o padrão e confira cada ponto antes de avançar",
+                        "Neto: Terminei todas as fases! Minha rede está pronta",
+                        "Artesão: Parabéns! Você conseguiu produzir sua própria rede"
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -1530,8 +1551,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Moradora: A festa está chegando, mas ainda faltam enfeites, bancos, luminárias e flores.",
-                        "Neto: Vou procurar os itens pela cidade."
+                        "Moradora: Estamos preparando uma celebração na praça, mas ainda falta alguns itens para que tudo fique pronto",
+                        "Neto: Vou ajudar! O que precisamos reunir?.",
+                        "Comerciante: Precisamos de enfeites e materiais de decoração que ficaram espalhados",
+                        "Neto: Encontrei alguns itens, onde devo colocá-los?",
+                        "Moradora: Organize tudo nos espaços indicados e deixe a praça preparada para receber a comunidade.",
+                        "Neto: Está tudo pronto! A praça ficou muito bonita",
+                        "Moradora: Obrigado pela ajuda! Agora a festa pode continuar."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
