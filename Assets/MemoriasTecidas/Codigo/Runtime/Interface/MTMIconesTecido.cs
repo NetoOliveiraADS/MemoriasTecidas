@@ -17,6 +17,7 @@ namespace MemoriasTecidas.MundoV2
             "pano",
             "palha",
             "rede",
+            "peixe",
             "cera",
             "moedas",
             "fita",
@@ -162,6 +163,14 @@ namespace MemoriasTecidas.MundoV2
                         d.L(50, y + 6, 74, y - 8);
                     }
 
+                    break;
+                case "peixe":
+                    d.C(43, 49, 25);
+                    d.P(61, 49, 90, 23, 90, 75, 61, 49);
+                    d.P(24, 41, 36, 29, 51, 41);
+                    d.P(26, 57, 40, 70, 51, 57);
+                    d.C(29, 43, 3);
+                    d.P(8, 48, 17, 44, 18, 49, 8, 48);
                     break;
                 case "rede":
                     d.P(6, 21, 24, 60, 50, 77, 76, 60, 94, 21);
