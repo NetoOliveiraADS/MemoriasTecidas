@@ -11,6 +11,8 @@ namespace MemoriasTecidas.MundoV2
         public string idTesouro = "praca_01";
         [Tooltip("ID de material existente na bolsa. O primeiro baú usa cera.")]
         public string idRecompensa = "cera";
+        [Tooltip("Opcional: ID de puzzle exigido antes de abrir este baú.")]
+        public string idPuzzleNecessario = "";
         [Min(1)] public int quantidade = 1;
         public SpriteRenderer aparencia;
         public Color corFechado = Color.white;
