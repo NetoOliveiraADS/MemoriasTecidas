@@ -10,6 +10,8 @@ namespace MemoriasTecidas.MundoV2
         {
             if (p == null || p.dados == null || !p.gameObject.activeInHierarchy)
                 return false;
+            if (p.GetComponent<MTMBau>() != null)
+                return true;
             if (p.dados.id == IdAmostraPrimeiroFio)
                 return aberturaMemorias != null && MTMVinculosRegiao.RegiaoAncestral(p.transform) == LocalPrimeiroFio();
             if (tramaTecida != null)
@@ -47,6 +49,8 @@ namespace MemoriasTecidas.MundoV2
             recorteAtual = ponto.recorteRosto;
             Parar();
             quadroDaAcao = Time.frameCount;
+            if (InteragirTesouro(ponto))
+                return;
             if (d.tipo == "saida")
             {
                 IrPara(d.destino, new Vector2(d.chegadaX, d.chegadaY));
