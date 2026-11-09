@@ -10,7 +10,7 @@ namespace MemoriasTecidas.MundoV2
         {
             if (p == null || p.dados == null || !p.gameObject.activeInHierarchy)
                 return false;
-            if (p.GetComponent<MTMBau>() != null)
+            if (p.GetComponent<MTMBau>() != null || p.GetComponent<MTMPontoPesca>() != null)
                 return true;
             if (p.dados.id == IdAmostraPrimeiroFio)
                 return aberturaMemorias != null && MTMVinculosRegiao.RegiaoAncestral(p.transform) == LocalPrimeiroFio();
@@ -49,7 +49,7 @@ namespace MemoriasTecidas.MundoV2
             recorteAtual = ponto.recorteRosto;
             Parar();
             quadroDaAcao = Time.frameCount;
-            if (InteragirTesouro(ponto))
+            if (InteragirTesouro(ponto) || InteragirPontoPesca(ponto))
                 return;
             if (d.tipo == "saida")
             {
