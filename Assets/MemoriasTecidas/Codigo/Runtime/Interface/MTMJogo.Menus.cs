@@ -170,6 +170,12 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
+            if (painel == "pesca")
+            {
+                FecharPesca();
+                LimparFocoUI();
+                return;
+            }
             if (painel == "mapaCidade")
                 painel = retornoMapaCidadeUI == "inicio" ? "" : "pausa";
             else if (painel == "arteLugar")
