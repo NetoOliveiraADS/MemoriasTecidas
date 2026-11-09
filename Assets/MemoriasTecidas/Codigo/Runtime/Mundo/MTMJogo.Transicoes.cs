@@ -40,6 +40,7 @@ namespace MemoriasTecidas.MundoV2
                 destinoGuiadoTecido = "";
             MTMContatoCenario.Preparar(atual);
             PrepararAmostraPrimeiroFio();
+            SincronizarTesourosDaRegiao();
             Reposicionar(chegada);
             estado.Concluir("visitou_" + id);
             Salvar();
