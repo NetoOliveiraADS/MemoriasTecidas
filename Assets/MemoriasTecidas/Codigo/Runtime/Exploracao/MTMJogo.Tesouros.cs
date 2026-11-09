@@ -14,6 +14,12 @@ namespace MemoriasTecidas.MundoV2
                 Avisar("Este tesouro precisa de um identificador.");
                 return true;
             }
+            if (!string.IsNullOrEmpty(bau.idPuzzleNecessario) &&
+                !estado.Tem("exploracao_puzzle_" + bau.idPuzzleNecessario))
+            {
+                Avisar("O selo permanece fechado. Ative as placas na ordem correta.");
+                return true;
+            }
             if (estado.Tem(id))
             {
                 Avisar("Você já encontrou este tesouro.");
