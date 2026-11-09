@@ -407,6 +407,12 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
+            if (painel == "pesca")
+            {
+                PescaUI();
+                return;
+            }
+
             if (painel == "atividade")
             {
                 AtividadeRoteiroUI();
