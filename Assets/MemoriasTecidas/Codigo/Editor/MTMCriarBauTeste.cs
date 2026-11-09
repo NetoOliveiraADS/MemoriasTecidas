@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace MemoriasTecidas.MundoV2.Editor
+namespace MemoriasTecidas.MundoV2.FerramentasEditor
 {
     /// <summary>Ferramenta para inserir um baú de demonstração sem editar YAML da cena à mão.</summary>
     public static class MTMCriarBauTeste
