@@ -4204,7 +4204,7 @@
             "titulo": "Organizar as placas",
             "instrucao": "Monte o percurso usando as placas recuperadas.",
             "dica": "O percurso começa no Sol, passa pela Folha e termina no Sino.",
-            "sucesso": "Etapa concluída. O registro foi guardado no caderno.",
+            "sucesso": "Etapa concluída. O registro foi guardado no ",
             "opcoes": [
                 "Sino",
                 "Sol",
