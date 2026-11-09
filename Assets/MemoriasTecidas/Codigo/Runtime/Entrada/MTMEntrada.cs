@@ -86,6 +86,19 @@ namespace MemoriasTecidas.MundoV2
             return false;
         }
 
+        public static bool ApertouPesca()
+        {
+#if ENABLE_INPUT_SYSTEM
+            Keyboard k = Keyboard.current;
+            return k != null &&
+                (k.spaceKey.wasPressedThisFrame || k.eKey.wasPressedThisFrame);
+#elif ENABLE_LEGACY_INPUT_MANAGER
+            return Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E);
+#else
+            return false;
+#endif
+        }
+
         public static bool ApertouF1()
         {
 #if ENABLE_INPUT_SYSTEM
