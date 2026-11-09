@@ -41,6 +41,7 @@ namespace MemoriasTecidas.MundoV2
         {
             if (perto == null || perto.dados == null) return "";
             var d = perto.dados;
+            if (perto.GetComponent<MTMPontoPesca>() != null) return "Pescar";
             var bau = perto.GetComponent<MTMBau>();
             if (bau != null) return bau.Aberto(estado) ? "Baú aberto" : "Abrir tesouro";
             if (d.tipo == "saida") return "Atravessar";
