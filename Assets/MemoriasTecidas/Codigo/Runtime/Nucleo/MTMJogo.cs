@@ -75,6 +75,8 @@ namespace MemoriasTecidas.MundoV2
             }
 
             PrepararTramaTecida();
+            if (tramaTecida != null)
+                RegistrarItensPesca();
             if (tramaTecida == null)
             {
                 enabled = false;
@@ -105,6 +107,11 @@ namespace MemoriasTecidas.MundoV2
 
             if (MTMEntrada.Apertou('x'))
             {
+                if (painel == "pesca")
+                {
+                    FecharPesca();
+                    return;
+                }
                 VoltarInterfaceUI();
                 return;
             }
@@ -151,6 +158,13 @@ namespace MemoriasTecidas.MundoV2
             {
                 if (!ConfirmacaoComFocoUI)
                     TeclasPrimeiroFio();
+                return;
+            }
+
+            if (painel == "pesca")
+            {
+                Parar();
+                AtualizarPesca();
                 return;
             }
 
