@@ -192,7 +192,7 @@ namespace MemoriasTecidas.MundoV2
                 RastroGuiaHUD(alvo, distancia, dourado, reduzir);
             if (tela.Contains(pos))
             {
-                // Perto do alvo, o prompt "E" já orienta; o losango some para não poluir.
+                // Perto do alvo, o aviso [E] já orienta; o losango some para não poluir.
                 if (distancia <= alvo.alcance * 1.4f)
                     return;
                 // Onda no chão do alvo: marca o lugar exato, não só a direção.

@@ -348,7 +348,7 @@ namespace MemoriasTecidas.MundoV2
             IconeTecido("rede", new Rect(234, 230, 196, 138), terracotaUI);
             TextoTecido(new Rect(470, 222, 570, 112), "Memórias Tecidas aproxima lugares, personagens e saberes por meio da exploração e da criação de uma rede de lembranças.", 21, textoPapelUI);
             TextoTecido(new Rect(214, 404, 852, 104), "Os diálogos e atividades são adaptações ficcionais e didáticas. As fontes dos encontros aparecem no caderno; os textos não devem ser tratados como depoimentos históricos autênticos.", 18, textoPapelUI);
-            TextoTecido(new Rect(214, 530, 852, 84), "Arte de abertura original gerada para o projeto com assistência de IA. Fontes DejaVu.\nSons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D. © Wildfire Games, wildfiregames.com (CC BY-SA 3.0).\nLista completa em Resources/MemoriasTecidas/Sons/CREDITOS.txt.", 13, textoPapelUI);
+            TextoTecido(new Rect(214, 530, 852, 84), "Fontes DejaVu.\nSons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D. © Wildfire Games, wildfiregames.com (CC BY-SA 3.0).\nLista completa em Resources/MemoriasTecidas/Sons/CREDITOS.txt.", 13, textoPapelUI);
         }
 
         private void SairDoJogoUI()

@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace MemoriasTecidas.MundoV2
 {
-    // Confrontos com as lendas: luta (Mulher-Cavalo) e encanto em três fases (Curupira).
-    // As regras ficam em MTMConfronto.cs (testadas fora do Unity);
-    // o conteúdo vem de Resources/MemoriasTecidas/confrontos.json.
+    // Confrontos com as lendas: luta (Mulher-Cavalo) e esquiva/fuga (Curupira).
+    // As regras ficam em MTMConfronto.cs;
+    // o conteúdo da classe vem de Resources/MemoriasTecidas/confrontos.json.
     public sealed partial class MTMJogo
     {
         private const string FonteConfronto = "Lendas da noite · Memórias Tecidas";
@@ -94,8 +94,7 @@ namespace MemoriasTecidas.MundoV2
             MigrarEtapasDeConfronto();
         }
 
-        // Saves anteriores a uma etapa de confronto não voltam atrás: se o jogador já passou
-        // dela na campanha, a etapa conta como feita.
+        // Saves anteriores a uma etapa de confronto não voltam atrás: se o jogador já passou dela na campanha, a etapa conta como feita.
         private void MigrarEtapasDeConfronto()
         {
             if (tramaTecida == null || tramaTecida.missoes == null)

@@ -27,7 +27,7 @@ namespace MemoriasTecidas.MundoV2
         public int[] urdidura;
         // Um texto de 0 e 1 por pedal: 1 = levanta aquele fio da urdidura.
         public string[] pedais;
-        // Solução usada para gerar a amostra: "pedal,cor" por linha (pedal começa em 1).
+        // Solução usada para montar a amostra: "pedal,cor" por linha (pedal começa em 1).
         public string[] solucao;
         // Amostra de aprendizado: o tear troca os pedais sozinho e o jogador só escolhe a cor.
         public bool pedalAutomatico;
