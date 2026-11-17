@@ -32,13 +32,6 @@ namespace MemoriasTecidas.MundoV2
             "↓",
             "↘"
         };
-        private Color CorJogadorMapa
-        {
-            get
-            {
-                return contrasteUI ? Color.black : CorTecido("#71402B", Color.black);
-            }
-        }
 
         private void PrepararMapaGuiaUI()
         {
@@ -133,16 +126,17 @@ namespace MemoriasTecidas.MundoV2
             string objetivo = ObjetivoMapaGuia();
             Rect janela = new Rect(24, 154, 912, 490);
             Fundo(new Rect(0, 0, 1280, 720), profundoUI);
-            TextoTecido(new Rect(24, 15, 720, 20), "MEMÓRIAS TECIDAS / SUA JORNADA", 12, acentoTextoUI, true);
+            LosangoCompacta(new Rect(24, 19, 12, 12), ouro);
+            TextoTecido(new Rect(44, 15, 720, 20), "SUA JORNADA", 12, acentoTextoUI, true);
             TituloEditorial(new Rect(22, 40, 790, 42), "Redes de Memórias", 28, textoSuperficieUI);
-            if (BotaoTecido(new Rect(864, 30, 126, 42), "Bolsa [I]"))
+            if (BotaoTecido(new Rect(864, 30, 126, 42), "Bolsa " + AtalhoUI("I")))
             {
                 SoltarArrastoMapaUI();
                 painel = "bolsa";
                 return;
             }
 
-            if (BotaoTecido(new Rect(1002, 30, 142, 42), "Caderno [J]"))
+            if (BotaoTecido(new Rect(1002, 30, 142, 42), "Caderno " + AtalhoUI("J")))
             {
                 SoltarArrastoMapaUI();
                 painel = "diario";
@@ -199,15 +193,18 @@ namespace MemoriasTecidas.MundoV2
                 "Visitados",
                 "Objetivo"
             };
-            for (int i = 0; i < 3; i++)
-                if (AbaTecido(new Rect(24 + i * 128, 654, 116, 32), filtros[i], filtroMapa == i, true))
-                {
-                    filtroMapa = i;
-                    rolagemMapa = Vector2.zero;
-                }
-
-            TextoTecido(new Rect(420, 660, 516, 22), "● Você   ★ Missão   1–2–3 Rota   × Bloqueado", 13, textoSuperficieUI);
-            TextoTecido(new Rect(24, 695, 1232, 20), "M / Esc · fechar    Clique · escolher local    Roda / + / − · zoom    Arrastar / WASD · explorar    Tab · botões", 12, textoSuperficieUI);
+            // Os filtros só valem para a lista de lugares; no mapa fica só a legenda.
+            if (mapaEmCartoes)
+            {
+                for (int i = 0; i < 3; i++)
+                    if (AbaTecido(new Rect(24 + i * 128, 654, 116, 32), filtros[i], filtroMapa == i, true))
+                    {
+                        filtroMapa = i;
+                        rolagemMapa = Vector2.zero;
+                    }
+            }
+            else
+                TextoTecido(new Rect(24, 658, 912, 22), "Anel vermelho · você     ★ Missão     1–2–3 Caminho     ✓ Visitado     × Ainda fechado", 13, AlfaTecido(textoSuperficieUI, .75f));
         }
 
         private bool FiltroMapaGuia(string id, string objetivo)
@@ -251,18 +248,38 @@ namespace MemoriasTecidas.MundoV2
                 bool voce = r == atual, missao = id == objetivo, selecionado = id == destinoMapa, livre = RegiaoLiberadaRoteiro(id);
                 int passo = rota.IndexOf(id);
                 bool visivel = FiltroMapaGuia(id, objetivo) || voce || selecionado || passo >= 0;
-                Color cor = voce ? CorJogadorMapa : selecionado || passo >= 0 ? terracotaUI : missao ? acentoTextoUI : textoPapelUI;
-                if (!livre || !visivel)
-                    cor = Color.Lerp(cor, tinta, .55f);
-                CirculoTecido(new Rect(c.x - 21, c.y - 21, 42, 42), textoPapelUI);
-                CirculoTecido(new Rect(c.x - 18, c.y - 18, 36, 36), cor);
-                CirculoTecido(new Rect(c.x - 14, c.y - 14, 28, 28), profundoUI);
-                string simbolo = !livre ? "×" : passo >= 0 ? (passo + 1).ToString() : missao ? "★" : estado.Tem("visitou_" + id) ? "✓" : "•";
-                TextoTecido(new Rect(c.x - 14, c.y - 14, 28, 28), simbolo, 16, cor, true, TextAnchor.MiddleCenter);
-                if (missao)
+                // A arte do mapa já tem o ícone de cada lugar: por cima vão só os sinais que importam.
+                Color tintaMapa = new Color(.14f, .10f, .08f, 1f);
+                var anelMapa = TexturaAnelVivo();
+                Color corAntiga = GUI.color;
+                if (!livre)
                 {
-                    Fundo(new Rect(c.x + 12, c.y - 32, 22, 22), profundoUI);
-                    TextoTecido(new Rect(c.x + 12, c.y - 32, 22, 22), "★", 16, acentoTextoUI, true, TextAnchor.MiddleCenter);
+                    // Lugar ainda fechado: ícone esmaecido e um × pequeno.
+                    CirculoTecido(new Rect(c.x - 20, c.y - 20, 40, 40), new Color(.93f, .88f, .78f, .62f));
+                    CirculoTecido(new Rect(c.x - 9, c.y - 9, 18, 18), AlfaTecido(tintaMapa, .8f));
+                    TextoTecido(new Rect(c.x - 9, c.y - 10, 18, 18), "×", 13, claroUI, true, TextAnchor.MiddleCenter);
+                }
+                else if (!visivel)
+                    CirculoTecido(new Rect(c.x - 20, c.y - 20, 40, 40), new Color(.93f, .88f, .78f, .5f));
+
+                if (selecionado || voce)
+                {
+                    float pulso = apresentacao != null && apresentacao.reduzirMovimento ? 0f : Mathf.Sin(Time.unscaledTime * 3.5f) * 2f;
+                    float lado = (voce ? 56f : 52f) + (selecionado ? pulso : 0f);
+                    GUI.color = voce ? terracotaUI : ouro;
+                    GUI.DrawTexture(new Rect(c.x - lado * .5f, c.y - lado * .5f, lado, lado), anelMapa);
+                    GUI.color = corAntiga;
+                }
+
+                // Selo no canto: passo da rota, missão ou visitado.
+                string simbolo = !livre ? "" : passo >= 0 ? (passo + 1).ToString() : missao ? "★" : estado.Tem("visitou_" + id) && !voce ? "✓" : "";
+                if (simbolo.Length > 0)
+                {
+                    bool forte = passo >= 0 || missao;
+                    Rect selo = new Rect(c.x + 9, c.y - 27, forte ? 22 : 16, forte ? 22 : 16);
+                    CirculoTecido(new Rect(selo.x - 1, selo.y - 1, selo.width + 2, selo.height + 2), claroUI);
+                    CirculoTecido(selo, missao && passo < 0 ? terracotaUI : forte ? tintaMapa : new Color(.33f, .40f, .22f, 1f));
+                    TextoTecido(new Rect(selo.x, selo.y - 1, selo.width, selo.height), simbolo, forte ? 13 : 10, claroUI, true, TextAnchor.MiddleCenter);
                 }
 
                 Rect hit = new Rect(c.x - 21, c.y - 21, 42, 42);
@@ -274,8 +291,8 @@ namespace MemoriasTecidas.MundoV2
 
                 if (voce)
                 {
-                    Fundo(new Rect(c.x - 36, c.y + 22, 72, 19), profundoUI);
-                    TextoTecido(new Rect(c.x - 36, c.y + 22, 72, 19), "VOCÊ", 12, CorJogadorMapa, true, TextAnchor.MiddleCenter);
+                    ArredondadoHUD(new Rect(c.x - 30, c.y + 22, 60, 20), AlfaTecido(profundoUI, .92f));
+                    TextoTecido(new Rect(c.x - 30, c.y + 22, 60, 20), "VOCÊ", 11, ouro, true, TextAnchor.MiddleCenter);
                 }
 
                 if (hit.Contains(Event.current.mousePosition) || (tecladoUI && focoUI == "marco:" + id))
@@ -288,8 +305,7 @@ namespace MemoriasTecidas.MundoV2
             if (legenda.Length > 0)
             {
                 Rect label = new Rect(Mathf.Clamp(pontoLegenda.x - 126, janela.x + 4, janela.xMax - 256), Mathf.Clamp(pontoLegenda.y - 55, janela.y + 4, janela.yMax - 34), 252, 30);
-                Fundo(label, profundoUI);
-                BordaTecido(label, ouro);
+                PainelHUD(label);
                 TextoTecido(label, legenda, 13, textoSuperficieUI, true, TextAnchor.MiddleCenter);
             }
 
@@ -307,7 +323,7 @@ namespace MemoriasTecidas.MundoV2
                 Vector2 p = Vector2.Lerp(a, b, i / (float)passos);
                 if (!dentro.Contains(p))
                     continue;
-                CirculoTecido(new Rect(p.x - 4, p.y - 4, 8, 8), profundoUI);
+                CirculoTecido(new Rect(p.x - 4, p.y - 4, 8, 8), claroUI);
                 CirculoTecido(new Rect(p.x - 2, p.y - 2, 4, 4), terracotaUI);
             }
         }
@@ -399,7 +415,7 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
-            TextoTecido(new Rect(974, 630, 262, 38), "SUA REGIÃO\n" + NomeMapaGuia(atual.dados.id), 13, CorJogadorMapa, true);
+            TextoTecido(new Rect(974, 630, 262, 38), "SUA REGIÃO\n" + NomeMapaGuia(atual.dados.id), 13, acentoTextoUI, true);
         }
 
         private void OrientacaoMapaGuiaHUD(MTMPonto alvo, string orientacao)
@@ -420,7 +436,7 @@ namespace MemoriasTecidas.MundoV2
                 if (destino.z > 0 && new Rect(432, 144, 636, 390).Contains(new Vector2(gui.x, gui.y)))
                 {
                     BordaTecido(new Rect(gui.x - 18, gui.y - 18, 36, 36), ouro, 2);
-                    BordaTecido(new Rect(gui.x - 21, gui.y - 21, 42, 42), profundoUI, 1);
+                    BordaTecido(new Rect(gui.x - 21, gui.y - 21, 42, 42), claroUI, 1);
                 }
             }
 

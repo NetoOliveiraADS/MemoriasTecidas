@@ -34,7 +34,7 @@ namespace MemoriasTecidas.MundoV2
         public float vento = .8f;
         public Color luzDia = new Color(1.02f, 1f, .94f);
         public Color luzEntardecer = new Color(1.09f, .79f, .57f);
-        public Color luzNoite = new Color(.34f, .43f, .58f);
+        public Color luzNoite = new Color(.22f, .28f, .45f);
         public Color luzInterior = new Color(.81f, .77f, .69f);
         public static MTMConfiguracaoVisual Atual { get; private set; } = new MTMConfiguracaoVisual();
 

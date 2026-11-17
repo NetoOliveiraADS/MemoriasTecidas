@@ -10,6 +10,10 @@ namespace MemoriasTecidas.MundoV2
         {
             if (p == null || p.dados == null || !p.gameObject.activeInHierarchy)
                 return false;
+            if (PontoVivo(p))
+                return DisponivelMemoriaViva(p);
+            if (PontoConfronto(p))
+                return DisponivelConfronto(p);
             if (p.dados.id == IdAmostraPrimeiroFio)
                 return aberturaMemorias != null && MTMVinculosRegiao.RegiaoAncestral(p.transform) == LocalPrimeiroFio();
             if (tramaTecida != null)
@@ -54,6 +58,10 @@ namespace MemoriasTecidas.MundoV2
             }
 
             if (InteragirPrimeiroFio(ponto))
+                return;
+            if (InteragirMemoriaViva(ponto))
+                return;
+            if (InteragirConfronto(ponto))
                 return;
             if (InteragirRoteiro(ponto))
                 return;
@@ -119,7 +127,7 @@ namespace MemoriasTecidas.MundoV2
             if (estado.Concluir(evento))
             {
                 Salvar();
-                Avisar("Registro atualizado. " + ObjetivoTecido());
+                NovoObjetivoHUD();
             }
         }
 
@@ -143,6 +151,7 @@ namespace MemoriasTecidas.MundoV2
             if (falas == null || quadroDaAcao == Time.frameCount)
                 return;
             quadroDaAcao = Time.frameCount;
+            TocarSom("dialogo", .6f, .04f);
             if (pagina + 1 < falas.Length)
             {
                 pagina++;

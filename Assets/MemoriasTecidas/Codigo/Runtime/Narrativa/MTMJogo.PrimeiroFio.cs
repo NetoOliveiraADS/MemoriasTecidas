@@ -11,10 +11,6 @@ namespace MemoriasTecidas.MundoV2
         private MTMPonto amostraPrimeiroFio;
         private MTMAmostraTecida visualAmostraPrimeiroFio;
         private bool amostraComFeliciana;
-        private readonly MTMSessaoTecido tearPrimeiroFio = new MTMSessaoTecido();
-        private IList<int> passagensPrimeiroFio { get { return tearPrimeiroFio.Passagens; } }
-        private bool passagemAutomaticaPrimeiroFio;
-        private int controleArrastoPrimeiroFio;
         private int linhaDiferentePrimeiroFio = -1;
         private string retornoPrimeiroFio = "", motivoSelecionadoRede = "";
         private void PrepararPrimeiroFio()
@@ -333,133 +329,128 @@ namespace MemoriasTecidas.MundoV2
 
         private void AbrirPrimeiroFio()
         {
-            tearPrimeiroFio.Restaurar(estado.amostraPrimeiroFio);
             LimparPrimeiroFio();
+            if (CarregarTear())
+            {
+                if (estado.tearPrimeiroFio == null)
+                    estado.tearPrimeiroFio = new List<int>();
+                sessaoTear.Restaurar(estado.tearPrimeiroFio);
+                nivelTearPronto = sessaoTear.NivelPronto;
+            }
+
             painel = "primeiro_fio";
             quadroDaAcao = Time.frameCount;
             Parar();
         }
 
-        // Fechar cancela o gesto inacabado; as linhas completas já estão salvas.
+        // Fechar cancela a passagem em curso; as linhas completas já estão salvas.
         private void LimparPrimeiroFio()
         {
-            tearPrimeiroFio.Cancelar();
-            passagemAutomaticaPrimeiroFio = false;
+            passandoTear = false;
+            erroTearAte = acertoTearAte = 0f;
             retornoPrimeiroFio = "";
             linhaDiferentePrimeiroFio = -1;
-        }
-
-        private void RecomecarAmostraPrimeiroFio()
-        {
-            LimparPrimeiroFio();
-            tearPrimeiroFio.Reiniciar();
-            GuardarPassagensPrimeiroFio();
+            if (sessaoTear != null)
+                sessaoTear.LimparErro();
         }
 
         private void GuardarPassagensPrimeiroFio()
         {
-            estado.amostraPrimeiroFio = new List<int>(passagensPrimeiroFio);
-            AtualizarAmostraPrimeiroFio();
+            if (sessaoTear == null)
+                return;
+            estado.tearPrimeiroFio = sessaoTear.Codificar();
             Salvar();
-        }
-
-        private void EscolherPassagemPrimeiroFio(int cor)
-        {
-            tearPrimeiroFio.SelecionarCor(cor);
-            retornoPrimeiroFio = "";
         }
 
         private void DesfazerPrimeiroFio()
         {
-            tearPrimeiroFio.Desfazer();
-            passagemAutomaticaPrimeiroFio = false;
-            linhaDiferentePrimeiroFio = -1;
-            retornoPrimeiroFio = "";
+            if (sessaoTear == null || passandoTear || !sessaoTear.Desfazer())
+                return;
+            retornoPrimeiroFio = "Linha desfeita.";
             GuardarPassagensPrimeiroFio();
         }
 
         private void PassarOuConcluirPrimeiroFio()
         {
-            if (quadroDaAcao == Time.frameCount || tearPrimeiroFio.Passando) return;
-            if (passagensPrimeiroFio.Count == 4 && tearPrimeiroFio.LinhaEmEdicao < 0)
+            if (quadroDaAcao == Time.frameCount || sessaoTear == null || passandoTear)
+                return;
+            quadroDaAcao = Time.frameCount;
+            if (nivelTearPronto)
             {
-                ConferirPrimeiroFio();
+                quadroDaAcao = -1;
+                AvancarNivelTear();
                 return;
             }
-            if (tearPrimeiroFio.IniciarPassagem())
+
+            if (sessaoTear.Pedal < 0 || sessaoTear.Cor < 0)
             {
-                quadroDaAcao = Time.frameCount;
-                passagemAutomaticaPrimeiroFio = true;
-                retornoPrimeiroFio = "";
+                retornoPrimeiroFio = sessaoTear.Pedal < 0 ? "Primeiro escolha um pedal." : "Escolha o fio da lançadeira.";
+                return;
             }
-            else retornoPrimeiroFio = "Escolha um fio: 1 Creme, 2 Dourado ou 3 Terracota.";
+
+            // Só tece o que combina: a prévia já mostra o resultado, então o erro só pisca os pontos.
+            if (!sessaoTear.Combina)
+            {
+                erroTearAte = Time.unscaledTime + DuracaoErroTear;
+                TocarSom("tear_erro", .7f, .03f);
+                retornoPrimeiroFio = "Ainda não combina com a amostra. Veja os pontos em vermelho.";
+                return;
+            }
+
+            sessaoTear.LimparErro();
+            pedalPassagemTear = sessaoTear.Pedal;
+            corPassagemTear = sessaoTear.Cor;
+            linhaPassagemTear = sessaoTear.LinhaAtual;
+            inicioPassagemTear = Time.unscaledTime - (apresentacao != null && apresentacao.reduzirMovimento ? DuracaoPassagemTear : 0f);
+            passandoTear = true;
+            TocarSom("lancadeira", .8f, .05f);
+            retornoPrimeiroFio = "";
         }
 
         private void AtualizarPassagemPrimeiroFio()
         {
+            // A passagem anda pelo relógio real e termina no desenho do tear (TearUI).
             if (painel != "primeiro_fio" || !possuiFoco)
-            {
-                tearPrimeiroFio.Cancelar();
-                passagemAutomaticaPrimeiroFio = false;
-                return;
-            }
-            if (passagemAutomaticaPrimeiroFio && tearPrimeiroFio.Passando)
-            {
-                float progresso = apresentacao.reduzirMovimento ? 1f :
-                    tearPrimeiroFio.Progresso + Mathf.Min(Time.unscaledDeltaTime, .1f) / .5f;
-                if (tearPrimeiroFio.Percorrer(progresso)) AoTerminarPassagemPrimeiroFio();
-            }
-        }
-
-        private void AoTerminarPassagemPrimeiroFio()
-        {
-            passagemAutomaticaPrimeiroFio = false;
-            linhaDiferentePrimeiroFio = -1;
-            retornoPrimeiroFio = passagensPrimeiroFio.Count == 4 ?
-                "Amostra pronta para conferir. Você pode tocar uma linha para corrigi-la." :
-                "Passagem concluída. Escolha o próximo fio.";
-            GuardarPassagensPrimeiroFio();
+                passandoTear = false;
         }
 
         private void TeclasPrimeiroFio()
         {
             Parar();
-            if (quadroDaAcao == Time.frameCount) return;
-            if (MTMEntrada.Apertou('1')) EscolherPassagemPrimeiroFio(0);
-            else if (MTMEntrada.Apertou('2')) EscolherPassagemPrimeiroFio(1);
-            else if (MTMEntrada.Apertou('3')) EscolherPassagemPrimeiroFio(2);
-            else if (MTMEntrada.Apertou('u')) DesfazerPrimeiroFio();
-            else if (MTMEntrada.Apertou('e')) PassarOuConcluirPrimeiroFio();
-        }
-
-        private void ConferirPrimeiroFio()
-        {
-            if (quadroDaAcao == Time.frameCount || aberturaMemorias == null)
+            if (quadroDaAcao == Time.frameCount || sessaoTear == null)
                 return;
-            quadroDaAcao = Time.frameCount;
-            if (!MTMPrimeiroFio.RespostaCorreta(aberturaMemorias, passagensPrimeiroFio))
+            if (!passandoTear && !nivelTearPronto)
             {
-                if (passagensPrimeiroFio.Count < 4)
-                    retornoPrimeiroFio = "Complete as quatro passagens antes de conferir.";
-                else
+                for (int p = 0; p < 4; p++)
+                    if (MTMEntrada.Apertou((char)('1' + p)))
+                    {
+                        sessaoTear.EscolherPedal(p);
+                        retornoPrimeiroFio = "";
+                    }
+
+                // Controle: LB e RB trocam o pedal, X troca o fio.
+                int ciclo = MTMEntrada.CicloPedal();
+                int pedais = sessaoTear.NivelAtual.pedais.Length;
+                if (ciclo != 0 && !sessaoTear.PedalAutomatico)
                 {
-                    int diferente = 0;
-                    while (diferente < 4 && passagensPrimeiroFio[diferente] == aberturaMemorias.padrao[diferente])
-                        diferente++;
-                    linhaDiferentePrimeiroFio = diferente;
-                    retornoPrimeiroFio = "Observe a linha " + (diferente + 1) + ". Toque nela ou use Tab para corrigir só essa passagem.";
+                    sessaoTear.EscolherPedal(sessaoTear.Pedal < 0 ? (ciclo > 0 ? 0 : pedais - 1) : (sessaoTear.Pedal + ciclo + pedais) % pedais);
+                    retornoPrimeiroFio = "";
                 }
 
-                return;
+                if (MTMEntrada.TrocouFio() && tearDados != null)
+                {
+                    sessaoTear.EscolherCor((sessaoTear.Cor + 1) % tearDados.cores.Length);
+                    retornoPrimeiroFio = "";
+                }
+
+                if (MTMEntrada.Apertou('a')) sessaoTear.EscolherCor(0);
+                else if (MTMEntrada.Apertou('s')) sessaoTear.EscolherCor(1);
+                else if (MTMEntrada.Apertou('d')) sessaoTear.EscolherCor(2);
+                if (MTMEntrada.Apertou('u')) DesfazerPrimeiroFio();
+                else if (MTMEntrada.Apertou('h')) DicaTear();
             }
 
-            if (!MTMPrimeiroFio.Avancar(estado, aberturaMemorias, MTMPrimeiroFio.Teceu, passagensPrimeiroFio))
-                return;
-            Salvar();
-            AtualizarAmostraPrimeiroFio();
-            LimparPrimeiroFio();
-            painel = "";
-            Abrir("O primeiro fio", aberturaMemorias.fonte, aberturaMemorias.conclusao, null);
+            if (MTMEntrada.Apertou('e')) PassarOuConcluirPrimeiroFio();
         }
 
         private void AbrirRedeMemorias(string motivo = "")

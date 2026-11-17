@@ -310,15 +310,9 @@ namespace MemoriasTecidas.MundoV2
 
             if (festaRoteiro != null)
                 festaRoteiro.SetActive(estado.Tem(tramaTecida.eventoFesta));
-            if (sonsRioRoteiro != null)
-            {
-                var m = MissaoTecido("m18");
-                bool tocar = atual != null && atual.dados.id == "rio" && Noite && DisponivelTecido(m) && !MTMTrama.Concluida(estado, m);
-                if (tocar && !sonsRioRoteiro.isPlaying)
-                    sonsRioRoteiro.Play();
-                else if (!tocar && sonsRioRoteiro.isPlaying)
-                    sonsRioRoteiro.Stop();
-            }
+            // Ruído sintético da margem desligado por enquanto: soava estranho. O ambiente agora é só vento.
+            if (sonsRioRoteiro != null && sonsRioRoteiro.isPlaying)
+                sonsRioRoteiro.Stop();
         }
 
         private void IniciarEscoltaRoteiro(MTMMissaoTecido m, MTMEtapaTecido e)

@@ -68,7 +68,10 @@ namespace MemoriasTecidas.MundoV2
         private Vector3 AlvoCamera()
         {
             Vector3 alvo = transform.position + (Vector3)antecipacaoCamera;
-            if (falas != null && perto != null && apresentacao.aproximarConversas && !apresentacao.reduzirMovimento)
+            if (focoFeliciana != null && Time.unscaledTime < focoFelicianaAte)
+                // Enquadra a Feliciana com o letreiro "EU ❤ JAGUARUANA" ao lado: é a primeira imagem da cidade.
+                alvo = focoLetreiro != null ? Vector3.Lerp(focoFeliciana.position, focoLetreiro.position, .45f) : focoFeliciana.position;
+            else if (falas != null && perto != null && apresentacao.aproximarConversas && !apresentacao.reduzirMovimento)
                 alvo = Vector3.Lerp(transform.position, perto.transform.position, .45f) - Vector3.up * cameraDoMapa.orthographicSize * .22f;
             alvo.z = -10f;
             return ConterCamera(alvo);
@@ -94,7 +97,7 @@ namespace MemoriasTecidas.MundoV2
             float fator = 1f;
             if (!apresentacao.reduzirMovimento)
             {
-                float corrida = Mathf.InverseLerp(velocidade, velocidade * 1.55f, velocidadeVista.magnitude);
+                float corrida = Mathf.InverseLerp(velocidade, velocidade * multiplicadorCorrida, velocidadeVista.magnitude);
                 fator += corrida * apresentacao.aberturaCorrida * .1f;
                 if (falas != null && apresentacao.aproximarConversas)
                     fator *= .84f;
@@ -152,6 +155,7 @@ namespace MemoriasTecidas.MundoV2
             PlayerPrefs.SetFloat(ChaveVisual + "Zoom", zoomPreferido);
             PlayerPrefs.SetInt(ChaveVisual + "Movimento", apresentacao.reduzirMovimento ? 1 : 0);
             PlayerPrefs.SetFloat(ChaveVisual + "Brilho", apresentacao.exposicao);
+            SalvarPreferenciasSom();
             PlayerPrefs.Save();
         }
 
@@ -176,6 +180,10 @@ namespace MemoriasTecidas.MundoV2
                 apresentacao.exposicao = Mathf.Max(.7f, apresentacao.exposicao - .05f);
             if (BotaoTecido(new Rect(416, 486, 190, 42), "Aumentar brilho"))
                 apresentacao.exposicao = Mathf.Min(1.4f, apresentacao.exposicao + .05f);
+            if (BotaoTecido(new Rect(214, 534, 190, 36), "Música: " + RotuloVolume(volumeMusica)))
+                volumeMusica = ProximoVolume(volumeMusica);
+            if (BotaoTecido(new Rect(416, 534, 190, 36), "Sons: " + (volumeEfeitos <= 0f ? "desligados" : RotuloVolume(volumeEfeitos))))
+                volumeEfeitos = ProximoVolume(volumeEfeitos);
             if (BotaoTecido(new Rect(658, 264, 408, 44), "Contraste reforçado: " + (contrasteUI ? "ligado" : "desligado")))
             {
                 contrasteUI = !contrasteUI;
@@ -185,11 +193,12 @@ namespace MemoriasTecidas.MundoV2
 
             if (BotaoTecido(new Rect(658, 326, 408, 44), "Texto das conversas: " + (tamanhoDialogoUI == 20 ? "padrão" : tamanhoDialogoUI == 24 ? "grande" : "maior")))
                 tamanhoDialogoUI = tamanhoDialogoUI == 20 ? 24 : tamanhoDialogoUI == 24 ? 28 : 20;
-            if (BotaoTecido(new Rect(658, 388, 408, 44), "Movimento reduzido: " + (apresentacao.reduzirMovimento ? "ligado" : "desligado")))
+            if (BotaoTecido(new Rect(658, 388, 408, 44), "Menos movimento na tela: " + (apresentacao.reduzirMovimento ? "ligado" : "desligado")))
                 apresentacao.reduzirMovimento = !apresentacao.reduzirMovimento;
             if (BotaoTecido(new Rect(658, 450, 408, 44), "Objetivo no HUD: " + (mostrarObjetivoTecido ? "visível" : "oculto")))
                 mostrarObjetivoTecido = !mostrarObjetivoTecido;
-            TextoTecido(new Rect(658, 512, 408, 56), "Movimento reduzido suaviza a exploração e desativa balanços e zoom automático.", 14, textoPapelUI);
+            if (BotaoTecido(new Rect(658, 506, 408, 44), "Seta de guia: " + (mostrarGuiaMundo ? "ligada" : "desligada")))
+                mostrarGuiaMundo = !mostrarGuiaMundo;
             if (BotaoTecido(new Rect(214, 580, 852, 42), "Salvar e voltar", true))
                 VoltarInterfaceUI();
         }

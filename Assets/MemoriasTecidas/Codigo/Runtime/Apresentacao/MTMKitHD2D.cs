@@ -57,6 +57,29 @@ namespace MemoriasTecidas.MundoV2
     internal sealed class MTMArtePersonagensHD2D
     {
         public MTMQuadroHD2D[] neto, feliciana;
+        // Opcional: as mesmas 32 poses do Neto, correndo (mesma ordem de "neto").
+        public MTMQuadroHD2D[] netoCorrida;
+        public MTMMoradorHD2D[] moradores;
+        public MTMRetratoHD2D[] retratos;
+    }
+
+    // Retrato revisado dos diálogos e do caderno: vale para o ponto "ponto" e para qualquer
+    // ponto cujo retrato antigo se chame "origem" (as cópias que o roteiro cria).
+    [Serializable]
+    internal sealed class MTMRetratoHD2D
+    {
+        public string ponto, origem, textura;
+    }
+
+    // Pose revisada de um personagem: troca o sprite antigo com o nome "origem"
+    // (e da textura "texturaOrigem", se preenchida) pelo recorte "quadro".
+    // Com "ponto", vale só para a pessoa que o roteiro cria nesse ponto, que copia a arte de
+    // outro personagem (ex.: pdf_visitante copia o André Lúcio e ganha o desenho próprio).
+    [Serializable]
+    internal sealed class MTMMoradorHD2D
+    {
+        public string origem, texturaOrigem, ponto;
+        public MTMQuadroHD2D quadro;
     }
 
     // Instâncias apenas durante o Play. Não grava cenas, prefabs nem dados de missões.
@@ -68,10 +91,14 @@ namespace MemoriasTecidas.MundoV2
         private readonly Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
         private readonly Dictionary<string, MTMQuadroHD2D> objetos = new Dictionary<string, MTMQuadroHD2D>();
         private readonly Dictionary<string, Texture2D> cartoes = new Dictionary<string, Texture2D>();
+        private readonly Dictionary<string, MTMMoradorHD2D> moradores = new Dictionary<string, MTMMoradorHD2D>(StringComparer.Ordinal);
+        private readonly Dictionary<string, Texture2D> retratosPorPonto = new Dictionary<string, Texture2D>(StringComparer.Ordinal);
+        private readonly Dictionary<string, Texture2D> retratosPorOrigem = new Dictionary<string, Texture2D>(StringComparer.Ordinal);
         private readonly List<Action> restaurar = new List<Action>();
         private Material materialPiso;
         private MTMKitHD2DDados dados;
         private MTMArtePersonagensHD2D artePersonagens;
+        private MTMQuadroHD2D[] netoCorrida;
         private Texture2D retratoNeto;
         public Texture2D RetratoNeto => aplicado ? retratoNeto : null;
         private bool aplicado;
@@ -80,6 +107,7 @@ namespace MemoriasTecidas.MundoV2
         public int Superficies { get; private set; }
         public int Pisos { get; private set; }
         public int Retratos { get; private set; }
+        public int Moradores { get; private set; }
 
         private Texture2D Textura(string nome)
         {
@@ -163,13 +191,17 @@ namespace MemoriasTecidas.MundoV2
         {
             artePersonagens = null;
             retratoNeto = null;
+            moradores.Clear();
+            retratosPorPonto.Clear();
+            retratosPorOrigem.Clear();
             var json = Resources.Load<TextAsset>(Pasta + PastaPersonagens + "quadros");
             if (json == null)
                 return;
 
+            MTMArtePersonagensHD2D arte = null;
             try
             {
-                var arte = JsonUtility.FromJson<MTMArtePersonagensHD2D>(json.text);
+                arte = JsonUtility.FromJson<MTMArtePersonagensHD2D>(json.text);
                 if (arte == null || arte.neto == null || arte.neto.Length != dados.neto.Length ||
                     arte.feliciana == null || arte.feliciana.Length != 3)
                     throw new InvalidOperationException("Folhas de personagens incompletas.");
@@ -196,6 +228,76 @@ namespace MemoriasTecidas.MundoV2
             {
                 Debug.LogWarning("HD2D: o kit anterior de personagens foi mantido. " + e.Message);
             }
+
+            if (arte != null)
+            {
+                ValidarMoradores(arte.moradores);
+                ValidarRetratos(arte.retratos);
+                if (artePersonagens != null)
+                    ValidarNetoCorrida(arte.netoCorrida);
+            }
+        }
+
+        // Sem as poses de corrida (ou com problema nelas), o Neto corre com as da caminhada.
+        private void ValidarNetoCorrida(MTMQuadroHD2D[] lista)
+        {
+            netoCorrida = null;
+            if (lista == null || lista.Length == 0)
+                return;
+            try
+            {
+                if (lista.Length != dados.neto.Length)
+                    throw new InvalidOperationException("são necessárias " + dados.neto.Length + " poses, na mesma ordem de \"neto\".");
+                var ids = new HashSet<string>();
+                foreach (var q in lista)
+                    ValidarQuadro(q, ids);
+                netoCorrida = lista;
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning("HD2D: poses de corrida do Neto ignoradas. " + e.Message);
+            }
+        }
+
+        private void ValidarRetratos(MTMRetratoHD2D[] lista)
+        {
+            if (lista == null)
+                return;
+            foreach (var r in lista)
+                try
+                {
+                    if (r == null || string.IsNullOrEmpty(r.textura) || (string.IsNullOrEmpty(r.ponto) && string.IsNullOrEmpty(r.origem)))
+                        throw new InvalidOperationException("retrato sem imagem, ponto ou origem.");
+                    var t = Textura(r.textura);
+                    if (!string.IsNullOrEmpty(r.ponto))
+                        retratosPorPonto[r.ponto] = t;
+                    if (!string.IsNullOrEmpty(r.origem))
+                        retratosPorOrigem[r.origem] = t;
+                }
+                catch (Exception e)
+                {
+                    Debug.LogWarning("HD2D: retrato revisado ignorado (" + (r == null ? "vazio" : r.textura) + "): " + e.Message);
+                }
+        }
+
+        // Uma pose com problema é ignorada sem desligar as outras nem as de Neto e Feliciana.
+        private void ValidarMoradores(MTMMoradorHD2D[] lista)
+        {
+            if (lista == null)
+                return;
+            var ids = new HashSet<string>();
+            foreach (var m in lista)
+                try
+                {
+                    if (m == null || string.IsNullOrEmpty(m.origem) || moradores.ContainsKey(ChaveMorador(m.ponto, m.origem)))
+                        throw new InvalidOperationException("pose sem origem ou com origem repetida.");
+                    ValidarQuadro(m.quadro, ids);
+                    moradores.Add(ChaveMorador(m.ponto, m.origem), m);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogWarning("HD2D: pose revisada ignorada (" + (m == null ? "vazia" : m.origem) + "): " + e.Message);
+                }
         }
 
         private void ValidarSuperficie(MTMSuperficieHD2D s)
@@ -274,19 +376,33 @@ namespace MemoriasTecidas.MundoV2
 
                 foreach (var ponto in pontos)
                 {
-                    if (ponto == null || ponto.dados == null || ponto.dados.id != "npc_feliciana")
+                    if (ponto == null || ponto.dados == null)
                         continue;
+                    if (ponto.dados.id != "npc_feliciana")
+                    {
+                        AplicarRetratoMorador(ponto);
+                        continue;
+                    }
+
                     AplicarRetrato(ponto);
                     if (artePersonagens != null)
                         AplicarFeliciana(jogo, ponto);
                 }
+
+                // Os outros personagens, inclusive as cópias que o roteiro cria antes do kit (reunião, festa).
+                if (moradores.Count > 0 && jogo.regioes != null)
+                    foreach (var regiao in jogo.regioes)
+                        if (regiao != null)
+                            foreach (var ator in regiao.GetComponentsInChildren<MTMAtorV22>(true))
+                                if (ator.tipo == MTMAtorV22.Tipo.Morador)
+                                    AplicarMorador(ator);
                 aplicado = true;
                 if (Personagens == 0)
                     Debug.LogWarning("HD2D: não foi encontrado o animador MTMAtorV22 do Neto. A aparência anterior foi mantida.", jogo);
                 if (dados.preservarCenarioOriginal)
                     Debug.Log("Cenário original preservado: sprites, texturas, materiais e ilustrações dos lugares mantidos. " + Personagens + " protagonista(s) e " + Retratos + " retrato(s) atualizados.", jogo);
                 else
-                    Debug.Log("HD2D integrado: " + Personagens + " protagonista(s), " + Objetos + " objetos, " + Superficies + " superfícies, " + Pisos + " pisos e " + Retratos + " retrato(s).", jogo);
+                    Debug.Log("HD2D integrado: " + Personagens + " protagonista(s), " + Moradores + " outros personagens, " + Objetos + " objetos, " + Superficies + " superfícies, " + Pisos + " pisos e " + Retratos + " retrato(s).", jogo);
             }
             catch
             {
@@ -297,8 +413,24 @@ namespace MemoriasTecidas.MundoV2
 
         private void AplicarNeto(MTMAtorV22 ator)
         {
-            if (AplicarQuadros(ator, artePersonagens?.neto ?? dados.neto))
-                Personagens++;
+            var sr = ator.GetComponent<SpriteRenderer>();
+            float altura = sr != null && sr.sprite != null ? Mathf.Max(.1f, sr.sprite.rect.height / sr.sprite.pixelsPerUnit) : 0f;
+            if (!AplicarQuadros(ator, artePersonagens?.neto ?? dados.neto))
+                return;
+            Personagens++;
+            if (netoCorrida == null || altura <= 0f)
+                return;
+            // Mesma escala das poses de caminhada (mesma altura de referência).
+            var corrida = new Sprite[netoCorrida.Length];
+            for (int i = 0; i < corrida.Length; i++)
+                corrida[i] = CriarSprite(netoCorrida[i], netoCorrida[i].alturaReferencia / altura, ator.GetInstanceID() + ":corrida:" + netoCorrida[i].id);
+            var anteriores = ator.quadrosCorrida;
+            restaurar.Add(() =>
+            {
+                if (ator != null)
+                    ator.quadrosCorrida = anteriores;
+            });
+            ator.quadrosCorrida = corrida;
         }
 
         private void AplicarFeliciana(MTMJogo jogo, MTMPonto ponto)
@@ -337,6 +469,63 @@ namespace MemoriasTecidas.MundoV2
             ator.quadros = novos;
             sr.sprite = novos[0];
             return true;
+        }
+
+        private void AplicarMorador(MTMAtorV22 ator)
+        {
+            var sr = ator.GetComponent<SpriteRenderer>();
+            if (sr == null)
+                return;
+            Sprite anterior = sr.sprite;
+            Sprite[] anteriores = ator.quadros;
+            // Pessoa criada pelo roteiro: fica dentro do próprio ponto de conversa.
+            var dono = ator.GetComponentInParent<MTMPonto>();
+            string ponto = dono != null && dono.dados != null ? dono.dados.id : null;
+            Sprite atual = Revisado(anterior, ponto);
+            bool trocou = atual != anterior;
+            Sprite[] novos = anteriores;
+            if (anteriores != null)
+            {
+                novos = new Sprite[anteriores.Length];
+                for (int i = 0; i < novos.Length; i++)
+                {
+                    novos[i] = Revisado(anteriores[i], ponto);
+                    trocou |= novos[i] != anteriores[i];
+                }
+            }
+
+            if (!trocou)
+                return;
+            restaurar.Add(() =>
+            {
+                if (ator != null)
+                    ator.quadros = anteriores;
+                if (sr != null)
+                    sr.sprite = anterior;
+            });
+            ator.quadros = novos;
+            sr.sprite = atual;
+            Moradores++;
+        }
+
+        // A pose revisada ocupa no mundo a mesma altura da pose antiga.
+        private Sprite Revisado(Sprite antigo, string ponto)
+        {
+            MTMMoradorHD2D m;
+            if (antigo == null)
+                return antigo;
+            if ((string.IsNullOrEmpty(ponto) || !moradores.TryGetValue(ChaveMorador(ponto, antigo.name), out m)) &&
+                !moradores.TryGetValue(ChaveMorador(null, antigo.name), out m))
+                return antigo;
+            if (!string.IsNullOrEmpty(m.texturaOrigem) && (antigo.texture == null || antigo.texture.name != m.texturaOrigem))
+                return antigo;
+            float ppu = antigo.pixelsPerUnit * m.quadro.alturaReferencia / Mathf.Max(1f, antigo.rect.height);
+            return CriarSprite(m.quadro, ppu, "morador:" + antigo.GetInstanceID() + ":" + m.quadro.id);
+        }
+
+        private static string ChaveMorador(string ponto, string origem)
+        {
+            return (ponto ?? "") + "|" + origem;
         }
 
         private static bool Sombra(SpriteRenderer sr)
@@ -475,6 +664,27 @@ namespace MemoriasTecidas.MundoV2
             Retratos++;
         }
 
+        private void AplicarRetratoMorador(MTMPonto ponto)
+        {
+            Texture2D novo;
+            if (!retratosPorPonto.TryGetValue(ponto.dados.id, out novo) &&
+                (ponto.retrato == null || !retratosPorOrigem.TryGetValue(ponto.retrato.name, out novo)))
+                return;
+            var anterior = ponto.retrato;
+            var recorte = ponto.recorteRosto;
+            restaurar.Add(() =>
+            {
+                if (ponto != null)
+                {
+                    ponto.retrato = anterior;
+                    ponto.recorteRosto = recorte;
+                }
+            });
+            ponto.retrato = novo;
+            ponto.recorteRosto = new Rect(0, 0, 1, 1);
+            Retratos++;
+        }
+
         public Texture2D Imagem(string regiao)
         {
             Texture2D t;
@@ -496,7 +706,11 @@ namespace MemoriasTecidas.MundoV2
             cartoes.Clear();
             retratoNeto = null;
             artePersonagens = null;
-            Personagens = Objetos = Superficies = Pisos = Retratos = 0;
+            netoCorrida = null;
+            moradores.Clear();
+            retratosPorPonto.Clear();
+            retratosPorOrigem.Clear();
+            Personagens = Objetos = Superficies = Pisos = Retratos = Moradores = 0;
             aplicado = false;
         }
 

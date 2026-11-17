@@ -383,6 +383,163 @@ namespace MemoriasTecidas.MundoV2
             }
         }
 
+        // ---------- cenário, limites, animais e nomes das regiões ----------
+
+        private const string GrupoCenario = "05 · Cenário", GrupoAmbiente = "06 · Animais e ambiente";
+
+        [MenuItem("Memorias Tecidas/Organizar cenário e nomes das regiões", false, 1)]
+        private static void OrganizarCenarioMenu()
+        {
+            try
+            {
+                EditorUtility.DisplayDialog("Organizar cenário", OrganizarCenario(), "OK");
+            }
+            catch (Exception e)
+            {
+                EditorUtility.DisplayDialog("Organizar cenário", "Nada foi alterado: " + e.Message, "OK");
+            }
+        }
+
+        // Em cada região: o cenário solto vai para "05 · Cenário" (nos mesmos subgrupos das regiões
+        // novas), animais e atmosfera para "06 · Animais e ambiente", os grupos numerados ficam em
+        // ordem e a região recebe o nome "id_Nome". As posições no mundo não mudam.
+        // Objetos com interação, marcos, aparições e moradores ficam onde estão.
+        public static string OrganizarCenario()
+        {
+            ForaDoPlay();
+            var jogo = Jogo();
+            int grupo = IniciarUndo("Organizar cenário por região"), movidos = 0, renomeados = 0;
+            var preservados = new List<string>();
+            try
+            {
+                foreach (var r in jogo.regioes)
+                {
+                    if (r == null || r.dados == null || string.IsNullOrEmpty(r.dados.id))
+                        continue;
+                    // Barra no nome de objeto quebra caminhos como Transform.Find("a/b").
+                    string nomeRegiao = r.dados.id + "_" + r.dados.nome.Replace(" / ", " - ").Replace('/', '-');
+                    if (r.name != nomeRegiao)
+                    {
+                        Undo.RecordObject(r.gameObject, "Padronizar nome da região");
+                        r.name = nomeRegiao;
+                        Alterado(r.gameObject);
+                        renomeados++;
+                    }
+
+                    var filhos = new List<Transform>();
+                    foreach (Transform f in r.transform)
+                        filhos.Add(f);
+                    // As regiões novas já têm o grupo de cenário, com outro nome.
+                    if (r.transform.Find(GrupoCenario) == null)
+                        foreach (var f in filhos)
+                            if (f.name.StartsWith("Cenario_V", StringComparison.Ordinal))
+                            {
+                                Undo.RecordObject(f.gameObject, "Padronizar grupo de cenário");
+                                f.name = GrupoCenario;
+                                Alterado(f.gameObject);
+                                renomeados++;
+                                break;
+                            }
+
+                    foreach (var f in filhos)
+                    {
+                        if (GrupoNumerado(f))
+                            continue;
+                        string destino = DestinoCenario(r, f);
+                        if (destino == null)
+                        {
+                            preservados.Add(r.dados.id + " / " + f.name);
+                            continue;
+                        }
+
+                        Transform pasta = destino == GrupoAmbiente ? Pasta(r.transform, GrupoAmbiente) : Pasta(Pasta(r.transform, GrupoCenario), destino);
+                        var percursos = CapturarPercursos(f);
+                        Undo.SetTransformParent(f, pasta, "Agrupar cenário");
+                        RestaurarPercursos(percursos, Vector3.zero);
+                        Alterado(f);
+                        movidos++;
+                    }
+
+                    OrdenarGrupos(r.transform);
+                }
+
+                CenaAlterada();
+                Undo.CollapseUndoOperations(grupo);
+            }
+            catch
+            {
+                Undo.RevertAllDownToGroup(grupo);
+                throw;
+            }
+
+            string resumo = movidos + " objetos agrupados e " + renomeados + " nomes padronizados. Ctrl+Z desfaz; Ctrl+S salva a cena.";
+            if (preservados.Count > 0)
+            {
+                Debug.Log("Organizar cenário: objetos mantidos no lugar (têm interação, marco, aparição ou morador):\n" + string.Join("\n", preservados.ToArray()));
+                resumo += "\n\n" + preservados.Count + " objetos com interação, aparição ou morador ficaram onde estavam (lista no Console).";
+            }
+
+            return resumo;
+        }
+
+        private static bool GrupoNumerado(Transform t)
+        {
+            string n = t.name;
+            return n.Length > 5 && char.IsDigit(n[0]) && char.IsDigit(n[1]) && n.IndexOf(" · ", StringComparison.Ordinal) == 2;
+        }
+
+        private static bool ComecaCom(string nome, params string[] prefixos)
+        {
+            foreach (string p in prefixos)
+                if (nome.StartsWith(p, StringComparison.Ordinal))
+                    return true;
+            return false;
+        }
+
+        // Subgrupo de destino; null mantém o objeto onde está.
+        private static string DestinoCenario(MTMRegiao regiao, Transform t)
+        {
+            if (t.GetComponentInChildren<MTMPonto>(true) != null || t.GetComponentInChildren<MTMMarcoRoteiro>(true) != null)
+                return null;
+            if (regiao.aparicoes != null)
+                foreach (var aparicao in regiao.aparicoes)
+                    if (aparicao != null && (aparicao.transform == t || aparicao.transform.IsChildOf(t)))
+                        return null;
+            string n = t.name.ToLowerInvariant();
+            var ator = t.GetComponentInChildren<MTMAtorV22>(true);
+            if (ator != null)
+                return ator.tipo == MTMAtorV22.Tipo.Animal ? GrupoAmbiente : null;
+            if (ComecaCom(n, "cachorro", "gato", "atmosfera"))
+                return GrupoAmbiente;
+            if (t.GetComponentInChildren<ParticleSystem>(true) != null && t.GetComponentInChildren<SpriteRenderer>(true) == null && t.GetComponentInChildren<MeshRenderer>(true) == null)
+                return GrupoAmbiente;
+            if (ComecaCom(n, "limite"))
+                return "Limites";
+            if (ComecaCom(n, "chao", "piso", "rio_margem", "deque", "plantas_aquaticas"))
+                return "Pisos_e_Agua";
+            if (ComecaCom(n, "poste"))
+                return "Iluminacao";
+            if (ComecaCom(n, "arbusto", "caatinga", "carnauba", "arvore", "algodoeiro", "vasos"))
+                return "Vegetacao";
+            if (ComecaCom(n, "casa", "casario", "sobrado", "igreja", "fabrica", "mercado", "prefeitura", "coreto", "memorial", "oficina", "quiosque", "muro", "cruzeiro", "parede", "loja", "abrigo"))
+                return "Construcoes";
+            return "Mobiliario";
+        }
+
+        // Grupos numerados primeiro, em ordem; o resto mantém a ordem em que estava.
+        private static void OrdenarGrupos(Transform regiao)
+        {
+            var grupos = new List<Transform>();
+            var outros = new List<Transform>();
+            foreach (Transform f in regiao)
+                (GrupoNumerado(f) ? grupos : outros).Add(f);
+            grupos.Sort((a, b) => string.CompareOrdinal(a.name, b.name));
+            grupos.AddRange(outros);
+            for (int i = 0; i < grupos.Count; i++)
+                if (grupos[i].GetSiblingIndex() != i)
+                    Undo.SetSiblingIndex(grupos[i], i, "Ordenar grupos da região");
+        }
+
         public static List<string> Validar(MTMTrama trama)
         {
             var erros = new List<string>();

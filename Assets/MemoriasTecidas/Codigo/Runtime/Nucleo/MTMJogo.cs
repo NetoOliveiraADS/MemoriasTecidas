@@ -10,9 +10,12 @@ namespace MemoriasTecidas.MundoV2
         public MTMRegiao[] regioes;
         public MTMAmbienteV2 ambienteVisual;
         [Range(5f, 30f)]
-        public float tamanhoCamera = 8f;
+        public float tamanhoCamera = 5.6f;
         [Min(1f)]
         public float velocidade = 3.5f;
+        [Tooltip("Quantas vezes a corrida (Shift) é mais rápida que a caminhada.")]
+        [Range(1.2f, 2.4f)]
+        public float multiplicadorCorrida = 1.75f;
         [Min(60f)]
         public float segundosPorDia = 720f;
         public bool carregarProgresso = true;
@@ -46,7 +49,7 @@ namespace MemoriasTecidas.MundoV2
         {
             get
             {
-                return inicioAbertoUI || falas != null || painel.Length > 0;
+                return inicioAbertoUI || falas != null || painel.Length > 0 || Time.unscaledTime < travaFelicianaAte;
             }
         }
 
@@ -68,37 +71,47 @@ namespace MemoriasTecidas.MundoV2
             PrepararMenusUI();
             if (carregarProgresso)
                 Carregar();
+            // O componente continua ligado nos dois casos abaixo para o OnGUI mostrar a tela de erro;
+            // como "pronto" fica falso, o resto do jogo não roda.
             if (migracaoBloqueadaRoteiro)
             {
-                enabled = false;
+                if (string.IsNullOrEmpty(erroFatalUI))
+                    erroFatalUI = "O progresso salvo não pôde ser aberto.";
                 return;
             }
 
             PrepararTramaTecida();
             if (tramaTecida == null)
             {
-                enabled = false;
+                erroFatalUI = "Os dados da história (trama_01.json) não foram carregados, e o jogo não pode começar.";
                 return;
             }
 
             PrepararPrimeiroFio();
+            PrepararPrologo();
+            PrepararMemoriaViva();
+            PrepararConfrontos();
+            PrepararSom();
             PrepararKitHD2D();
             string inicio = RegiaoInicialPrimeiroFio();
             pronto = true;
             if (!RetomarJornadaSalva() && !IrParaPontoSeguro(inicio))
                 IrParaPontoSeguro("praca");
-            var localFeliciana = MTMVinculosRegiao.RegiaoDoPonto(regioes, "npc_feliciana");
-            string encontro = localFeliciana == null ? "Consulte o caderno." : "Dona Feliciana: " + localFeliciana.dados.nome + ".";
-            Avisar("WASD/setas: caminhar. " + encontro + " E: conversar. J: caderno. M: mapa.");
+            Avisar(estado.Tem(EventoPrimeiraConversa)
+                ? "Siga a seta dourada para continuar a missão. M abre o mapa."
+                : "Ande com WASD ou setas e siga a seta dourada até Dona Feliciana.");
         }
 
         private void Update()
         {
+            MTMEntrada.Atualizar();
             if (!pronto)
                 return;
+            AtualizarSom();
             AtualizarPassagemPrimeiroFio();
             if (!possuiFoco)
             {
+                MTMEntrada.PararVibracao();
                 Parar();
                 return;
             }
@@ -131,6 +144,7 @@ namespace MemoriasTecidas.MundoV2
             AjustarCamera();
             if (atual != null)
                 atual.Ambiente(Noite, false);
+            ColetarLuzesDinamicas();
             if (ambienteVisual != null && atual != null)
                 ambienteVisual.Atualizar(atual.dados, estado.relogio);
             if (MTMEntrada.Apertou('q'))
@@ -147,10 +161,22 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
+            if (painel == "prologo")
+            {
+                TeclasPrologo();
+                return;
+            }
+
             if (painel == "primeiro_fio")
             {
                 if (!ConfirmacaoComFocoUI)
                     TeclasPrimeiroFio();
+                return;
+            }
+
+            if (EmMemoriaViva())
+            {
+                TeclasMemoriaViva();
                 return;
             }
 
@@ -160,6 +186,8 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
+            if (Time.unscaledTime < travaFelicianaAte && (MTMEntrada.Apertou('e') || MTMEntrada.ConfirmouMenu()))
+                PularFocoFeliciana();
             if (MTMEntrada.Apertou('m'))
                 AlternarPainel("mapa");
             else if (MTMEntrada.Apertou('j'))
@@ -172,11 +200,14 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
-            estado.relogio += Time.deltaTime / segundosPorDia;
-            if (estado.relogio >= 1f)
+            if (!RelogioPausado())
             {
-                estado.relogio -= 1f;
-                estado.dia++;
+                estado.relogio += Time.deltaTime / segundosPorDia;
+                if (estado.relogio >= 1f)
+                {
+                    estado.relogio -= 1f;
+                    estado.dia++;
+                }
             }
 
             if (MTMEntrada.Apertou('r'))
@@ -189,7 +220,11 @@ namespace MemoriasTecidas.MundoV2
             movimento = MTMEntrada.Movimento();
             if (movimento.sqrMagnitude < .0001f && corpo != null)
                 corpo.linearVelocity = Vector2.zero;
-            multiplicador = MTMEntrada.Correndo() ? 1.55f : 1f;
+            multiplicador = MTMEntrada.Correndo() ? multiplicadorCorrida : 1f;
+            // Durante um confronto não há conversa, coleta nem saída: só a lenda.
+            if (AtualizarConfronto())
+                return;
+            AtualizarEscutaViva();
             perto = MaisProximo();
             if (MTMEntrada.Apertou('e') && perto != null && quadroDaAcao != Time.frameCount)
                 Interagir(perto);
@@ -207,6 +242,7 @@ namespace MemoriasTecidas.MundoV2
 
         private void OnDisable()
         {
+            MTMEntrada.PararVibracao();
             Parar();
         }
 

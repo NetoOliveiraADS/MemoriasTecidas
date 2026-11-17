@@ -60,6 +60,8 @@ namespace MemoriasTecidas.MundoV2
                     catch (Exception backupErro)
                     {
                         migracaoBloqueadaRoteiro = true;
+                        caminhoSaveComErro = origem;
+                        erroFatalUI = "Não foi possível criar a cópia de segurança do seu progresso antes de atualizá-lo. Nada foi alterado.";
                         Debug.LogError("Não foi possível criar o backup do progresso. O jogo foi interrompido sem sobrescrever o save: " + backupErro.Message, this);
                     }
                 }
@@ -70,13 +72,76 @@ namespace MemoriasTecidas.MundoV2
             catch (Exception e)
             {
                 migracaoBloqueadaRoteiro = true;
+                caminhoSaveComErro = origem;
+                erroFatalUI = "O progresso salvo não pôde ser aberto. O arquivo foi preservado sem alterações.";
                 Debug.LogError("O save não pôde ser carregado e foi preservado sem alterações: " + e.Message, this);
             }
+        }
+
+        // ---------- tela de erro (save ou roteiro que não abriu) ----------
+
+        private string erroFatalUI = "", caminhoSaveComErro = "";
+        private GUIStyle estiloErroFatal;
+
+        // Desenhada com a skin padrão: não depende do tema, que pode não ter sido preparado.
+        private void ErroFatalUI()
+        {
+            Matrix4x4 matriz = GUI.matrix;
+            Color cor = GUI.color;
+            GUI.matrix = Matrix4x4.identity;
+            GUI.color = new Color(.09f, .07f, .05f, 1f);
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), Texture2D.whiteTexture);
+            GUI.color = Color.white;
+            float escala = Mathf.Max(.1f, Mathf.Min(Screen.width / 1280f, Screen.height / 720f));
+            GUI.matrix = Matrix4x4.TRS(new Vector3((Screen.width - 1280f * escala) * .5f, (Screen.height - 720f * escala) * .5f, 0f), Quaternion.identity, Vector3.one * escala);
+            if (estiloErroFatal == null)
+            {
+                estiloErroFatal = new GUIStyle(GUI.skin.label) { fontSize = 22, wordWrap = true, alignment = TextAnchor.MiddleCenter };
+                estiloErroFatal.normal.textColor = new Color(.96f, .91f, .83f, 1f);
+            }
+
+            bool temSave = !string.IsNullOrEmpty(caminhoSaveComErro);
+            string texto = erroFatalUI + (temSave
+                ? "\n\nVocê pode começar uma nova jornada. O arquivo antigo será guardado com outro nome, na mesma pasta."
+                : "\n\nO Console do Unity mostra o motivo.");
+            GUI.Label(new Rect(190, 170, 900, 250), texto, estiloErroFatal);
+            var botao = new GUIStyle(GUI.skin.button) { fontSize = 18 };
+            if (temSave && GUI.Button(new Rect(340, 460, 360, 54), "Começar nova jornada", botao))
+                RecomecarAposErroDeSave();
+            if (GUI.Button(new Rect(temSave ? 720 : 540, 460, 220, 54), "Sair", botao))
+            {
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#else
+                Application.Quit();
+#endif
+            }
+
+            GUI.matrix = matriz;
+            GUI.color = cor;
+        }
+
+        private void RecomecarAposErroDeSave()
+        {
+            try
+            {
+                File.Move(caminhoSaveComErro, caminhoSaveComErro + ".com-erro-" + DateTime.Now.ToString("yyyyMMdd-HHmmssfff") + ".json");
+            }
+            catch (Exception e)
+            {
+                erroFatalUI = "Não foi possível guardar o arquivo antigo, então nada foi alterado: " + e.Message;
+                caminhoSaveComErro = "";
+                return;
+            }
+
+            // Nada do jogo foi montado ainda: recarregar a cena recomeça do zero, sem o save.
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
         }
 
         private void NovaJornada()
         {
             retomadaNoPontoSeguro = false;
+            regiaoConfrontoConferida = "";
             estado = new MTMEstado();
             confirmarNovo = false;
             painel = "";

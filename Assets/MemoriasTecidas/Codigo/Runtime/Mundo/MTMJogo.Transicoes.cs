@@ -41,7 +41,9 @@ namespace MemoriasTecidas.MundoV2
             MTMContatoCenario.Preparar(atual);
             PrepararAmostraPrimeiroFio();
             Reposicionar(chegada);
+            bool primeiraVisita = !estado.Tem("visitou_" + id);
             estado.Concluir("visitou_" + id);
+            MostrarBannerRegiao(id, primeiraVisita);
             Salvar();
             if (chegouDestinoGuiado)
                 Avisar("Você chegou a " + NomeMapaGuia(id) + ".");

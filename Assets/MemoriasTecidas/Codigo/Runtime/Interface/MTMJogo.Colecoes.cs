@@ -323,7 +323,7 @@ namespace MemoriasTecidas.MundoV2
             TextoTecido(new Rect(460, 268, 730, 18), MTMAutoriaRoteiro.Capitulo(escolhida).ToUpperInvariant(), 11, terracotaUI, true);
             TextoTecido(new Rect(460, 298, 730, 63), escolhida.titulo, 25, textoPapelUI, true);
             int feitas = MTMTrama.Progresso(estado, escolhida);
-            NosProgressoTecido(new Rect(464, 374, 492, 12), feitas, escolhida.etapas.Length, terracotaUI, papelUI);
+            NosProgressoTecido(new Rect(464, 374, 492, 12), feitas, escolhida.etapas.Length, ouro, AlfaTecido(claroUI, .3f));
             TextoTecido(new Rect(978, 368, 212, 24), feitas + " / " + escolhida.etapas.Length + " nós tecidos", 13, textoPapelUI, true, TextAnchor.MiddleRight);
             float descH = AlturaTecido(escolhida.descricao, 700, 16);
             float conteudo = descH + 28;
@@ -338,7 +338,7 @@ namespace MemoriasTecidas.MundoV2
                 float eh = Mathf.Max(48, AlturaTecido(e.texto, 654, 16) + 18);
                 NoTecido(new Vector2(11, ey + 12), ok ? folhaUI : terracotaUI, 5);
                 if (!ok)
-                    NoTecido(new Vector2(11, ey + 12), papelUI, 3);
+                    NoTecido(new Vector2(11, ey + 12), AlfaTecido(claroUI, .3f), 3);
                 TextoTecido(new Rect(36, ey, 654, eh - 10), e.texto, 16, textoPapelUI, ok);
                 ey += eh;
             }

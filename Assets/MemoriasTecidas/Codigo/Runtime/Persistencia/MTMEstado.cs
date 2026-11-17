@@ -18,6 +18,8 @@ namespace MemoriasTecidas.MundoV2
         public bool rede;
         // Campo adicional; ausente ou nulo em saves anteriores.
         public List<int> amostraPrimeiroFio = new List<int>();
+        // Progresso no tear de pedais: [1000 + amostra, linhas feitas (pedal * 10 + cor)...].
+        public List<int> tearPrimeiroFio = new List<int>();
         public List<string> marcos = new List<string>();
         public int versaoRoteiro;
         public List<MTMQuantidadeTecida> colecao = new List<MTMQuantidadeTecida>();

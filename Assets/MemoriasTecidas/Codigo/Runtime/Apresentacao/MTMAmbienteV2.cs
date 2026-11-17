@@ -8,6 +8,17 @@ namespace MemoriasTecidas.MundoV2
         public static float Sol = 1f, Fase = .33f;
         public static bool Interior { get; private set; }
 
+        // Luzes que mudam a cada quadro (fogueiras, lamparina). Quem usa limpa e preenche
+        // antes de Atualizar; elas entram na frente das luzes fixas da região.
+        public struct LuzDinamica
+        {
+            public Vector2 posicao;
+            public float raio, intensidade;
+            public Color cor;
+        }
+
+        public static readonly System.Collections.Generic.List<LuzDinamica> LuzesDinamicas = new System.Collections.Generic.List<LuzDinamica>();
+
         public static readonly string[] Nomes =
         {
             "Leve",
@@ -29,8 +40,9 @@ namespace MemoriasTecidas.MundoV2
             Fase = Mathf.Repeat(relogio, 1f);
             Sol = MTMCalculosVisuais.Sol(Fase);
             float hora = Fase * 24f;
-            float calor = Mathf.Clamp01(1f - Mathf.Abs(hora - 17.2f) / 2.2f) * Sol;
-            calor = Mathf.Max(calor, Mathf.Clamp01(1f - Mathf.Abs(hora - 6.6f) / 1.8f) * Sol * .65f);
+            // Sertão: manhã dourada até perto das 9h e tarde alaranjada a partir das 15h.
+            float calor = Mathf.Clamp01(1f - Mathf.Abs(hora - 17f) / 2.8f) * Sol;
+            calor = Mathf.Max(calor, Mathf.Clamp01(1f - Mathf.Abs(hora - 7f) / 2.4f) * Sol * .75f);
             Color dia = Color.Lerp(arte.luzDia, arte.luzEntardecer, calor * .72f);
             Color alvo = area.interior ? arte.luzInterior : Color.Lerp(arte.luzNoite, dia, Sol);
             if (anterior != area)
@@ -50,6 +62,17 @@ namespace MemoriasTecidas.MundoV2
             // Direção horizontal troca de lado ao meio-dia; Sol controla a intensidade, não a altura.
             Shader.SetGlobalVector("_MTV_Sun", new Vector4(Mathf.Sin((Fase - .5f) * Mathf.PI * 2f), Sol, area.interior ? 1f : 0f, arte.sombrasContato));
             int limite = Qualidade == 0 ? 4 : Qualidade == 1 ? 8 : 16, count = 0;
+            for (int i = 0; i < LuzesDinamicas.Count && count < 16; i++)
+            {
+                var l = LuzesDinamicas[i];
+                if (l.raio <= 0f || l.intensidade <= 0f)
+                    continue;
+                posicoes[count] = new Vector4(l.posicao.x, l.posicao.y, l.raio, l.intensidade);
+                cores[count] = new Vector4(l.cor.r, l.cor.g, l.cor.b, 1f);
+                count++;
+            }
+
+            limite = Mathf.Min(16, limite + count);
             if (cameraPrincipal == null)
                 cameraPrincipal = Camera.main;
             Vector2 centro = cameraPrincipal != null ? (Vector2)cameraPrincipal.transform.position : Vector2.zero;
@@ -100,6 +123,7 @@ namespace MemoriasTecidas.MundoV2
         {
             Interior = false;
             anterior = null;
+            LuzesDinamicas.Clear();
             Shader.SetGlobalFloat("_MTV_Active", 0f);
             Shader.SetGlobalInt("_MTV_Count", 0);
             Shader.SetGlobalFloat("_MTV_Time", 0f);

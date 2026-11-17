@@ -1,14 +1,35 @@
 fileFormatVersion: 2
 guid: dfafa5bcbe454f4e909bbc5302a70dfc
 TextureImporter:
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
     sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
@@ -20,11 +41,31 @@ TextureImporter:
     wrapV: 1
     wrapW: 1
   nPOTScale: 0
+  lightmap: 0
   compressionQuality: 70
-  spriteMode: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 164.91
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
   alphaIsTransparency: 1
-  textureType: 0
+  spriteTessellationDetail: -1
+  textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -34,7 +75,398 @@ TextureImporter:
     textureCompression: 0
     compressionQuality: 70
     crunchedCompression: 0
+    allowsAlphaSplitting: 0
     overridden: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neto_S_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 887
+        width: 122
+        height: 283
+      alignment: 9
+      pivot: {x: 0.508197, y: 0.007067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c737db5f67fdd09273a03a6dc911d85
+      internalID: 7382774627945853229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_S_01
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 881
+        width: 131
+        height: 289
+      alignment: 9
+      pivot: {x: 0.541985, y: 0.00692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ad87974037fef1d4832d4f47f54324
+      internalID: 721768372748852566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_S_02
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 886
+        width: 127
+        height: 284
+      alignment: 9
+      pivot: {x: 0.484252, y: 0.007042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9eb4d1f77142ade9ae12f4068f9bba
+      internalID: 322851124950223906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_S_03
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 883
+        width: 129
+        height: 287
+      alignment: 9
+      pivot: {x: 0.53876, y: 0.006969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9513fb6efddaa9b8a851ab873dfe36
+      internalID: 8698395347495865480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_W_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 589
+        width: 124
+        height: 288
+      alignment: 9
+      pivot: {x: 0.419355, y: 0.006944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1f1445f0ea5f00e2f3e04abb705734
+      internalID: 2237315827344021352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_W_01
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 590
+        width: 170
+        height: 287
+      alignment: 9
+      pivot: {x: 0.479412, y: 0.006969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b7adc56f566fbd7c81211c82b80421
+      internalID: 3263824995238315179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_W_02
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 593
+        width: 122
+        height: 284
+      alignment: 9
+      pivot: {x: 0.467213, y: 0.007042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6bc84431f86046c0aed5807460fefc
+      internalID: 3043333191758494206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_W_03
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 592
+        width: 176
+        height: 285
+      alignment: 9
+      pivot: {x: 0.477273, y: 0.007018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c13abb2bc6ca25e0d176a7f35ca0fe
+      internalID: 1504698509763845010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_N_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 132
+        height: 285
+      alignment: 9
+      pivot: {x: 0.503788, y: 0.007018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac17fb1e6088070ab810c52cc8ea310a
+      internalID: 908744057709437478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_N_01
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 3
+        width: 141
+        height: 288
+      alignment: 9
+      pivot: {x: 0.602837, y: 0.006944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa5babcce3ec67e61808b6a16c403b7
+      internalID: 8123384347304347798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_N_02
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 3
+        width: 134
+        height: 288
+      alignment: 9
+      pivot: {x: 0.511194, y: 0.006944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a69ad0af1c17f20488109a41bee614
+      internalID: 2128180107197210809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_N_03
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 3
+        width: 138
+        height: 288
+      alignment: 9
+      pivot: {x: 0.554348, y: 0.006944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16733370276b2372732456d61929e399
+      internalID: 4520636941002897068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_E_00
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 298
+        width: 120
+        height: 286
+      alignment: 9
+      pivot: {x: 0.6125, y: 0.006993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187cd0d02d238ec9d24b9ff725ca614b
+      internalID: 7355334314071711738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_E_01
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 302
+        width: 179
+        height: 282
+      alignment: 9
+      pivot: {x: 0.522346, y: 0.007092}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99aa08a07f8a06cc975ae74962ebff9
+      internalID: 8428733933995698926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_E_02
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 306
+        width: 122
+        height: 278
+      alignment: 9
+      pivot: {x: 0.495902, y: 0.007194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ea5ab827c90c5652fd4b143b9d0627
+      internalID: 3768495853855201730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neto_E_03
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 303
+        width: 174
+        height: 281
+      alignment: 9
+      pivot: {x: 0.517241, y: 0.007117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56eacd6df2a9adbf69e10ec28bf4393d
+      internalID: 5062575800853328854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Neto_S_00: 7382774627945853229
+      Neto_S_01: 721768372748852566
+      Neto_S_02: 322851124950223906
+      Neto_S_03: 8698395347495865480
+      Neto_W_00: 2237315827344021352
+      Neto_W_01: 3263824995238315179
+      Neto_W_02: 3043333191758494206
+      Neto_W_03: 1504698509763845010
+      Neto_N_00: 908744057709437478
+      Neto_N_01: 8123384347304347798
+      Neto_N_02: 2128180107197210809
+      Neto_N_03: 4520636941002897068
+      Neto_E_00: 7355334314071711738
+      Neto_E_01: 8428733933995698926
+      Neto_E_02: 3768495853855201730
+      Neto_E_03: 5062575800853328854
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

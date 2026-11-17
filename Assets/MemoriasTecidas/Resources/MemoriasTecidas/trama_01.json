@@ -16,8 +16,8 @@
         {
             "id": "m01",
             "titulo": "O início da jornada",
-            "descricao": "Dona Feliciana apresenta a cidade e indica um encontro com Simão de Góis, na Praça Matriz.",
-            "recompensa": "Primeiro registro no diário e indicação do próximo destino",
+            "descricao": "Dona Feliciana apresenta a cidade e indica um encontro com Simão de Góis, na Prefeitura e Praça.",
+            "recompensa": "Primeiro registro no diário, moedas e a primeira lenda da noite",
             "capitulo": "Chegadas e encontros",
             "numero": 1,
             "opcional": false,
@@ -25,7 +25,7 @@
             "etapas": [
                 {
                     "texto": "Conversar com Dona Feliciana",
-                    "regiao": "entrada da cidade",
+                    "regiao": "entrada",
                     "ponto": "npc_feliciana",
                     "horario": "dia",
                     "acao": "conversa",
@@ -36,13 +36,17 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Dona Feliciana: Seja bem-vindo a Jaguaruana! Nossa cidade guarda histórias que passam de geração em geração. Algumas estão nos livros, outras vivem na memória do povo.",
+                        "Dona Feliciana: Ora, seja muito bem-vindo a Jaguaruana! Que alegria receber gente nova aqui na entrada da nossa cidade.",
+                        "Dona Feliciana: Eu me chamo Feliciana Soares da Costa e sou uma lembrança de outro tempo. Mandei levantar uma capelinha para Nossa Senhora Sant'Ana e, em 1761, doei terras para ela.",
+                        "Dona Feliciana: É dessa doação a primeira notícia da origem de Jaguaruana. Desde então, as histórias daqui passam de geração em geração: algumas estão nos livros, outras vivem na memória do povo.",
                         "Neto: Quero conhecer a cidade. Por onde devo começar?",
-                        "Dona Feliciana:Procure Simão de Góis. Ele conhece muitas histórias antigas e poderá ajudar você a entender melhor a cidade.",
-                        "Neto: O caminho está bloqueado por essas caixas.",
-                        "Dona Feliciana: Os comerciantes devem tê-las deixado aí. Afaste as caixas menores e procure uma passagem livre.",
-                        "Neto: Pronto! Agora consigo passar",
-                        "Dona Feliciana: Muito bem!, Siga até Simão e conte que eu indiquei o caminho. Sua jornada está apenas começando"
+                        "Dona Feliciana: Sem pressa. Ande pelas ruas, entre nos lugares e converse com quem encontrar. Cada pessoa ouvida deixa um fio na sua rede de memórias, e você pode rever tudo no caderno, com a tecla J.",
+                        "Dona Feliciana: E comece pelo começo: procure Simão de Góis, meu marido. Dizem que ele foi um dos primeiros a se estabelecer aqui, na margem esquerda do Jaguaribe, quando tudo isto ainda era caatinga.",
+                        "Dona Feliciana: Por isso o lugar se chamou, primeiro, Caatinga do Góis. Hoje a avenida do centro leva o nome dele.",
+                        "Neto: E onde posso encontrá-lo?",
+                        "Dona Feliciana: Na Prefeitura e Praça. Passe pela Praça Matriz e pelo Mercado para chegar lá. Se precisar, aperte M para abrir o mapa; a seta dourada também mostra o caminho.",
+                        "Neto: Entendi. Obrigado, Dona Feliciana!",
+                        "Dona Feliciana: Diga a Simão que fui eu quem indicou o caminho. Sua jornada está só começando."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -55,8 +59,8 @@
                     "percurso": []
                 },
                 {
-                    "texto": "Encontrar Simão de Góis na Praça Matriz",
-                    "regiao": "praca",
+                    "texto": "Encontrar Simão de Góis na Prefeitura e Praça",
+                    "regiao": "prefeitura",
                     "ponto": "npc_simao",
                     "horario": "dia",
                     "acao": "aproximar",
@@ -67,13 +71,44 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Encontrar Simão de Góis na Praça Matriz."
+                        "Encontrar Simão de Góis na Prefeitura e Praça."
                     ],
                     "falasConclusao": [],
                     "conceder": [
                         {
                             "id": "fio_simples",
                             "quantidade": 1,
+                            "minimo": false
+                        }
+                    ],
+                    "consumir": [],
+                    "exigir": [],
+                    "completarMateriais": false,
+                    "exigeReceita": false,
+                    "fabricarRede": false,
+                    "pista": "",
+                    "percurso": []
+                },
+                {
+                    "texto": "Seguir o tropel até o Rio Jaguaribe e enfrentar a Mulher-Cavalo",
+                    "regiao": "rio",
+                    "ponto": "cfp_mulher_cavalo",
+                    "horario": "",
+                    "acao": "confronto",
+                    "atividade": "",
+                    "registro": "No rio, à noite, a Mulher-Cavalo apareceu de verdade. Neto não fugiu, e ela deixou uma ferradura gasta antes de sumir.",
+                    "eventos": [
+                        "r24_m01_03"
+                    ],
+                    "alternativas": [],
+                    "falas": [
+                        "Seguir o tropel até o Rio Jaguaribe e enfrentar a Mulher-Cavalo."
+                    ],
+                    "falasConclusao": [],
+                    "conceder": [
+                        {
+                            "id": "moedas",
+                            "quantidade": 10,
                             "minimo": false
                         }
                     ],
@@ -101,7 +136,7 @@
             "etapas": [
                 {
                     "texto": "Ouvir Simão e receber a corda",
-                    "regiao": "praca",
+                    "regiao": "prefeitura",
                     "ponto": "npc_simao",
                     "horario": "dia",
                     "acao": "conversa",
@@ -112,8 +147,10 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Simão de Góis: Dona Feliciana me contou que você gostaria de conhecer melhor Jaguaruana.",
+                        "Simão de Góis: Feliciana me contou que você gostaria de conhecer melhor Jaguaruana.",
                         "Neto: Sim! Quero descobrir as histórias e os lugares importantes da cidade.",
+                        "Simão de Góis: Então comece pelo nome. Quando cheguei, isto aqui era uma caatinga de verdade. O povo dizia: \"vou à Caatinga do Góis\", \"venho da Caatinga do Góis\".",
+                        "Simão de Góis: Quando eu já não estava mais aqui, Feliciana doou terras para a capela de Sant'Ana. Em 1865 o lugar virou vila, com o nome de União, e só em 1943 passou a se chamar Jaguaruana.",
                         "Simão de Góis: Existem muitas histórias que ainda precisam ser reconhecidas.",
                         "Neto: Por onde podemos começar?",
                         "Simão de Góis: Recomendo visitar a Serra Dantas e conhecer o Cruzeiro",
@@ -227,25 +264,25 @@
                     "percurso": []
                 },
                 {
-                    "texto": "Conversar com o visitante da Serra",
+                    "texto": "Conversar com Seu Expedito, o visitante da Serra",
                     "regiao": "serra",
                     "ponto": "pdf_visitante",
                     "horario": "dia",
                     "acao": "conversa",
                     "atividade": "",
-                    "registro": "Serra Dantas: trilha, Cruzeiro e relato de um visitante sobre encontros e missa. Texto ficcional; os detalhes culturais devem ser validados pela pesquisa.",
+                    "registro": "Serra Dantas: trilha, Cruzeiro e relato de Seu Expedito sobre encontros e missa. Texto ficcional; os detalhes culturais devem ser validados pela pesquisa.",
                     "eventos": [
                         "r24_m03_03"
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Visitante: Você também veio conhecer a Serra Dantas? Este lugar tem paisagens muito bonitas",
+                        "Seu Expedito: Você também veio conhecer a Serra Dantas? Muito prazer, eu sou o Expedito. Subo esta serra desde menino, e este lugar tem paisagens muito bonitas.",
                         "Neto: Simão pediu que eu explorasse a trilha e observasse o cruzeiro",
-                        "Visitante: Então siga por aquele caminho e tenha cuidado com as pedras",
+                        "Seu Expedito: Então siga por aquele caminho e tenha cuidado com as pedras",
                         "Neto: Há alguns obstáculos bloqueando a passagem",
-                        "Visitante: Contorne as pedras e procure as referências ao longo da trilha.",
+                        "Seu Expedito: Contorne as pedras e procure as referências ao longo da trilha.",
                         "Neto: Encontrei o Cruzeiro! A vista daqui é muito bonita",
-                        "Visitante: Agora você conhece mais um lugar importante da nossa cidade."
+                        "Seu Expedito: Agora você conhece mais um lugar importante da nossa cidade."
                     ],
                     "falasConclusao": [],
                     "conceder": [
@@ -268,7 +305,7 @@
         {
             "id": "m04",
             "titulo": "A história da Mulher-Cavalo",
-            "descricao": "Volte a Simão no entardecer e observe a praça durante a noite.",
+            "descricao": "Volte a Simão no entardecer e observe a Praça Matriz durante a noite.",
             "recompensa": "Moedas e acesso ao Museu da Carnaúba.",
             "capitulo": "Chegadas e encontros",
             "numero": 4,
@@ -279,7 +316,7 @@
             "etapas": [
                 {
                     "texto": "Ouvir Simão no entardecer ou à noite",
-                    "regiao": "praca",
+                    "regiao": "prefeitura",
                     "ponto": "npc_simao",
                     "horario": "entardecer",
                     "acao": "conversa",
@@ -290,9 +327,9 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Simão de Góis: Existe uma antiga história sobre uma figura que aparece a noite, alguns moradores a chamam de Mulher-Cavalo",
-                        "Neto: Essa história é verdadeira ou apenas uma lenda?",
-                        "Simão de Góis: Não podemos afirmar. Volte ao entardecer e observe a praça com atenção",
+                        "Simão de Góis: Você enfrentou a Mulher-Cavalo no rio, mas a história não acaba lá. Dizem que ela também passa pela Praça Matriz à noite.",
+                        "Neto: Lá no rio, ela me perguntou se eu tinha visto os filhos dela. O que ela procura aqui na cidade?",
+                        "Simão de Góis: Contam que procura os filhos e pergunta por eles a quem encontra. Mas ninguém pode afirmar. Vá até a Praça Matriz e observe com atenção quando a noite cair.",
                         "Neto: Está ficando escuro. Acho que vi alguma coisa perto da Igreja!",
                         "Simão de Góis: Fique próximo às luzes e não tente seguir qualquer figura que aparecer",
                         "Neto: Uma silhueta passou rapidamente! Não consegui ver quem era",
@@ -367,13 +404,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Guia: Bem-Vindo ao Memorial da Carnaúba! Estamos preparando uma exposição sobre os trabalhos tradicionais da região",
+                        "Lia: Bem-Vindo ao Memorial da Carnaúba! Estamos preparando uma exposição sobre os trabalhos tradicionais da região",
                         "Neto: Posso ajudar? Parece que ainda falta alguma coisa",
-                        "Guia: Uma peça de palha desapareceu entre os materiais da exposição",
+                        "Lia: Uma peça de palha desapareceu entre os materiais da exposição",
                         "Neto: Onde devo procurar?",
-                        "Guia: Verifique as caixas e observe as etiquetas para identificar a peça correta",
+                        "Lia: Verifique as caixas e observe as etiquetas para identificar a peça correta",
                         "Neto: Encontrei! EStava misturada com outros materiais",
-                        "Guia: Excelente! Agora podemos completar a exposição e preservar mais uma parte da nossa história."
+                        "Lia: Excelente! Agora podemos completar a exposição e preservar mais uma parte da nossa história."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -481,13 +518,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Comerciante: Ainda bem que você chegou! Três objetos desapareceram das minhas bancas",
+                        "Seu Bento: Ainda bem que você chegou! Três objetos desapareceram das minhas bancas",
                         "Neto: Quais objetos estão faltando?",
-                        "Comerciante: Uma pequena caixa, um tecido e uma ferramenta. Eles devem estar espalados pelo mercado.",
+                        "Seu Bento: Uma pequena caixa, um tecido e uma ferramenta. Eles devem estar espalhados pelo mercado.",
                         "Neto: Vou procurar. Mas há um carrinho bloqueando a passagem",
-                        "Comerciante: Afaste o carrinho e procure perto das caixas e das bancas",
+                        "Seu Bento: Afaste o carrinho e procure perto das caixas e das bancas",
                         "Neto: Encontrei os três objetos!",
-                        "Comerciante: Muito obrigado! Agora posso organizar novamente minha banca."
+                        "Seu Bento: Muito obrigado! Agora posso organizar novamente minha banca."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -644,7 +681,7 @@
         {
             "id": "m07",
             "titulo": "O enfeite perdido da Praça",
-            "descricao": "Simão indica um enfeite de palha próximo aos bancos da praça.",
+            "descricao": "Simão indica um enfeite de palha próximo aos bancos da Praça Matriz.",
             "recompensa": "Enfeite de palha, que permanece na bolsa até a fabricação.",
             "capitulo": "Chegadas e encontros",
             "numero": 7,
@@ -655,7 +692,7 @@
             "etapas": [
                 {
                     "texto": "Ouvir a indicação de Simão",
-                    "regiao": "praca",
+                    "regiao": "prefeitura",
                     "ponto": "npc_simao",
                     "horario": "dia",
                     "acao": "conversa",
@@ -666,13 +703,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Simão de Góis: Preciso de sua ajuda. Um enefeite de palha que seria utilizado na decoração da praça desapareceu",
+                        "Simão de Góis: Preciso de sua ajuda. Um enfeite de palha que seria utilizado na decoração da Praça Matriz desapareceu",
                         "Neto: Você sabe onde ele foi visto pela última vez?.",
-                        "Simão de Góis: Acredito que tenha caído próximo aos bancos",
+                        "Simão de Góis: Acredito que tenha caído próximo aos bancos da Praça Matriz",
                         "Neto: Vou procurar por lá, há alguns objetos espalhados pelo caminho",
                         "Simão de Góis: Observe com atenção e afaste o que estiver bloqueando a passagem.",
                         "Neto: Encontrei o enfeite perto de um dos bancos.",
-                        "Simão de Góis: Muito bem! Agora podemos cmpletar a decoração da praça." 
+                        "Simão de Góis: Muito bem! Agora podemos completar a decoração da Praça Matriz." 
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -731,7 +768,7 @@
             "etapas": [
                 {
                     "texto": "Conversar com a moradora sobre a procissão",
-                    "regiao": "praca",
+                    "regiao": "vila",
                     "ponto": "pdf_moradora",
                     "horario": "dia",
                     "acao": "conversa",
@@ -744,11 +781,11 @@
                     "falas": [
                         "Moradora: Estamos organizando uma porcissão, mas algumas placas que indicam o percurso desapareceram",
                         "Neto: Quantas placas precisamos encontrar?",
-                        "Padre Ducéu: São três. Sem elas a comunidade pode acabar seguindo pelo caminho errado",
+                        "Moradora: São três. Sem elas a comunidade pode acabar seguindo pelo caminho errado",
                         "Neto: Vou procurar as placas e descobrir a ordem correta.",
                         "Moradora: Depois, ajude a organizar o percurso e fique atento aos imprevistos.",
                         "Neto: Encontrei as três placas e organizei a sequência!",
-                        "Padre Ducéu: Excelente! Agora a comunidade poderá continuar a procissão com segurança"
+                        "Moradora: Excelente! Agora a comunidade poderá continuar a procissão com segurança"
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -869,7 +906,9 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Padre Ducéu: Confira a orientação das placas e organize o percurso."
+                        "Padre Ducéu: Seja bem-vindo à Matriz de Sant'Ana. Eu sou Raimundo Sales Façanha, mas aqui todo mundo me chama de Padre Ducéu.",
+                        "Padre Ducéu: Fui vigário desta paróquia a partir de 1969. Na cheia de 1985, quando o Jaguaribe tomou a cidade, abrimos as portas desta igreja para abrigar as famílias.",
+                        "Padre Ducéu: Hoje a ajuda é outra: confira a orientação das placas e organize o percurso da procissão."
                     ],
                     "falasConclusao": [
                         "Padre Ducéu: Agora o percurso está organizado. Obrigado por ajudar a comunidade."
@@ -1078,7 +1117,8 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Padre Ducéu: O percurso foi concluído. Obrigado por ajudar a comunidade."
+                        "Padre Ducéu: O percurso foi concluído. Obrigado por ajudar a comunidade.",
+                        "Padre Ducéu: Sant'Ana é a padroeira de Jaguaruana. Na festa dela, em julho, o novenário vai de 22 a 30, e o dia 26 é o dia da santa, com missas e procissões."
                     ],
                     "falasConclusao": [],
                     "conceder": [
@@ -1128,7 +1168,7 @@
                         "Artesão: Fios, ferramentas e diferentes peças fazem parte desse trabalho",
                         "Neto: Alguns materiais estão espalhados pelo pátio",
                         "Artesão: Organize cada peça e observe como elas são utilizadas durante a produção.",
-                        "Joagador: Terminei de organizar tudo. Agora entendi melhor o processo.",
+                        "Neto: Terminei de organizar tudo. Agora entendi melhor o processo.",
                         "Artesão: Muito bem! Na próxima etapa, você poderá conhecer o funcionamento do tear."
 
                     ],
@@ -1178,7 +1218,7 @@
                         "Rosa: Muito bem! Guarde esta amostra para consultar quando precisar."
                     ],
                     "falasConclusao": [
-                        "Artesã: Muito bem! A fabricação exige paciência e conhecimento."
+                        "Rosa: Muito bem! A fabricação exige paciência e conhecimento."
                     ],
                     "conceder": [],
                     "consumir": [],
@@ -1267,13 +1307,13 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Comerciante: Uma encomenda destinada ao artesão ficou esquecida entre as caixas do mercado.",
+                        "Seu Bento: Uma encomenda destinada ao artesão ficou esquecida entre as caixas do mercado.",
                         "Neto: Como posso identificar a caixa correta?",
-                        "Comerciante: Procure aquela que possui a etiqueta da oficina de redes.",
+                        "Seu Bento: Procure aquela que possui a etiqueta da oficina de redes.",
                         "Neto: Encontrei a caixa! Vou levá-la até o artesão",
-                        "Comerciante: Era exatamente o que eu estava esperando. Obrigado por trazer a encomenda",
+                        "Seu Bento: Era exatamente o que eu estava esperando. Obrigado por trazer a encomenda",
                         "Neto: Está faltando algum material para continuar o trabalho?",
-                        "Comerciante: Vou completar os materiais que faltam. Assim, a produção poderá continuar"
+                        "Seu Bento: Vou completar os materiais que faltam. Assim, a produção poderá continuar"
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -1540,7 +1580,7 @@
             "etapas": [
                 {
                     "texto": "Conversar com a moradora sobre a festa",
-                    "regiao": "praca",
+                    "regiao": "vila",
                     "ponto": "pdf_moradora",
                     "horario": "dia",
                     "acao": "conversa",
@@ -1551,9 +1591,9 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Moradora: Estamos preparando uma celebração na praça, mas ainda falta alguns itens para que tudo fique pronto",
+                        "Moradora: Estamos preparando uma celebração na Praça Matriz, mas ainda falta alguns itens para que tudo fique pronto",
                         "Neto: Vou ajudar! O que precisamos reunir?.",
-                        "Comerciante: Precisamos de enfeites e materiais de decoração que ficaram espalhados",
+                        "Moradora: Precisamos de enfeites e materiais de decoração que ficaram espalhados.",
                         "Neto: Encontrei alguns itens, onde devo colocá-los?",
                         "Moradora: Organize tudo nos espaços indicados e deixe a praça preparada para receber a comunidade.",
                         "Neto: Está tudo pronto! A praça ficou muito bonita",
@@ -1707,7 +1747,9 @@
                     "alternativas": [],
                     "falas": [
                         "Padre Ducéu: Quando tudo estiver pronto, a praça poderá receber os moradores.",
-                        "Neto: Consegui reunir o que faltava."
+                        "Neto: Consegui reunir o que faltava.",
+                        "Padre Ducéu: Ficou bonito! Sabe a bandeira de Jaguaruana? Ajudei a criá-la em 1975, com a professora Cleonice Alexandre Rebouças.",
+                        "Padre Ducéu: Pusemos nela a rede de dormir, a carnaúba, o algodão, o rio Jaguaribe e o sol. A cruz lembra a fé do povo desde a fundação."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -1741,13 +1783,13 @@
                     "percurso": []
                 },
                 {
-                    "texto": "Conversar com os moradores na celebração",
-                    "regiao": "praca",
+                    "texto": "Contar à moradora que a celebração está pronta",
+                    "regiao": "vila",
                     "ponto": "pdf_moradora",
                     "horario": "dia",
                     "acao": "conversa",
                     "atividade": "",
-                    "registro": "Conversar com os moradores na celebração.",
+                    "registro": "Contar à moradora que a celebração está pronta.",
                     "eventos": [
                         "r24_m14_07"
                     ],
@@ -1788,7 +1830,7 @@
             "etapas": [
                 {
                     "texto": "Ouvir a proposta de Simão",
-                    "regiao": "praca",
+                    "regiao": "prefeitura",
                     "ponto": "npc_simao",
                     "horario": "dia",
                     "acao": "conversa",
@@ -1915,7 +1957,7 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Comerciante: Encontrei este bilhete entre as mercadorias. O desenho parece com uma marca que vi em outro lugar.",
+                        "Seu Bento: Encontrei este bilhete entre as mercadorias. O desenho parece com uma marca que vi em outro lugar.",
                         "Neto: Estou investigando uma marca parecida. Vou levar o bilhete ao guia do museu."
                     ],
                     "falasConclusao": [],
@@ -1952,8 +1994,8 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Guia: Ainda não sei o que significa, mas uma fotografia antiga pode ajudar a comparar os desenhos.",
-                        "Comerciante: Procure nos arquivos do museu e volte quando souber mais."
+                        "Lia: Ainda não sei o que significa, mas uma fotografia antiga pode ajudar a comparar os desenhos.",
+                        "Lia: Procure nos arquivos do museu e volte quando souber mais."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -2018,7 +2060,7 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Comerciante: Vi alguém saindo apressado. A pessoa deixou um pedaço de corda.",
+                        "Seu Bento: Vi alguém saindo apressado. A pessoa deixou um pedaço de corda.",
                         "Neto: Vou seguir as marcas e procurar a peça."
                     ],
                     "falasConclusao": [],
@@ -2148,7 +2190,7 @@
                     "alternativas": [],
                     "falas": [
                         "Neto: O artesão disse que você encontrou uma marca por aqui.",
-                        "Morador: Tenho escutado sons estranhos à noite. Encontrei este papel perto da margem.",
+                        "Morador da margem: Tenho escutado sons estranhos à noite. Encontrei este papel perto da margem.",
                         "Neto: Vou examinar o lugar durante o dia e voltar quando escurecer."
                     ],
                     "falasConclusao": [],
@@ -2302,7 +2344,7 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Guia: Com o bilhete e a peça do rio, podemos comparar os desenhos. Procure a fotografia entre os arquivos."
+                        "Lia: Com o bilhete e a peça do rio, podemos comparar os desenhos. Procure a fotografia entre os arquivos."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -2328,7 +2370,7 @@
                     "alternativas": [],
                     "falas": [
                         "Neto: Encontrei uma frase no verso: ‘Procure onde as histórias se encontram’.",
-                        "Guia: Não sabemos ainda o que significa. Leve a fotografia a Simão."
+                        "Lia: Não sabemos ainda o que significa. Leve a fotografia a Simão."
                     ],
                     "falasConclusao": [],
                     "conceder": [
@@ -2348,7 +2390,7 @@
                 },
                 {
                     "texto": "Apresentar a fotografia a Simão",
-                    "regiao": "praca",
+                    "regiao": "prefeitura",
                     "ponto": "npc_simao",
                     "horario": "dia",
                     "acao": "conversa",
@@ -2386,20 +2428,20 @@
             ],
             "etapas": [
                 {
-                    "texto": "Conversar com o visitante da Serra",
+                    "texto": "Conversar com Seu Expedito, o visitante da Serra",
                     "regiao": "serra",
                     "ponto": "pdf_visitante",
                     "horario": "dia",
                     "acao": "conversa",
                     "atividade": "",
-                    "registro": "Conversar com o visitante da Serra.",
+                    "registro": "Conversar com Seu Expedito, o visitante da Serra.",
                     "eventos": [
                         "r24_m20_01"
                     ],
                     "alternativas": [],
                     "falas": [
                         "Neto: Estou procurando uma marca que pode estar relacionada a este lugar.",
-                        "Visitante: Encontrei algo parecido perto do caminho que leva ao Cruzeiro."
+                        "Seu Expedito: Encontrei algo parecido perto do caminho que leva ao Cruzeiro."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -2444,7 +2486,7 @@
                 },
                 {
                     "texto": "Mostrar o fragmento a Dona Feliciana",
-                    "regiao": "praca",
+                    "regiao": "entrada",
                     "ponto": "npc_feliciana",
                     "horario": "dia",
                     "acao": "conversa",
@@ -2635,7 +2677,7 @@
                     ],
                     "alternativas": [],
                     "falas": [
-                        "Guia: Precisamos registrar tudo com cuidado. Ainda não podemos afirmar o que significa."
+                        "Lia: Precisamos registrar tudo com cuidado. Ainda não podemos afirmar o que significa."
                     ],
                     "falasConclusao": [],
                     "conceder": [],
@@ -2748,7 +2790,7 @@
                 },
                 {
                     "texto": "Encontrar Simão e registrar o novo caminho",
-                    "regiao": "praca",
+                    "regiao": "prefeitura",
                     "ponto": "npc_simao",
                     "horario": "noite",
                     "acao": "conversa",
@@ -2801,7 +2843,7 @@
                         "Dona Feliciana: Você tem andado bastante pela cidade. O que descobriu?",
                         "Neto: Encontrei bilhete, fotografia, documento, mapa e marcas iguais em lugares diferentes.",
                         "Artesão: Reconheço o desenho que apareceu na peça da fábrica.",
-                        "Comerciante: E eu vi uma marca parecida no bilhete.",
+                        "Seu Bento: E eu vi uma marca parecida no bilhete.",
                         "Simão de Góis: Essas pistas parecem relacionadas, mas ainda precisamos descobrir quem as deixou e por quê.",
                         "Neto: Então vamos continuar. Agora sabemos que existe um caminho a seguir."
                     ],
@@ -2903,7 +2945,7 @@
             "categoria": "material",
             "descricao": "Material de acabamento recebido ao conhecer a Serra.",
             "regiao": "serra",
-            "origem": "Visitante da Serra",
+            "origem": "Seu Expedito",
             "dica": "A encomenda completa apenas os materiais ainda faltantes.",
             "icone": "pano",
             "ocultoAteObter": false
@@ -3301,19 +3343,19 @@
         {
             "id": "npc_feliciana",
             "nome": "Dona Feliciana",
-            "papel": "Encontro de memória",
+            "papel": "Doou as terras da capela de Sant'Ana",
             "natureza": "Representação artística",
-            "descricao": "Convida a observar a praça. Caracterização e falas dependem da pesquisa do projeto.",
+            "descricao": "Viúva de Simão de Góis. Em 1761, doou terras para a capela de Nossa Senhora Sant'Ana; é dessa doação a primeira notícia da origem de Jaguaruana. Representação artística.",
             "regiao": "praca",
             "evento": "r24_m01_01"
         },
         {
             "id": "npc_andre_lucio",
             "nome": "André Lúcio",
-            "papel": "Narrador da lenda",
+            "papel": "Radialista de Jaguaruana",
             "natureza": "Representação artística",
-            "descricao": "Apresenta a versão da Mulher-Cavalo usada na aventura. Falas adaptadas.",
-            "regiao": "praca",
+            "descricao": "Radialista. No programa Acordando com os Passarinhos, recebia recados de ouvintes que diziam ter visto a Mulher-Cavalo. Representação artística.",
+            "regiao": "beira",
             "evento": "andre"
         },
         {
@@ -3322,25 +3364,25 @@
             "papel": "Organizador da mostra",
             "natureza": "Ficção",
             "descricao": "Miguel é um morador de apoio. A jornada principal começa com Dona Feliciana.",
-            "regiao": "praca",
+            "regiao": "carnaubal",
             "evento": "neto"
         },
         {
             "id": "npc_padre_duceu",
             "nome": "Padre Ducéu",
-            "papel": "Encontro de memória",
+            "papel": "Vigário da paróquia de Sant'Ana",
             "natureza": "Representação artística",
-            "descricao": "Convida a pensar nos espaços de encontro e celebração.",
+            "descricao": "Monsenhor Raimundo Sales Façanha (1935-2009), vigário de Sant'Ana a partir de 1969. Abriu a Matriz às famílias na cheia de 1985 e ajudou a criar a bandeira do município. Representação artística.",
             "regiao": "praca",
             "evento": "r24_m08_05"
         },
         {
             "id": "npc_simao",
             "nome": "Simão de Góis",
-            "papel": "Memórias, lenda e comparação de pistas",
+            "papel": "Um dos primeiros povoadores da cidade",
             "natureza": "Representação artística",
-            "descricao": "Indica o percurso até a serra dentro da narrativa do jogo.",
-            "regiao": "praca",
+            "descricao": "Segundo a tradição, chegou no início do século XVIII à margem esquerda do Jaguaribe. Suas terras deram ao lugar o primeiro nome: Caatinga do Góis. Representação artística.",
+            "regiao": "prefeitura",
             "evento": "r24_m02_01"
         },
         {
@@ -3355,36 +3397,36 @@
         {
             "id": "npc_raimundo",
             "nome": "Raimundo Jaguaribe",
-            "papel": "Encontro de memória",
+            "papel": "Prefeito de Jaguaruana",
             "natureza": "Representação artística",
-            "descricao": "Propõe observar os registros e as transformações da cidade.",
+            "descricao": "Raimundo Francisco Freitas Jaguaribe. Como prefeito, criou a escola Gerardo Correia Lima (1978), a Escola de Música Edith Moreira Barreto e a Biblioteca Municipal. Representação artística.",
             "regiao": "mercado",
             "evento": "raimundo"
         },
         {
             "id": "npc_ivonete",
             "nome": "Ivonete Maia",
-            "papel": "Encontro de memória",
+            "papel": "Jornalista, escritora e educadora",
             "natureza": "Representação artística",
-            "descricao": "Convida a escutar relatos e comparar suas fontes.",
+            "descricao": "Maria Ivonete Maia, natural de Jaguaruana. Jornalista, escritora, educadora e sindicalista, lembrada como um ícone do jornalismo brasileiro. Representação artística.",
             "regiao": "memorias",
             "evento": "ivonete"
         },
         {
             "id": "npc_gerardinho",
             "nome": "Mestre Gerardinho",
-            "papel": "Encontro de memória",
+            "papel": "Um dos primeiros professores da cidade",
             "natureza": "Representação artística",
-            "descricao": "Participa dos encontros na Casa das Memórias.",
+            "descricao": "Gerardo Correia Lima, o padrinho Gerardo. Ensinou de 1909 a 1953 numa escola em sua casa, na rua Padre Rocha. Em 1978, uma escola municipal recebeu seu nome. Representação artística.",
             "regiao": "memorias",
             "evento": "gerardinho"
         },
         {
             "id": "npc_emilia",
             "nome": "Emília Freitas",
-            "papel": "Encontro de memória",
+            "papel": "Escritora e abolicionista",
             "natureza": "Representação artística",
-            "descricao": "Abre espaço para imaginar e escrever sobre a jornada.",
+            "descricao": "Nascida em Jaguaruana em 1855. Seu romance A Rainha do Ignoto (1899) é considerado o primeiro livro de ficção especulativa do Brasil. Representação artística.",
             "regiao": "memorias",
             "evento": "emilia"
         },
@@ -3399,10 +3441,10 @@
         },
         {
             "id": "pdf_visitante",
-            "nome": "Visitante da Serra",
-            "papel": "Memória do lugar e fragmento de mapa",
+            "nome": "Seu Expedito",
+            "papel": "Visitante da Serra Dantas",
             "natureza": "Personagem ficcional",
-            "descricao": "Memória do lugar e fragmento de mapa. Diálogo autoral baseado no roteiro fornecido.",
+            "descricao": "Morador de Jaguaruana que sobe a Serra Dantas desde menino e conhece o caminho do Cruzeiro. Diálogo autoral baseado no roteiro fornecido.",
             "regiao": "serra",
             "evento": "r24_m03_03"
         },
@@ -3412,7 +3454,7 @@
             "papel": "Organização comunitária",
             "natureza": "Personagem ficcional",
             "descricao": "Organização comunitária. Diálogo autoral baseado no roteiro fornecido.",
-            "regiao": "praca",
+            "regiao": "vila",
             "evento": "r24_m08_01"
         },
         {
@@ -3570,8 +3612,93 @@
             "nome": "Miguel · morador",
             "fonte": "Rede de Memorias - Memorias Tecidas",
             "falas": [
-                "Miguel: Procure Dona Feliciana para dar os primeiros passos. O mapa mostra onde encontrá-la.",
+                "Miguel: Estou organizando a mostra do Memorial Carnaúba, aqui atrás. Quando a visita abrir, entre para conhecer o acervo.",
                 "No caderno, você pode acompanhar as missões e rever os lugares e as lembranças da jornada."
+            ]
+        },
+        {
+            "id": "npc_feliciana",
+            "nome": "Dona Feliciana · memória",
+            "fonte": "IBGE (1965); João Luiz de Oliveira, O Ceará tem memória; Prefeitura de Jaguaruana. Falas adaptadas.",
+            "falas": [
+                "Dona Feliciana: Esta cidade começou com uma capelinha de Sant'Ana e com as terras que doei para ela, em 1761.",
+                "Dona Feliciana: Ande, converse e escute. Cada encontro deixa um fio na sua rede de memórias."
+            ]
+        },
+        {
+            "id": "npc_simao",
+            "nome": "Simão de Góis · memória",
+            "fonte": "IBGE (1965); João Luiz de Oliveira, O Ceará tem memória; Prefeitura de Jaguaruana. Falas adaptadas.",
+            "falas": [
+                "Simão de Góis: Quando cheguei, nada disto existia: nem praça, nem prefeitura. Era só caatinga, à margem do Jaguaribe.",
+                "Simão de Góis: Hoje meu nome está na avenida do centro, a mesma onde fica a Igreja Matriz. Um nome também atravessa o tempo."
+            ]
+        },
+        {
+            "id": "npc_padre_duceu",
+            "nome": "Padre Ducéu · memória",
+            "fonte": "IBGE (1965); João Luiz de Oliveira, O Ceará tem memória; Prefeitura de Jaguaruana. Falas adaptadas.",
+            "falas": [
+                "Padre Ducéu: Seja bem-vindo à Matriz de Nossa Senhora Sant'Ana, a padroeira de Jaguaruana.",
+                "Padre Ducéu: Tudo começou com a capelinha de Dona Feliciana. Depois veio uma igreja de duas torres, e o Padre Marcondes, vigário a partir de 1924, ergueu a igreja que está aqui até hoje."
+            ]
+        },
+        {
+            "id": "npc_gerardinho",
+            "nome": "Mestre Gerardinho · memória",
+            "fonte": "Memórias de Jaguaruana: entrevista com o prof. José Wilson Freitas; histórico da EEF Gerardo Correia Lima. Falas adaptadas.",
+            "falas": [
+                "Mestre Gerardinho: Seja bem-vindo! Meu nome é Gerardo Correia Lima, mas aqui me chamavam de Mestre Gerardinho, ou de padrinho Gerardo.",
+                "Mestre Gerardinho: Fui um dos primeiros professores de Jaguaruana. Ensinei de 1909 a 1953, numa sala separada da minha casa, na rua Padre Rocha.",
+                "Mestre Gerardinho: Naquele tempo ainda não existia o Manuel Sátiro. As escolas funcionavam na casa dos professores, e muita gente desta cidade passou pelas minhas mãos.",
+                "Mestre Gerardinho: Em 1978, deram o meu nome a uma escola do município. Aprender a ouvir quem veio antes também é uma forma de aprender sobre a cidade."
+            ]
+        },
+        {
+            "id": "npc_raimundo",
+            "nome": "Raimundo Jaguaribe · memória",
+            "fonte": "Memórias de Jaguaruana: texto de Vicência Jaguaribe; histórico da EEF Gerardo Correia Lima. Falas adaptadas.",
+            "falas": [
+                "Raimundo Jaguaribe: Eu sou Raimundo Francisco Freitas Jaguaribe. Fui prefeito de Jaguaruana e sempre acreditei na força da educação.",
+                "Raimundo Jaguaribe: Em 1978, criei a escola que leva o nome do Mestre Gerardinho, o primeiro mestre da cidade.",
+                "Raimundo Jaguaribe: Também criei a Escola de Música Edith Moreira Barreto, a Banda de Música Maestro Raimundo Correia e a Biblioteca Municipal.",
+                "Raimundo Jaguaribe: Ao observar uma cidade, procure conhecer as decisões e as pessoas que transformaram seus espaços. Escute diferentes versões e compare os registros."
+            ]
+        },
+        {
+            "id": "npc_ivonete",
+            "nome": "Ivonete Maia · memória",
+            "fonte": "Memórias de Jaguaruana, a partir de Jaguaruana em preto & branco. Falas adaptadas.",
+            "falas": [
+                "Ivonete Maia: Eu sou Maria Ivonete Maia. Nasci aqui em Jaguaruana, filha de Francisco Carlos Maia e Maria Estelita de Carvalho Maia.",
+                "Ivonete Maia: Fui jornalista, escritora e educadora, e atuei no sindicato da minha categoria.",
+                "Ivonete Maia: Escutar uma história é um começo. Anote de onde ela veio, procure outros registros e preserve também as diferenças entre as versões."
+            ]
+        },
+        {
+            "id": "npc_emilia",
+            "nome": "Emília Freitas · memória",
+            "fonte": "O Povo (13/01/2025): Pioneira na ficção especulativa brasileira, Emília Freitas completa 170 anos. Falas adaptadas.",
+            "falas": [
+                "Emília Freitas: Nasci em Jaguaruana, em 1855, quando estas terras ainda pertenciam a Aracati.",
+                "Emília Freitas: Escrevi os versos de Canções do Lar e o romance A Rainha do Ignoto, publicado em 1899. Hoje dizem que foi o primeiro livro de ficção especulativa do Brasil.",
+                "Emília Freitas: Também lutei pelo fim da escravidão.",
+                "Emília Freitas: A imaginação cria lugares e possibilidades. Que história você levaria de Jaguaruana para escrever depois desta aventura?"
+            ]
+        },
+        {
+            "id": "npc_andre_lucio",
+            "nome": "André Lúcio",
+            "fonte": "Lenda urbana de Jaguaruana, em relatos reunidos por Ah Duvido (2017) e pela Fantastipedia. Falas adaptadas.",
+            "falas": [
+                "André Lúcio: Eu sou André Lúcio, radialista. No meu programa, o Acordando com os Passarinhos, chegava recado de ouvinte de todo canto da cidade.",
+                "André Lúcio: Um deles contava que, numa noite de 6 de julho, a Mulher-Cavalo foi vista perto da barragem do rio do Guilherme, no Jaguaribe.",
+                "André Lúcio: Um homem que passava de moto deu de cara com ela antes da passagem molhada e caiu de susto. Uma moradora de Antonópoles ligou para o filho não voltar sozinho.",
+                "André Lúcio: Outra vez, um rapaz que voltava do circo contou que ela perguntou para onde ele ia e correu atrás dele até a porta de casa, no bairro do Juazeiro.",
+                "André Lúcio: Dizem que ela já foi uma mãe, lá de um sítio do Rio Grande do Norte, e que voltou do outro mundo procurando os filhos. Por isso pergunta por eles a quem encontra.",
+                "André Lúcio: A cidade se divide: tem quem morra de medo e tem quem diga que é invenção. Lenda é assim, cada um conta de um jeito.",
+                "André Lúcio: E você? Enfrentou a Mulher-Cavalo na margem do Jaguaribe e ainda ganhou uma ferradura gasta. Pouca gente chega tão perto dela.",
+                "André Lúcio: Quem a enfrenta uma vez diz que ela volta. À noite, a margem do rio fica logo ali, seguindo pelo calçadão. Se for, leve o pau de jucá que Simão lhe deu."
             ]
         }
     ],
@@ -3581,7 +3708,7 @@
     "pontosNovos": [
         {
             "id": "pdf_visitante",
-            "nome": "Visitante da Serra",
+            "nome": "Seu Expedito · visitante da Serra",
             "regiao": "serra",
             "tipo": "roteiro",
             "modeloRegiao": "praca",
@@ -3597,15 +3724,15 @@
         {
             "id": "pdf_moradora",
             "nome": "Moradora · organização comunitária",
-            "regiao": "praca",
+            "regiao": "vila",
             "tipo": "roteiro",
             "modeloRegiao": "vila",
             "modeloPonto": "npc_cida",
             "modeloObjeto": "",
             "visual": "pessoa",
             "habilitarEvento": "",
-            "x": -6.0,
-            "y": -8.0,
+            "x": -5.5,
+            "y": -1.5,
             "andar": false,
             "patrulha": []
         },
@@ -4619,9 +4746,74 @@
     ],
     "bloqueios": [
         {
+            "regiao": "praca",
+            "evento": "r24_m01_01",
+            "mensagem": "Antes de seguir, converse com Dona Feliciana aqui na Entrada da cidade."
+        },
+        {
+            "regiao": "mercado",
+            "evento": "r24_m01_01",
+            "mensagem": "Antes de seguir, converse com Dona Feliciana aqui na Entrada da cidade."
+        },
+        {
+            "regiao": "rua",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "largo",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "carnaubal",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "memorias",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "prefeitura",
+            "evento": "r24_m01_01",
+            "mensagem": "Antes de seguir, converse com Dona Feliciana aqui na Entrada da cidade."
+        },
+        {
+            "regiao": "vila",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "oficina",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "fabrica",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "sitio",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "rio",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
+            "regiao": "beira",
+            "evento": "r24_m01_02",
+            "mensagem": "Dona Feliciana pediu que você procure Simão na Prefeitura e Praça antes de explorar mais."
+        },
+        {
             "regiao": "serra",
             "evento": "r24_m02_01",
-            "mensagem": "Converse com Simão na Praça Matriz antes de seguir para a Serra."
+            "mensagem": "Converse com Simão na Prefeitura e Praça antes de seguir para a Serra."
         },
         {
             "regiao": "museu",

@@ -103,7 +103,7 @@ namespace MemoriasTecidas.MundoV2
                 cor = acentoTextoUI;
             r.height = Mathf.Max(r.height, e.fontSize * 1.25f);
             CorTextoUI(e, cor);
-            GUI.Label(r, texto ?? "", e);
+            GUI.Label(r, TextoParaControle(texto) ?? "", e);
         }
 
         private float AlturaTecido(string texto, float largura, int tamanho)
@@ -230,14 +230,19 @@ namespace MemoriasTecidas.MundoV2
             }
         }
 
+        // Painel no mesmo tecido do HUD: sombra, contorno dourado fino, cantos arredondados e, se pedido, costura.
         private void PainelTecido(Rect r, Color fundo, bool costura = true)
         {
-            Fundo(new Rect(r.x + 3, r.y + 4, r.width, r.height), new Color(0, 0, 0, .16f));
-            Fundo(r, fundo);
-            BordaTecido(r, AlfaTecido(ouro, .24f));
-            // A trama fica na borda; o miolo permanece limpo para leitura.
-            if (costura)
-                Fundo(new Rect(r.x, r.y, 3, r.height), ouro);
+            ArredondadoHUD(new Rect(r.x, r.y + 4, r.width, r.height), new Color(0, 0, 0, .35f));
+            ArredondadoHUD(r, AlfaTecido(ouro, contrasteUI ? .9f : .45f));
+            ArredondadoHUD(new Rect(r.x + 1, r.y + 1, r.width - 2, r.height - 2), fundo);
+            if (!costura || r.width < 60 || r.height < 40)
+                return;
+            Color ponto = AlfaTecido(ouro, .22f);
+            TracoHUD(new Rect(r.x + 10, r.y + 5, r.width - 20, 1), ponto, false);
+            TracoHUD(new Rect(r.x + 10, r.yMax - 6, r.width - 20, 1), ponto, false);
+            TracoHUD(new Rect(r.x + 5, r.y + 10, 1, r.height - 20), ponto, true);
+            TracoHUD(new Rect(r.xMax - 6, r.y + 10, 1, r.height - 20), ponto, true);
         }
 
         private void TramaFaixa(Rect r)
@@ -246,7 +251,7 @@ namespace MemoriasTecidas.MundoV2
             for (float x = r.x + 5; x < r.xMax - 14; x += 18)
             {
                 Linha(new Vector2(x, r.y + 1), new Vector2(x + 9, r.yMax - 1), ouro);
-                Linha(new Vector2(x, r.yMax - 1), new Vector2(x + 9, r.y + 1), AlfaTecido(algodaoUI, .7f));
+                Linha(new Vector2(x, r.yMax - 1), new Vector2(x + 9, r.y + 1), AlfaTecido(claroUI, .7f));
             }
         }
 
@@ -256,14 +261,26 @@ namespace MemoriasTecidas.MundoV2
             bool antes = GUI.enabled, interativo = antes && habilitado;
             int estadoAcao = EstadoAcaoUI(r, chave, interativo);
             Color fundo = FundoAcaoUI(destaque, interativo, estadoAcao);
-            Color textoAcao = interativo ? (destaque ? algodaoUI : textoPapelUI) : textoDesativadoUI;
+            Color textoAcao = interativo ? claroUI : textoDesativadoUI;
             // Desabilitado tem sua própria paleta legível; GUI.enabled só governa a ação.
             GUI.enabled = true;
-            Fundo(r, fundo);
-            BordaTecido(r, destaque && interativo ? fundo : AlfaTecido(textoPapelUI, .28f));
+            // Botão arredondado: o principal em terracota com degrau, os demais em tecido com contorno dourado fino.
+            if (destaque && interativo)
+            {
+                ArredondadoHUD(new Rect(r.x, r.y + 3, r.width, r.height), new Color(0, 0, 0, .35f));
+                ArredondadoHUD(r, fundo);
+            }
+            else
+            {
+                ArredondadoHUD(r, AlfaTecido(ouro, interativo ? (estadoAcao > 0 ? .75f : .32f) : .12f));
+                ArredondadoHUD(new Rect(r.x + 1, r.y + 1, r.width - 2, r.height - 2), fundo);
+            }
+
             TextoTecido(new Rect(r.x + 12, r.y + 4, r.width - 24, r.height - 8), texto, 16, textoAcao, true, TextAnchor.MiddleCenter);
             GUI.enabled = interativo;
             bool clicou = AcaoTecido(r, chave);
+            if (clicou)
+                TocarSom("ui_clique", destaque ? .8f : .6f, .03f);
             GUI.enabled = antes;
             return clicou;
         }
@@ -273,11 +290,14 @@ namespace MemoriasTecidas.MundoV2
             string chave = "aba:" + texto;
             int estadoAcao = EstadoAcaoUI(r, chave, GUI.enabled);
             if (ativa || estadoAcao > 0)
-                Fundo(r, FundoAcaoUI(false, GUI.enabled, estadoAcao));
+                ArredondadoHUD(r, FundoAcaoUI(false, GUI.enabled, ativa ? 0 : estadoAcao));
             if (ativa)
-                Fundo(new Rect(r.x, r.yMax - 3, r.width, 3), escura ? ouro : terracotaUI);
-            TextoTecido(r, texto, 16, escura ? textoSuperficieUI : textoPapelUI, ativa, TextAnchor.MiddleCenter);
-            return AcaoTecido(r, chave);
+                Fundo(new Rect(r.x + 8, r.yMax - 3, r.width - 16, 3), ouro);
+            TextoTecido(r, texto, 16, ativa ? claroUI : AlfaTecido(claroUI, .72f), ativa, TextAnchor.MiddleCenter);
+            bool trocou = AcaoTecido(r, chave);
+            if (trocou)
+                TocarSom("ui_clique", .5f, .03f);
+            return trocou;
         }
 
         private void BarraTecido(Rect r, float valor, Color cor)
@@ -299,6 +319,12 @@ namespace MemoriasTecidas.MundoV2
         private void OnGUI()
         {
             SoltarArrastoPrimeiroFioSeInativo();
+            if (!string.IsNullOrEmpty(erroFatalUI))
+            {
+                ErroFatalUI();
+                return;
+            }
+
             if (!pronto || atual == null || cameraDoMapa == null || (!interfaceVisivel && !Bloqueado))
                 return;
             if (painel != "bolsa")
@@ -325,6 +351,9 @@ namespace MemoriasTecidas.MundoV2
                 if (painel != "mapa")
                     mapaGuiaAbertoUI = false;
                 IniciarFocoUI();
+                PrepararRolagemUI();
+                if (!inicioAbertoUI)
+                    VinhetaUI();
                 if (inicioAbertoUI && painel.Length == 0)
                     InicioUI();
                 else if (falas != null)
@@ -346,12 +375,14 @@ namespace MemoriasTecidas.MundoV2
 
         private bool JanelaTecido(string titulo, string subtitulo)
         {
-            Fundo(new Rect(0, 0, 1280, 720), new Color(.16f, .12f, .09f, .70f));
+            Fundo(new Rect(0, 0, 1280, 720), new Color(.05f, .04f, .03f, .78f));
             PainelTecido(new Rect(28, 32, 1224, 656), algodaoUI, false);
-            Fundo(new Rect(28, 32, 1224, 148), tinta);
-            TextoTecido(new Rect(58, 49, 840, 22), "MEMÓRIAS TECIDAS  /  SUA JORNADA", 12, acentoTextoUI, true);
+            ArredondadoHUD(new Rect(29, 33, 1222, 60), tinta);
+            Fundo(new Rect(29, 60, 1222, 120), tinta);
+            LosangoCompacta(new Rect(58, 52, 12, 12), ouro);
+            TextoTecido(new Rect(78, 49, 840, 22), "SUA JORNADA", 12, acentoTextoUI, true);
             TituloEditorial(new Rect(56, 79, 840, 48), titulo, 32, textoSuperficieUI);
-            if (BotaoTecido(new Rect(1072, 62, 146, 42), "Voltar · Esc"))
+            if (BotaoTecido(new Rect(1072, 62, 146, 42), "Voltar · " + TeclaAtual("Esc")))
             {
                 VoltarInterfaceUI();
                 return false;
@@ -364,9 +395,9 @@ namespace MemoriasTecidas.MundoV2
                 "diario"
             }, nomes =
             {
-                "Mapa  [M]",
-                "Bolsa  [I]",
-                "Caderno  [J]"
+                "Mapa  " + AtalhoUI("M"),
+                "Bolsa  " + AtalhoUI("I"),
+                "Caderno  " + AtalhoUI("J")
             };
             for (int i = 0; i < 3; i++)
                 if (AbaTecido(new Rect(58 + i * 212, 134, 196, 40), nomes[i], painel == ids[i] || (i == 1 && painel == "receita"), true))
@@ -376,8 +407,7 @@ namespace MemoriasTecidas.MundoV2
                     confirmarNovo = false;
                 }
 
-            Fundo(new Rect(28, 180, 1224, 3), ouro);
-            TextoTecido(new Rect(58, 658, 1140, 20), "Tab · selecionar    Enter / espaço · abrir    M · mapa    I · bolsa    J · caderno    Esc · voltar", 12, textoPapelUI);
+            Fundo(new Rect(29, 180, 1222, 2), AlfaTecido(ouro, .7f));
             return true;
         }
 
@@ -398,6 +428,24 @@ namespace MemoriasTecidas.MundoV2
             if (painel == "mapaCidade")
             {
                 MapaCidadeUI();
+                return;
+            }
+
+            if (painel == "prologo")
+            {
+                PrologoUI();
+                return;
+            }
+
+            if (painel == "foto_viva")
+            {
+                FotoVivaUI();
+                return;
+            }
+
+            if (painel == "entrevista_viva")
+            {
+                EntrevistaVivaUI();
                 return;
             }
 
@@ -463,9 +511,9 @@ namespace MemoriasTecidas.MundoV2
             float alturaPainel = Mathf.Max(184f, visivel + 116f);
             float y = 696f - alturaPainel;
             PainelTecido(new Rect(64, y, 1152, alturaPainel), algodaoUI);
-            TramaFaixa(new Rect(64, y, 1152, 5));
+            TramaHUD(new Rect(65, y + 12, 4, alturaPainel - 24));
             Rect moldura = new Rect(82, y + 20, 136, 144);
-            Fundo(moldura, papelUI);
+            ArredondadoHUD(moldura, papelUI);
             CosturaTecido(moldura, AlfaTecido(ouro, .40f));
             if (retratoExibidoDialogo != null)
                 DesenharRetratoTecido(new Rect(91, y + 29, 118, 126), retratoExibidoDialogo, RecorteBustoDialogo());
@@ -478,7 +526,7 @@ namespace MemoriasTecidas.MundoV2
             TerminarRolagemUI();
             if (alturaTexto > visivel + 1f)
                 TextoTecido(new Rect(982, y + 24, 190, 24), "Role para ler", 12, acentoTextoUI, false, TextAnchor.UpperRight);
-            TextoTecido(new Rect(242, 655, 470, 24), "E / Enter · continuar   Esc · sair", 13, textoPapelUI);
+            TextoTecido(new Rect(242, 655, 470, 24), TeclaAtual("E") + " · continuar   " + TeclaAtual("Esc") + " · sair", 13, textoPapelUI);
             if (pagina > 0 && BotaoTecido(new Rect(808, 644, 144, 36), "Anterior"))
             {
                 pagina--;
@@ -514,14 +562,16 @@ namespace MemoriasTecidas.MundoV2
                 "rede",
                 "memorias",
                 "pessoas",
-                "pistas"
+                "pistas",
+                "achados"
             }, nomes =
             {
                 "Missões",
                 "Rede",
                 "Memórias",
                 "Pessoas",
-                "Pistas"
+                "Pistas",
+                "Achados"
             };
             for (int i = 0; i < ids.Length; i++)
                 if (AbaTecido(new Rect(58 + i * 184, 204, 172, 34), nomes[i], abaCaderno == ids[i]))
@@ -538,6 +588,8 @@ namespace MemoriasTecidas.MundoV2
                 PessoasTecido();
             else if (abaCaderno == "pistas")
                 PistasRoteiroUI();
+            else if (abaCaderno == "achados")
+                AchadosVivosUI();
             else
                 RegistrosRoteiroUI();
         }

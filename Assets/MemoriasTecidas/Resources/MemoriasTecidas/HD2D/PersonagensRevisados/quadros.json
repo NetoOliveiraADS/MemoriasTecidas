@@ -457,5 +457,1427 @@
       "pivotY": 0.005,
       "alturaReferencia": 400
     }
+  ],
+  "moradores": [
+    {
+      "origem": "simao_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Simao_simao_00",
+        "folha": "PersonagensRevisados/Moradores/Simao",
+        "x": 4,
+        "y": 4,
+        "largura": 187,
+        "altura": 424,
+        "folhaLargura": 577,
+        "folhaAltura": 432,
+        "pivotX": 0.572193,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "simao_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Simao_simao_01",
+        "folha": "PersonagensRevisados/Moradores/Simao",
+        "x": 195,
+        "y": 4,
+        "largura": 187,
+        "altura": 424,
+        "folhaLargura": 577,
+        "folhaAltura": 432,
+        "pivotX": 0.572193,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "simao_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Simao_simao_02",
+        "folha": "PersonagensRevisados/Moradores/Simao",
+        "x": 386,
+        "y": 4,
+        "largura": 187,
+        "altura": 424,
+        "folhaLargura": 577,
+        "folhaAltura": 432,
+        "pivotX": 0.572193,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "padre_duceu_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "PadreDuceu_padre_duceu_00",
+        "folha": "PersonagensRevisados/Moradores/PadreDuceu",
+        "x": 4,
+        "y": 4,
+        "largura": 202,
+        "altura": 424,
+        "folhaLargura": 622,
+        "folhaAltura": 432,
+        "pivotX": 0.391089,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "padre_duceu_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "PadreDuceu_padre_duceu_01",
+        "folha": "PersonagensRevisados/Moradores/PadreDuceu",
+        "x": 210,
+        "y": 4,
+        "largura": 202,
+        "altura": 424,
+        "folhaLargura": 622,
+        "folhaAltura": 432,
+        "pivotX": 0.391089,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "padre_duceu_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "PadreDuceu_padre_duceu_02",
+        "folha": "PersonagensRevisados/Moradores/PadreDuceu",
+        "x": 416,
+        "y": 4,
+        "largura": 202,
+        "altura": 424,
+        "folhaLargura": 622,
+        "folhaAltura": 432,
+        "pivotX": 0.391089,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "raimundo_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Raimundo_raimundo_00",
+        "folha": "PersonagensRevisados/Moradores/Raimundo",
+        "x": 4,
+        "y": 4,
+        "largura": 183,
+        "altura": 425,
+        "folhaLargura": 565,
+        "folhaAltura": 433,
+        "pivotX": 0.63388,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "raimundo_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Raimundo_raimundo_01",
+        "folha": "PersonagensRevisados/Moradores/Raimundo",
+        "x": 191,
+        "y": 4,
+        "largura": 183,
+        "altura": 425,
+        "folhaLargura": 565,
+        "folhaAltura": 433,
+        "pivotX": 0.63388,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "raimundo_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Raimundo_raimundo_02",
+        "folha": "PersonagensRevisados/Moradores/Raimundo",
+        "x": 378,
+        "y": 4,
+        "largura": 183,
+        "altura": 425,
+        "folhaLargura": 565,
+        "folhaAltura": 433,
+        "pivotX": 0.63388,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "gerardinho_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Gerardinho_gerardinho_00",
+        "folha": "PersonagensRevisados/Moradores/Gerardinho",
+        "x": 4,
+        "y": 4,
+        "largura": 175,
+        "altura": 425,
+        "folhaLargura": 541,
+        "folhaAltura": 433,
+        "pivotX": 0.662857,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "gerardinho_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Gerardinho_gerardinho_01",
+        "folha": "PersonagensRevisados/Moradores/Gerardinho",
+        "x": 183,
+        "y": 4,
+        "largura": 175,
+        "altura": 425,
+        "folhaLargura": 541,
+        "folhaAltura": 433,
+        "pivotX": 0.662857,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "gerardinho_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Gerardinho_gerardinho_02",
+        "folha": "PersonagensRevisados/Moradores/Gerardinho",
+        "x": 362,
+        "y": 4,
+        "largura": 175,
+        "altura": 425,
+        "folhaLargura": 541,
+        "folhaAltura": 433,
+        "pivotX": 0.662857,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "ivonete_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Ivonete_ivonete_00",
+        "folha": "PersonagensRevisados/Moradores/Ivonete",
+        "x": 4,
+        "y": 4,
+        "largura": 151,
+        "altura": 425,
+        "folhaLargura": 469,
+        "folhaAltura": 433,
+        "pivotX": 0.635762,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "ivonete_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Ivonete_ivonete_01",
+        "folha": "PersonagensRevisados/Moradores/Ivonete",
+        "x": 159,
+        "y": 4,
+        "largura": 151,
+        "altura": 425,
+        "folhaLargura": 469,
+        "folhaAltura": 433,
+        "pivotX": 0.635762,
+        "pivotY": 0.004706,
+        "alturaReferencia": 415.56
+      }
+    },
+    {
+      "origem": "ivonete_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Ivonete_ivonete_02",
+        "folha": "PersonagensRevisados/Moradores/Ivonete",
+        "x": 314,
+        "y": 4,
+        "largura": 151,
+        "altura": 425,
+        "folhaLargura": 469,
+        "folhaAltura": 433,
+        "pivotX": 0.635762,
+        "pivotY": 0.004706,
+        "alturaReferencia": 417.04
+      }
+    },
+    {
+      "origem": "emilia_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Emilia_emilia_00",
+        "folha": "PersonagensRevisados/Moradores/Emilia",
+        "x": 4,
+        "y": 4,
+        "largura": 159,
+        "altura": 424,
+        "folhaLargura": 493,
+        "folhaAltura": 432,
+        "pivotX": 0.591195,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "emilia_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Emilia_emilia_01",
+        "folha": "PersonagensRevisados/Moradores/Emilia",
+        "x": 167,
+        "y": 4,
+        "largura": 159,
+        "altura": 424,
+        "folhaLargura": 493,
+        "folhaAltura": 432,
+        "pivotX": 0.591195,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "emilia_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Emilia_emilia_02",
+        "folha": "PersonagensRevisados/Moradores/Emilia",
+        "x": 330,
+        "y": 4,
+        "largura": 159,
+        "altura": 424,
+        "folhaLargura": 493,
+        "folhaAltura": 432,
+        "pivotX": 0.591195,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "andre_lucio_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "AndreLucio_andre_lucio_00",
+        "folha": "PersonagensRevisados/Moradores/AndreLucio",
+        "x": 4,
+        "y": 4,
+        "largura": 165,
+        "altura": 424,
+        "folhaLargura": 511,
+        "folhaAltura": 432,
+        "pivotX": 0.612121,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "andre_lucio_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "AndreLucio_andre_lucio_01",
+        "folha": "PersonagensRevisados/Moradores/AndreLucio",
+        "x": 173,
+        "y": 4,
+        "largura": 165,
+        "altura": 424,
+        "folhaLargura": 511,
+        "folhaAltura": 432,
+        "pivotX": 0.612121,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "andre_lucio_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "AndreLucio_andre_lucio_02",
+        "folha": "PersonagensRevisados/Moradores/AndreLucio",
+        "x": 342,
+        "y": 4,
+        "largura": 165,
+        "altura": 424,
+        "folhaLargura": 511,
+        "folhaAltura": 432,
+        "pivotX": 0.612121,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "guia_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Lia_guia_00",
+        "folha": "PersonagensRevisados/Moradores/Lia",
+        "x": 4,
+        "y": 4,
+        "largura": 168,
+        "altura": 424,
+        "folhaLargura": 520,
+        "folhaAltura": 432,
+        "pivotX": 0.696429,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "guia_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Lia_guia_01",
+        "folha": "PersonagensRevisados/Moradores/Lia",
+        "x": 176,
+        "y": 4,
+        "largura": 168,
+        "altura": 424,
+        "folhaLargura": 520,
+        "folhaAltura": 432,
+        "pivotX": 0.696429,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "guia_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Lia_guia_02",
+        "folha": "PersonagensRevisados/Moradores/Lia",
+        "x": 348,
+        "y": 4,
+        "largura": 168,
+        "altura": 424,
+        "folhaLargura": 520,
+        "folhaAltura": 432,
+        "pivotX": 0.696429,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "artesa_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Rosa_artesa_00",
+        "folha": "PersonagensRevisados/Moradores/Rosa",
+        "x": 4,
+        "y": 4,
+        "largura": 174,
+        "altura": 425,
+        "folhaLargura": 538,
+        "folhaAltura": 433,
+        "pivotX": 0.448276,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "artesa_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Rosa_artesa_01",
+        "folha": "PersonagensRevisados/Moradores/Rosa",
+        "x": 182,
+        "y": 4,
+        "largura": 174,
+        "altura": 425,
+        "folhaLargura": 538,
+        "folhaAltura": 433,
+        "pivotX": 0.448276,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "artesa_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Rosa_artesa_02",
+        "folha": "PersonagensRevisados/Moradores/Rosa",
+        "x": 360,
+        "y": 4,
+        "largura": 174,
+        "altura": 425,
+        "folhaLargura": 538,
+        "folhaAltura": 433,
+        "pivotX": 0.448276,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "feirante_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "SeuBento_feirante_00",
+        "folha": "PersonagensRevisados/Moradores/SeuBento",
+        "x": 4,
+        "y": 4,
+        "largura": 181,
+        "altura": 423,
+        "folhaLargura": 559,
+        "folhaAltura": 431,
+        "pivotX": 0.58011,
+        "pivotY": 0.004728,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "feirante_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "SeuBento_feirante_01",
+        "folha": "PersonagensRevisados/Moradores/SeuBento",
+        "x": 189,
+        "y": 4,
+        "largura": 181,
+        "altura": 423,
+        "folhaLargura": 559,
+        "folhaAltura": 431,
+        "pivotX": 0.58011,
+        "pivotY": 0.004728,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "feirante_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "SeuBento_feirante_02",
+        "folha": "PersonagensRevisados/Moradores/SeuBento",
+        "x": 374,
+        "y": 4,
+        "largura": 181,
+        "altura": 423,
+        "folhaLargura": 559,
+        "folhaAltura": 431,
+        "pivotX": 0.58011,
+        "pivotY": 0.004728,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "cida_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Cida_cida_00",
+        "folha": "PersonagensRevisados/Moradores/Cida",
+        "x": 4,
+        "y": 4,
+        "largura": 196,
+        "altura": 424,
+        "folhaLargura": 604,
+        "folhaAltura": 432,
+        "pivotX": 0.377551,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "cida_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Cida_cida_01",
+        "folha": "PersonagensRevisados/Moradores/Cida",
+        "x": 204,
+        "y": 4,
+        "largura": 196,
+        "altura": 424,
+        "folhaLargura": 604,
+        "folhaAltura": 432,
+        "pivotX": 0.377551,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "cida_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Cida_cida_02",
+        "folha": "PersonagensRevisados/Moradores/Cida",
+        "x": 404,
+        "y": 4,
+        "largura": 196,
+        "altura": 424,
+        "folhaLargura": 604,
+        "folhaAltura": 432,
+        "pivotX": 0.377551,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Zeca_zeca_00",
+        "folha": "PersonagensRevisados/Moradores/Zeca",
+        "x": 4,
+        "y": 4,
+        "largura": 209,
+        "altura": 424,
+        "folhaLargura": 643,
+        "folhaAltura": 432,
+        "pivotX": 0.363636,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Zeca_zeca_01",
+        "folha": "PersonagensRevisados/Moradores/Zeca",
+        "x": 217,
+        "y": 4,
+        "largura": 209,
+        "altura": 424,
+        "folhaLargura": 643,
+        "folhaAltura": 432,
+        "pivotX": 0.363636,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Zeca_zeca_02",
+        "folha": "PersonagensRevisados/Moradores/Zeca",
+        "x": 430,
+        "y": 4,
+        "largura": 209,
+        "altura": 424,
+        "folhaLargura": 643,
+        "folhaAltura": 432,
+        "pivotX": 0.363636,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "neto_00",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Miguel_neto_00",
+        "folha": "PersonagensRevisados/Moradores/Miguel",
+        "x": 4,
+        "y": 4,
+        "largura": 179,
+        "altura": 424,
+        "folhaLargura": 553,
+        "folhaAltura": 432,
+        "pivotX": 0.413408,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "neto_01",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Miguel_neto_01",
+        "folha": "PersonagensRevisados/Moradores/Miguel",
+        "x": 187,
+        "y": 4,
+        "largura": 179,
+        "altura": 424,
+        "folhaLargura": 553,
+        "folhaAltura": 432,
+        "pivotX": 0.413408,
+        "pivotY": 0.004717,
+        "alturaReferencia": 413.98
+      }
+    },
+    {
+      "origem": "neto_02",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Miguel_neto_02",
+        "folha": "PersonagensRevisados/Moradores/Miguel",
+        "x": 370,
+        "y": 4,
+        "largura": 179,
+        "altura": 424,
+        "folhaLargura": 553,
+        "folhaAltura": 432,
+        "pivotX": 0.413408,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "feirante_0",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Sueli_feirante_0",
+        "folha": "PersonagensRevisados/Moradores/Sueli",
+        "x": 4,
+        "y": 4,
+        "largura": 177,
+        "altura": 424,
+        "folhaLargura": 547,
+        "folhaAltura": 432,
+        "pivotX": 0.451977,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "feirante_1",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Sueli_feirante_1",
+        "folha": "PersonagensRevisados/Moradores/Sueli",
+        "x": 185,
+        "y": 4,
+        "largura": 177,
+        "altura": 424,
+        "folhaLargura": 547,
+        "folhaAltura": 432,
+        "pivotX": 0.451977,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "feirante_2",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Sueli_feirante_2",
+        "folha": "PersonagensRevisados/Moradores/Sueli",
+        "x": 366,
+        "y": 4,
+        "largura": 177,
+        "altura": 424,
+        "folhaLargura": 547,
+        "folhaAltura": 432,
+        "pivotX": 0.451977,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "barraqueiro_0",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Tiao_barraqueiro_0",
+        "folha": "PersonagensRevisados/Moradores/Tiao",
+        "x": 4,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.668675,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "barraqueiro_1",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Tiao_barraqueiro_1",
+        "folha": "PersonagensRevisados/Moradores/Tiao",
+        "x": 174,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.668675,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "barraqueiro_2",
+      "texturaOrigem": "",
+      "ponto": "",
+      "quadro": {
+        "id": "Tiao_barraqueiro_2",
+        "folha": "PersonagensRevisados/Moradores/Tiao",
+        "x": 344,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.668675,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "feliciana_00",
+      "texturaOrigem": "",
+      "quadro": {
+        "id": "Feliciana_00",
+        "folha": "PersonagensRevisados/Feliciana",
+        "x": 2,
+        "y": 2,
+        "largura": 172,
+        "altura": 400,
+        "folhaLargura": 540,
+        "folhaAltura": 404,
+        "pivotX": 0.46791,
+        "pivotY": 0.005,
+        "alturaReferencia": 400
+      }
+    },
+    {
+      "origem": "feliciana_01",
+      "texturaOrigem": "",
+      "quadro": {
+        "id": "Feliciana_01",
+        "folha": "PersonagensRevisados/Feliciana",
+        "x": 182,
+        "y": 2,
+        "largura": 169,
+        "altura": 400,
+        "folhaLargura": 540,
+        "folhaAltura": 404,
+        "pivotX": 0.460816,
+        "pivotY": 0.005,
+        "alturaReferencia": 400
+      }
+    },
+    {
+      "origem": "feliciana_02",
+      "texturaOrigem": "",
+      "quadro": {
+        "id": "Feliciana_02",
+        "folha": "PersonagensRevisados/Feliciana",
+        "x": 362,
+        "y": 2,
+        "largura": 176,
+        "altura": 400,
+        "folhaLargura": 540,
+        "folhaAltura": 404,
+        "pivotX": 0.476613,
+        "pivotY": 0.005,
+        "alturaReferencia": 400
+      }
+    },
+    {
+      "origem": "andre_lucio_00",
+      "texturaOrigem": "",
+      "ponto": "pdf_visitante",
+      "quadro": {
+        "id": "Expedito_andre_lucio_00",
+        "folha": "PersonagensRevisados/Moradores/Expedito",
+        "x": 4,
+        "y": 4,
+        "largura": 167,
+        "altura": 424,
+        "folhaLargura": 517,
+        "folhaAltura": 432,
+        "pivotX": 0.323353,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "andre_lucio_01",
+      "texturaOrigem": "",
+      "ponto": "pdf_visitante",
+      "quadro": {
+        "id": "Expedito_andre_lucio_01",
+        "folha": "PersonagensRevisados/Moradores/Expedito",
+        "x": 175,
+        "y": 4,
+        "largura": 167,
+        "altura": 424,
+        "folhaLargura": 517,
+        "folhaAltura": 432,
+        "pivotX": 0.323353,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "andre_lucio_02",
+      "texturaOrigem": "",
+      "ponto": "pdf_visitante",
+      "quadro": {
+        "id": "Expedito_andre_lucio_02",
+        "folha": "PersonagensRevisados/Moradores/Expedito",
+        "x": 346,
+        "y": 4,
+        "largura": 167,
+        "altura": 424,
+        "folhaLargura": 517,
+        "folhaAltura": 432,
+        "pivotX": 0.323353,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    }
+  ],
+  "retratos": [
+    {
+      "ponto": "npc_simao",
+      "origem": "simao",
+      "textura": "PersonagensRevisados/Retratos/Simao"
+    },
+    {
+      "ponto": "npc_padre_duceu",
+      "origem": "padre_duceu",
+      "textura": "PersonagensRevisados/Retratos/PadreDuceu"
+    },
+    {
+      "ponto": "npc_raimundo",
+      "origem": "raimundo",
+      "textura": "PersonagensRevisados/Retratos/Raimundo"
+    },
+    {
+      "ponto": "npc_gerardinho",
+      "origem": "gerardinho",
+      "textura": "PersonagensRevisados/Retratos/Gerardinho"
+    },
+    {
+      "ponto": "npc_ivonete",
+      "origem": "ivonete",
+      "textura": "PersonagensRevisados/Retratos/Ivonete"
+    },
+    {
+      "ponto": "npc_emilia",
+      "origem": "emilia",
+      "textura": "PersonagensRevisados/Retratos/Emilia"
+    },
+    {
+      "ponto": "npc_andre_lucio",
+      "origem": "andre_lucio",
+      "textura": "PersonagensRevisados/Retratos/AndreLucio"
+    },
+    {
+      "ponto": "npc_guia",
+      "origem": "guia",
+      "textura": "PersonagensRevisados/Retratos/Lia"
+    },
+    {
+      "ponto": "npc_artesa",
+      "origem": "artesa",
+      "textura": "PersonagensRevisados/Retratos/Rosa"
+    },
+    {
+      "ponto": "npc_feirante",
+      "origem": "feirante",
+      "textura": "PersonagensRevisados/Retratos/SeuBento"
+    },
+    {
+      "ponto": "npc_cida",
+      "origem": "cida",
+      "textura": "PersonagensRevisados/Retratos/Cida"
+    },
+    {
+      "ponto": "npc_zeca",
+      "origem": "zeca",
+      "textura": "PersonagensRevisados/Retratos/Zeca"
+    },
+    {
+      "ponto": "npc_neto",
+      "origem": "neto",
+      "textura": "PersonagensRevisados/Retratos/Miguel"
+    },
+    {
+      "ponto": "npc_v23_feirante",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/Sueli"
+    },
+    {
+      "ponto": "npc_v23_barraqueiro",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/Tiao"
+    },
+    {
+      "ponto": "pdf_visitante",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/Expedito"
+    },
+    {
+      "ponto": "",
+      "origem": "feliciana",
+      "textura": "FelicianaRetrato"
+    }
+  ],
+  "netoCorrida": [
+    {
+      "id": "NetoCorrida_S_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 876,
+      "largura": 190,
+      "altura": 296,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.521053,
+      "pivotY": 0.010135,
+      "alturaReferencia": 285.5
+    },
+    {
+      "id": "NetoCorrida_S_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 876,
+      "largura": 190,
+      "altura": 296,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.521053,
+      "pivotY": 0.010135,
+      "alturaReferencia": 285.5
+    },
+    {
+      "id": "NetoCorrida_S_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 876,
+      "largura": 190,
+      "altura": 296,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.521053,
+      "pivotY": 0.010135,
+      "alturaReferencia": 285.5
+    },
+    {
+      "id": "NetoCorrida_S_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 876,
+      "largura": 190,
+      "altura": 296,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.521053,
+      "pivotY": 0.010135,
+      "alturaReferencia": 285.5
+    },
+    {
+      "id": "NetoCorrida_SW_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_SW_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_SW_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_SW_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_W_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_W_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_W_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_W_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_NW_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_NW_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_NW_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_NW_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 594,
+      "largura": 190,
+      "altura": 278,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.421053,
+      "pivotY": 0.014388,
+      "alturaReferencia": 286.0
+    },
+    {
+      "id": "NetoCorrida_N_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 4,
+      "largura": 190,
+      "altura": 295,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.489474,
+      "pivotY": 0.013559,
+      "alturaReferencia": 288.0
+    },
+    {
+      "id": "NetoCorrida_N_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 4,
+      "largura": 190,
+      "altura": 295,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.489474,
+      "pivotY": 0.013559,
+      "alturaReferencia": 288.0
+    },
+    {
+      "id": "NetoCorrida_N_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 4,
+      "largura": 190,
+      "altura": 295,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.489474,
+      "pivotY": 0.013559,
+      "alturaReferencia": 288.0
+    },
+    {
+      "id": "NetoCorrida_N_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 4,
+      "largura": 190,
+      "altura": 295,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.489474,
+      "pivotY": 0.013559,
+      "alturaReferencia": 288.0
+    },
+    {
+      "id": "NetoCorrida_NE_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_NE_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_NE_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_NE_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_E_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_E_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_E_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_E_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_SE_00",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 4,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_SE_01",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 198,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_SE_02",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 392,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    },
+    {
+      "id": "NetoCorrida_SE_03",
+      "folha": "PersonagensRevisados/NetoCorridaCardinais",
+      "x": 586,
+      "y": 303,
+      "largura": 190,
+      "altura": 287,
+      "folhaLargura": 780,
+      "folhaAltura": 1176,
+      "pivotX": 0.6,
+      "pivotY": 0.013937,
+      "alturaReferencia": 281.5
+    }
   ]
 }

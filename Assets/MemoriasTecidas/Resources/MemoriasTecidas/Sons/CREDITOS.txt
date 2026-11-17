@@ -1,0 +1,32 @@
+Memórias Tecidas: créditos dos sons
+===================================
+
+Gravações reais, recortadas, misturadas e niveladas para o jogo.
+
+Kenney (www.kenney.nl), licença CC0 1.0 (domínio público)
+  Pacotes "Impact Sounds", "RPG Audio" e "UI Audio".
+  passo_terra*, passo_pedra*, golpe_acerto* (madeira + impacto), dano*,
+  lancadeira* (tecido + madeira), tear_erro, tear_pedal* (madeira), tear_fio* (pano),
+  ui_clique, dialogo, ui_abrir*.
+
+Blanket (github.com/rafaelmardojai/blanket), sons de terceiros:
+  amb_vento    "Wind" de felix.blume (freesound.org/s/217506), CC0. Ambiente em uso no jogo todo.
+  amb_dia      "Birds" de kvgarlic (freesound.org/s/156826), CC0;
+               "Wind" de felix.blume (freesound.org/s/217506), CC0.
+  amb_noite    "Crickets Chirping At Night" de Lisa Redfern (soundbible.com), domínio público.
+  amb_rio      "Stream" de gluckose (freesound.org/s/333987), CC0.
+  amb_cidade   "City" de gezortenplotz (freesound.org/s/44796), CC BY 3.0.
+  fogueira     "Fireplace" de ezwa (soundbible.com), domínio público.
+  golpe_ar*    feito a partir de "Wind" de felix.blume (CC0).
+
+0 A.D. (play0ad.com), © Wildfire Games (www.wildfiregames.com),
+licença Creative Commons Attribution-ShareAlike 3.0
+(creativecommons.org/licenses/by-sa/3.0/):
+  galope       passos de cavalo montado (mstep110 a mstep115).
+  empina*      relinchos (horse_attack1 a 3) com cascos.
+  golpe_aparado*  impactos em escudo de madeira (shield_wood).
+  amb_cidade   mistura com "amb_trade_10" (mercado) e "civ_dog_bark" (latido).
+  Estes arquivos modificados continuam sob CC BY-SA 3.0.
+
+Sintetizados para o projeto (sem gravação de terceiros):
+  musica_tensao, objetivo, vitoria, derrota, tear_acerto, assobio.

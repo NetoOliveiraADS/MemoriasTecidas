@@ -1,0 +1,146 @@
+{
+  "versao": 1,
+  "oculto": true,
+  "fotos": [
+    {
+      "id": "foto_praca",
+      "regiao": "praca",
+      "ancora": "npc_neto",
+      "dx": 3.2,
+      "dy": -0.2,
+      "nome": "Foto antiga da Praça Matriz (exemplo)",
+      "requer": "r24_m01_02",
+      "imagem": "MemoriasTecidas/MemoriaViva/foto_praca",
+      "fonte": "EXEMPLO. Troque pela fotografia real do acervo e informe o ano e quem a guarda.",
+      "legenda": "Uma fotografia antiga da praça, para comparar com o que você vê agora.",
+      "instrucao": "Olhe a foto e a praça ao mesmo tempo. Clique onde algo mudou. Use as setas para ajustar a transparência.",
+      "evento": "mv_foto_praca",
+      "minimo": 2,
+      "conclusao": [
+        "Neto: Olhar para o antes e para o agora ajuda a ver o que a cidade guardou e o que ela mudou.",
+        "Neto: Vou anotar essas diferenças no caderno."
+      ],
+      "diferencas": [
+        { "titulo": "Primeira diferença (exemplo)", "texto": "Descreva aqui o que mudou entre a foto e a praça de hoje.", "x": 0.25, "y": 0.55, "raio": 0.07 },
+        { "titulo": "Segunda diferença (exemplo)", "texto": "Descreva aqui outro detalhe que mudou, com a fonte da informação.", "x": 0.50, "y": 0.40, "raio": 0.07 },
+        { "titulo": "Terceira diferença (exemplo)", "texto": "Descreva aqui algo que permaneceu igual ao longo do tempo.", "x": 0.75, "y": 0.60, "raio": 0.07 }
+      ]
+    }
+  ],
+  "entrevistas": [
+    {
+      "id": "entrevista_cida",
+      "regiao": "vila",
+      "npc": "npc_cida",
+      "dx": 1.9,
+      "dy": -1.1,
+      "titulo": "Conversa com Dona Cida",
+      "requer": "r24_m01_02",
+      "fonte": "Personagem fictícia. Texto de exemplo para a equipe revisar com a pesquisa.",
+      "evento": "mv_entrevista_cida",
+      "limite": 3,
+      "abertura": [
+        "Neto: Dona Cida, posso ouvir um pouco da senhora sobre a vida aqui na vila?",
+        "Dona Cida: Pode, meu filho. Mas escute devagar, que história boa não tem pressa."
+      ],
+      "perguntas": [
+        {
+          "id": "chegada",
+          "texto": "Como era a vila quando a senhora chegou?",
+          "resposta": [ "Dona Cida: Era tudo mais quieto. De manhã cedo já se ouvia o barulho dos teares nos quintais." ],
+          "confianca": 1
+        },
+        {
+          "id": "teares",
+          "texto": "Quem trabalhava com a senhora nos teares?",
+          "exige": [ "chegada" ],
+          "resposta": [ "Dona Cida: Era comadre, era vizinha, era prima. A gente trocava ponto e trocava conversa." ],
+          "confianca": 1
+        },
+        {
+          "id": "varais",
+          "texto": "O que a senhora sente ao ver as redes nos varais?",
+          "resposta": [ "Dona Cida: Sinto que o trabalho de muita gente está ali, pendurado ao sol." ],
+          "confianca": 1
+        },
+        {
+          "id": "guardado",
+          "texto": "A senhora guarda algo daquele tempo?",
+          "exigeConfianca": 2,
+          "resposta": [
+            "Dona Cida: Guardo sim... uma tira de tecido que fiz com minha mãe.",
+            "Dona Cida: Pouca gente já viu. Não mostro a qualquer um."
+          ],
+          "confianca": 1
+        }
+      ],
+      "silencio": {
+        "id": "silencio",
+        "texto": "Ficar em silêncio, olhando os varais",
+        "resposta": [ "Dona Cida sorri e continua, mais à vontade, como quem já decidiu confiar." ],
+        "confianca": 1
+      },
+      "fechamentos": [
+        {
+          "exige": [ "guardado" ],
+          "confiancaMinima": 2,
+          "linhas": [
+            "Dona Cida: Fique com isto na lembrança: uma rede começa com um fio e com gente que ensina.",
+            "Neto: Obrigado por confiar em mim."
+          ],
+          "fio": "ouro",
+          "resumo": "Dona Cida mostrou a tira de tecido que guarda e contou que o ofício se aprende junto com os outros."
+        },
+        {
+          "linhas": [
+            "Dona Cida: Foi bom conversar. Volte quando quiser ouvir mais.",
+            "Neto: Eu volto, Dona Cida."
+          ],
+          "fio": "creme",
+          "resumo": "Uma conversa de varanda sobre a vila, os teares e as pessoas que trabalhavam juntas."
+        }
+      ]
+    }
+  ],
+  "sons": [
+    {
+      "id": "som_rio",
+      "regiao": "rio",
+      "ancora": "paisagem_rio",
+      "dx": 0,
+      "dy": 4,
+      "nome": "Água do Jaguaribe",
+      "legenda": "Água correndo devagar entre as pedras",
+      "evento": "mv_som_rio",
+      "raio": 14,
+      "tempo": 2.5,
+      "memoria": [ "Neto: Dá para ouvir o rio daqui. Parece que ele conta uma história sem palavras." ]
+    },
+    {
+      "id": "som_sino",
+      "regiao": "praca",
+      "ancora": "npc_padre_duceu",
+      "dx": 0,
+      "dy": 8,
+      "nome": "Sino da matriz",
+      "legenda": "Um sino ao longe, vindo da igreja",
+      "evento": "mv_som_sino",
+      "raio": 16,
+      "tempo": 2.5,
+      "memoria": [ "Neto: O sino marca as horas e chama a cidade para perto da igreja." ]
+    },
+    {
+      "id": "som_feira",
+      "regiao": "mercado",
+      "ancora": "npc_feirante",
+      "dx": 4,
+      "dy": 1,
+      "nome": "Conversa de feira",
+      "legenda": "Vozes, sacolas e gente negociando",
+      "evento": "mv_som_feira",
+      "raio": 12,
+      "tempo": 2.5,
+      "memoria": [ "Neto: A feira nunca fica em silêncio. É um jeito da cidade se encontrar." ]
+    }
+  ]
+}

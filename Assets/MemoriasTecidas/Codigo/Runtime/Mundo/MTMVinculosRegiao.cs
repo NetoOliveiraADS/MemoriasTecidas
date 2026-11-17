@@ -87,10 +87,8 @@ namespace MemoriasTecidas.MundoV2
             {
                 var inicio = trama.missoes == null ? null : Array.Find(trama.missoes, m => m != null && m.id == "m01");
                 if (inicio != null)
-                    inicio.descricao = "Dona Feliciana recebe você na Entrada da Cidade e apresenta a jornada. Depois, procure Simão de Góis na Praça Matriz.";
-                var pessoa = trama.personagens == null ? null : Array.Find(trama.personagens, p => p != null && p.id == "npc_feliciana");
-                if (pessoa != null)
-                    pessoa.descricao = "Recebe o jogador na Entrada da Cidade e convida a conhecer as memórias de Jaguaruana. Representação artística com falas dramatizadas.";
+                    inicio.descricao = "Dona Feliciana recebe você na Entrada da Cidade e apresenta a jornada. Depois, procure Simão de Góis na Prefeitura e Praça e siga o tropel até o Rio Jaguaribe.";
+                // A descrição da Dona Feliciana (fatos históricos) fica em trama_01.json.
                 if (trama.dialogos != null)
                     foreach (var dialogo in trama.dialogos)
                         if (dialogo != null && dialogo.id == "npc_neto" && dialogo.falas != null)

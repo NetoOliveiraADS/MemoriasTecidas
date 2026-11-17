@@ -351,6 +351,15 @@ namespace MemoriasTecidas.MundoV2
             MTMEtapaTecido e;
             if (!EtapaNoPontoRoteiro(id, out m, out e))
             {
+                // Personagem com apresentação própria em trama_01.json ("dialogos"): conta quem é e
+                // lembra o próximo passo, em vez de repetir a última conversa (que fica no caderno).
+                string[] apresentacao = ApresentacaoRoteiro(ponto);
+                if (apresentacao != null)
+                {
+                    Abrir(ponto.dados.nome, FonteRoteiro, apresentacao, null);
+                    return true;
+                }
+
                 MTMEtapaTecido ultima = null;
                 foreach (var item in tramaTecida.missoes)
                     foreach (var etapa in item.etapas)
@@ -379,11 +388,9 @@ namespace MemoriasTecidas.MundoV2
                 return true;
             }
 
-            string[] falasEncontro = e.falas;
-            if (aberturaMemorias != null && e.ponto == aberturaMemorias.npc &&
-                Array.IndexOf(e.eventos, aberturaMemorias.eventoEncontro) >= 0 && e.falas.Length > 2)
-                falasEncontro = new[] { e.falas[0], e.falas[1] };
-            Abrir(ponto.dados.nome, FonteRoteiro, falasEncontro, () =>
+            // A primeira conversa com Dona Feliciana vai inteira (acolhida e Simão de Góis);
+            // o convite do tear abre logo depois, em AoConcluirEtapaPrimeiroFio.
+            Abrir(ponto.dados.nome, FonteRoteiro, e.falas, () =>
             {
                 if (e.acao == "atividade")
                     AbrirAtividadeRoteiro(m, e);
@@ -393,6 +400,20 @@ namespace MemoriasTecidas.MundoV2
                     ConcluirEtapaRoteiro(m, e, null, false);
             });
             return true;
+        }
+
+        // Falas de apresentação do personagem (de "dialogos") e, no fim, o próximo passo da jornada.
+        private string[] ApresentacaoRoteiro(MTMPonto ponto)
+        {
+            string id = ponto.dados.id;
+            if (tramaTecida.dialogos == null || ponto.dados.falas == null || ponto.dados.falas.Length == 0 ||
+                !Array.Exists(tramaTecida.dialogos, d => d != null && d.id == id))
+                return null;
+            var linhas = new List<string>(ponto.dados.falas);
+            string objetivo = GuiaPrimeiroFioAtivo() ? ObjetivoPrimeiroFio() : ObjetivoTecido();
+            if (!string.IsNullOrEmpty(objetivo))
+                linhas.Add("Seu próximo passo: " + char.ToLowerInvariant(objetivo[0]) + objetivo.Substring(1));
+            return linhas.ToArray();
         }
 
         private bool ConcluirEtapaRoteiro(MTMMissaoTecido m, MTMEtapaTecido e, IList<int> resposta, bool percurso)
@@ -409,7 +430,10 @@ namespace MemoriasTecidas.MundoV2
 
             Salvar();
             AtualizarVisibilidadeRoteiro();
-            Avisar(MTMTrama.Concluida(estado, m) ? "Missão concluída: " + m.titulo + "." : "Registro atualizado. " + ObjetivoTecido());
+            if (MTMTrama.Concluida(estado, m))
+                Avisar("Missão concluída: " + m.titulo + ".");
+            else
+                NovoObjetivoHUD();
             AoConcluirEtapaPrimeiroFio(e, motivosAntes);
             return true;
         }

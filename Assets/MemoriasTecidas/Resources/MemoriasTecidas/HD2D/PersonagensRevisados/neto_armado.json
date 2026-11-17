@@ -1,0 +1,326 @@
+{
+ "versao": 1,
+ "textura": "MemoriasTecidas/HD2D/PersonagensRevisados/NetoArmado",
+ "quadros": [
+  {
+   "id": "Neto_S_00",
+   "x": 0,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.328
+  },
+  {
+   "id": "Neto_S_01",
+   "x": 0,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.328
+  },
+  {
+   "id": "Neto_S_02",
+   "x": 0,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.328
+  },
+  {
+   "id": "Neto_S_03",
+   "x": 0,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.328
+  },
+  {
+   "id": "Neto_SW_00",
+   "x": 240,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.424
+  },
+  {
+   "id": "Neto_SW_01",
+   "x": 240,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.424
+  },
+  {
+   "id": "Neto_SW_02",
+   "x": 240,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.424
+  },
+  {
+   "id": "Neto_SW_03",
+   "x": 240,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.424
+  },
+  {
+   "id": "Neto_W_00",
+   "x": 480,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.586
+  },
+  {
+   "id": "Neto_W_01",
+   "x": 480,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.586
+  },
+  {
+   "id": "Neto_W_02",
+   "x": 480,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.586
+  },
+  {
+   "id": "Neto_W_03",
+   "x": 480,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 147.586
+  },
+  {
+   "id": "Neto_NW_00",
+   "x": 720,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.134
+  },
+  {
+   "id": "Neto_NW_01",
+   "x": 720,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.134
+  },
+  {
+   "id": "Neto_NW_02",
+   "x": 720,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.134
+  },
+  {
+   "id": "Neto_NW_03",
+   "x": 720,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.134
+  },
+  {
+   "id": "Neto_N_00",
+   "x": 960,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 148.618
+  },
+  {
+   "id": "Neto_N_01",
+   "x": 960,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 148.618
+  },
+  {
+   "id": "Neto_N_02",
+   "x": 960,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 148.618
+  },
+  {
+   "id": "Neto_N_03",
+   "x": 960,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 148.618
+  },
+  {
+   "id": "Neto_NE_00",
+   "x": 1200,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.65
+  },
+  {
+   "id": "Neto_NE_01",
+   "x": 1200,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.65
+  },
+  {
+   "id": "Neto_NE_02",
+   "x": 1200,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.65
+  },
+  {
+   "id": "Neto_NE_03",
+   "x": 1200,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 149.65
+  },
+  {
+   "id": "Neto_E_00",
+   "x": 1440,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 145.264
+  },
+  {
+   "id": "Neto_E_01",
+   "x": 1440,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 145.264
+  },
+  {
+   "id": "Neto_E_02",
+   "x": 1440,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 145.264
+  },
+  {
+   "id": "Neto_E_03",
+   "x": 1440,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 145.264
+  },
+  {
+   "id": "Neto_SE_00",
+   "x": 1680,
+   "y": 900,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.166
+  },
+  {
+   "id": "Neto_SE_01",
+   "x": 1680,
+   "y": 600,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.166
+  },
+  {
+   "id": "Neto_SE_02",
+   "x": 1680,
+   "y": 300,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.166
+  },
+  {
+   "id": "Neto_SE_03",
+   "x": 1680,
+   "y": 0,
+   "largura": 240,
+   "altura": 300,
+   "pivotX": 0.5,
+   "pivotY": 0.04,
+   "ppu": 150.166
+  }
+ ]
+}

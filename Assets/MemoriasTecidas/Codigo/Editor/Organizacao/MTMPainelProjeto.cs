@@ -271,6 +271,8 @@ namespace MemoriasTecidas.MundoV2
                     int n = MTMOrganizacaoCena.Organizar();
                     mensagem = n + " raízes individuais agrupadas. Objetos ambíguos foram preservados. Ctrl+Z desfaz; Ctrl+S salva a cena.";
                 });
+            if (GUILayout.Button("2b. Organizar cenário, animais e nomes das regiões", GUILayout.Height(34)))
+                Executar(() => mensagem = MTMOrganizacaoCena.OrganizarCenario());
             if (GUILayout.Button("3. Criar marcos de edição para os encontros do roteiro", GUILayout.Height(34)))
                 Executar(() =>
                 {

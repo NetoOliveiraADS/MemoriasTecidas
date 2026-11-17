@@ -24,11 +24,15 @@ namespace MemoriasTecidas.MundoV2
         public float projecaoFrenteCostas = .35f;
         [Range(.04f, .4f)]
         public float tempoEntrar = .10f, tempoVoltar = .14f;
+        [Tooltip("Quanto o corpo sobe a cada passada da corrida, em fração da altura do Neto.")]
+        [Range(0f, .06f)]
+        public float puloCorrida = .035f;
         [Header("Vento somente no cabelo")]
         [Range(0f, .008f)]
         public float ventoNoCabelo = .0025f;
         private const int Colunas = 12, Linhas = 24;
         private SpriteRenderer fonte, fonteSombra;
+        private MTMAtorV22 ator;
         private MTMVisualV2 visualAntigo;
         private Mesh malha;
         private MeshRenderer pintura, sombra;
@@ -43,6 +47,8 @@ namespace MemoriasTecidas.MundoV2
         private Vector3 posicaoAnterior;
         private Vector2 velocidadeSuave, inclinacao;
         private bool primeiraLeitura;
+        // Altura do pulo da corrida neste quadro (a arma solta da luta acompanha).
+        public float PuloAtual { get; private set; }
         private void OnEnable()
         {
             primeiraLeitura = true;
@@ -57,6 +63,7 @@ namespace MemoriasTecidas.MundoV2
             if (objetoPintura != null)
                 return;
             fonte = GetComponent<SpriteRenderer>();
+            ator = GetComponent<MTMAtorV22>();
             if (jogo == null)
                 jogo = GetComponentInParent<MTMJogo>();
             if (vida == null)
@@ -125,9 +132,21 @@ namespace MemoriasTecidas.MundoV2
             float altura = fonte.sprite.rect.height / fonte.sprite.pixelsPerUnit * escalaVisual;
             float baixo = -fonte.sprite.pivot.y / fonte.sprite.pixelsPerUnit * escalaVisual;
             float quadril = baixo + altura * .40f;
-            float radianos = -inclinacao.x * inclinacaoCorridaGraus * Mathf.Deg2Rad;
+            // Com as poses próprias da corrida, o desenho já se inclina e já tira os pés do chão.
+            bool posesCorrida = ator != null && ator.CorrendoComQuadros;
+            float graus = inclinacaoCorridaGraus * (posesCorrida ? .35f : 1f);
+            float radianos = -inclinacao.x * graus * Mathf.Deg2Rad;
             float cos = Mathf.Cos(radianos), sin = Mathf.Sin(radianos);
-            float frenteCostas = inclinacao.y * Mathf.Sin(inclinacaoCorridaGraus * Mathf.Deg2Rad) * altura * projecaoFrenteCostas;
+            float frenteCostas = inclinacao.y * Mathf.Sin(graus * Mathf.Deg2Rad) * altura * projecaoFrenteCostas;
+            // Pulo da corrida: o corpo sobe no meio das poses 1 e 3 (pernas abertas) e desce
+            // no apoio (poses 0 e 2). Só o desenho sobe; a sombra continua no chão.
+            // As poses próprias da corrida já desenham o voo: aí o pulo extra não entra.
+            float pulo = 0f;
+            if (ator != null && !posesCorrida && !MTMConfiguracaoVisual.Atual.reduzirMovimento)
+                pulo = Mathf.Abs(Mathf.Sin((ator.FasePasso - .5f) * Mathf.PI * .5f)) * altura * puloCorrida *
+                    Mathf.Clamp01(inclinacao.magnitude);
+            // O alongamento do pescoço foi pensado para as poses em pé; na corrida, curvada, ele não entra.
+            float pescoco = posesCorrida ? 0f : alongamentoPescoco;
             float vento = vida != null ? vida.intensidadeVento : 0f;
             if (MTMAmbienteV2.Qualidade == 0 || MTMConfiguracaoVisual.Atual.reduzirMovimento)
                 vento = 0f;
@@ -138,7 +157,7 @@ namespace MemoriasTecidas.MundoV2
                 Vector2 uv = uvLocal[i];
                 // Translada a cabeça inteira; só a faixa entre gola e barba alonga.
                 // Os pés e o pivô continuam no mesmo lugar, sem acumular deformação.
-                v.y += altura * alongamentoPescoco * PesoPescoco(uv.y);
+                v.y += altura * pescoco * PesoPescoco(uv.y);
                 // Pes e parte inferior das pernas ficam fixos. Torso e cabeca giram juntos.
                 float peso = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(.16f, .48f, uv.y));
                 float dx = v.x, dy = v.y - quadril;
@@ -165,6 +184,8 @@ namespace MemoriasTecidas.MundoV2
             pintura.SetPropertyBlock(propriedades);
             var espelho = new Vector3(fonte.flipX ? -1f : 1f, fonte.flipY ? -1f : 1f, 1f);
             objetoPintura.transform.localScale = espelho;
+            objetoPintura.transform.localPosition = new Vector3(0f, pulo, 0f);
+            PuloAtual = pulo;
             if (fonteSombra != null && sombra != null)
             {
                 fonteSombra.sprite = fonte.sprite;

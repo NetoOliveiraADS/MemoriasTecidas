@@ -1,0 +1,23 @@
+{
+  "versao": 1,
+  "quadros": [
+    {
+      "imagem": "MemoriasTecidas/Interface/InicioTecida",
+      "ajuste": "direita",
+      "titulo": "Jaguaruana",
+      "texto": "Jaguaruana guarda histórias que passam de geração em geração. Algumas estão nos livros. Outras vivem na memória do povo."
+    },
+    {
+      "imagem": "MemoriasTecidas/Interface/MapaJaguaruana",
+      "ajuste": "conter",
+      "titulo": "Uma rede de memórias",
+      "texto": "Neto chega para conhecer a cidade. Cada lugar visitado e cada pessoa ouvida deixa um fio na sua rede de memórias."
+    },
+    {
+      "imagem": "MemoriasTecidas/HD2D/FelicianaRetrato",
+      "ajuste": "conter",
+      "titulo": "O primeiro encontro",
+      "texto": "Na entrada da cidade, Dona Feliciana espera para o primeiro encontro."
+    }
+  ]
+}

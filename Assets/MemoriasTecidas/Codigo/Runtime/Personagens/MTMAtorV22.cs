@@ -15,6 +15,10 @@ namespace MemoriasTecidas.MundoV2
 
         public Tipo tipo;
         public Sprite[] quadros;
+        // Jogador: poses próprias da corrida, na mesma ordem de "quadros" (direção * 4 + passo).
+        // Vazio = a corrida usa as poses da caminhada. O kit HD2D preenche ao dar Play.
+        [System.NonSerialized]
+        public Sprite[] quadrosCorrida;
         public MTMJogo jogo;
         public MTMVidaV22 vida;
         public string nomeDaConversa;
@@ -31,7 +35,27 @@ namespace MemoriasTecidas.MundoV2
         private float tempo, fase;
         private bool primeiraLeitura = true, andava;
         public float RapidezReal { get; private set; }
+        // Direção do sprite (0 baixo, 1 baixo-esquerda ... 7 baixo-direita).
+        public int Direcao
+        {
+            get { return direcaoAtual; }
+        }
+
+        // Quadro exibido (direção * 4 + passo, no jogador).
+        public int Quadro
+        {
+            get { return quadroAtual; }
+        }
         public float FaseCaminhada { get; private set; }
+
+        // Jogador: posição contínua no ciclo de 4 poses (0 a 4); o quadro é a parte inteira.
+        public float FasePasso
+        {
+            get { return tipo == Tipo.Jogador ? tempo : 0f; }
+        }
+
+        // Jogador correndo com as poses próprias da corrida (não as da caminhada).
+        public bool CorrendoComQuadros { get; private set; }
 
         private void Awake()
         {
@@ -98,7 +122,7 @@ namespace MemoriasTecidas.MundoV2
                 andava = false;
             }
 
-            float limite = tipo == Tipo.Jogador && jogo != null ? jogo.velocidade * 1.8f : 8f;
+            float limite = tipo == Tipo.Jogador && jogo != null ? jogo.velocidade * Mathf.Max(1.8f, jogo.multiplicadorCorrida + .25f) : 8f;
             Vector2 medida = MTMCalculosMovimento.MedirVelocidade(delta, Time.deltaTime, limite);
             // O Rigidbody já interpola o deslocamento visível. Outra suavização atrasava
             // a primeira passada e mantinha a animação depois de parar.
@@ -118,18 +142,21 @@ namespace MemoriasTecidas.MundoV2
             else
                 FaseCaminhada = 0f;
             quadroAtual = 0;
+            CorrendoComQuadros = false;
             if (tipo == Tipo.Jogador && quadros.Length >= 32)
             {
                 float fps = fpsCaminhada;
                 float baseAndar = jogo != null ? Mathf.Max(.1f, jogo.velocidade) : 3.5f;
+                float fatorCorrida = jogo != null ? Mathf.Max(1.05f, jogo.multiplicadorCorrida) : 1.75f;
                 float distanciaQuadro = baseAndar / Mathf.Max(1f, fpsCaminhada);
                 if (andando)
                 {
                     direcaoAtual = MTMCalculosMovimento.DirecaoOito(velocidade, direcaoAtual);
                     float rapidez = velocidade.magnitude;
-                    float corrida = Mathf.InverseLerp(baseAndar, baseAndar * 1.55f, rapidez);
+                    float corrida = Mathf.InverseLerp(baseAndar, baseAndar * fatorCorrida, rapidez);
                     fps = Mathf.Lerp(fpsCaminhada, fpsCorrida, corrida);
-                    distanciaQuadro = Mathf.Lerp(baseAndar, baseAndar * 1.55f, corrida) / Mathf.Max(1f, fps);
+                    distanciaQuadro = Mathf.Lerp(baseAndar, baseAndar * fatorCorrida, corrida) / Mathf.Max(1f, fps);
+                    CorrendoComQuadros = corrida > .6f && quadrosCorrida != null && quadrosCorrida.Length == quadros.Length;
                 }
 
                 if (!andando && jogo != null && jogo.DirecaoDoEncontro.sqrMagnitude > .01f)
@@ -154,7 +181,10 @@ namespace MemoriasTecidas.MundoV2
             }
 
             andava = andando;
-            Sprite proximo = quadros[Mathf.Clamp(quadroAtual, 0, quadros.Length - 1)];
+            Sprite[] poses = CorrendoComQuadros ? quadrosCorrida : quadros;
+            Sprite proximo = poses[Mathf.Clamp(quadroAtual, 0, poses.Length - 1)];
+            if (proximo == null)
+                proximo = quadros[Mathf.Clamp(quadroAtual, 0, quadros.Length - 1)];
             if (desenho.sprite != proximo)
                 desenho.sprite = proximo;
         }

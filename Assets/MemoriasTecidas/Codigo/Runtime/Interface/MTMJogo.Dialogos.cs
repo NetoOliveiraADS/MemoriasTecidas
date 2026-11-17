@@ -35,8 +35,16 @@ namespace MemoriasTecidas.MundoV2
                 foreach (var pessoa in tramaTecida.personagens)
                     if (pessoa != null)
                         nomes.Add(pessoa.nome);
+            if (confrontos != null && confrontos.confrontos != null)
+                foreach (var lenda in confrontos.confrontos)
+                    if (lenda != null)
+                        nomes.Add(lenda.nome);
             MTMTextoDialogo.SepararFala(linha, locutor, nomes, out nomeExibidoDialogo, out textoExibidoDialogo);
             rolagemDialogo = Vector2.zero;
+            retratoExibidoDialogo = null;
+            recorteExibidoDialogo = new Rect(0, 0, 1, 1);
+            if (RetratoDeLendaPeloNome(nomeExibidoDialogo, out retratoExibidoDialogo, out recorteExibidoDialogo))
+                return;
             retratoExibidoDialogo = null;
             recorteExibidoDialogo = new Rect(0, 0, 1, 1);
             if (nomeExibidoDialogo == "Neto" && kitHD2D?.RetratoNeto != null)

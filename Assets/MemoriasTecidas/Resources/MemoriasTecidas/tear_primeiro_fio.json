@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "nomesCores": [ "Creme", "Dourado", "Terracota" ],
+  "cores": [ "#F4E9D5", "#D9AF68", "#B96C4D" ],
+  "niveis": [
+    {
+      "id": "listras",
+      "nome": "Listras",
+      "pedalAutomatico": true,
+      "explicacao": "Escolha a cor do fio e passe a lançadeira. Nesta primeira amostra, o tear troca os pedais sozinho.",
+      "conclusao": "Um fio por cima, outro por baixo: esse é o tafetá, o ponto mais simples da rede.",
+      "urdidura": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+      "pedais": [ "10101010", "01010101" ],
+      "solucao": [ "1,1", "2,1", "1,2", "2,2" ]
+    },
+    {
+      "id": "metades",
+      "nome": "Metade e metade",
+      "explicacao": "Agora você escolhe o pedal. Ele levanta alguns fios em pé: ali o creme aparece. No resto, aparece a cor do fio que você passar.",
+      "conclusao": "O pedal decide onde a cor aparece. É assim que as listas das redes mudam de lugar.",
+      "urdidura": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+      "pedais": [ "11110000", "00001111" ],
+      "solucao": [ "1,2", "1,2", "2,1", "2,1" ]
+    },
+    {
+      "id": "diagonal",
+      "nome": "A diagonal da rede",
+      "explicacao": "Quatro pedais, cada um levanta pares de fios um passo para o lado. Siga a diagonal da amostra, uma linha de cada vez.",
+      "conclusao": "A diagonal que vai e volta é o começo do losango das redes de Jaguaruana.",
+      "urdidura": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+      "pedais": [ "11001100", "01100110", "00110011", "10011001" ],
+      "solucao": [ "1,2", "2,2", "3,2", "4,2", "3,1", "2,1" ]
+    }
+  ]
+}
