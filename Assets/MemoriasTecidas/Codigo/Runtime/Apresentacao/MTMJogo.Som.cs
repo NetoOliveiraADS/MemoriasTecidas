@@ -101,18 +101,21 @@ namespace MemoriasTecidas.MundoV2
                 return;
             float dt = Time.unscaledDeltaTime;
             bool menu = inicioAbertoUI || !string.IsNullOrEmpty(painel);
-            bool lutando = EmConfronto && confrontoAtual != null;
+            // No aviso de fim da luta a música já volta para a exploração.
+            bool lutando = EmConfronto && confrontoAtual != null && !encerrandoConfronto;
 
             // Música: na tela inicial em meio volume; no jogo desce devagar até ficar abaixo dos efeitos.
             // Tensão nas lutas, exploração no resto.
+            // Na abertura de cinema a música sobe e o vento acompanha a bandeira.
+            bool abertura = painel == "prologo";
             string musica = lutando ? "musica_tensao" : "musica_exploracao";
-            float alvoMusica = volumeMusica * (inicioAbertoUI ? .7f : lutando ? .34f : menu || falas != null ? .2f : .16f);
-            TrocarLoop(musicaSom, ref musicaAtiva, ref musicaTocando, musica, alvoMusica, inicioAbertoUI || lutando ? 1.5f : 6f, dt);
+            float alvoMusica = volumeMusica * (abertura ? .55f : inicioAbertoUI ? .7f : lutando ? .34f : menu || falas != null ? .2f : .16f);
+            TrocarLoop(musicaSom, ref musicaAtiva, ref musicaTocando, musica, alvoMusica, abertura || inicioAbertoUI || lutando ? 1.5f : 6f, dt);
 
             // Ambiente: por enquanto só o vento, em todo lugar. Quase nada na tela inicial.
             // (amb_cidade, amb_dia, amb_noite e amb_rio continuam na pasta para quando voltarem.)
             const string ambiente = "amb_vento";
-            TrocarLoop(ambienteSom, ref ambienteAtivo, ref ambienteTocando, ambiente, volumeEfeitos * (inicioAbertoUI ? .12f : menu ? .3f : .6f), 3f, dt);
+            TrocarLoop(ambienteSom, ref ambienteAtivo, ref ambienteTocando, ambiente, volumeEfeitos * (abertura ? .4f : inicioAbertoUI ? .12f : menu ? .3f : .6f), 3f, dt);
 
             // Painéis: um toque ao abrir.
             if (painel != painelAnteriorSom)
@@ -184,7 +187,7 @@ namespace MemoriasTecidas.MundoV2
 
         private void AtualizarPassosSom(bool menu, float dt)
         {
-            float rapidez = corpo != null && !menu && falas == null ? corpo.linearVelocity.magnitude : 0f;
+            float rapidez = corpo != null && !menu && falas == null && !NetoAtordoado ? corpo.linearVelocity.magnitude : 0f;
             if (rapidez < .4f)
             {
                 passoAcumulado = .45f; // o primeiro passo soa logo que começa a andar
@@ -203,7 +206,8 @@ namespace MemoriasTecidas.MundoV2
         private void AtualizarConfrontoSom(bool lutando, float dt)
         {
             var s = sessaoConfronto;
-            if (!lutando || s == null || s.Encerrado)
+            // Na contagem antes da luta ela está parada: sem galope.
+            if (!lutando || s == null || s.Encerrado || contandoConfronto)
             {
                 if (galopeSom.isPlaying)
                 {

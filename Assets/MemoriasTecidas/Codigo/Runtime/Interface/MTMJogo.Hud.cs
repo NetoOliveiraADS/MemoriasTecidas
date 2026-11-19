@@ -50,7 +50,10 @@ namespace MemoriasTecidas.MundoV2
                 return estado.Tem(MTMPrimeiroFio.Teceu) ? "Rever amostra" : "Observar tecido";
             bool pessoa = tramaTecida != null && tramaTecida.personagens != null &&
                 System.Array.Exists(tramaTecida.personagens, x => x != null && x.id == d.id);
-            return pessoa ? "Conversar" : d.tipo == "coleta" ? "Recolher" : "Examinar";
+            if (pessoa) return "Conversar";
+            if (d.tipo == "coleta") return "Recolher";
+            // O nome diz o que há ali ("Observar o rio", "Placa do Sol"), mesmo quando o lugar não tem objeto desenhado.
+            return string.IsNullOrEmpty(d.nome) ? "Examinar" : d.nome;
         }
 
         private void HUDCompacta()
@@ -72,9 +75,9 @@ namespace MemoriasTecidas.MundoV2
             bool andando = movimento.sqrMagnitude > .01f;
             alfaAtalhosHUD = Mathf.MoveTowards(alfaAtalhosHUD, andando ? .35f : 1f, Time.unscaledDeltaTime * (andando ? 1.5f : 4f));
 
-            // Durante o foco de abertura na Feliciana, a tela fica limpa para o letreiro e para ela.
-            bool focoAbertura = focoFeliciana != null && Time.unscaledTime < focoFelicianaAte;
-            if (mostrarObjetivoTecido && !lutando && !focoAbertura)
+            // Na chegada depois da abertura, a tela fica limpa enquanto a câmera desce até o Neto.
+            bool chegada = ChegadaAtiva;
+            if (mostrarObjetivoTecido && !lutando && !chegada)
                 ObjetivoHUD(primeiro, missao, etapaAtual);
             RelogioHUD();
             // O nome do lugar fica numa linha discreta sob o relógio.
@@ -83,7 +86,7 @@ namespace MemoriasTecidas.MundoV2
 
             if (!lutando)
                 AtalhosHUD(primeiro);
-            GuiaMundoHUD(alvoGuia, ehSaida, dourado, fundo, claro);
+            GuiaMundoHUD(chegada ? null : alvoGuia, ehSaida, dourado, fundo, claro);
             BannerRegiaoHUD(fundo, claro, dourado);
             if (!lutando)
                 EscutaHUD(fundo, claro, dourado);
@@ -91,6 +94,7 @@ namespace MemoriasTecidas.MundoV2
             AvisoHUD(lutando);
             if (!lutando && perto != null && Disponivel(perto))
                 InteracaoHUD(alvoGuia);
+            ChegadaHUD();
         }
 
         private void ObjetivoHUD(bool primeiro, MTMMissaoTecido missao, MTMEtapaTecido etapaAtual)
@@ -217,6 +221,15 @@ namespace MemoriasTecidas.MundoV2
                 ArredondadoHUD(halo, AlfaTecido(OuroHUD, .18f + .25f * pisca));
             }
 
+            // Passagem: basta entrar no anel do chão, então o balão só diz para onde ela leva (sem a tecla E).
+            if (perto.dados != null && perto.dados.tipo == "saida")
+            {
+                Rect s = BalaoHUD(apoio, texto + 32f, 42f, destaque);
+                TextoTecido(new Rect(s.x + 16, s.y, texto + 8, s.height), ResumoHUDClaroUI(acao, texto + 4, 22, 15, true), 15, CremeHUD, true, TextAnchor.MiddleLeft);
+                if (AcaoTecido(s, "hud:interagir")) Interagir(perto);
+                return;
+            }
+
             Rect r = BalaoHUD(apoio, texto + 62f, 42f, destaque);
             TeclaRedondaHUD(new Rect(r.x + 7, r.y + 6, 30, 30), "E");
             TextoTecido(new Rect(r.x + 46, r.y, texto + 8, r.height), ResumoHUDClaroUI(acao, texto + 4, 22, 15, true), 15, CremeHUD, true, TextAnchor.MiddleLeft);
@@ -236,6 +249,9 @@ namespace MemoriasTecidas.MundoV2
             // Não encosta no cartão de objetivo: desce para baixo dele quando os dois se cruzam.
             if (!lutando && cartaoObjetivoHUD.width > 0f && r.x < cartaoObjetivoHUD.xMax + 8f && r.y < cartaoObjetivoHUD.yMax + 8f)
                 r.y = cartaoObjetivoHUD.yMax + 12f;
+            // Nem no banner do lugar.
+            if (bannerRectHUD.width > 0f && r.y < bannerRectHUD.yMax + 8f && r.yMax > bannerRectHUD.y - 8f)
+                r.y = bannerRectHUD.yMax + 12f;
             PainelHUD(r, alfa);
             LosangoCompacta(new Rect(r.x + 16, r.y + altura * .5f - 6f, 12, 12), AlfaTecido(OuroHUD, alfa));
             TextoTecido(new Rect(r.x + 40, r.y, largura - 54f, altura), ResumoHUDClaroUI(aviso, largura - 54f, altura - 8f, 14), 14,

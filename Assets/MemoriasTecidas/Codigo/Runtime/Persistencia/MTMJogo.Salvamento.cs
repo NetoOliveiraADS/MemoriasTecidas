@@ -23,7 +23,21 @@ namespace MemoriasTecidas.MundoV2
                 RegistrarPontoDaJornada();
                 Directory.CreateDirectory(Application.persistentDataPath);
                 string temporario = CaminhoSave + ".tmp";
-                File.WriteAllText(temporario, JsonUtility.ToJson(estado, true));
+                // No meio de uma luta a noite foi adiantada só para o encontro: o save guarda o horário de antes.
+                float relogioReal = estado.relogio;
+                if (noiteForcadaConfronto)
+                    estado.relogio = relogioAntesConfronto;
+                string json;
+                try
+                {
+                    json = JsonUtility.ToJson(estado, true);
+                }
+                finally
+                {
+                    estado.relogio = relogioReal;
+                }
+
+                File.WriteAllText(temporario, json);
                 File.Copy(temporario, CaminhoSave, true);
                 File.Delete(temporario);
             }
@@ -32,6 +46,22 @@ namespace MemoriasTecidas.MundoV2
                 Debug.LogWarning("Não foi possível salvar Mundo V2: " + e.Message, this);
                 Avisar("O progresso desta sessão não pôde ser salvo.");
             }
+        }
+
+        // Salva sozinho de tempos em tempos enquanto o jogador anda livre, para a jornada voltar perto
+        // de onde parou mesmo se o jogo fechar de repente. Encontros e trocas de lugar já salvam na hora.
+        private const float IntervaloAutosave = 30f;
+        private float proximoAutosave;
+
+        private void AutosalvarSeHora()
+        {
+            if (proximoAutosave <= 0f)
+                proximoAutosave = Time.unscaledTime + IntervaloAutosave;
+            if (Time.unscaledTime < proximoAutosave)
+                return;
+            proximoAutosave = Time.unscaledTime + IntervaloAutosave;
+            if (!Bloqueado && !EmConfronto)
+                Salvar();
         }
 
         private void Carregar()

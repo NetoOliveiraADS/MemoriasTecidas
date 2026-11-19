@@ -128,7 +128,8 @@ namespace MemoriasTecidas.MundoV2
             // a primeira passada e mantinha a animação depois de parar.
             Vector2 velocidade = medida;
             // Inclui moradores movidos pelo roteiro: a pose acompanha o deslocamento que foi visto.
-            if (jogo != null && jogo.V22Bloqueado)
+            // Atingido numa luta, Neto é jogado para trás: a pose fica parada, de frente para a lenda.
+            if (jogo != null && (jogo.V22Bloqueado || (tipo == Tipo.Jogador && jogo.NetoAtordoado)))
                 velocidade = Vector2.zero;
             bool andando = velocidade.sqrMagnitude > (tipo == Tipo.Jogador ? .0001f : .01f);
             RapidezReal = andando ? velocidade.magnitude : 0f;
@@ -163,6 +164,9 @@ namespace MemoriasTecidas.MundoV2
                     direcaoAtual = MTMCalculosMovimento.DirecaoOito(jogo.DirecaoDoEncontro, direcaoAtual);
                 int passo = MTMCalculosMovimento.PassoPorDistancia(andando, andava, cicloCompleto, percurso, distanciaQuadro, ref tempo);
                 quadroAtual = direcaoAtual * 4 + passo;
+                // Direção ainda sem pose de corrida: corre com a da caminhada (e a postura automática).
+                if (CorrendoComQuadros && (quadroAtual >= quadrosCorrida.Length || quadrosCorrida[quadroAtual] == null))
+                    CorrendoComQuadros = false;
             }
             else if (tipo == Tipo.Morador)
             {

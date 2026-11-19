@@ -49,7 +49,7 @@ namespace MemoriasTecidas.MundoV2
         {
             get
             {
-                return inicioAbertoUI || falas != null || painel.Length > 0 || Time.unscaledTime < travaFelicianaAte;
+                return inicioAbertoUI || falas != null || painel.Length > 0 || ChegadaSegurando;
             }
         }
 
@@ -99,7 +99,7 @@ namespace MemoriasTecidas.MundoV2
                 IrParaPontoSeguro("praca");
             Avisar(estado.Tem(EventoPrimeiraConversa)
                 ? "Siga a seta dourada para continuar a missão. M abre o mapa."
-                : "Ande com WASD ou setas e siga a seta dourada até Dona Feliciana.");
+                : "Ande com WASD ou setas e siga a seta dourada para encontrar a primeira história.");
         }
 
         private void Update()
@@ -119,6 +119,13 @@ namespace MemoriasTecidas.MundoV2
             if (MTMEntrada.Apertou('x'))
             {
                 VoltarInterfaceUI();
+                return;
+            }
+
+            // A abertura também passa por cima da tela inicial (quando revista pela página "Sobre o jogo").
+            if (painel == "prologo")
+            {
+                TeclasPrologo();
                 return;
             }
 
@@ -161,12 +168,6 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
-            if (painel == "prologo")
-            {
-                TeclasPrologo();
-                return;
-            }
-
             if (painel == "primeiro_fio")
             {
                 if (!ConfirmacaoComFocoUI)
@@ -186,8 +187,8 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
-            if (Time.unscaledTime < travaFelicianaAte && (MTMEntrada.Apertou('e') || MTMEntrada.ConfirmouMenu()))
-                PularFocoFeliciana();
+            if (ChegadaSegurando && (MTMEntrada.Apertou('e') || MTMEntrada.ConfirmouMenu()))
+                PularEsperaChegada();
             if (MTMEntrada.Apertou('m'))
                 AlternarPainel("mapa");
             else if (MTMEntrada.Apertou('j'))
@@ -224,8 +225,14 @@ namespace MemoriasTecidas.MundoV2
             // Durante um confronto não há conversa, coleta nem saída: só a lenda.
             if (AtualizarConfronto())
                 return;
+            AutosalvarSeHora();
+            AtualizarChegada();
+            if (MTMEntrada.AlternouLanterna())
+                AlternarLanterna();
             AtualizarEscutaViva();
             perto = MaisProximo();
+            if (SaidaAutomatica())
+                return;
             if (MTMEntrada.Apertou('e') && perto != null && quadroDaAcao != Time.frameCount)
                 Interagir(perto);
         }
@@ -238,6 +245,8 @@ namespace MemoriasTecidas.MundoV2
         private void LateUpdate()
         {
             AtualizarCameraFluida();
+            AtualizarLanterna();
+            EsconderAnelGuiaSeParado();
         }
 
         private void OnDisable()

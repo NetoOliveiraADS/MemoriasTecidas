@@ -1,23 +1,99 @@
 {
-  "versao": 1,
+  "versao": 2,
   "quadros": [
     {
+      "tipo": "bandeira",
       "imagem": "MemoriasTecidas/Interface/InicioTecida",
-      "ajuste": "direita",
+      "focoDe": [0.70, 0.42],
+      "focoPara": [0.66, 0.34],
+      "zoomDe": 1.45,
+      "zoomPara": 1.7,
+      "passaros": true,
+      "rotulo": "Ceará · Vale do Jaguaribe",
       "titulo": "Jaguaruana",
-      "texto": "Jaguaruana guarda histórias que passam de geração em geração. Algumas estão nos livros. Outras vivem na memória do povo."
+      "subtitulo": "Terra da Rede",
+      "texto": "Toda cidade guarda histórias. As de Jaguaruana passam de mão em mão, como o fio que corre no tear."
     },
     {
+      "tipo": "quadro",
+      "imagem": "MemoriasTecidas/Abertura/RuaAntiga",
+      "antiga": true,
+      "focoDe": [0.47, 0.5],
+      "focoPara": [0.46, 0.46],
+      "zoomDe": 1.05,
+      "zoomPara": 1.22,
+      "rotulo": "As origens",
+      "titulo": "A Caatinga do Góis",
+      "texto": "Antes de ser cidade, este lugar era a Caatinga do Góis, por causa de Simão de Góis, um dos primeiros moradores. Com o tempo, as ruas de terra foram ganhando casas e gente."
+    },
+    {
+      "tipo": "quadro",
+      "imagem": "MemoriasTecidas/Abertura/MatrizSantAnaFundo",
+      "foto": "MemoriasTecidas/Abertura/MatrizSantAna",
+      "focoDe": [0.5, 0.5],
+      "focoPara": [0.5, 0.46],
+      "zoomDe": 1.0,
+      "zoomPara": 1.05,
+      "rotulo": "A fé que reuniu o povo",
+      "titulo": "A capela de Sant'Ana",
+      "texto": "Terras foram doadas para uma capela a Nossa Senhora Sant'Ana, e em volta dela nasceram as primeiras ruas. Até hoje, Sant'Ana é a padroeira da cidade."
+    },
+    {
+      "tipo": "linha",
+      "imagem": "MemoriasTecidas/Abertura/PracaAntiga",
+      "antiga": true,
+      "focoDe": [0.42, 0.52],
+      "focoPara": [0.58, 0.52],
+      "zoomDe": 1.0,
+      "zoomPara": 1.04,
+      "rotulo": "Do povoado à cidade",
+      "titulo": "De União a Jaguaruana",
+      "texto": "O povoado virou a vila de União em 1865 e ganhou foros de cidade em 1890. Em 1943 recebeu o nome de Jaguaruana, palavra tupi que quer dizer onça preta.",
+      "marcos": [
+        { "ano": "1865", "nome": "Vila de União" },
+        { "ano": "1890", "nome": "Cidade de União" },
+        { "ano": "1943", "nome": "Jaguaruana" }
+      ]
+    },
+    {
+      "tipo": "quadro",
+      "imagem": "MemoriasTecidas/HD2D/OficinaRedes",
+      "focoDe": [0.28, 0.5],
+      "focoPara": [0.68, 0.5],
+      "zoomDe": 1.55,
+      "zoomPara": 1.55,
+      "fibras": true,
+      "rotulo": "Terra da Rede",
+      "titulo": "Fio, tear e rede",
+      "texto": "Nos teares, o algodão vira rede de dormir. As redes de Jaguaruana viajam pelo Brasil inteiro, e cada uma leva um pouco das histórias de quem a teceu."
+    },
+    {
+      "tipo": "lendas",
+      "imagem": "MemoriasTecidas/Interface/NoiteLendas",
+      "focoDe": [0.5, 0.56],
+      "focoPara": [0.53, 0.56],
+      "zoomDe": 1.12,
+      "zoomPara": 1.16,
+      "rotulo": "Quando a noite cai",
+      "titulo": "Entre memórias e lendas",
+      "texto": "Nem toda memória é tranquila. À noite, as lendas também andam pela cidade, e só quem tem coragem consegue ouvir o que elas guardam.",
+      "corredores": [
+        { "imagem": "MemoriasTecidas/Lendas/mulher_cavalo_corrida", "colunas": 4, "linhas": 8, "linha": 2, "de": 1440, "para": -320, "chao": 474, "altura": 236, "inicio": 0.8, "duracao": 4.6, "fps": 10 },
+        { "imagem": "MemoriasTecidas/Lendas/curupira", "colunas": 8, "linhas": 8, "linha": 6, "de": -140, "para": 1420, "chao": 412, "altura": 146, "inicio": 4.4, "duracao": 4.2, "fps": 14 }
+      ]
+    },
+    {
+      "tipo": "aventura",
       "imagem": "MemoriasTecidas/Interface/MapaJaguaruana",
-      "ajuste": "conter",
-      "titulo": "Uma rede de memórias",
-      "texto": "Neto chega para conhecer a cidade. Cada lugar visitado e cada pessoa ouvida deixa um fio na sua rede de memórias."
-    },
-    {
-      "imagem": "MemoriasTecidas/HD2D/FelicianaRetrato",
-      "ajuste": "conter",
-      "titulo": "O primeiro encontro",
-      "texto": "Na entrada da cidade, Dona Feliciana espera para o primeiro encontro."
+      "retrato": "MemoriasTecidas/HD2D/PersonagensRevisados/NetoRetrato",
+      "focoDe": [0.36, 0.58],
+      "focoPara": [0.5, 0.56],
+      "zoomDe": 1.8,
+      "zoomPara": 1.25,
+      "rota": ["entrada", "largo", "prefeitura", "praca"],
+      "rotulo": "A aventura começa",
+      "titulo": "Neto chega a Jaguaruana",
+      "texto": "Ele veio ouvir essas histórias e guardar cada uma como um fio na sua rede de memórias. A primeira espera por ele na entrada da cidade."
     }
   ]
 }

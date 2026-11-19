@@ -25,13 +25,38 @@
       "arma": "MemoriasTecidas/Itens/pau_de_juca",
       "nomeArma": "pau de jucá",
       "netoArmado": "MemoriasTecidas/HD2D/PersonagensRevisados/neto_armado",
+      "netoArmadoCorrida": "MemoriasTecidas/HD2D/PersonagensRevisados/neto_corrida_armado",
+      "guia": "npc_simao",
+      "nomeGuia": "Simão de Góis",
+      "guiaX": -7.5,
+      "guiaY": -0.3,
+      "preparo": [
+        "Simão de Góis: Vim junto até a margem. Escute bem antes que ela apareça.",
+        "Simão de Góis: Quando o chão riscar de vermelho, é ela tomando impulso. Saia da frente!",
+        "Simão de Góis: Ela só baixa a guarda quando cansa, logo depois da investida. Aí, bata com o pau de jucá.",
+        "Simão de Góis: Esses losangos aos seus pés são o seu fôlego. Se acabarem, você recua e tenta de novo.",
+        "Neto: Entendi. Estou pronto."
+      ],
+      "regras": [
+        "Chão vermelho: saia da frente",
+        "Ela cansou: golpeie com Espaço",
+        "Losangos aos seus pés: o seu fôlego"
+      ],
+      "guiaVitoria": [
+        "Simão de Góis: Eu vi tudo daqui da margem. Você ficou, e ela parou para ouvir.",
+        "Simão de Góis: Guarde essa ferradura. Lenda que deixa lembrança quer ser lembrada."
+      ],
+      "guiaDerrota": [
+        "Simão de Góis: Respire, menino. Espere a investida passar: quando ela cansar, aí você bate."
+      ],
       "convite": [
         "Simão de Góis: Então foi Feliciana quem mandou você até mim? Seja bem-vindo. Eu sou Simão de Góis.",
         "Simão de Góis: Dizem que fui um dos primeiros a me fixar nestas terras. De onde eu vim, nem os livros sabem dizer.",
         "Um tropel distante ecoa pelos lados do rio.",
         "Simão de Góis: Ouviu isso? Dizem que é a Mulher-Cavalo: metade mulher, metade cavalo. Ela anda pela margem do Jaguaribe quando a noite cai.",
         "Neto: Uma lenda que faz barulho? Vou até o rio ver de perto.",
-        "Simão de Góis: Então leve este pau de jucá. Madeira dura do sertão: enverga, mas não quebra. No bairro do Juazeiro, os vizinhos já correram atrás dela de pau na mão."
+        "Simão de Góis: Então leve este pau de jucá. Madeira dura do sertão: enverga, mas não quebra. No bairro do Juazeiro, os vizinhos já correram atrás dela de pau na mão.",
+        "Simão de Góis: Vá até o rio quando quiser. Eu espero você lá na margem."
       ],
       "vidaJogador": 3,
       "vidaInimigo": 8,
@@ -39,14 +64,13 @@
       "velocidadeInvestida": 11,
       "aviso": 0.9,
       "cansaco": 1.6,
-      "alcanceGolpe": 1.9,
+      "alcanceGolpe": 2.8,
       "abertura": [
         "Um tropel corta o silêncio do rio. Na margem, uma figura alta sacode a crina.",
         "Neto: Então a história que contam na cidade é verdade...",
         "Mulher-Cavalo: Menino... você viu os meus filhos?",
         "Neto: Seus filhos? Eu... eu não sei.",
-        "Neto: Ela está vindo na minha direção. Ainda bem que o Simão me deu este pau de jucá!",
-        "Quando o chão riscar de vermelho, saia da frente. Ela só baixa a guarda quando cansa: aí golpeie com Espaço."
+        "Neto: Ela está vindo na minha direção. Ainda bem que o Simão me deu este pau de jucá!"
       ],
       "vitoria": [
         "A Mulher-Cavalo recua até a beira da água e, pela primeira vez, fica quieta.",
@@ -72,6 +96,11 @@
       "noite": true,
       "escala": 1,
       "imagem": "MemoriasTecidas/Lendas/curupira",
+      "regras": [
+        "Chão vermelho: saia da frente",
+        "Esquive até ele cansar de correr",
+        "Depois: fogueiras de trás para frente e segure L para ouvir"
+      ],
       "colunas": 8,
       "linhas": 8,
       "fps": 12,

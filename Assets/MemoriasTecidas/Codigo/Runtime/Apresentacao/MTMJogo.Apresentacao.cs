@@ -45,6 +45,14 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
+            // Atingido numa luta, Neto é jogado para trás sem controle por um instante.
+            Vector2 recuo;
+            if (VelocidadeDoRecuo(out recuo))
+            {
+                corpo.linearVelocity = recuo;
+                return;
+            }
+
             corpo.linearVelocity = MTMCalculosVisuais.AvancarVelocidade(corpo.linearVelocity, movimento, velocidade * multiplicador, apresentacao.aceleracao, apresentacao.frenagem, Time.fixedDeltaTime);
         }
 
@@ -68,10 +76,9 @@ namespace MemoriasTecidas.MundoV2
         private Vector3 AlvoCamera()
         {
             Vector3 alvo = transform.position + (Vector3)antecipacaoCamera;
-            if (focoFeliciana != null && Time.unscaledTime < focoFelicianaAte)
-                // Enquadra a Feliciana com o letreiro "EU ❤ JAGUARUANA" ao lado: é a primeira imagem da cidade.
-                alvo = focoLetreiro != null ? Vector3.Lerp(focoFeliciana.position, focoLetreiro.position, .45f) : focoFeliciana.position;
-            else if (falas != null && perto != null && apresentacao.aproximarConversas && !apresentacao.reduzirMovimento)
+            // Na chegada, a câmera mostra o letreiro e as esculturas da Entrada antes de descer até o Neto.
+            bool chegada = AlvoDaChegada(ref alvo);
+            if (!chegada && falas != null && perto != null && apresentacao.aproximarConversas && !apresentacao.reduzirMovimento)
                 alvo = Vector3.Lerp(transform.position, perto.transform.position, .45f) - Vector3.up * cameraDoMapa.orthographicSize * .22f;
             alvo.z = -10f;
             return ConterCamera(alvo);
@@ -107,6 +114,9 @@ namespace MemoriasTecidas.MundoV2
                     if (pessoa != null && Vector2.Distance(transform.position, pessoa.transform.position) < 7f)
                         fator *= .90f;
                 }
+
+                // Chegada depois da abertura: começa de longe e desce até o Neto.
+                fator *= FatorZoomChegada();
             }
 
             float tamanho = Mathf.Clamp(tamanhoCamera * zoomPreferido * fator, 2f, TamanhoMaximoCamera());

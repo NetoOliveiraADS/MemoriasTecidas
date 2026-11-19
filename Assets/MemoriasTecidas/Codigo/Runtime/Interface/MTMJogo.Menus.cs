@@ -19,6 +19,7 @@ namespace MemoriasTecidas.MundoV2
             contrasteUI = PlayerPrefs.GetInt(ChaveInterface + "Contraste", 0) == 1;
             tamanhoDialogoUI = Mathf.Clamp(PlayerPrefs.GetInt(ChaveInterface + "Dialogo", 20), 20, 28);
             mostrarObjetivoTecido = PlayerPrefs.GetInt(ChaveInterface + "Objetivo", 1) == 1;
+            lanternaLigada = PlayerPrefs.GetInt(ChaveLanterna, 1) == 1;
             fonteLeituraUI = Resources.Load<Font>("MemoriasTecidas/Interface/DejaVuSans");
             fonteForteUI = Resources.Load<Font>("MemoriasTecidas/Interface/DejaVuSans-Bold");
             fonteTituloUI = Resources.Load<Font>("MemoriasTecidas/Interface/DejaVuSerif");
@@ -188,7 +189,7 @@ namespace MemoriasTecidas.MundoV2
 
             if (painel == "prologo")
             {
-                EncerrarPrologo();
+                SairPrologo();
                 return;
             }
 
@@ -276,7 +277,7 @@ namespace MemoriasTecidas.MundoV2
             }
 
             if (carregarProgresso)
-                TextoTecido(new Rect(566, 572, 452, 42), "O progresso é salvo sozinho a cada encontro.", 13, AlfaTecido(textoPapelUI, .7f));
+                TextoTecido(new Rect(566, 572, 452, 42), "O progresso é salvo sozinho nos encontros, ao trocar de lugar e a cada 30 segundos.", 13, AlfaTecido(textoPapelUI, .7f));
         }
 
         private void CabecalhoOpcoesUI(string titulo, string subtitulo)
@@ -307,7 +308,8 @@ namespace MemoriasTecidas.MundoV2
                     "B ou Start",
                     "R3",
                     "Analógico direito",
-                    "X · LT"
+                    "X · LT",
+                    "RB"
                 }
                 : new[]
                 {
@@ -318,9 +320,11 @@ namespace MemoriasTecidas.MundoV2
                     "Esc",
                     "R",
                     "Roda / + / −",
-                    "F1"
+                    "F1",
+                    "Espaço · L",
+                    "F"
                 };
-            string[] acoes =
+            var acoes = new System.Collections.Generic.List<string>
             {
                 "Caminhar",
                 "Correr",
@@ -331,12 +335,16 @@ namespace MemoriasTecidas.MundoV2
                 "Ajustar a câmera",
                 MTMEntrada.UsandoControle ? "Golpear · escutar (segure)" : "Mostrar ou ocultar o HUD"
             };
-            for (int i = 0; i < 8; i++)
+            if (!MTMEntrada.UsandoControle)
+                acoes.Add("Golpear · escutar (segure)");
+            acoes.Add("Lanterna à noite: liga e desliga");
+            // Duas colunas de até cinco linhas.
+            for (int i = 0; i < teclas.Length && i < acoes.Count; i++)
             {
-                float x = 214 + (i / 4) * 438, y = 306 + (i % 4) * 60;
-                Fundo(new Rect(x, y, 414, 46), papelUI);
-                TextoTecido(new Rect(x + 12, y + 12, 146, 26), teclas[i], 14, textoPapelUI, true);
-                TextoTecido(new Rect(x + 162, y + 8, 242, 34), acoes[i], 14, textoPapelUI, false, TextAnchor.MiddleLeft);
+                float x = 214 + (i / 5) * 438, y = 300 + (i % 5) * 52;
+                Fundo(new Rect(x, y, 414, 44), papelUI);
+                TextoTecido(new Rect(x + 12, y + 11, 146, 26), teclas[i], 14, textoPapelUI, true);
+                TextoTecido(new Rect(x + 162, y + 6, 242, 34), acoes[i], 14, textoPapelUI, false, TextAnchor.MiddleLeft);
             }
 
             TextoTecido(new Rect(214, 570, 852, 46), "Procure Dona Feliciana para começar. Use J → Missões para escolher qual história acompanhar.", 16, textoPapelUI);
@@ -348,7 +356,9 @@ namespace MemoriasTecidas.MundoV2
             IconeTecido("rede", new Rect(234, 230, 196, 138), terracotaUI);
             TextoTecido(new Rect(470, 222, 570, 112), "Memórias Tecidas aproxima lugares, personagens e saberes por meio da exploração e da criação de uma rede de lembranças.", 21, textoPapelUI);
             TextoTecido(new Rect(214, 404, 852, 104), "Os diálogos e atividades são adaptações ficcionais e didáticas. As fontes dos encontros aparecem no caderno; os textos não devem ser tratados como depoimentos históricos autênticos.", 18, textoPapelUI);
-            TextoTecido(new Rect(214, 530, 852, 84), "Fontes DejaVu.\nSons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D. © Wildfire Games, wildfiregames.com (CC BY-SA 3.0).\nLista completa em Resources/MemoriasTecidas/Sons/CREDITOS.txt.", 13, textoPapelUI);
+            TextoTecido(new Rect(214, 516, 852, 90), "Fontes DejaVu.\nSons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D. © Wildfire Games, wildfiregames.com (CC BY-SA 3.0).\nLista completa em Resources/MemoriasTecidas/Sons/CREDITOS.txt.\nBandeira de Jaguaruana: símbolo oficial do município, redesenhado para a abertura.\nFoto da Matriz de Sant'Ana na abertura: @fotosdoceara.", 13, textoPapelUI);
+            if (prologo != null && BotaoTecido(new Rect(214, 616, 300, 40), "Assistir à abertura  →"))
+                ReverAbertura();
         }
 
         private void SairDoJogoUI()

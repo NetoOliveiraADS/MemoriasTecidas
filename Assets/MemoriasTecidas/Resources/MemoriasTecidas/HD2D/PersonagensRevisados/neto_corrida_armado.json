@@ -1,0 +1,326 @@
+{
+ "versao": 1,
+ "textura": "MemoriasTecidas/HD2D/PersonagensRevisados/NetoCorridaArmada",
+ "quadros": [
+  {
+   "id": "NetoCorridaArmada_S_00",
+   "x": 2,
+   "y": 951,
+   "largura": 227,
+   "altura": 295,
+   "pivotX": 0.528634,
+   "pivotY": 0.023729,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_S_01",
+   "x": 2,
+   "y": 639,
+   "largura": 228,
+   "altura": 295,
+   "pivotX": 0.530701,
+   "pivotY": 0.023729,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_S_02",
+   "x": 2,
+   "y": 327,
+   "largura": 223,
+   "altura": 295,
+   "pivotX": 0.520179,
+   "pivotY": 0.023729,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_S_03",
+   "x": 2,
+   "y": 15,
+   "largura": 223,
+   "altura": 295,
+   "pivotX": 0.520179,
+   "pivotY": 0.023729,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SW_00",
+   "x": 251,
+   "y": 955,
+   "largura": 213,
+   "altura": 291,
+   "pivotX": 0.577465,
+   "pivotY": 0.006873,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SW_01",
+   "x": 251,
+   "y": 643,
+   "largura": 202,
+   "altura": 291,
+   "pivotX": 0.554456,
+   "pivotY": 0.006873,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SW_02",
+   "x": 251,
+   "y": 331,
+   "largura": 200,
+   "altura": 291,
+   "pivotX": 0.55,
+   "pivotY": 0.006873,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SW_03",
+   "x": 251,
+   "y": 19,
+   "largura": 199,
+   "altura": 291,
+   "pivotX": 0.547739,
+   "pivotY": 0.006873,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_W_00",
+   "x": 500,
+   "y": 957,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.457399,
+   "pivotY": 0.013841,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_W_01",
+   "x": 500,
+   "y": 645,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.457399,
+   "pivotY": 0.013841,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_W_02",
+   "x": 500,
+   "y": 330,
+   "largura": 245,
+   "altura": 292,
+   "pivotX": 0.506122,
+   "pivotY": 0.013699,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_W_03",
+   "x": 500,
+   "y": 21,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.457399,
+   "pivotY": 0.013841,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NW_00",
+   "x": 749,
+   "y": 943,
+   "largura": 204,
+   "altura": 303,
+   "pivotX": 0.514706,
+   "pivotY": 0.0066,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NW_01",
+   "x": 749,
+   "y": 638,
+   "largura": 199,
+   "altura": 296,
+   "pivotX": 0.502512,
+   "pivotY": 0.006756,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NW_02",
+   "x": 749,
+   "y": 314,
+   "largura": 206,
+   "altura": 308,
+   "pivotX": 0.519417,
+   "pivotY": 0.006493,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NW_03",
+   "x": 749,
+   "y": 12,
+   "largura": 197,
+   "altura": 298,
+   "pivotX": 0.497462,
+   "pivotY": 0.006711,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_N_00",
+   "x": 998,
+   "y": 957,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.488789,
+   "pivotY": 0.010381,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_N_01",
+   "x": 998,
+   "y": 645,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.488789,
+   "pivotY": 0.010381,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_N_02",
+   "x": 998,
+   "y": 333,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.488789,
+   "pivotY": 0.010381,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_N_03",
+   "x": 998,
+   "y": 21,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.488789,
+   "pivotY": 0.010381,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NE_00",
+   "x": 1247,
+   "y": 944,
+   "largura": 202,
+   "altura": 302,
+   "pivotX": 0.504951,
+   "pivotY": 0.006622,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NE_01",
+   "x": 1247,
+   "y": 636,
+   "largura": 201,
+   "altura": 298,
+   "pivotX": 0.507463,
+   "pivotY": 0.006711,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NE_02",
+   "x": 1247,
+   "y": 316,
+   "largura": 201,
+   "altura": 306,
+   "pivotX": 0.507463,
+   "pivotY": 0.006536,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_NE_03",
+   "x": 1247,
+   "y": 10,
+   "largura": 197,
+   "altura": 300,
+   "pivotX": 0.517767,
+   "pivotY": 0.006666,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_E_00",
+   "x": 1496,
+   "y": 957,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.560538,
+   "pivotY": 0.013841,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_E_01",
+   "x": 1496,
+   "y": 645,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.560538,
+   "pivotY": 0.013841,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_E_02",
+   "x": 1496,
+   "y": 331,
+   "largura": 244,
+   "altura": 291,
+   "pivotX": 0.512295,
+   "pivotY": 0.013746,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_E_03",
+   "x": 1496,
+   "y": 21,
+   "largura": 223,
+   "altura": 289,
+   "pivotX": 0.560538,
+   "pivotY": 0.013841,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SE_00",
+   "x": 1745,
+   "y": 955,
+   "largura": 199,
+   "altura": 291,
+   "pivotX": 0.507538,
+   "pivotY": 0.006873,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SE_01",
+   "x": 1745,
+   "y": 643,
+   "largura": 199,
+   "altura": 291,
+   "pivotX": 0.507538,
+   "pivotY": 0.006873,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SE_02",
+   "x": 1745,
+   "y": 331,
+   "largura": 187,
+   "altura": 291,
+   "pivotX": 0.475936,
+   "pivotY": 0.006873,
+   "ppu": 0
+  },
+  {
+   "id": "NetoCorridaArmada_SE_03",
+   "x": 1745,
+   "y": 19,
+   "largura": 203,
+   "altura": 291,
+   "pivotX": 0.517242,
+   "pivotY": 0.006873,
+   "ppu": 0
+  }
+ ]
+}

@@ -49,6 +49,22 @@ namespace MemoriasTecidas.MundoV2
         private bool primeiraLeitura;
         // Altura do pulo da corrida neste quadro (a arma solta da luta acompanha).
         public float PuloAtual { get; private set; }
+        // Fração da opacidade no piscar depois de um golpe (a arma da luta pisca junto).
+        public float AlfaDano { get; private set; } = 1f;
+        // Golpe recebido: tranco do tronco para o lado do empurrão, pulinho, clarão e piscar.
+        private const float InclinacaoDanoGraus = 15f;
+        private float danoInicio = -10f, danoPiscar;
+        private Vector2 danoEmpurrao = Vector2.down;
+
+        // Chamado quando uma lenda acerta Neto. "empurrao" é para onde ele é jogado;
+        // "piscar" é quanto tempo ele fica protegido (pisca nesse intervalo).
+        public void Atingir(Vector2 empurrao, float piscar)
+        {
+            danoInicio = Time.time;
+            danoEmpurrao = empurrao.sqrMagnitude > .0001f ? empurrao.normalized : Vector2.down;
+            danoPiscar = Mathf.Max(0f, piscar);
+        }
+
         private void OnEnable()
         {
             primeiraLeitura = true;
@@ -135,9 +151,21 @@ namespace MemoriasTecidas.MundoV2
             // Com as poses próprias da corrida, o desenho já se inclina e já tira os pés do chão.
             bool posesCorrida = ator != null && ator.CorrendoComQuadros;
             float graus = inclinacaoCorridaGraus * (posesCorrida ? .35f : 1f);
-            float radianos = -inclinacao.x * graus * Mathf.Deg2Rad;
+            bool reduzirDano = MTMConfiguracaoVisual.Atual.reduzirMovimento;
+            float desdeDano = Time.time - danoInicio;
+            float tranco = 0f, amassaDano = 0f, puloDano = 0f;
+            if (desdeDano >= 0f && desdeDano < .5f && !reduzirDano)
+            {
+                // Tranco rápido para o lado do empurrão e volta devagar; amassa no impacto e sai do chão.
+                tranco = desdeDano < .06f ? desdeDano / .06f : 1f - Mathf.SmoothStep(0f, 1f, (desdeDano - .06f) / .44f);
+                amassaDano = Mathf.Sin(Mathf.PI * Mathf.Clamp01(desdeDano / .18f)) * .09f;
+                puloDano = Mathf.Sin(Mathf.PI * Mathf.Clamp01((desdeDano - .06f) / .3f)) * altura * .07f;
+            }
+
+            float radianos = -inclinacao.x * graus * Mathf.Deg2Rad - danoEmpurrao.x * InclinacaoDanoGraus * Mathf.Deg2Rad * tranco;
             float cos = Mathf.Cos(radianos), sin = Mathf.Sin(radianos);
-            float frenteCostas = inclinacao.y * Mathf.Sin(graus * Mathf.Deg2Rad) * altura * projecaoFrenteCostas;
+            float frenteCostas = inclinacao.y * Mathf.Sin(graus * Mathf.Deg2Rad) * altura * projecaoFrenteCostas
+                + danoEmpurrao.y * Mathf.Sin(InclinacaoDanoGraus * Mathf.Deg2Rad) * altura * projecaoFrenteCostas * tranco;
             // Pulo da corrida: o corpo sobe no meio das poses 1 e 3 (pernas abertas) e desce
             // no apoio (poses 0 e 2). Só o desenho sobe; a sombra continua no chão.
             // As poses próprias da corrida já desenham o voo: aí o pulo extra não entra.
@@ -145,6 +173,7 @@ namespace MemoriasTecidas.MundoV2
             if (ator != null && !posesCorrida && !MTMConfiguracaoVisual.Atual.reduzirMovimento)
                 pulo = Mathf.Abs(Mathf.Sin((ator.FasePasso - .5f) * Mathf.PI * .5f)) * altura * puloCorrida *
                     Mathf.Clamp01(inclinacao.magnitude);
+            pulo += puloDano;
             // O alongamento do pescoço foi pensado para as poses em pé; na corrida, curvada, ele não entra.
             float pescoco = posesCorrida ? 0f : alongamentoPescoco;
             float vento = vida != null ? vida.intensidadeVento : 0f;
@@ -154,6 +183,9 @@ namespace MemoriasTecidas.MundoV2
             for (int i = 0; i < vertices.Length; i++)
             {
                 Vector3 v = baseVertices[i] * escalaVisual;
+                // Amassa a partir dos pés no impacto: eles continuam no chão.
+                v.x *= 1f + amassaDano * .7f;
+                v.y *= 1f - amassaDano;
                 Vector2 uv = uvLocal[i];
                 // Translada a cabeça inteira; só a faixa entre gola e barba alonga.
                 // Os pés e o pivô continuam no mesmo lugar, sem acumular deformação.
@@ -179,7 +211,31 @@ namespace MemoriasTecidas.MundoV2
             pintura.sortingLayerID = fonte.sortingLayerID;
             pintura.sortingOrder = fonte.sortingOrder;
             propriedades.SetTexture("_MainTex", fonte.sprite.texture);
-            propriedades.SetColor("_Color", fonte.color);
+            Color cor = fonte.color, clarao = new Color(0f, 0f, 0f, 0f);
+            if (desdeDano >= 0f)
+            {
+                if (reduzirDano)
+                {
+                    // Sem clarão nem piscar: só um tom avermelhado que some devagar.
+                    if (desdeDano < .6f)
+                        clarao = new Color(.86f, .2f, .14f, .35f * (1f - desdeDano / .6f));
+                }
+                else
+                {
+                    // Clarão claro no impacto, depois vermelho que se apaga.
+                    if (desdeDano < .07f)
+                        clarao = new Color(1f, .96f, .88f, .85f);
+                    else if (desdeDano < .4f)
+                        clarao = new Color(.9f, .16f, .1f, .55f * (1f - (desdeDano - .07f) / .33f));
+                    // Protegido depois do golpe: pisca até poder ser atingido de novo.
+                    if (desdeDano >= .4f && desdeDano < danoPiscar && Mathf.Repeat(desdeDano * 12f, 1f) < .5f)
+                        cor.a *= .35f;
+                }
+            }
+
+            AlfaDano = fonte.color.a > .001f ? cor.a / fonte.color.a : 1f;
+            propriedades.SetColor("_Color", cor);
+            propriedades.SetColor("_MTM_Clarao", clarao);
             propriedades.SetFloat("_MTM_LuzNeto", Mathf.Clamp(luzPreenchimento, 0f, .18f));
             pintura.SetPropertyBlock(propriedades);
             var espelho = new Vector3(fonte.flipX ? -1f : 1f, fonte.flipY ? -1f : 1f, 1f);
@@ -223,7 +279,7 @@ namespace MemoriasTecidas.MundoV2
             float dt = Mathf.Min(Time.unscaledDeltaTime, .10f);
             Vector2 medida = Time.deltaTime > .00001f ? delta / Time.deltaTime : Vector2.zero;
             velocidadeSuave = Vector2.Lerp(velocidadeSuave, medida, 1f - Mathf.Exp(-22f * dt));
-            bool bloqueado = jogo.V22Bloqueado || Time.timeScale <= 0f;
+            bool bloqueado = jogo.V22Bloqueado || jogo.NetoAtordoado || Time.timeScale <= 0f;
             bool correndo = !bloqueado && !salto && MTMEntrada.Correndo() && MTMEntrada.Movimento().sqrMagnitude > .01f && velocidadeSuave.sqrMagnitude > .04f;
             Vector2 alvo = correndo ? velocidadeSuave.normalized : Vector2.zero;
             float tempo = correndo ? tempoEntrar : tempoVoltar;

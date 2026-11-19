@@ -5,7 +5,8 @@ namespace MemoriasTecidas.MundoV2
 {
     // Peças de desenho do HUD no mundo, no mesmo idioma de tecido dos menus:
     // painel escuro com cantos arredondados, contorno dourado e costura tracejada,
-    // teclas em creme, discos e o arco do dia. Tudo desenhado em código, sem arte externa.
+    // teclas em creme, discos e o arco do dia. Desenhado em código; só o guia do objetivo (losango e anel)
+    // e o marcador dos pontos usam arte, em Resources/MemoriasTecidas/Interface/Guia.
     public sealed partial class MTMJogo
     {
         private static readonly Color TintaHUD = new Color(.13f, .10f, .08f, .9f);

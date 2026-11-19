@@ -508,7 +508,7 @@
           "evento": "boas_vindas",
           "falas": [
             "O nome da cidade marca o começo desta caminhada. Que lembranças você vai levar daqui?",
-            "Siga pelas passagens para conhecer o Largo da Vila e a Praça Matriz."
+            "Siga pelas passagens para conhecer a Av. Simão de Góis e a Praça Matriz."
           ],
           "fonte": "Texto autoral para o jogo. Cenário inspirado nas referências enviadas; distâncias e disposição adaptadas.",
           "condicao": "",
@@ -532,8 +532,8 @@
     },
     {
       "id": "largo",
-      "nome": "Largo da Vila · Ponta da Rua",
-      "descricao": "Avenida inspirada nas quatro imagens identificadas pela equipe como Largo da Vila / Ponta da Rua. Canteiro, fachadas e travessias adaptados ao RPG.",
+      "nome": "Av. Simão de Góis",
+      "descricao": "Avenida inspirada nas quatro imagens identificadas pela equipe como Av. Simão de Góis. Canteiro, fachadas e travessias adaptados ao RPG.",
       "largura": 96,
       "altura": 56,
       "seguroX": 0,
@@ -1415,7 +1415,7 @@
       "novosPontos": [
         {
           "id": "largo_encontros",
-          "nome": "Largo da Vila · Ponta da Rua",
+          "nome": "Av. Simão de Góis",
           "tipo": "conversa",
           "x": 0,
           "y": -4,
@@ -1447,7 +1447,7 @@
     },
     {
       "id": "mercado",
-      "nome": "Mercado Público",
+      "nome": "Mercado Municipal",
       "descricao": "Mercado inspirado nas duas fotografias: fachada creme e verde, portas e cobertura frontal. As três encomendas e os encontros anteriores são mantidos.",
       "largura": 80,
       "altura": 56,
@@ -1698,7 +1698,7 @@
       "objetos": [
         {
           "id": "urb_mercado",
-          "nome": "Mercado Publico",
+          "nome": "Mercado Municipal",
           "x": -2,
           "y": 13,
           "escala": 1,
@@ -4056,7 +4056,7 @@
       "novosPontos": [
         {
           "id": "v24_prefeitura_para_mercado",
-          "nome": "Mercado Público",
+          "nome": "Mercado Municipal",
           "tipo": "saida",
           "x": -36,
           "y": -6,

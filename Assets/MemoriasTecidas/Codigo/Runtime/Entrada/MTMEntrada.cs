@@ -381,6 +381,20 @@ namespace MemoriasTecidas.MundoV2
 #endif
         }
 
+        // Lanterna: F (ou RB no controle) liga e desliga. RB só é usado no tear, que é um painel à parte.
+        public static bool AlternouLanterna()
+        {
+#if ENABLE_INPUT_SYSTEM
+            var k = Keyboard.current;
+            var g = Controle;
+            return (k != null && k.fKey.wasPressedThisFrame) || (g != null && g.rightShoulder.wasPressedThisFrame);
+#elif ENABLE_LEGACY_INPUT_MANAGER
+            return Input.GetKeyDown(KeyCode.F);
+#else
+            return false;
+#endif
+        }
+
         public static bool Correndo()
         {
 #if ENABLE_INPUT_SYSTEM

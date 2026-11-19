@@ -41,8 +41,18 @@ namespace MemoriasTecidas.MundoV2
         public string arma, nomeArma;
         // Opcional: JSON (Resources) da folha de Neto já segurando a arma, nas mesmas 32 poses.
         public string netoArmado;
+        // Opcional: o mesmo para a corrida (as 32 poses de "netoCorrida"); ppu 0 = o da corrida sem arma.
+        public string netoArmadoCorrida;
         // Falas mostradas uma vez, quando o confronto fica disponível, para chamar o jogador.
         public string[] convite;
+        // Opcional: quem prepara o jogador. "guia" é o id do ponto de um personagem da cena (o desenho dele é
+        // copiado para a margem da arena, em guiaX/guiaY a partir do centro), "nomeGuia" o nome nas falas.
+        // "preparo" vem antes da abertura (só antes da primeira vitória); "guiaVitoria" e "guiaDerrota", no fim.
+        public string guia, nomeGuia;
+        public float guiaX, guiaY;
+        public string[] preparo, guiaVitoria, guiaDerrota;
+        // Lembretes curtos mostrados na contagem antes da luta.
+        public string[] regras;
         // Centro da arena na região e raio em que o confronto acontece.
         public float x, y, raio = 7f;
         public bool noite = true;

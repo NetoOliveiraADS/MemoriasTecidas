@@ -1934,7 +1934,7 @@
         },
         {
             "id": "m16",
-            "titulo": "O recado do Mercado Velho",
+            "titulo": "O recado do Mercado Municipal",
             "descricao": "Examine o bilhete encontrado entre as mercadorias e leve-o ao museu.",
             "recompensa": "Bilhete e amostra de tecido para comparar o símbolo.",
             "capitulo": "Os fios do mistério",
@@ -3400,7 +3400,7 @@
             "papel": "Prefeito de Jaguaruana",
             "natureza": "Representação artística",
             "descricao": "Raimundo Francisco Freitas Jaguaribe. Como prefeito, criou a escola Gerardo Correia Lima (1978), a Escola de Música Edith Moreira Barreto e a Biblioteca Municipal. Representação artística.",
-            "regiao": "mercado",
+            "regiao": "prefeitura",
             "evento": "raimundo"
         },
         {
@@ -3543,8 +3543,8 @@
         },
         {
             "id": "mercado",
-            "nomeCurto": "Mercado Velho",
-            "nome": "Mercado Velho",
+            "nomeCurto": "Mercado Municipal",
+            "nome": "Mercado Municipal",
             "grupo": "Centro e convivência",
             "descricao": "Trocas, materiais e encomendas. As bancas também guardam os primeiros sinais da investigação.",
             "ambiente": "Madeira · bancas · cestos · cores de terra"
@@ -4676,7 +4676,7 @@
             "titulo": "Bilhete do mercado",
             "texto": "O bilhete apresenta um símbolo de quatro traços entrelaçados. Uma seta aponta para uma borda do desenho; ainda não há explicação de origem.",
             "evento": "r24_m16_01",
-            "lugar": "Mercado Velho",
+            "lugar": "Mercado Municipal",
             "ordem": 1
         },
         {

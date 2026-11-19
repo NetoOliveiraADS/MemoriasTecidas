@@ -12,6 +12,7 @@ Shader "MemoriasTecidas/Neto/Pintado"
         _MTM_Base("Base do cenário",Vector)=(0,1,0,0)
         _MTM_Relevo("Relevo pintado",Range(0,1))=0
         [PerRendererData] _MTM_LuzNeto("Luz de preenchimento do Neto",Range(0,.18))=0
+        [PerRendererData] _MTM_Clarao("Clarão de dano (rgb = cor, a = força)",Color)=(0,0,0,0)
     }
     SubShader
     {
@@ -26,7 +27,7 @@ Shader "MemoriasTecidas/Neto/Pintado"
             #pragma target 3.0
             #include "UnityCG.cginc"
             #include "Assets/MemoriasTecidas/Shaders/Includes/MTMIluminacao.cginc"
-            sampler2D _MainTex;float4 _MainTex_TexelSize,_Color,_MTM_Base;
+            sampler2D _MainTex;float4 _MainTex_TexelSize,_Color,_MTM_Base,_MTM_Clarao;
             float _Efeito,_Sombra,_Agua,_CorteAlfa,_MTM_Relevo,_MTM_LuzNeto;
             struct A{float4 pos:POSITION;float2 uv:TEXCOORD0;float2 local:TEXCOORD1;float4 color:COLOR;};
             struct V{float4 pos:SV_POSITION;float2 uv:TEXCOORD0;float2 world:TEXCOORD1;float4 color:COLOR;};
@@ -57,6 +58,8 @@ Shader "MemoriasTecidas/Neto/Pintado"
                 float pico=max(c.r,max(c.g,c.b));
                 c.rgb*=min(1+clamp(_MTM_LuzNeto,0,.18),1/max(.001,pico));
                 c.rgb+=.006*sin(i.world.x*9+_MTV_Time)*sin(i.world.y*6-_MTV_Time)*water*_MTV_Sun.y;
+                // Clarão do golpe recebido: puxa a pintura para a cor pedida, sem mexer no recorte.
+                c.rgb=lerp(c.rgb,_MTM_Clarao.rgb,saturate(_MTM_Clarao.a));
                 return c;
             }
             ENDCG

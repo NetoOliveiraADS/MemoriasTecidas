@@ -158,6 +158,10 @@ namespace MemoriasTecidas.MundoV2
         {
             if (spriteMarcadorVivo != null)
                 return spriteMarcadorVivo;
+            // Losango bordado em tons de cinza: a cor de cada marcador (dourado, vermelho) vem do tingimento.
+            spriteMarcadorVivo = Resources.Load<Sprite>(PastaArteGuia + "marcador_ponto");
+            if (spriteMarcadorVivo != null)
+                return spriteMarcadorVivo;
             const int n = 48;
             marcadorVivo = new Texture2D(n, n, TextureFormat.RGBA32, false) { name = "Marcador_memoria_viva", hideFlags = HideFlags.DontSave, filterMode = FilterMode.Bilinear };
             var pixels = new Color[n * n];

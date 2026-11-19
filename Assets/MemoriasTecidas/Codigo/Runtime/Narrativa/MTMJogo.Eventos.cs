@@ -14,7 +14,9 @@ namespace MemoriasTecidas.MundoV2
         private int passoEscolta;
         private float fimAparicao, proximaRevisaoRoteiro;
         private AudioSource sonsRioRoteiro;
-        private Sprite placaRoteiro;
+        private Sprite placaRoteiro, brilhoRoteiro;
+        private readonly List<SpriteRenderer> brilhosRoteiro = new List<SpriteRenderer>();
+        private const string PastaArteRoteiro = "MemoriasTecidas/Cenario/Roteiro/";
         private MTMAtorV22 ModeloAtorRoteiro(string regiao, string ponto)
         {
             var r = RegiaoTecido(regiao);
@@ -94,7 +96,34 @@ namespace MemoriasTecidas.MundoV2
             return placaRoteiro;
         }
 
-        private void CopiarObjetoRoteiro(Transform pai, string modelo, Vector2 offset)
+        // Arte própria do ponto (Resources/MemoriasTecidas/Cenario/Roteiro/<id>.png) ou, sem ela, o brilho de pista no chão.
+        private Sprite ArteRoteiro(MTMPontoRoteiro def)
+        {
+            var propria = Resources.Load<Sprite>(PastaArteRoteiro + def.id);
+            if (propria != null)
+                return propria;
+            if (brilhoRoteiro == null)
+                brilhoRoteiro = Resources.Load<Sprite>(PastaArteRoteiro + "brilho");
+            return brilhoRoteiro;
+        }
+
+        // O brilho das pistas pulsa devagar para mostrar que ali há algo a examinar.
+        private void PulsarBrilhosRoteiro()
+        {
+            if (brilhosRoteiro.Count == 0)
+                return;
+            bool reduzir = apresentacao != null && apresentacao.reduzirMovimento;
+            float onda = reduzir ? 1f : .5f + .5f * Mathf.Sin(Time.unscaledTime * 3.2f);
+            foreach (var sr in brilhosRoteiro)
+            {
+                if (sr == null || !sr.gameObject.activeInHierarchy)
+                    continue;
+                sr.color = new Color(1f, 1f, 1f, .7f + .3f * onda);
+                sr.transform.localScale = Vector3.one * (.94f + .08f * onda);
+            }
+        }
+
+        private void CopiarObjetoRoteiro(Transform pai, string modelo, Vector2 offset, MTMPontoRoteiro def = null)
         {
             SpriteRenderer origem = null;
             if (!string.IsNullOrEmpty(modelo))
@@ -117,8 +146,11 @@ namespace MemoriasTecidas.MundoV2
             go.transform.SetParent(pai, false);
             go.transform.localPosition = offset;
             var desenho = go.AddComponent<SpriteRenderer>();
-            desenho.sprite = origem == null ? PlacaRoteiro() : origem.sprite;
+            Sprite arte = origem == null && def != null ? ArteRoteiro(def) : null;
+            desenho.sprite = origem != null ? origem.sprite : arte != null ? arte : PlacaRoteiro();
             desenho.spriteSortPoint = SpriteSortPoint.Pivot;
+            if (arte != null && arte == brilhoRoteiro)
+                brilhosRoteiro.Add(desenho);
             if (origem != null)
             {
                 desenho.sharedMaterial = origem.sharedMaterial;
@@ -222,7 +254,7 @@ namespace MemoriasTecidas.MundoV2
                         CopiarPessoaRoteiro(go.transform, ModeloAtorRoteiro("rua", "npc_zeca"), "Silhueta ficcional", Vector2.zero);
                 }
                 else
-                    CopiarObjetoRoteiro(go.transform, def.modeloObjeto, Vector2.zero);
+                    CopiarObjetoRoteiro(go.transform, def.modeloObjeto, Vector2.zero, def);
                 var lista = new List<MTMPonto>(r.pontos ?? new MTMPonto[0]);
                 lista.Add(p);
                 r.pontos = lista.ToArray();
@@ -346,6 +378,8 @@ namespace MemoriasTecidas.MundoV2
                 AtualizarVisibilidadeRoteiro();
             }
 
+            PulsarBrilhosRoteiro();
+
             if (etapaAparicao != null)
             {
                 if (painel != "observacao")
@@ -415,6 +449,7 @@ namespace MemoriasTecidas.MundoV2
                 if (recurso != null)
                     Destroy(recurso);
             recursosRoteiro.Clear();
+            brilhosRoteiro.Clear();     // a arte de Resources não é destruída: é do projeto
         }
     }
 }

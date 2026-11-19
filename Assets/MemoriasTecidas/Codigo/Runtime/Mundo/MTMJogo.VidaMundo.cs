@@ -28,7 +28,14 @@ namespace MemoriasTecidas.MundoV2
 
         public Vector2 DirecaoDoEncontro
         {
-            get { return falas != null && perto != null ? (Vector2)(perto.transform.position - transform.position) : Vector2.zero; }
+            get
+            {
+                // Numa luta (atingido ou na contagem antes de começar), Neto fica de frente para a lenda.
+                var olhar = OlharDoAtordoado;
+                if (olhar.sqrMagnitude > .01f)
+                    return olhar;
+                return falas != null && perto != null ? (Vector2)(perto.transform.position - transform.position) : Vector2.zero;
+            }
         }
 
         public bool V22FalandoCom(string nome)

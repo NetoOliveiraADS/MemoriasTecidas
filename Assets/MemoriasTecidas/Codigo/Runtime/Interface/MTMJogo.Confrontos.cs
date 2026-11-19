@@ -30,12 +30,52 @@ namespace MemoriasTecidas.MundoV2
         private Sprite fogueiraAcesa, fogueiraApagada;
         private readonly Dictionary<string, int> derrotasConfronto = new Dictionary<string, int>();
         private float golpeAte, danoAte, brilhoInimigoAte, relogioAntesConfronto;
+        // Reação da lenda ao golpe certo: recua para longe de Neto, treme, amassa e pisca avermelhada.
+        private const float DuracaoDanoLenda = .45f;
+        private float danoLendaInicio = -10f;
+        private Vector2 empurraoLenda = Vector2.up;
+        // Neto atingido: um instante parado no impacto (a lenda também congela), depois é jogado
+        // para longe sem controle, olhando para ela, e o losango de fôlego perdido estoura.
+        private const float ImpactoNeto = .08f, DuracaoRecuoNeto = .34f, ForcaRecuoNeto = 10f;
+        private float recuoNetoInicio = -10f, netoAtingidoInicio = -10f, pausaLendaAte, anguloEstalo;
+        private int folegoPerdido = -1;
+        private Vector2 recuoNetoDirecao = Vector2.down, olharLendaNeto = Vector2.down;
+        private Texture2D texEstaloHUD;
         private bool noiteForcadaConfronto;
         private string regiaoConfrontoConferida = "";
+        // Preparação (contagem antes da luta) e encerramento (aviso de vitória ou derrota antes do diálogo).
+        private const float DuracaoContagem = 3.2f, DuracaoFimVitoria = 2.6f, DuracaoFimDerrota = 2.1f;
+        private bool contandoConfronto, encerrandoConfronto, fimComVitoria;
+        private float contagemInicio = -10f, fimInicio = -10f, alfaSombraFim = 1f;
+        private int numeroContagem = -1;
+        private Vector2 largadaJogador, posicaoFimLenda, direcaoFimLenda = Vector2.up;
+        // Quem prepara o jogador: cópia do desenho de um personagem da cena, na margem da arena.
+        private GameObject guiaConfronto;
+        private string guiaDeQual = "", guiaFicaAte = "";
+        private readonly HashSet<string> guiasSemModelo = new HashSet<string>();
 
         private bool EmConfronto
         {
             get { return sessaoConfronto != null; }
+        }
+
+        // Verdadeiro no impacto e no recuo de um golpe recebido: Neto não anda nem golpeia.
+        public bool NetoAtordoado
+        {
+            get { return EmConfronto && Time.time < recuoNetoInicio + DuracaoRecuoNeto; }
+        }
+
+        // Para onde Neto olha enquanto está atordoado (a lenda que o acertou) ou na contagem antes da luta.
+        public Vector2 OlharDoAtordoado
+        {
+            get
+            {
+                if (NetoAtordoado)
+                    return olharLendaNeto;
+                if (contandoConfronto && sessaoConfronto != null)
+                    return centroConfronto + new Vector2(sessaoConfronto.Ix, sessaoConfronto.Iy) - (Vector2)transform.position;
+                return Vector2.zero;
+            }
         }
 
         private bool PontoConfronto(MTMPonto p)
@@ -175,6 +215,8 @@ namespace MemoriasTecidas.MundoV2
                 return "Examinar";
             if (estado.Tem(c.evento))
                 return "Enfrentar de novo";
+            if (GuiaRecebe(c))
+                return "Falar com " + (string.IsNullOrEmpty(c.nomeGuia) ? "quem espera na margem" : c.nomeGuia);
             return string.IsNullOrEmpty(c.chamada) ? "Enfrentar " + c.nome : c.chamada;
         }
 
@@ -189,6 +231,9 @@ namespace MemoriasTecidas.MundoV2
             bool forcarNoite = c.noite && !Noite;
             if (forcarNoite)
                 linhas.Add("Neto espera. O sol baixa devagar e a noite chega.");
+            // Antes da primeira vitória, quem espera na margem prepara o jogador.
+            if (GuiaRecebe(c) && c.preparo != null)
+                linhas.AddRange(c.preparo);
             linhas.AddRange(c.abertura);
             AbrirLenda(c, linhas.ToArray(), () =>
             {
@@ -215,11 +260,22 @@ namespace MemoriasTecidas.MundoV2
             sessaoConfronto = new MTMSessaoConfronto(c);
             centroConfronto = regiao.transform.TransformPoint(new Vector3(c.x, c.y, 0f));
             golpeAte = danoAte = brilhoInimigoAte = 0f;
+            danoLendaInicio = -10f;
+            recuoNetoInicio = netoAtingidoInicio = -10f;
+            pausaLendaAte = 0f;
+            folegoPerdido = -1;
             MontarLenda(c, regiao);
             MontarArma(c);
             PosicionarInimigo();
             perto = null;
-            // A abertura já explicou; a pílula de estado e as teclas no rodapé guiam a luta.
+            // A luta só começa depois da contagem: Neto entra na clareira e encara a lenda, que espera parada.
+            contandoConfronto = true;
+            encerrandoConfronto = false;
+            contagemInicio = Time.unscaledTime;
+            numeroContagem = -1;
+            Vector2 rel = corpo.position - centroConfronto;
+            float dentro = c.raio - 1.6f;
+            largadaJogador = rel.magnitude > dentro ? (rel.sqrMagnitude > .01f ? rel.normalized : Vector2.down) * dentro : rel;
         }
 
         private void LimparConfronto()
@@ -234,6 +290,7 @@ namespace MemoriasTecidas.MundoV2
             inimigoConfronto = null;
             desenhoInimigo = sombraInimigo = null;
             quadrosLenda = null;
+            contandoConfronto = encerrandoConfronto = false;
             sessaoConfronto = null;
             confrontoAtual = null;
         }
@@ -243,6 +300,7 @@ namespace MemoriasTecidas.MundoV2
         // Chamado a cada quadro de jogo livre. Verdadeiro enquanto um confronto está em curso.
         private bool AtualizarConfronto()
         {
+            AtualizarGuiaConfronto();
             AtualizarMarcadoresConfronto();
             if (!EmConfronto)
             {
@@ -261,6 +319,9 @@ namespace MemoriasTecidas.MundoV2
             }
 
             perto = null;
+            bool atordoado = NetoAtordoado;
+            if (atordoado)
+                movimento = Vector2.zero;
             if (movimento.sqrMagnitude > .01f)
                 frenteJogador = movimento.normalized;
             Vector2 rel = corpo.position - centroConfronto;
@@ -272,6 +333,21 @@ namespace MemoriasTecidas.MundoV2
                 return false;
             }
 
+            if (contandoConfronto)
+            {
+                AtualizarContagem(rel);
+                PosicionarInimigo();
+                AtualizarArma();
+                return true;
+            }
+
+            if (encerrandoConfronto)
+            {
+                movimento = Vector2.zero;
+                AtualizarEncerramento();
+                return true;
+            }
+
             if (rel.magnitude > c.raio)
             {
                 rel = rel.normalized * c.raio;
@@ -279,22 +355,21 @@ namespace MemoriasTecidas.MundoV2
             }
 
             var faseAntes = s.Fase;
-            var sinais = s.Avancar(Time.deltaTime, rel.x, rel.y);
+            // No impacto de um golpe em Neto a lenda congela por um instante.
+            var sinais = s.Avancar(Time.unscaledTime < pausaLendaAte ? 0f : Time.deltaTime, rel.x, rel.y);
             if ((sinais & MTMSinalConfronto.JogadorAtingido) != 0)
             {
-                danoAte = Time.unscaledTime + .35f;
-                corpo.linearVelocity = new Vector2(s.DirX, s.DirY) * 9f;
-                MTMEntrada.Vibrar(.55f, .85f, .28f);
-                TocarSom("dano", .9f, .05f);
+                AtingirNeto(rel);
+                atordoado = true;
             }
 
             if ((sinais & MTMSinalConfronto.Perdeu) != 0)
             {
-                PerderConfronto();
+                IniciarEncerramento(false);
                 return true;
             }
 
-            if (s.Fase == MTMFaseConfronto.Luta && MTMEntrada.Golpeou() && s.PodeGolpear)
+            if (!atordoado && s.Fase == MTMFaseConfronto.Luta && MTMEntrada.Golpeou() && s.PodeGolpear)
             {
                 golpeAte = Time.unscaledTime + .18f;
                 int golpe = s.Golpear(rel.x, rel.y, frenteJogador.x, frenteJogador.y);
@@ -304,11 +379,16 @@ namespace MemoriasTecidas.MundoV2
                     TocarSom(golpe > 0 ? "golpe_acerto" : "golpe_aparado", golpe > 0 ? 1f : .8f, .06f);
                 MTMEntrada.Vibrar(golpe > 0 ? .3f : .12f, golpe > 0 ? .45f : 0f, golpe > 0 ? .12f : .06f);
                 if (golpe > 0)
+                {
                     brilhoInimigoAte = Time.unscaledTime + .16f;
+                    danoLendaInicio = Time.unscaledTime;
+                    Vector2 lenda = centroConfronto + new Vector2(s.Ix, s.Iy);
+                    empurraoLenda = (lenda - corpo.position).sqrMagnitude > .0001f ? (lenda - corpo.position).normalized : frenteJogador;
+                }
                 else if (golpe < 0)
                     Avisar("Ela aparou o golpe. Espere a investida passar e ataque quando ela cansar.");
             }
-            else if (s.Fase == MTMFaseConfronto.Cerco && MTMEntrada.Apertou('e') && quadroDaAcao != Time.frameCount)
+            else if (!atordoado && s.Fase == MTMFaseConfronto.Cerco && MTMEntrada.Apertou('e') && quadroDaAcao != Time.frameCount)
             {
                 int i = FogueiraPerto(rel);
                 if (i >= 0)
@@ -320,7 +400,7 @@ namespace MemoriasTecidas.MundoV2
                         Avisar("As fogueiras se apagaram. A ordem está ao contrário, como as pegadas dele.");
                 }
             }
-            else if (s.Fase == MTMFaseConfronto.Escuta && MTMEntrada.Escutando())
+            else if (!atordoado && s.Fase == MTMFaseConfronto.Escuta && MTMEntrada.Escutando())
             {
                 multiplicador = .55f;
                 s.Escutar(Time.deltaTime, rel.x, rel.y);
@@ -330,7 +410,7 @@ namespace MemoriasTecidas.MundoV2
                 AoMudarFaseConfronto();
             if (s.Fase == MTMFaseConfronto.Vitoria)
             {
-                VencerConfronto();
+                IniciarEncerramento(true);
                 return true;
             }
 
@@ -338,6 +418,65 @@ namespace MemoriasTecidas.MundoV2
             AtualizarArma();
             AtualizarFogueiras();
             return true;
+        }
+
+        // Neto leva o golpe: pausa curta no impacto, recuo para longe da lenda, pose de dor e clarão
+        // (MTMNetoVisual.Atingir) e, no HUD, o estalo no peito e o losango de fôlego estourando.
+        private void AtingirNeto(Vector2 netoRel)
+        {
+            var s = sessaoConfronto;
+            Vector2 investida = new Vector2(s.DirX, s.DirY);
+            Vector2 afasta = netoRel - new Vector2(s.Ix, s.Iy);
+            // Atropelado de lado, ele sai pela lateral; de frente, vai na direção da investida.
+            Vector2 direcao = (afasta.sqrMagnitude > .0001f ? afasta.normalized : investida) * .55f + investida * .45f;
+            recuoNetoDirecao = direcao.sqrMagnitude > .0001f ? direcao.normalized : Vector2.down;
+            olharLendaNeto = afasta.sqrMagnitude > .0001f ? -afasta : -investida;
+            recuoNetoInicio = Time.time + ImpactoNeto;
+            pausaLendaAte = Time.unscaledTime + ImpactoNeto;
+            netoAtingidoInicio = Time.unscaledTime;
+            danoAte = Time.unscaledTime + .35f;
+            anguloEstalo = UnityEngine.Random.Range(0f, 45f);
+            folegoPerdido = s.VidaJogador;
+            movimento = Vector2.zero;
+            if (corpo != null)
+                corpo.linearVelocity = Vector2.zero;
+            var visual = VisualDoNeto();
+            if (visual != null)
+                visual.Atingir(recuoNetoDirecao, MTMSessaoConfronto.Invulnerabilidade);
+            MTMEntrada.Vibrar(.55f, .85f, .28f);
+            TocarSom("dano", .9f, .05f);
+        }
+
+        // Velocidade imposta a Neto enquanto está atordoado: parado no impacto, depois o recuo perdendo força.
+        private bool VelocidadeDoRecuo(out Vector2 velocidadeRecuo)
+        {
+            velocidadeRecuo = Vector2.zero;
+            if (!NetoAtordoado)
+                return false;
+            float t = (Time.time - recuoNetoInicio) / DuracaoRecuoNeto;
+            if (t > 0f)
+            {
+                float resto = 1f - Mathf.Clamp01(t);
+                velocidadeRecuo = recuoNetoDirecao * (ForcaRecuoNeto * resto * resto);
+            }
+
+            return true;
+        }
+
+        private MTMNetoVisual VisualDoNeto()
+        {
+            if (visualNeto != null)
+                return visualNeto;
+            if (atorNeto == null)
+                foreach (var ator in GetComponentsInChildren<MTMAtorV22>(true))
+                    if (ator.tipo == MTMAtorV22.Tipo.Jogador)
+                    {
+                        atorNeto = ator;
+                        break;
+                    }
+
+            visualNeto = atorNeto == null ? null : atorNeto.GetComponent<MTMNetoVisual>();
+            return visualNeto;
         }
 
         private void AoMudarFaseConfronto()
@@ -354,13 +493,20 @@ namespace MemoriasTecidas.MundoV2
 
         private void VencerConfronto()
         {
-            TocarSom("vitoria", .9f, 0f);
             var c = confrontoAtual;
+            bool comGuia = GuiaRecebe(c);
             LimparConfronto();
             Parar();
             derrotasConfronto.Remove(c.id);
             bool primeira = estado.Concluir(c.evento);
             var linhas = new List<string>(c.vitoria);
+            if (comGuia && c.guiaVitoria != null)
+            {
+                linhas.AddRange(c.guiaVitoria);
+                // Quem preparou o jogador fica na margem até ele sair do lugar.
+                guiaFicaAte = c.regiao;
+            }
+
             if (noiteForcadaConfronto)
             {
                 // A noite foi adiantada para o encontro; o dia volta para a campanha seguir.
@@ -413,19 +559,24 @@ namespace MemoriasTecidas.MundoV2
 
         private void PerderConfronto()
         {
-            TocarSom("derrota", .9f, 0f);
             var c = confrontoAtual;
+            bool comGuia = GuiaRecebe(c);
+            // Com quem prepara o jogador na margem, Neto volta para o lado dele; senão, para o caminho central.
+            Vector2 volta = comGuia ? (Vector2)guiaConfronto.transform.position + new Vector2(-1.3f, -.4f) : new Vector2(atual.dados.seguroX, atual.dados.seguroY);
             LimparConfronto();
             DevolverRelogioConfronto();
             int derrotas;
             derrotasConfronto.TryGetValue(c.id, out derrotas);
             derrotasConfronto[c.id] = derrotas + 1;
-            Reposicionar(new Vector2(atual.dados.seguroX, atual.dados.seguroY));
-            AbrirLenda(c, new[]
+            Reposicionar(volta);
+            var linhas = new List<string>
             {
-                string.IsNullOrEmpty(c.derrota) ? "Neto perde o fôlego e recua até a trilha. A lenda continua lá, esperando." : c.derrota,
-                "Na próxima tentativa, Neto já conhece melhor os movimentos dela e terá mais fôlego."
-            }, null);
+                string.IsNullOrEmpty(c.derrota) ? "Neto perde o fôlego e recua até a trilha. A lenda continua lá, esperando." : c.derrota
+            };
+            if (comGuia && c.guiaDerrota != null)
+                linhas.AddRange(c.guiaDerrota);
+            linhas.Add("Na próxima tentativa, Neto já conhece melhor os movimentos dela e terá mais fôlego.");
+            AbrirLenda(c, linhas.ToArray(), null);
         }
 
         private int FogueiraPerto(Vector2 rel)
@@ -563,6 +714,8 @@ namespace MemoriasTecidas.MundoV2
                     continue;
                 par.Value.color = feito ? new Color(.97f, .92f, .8f, .4f) : new Color(.86f, .36f, .24f, .95f);
                 par.Value.transform.localScale = Vector3.one * pulso * (feito ? .8f : 1.25f);
+                // Com quem prepara o jogador no lugar do ponto, a marca fica sobre a cabeça dele.
+                par.Value.transform.localPosition = new Vector3(0f, GuiaRecebe(confrontosPorPonto[par.Key.dados.id]) ? 1.95f : 1.1f, 0f);
             }
         }
 
@@ -571,7 +724,18 @@ namespace MemoriasTecidas.MundoV2
             if (inimigoConfronto == null || sessaoConfronto == null)
                 return;
             var s = sessaoConfronto;
-            inimigoConfronto.transform.position = new Vector3(centroConfronto.x + s.Ix, centroConfronto.y + s.Iy, 0f);
+            float desdeDano = Time.unscaledTime - danoLendaInicio;
+            float dano = desdeDano >= 0f && desdeDano < DuracaoDanoLenda ? 1f - desdeDano / DuracaoDanoLenda : 0f;
+            bool reduzir = apresentacao != null && apresentacao.reduzirMovimento;
+            Vector2 desvio = Vector2.zero;
+            if (dano > 0f && !reduzir)
+            {
+                // Recua rápido, volta ao lugar e o tremor some junto.
+                float recuo = Mathf.Sin(Mathf.PI * Mathf.Min(1f, desdeDano / (DuracaoDanoLenda * .7f)));
+                desvio = empurraoLenda * (.45f * recuo) + Vector2.right * (Mathf.Sin(Time.unscaledTime * 95f) * .06f * dano);
+            }
+
+            inimigoConfronto.transform.position = new Vector3(centroConfronto.x + s.Ix + desvio.x, centroConfronto.y + s.Iy + desvio.y, 0f);
             // A arte dos personagens olha para a esquerda; vira quando a lenda vai para a direita.
             desenhoInimigo.flipX = s.DirX > 0f;
             if (sombraInimigo != null)
@@ -591,9 +755,19 @@ namespace MemoriasTecidas.MundoV2
                 AnimarLenda(s);
 
             Color cor = Color.white;
-            float altura = 1f;
-            if (Time.unscaledTime < brilhoInimigoAte)
-                cor = new Color(1f, .82f, .6f, 1f);
+            float altura = 1f, largura = 1f;
+            if (dano > 0f)
+            {
+                // Pisca avermelhada, como quem sentiu a pancada, e amassa no impacto.
+                bool pisca = Mathf.Repeat(desdeDano * 14f, 1f) < .5f;
+                cor = pisca ? new Color(1f, .38f, .32f, 1f) : new Color(1f, .9f, .85f, .75f);
+                if (!reduzir)
+                {
+                    float amassa = Mathf.Sin(Mathf.PI * Mathf.Min(1f, desdeDano / .22f)) * .14f;
+                    altura = 1f - amassa;
+                    largura = 1f + amassa * .8f;
+                }
+            }
             else if (s.Estado == MTMEstadoInimigo.Preparando)
                 cor = Color.Lerp(Color.white, new Color(1f, .45f, .35f, 1f), s.ProgressoAviso);
             else if (s.Estado == MTMEstadoInimigo.Cansado)
@@ -603,7 +777,7 @@ namespace MemoriasTecidas.MundoV2
             }
 
             desenhoInimigo.color = cor;
-            inimigoConfronto.transform.localScale = new Vector3(escalaInimigo.x, escalaInimigo.y * altura, escalaInimigo.z);
+            inimigoConfronto.transform.localScale = new Vector3(escalaInimigo.x * largura, escalaInimigo.y * altura, escalaInimigo.z);
         }
 
         private void CriarFogueiras()
@@ -792,12 +966,27 @@ namespace MemoriasTecidas.MundoV2
 
             if (s.Estado == MTMEstadoInimigo.Parado)
                 direcaoLenda = Vector2.down;
+            if (contandoConfronto)
+            {
+                // Na contagem ela fica parada, de frente para Neto.
+                ritmo = 0f;
+                Vector2 paraNeto = corpo.position - (centroConfronto + posicao);
+                if (paraNeto.sqrMagnitude > .01f)
+                    direcaoLenda = paraNeto.normalized;
+            }
+
             if (linhasLenda == 8)
                 linhaLenda = MTMConfrontos.LinhaDaDirecao(direcaoLenda.x, direcaoLenda.y);
-            tempoLenda += Time.deltaTime * confrontoAtual.fps * ritmo;
+            tempoLenda += (Time.unscaledTime < pausaLendaAte ? 0f : Time.deltaTime) * confrontoAtual.fps * ritmo;
             var folha = quadrosLenda;
             int coluna = ritmo <= 0f ? 0 : (int)tempoLenda % colunasLenda;
-            if (s.Estado == MTMEstadoInimigo.Investindo && quadrosInvestida != null)
+            if (contandoConfronto && quadrosPreparo != null)
+            {
+                // Empina uma vez durante a contagem e termina junto com o "Já!".
+                folha = quadrosPreparo;
+                coluna = Mathf.Clamp(Mathf.FloorToInt(ProgressoContagem * colunasLenda), 0, colunasLenda - 1);
+            }
+            else if (s.Estado == MTMEstadoInimigo.Investindo && quadrosInvestida != null)
                 folha = quadrosInvestida;
             else if (s.Estado == MTMEstadoInimigo.Preparando && quadrosPreparo != null)
             {
@@ -967,6 +1156,30 @@ namespace MemoriasTecidas.MundoV2
             return sprite;
         }
 
+        // Estrela de oito pontas, longas e curtas alternadas: o "pá!" do golpe recebido.
+        private Texture2D TexturaEstaloHUD()
+        {
+            if (texEstaloHUD != null)
+                return texEstaloHUD;
+            const int n = 96;
+            var p = new Color[n * n];
+            for (int y = 0; y < n; y++)
+                for (int x = 0; x < n; x++)
+                {
+                    float dx = (x + .5f) / n * 2f - 1f, dy = (y + .5f) / n * 2f - 1f;
+                    float r = Mathf.Sqrt(dx * dx + dy * dy), ang = Mathf.Atan2(dy, dx);
+                    float ponta = Mathf.Pow(Mathf.Abs(Mathf.Cos(ang * 4f)), 7f);
+                    float comprida = Mathf.Lerp(.68f, .98f, Mathf.Abs(Mathf.Cos(ang * 2f)));
+                    float borda = Mathf.Lerp(.36f, comprida, ponta);
+                    p[y * n + x] = new Color(1f, 1f, 1f, Mathf.Clamp01((borda - r) * n * .5f));
+                }
+
+            texEstaloHUD = new Texture2D(n, n, TextureFormat.RGBA32, false) { name = "Estalo_golpe", hideFlags = HideFlags.DontSave, wrapMode = TextureWrapMode.Clamp, filterMode = FilterMode.Bilinear };
+            texEstaloHUD.SetPixels(p);
+            texEstaloHUD.Apply(false, true);
+            return texEstaloHUD;
+        }
+
         // ---------- HUD ----------
 
         private Vector2 HudDoMundo(Vector2 mundo)
@@ -1058,12 +1271,45 @@ namespace MemoriasTecidas.MundoV2
                 LosangoCompacta(l, i < s.VidaJogador ? (pisca ? claro : dourado) : new Color(claro.r, claro.g, claro.b, .22f));
             }
 
+            // O losango de fôlego perdido estoura para cima, em vermelho, e some.
+            float perdido = (Time.unscaledTime - netoAtingidoInicio) / .6f;
+            if (folegoPerdido >= 0 && folegoPerdido < c.vidaJogador && perdido >= 0f && perdido < 1f)
+            {
+                Vector2 centroPerdido = new Vector2(pes.x - larguraFolego * .5f + folegoPerdido * 15f + 6f, pes.y + 10f - (reduzir ? 0f : 14f * perdido));
+                float ladoPerdido = 12f * (reduzir ? 1.3f : 1f + 1.2f * perdido);
+                LosangoCompacta(new Rect(centroPerdido.x - ladoPerdido * .5f, centroPerdido.y - ladoPerdido * .5f, ladoPerdido, ladoPerdido),
+                    new Color(perigo.r, perigo.g, perigo.b, .95f * (1f - perdido)));
+            }
+
+            // Estalo no peito de Neto no instante do golpe.
+            float estalo = (Time.unscaledTime - netoAtingidoInicio) / .26f;
+            if (estalo >= 0f && estalo < 1f)
+            {
+                Vector2 peito = HudDoMundo(corpo.position + Vector2.up * .9f);
+                float tamanhoEstalo = escala * (reduzir ? 1.1f : .8f + .6f * Mathf.Sqrt(estalo));
+                float miolo = tamanhoEstalo * .58f, alfaEstalo = 1f - estalo * estalo;
+                var textura = TexturaEstaloHUD();
+                if (!reduzir)
+                    GirarEmVolta(anguloEstalo + estalo * 20f, peito);
+                GUI.color = new Color(perigo.r, perigo.g, perigo.b, alfaEstalo);
+                GUI.DrawTexture(new Rect(peito.x - tamanhoEstalo * .5f, peito.y - tamanhoEstalo * .5f, tamanhoEstalo, tamanhoEstalo), textura);
+                GUI.color = new Color(1f, .95f, .82f, alfaEstalo);
+                GUI.DrawTexture(new Rect(peito.x - miolo * .5f, peito.y - miolo * .5f, miolo, miolo), textura);
+                GUI.color = antiga;
+                GUI.matrix = matriz;
+            }
+
             // Clarão ao ser atingido.
             if (Time.unscaledTime < danoAte)
                 Fundo(new Rect(0, 0, 1280, 720), new Color(perigo.r, perigo.g, perigo.b, .24f * Mathf.Clamp01((danoAte - Time.unscaledTime) / .35f)));
 
             BarraDaLendaHUD(c, s, claro, dourado, perigo);
-            ControlesConfrontoHUD(c, s, fogueiraPerto, inimigo);
+            if (contandoConfronto)
+                ContagemHUD(c, claro, dourado, perigo);
+            else if (encerrandoConfronto)
+                FimConfrontoHUD(claro, dourado, perigo);
+            else
+                ControlesConfrontoHUD(c, s, fogueiraPerto, inimigo);
         }
 
         // Nome entre losangos e fios, como abertura de cordel, e a barra logo abaixo.
@@ -1199,6 +1445,300 @@ namespace MemoriasTecidas.MundoV2
             Rect r = new Rect(640 - largura * .5f, 656, largura, 44);
             PainelHUD(r);
             DicasHUD(r.x + 18, r.y + 9, teclas, rotulos, false);
+        }
+
+        // ---------- preparação e encerramento ----------
+
+        // Quem prepara o jogador está na margem esperando por este confronto (antes da primeira vitória).
+        private bool GuiaRecebe(MTMConfrontoDados c)
+        {
+            return c != null && guiaConfronto != null && guiaDeQual == c.id && !estado.Tem(c.evento);
+        }
+
+        // O guia (ex.: Simão de Góis) espera na margem da arena enquanto o confronto está liberado e ainda não
+        // foi vencido; fica durante a luta e, depois da vitória, até o jogador sair do lugar. Enquanto ele
+        // recebe o jogador, o ponto da luta fica ao lado dele: falar com ele é o que começa o encontro.
+        private void AtualizarGuiaConfronto()
+        {
+            if (!string.IsNullOrEmpty(guiaFicaAte) && (atual == null || atual.dados == null || atual.dados.id != guiaFicaAte))
+                guiaFicaAte = "";
+            MTMConfrontoDados quem = null;
+            foreach (var p in marcadoresConfronto.Keys)
+            {
+                MTMConfrontoDados c;
+                if (p == null || p.dados == null || !confrontosPorPonto.TryGetValue(p.dados.id, out c) || string.IsNullOrEmpty(c.guia))
+                    continue;
+                bool aqui = atual != null && atual.dados != null && atual.dados.id == c.regiao;
+                bool lutando = EmConfronto && confrontoAtual != null && confrontoAtual.id == c.id;
+                bool liberado = (string.IsNullOrEmpty(c.requer) || estado.Tem(c.requer)) && !estado.Tem(c.evento);
+                if (aqui && (lutando || liberado || guiaFicaAte == c.regiao))
+                {
+                    quem = c;
+                    break;
+                }
+            }
+
+            if (guiaConfronto != null && (quem == null || guiaDeQual != quem.id))
+            {
+                Destroy(guiaConfronto);
+                guiaConfronto = null;
+                guiaDeQual = "";
+            }
+
+            if (quem != null && guiaConfronto == null)
+            {
+                guiaConfronto = CriarGuiaConfronto(quem);
+                guiaDeQual = guiaConfronto != null ? quem.id : "";
+            }
+
+            foreach (var p in marcadoresConfronto.Keys)
+            {
+                MTMConfrontoDados c;
+                if (p == null || p.dados == null || !confrontosPorPonto.TryGetValue(p.dados.id, out c))
+                    continue;
+                // Como nos moradores, o ponto fica 0,35 acima dos pés de quem recebe o jogador.
+                Vector3 lugar = GuiaRecebe(c) ? new Vector3(c.x + c.guiaX, c.y + c.guiaY + .35f, 0f) : new Vector3(c.x, c.y, 0f);
+                if (p.transform.localPosition != lugar)
+                    p.transform.localPosition = lugar;
+            }
+        }
+
+        // Cópia do desenho e da sombra do personagem da cena (mesma arte e escala), sem conversa nem colisão.
+        private GameObject CriarGuiaConfronto(MTMConfrontoDados c)
+        {
+            if (guiasSemModelo.Contains(c.id))
+                return null;
+            var regiao = RegiaoTecido(c.regiao);
+            MTMPonto modelo = null;
+            foreach (var r in regioes)
+                if (r != null && r.pontos != null)
+                    foreach (var p in r.pontos)
+                        if (modelo == null && p != null && p.dados != null && p.dados.id == c.guia)
+                            modelo = p;
+            // A conversa dos moradores fica num filho do personagem; o desenho, no personagem.
+            Transform raiz = modelo == null ? null
+                : modelo.GetComponentInChildren<SpriteRenderer>(true) == null && modelo.transform.parent != null ? modelo.transform.parent : modelo.transform;
+            var visual = raiz == null ? null : raiz.GetComponent<MTMVisualV2>();
+            var desenho = visual != null && visual.desenho != null ? visual.desenho : raiz == null ? null : raiz.GetComponentInChildren<SpriteRenderer>(true);
+            if (regiao == null || desenho == null || desenho.sprite == null)
+            {
+                guiasSemModelo.Add(c.id);
+                Debug.LogWarning("Confronto '" + c.id + "': o personagem '" + c.guia + "' não foi achado na cena; o encontro começa sem ele.", this);
+                return null;
+            }
+
+            var go = new GameObject("Guia · " + c.id) { hideFlags = HideFlags.DontSave };
+            go.transform.SetParent(regiao.transform, false);
+            go.transform.localPosition = new Vector3(c.x + c.guiaX, c.y + c.guiaY, 0f);
+            go.transform.localScale = raiz.localScale;
+            CopiarDesenhoDoGuia(desenho, raiz, go.transform, true);
+            if (visual != null && visual.sombra != null && visual.sombra != desenho)
+                CopiarDesenhoDoGuia(visual.sombra, raiz, go.transform, false);
+            return go;
+        }
+
+        private static void CopiarDesenhoDoGuia(SpriteRenderer origem, Transform raiz, Transform destino, bool ordenar)
+        {
+            var go = new GameObject(origem.gameObject.name) { hideFlags = HideFlags.DontSave, layer = origem.gameObject.layer };
+            go.transform.SetParent(destino, false);
+            go.transform.localPosition = raiz.InverseTransformPoint(origem.transform.position);
+            go.transform.localRotation = Quaternion.Inverse(raiz.rotation) * origem.transform.rotation;
+            go.transform.localScale = origem.transform.localScale;
+            var sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = origem.sprite;
+            sr.sharedMaterial = origem.sharedMaterial;
+            sr.color = origem.color;
+            sr.flipX = origem.flipX;
+            sr.flipY = origem.flipY;
+            sr.sortingLayerID = origem.sortingLayerID;
+            sr.sortingOrder = origem.sortingOrder;
+            sr.spriteSortPoint = origem.spriteSortPoint;
+            sr.drawMode = origem.drawMode;
+            if (origem.drawMode != SpriteDrawMode.Simple)
+                sr.size = origem.size;
+            if (ordenar && origem.GetComponent<MTMOrdemY>() != null)
+                go.AddComponent<MTMOrdemY>();
+        }
+
+        private float ProgressoContagem
+        {
+            get { return Mathf.Clamp01((Time.unscaledTime - contagemInicio) / DuracaoContagem); }
+        }
+
+        // Número que a contagem mostra agora: 3, 2, 1 e 0 para o "Já!" (os últimos 0,6 s).
+        private int NumeroContagem(out float dentro)
+        {
+            float t = Time.unscaledTime - contagemInicio;
+            float passo = (DuracaoContagem - .6f) / 3f;
+            if (t >= DuracaoContagem - .6f)
+            {
+                dentro = Mathf.Clamp01((t - (DuracaoContagem - .6f)) / .6f);
+                return 0;
+            }
+
+            int i = Mathf.Clamp(Mathf.FloorToInt(t / passo), 0, 2);
+            dentro = Mathf.Clamp01((t - i * passo) / passo);
+            return 3 - i;
+        }
+
+        // Antes da luta: Neto entra na clareira e encara a lenda, que espera parada; ninguém ataca.
+        private void AtualizarContagem(Vector2 rel)
+        {
+            Vector2 falta = largadaJogador - rel;
+            movimento = falta.magnitude > .2f ? falta.normalized : Vector2.zero;
+            multiplicador = 1f;
+            Vector2 paraLenda = new Vector2(sessaoConfronto.Ix, sessaoConfronto.Iy) - rel;
+            if (paraLenda.sqrMagnitude > .01f)
+                frenteJogador = paraLenda.normalized;
+            float dentro;
+            int numero = NumeroContagem(out dentro);
+            if (numero != numeroContagem)
+            {
+                numeroContagem = numero;
+                if (numero > 0)
+                    TocarSom("ui_clique", .9f, 0f);
+                else
+                    TocarSom(confrontoAtual.tipo == "luta" ? "empina" : "assobio", 1f, .02f);
+            }
+
+            if (Time.unscaledTime - contagemInicio >= DuracaoContagem)
+                contandoConfronto = false;
+        }
+
+        // Último golpe da luta: a lenda recua e some (vitória) ou fica onde está (derrota), o aviso aparece
+        // e só depois vem o diálogo do fim.
+        private void IniciarEncerramento(bool vitoria)
+        {
+            encerrandoConfronto = true;
+            fimComVitoria = vitoria;
+            fimInicio = Time.unscaledTime;
+            TocarSom(vitoria ? "vitoria" : "derrota", .9f, 0f);
+            if (inimigoConfronto != null)
+            {
+                inimigoConfronto.transform.localScale = escalaInimigo;
+                posicaoFimLenda = inimigoConfronto.transform.position;
+                Vector2 longe = posicaoFimLenda - corpo.position;
+                direcaoFimLenda = longe.sqrMagnitude > .01f ? longe.normalized : Vector2.up;
+            }
+
+            alfaSombraFim = sombraInimigo != null ? sombraInimigo.color.a : 1f;
+        }
+
+        private void AtualizarEncerramento()
+        {
+            float t = Time.unscaledTime - fimInicio;
+            if (fimComVitoria && inimigoConfronto != null && desenhoInimigo != null)
+            {
+                float k = Mathf.Clamp01((t - .3f) / 1.6f);
+                float suave = k * k * (3f - 2f * k);
+                inimigoConfronto.transform.position = posicaoFimLenda + direcaoFimLenda * (3.2f * suave);
+                if (quadrosLenda != null && colunasLenda > 0 && k > 0f)
+                {
+                    int linha = linhasLenda == 8 ? MTMConfrontos.LinhaDaDirecao(direcaoFimLenda.x, direcaoFimLenda.y) : 0;
+                    int coluna = (int)(t * confrontoAtual.fps * 1.2f) % colunasLenda;
+                    desenhoInimigo.sprite = quadrosLenda[linha * colunasLenda + coluna];
+                    desenhoInimigo.flipX = false;
+                    if (sombraInimigo != null)
+                    {
+                        sombraInimigo.sprite = desenhoInimigo.sprite;
+                        sombraInimigo.flipX = false;
+                    }
+                }
+
+                desenhoInimigo.color = new Color(1f, 1f, 1f, 1f - suave);
+                if (sombraInimigo != null)
+                {
+                    var cs = sombraInimigo.color;
+                    cs.a = alfaSombraFim * (1f - suave);
+                    sombraInimigo.color = cs;
+                }
+            }
+
+            if (t < (fimComVitoria ? DuracaoFimVitoria : DuracaoFimDerrota))
+                return;
+            encerrandoConfronto = false;
+            if (fimComVitoria)
+                VencerConfronto();
+            else
+                PerderConfronto();
+        }
+
+        private static Color ComAlfa(Color cor, float alfa)
+        {
+            cor.a *= alfa;
+            return cor;
+        }
+
+        // Antes da luta: "Prepare-se" entre fios, a contagem (3, 2, 1, Já!) e os lembretes de como lutar.
+        private void ContagemHUD(MTMConfrontoDados c, Color claro, Color dourado, Color perigo)
+        {
+            float dentro;
+            int numero = NumeroContagem(out dentro);
+            float t = Time.unscaledTime - contagemInicio;
+            float a = Mathf.Clamp01(t / .25f) * (numero == 0 ? 1f - Mathf.Clamp01((dentro - .5f) / .5f) : 1f);
+            if (a <= 0f)
+                return;
+            bool reduzir = apresentacao != null && apresentacao.reduzirMovimento;
+            const float meio = 640f, y = 148f;
+            const string titulo = "PREPARE-SE";
+            float lt = LarguraTextoHUD(titulo, 22, true);
+            Fundo(new Rect(meio - 230f, y + 15f, 230f - lt * .5f - 26f, 1), ComAlfa(dourado, .8f * a));
+            Fundo(new Rect(meio + lt * .5f + 26f, y + 15f, 230f - lt * .5f - 26f, 1), ComAlfa(dourado, .8f * a));
+            LosangoCompacta(new Rect(meio - lt * .5f - 20f, y + 10f, 11, 11), ComAlfa(dourado, a));
+            LosangoCompacta(new Rect(meio + lt * .5f + 9f, y + 10f, 11, 11), ComAlfa(dourado, a));
+            TextoSombraHUD(new Rect(meio - lt * .5f - 4f, y, lt + 8f, 30), titulo, 22, ComAlfa(dourado, a), true, TextAnchor.MiddleCenter);
+
+            // Número grande: chega maior e assenta; o "Já!" sai na cor do perigo.
+            Matrix4x4 matriz = GUI.matrix;
+            float escala = reduzir ? 1f : Mathf.Lerp(1.5f, 1f, Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(dentro * 2.5f)));
+            GUIUtility.ScaleAroundPivot(new Vector2(escala, escala), GUI.matrix.MultiplyPoint3x4(new Vector3(meio, y + 92f, 0f)));
+            TextoSombraHUD(new Rect(meio - 170f, y + 40f, 340f, 104f), numero == 0 ? "JÁ!" : numero.ToString(), 88,
+                ComAlfa(numero == 0 ? perigo : claro, a), true, TextAnchor.MiddleCenter);
+            GUI.matrix = matriz;
+
+            if (c.regras == null || c.regras.Length == 0)
+                return;
+            float larg = 0f;
+            foreach (var r in c.regras)
+                larg = Mathf.Max(larg, LarguraTextoHUD(r, 16, false));
+            larg = Mathf.Min(larg + 70f, 640f);
+            Rect painel = new Rect(meio - larg * .5f, y + 158f, larg, 16f + c.regras.Length * 28f);
+            PainelHUD(painel, a);
+            for (int i = 0; i < c.regras.Length; i++)
+            {
+                float ly = painel.y + 8f + i * 28f;
+                LosangoCompacta(new Rect(painel.x + 22f, ly + 9f, 10, 10), ComAlfa(dourado, a));
+                TextoTecido(new Rect(painel.x + 42f, ly, larg - 54f, 28f), c.regras[i], 16, ComAlfa(claro, a), false, TextAnchor.MiddleLeft);
+            }
+        }
+
+        // Fim da luta: "Vitória" ou "Sem fôlego" e "A luta terminou", antes do diálogo.
+        private void FimConfrontoHUD(Color claro, Color dourado, Color perigo)
+        {
+            float dur = fimComVitoria ? DuracaoFimVitoria : DuracaoFimDerrota;
+            float t = Time.unscaledTime - fimInicio;
+            float a = Mathf.Clamp01((t - .15f) / .3f) * (1f - Mathf.Clamp01((t - (dur - .35f)) / .35f));
+            if (a <= 0f)
+                return;
+            bool reduzir = apresentacao != null && apresentacao.reduzirMovimento;
+            Fundo(new Rect(0, 0, 1280, 720), new Color(0f, 0f, 0f, .26f * a));
+            const float meio = 640f, y = 250f;
+            Matrix4x4 matriz = GUI.matrix;
+            float escala = reduzir ? 1f : Mathf.Lerp(1.25f, 1f, Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((t - .15f) / .45f)));
+            GUIUtility.ScaleAroundPivot(new Vector2(escala, escala), GUI.matrix.MultiplyPoint3x4(new Vector3(meio, y + 40f, 0f)));
+            TextoSombraHUD(new Rect(meio - 380f, y, 760f, 84f), fimComVitoria ? "VITÓRIA" : "SEM FÔLEGO", 66,
+                ComAlfa(fimComVitoria ? dourado : perigo, a), true, TextAnchor.MiddleCenter);
+            GUI.matrix = matriz;
+            const string sub = "A luta terminou";
+            float ls = LarguraTextoHUD(sub, 20, true);
+            float yl = y + 92f;
+            Fundo(new Rect(meio - ls * .5f - 190f, yl + 14f, 160f, 1), ComAlfa(dourado, .8f * a));
+            Fundo(new Rect(meio + ls * .5f + 30f, yl + 14f, 160f, 1), ComAlfa(dourado, .8f * a));
+            LosangoCompacta(new Rect(meio - ls * .5f - 24f, yl + 9f, 11, 11), ComAlfa(dourado, a));
+            LosangoCompacta(new Rect(meio + ls * .5f + 13f, yl + 9f, 11, 11), ComAlfa(dourado, a));
+            TextoSombraHUD(new Rect(meio - ls * .5f - 4f, yl, ls + 8f, 28f), sub, 20, ComAlfa(claro, a), true, TextAnchor.MiddleCenter);
+            if (!fimComVitoria)
+                TextoSombraHUD(new Rect(meio - 300f, yl + 36f, 600f, 26f), "Respire e tente de novo.", 16, ComAlfa(claro, .9f * a), false, TextAnchor.MiddleCenter);
         }
 
         // ---------- Caderno ----------

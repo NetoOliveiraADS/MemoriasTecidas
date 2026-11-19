@@ -239,6 +239,13 @@ namespace MemoriasTecidas.MundoV2
         }
 
         // Sem as poses de corrida (ou com problema nelas), o Neto corre com as da caminhada.
+        // Uma pose com "folha" vazia também usa a da caminhada: assim dá para ligar a corrida
+        // direção por direção, à medida que as imagens ficam prontas.
+        private static bool SemPoseCorrida(MTMQuadroHD2D q)
+        {
+            return q == null || string.IsNullOrEmpty(q.folha);
+        }
+
         private void ValidarNetoCorrida(MTMQuadroHD2D[] lista)
         {
             netoCorrida = null;
@@ -249,9 +256,15 @@ namespace MemoriasTecidas.MundoV2
                 if (lista.Length != dados.neto.Length)
                     throw new InvalidOperationException("são necessárias " + dados.neto.Length + " poses, na mesma ordem de \"neto\".");
                 var ids = new HashSet<string>();
+                int poses = 0;
                 foreach (var q in lista)
-                    ValidarQuadro(q, ids);
-                netoCorrida = lista;
+                    if (!SemPoseCorrida(q))
+                    {
+                        ValidarQuadro(q, ids);
+                        poses++;
+                    }
+                if (poses > 0)
+                    netoCorrida = lista;
             }
             catch (Exception e)
             {
@@ -423,7 +436,8 @@ namespace MemoriasTecidas.MundoV2
             // Mesma escala das poses de caminhada (mesma altura de referência).
             var corrida = new Sprite[netoCorrida.Length];
             for (int i = 0; i < corrida.Length; i++)
-                corrida[i] = CriarSprite(netoCorrida[i], netoCorrida[i].alturaReferencia / altura, ator.GetInstanceID() + ":corrida:" + netoCorrida[i].id);
+                corrida[i] = SemPoseCorrida(netoCorrida[i]) ? null :
+                    CriarSprite(netoCorrida[i], netoCorrida[i].alturaReferencia / altura, ator.GetInstanceID() + ":corrida:" + netoCorrida[i].id);
             var anteriores = ator.quadrosCorrida;
             restaurar.Add(() =>
             {
