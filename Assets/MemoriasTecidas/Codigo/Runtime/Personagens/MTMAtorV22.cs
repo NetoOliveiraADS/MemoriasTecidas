@@ -35,6 +35,15 @@ namespace MemoriasTecidas.MundoV2
         private float tempo, fase;
         private bool primeiraLeitura = true, andava;
         public float RapidezReal { get; private set; }
+        // Deslocamento visto neste quadro (unidades por segundo): a passada dos moradores inclina para ele.
+        public Vector2 VelocidadeReal { get; private set; }
+
+        // Distância de uma passada completa (os dois pés). Moradores dão passos um pouco mais curtos que o
+        // Neto, para a cadência do andar devagar não parecer flutuar. Usado também pela captura do Editor.
+        public static float Passada(float altura, Tipo tipo)
+        {
+            return Mathf.Max(.35f, altura * (tipo == Tipo.Jogador ? .45f : .36f));
+        }
         // Direção do sprite (0 baixo, 1 baixo-esquerda ... 7 baixo-direita).
         public int Direcao
         {
@@ -83,6 +92,7 @@ namespace MemoriasTecidas.MundoV2
             andava = false;
             tempo = 0;
             RapidezReal = 0;
+            VelocidadeReal = Vector2.zero;
             FaseCaminhada = 0;
         }
 
@@ -133,12 +143,12 @@ namespace MemoriasTecidas.MundoV2
                 velocidade = Vector2.zero;
             bool andando = velocidade.sqrMagnitude > (tipo == Tipo.Jogador ? .0001f : .01f);
             RapidezReal = andando ? velocidade.magnitude : 0f;
+            VelocidadeReal = andando ? velocidade : Vector2.zero;
             float percurso = andando ? RapidezReal * Time.deltaTime : 0f;
             if (andando)
             {
                 float altura = desenho.sprite != null ? desenho.sprite.bounds.size.y * Mathf.Abs(transform.lossyScale.y) : 1.6f;
-                float passada = Mathf.Max(.35f, altura * .45f);
-                FaseCaminhada = Mathf.Repeat(FaseCaminhada + percurso / passada * Mathf.PI * 2f, Mathf.PI * 2f);
+                FaseCaminhada = Mathf.Repeat(FaseCaminhada + percurso / Passada(altura, tipo) * Mathf.PI * 2f, Mathf.PI * 2f);
             }
             else
                 FaseCaminhada = 0f;

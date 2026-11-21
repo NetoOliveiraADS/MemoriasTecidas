@@ -178,6 +178,10 @@ namespace MemoriasTecidas.MundoV2
                 if (AcaoTecido(r, "hud:atalho:" + ids[i])) AlternarPainel(ids[i]);
             }
 
+            // Lanterna: ao escurecer aparece ao lado dos atalhos, com a tecla (F ou RB) e acesa ou apagada.
+            if (Escuridao > .05f)
+                LanternaHUD(new Rect(1260 - 4 * 68f + 10f, 642, 58, 58), a);
+
             // Dica de controles só até a primeira conversa; depois o jogador já sabe andar.
             if (!estado.Tem(EventoPrimeiraConversa))
             {
@@ -198,6 +202,35 @@ namespace MemoriasTecidas.MundoV2
                 TextoTecido(new Rect(receita.x + 44, receita.y, 192, receita.height), "Conferir materiais da rede", 13, CremeHUD, false, TextAnchor.MiddleLeft);
                 if (AcaoTecido(receita, "hud:receita")) AlternarPainel("receita");
             }
+        }
+
+        private Texture2D texIconeLanterna;
+
+        // Atalho da lanterna: o desenho dela (com a lente brilhando quando está ligada) e a tecla para alternar.
+        private void LanternaHUD(Rect r, float alfa)
+        {
+            bool ligada = lanternaLigada;
+            // Ligada, o atalho fica sempre visível; apagada, recua junto com os outros enquanto o Neto anda.
+            float a = ligada ? 1f : alfa;
+            PainelHUD(r, a, ligada);
+            if (texIconeLanterna == null)
+                texIconeLanterna = Resources.Load<Texture2D>(ArteLanterna);
+            Rect icone = new Rect(r.x + 8f, r.y + 14f, r.width - 16f, 22f);
+            if (ligada)
+                BrilhoAbertura(new Rect(icone.xMax - 14f, icone.center.y - 13f, 26f, 26f), new Color(1f, .9f, .6f, .75f * a));
+            if (texIconeLanterna != null)
+            {
+                Color antiga = GUI.color;
+                GUI.color = ligada ? new Color(1f, 1f, 1f, a) : new Color(.62f, .6f, .58f, .75f * a);
+                GUI.DrawTexture(icone, texIconeLanterna, ScaleMode.ScaleToFit, true);
+                GUI.color = antiga;
+            }
+            else
+                TextoTecido(icone, "Lanterna", 11, AlfaTecido(CremeHUD, a), true, TextAnchor.MiddleCenter);
+
+            TeclaHUD(r.xMax - 18, r.yMax - 16, "F", a, 11, 20f);
+            if (AcaoTecido(r, "hud:lanterna"))
+                AlternarLanterna();
         }
 
         // Balão preso ao ponto mais próximo: tecla E redonda e a ação.

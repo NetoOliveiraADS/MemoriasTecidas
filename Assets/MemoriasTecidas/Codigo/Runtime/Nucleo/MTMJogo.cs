@@ -57,6 +57,7 @@ namespace MemoriasTecidas.MundoV2
         {
             corpo = GetComponent<Rigidbody2D>();
             PrepararApresentacao();
+            PrepararTesteAutomatico();
         }
 
         private void Start()
@@ -68,6 +69,8 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
+            if (carregarProgresso)
+                TrazerSaveDaPastaAntiga();
             PrepararMenusUI();
             if (carregarProgresso)
                 Carregar();

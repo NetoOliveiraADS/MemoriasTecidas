@@ -12,6 +12,7 @@ namespace MemoriasTecidas.MundoV2
         private MTMMissaoTecido missaoEscolta, missaoAparicao;
         private MTMEtapaTecido etapaEscolta, etapaAparicao;
         private int passoEscolta;
+        private float rapidezEscolta;
         private float fimAparicao, proximaRevisaoRoteiro;
         private AudioSource sonsRioRoteiro;
         private Sprite placaRoteiro, brilhoRoteiro;
@@ -352,6 +353,7 @@ namespace MemoriasTecidas.MundoV2
             missaoEscolta = m;
             etapaEscolta = e;
             passoEscolta = 1;
+            rapidezEscolta = 0f;
             var p = PontoTecido(e.regiao, e.ponto);
             if (p != null && e.percurso != null && e.percurso.Length > 0)
                 p.transform.localPosition = new Vector3(e.percurso[0].x, e.percurso[0].y, 0);
@@ -406,18 +408,25 @@ namespace MemoriasTecidas.MundoV2
             if (etapaEscolta != null && atual.dados.id == etapaEscolta.regiao)
             {
                 var p = PontoTecido(etapaEscolta.regiao, etapaEscolta.ponto);
-                if (p != null && etapaEscolta.percurso != null && Vector2.Distance(transform.position, p.transform.position) <= 5f)
+                bool junto = p != null && Vector2.Distance(transform.position, p.transform.position) <= 5f;
+                if (p != null && etapaEscolta.percurso != null)
                 {
+                    // Sai andando aos poucos, espera parando com calma quando o jogador se afasta
+                    // e chega ao fim do caminho desacelerando.
                     if (passoEscolta < etapaEscolta.percurso.Length)
                     {
                         var v = etapaEscolta.percurso[passoEscolta];
                         var alvo = new Vector3(v.x, v.y, 0);
-                        p.transform.localPosition = Vector3.MoveTowards(p.transform.localPosition, alvo, 1.15f * Time.deltaTime);
+                        float falta = Vector3.Distance(p.transform.localPosition, alvo);
+                        bool ultimo = passoEscolta == etapaEscolta.percurso.Length - 1;
+                        float desejada = !junto ? 0f : ultimo ? Mathf.Min(1.15f, Mathf.Sqrt(2f * 2f * falta)) : 1.15f;
+                        rapidezEscolta = Mathf.MoveTowards(rapidezEscolta, desejada, (junto ? 2f : 3f) * Time.deltaTime);
+                        p.transform.localPosition = Vector3.MoveTowards(p.transform.localPosition, alvo, rapidezEscolta * Time.deltaTime);
                         if (Vector3.Distance(p.transform.localPosition, alvo) < .05f)
                             passoEscolta++;
                     }
 
-                    if (passoEscolta >= etapaEscolta.percurso.Length)
+                    if (junto && passoEscolta >= etapaEscolta.percurso.Length)
                     {
                         var e = etapaEscolta;
                         var m = missaoEscolta;

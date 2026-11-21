@@ -321,7 +321,7 @@ namespace MemoriasTecidas.MundoV2
                     "R",
                     "Roda / + / −",
                     "F1",
-                    "Espaço · L",
+                    "Clique · L",
                     "F"
                 };
             var acoes = new System.Collections.Generic.List<string>
@@ -356,7 +356,7 @@ namespace MemoriasTecidas.MundoV2
             IconeTecido("rede", new Rect(234, 230, 196, 138), terracotaUI);
             TextoTecido(new Rect(470, 222, 570, 112), "Memórias Tecidas aproxima lugares, personagens e saberes por meio da exploração e da criação de uma rede de lembranças.", 21, textoPapelUI);
             TextoTecido(new Rect(214, 404, 852, 104), "Os diálogos e atividades são adaptações ficcionais e didáticas. As fontes dos encontros aparecem no caderno; os textos não devem ser tratados como depoimentos históricos autênticos.", 18, textoPapelUI);
-            TextoTecido(new Rect(214, 516, 852, 90), "Fontes DejaVu.\nSons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D. © Wildfire Games, wildfiregames.com (CC BY-SA 3.0).\nLista completa em Resources/MemoriasTecidas/Sons/CREDITOS.txt.\nBandeira de Jaguaruana: símbolo oficial do município, redesenhado para a abertura.\nFoto da Matriz de Sant'Ana na abertura: @fotosdoceara.", 13, textoPapelUI);
+            TextoTecido(new Rect(214, 516, 852, 90), "Fontes DejaVu. Sons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D. © Wildfire Games, wildfiregames.com (CC BY-SA 3.0).\nLista completa em Resources/MemoriasTecidas/Sons/CREDITOS.txt.\nBandeira de Jaguaruana: símbolo oficial do município, redesenhado para a abertura.\nFotos: Matriz de Sant'Ana, @fotosdoceara; Raimundo Jaguaribe, Ivonete Maia e Padre Ducéu, blog Memórias de Jaguaruana.", 13, textoPapelUI);
             if (prologo != null && BotaoTecido(new Rect(214, 616, 300, 40), "Assistir à abertura  →"))
                 ReverAbertura();
         }

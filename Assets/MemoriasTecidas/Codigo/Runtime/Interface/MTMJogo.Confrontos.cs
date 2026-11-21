@@ -1423,7 +1423,7 @@ namespace MemoriasTecidas.MundoV2
             switch (s.Fase)
             {
                 case MTMFaseConfronto.Luta:
-                    teclas = new[] { "Espaço", "Shift" };
+                    teclas = new[] { "Clique", "Shift" };
                     rotulos = new[] { string.IsNullOrEmpty(c.nomeArma) ? "Golpear" : "Golpear com o " + c.nomeArma, "Correr" };
                     break;
                 case MTMFaseConfronto.Cerco:

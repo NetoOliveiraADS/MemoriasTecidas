@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 7302679358907619278}
   - component: {fileID: 3263246257445656061}
   - component: {fileID: 2482908684043655596}
+  - component: {fileID: 8874238043622301699}
   m_Layer: 0
   m_Name: canoa
   m_TagString: Untagged
@@ -189,6 +190,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &8874238043622301699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050877650422391569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a780ab4a7eaf3948bb41345987d8ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoriasTecidas.MundoV2.MTMFlutuanteV25
+  desenho: {fileID: 4441486493428433038}
+  altura: 0.035
+  inclinacao: 1.2
+  ritmo: 1
 --- !u!1 &7818752354276011399
 GameObject:
   m_ObjectHideFlags: 0

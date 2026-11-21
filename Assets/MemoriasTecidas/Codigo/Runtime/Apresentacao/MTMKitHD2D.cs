@@ -409,11 +409,12 @@ namespace MemoriasTecidas.MundoV2
                             foreach (var ator in regiao.GetComponentsInChildren<MTMAtorV22>(true))
                                 if (ator.tipo == MTMAtorV22.Tipo.Morador)
                                     AplicarMorador(ator);
+                AvisarPontosSemArte(jogo);
                 aplicado = true;
                 if (Personagens == 0)
                     Debug.LogWarning("HD2D: não foi encontrado o animador MTMAtorV22 do Neto. A aparência anterior foi mantida.", jogo);
                 if (dados.preservarCenarioOriginal)
-                    Debug.Log("Cenário original preservado: sprites, texturas, materiais e ilustrações dos lugares mantidos. " + Personagens + " protagonista(s) e " + Retratos + " retrato(s) atualizados.", jogo);
+                    Debug.Log("Cenário original preservado: sprites, texturas, materiais e ilustrações dos lugares mantidos. " + Personagens + " protagonista(s), " + Moradores + " morador(es) e " + Retratos + " retrato(s) atualizados.", jogo);
                 else
                     Debug.Log("HD2D integrado: " + Personagens + " protagonista(s), " + Moradores + " outros personagens, " + Objetos + " objetos, " + Superficies + " superfícies, " + Pisos + " pisos e " + Retratos + " retrato(s).", jogo);
             }
@@ -492,8 +493,10 @@ namespace MemoriasTecidas.MundoV2
                 return;
             Sprite anterior = sr.sprite;
             Sprite[] anteriores = ator.quadros;
-            // Pessoa criada pelo roteiro: fica dentro do próprio ponto de conversa.
-            var dono = ator.GetComponentInParent<MTMPonto>();
+            // Pessoa criada pelo roteiro: fica dentro do próprio ponto de conversa. As regiões que o Neto não está
+            // visitando ficam desligadas: sem "true" o ponto não seria achado e a pessoa ganharia a arte do modelo
+            // (o visitante da Serra aparecia como André Lúcio).
+            var dono = ator.GetComponentInParent<MTMPonto>(true);
             string ponto = dono != null && dono.dados != null ? dono.dados.id : null;
             Sprite atual = Revisado(anterior, ponto);
             bool trocou = atual != anterior;
@@ -510,6 +513,8 @@ namespace MemoriasTecidas.MundoV2
 
             if (!trocou)
                 return;
+            if (!string.IsNullOrEmpty(ponto) && (TemArteDoPonto(ponto, anterior) || (anteriores != null && Array.Exists(anteriores, s => TemArteDoPonto(ponto, s)))))
+                pontosTrocados.Add(ponto);
             restaurar.Add(() =>
             {
                 if (ator != null)
@@ -520,6 +525,29 @@ namespace MemoriasTecidas.MundoV2
             ator.quadros = novos;
             sr.sprite = atual;
             Moradores++;
+        }
+
+        // Pessoas com arte própria pelo ponto (como o visitante da Serra, criado a partir de outro morador).
+        private readonly HashSet<string> pontosTrocados = new HashSet<string>(StringComparer.Ordinal);
+
+        private bool TemArteDoPonto(string ponto, Sprite s)
+        {
+            return s != null && moradores.ContainsKey(ChaveMorador(ponto, s.name));
+        }
+
+        // Avisa quando uma dessas pessoas ficou com a arte do modelo (ela apareceria como outro personagem).
+        private void AvisarPontosSemArte(MTMJogo jogo)
+        {
+            var avisados = new HashSet<string>(StringComparer.Ordinal);
+            foreach (var chave in moradores.Keys)
+            {
+                int barra = chave.IndexOf('|');
+                if (barra <= 0)
+                    continue;
+                string ponto = chave.Substring(0, barra);
+                if (avisados.Add(ponto) && !pontosTrocados.Contains(ponto))
+                    Debug.LogWarning("HD2D: o personagem do ponto '" + ponto + "' tem arte própria, mas ficou com a arte do modelo.", jogo);
+            }
         }
 
         // A pose revisada ocupa no mundo a mesma altura da pose antiga.
@@ -546,7 +574,8 @@ namespace MemoriasTecidas.MundoV2
         {
             if (sr.name.IndexOf("sombra", StringComparison.OrdinalIgnoreCase) >= 0)
                 return true;
-            var visual = sr.GetComponentInParent<MTMVisualV2>();
+            // "true": também nas regiões desligadas (as que o Neto não está visitando).
+            var visual = sr.GetComponentInParent<MTMVisualV2>(true);
             return visual != null && visual.sombra == sr;
         }
 

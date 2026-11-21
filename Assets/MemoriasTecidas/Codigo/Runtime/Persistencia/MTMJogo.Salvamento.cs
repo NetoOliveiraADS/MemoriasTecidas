@@ -14,6 +14,37 @@ namespace MemoriasTecidas.MundoV2
             }
         }
 
+        // A pasta do save leva o nome da empresa e do jogo (Player Settings). Até a versão 3.0 ela era
+        // DefaultCompany/MemoriasTecidas: se o save ainda não existe na pasta nova, copia o de lá
+        // (o arquivo antigo fica intacto). As preferências (volume, imagem) começam do padrão.
+        private void TrazerSaveDaPastaAntiga()
+        {
+            try
+            {
+                string pastaAtual = Application.persistentDataPath;
+                string raiz = Path.GetDirectoryName(Path.GetDirectoryName(pastaAtual));
+                if (string.IsNullOrEmpty(raiz))
+                    return;
+                string pastaAntiga = Path.Combine(raiz, "DefaultCompany", "MemoriasTecidas");
+                if (!Directory.Exists(pastaAntiga) || string.Equals(Path.GetFullPath(pastaAntiga).TrimEnd('\\', '/'),
+                        Path.GetFullPath(pastaAtual).TrimEnd('\\', '/'), StringComparison.OrdinalIgnoreCase))
+                    return;
+                foreach (var nome in new[] { "memorias-tecidas-mundo-v2.json", "memorias-tecidas-mundo-v1.json" })
+                {
+                    string de = Path.Combine(pastaAntiga, nome), para = Path.Combine(pastaAtual, nome);
+                    if (!File.Exists(de) || File.Exists(para))
+                        continue;
+                    Directory.CreateDirectory(pastaAtual);
+                    File.Copy(de, para, false);
+                    Debug.Log("Progresso trazido da pasta anterior: " + de, this);
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning("Não foi possível trazer o progresso da pasta anterior: " + e.Message, this);
+            }
+        }
+
         private void Salvar()
         {
             if (!pronto || !carregarProgresso || !jornadaIniciadaUI)

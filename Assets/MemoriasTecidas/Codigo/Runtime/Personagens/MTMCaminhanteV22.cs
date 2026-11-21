@@ -23,12 +23,15 @@ namespace MemoriasTecidas.MundoV2
         private readonly RaycastHit2D[] acertos = new RaycastHit2D[24];
         private Rigidbody2D corpo;
         private float rapidezAtual, fasePausa;
+        // Cada um tem o seu passo: uns andam um pouco mais depressa, outros mais devagar.
+        private float ritmo = 1f;
         private void Awake()
         {
             corpo = GetComponent<Rigidbody2D>();
             if (corpo != null && corpo.bodyType == RigidbodyType2D.Kinematic && corpo.interpolation == RigidbodyInterpolation2D.None)
                 corpo.interpolation = RigidbodyInterpolation2D.Interpolate;
             fasePausa = Mathf.Repeat(Mathf.Abs(transform.position.x * .31f + transform.position.y * .73f), 1f);
+            ritmo = Mathf.Lerp(.88f, 1.12f, Mathf.Repeat(fasePausa * 7.31f + .17f, 1f));
             espera = Mathf.Abs(transform.position.x * .7f) % pausa;
         }
 
@@ -81,13 +84,11 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
-            if ((transform.position - vida.transform.position).sqrMagnitude < (animal ? 1.21f : 6.25f))
-            {
-                rapidezAtual = 0f;
+            // Com o jogador por perto, para com calma (alguns passos curtos) em vez de travar no lugar.
+            bool frear = (transform.position - vida.transform.position).sqrMagnitude < (animal ? 1.21f : 6.25f);
+            if (frear && rapidezAtual <= 0f)
                 return;
-            }
-
-            if (espera > 0f)
+            if (!frear && espera > 0f)
             {
                 espera -= dt;
                 rapidezAtual = 0f;
@@ -97,7 +98,7 @@ namespace MemoriasTecidas.MundoV2
             Vector2 alvo = transform.parent != null ? (Vector2)transform.parent.TransformPoint(pontos[destino]) : pontos[destino];
             Vector2 pos = corpo != null ? corpo.position : (Vector2)transform.position;
             Vector2 delta = alvo - pos;
-            float rapidez = animal ? velocidade : vida.velocidadeMoradores;
+            float rapidez = (animal ? velocidade : vida.velocidadeMoradores) * ritmo;
             float distancia = delta.magnitude;
             if (distancia < .06f)
             {
@@ -105,8 +106,10 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
-            float desejada = Mathf.Min(rapidez, Mathf.Sqrt(2f * 2.4f * Mathf.Max(0f, distancia - .03f)));
-            rapidezAtual = Mathf.MoveTowards(rapidezAtual, desejada, 2.4f * dt);
+            float desejada = frear ? 0f : Mathf.Min(rapidez, Mathf.Sqrt(2f * 2.4f * Mathf.Max(0f, distancia - .03f)));
+            rapidezAtual = Mathf.MoveTowards(rapidezAtual, desejada, (frear ? 3.6f : 2.4f) * dt);
+            if (rapidezAtual <= 0f)
+                return;
             float passo = Mathf.Min(distancia, rapidezAtual * dt);
             var filtro = new ContactFilter2D();
             filtro.SetLayerMask(obstaculos);
@@ -134,7 +137,8 @@ namespace MemoriasTecidas.MundoV2
         {
             destino = (destino + 1) % pontos.Length;
             rapidezAtual = 0f;
-            espera = pausa * Mathf.Lerp(.85f, 1.15f, Mathf.Repeat(fasePausa + destino * .618034f, 1f));
+            // Pausas variadas: às vezes uma olhada rápida, às vezes uma parada mais longa.
+            espera = pausa * Mathf.Lerp(.6f, 1.5f, Mathf.Repeat(fasePausa + destino * .618034f, 1f));
         }
 
         private void OnDrawGizmosSelected()

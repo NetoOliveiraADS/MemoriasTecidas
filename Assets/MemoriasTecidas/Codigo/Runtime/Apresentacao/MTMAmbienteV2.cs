@@ -8,6 +8,20 @@ namespace MemoriasTecidas.MundoV2
         public static float Sol = 1f, Fase = .33f;
         public static bool Interior { get; private set; }
 
+        // Relógio das animações do cenário (água, copas, plantas). No jogo é Time.time; as capturas
+        // do editor fixam um instante para gravar o movimento quadro a quadro.
+        public static float TempoFixo = float.NaN;
+        public static float Tempo => float.IsNaN(TempoFixo) ? Time.time : TempoFixo;
+
+        // Rajadas que atravessam o lugar de oeste para leste, de .55 (calmaria) a 1 (rajada).
+        // A mesma conta está em MTMRajada (MTMIluminacao.cginc), para plantas e copas balançarem juntas.
+        public static float Rajada(float x, float fase, float t)
+        {
+            float frente = .5f + .5f * Mathf.Sin(x * .12f - t * .45f);
+            float pulso = .5f + .5f * Mathf.Sin(t * .23f + fase * .7f);
+            return .55f + .45f * frente * (.55f + .45f * pulso);
+        }
+
         // Luzes que mudam a cada quadro (fogueiras, lamparina). Quem usa limpa e preenche
         // antes de Atualizar; elas entram na frente das luzes fixas da região.
         public struct LuzDinamica
@@ -54,7 +68,7 @@ namespace MemoriasTecidas.MundoV2
                 luzAtual = Color.Lerp(luzAtual, alvo, 1f - Mathf.Exp(-5f * Mathf.Min(Time.unscaledDeltaTime, .1f)));
             float vento = arte.reduzirMovimento || area.interior ? 0f : arte.vento;
             Shader.SetGlobalFloat("_MTV_Active", 1f);
-            Shader.SetGlobalFloat("_MTV_Time", Time.time);
+            Shader.SetGlobalFloat("_MTV_Time", Tempo);
             Shader.SetGlobalFloat("_MTV_Quality", Qualidade);
             Shader.SetGlobalFloat("_MTV_Motion", arte.reduzirMovimento ? 0f : 1f);
             Shader.SetGlobalColor("_MTV_Ambient", luzAtual);

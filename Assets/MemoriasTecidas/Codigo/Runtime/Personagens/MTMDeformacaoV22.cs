@@ -41,6 +41,9 @@ namespace MemoriasTecidas.MundoV2
         private Vector3[] repouso;
         private Vector2[] pesos;
         private Vector4[] ondas;
+        // Por vértice: pé (1 no chão, 0 no quadril), lado esquerdo e direito da arte, tronco (0 nas pernas, 1 do peito para cima).
+        private Vector4[] passada;
+        private float andarSuave, inclinacaoSuave;
         private Vector2[] uvLocal;
         private Vector2[] uvs;
         private Color[] cores;
@@ -141,7 +144,8 @@ namespace MemoriasTecidas.MundoV2
                 propriedades.SetVector("_MTM_Deform", new Vector4(tipo == Tipo.Copa ? 1f : 2f, amplitude * vento, inicioDoMovimento, fase));
                 renderizador.SetPropertyBlock(propriedades);
                 Bounds limite = limitesRepouso;
-                limite.Expand(new Vector3(amplitude * vento * MTMConfiguracaoVisual.Atual.vento * 3f, amplitude * vento * MTMConfiguracaoVisual.Atual.vento * .8f + .05f, 0f));
+                // Folga para o maior desvio do shader (balanço com rajada, empurrão e tremor das folhas).
+                limite.Expand(new Vector3(amplitude * vento * MTMConfiguracaoVisual.Atual.vento * 11f, amplitude * vento * MTMConfiguracaoVisual.Atual.vento * .9f + .05f, 0f));
                 malha.bounds = limite;
                 return; // Copas e redes são deformadas no shader; a malha base permanece imutável.
             }
@@ -151,30 +155,49 @@ namespace MemoriasTecidas.MundoV2
             vento *= MTMConfiguracaoVisual.Atual.vento;
             float rapidez = ator != null ? ator.RapidezReal : caminhante != null ? caminhante.Velocidade.magnitude : 0f;
             // A folha do protagonista já desenha as pernas. Evita somar outro passo sobre ela.
-            float andar = ator != null && ator.tipo == MTMAtorV22.Tipo.Jogador ? 0f : Mathf.Clamp01(rapidez * 2f);
+            bool jogador = ator != null && ator.tipo == MTMAtorV22.Tipo.Jogador;
+            float andar = jogador ? 0f : Mathf.Clamp01(rapidez * 2f);
+            // Em jogo a passada entra e sai aos poucos; nas capturas do editor (tempo fixo) vale na hora.
+            float dt = float.IsNaN(MTMAmbienteV2.TempoFixo) ? Time.deltaTime : 1f;
+            andarSuave = Mathf.MoveTowards(andarSuave, andar, dt * 4f);
+            Vector2 direcao = ator != null ? ator.VelocidadeReal : caminhante != null ? caminhante.Velocidade : Vector2.zero;
+            float inclinacaoAlvo = andar > .01f && rapidez > .01f ? Mathf.Clamp(direcao.x / rapidez, -1f, 1f) : 0f;
+            inclinacaoSuave = Mathf.MoveTowards(inclinacaoSuave, inclinacaoAlvo, dt * 3f);
             float altura = fonte.sprite.rect.height / fonte.sprite.pixelsPerUnit;
             float largura = fonte.sprite.rect.width / fonte.sprite.pixelsPerUnit;
-            float deslocamentoCabelo = ventoNoCabelo * vento, deslocamentoRespiracao = respiracao * altura;
-            bool animando = Mathf.Abs(deslocamentoCabelo) > .000001f || Mathf.Abs(deslocamentoRespiracao) > .000001f || andar > .0001f;
+            // Moradores parados respiram de leve (peito sobe e desce); andando, a passada toma conta.
+            float respirar = respiracao > 0f ? respiracao : ator != null && ator.tipo == MTMAtorV22.Tipo.Morador ? .0025f : 0f;
+            float deslocamentoCabelo = ventoNoCabelo * vento, deslocamentoRespiracao = respirar * altura * (1f - andarSuave);
+            bool animando = Mathf.Abs(deslocamentoCabelo) > .000001f || Mathf.Abs(deslocamentoRespiracao) > .000001f || andarSuave > .0001f;
             Bounds limitePessoa = limitesPessoa;
-            limitePessoa.Expand(new Vector3(2f * (Mathf.Abs(deslocamentoCabelo) + .024f * largura * andar) + .01f, 2f * (Mathf.Abs(deslocamentoRespiracao) + .012f * andar) + .01f, 0));
+            limitePessoa.Expand(new Vector3(2f * (Mathf.Abs(deslocamentoCabelo) + (.012f * largura + .035f * altura) * andarSuave) + .01f, 2f * (Mathf.Abs(deslocamentoRespiracao) + .056f * altura * andarSuave) + .01f, 0));
             if (!posePendente && (!fonte.enabled || !renderizador.isVisible))
                 return;
             if (!posePendente && !animando && !animava)
                 return;
-            float ciclo = ator != null ? ator.FaseCaminhada : Time.time * 9f;
-            float sinPasso = Mathf.Sin(ciclo), cosPasso = Mathf.Cos(ciclo);
-            float sinCabelo = Mathf.Sin(Time.time * 2.5f + fase), cosCabelo = Mathf.Cos(Time.time * 2.5f + fase);
-            float respiro = Mathf.Sin(Time.time * 1.6f + fase) * deslocamentoRespiracao;
+            float tempo = MTMAmbienteV2.Tempo;
+            float ciclo = ator != null ? ator.FaseCaminhada : tempo * 9f;
+            float sinPasso = Mathf.Sin(ciclo);
+            float sinCabelo = Mathf.Sin(tempo * 2.5f + fase), cosCabelo = Mathf.Cos(tempo * 2.5f + fase);
+            float respiro = Mathf.Sin(tempo * 1.6f + fase) * deslocamentoRespiracao;
+            // Passada de quem só tem a pose de frente: um pé sai do chão enquanto o outro apoia,
+            // o corpo sobe no meio do passo, pende para o pé de apoio e inclina para onde anda.
+            float levanta = .045f * altura * andarSuave;
+            float sobeTronco = (Mathf.Abs(sinPasso) - .5f) * .02f * altura * andarSuave;
+            float pende = sinPasso * .012f * largura * andarSuave;
+            float inclina = inclinacaoSuave * .035f * altura * andarSuave * (fonte.flipX ? -1f : 1f);
+            float peEsquerdo = Mathf.Max(0f, sinPasso), peDireito = Mathf.Max(0f, -sinPasso);
             for (int i = 0; i < vertices.Length; i++)
             {
                 Vector3 v = repouso[i];
                 Vector2 uv = uvLocal[i];
                 Vector4 onda = ondas[i];
+                Vector4 p = passada[i];
                 v.x += (sinCabelo * onda.y + cosCabelo * onda.x) * deslocamentoCabelo * pesos[i].x;
-                v.y += respiro * uv.y;
-                v.x += (sinPasso * onda.w + cosPasso * onda.z) * .024f * largura * pesos[i].y * andar;
-                v.y += Mathf.Abs(sinPasso) * .012f * andar * uv.y;
+                v.y += respiro * p.w;
+                v.y += (p.y * peEsquerdo + p.z * peDireito) * p.x * levanta;
+                v.y += sobeTronco * p.w;
+                v.x += pende * p.w + inclina * uv.y;
                 vertices[i] = v;
             }
 
@@ -199,7 +222,11 @@ namespace MemoriasTecidas.MundoV2
                 repouso = new Vector3[n];
                 pesos = new Vector2[n];
                 ondas = new Vector4[n];
+                passada = new Vector4[n];
             }
+
+            // As pernas se dividem no pivô da arte (entre os pés); limitado ao miolo para artes tortas.
+            float meio = Mathf.Clamp(s.pivot.x / Mathf.Max(1f, r.width), .35f, .65f);
 
             if (uvs == null || uvs.Length != n)
             {
@@ -220,6 +247,12 @@ namespace MemoriasTecidas.MundoV2
                         pesos[i] = new Vector2(Mathf.SmoothStep(0, 1, Mathf.InverseLerp(.92f, 1, v)), 1 - Mathf.SmoothStep(0, 1, Mathf.InverseLerp(.18f, .45f, v)));
                         ondas[i] = new Vector4(Mathf.Sin(u * 2f), Mathf.Cos(u * 2f), Mathf.Sin(u * Mathf.PI), Mathf.Cos(u * Mathf.PI));
                     }
+
+                    passada[i] = new Vector4(
+                        1f - Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(0f, .42f, v)),
+                        1f - Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(meio - .16f, meio, u)),
+                        Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(meio, meio + .16f, u)),
+                        Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(.30f, .62f, v)));
 
                     vertices[i] = baseVertices[i] = new Vector3((u * r.width - s.pivot.x) / s.pixelsPerUnit, (v * r.height - s.pivot.y) / s.pixelsPerUnit, 0);
                     uvs[i] = new Vector2((r.x + u * r.width) / s.texture.width, (r.y + v * r.height) / s.texture.height);

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6469497073735594414}
   - component: {fileID: 2437776038098279605}
+  - component: {fileID: 1411015038686932925}
   m_Layer: 0
   m_Name: plantas_aquaticas
   m_TagString: Untagged
@@ -48,6 +49,22 @@ MonoBehaviour:
   identificador: plantas_aquaticas
   origem: "Adapta\xE7\xE3o art\xEDstica de refer\xEAncias de Jaguaruana; propor\xE7\xF5es
     ajustadas para o jogo."
+--- !u!114 &1411015038686932925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170740440491414520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a780ab4a7eaf3948bb41345987d8ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoriasTecidas.MundoV2.MTMFlutuanteV25
+  desenho: {fileID: 6850318749317610744}
+  altura: 0.018
+  inclinacao: 0.6
+  ritmo: 0.8
 --- !u!1 &1384648933225184279
 GameObject:
   m_ObjectHideFlags: 0

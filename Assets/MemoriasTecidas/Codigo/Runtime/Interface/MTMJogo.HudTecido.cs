@@ -214,7 +214,10 @@ namespace MemoriasTecidas.MundoV2
                 case "E / Enter":
                     return "A";
                 case "Espaço":
+                case "Clique":
                     return "X";
+                case "F":
+                    return "RB";
                 case "Shift":
                     return "RT";
                 case "L":
@@ -249,7 +252,7 @@ namespace MemoriasTecidas.MundoV2
         private static readonly string[] TrocasTextoControle =
         {
             "aperte M", "aperte View", "aperte E", "aperte A", "J → ", "Y → ", "segure L", "segure LT", "Segure L", "Segure LT",
-            "com Espaço", "com X", "com E.", "com A.", "com E,", "com A,", "com E ", "com A ", "(H)", "(Y)", "(E)", "(A)"
+            "com o clique do mouse", "com X", "clique para bater", "aperte X para bater", "com Espaço", "com X", "com E.", "com A.", "com E,", "com A,", "com E ", "com A ", "(H)", "(Y)", "(E)", "(A)"
         };
 
         private static string TextoParaControle(string texto)

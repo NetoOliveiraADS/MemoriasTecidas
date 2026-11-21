@@ -32,11 +32,11 @@ Shader "MemoriasTecidas/VidaV22/Pintado"
             float _Efeito,_Sombra,_Agua,_CorteAlfa,_MTM_Relevo,_MTM_ArteOriginal;
             float4 _MTM_RecorteOriginal;
             struct A{float4 pos:POSITION;float2 uv:TEXCOORD0;float2 local:TEXCOORD1;float4 color:COLOR;};
-            struct V{float4 pos:SV_POSITION;float2 uv:TEXCOORD0;float2 world:TEXCOORD1;float4 color:COLOR;};
+            struct V{float4 pos:SV_POSITION;float2 uv:TEXCOORD0;float2 world:TEXCOORD1;float4 color:COLOR;float2 local:TEXCOORD2;};
             V vert(A a)
             {
                 V o;a.pos.xyz=MTMDeformar(a.pos.xyz,a.local);o.pos=UnityObjectToClipPos(a.pos);
-                o.world=mul(unity_ObjectToWorld,a.pos).xy;o.uv=a.uv;o.color=a.color*_Color;return o;
+                o.world=mul(unity_ObjectToWorld,a.pos).xy;o.uv=a.uv;o.color=a.color*_Color;o.local=a.local;return o;
             }
             float4 frag(V i):SV_Target
             {
@@ -57,6 +57,14 @@ Shader "MemoriasTecidas/VidaV22/Pintado"
                 }
                 float baseSuja=1-smoothstep(_MTM_Base.x,_MTM_Base.x+max(.1,_MTM_Base.y)*.24,i.world.y);
                 c.rgb*=1-baseSuja*saturate(_MTM_Base.z)*.13;
+                if(_MTM_Deform.x>.5&&_MTM_Deform.x<1.5&&_MTV_Quality>.5)
+                {
+                    // Luz coada pelas folhas: manchas claras e escuras correm pela copa com o vento.
+                    float copa=smoothstep(_MTM_Deform.z,1,i.local.y)*_MTV_Motion*_MTV_Art.w;
+                    float2 q=i.world*2.4+float2(_MTV_Time*.55,_MTV_Time*.17);
+                    float luz=MTMRuido(q)*.65+MTMRuido(q*2.3+7.7)*.35;
+                    c.rgb*=1+(luz-.5)*.16*copa*saturate(_MTV_Sun.y+.2);
+                }
                 c.rgb=MTMPintura(c.rgb,i.world);
                 c.rgb+=.006*sin(i.world.x*9+_MTV_Time)*sin(i.world.y*6-_MTV_Time)*water*_MTV_Sun.y;
                 return c;

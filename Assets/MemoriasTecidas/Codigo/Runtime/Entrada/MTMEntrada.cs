@@ -150,8 +150,13 @@ namespace MemoriasTecidas.MundoV2
 #endif
         }
 
+        // Usado só pelo teste automático (MTMJogo.TesteAutomatico) para empurrar o Neto sem teclado.
+        public static Vector2? MovimentoDeTeste;
+
         public static Vector2 Movimento()
         {
+            if (MovimentoDeTeste.HasValue)
+                return Vector2.ClampMagnitude(MovimentoDeTeste.Value, 1f);
             Vector2 v = Vector2.zero;
 #if ENABLE_INPUT_SYSTEM
             Keyboard k = Keyboard.current;
@@ -367,15 +372,18 @@ namespace MemoriasTecidas.MundoV2
 #endif
         }
 
-        // Golpe nos confrontos: Espaço ou K.
+        // Golpe nos confrontos: clique do mouse (botão esquerdo), Espaço ou K; X no controle.
+        // Só é lido durante a luta, quando nenhum painel ou diálogo está aberto.
         public static bool Golpeou()
         {
 #if ENABLE_INPUT_SYSTEM
             var k = Keyboard.current;
             var g = Controle;
-            return (k != null && (k.spaceKey.wasPressedThisFrame || k.kKey.wasPressedThisFrame)) || (g != null && g.buttonWest.wasPressedThisFrame);
+            var mouse = Mouse.current;
+            return (k != null && (k.spaceKey.wasPressedThisFrame || k.kKey.wasPressedThisFrame)) || (g != null && g.buttonWest.wasPressedThisFrame) ||
+                   (mouse != null && mouse.leftButton.wasPressedThisFrame);
 #elif ENABLE_LEGACY_INPUT_MANAGER
-            return Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.K);
+            return Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.K) || Input.GetMouseButtonDown(0);
 #else
             return false;
 #endif

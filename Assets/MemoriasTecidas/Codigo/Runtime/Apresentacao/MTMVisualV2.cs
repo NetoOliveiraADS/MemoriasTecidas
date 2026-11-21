@@ -28,7 +28,11 @@ namespace MemoriasTecidas.MundoV2
             if (desenho == null)
                 return;
             var arte = MTMConfiguracaoVisual.Atual;
-            float onda = Mathf.Sin(Time.time * 1.2f + fase);
+            float tempo = MTMAmbienteV2.Tempo;
+            // Balanço com um segundo ritmo e as mesmas rajadas das copas: a planta inclina para leste
+            // quando a rajada passa e volta na calmaria.
+            float rajada = vento > 0f ? MTMAmbienteV2.Rajada(transform.position.x, fase, tempo) : .55f;
+            float onda = (Mathf.Sin(tempo * 1.2f + fase) * .75f + Mathf.Sin(tempo * 2.5f + fase * 1.7f) * .25f) * rajada * 1.6f - (rajada - .55f) * 1.8f;
             float vivo = MTMAmbienteV2.Qualidade > 0 && !arte.reduzirMovimento ? arte.vento : 0f;
             bool malhaViva = deformacao != null && deformacao.isActiveAndEnabled;
             // O balanço da malha não gira a base da árvore, a construção ou os suportes da rede.

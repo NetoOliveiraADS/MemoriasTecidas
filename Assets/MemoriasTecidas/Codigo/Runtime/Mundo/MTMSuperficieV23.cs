@@ -22,6 +22,10 @@ namespace MemoriasTecidas.MundoV2
         public float ondulacao = .009f;
         [Range(0f, 2f)]
         public float velocidadeAgua = .65f;
+        [Tooltip("Correnteza em unidades por segundo, no mundo. (0, 0) = automática: segue o comprimento da água, rumo leste.")]
+        public Vector2 correnteza;
+        [Range(0f, 1f)]
+        public float forcaCorrenteza = .22f;
         private Mesh malha;
         private Texture2D distanciaBorda;
         private Color32[] dadosBorda;
@@ -68,6 +72,30 @@ namespace MemoriasTecidas.MundoV2
             };
         }
 
+        // Direção da correnteza no mundo: a escolhida no Inspector ou o eixo mais comprido do contorno
+        // (análise dos pontos), sempre apontando para leste para que trechos vizinhos corram juntos.
+        private Vector2 DirecaoCorrenteza(Vector2[] pontos)
+        {
+            if (correnteza.sqrMagnitude > .0001f)
+                return correnteza.normalized;
+            Vector2 media = Vector2.zero;
+            foreach (var p in pontos)
+                media += (Vector2)transform.TransformPoint(p);
+            media /= pontos.Length;
+            float xx = 0f, xy = 0f, yy = 0f;
+            foreach (var p in pontos)
+            {
+                Vector2 d = (Vector2)transform.TransformPoint(p) - media;
+                xx += d.x * d.x;
+                xy += d.x * d.y;
+                yy += d.y * d.y;
+            }
+
+            float angulo = .5f * Mathf.Atan2(2f * xy, xx - yy);
+            var eixo = new Vector2(Mathf.Cos(angulo), Mathf.Sin(angulo));
+            return eixo.x < 0f ? -eixo : eixo;
+        }
+
         [ContextMenu("Reconstruir superficie e colisao")]
         public void Reconstruir()
         {
@@ -110,6 +138,8 @@ namespace MemoriasTecidas.MundoV2
             bloco.SetFloat("_Agua", agua ? 1f : 0f);
             bloco.SetFloat("_Ondulacao", ondulacao);
             bloco.SetFloat("_Velocidade", velocidadeAgua);
+            Vector2 fluxo = agua ? DirecaoCorrenteza(pontos) * forcaCorrenteza : Vector2.zero;
+            bloco.SetVector("_MTM_Fluxo", new Vector4(fluxo.x, fluxo.y, 1f / Mathf.Max(.1f, unidadesPorRepeticao), 0f));
             string nomeTextura = textura != null ? textura.name.ToLowerInvariant() : "";
             bloco.SetFloat("_MTM_SuavizarSolo", agua ? 0f :
                 nomeTextura.Contains("asfalto") ? .48f : nomeTextura.Contains("mosaico") ? .18f : 0f);
