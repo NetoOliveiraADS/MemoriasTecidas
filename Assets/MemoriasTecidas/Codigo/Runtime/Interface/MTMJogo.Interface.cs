@@ -485,13 +485,19 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
+            if (painel == "creditos")
+            {
+                CreditosUI();
+                return;
+            }
+
             if (painel == "visual")
             {
                 OpcoesVisuaisTecido();
                 return;
             }
 
-            string titulo = painel == "mapa" ? "Redes de Memórias" : painel == "bolsa" ? "Bolsa de viagem" : painel == "receita" ? "Receita da rede" : "Caderno de memórias";
+            string titulo = painel == "mapa" ? "Mapa de Jaguaruana" : painel == "bolsa" ? "Bolsa de viagem" : painel == "receita" ? "Receita da rede" : "Caderno de memórias";
             if (!JanelaTecido(titulo, "ENTRE MEMÓRIAS E LENDAS"))
                 return;
             if (painel == "mapa")
@@ -563,7 +569,8 @@ namespace MemoriasTecidas.MundoV2
                 "memorias",
                 "pessoas",
                 "pistas",
-                "achados"
+                "achados",
+                "fontes"
             }, nomes =
             {
                 "Missões",
@@ -571,10 +578,11 @@ namespace MemoriasTecidas.MundoV2
                 "Memórias",
                 "Pessoas",
                 "Pistas",
-                "Achados"
+                "Achados",
+                "Fontes"
             };
             for (int i = 0; i < ids.Length; i++)
-                if (AbaTecido(new Rect(58 + i * 184, 204, 172, 34), nomes[i], abaCaderno == ids[i]))
+                if (AbaTecido(new Rect(58 + i * 158, 204, 148, 34), nomes[i], abaCaderno == ids[i]))
                 {
                     abaCaderno = ids[i];
                     rolagemLista = rolagemDetalhe = Vector2.zero;
@@ -590,8 +598,93 @@ namespace MemoriasTecidas.MundoV2
                 PistasRoteiroUI();
             else if (abaCaderno == "achados")
                 AchadosVivosUI();
+            else if (abaCaderno == "fontes")
+                FontesTecido();
             else
                 RegistrosRoteiroUI();
+        }
+
+        private struct FonteEncontro
+        {
+            public string id, titulo, lugar, fonte;
+        }
+
+        private readonly List<FonteEncontro> fontesEncontros = new List<FonteEncontro>();
+        private string fonteSelecionada;
+
+        // Fonte de cada encontro já vivido (conversa, leitura ou observação), na ordem dos lugares.
+        private List<FonteEncontro> FontesDosEncontros()
+        {
+            fontesEncontros.Clear();
+            if (regioes == null)
+                return fontesEncontros;
+            var vistos = new HashSet<string>();
+            foreach (var r in regioes)
+            {
+                if (r == null || r.dados == null || r.pontos == null)
+                    continue;
+                foreach (var p in r.pontos)
+                    if (p != null && p.dados != null && !string.IsNullOrEmpty(p.dados.fonte) && EncontroVivido(p) && vistos.Add(p.dados.id))
+                        fontesEncontros.Add(new FonteEncontro { id = p.dados.id, titulo = p.dados.nome, lugar = r.dados.nome, fonte = p.dados.fonte });
+            }
+
+            return fontesEncontros;
+        }
+
+        // Vivido: o registro do próprio ponto já entrou na jornada, ou uma etapa de missão feita nele foi concluída.
+        private bool EncontroVivido(MTMPonto p)
+        {
+            if (!string.IsNullOrEmpty(p.dados.evento) && estado.Tem(p.dados.evento))
+                return true;
+            if (tramaTecida == null || tramaTecida.missoes == null)
+                return false;
+            foreach (var m in tramaTecida.missoes)
+                if (m.etapas != null)
+                    foreach (var e in m.etapas)
+                        if (e.ponto == p.dados.id && MTMTrama.Concluida(estado, e))
+                            return true;
+            return false;
+        }
+
+        private void FontesTecido()
+        {
+            var lista = FontesDosEncontros();
+            if (lista.Count == 0)
+            {
+                TextoTecido(new Rect(260, 346, 760, 120), "Converse com as pessoas e examine os lugares: a fonte de cada encontro aparece aqui.", 23, textoPapelUI, false, TextAnchor.MiddleCenter);
+                return;
+            }
+
+            if (!lista.Exists(f => f.id == fonteSelecionada))
+                fonteSelecionada = lista[0].id;
+            rolagemLista = IniciarRolagemUI(new Rect(58, 252, 350, 378), rolagemLista, new Rect(0, 0, 326, Mathf.Max(378, lista.Count * 66)));
+            for (int i = 0; i < lista.Count; i++)
+            {
+                var f = lista[i];
+                bool sel = f.id == fonteSelecionada;
+                Rect r = new Rect(0, i * 66, 324, 56);
+                Fundo(r, sel ? tinta : papelUI);
+                TextoTecido(new Rect(14, r.y + 9, 296, 24), ResumoHUDClaroUI(f.titulo, 296, 24, 16, true), 16, sel ? textoSuperficieUI : textoPapelUI, true);
+                TextoTecido(new Rect(14, r.y + 35, 296, 15), (f.lugar ?? "").ToUpperInvariant(), 10, sel ? acentoTextoUI : terracotaUI, true);
+                if (AcaoTecido(r, "fonte:" + f.id))
+                {
+                    fonteSelecionada = f.id;
+                    rolagemDetalhe = Vector2.zero;
+                }
+            }
+
+            TerminarRolagemUI();
+            var escolhida = lista.Find(f => f.id == fonteSelecionada);
+            Fundo(new Rect(434, 252, 784, 378), papelUI);
+            TextoTecido(new Rect(460, 272, 730, 34), escolhida.titulo, 24, textoPapelUI, true);
+            TextoTecido(new Rect(460, 312, 730, 18), (escolhida.lugar ?? "").ToUpperInvariant(), 12, terracotaUI, true);
+            LosangoCompacta(new Rect(460, 352, 10, 10), ouro);
+            TextoTecido(new Rect(478, 348, 700, 18), "FONTE", 12, terracotaUI, true);
+            float altura = AlturaTecido(escolhida.fonte, 700, 19);
+            rolagemDetalhe = IniciarRolagemUI(new Rect(460, 376, 730, 186), rolagemDetalhe, new Rect(0, 0, 704, Mathf.Max(186, altura)));
+            TextoTecido(new Rect(0, 0, 700, altura), escolhida.fonte, 19, textoPapelUI);
+            TerminarRolagemUI();
+            TextoTecido(new Rect(460, 576, 730, 38), "Os diálogos e as atividades são adaptações ficcionais e didáticas. As referências completas estão em Sobre o jogo › Créditos e referências.", 12, AlfaTecido(textoPapelUI, .8f));
         }
 
         private void PessoasTecido()

@@ -19,6 +19,11 @@ namespace MemoriasTecidas.MundoV2
         // Vazio = a corrida usa as poses da caminhada. O kit HD2D preenche ao dar Play.
         [System.NonSerialized]
         public Sprite[] quadrosCorrida;
+        // Morador: caminhada de perfil (virada para a direita), usada enquanto ele anda; o jogo espelha
+        // para a esquerda. Vazio = anda com a arte de frente. O kit HD2D preenche ao dar Play.
+        [System.NonSerialized]
+        public Sprite[] quadrosLado;
+        private float faseLado;
         public MTMJogo jogo;
         public MTMVidaV22 vida;
         public string nomeDaConversa;
@@ -56,6 +61,11 @@ namespace MemoriasTecidas.MundoV2
             get { return quadroAtual; }
         }
         public float FaseCaminhada { get; private set; }
+        // A arte já desenha as pernas: a malha não acrescenta a passada artificial.
+        public bool DesenhaPassos
+        {
+            get { return tipo == Tipo.Jogador || (quadrosLado != null && quadrosLado.Length > 0); }
+        }
 
         // Jogador: posição contínua no ciclo de 4 poses (0 a 4); o quadro é a parte inteira.
         public float FasePasso
@@ -199,6 +209,29 @@ namespace MemoriasTecidas.MundoV2
             Sprite proximo = poses[Mathf.Clamp(quadroAtual, 0, poses.Length - 1)];
             if (proximo == null)
                 proximo = quadros[Mathf.Clamp(quadroAtual, 0, quadros.Length - 1)];
+            // Morador com caminhada de perfil: andando, troca de quadro pela distância e vira para onde vai;
+            // parado ou conversando, volta à arte de frente, sem espelhar.
+            if (tipo == Tipo.Morador && quadrosLado != null && quadrosLado.Length > 0)
+            {
+                bool conversando = jogo != null && jogo.V22FalandoCom(nomeDaConversa);
+                if (andando && !conversando)
+                {
+                    // Um ciclo da folha de perfil é uma passada inteira (os dois pés), na cadência do andar de frente.
+                    Sprite frente = quadros[0] != null ? quadros[0] : desenho.sprite;
+                    float altura = frente != null ? frente.bounds.size.y * Mathf.Abs(transform.lossyScale.y) : 1.6f;
+                    faseLado = Mathf.Repeat(faseLado + percurso / Passada(altura, tipo) * quadrosLado.Length, quadrosLado.Length);
+                    var lado = quadrosLado[Mathf.Clamp(Mathf.FloorToInt(faseLado), 0, quadrosLado.Length - 1)];
+                    if (lado != null)
+                        proximo = lado;
+                    if (Mathf.Abs(velocidade.x) > .02f)
+                        desenho.flipX = velocidade.x < 0f;
+                }
+                else
+                {
+                    faseLado = 0f;
+                    desenho.flipX = false;
+                }
+            }
             if (desenho.sprite != proximo)
                 desenho.sprite = proximo;
         }

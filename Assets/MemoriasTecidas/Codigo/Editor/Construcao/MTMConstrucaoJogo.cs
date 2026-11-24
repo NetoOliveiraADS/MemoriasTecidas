@@ -165,7 +165,7 @@ namespace MemoriasTecidas.MundoV2
                 Texto("OriginalFilename", "MemoriasTecidas.exe"),
                 Texto("ProductName", Nome),
                 Texto("ProductVersion", Versao),
-                Texto("Comments", "Jaguaruana · Rede de Memórias · Entre Memórias e Lendas")
+                Texto("Comments", "Jaguaruana · Entre Memórias e Lendas")
             };
             byte[] tabela = Bloco(idioma.ToString("X4") + "04B0", null, 0, 1, textos);
             byte[] arquivo = Bloco("StringFileInfo", null, 0, 1, new[] { tabela });
@@ -249,7 +249,7 @@ namespace MemoriasTecidas.MundoV2
             string dados = Path.GetFileNameWithoutExtension(executavel) + "_Data";
             var t = new StringBuilder();
             t.AppendLine("MEMÓRIAS TECIDAS · Versão " + Versao);
-            t.AppendLine("Jaguaruana · Rede de Memórias · Entre Memórias e Lendas");
+            t.AppendLine("Jaguaruana · Entre Memórias e Lendas");
             t.AppendLine();
             t.AppendLine("SOBRE O JOGO");
             t.AppendLine("Memórias Tecidas é um jogo de exploração em Jaguaruana, no Ceará, a Terra da Rede. Neto chega à");
@@ -277,16 +277,51 @@ namespace MemoriasTecidas.MundoV2
             t.AppendLine("O progresso é salvo sozinho nos encontros, ao trocar de lugar e a cada 30 segundos.");
             t.AppendLine("Para rever a abertura, use \"Sobre o jogo\" no menu inicial.");
             t.AppendLine();
-            t.AppendLine("CRÉDITOS");
-            t.AppendLine("- Fontes DejaVu.");
-            t.AppendLine("- Sons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D.");
-            t.AppendLine("  © Wildfire Games, wildfiregames.com (CC BY-SA 3.0). Lista completa em \"Creditos dos sons.txt\".");
-            t.AppendLine("- Bandeira de Jaguaruana: símbolo oficial do município, redesenhado para a abertura.");
-            t.AppendLine("- Foto da Matriz de Sant'Ana (abertura e Casa das Memórias): @fotosdoceara.");
-            t.AppendLine("- Fotos de Raimundo Francisco Freitas Jaguaribe, Ivonete Maia e Padre Ducéu (Casa das Memórias):");
-            t.AppendLine("  blog Memórias de Jaguaruana, post \"Jaguaruanenses ilustres\" (2017).");
-            t.AppendLine("- Os diálogos e atividades são adaptações ficcionais e didáticas. As fontes dos encontros");
-            t.AppendLine("  aparecem no caderno do jogo.");
+            t.AppendLine("CRÉDITOS E REFERÊNCIAS");
+            t.AppendLine();
+            t.AppendLine("Fotografias e símbolos");
+            t.AppendLine("- Igreja Matriz de Sant'Ana (abertura e Casa das Memórias): foto de @fotosdoceara.");
+            t.AppendLine("- Raimundo Francisco Freitas Jaguaribe, Ivonete Maia e Padre Ducéu (Casa das Memórias): fotos do blog");
+            t.AppendLine("  Memórias de Jaguaruana, \"Jaguaruanenses ilustres\", maio de 2017.");
+            t.AppendLine("  http://memoriasdejaguaruana.blogspot.com/2017/05/jaguaruanenses-ilustres.html");
+            t.AppendLine("- Bandeira de Jaguaruana (abertura): símbolo oficial do município, redesenhado a partir da imagem");
+            t.AppendLine("  do Wikimedia Commons.");
+            t.AppendLine("  https://commons.wikimedia.org/wiki/File:Flag_of_Jaguaruana_Municipality_in_the_State_of_Cear%C3%A1_in_Brazil.png");
+            t.AppendLine();
+            t.AppendLine("Pesquisa histórica");
+            t.AppendLine("- IBGE. Jaguaruana. Coleção de Monografias, nº 314, 1965.");
+            t.AppendLine("  https://biblioteca.ibge.gov.br/visualizacao/periodicos/113/col_mono_n314_jaguaruana.pdf");
+            t.AppendLine("- OLIVEIRA, João Luiz de. O Ceará tem memória – Jaguaruana: um povo, um lugar.");
+            t.AppendLine("- PREFEITURA DE JAGUARUANA. \"A Cidade\" e \"E.E.F. Gerardo Correia Lima: 40 anos de história\".");
+            t.AppendLine("  https://www.jaguaruana.ce.gov.br/informa/142/e-e-f-gerardo-correia-lima-40-anos-de-hist-ria");
+            t.AppendLine("- MEMÓRIAS DE JAGUARUANA (blog). \"Jaguaruanenses ilustres\" (2017), texto de Vicência Jaguaribe,");
+            t.AppendLine("  entrevista com o prof. José Wilson Freitas e \"Jaguaruana em preto & branco\".");
+            t.AppendLine("  http://memoriasdejaguaruana.blogspot.com");
+            t.AppendLine("- VERMELHO. \"Morre aos 73 anos a jornalista cearense Ivonete Maia\", 14/02/2012.");
+            t.AppendLine("  https://vermelho.org.br/2012/02/14/morre-aos-73-anos-a-jornalista-cearense-ivonete-maia/");
+            t.AppendLine("- O POVO. \"De renegada a rainha\" (Emília Freitas), 02/03/2021.");
+            t.AppendLine("  https://mais.opovo.com.br/reportagens-especiais/2021/03/02/de-renegada-a-rainha--emilia-freitas.html");
+            t.AppendLine("- O POVO. \"Pioneira na ficção especulativa brasileira, Emília Freitas completa 170 anos\", 13/01/2025.");
+            t.AppendLine("  https://mais.opovo.com.br/jornal/vidaearte/2025/01/13/pioneira-na-ficcao-especulativa-brasileira-emilia-freitas-completa-170-anos.html");
+            t.AppendLine("- O POVO. \"Filme sobre autora cearense do século XIX está em fase de produção\", 18/08/2026.");
+            t.AppendLine("  https://www.opovo.com.br/vidaearte/2026/08/18/filme-sobre-autora-cearense-do-seculo-xix-esta-em-fase-de-producao.html");
+            t.AppendLine("- AH DUVIDO. \"Lendas urbanas – parte 5\", 2017. https://ahduvido.com.br/lendas-urbanas-parte-5/");
+            t.AppendLine("- FANTASTIPEDIA. \"Assombração de Jaguaruana\".");
+            t.AppendLine("  https://fantasia.fandom.com/pt/wiki/Assombra%C3%A7%C3%A3o_de_Jaguaruana");
+            t.AppendLine("- Exposição do museu: referências do Memorial Carnaúba e do MAUC/UFC.");
+            t.AppendLine();
+            t.AppendLine("Sons (som por som em \"Creditos dos sons.txt\")");
+            t.AppendLine("- Kenney, www.kenney.nl: passos, golpes, tear e interface. CC0 1.0.");
+            t.AppendLine("- Freesound, pelo app Blanket (github.com/rafaelmardojai/blanket): felix.blume, kvgarlic e gluckose (CC0);");
+            t.AppendLine("  gezortenplotz (CC BY 3.0).");
+            t.AppendLine("- SoundBible: Lisa Redfern e ezwa. Domínio público.");
+            t.AppendLine("- 0 A.D. © Wildfire Games, www.wildfiregames.com: cavalo, escudo e mercado. CC BY-SA 3.0.");
+            t.AppendLine();
+            t.AppendLine("Letras");
+            t.AppendLine("- DejaVu Sans e DejaVu Serif, projeto DejaVu Fonts (dejavu-fonts.github.io). Licença livre.");
+            t.AppendLine();
+            t.AppendLine("Os diálogos e atividades são adaptações ficcionais e didáticas. Cada encontro mostra a sua fonte");
+            t.AppendLine("no caderno do jogo.");
             File.WriteAllText(Path.Combine(pasta, "LEIA-ME.txt"), t.ToString().Replace("\r\n", "\n").Replace("\n", "\r\n"), new UTF8Encoding(true));
         }
     }

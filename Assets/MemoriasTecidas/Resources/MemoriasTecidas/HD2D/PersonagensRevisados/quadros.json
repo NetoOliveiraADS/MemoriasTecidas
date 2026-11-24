@@ -427,7 +427,7 @@
       "altura": 400,
       "folhaLargura": 540,
       "folhaAltura": 404,
-      "pivotX": 0.46791,
+      "pivotX": 0.494186,
       "pivotY": 0.005,
       "alturaReferencia": 400
     },
@@ -440,7 +440,7 @@
       "altura": 400,
       "folhaLargura": 540,
       "folhaAltura": 404,
-      "pivotX": 0.460816,
+      "pivotX": 0.485207,
       "pivotY": 0.005,
       "alturaReferencia": 400
     },
@@ -453,7 +453,7 @@
       "altura": 400,
       "folhaLargura": 540,
       "folhaAltura": 404,
-      "pivotX": 0.476613,
+      "pivotX": 0.5,
       "pivotY": 0.005,
       "alturaReferencia": 400
     }
@@ -472,7 +472,7 @@
         "altura": 424,
         "folhaLargura": 577,
         "folhaAltura": 432,
-        "pivotX": 0.572193,
+        "pivotX": 0.526738,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -490,7 +490,7 @@
         "altura": 424,
         "folhaLargura": 577,
         "folhaAltura": 432,
-        "pivotX": 0.572193,
+        "pivotX": 0.526738,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -508,7 +508,7 @@
         "altura": 424,
         "folhaLargura": 577,
         "folhaAltura": 432,
-        "pivotX": 0.572193,
+        "pivotX": 0.532086,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -526,7 +526,7 @@
         "altura": 424,
         "folhaLargura": 622,
         "folhaAltura": 432,
-        "pivotX": 0.391089,
+        "pivotX": 0.497525,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -544,7 +544,7 @@
         "altura": 424,
         "folhaLargura": 622,
         "folhaAltura": 432,
-        "pivotX": 0.391089,
+        "pivotX": 0.497525,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -562,7 +562,7 @@
         "altura": 424,
         "folhaLargura": 622,
         "folhaAltura": 432,
-        "pivotX": 0.391089,
+        "pivotX": 0.497525,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -580,7 +580,7 @@
         "altura": 425,
         "folhaLargura": 565,
         "folhaAltura": 433,
-        "pivotX": 0.63388,
+        "pivotX": 0.515027,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -598,7 +598,7 @@
         "altura": 425,
         "folhaLargura": 565,
         "folhaAltura": 433,
-        "pivotX": 0.63388,
+        "pivotX": 0.520492,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -616,7 +616,7 @@
         "altura": 425,
         "folhaLargura": 565,
         "folhaAltura": 433,
-        "pivotX": 0.63388,
+        "pivotX": 0.520492,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -634,7 +634,7 @@
         "altura": 425,
         "folhaLargura": 541,
         "folhaAltura": 433,
-        "pivotX": 0.662857,
+        "pivotX": 0.54,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -652,7 +652,7 @@
         "altura": 425,
         "folhaLargura": 541,
         "folhaAltura": 433,
-        "pivotX": 0.662857,
+        "pivotX": 0.534286,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -670,7 +670,7 @@
         "altura": 425,
         "folhaLargura": 541,
         "folhaAltura": 433,
-        "pivotX": 0.662857,
+        "pivotX": 0.534286,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -688,7 +688,7 @@
         "altura": 425,
         "folhaLargura": 469,
         "folhaAltura": 433,
-        "pivotX": 0.635762,
+        "pivotX": 0.519868,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -706,7 +706,7 @@
         "altura": 425,
         "folhaLargura": 469,
         "folhaAltura": 433,
-        "pivotX": 0.635762,
+        "pivotX": 0.519868,
         "pivotY": 0.004706,
         "alturaReferencia": 415.56
       }
@@ -724,7 +724,7 @@
         "altura": 425,
         "folhaLargura": 469,
         "folhaAltura": 433,
-        "pivotX": 0.635762,
+        "pivotX": 0.506623,
         "pivotY": 0.004706,
         "alturaReferencia": 417.04
       }
@@ -742,7 +742,7 @@
         "altura": 424,
         "folhaLargura": 493,
         "folhaAltura": 432,
-        "pivotX": 0.591195,
+        "pivotX": 0.496855,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -760,7 +760,7 @@
         "altura": 424,
         "folhaLargura": 493,
         "folhaAltura": 432,
-        "pivotX": 0.591195,
+        "pivotX": 0.496855,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -778,7 +778,7 @@
         "altura": 424,
         "folhaLargura": 493,
         "folhaAltura": 432,
-        "pivotX": 0.591195,
+        "pivotX": 0.496855,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -796,7 +796,7 @@
         "altura": 424,
         "folhaLargura": 511,
         "folhaAltura": 432,
-        "pivotX": 0.612121,
+        "pivotX": 0.489394,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -814,7 +814,7 @@
         "altura": 424,
         "folhaLargura": 511,
         "folhaAltura": 432,
-        "pivotX": 0.612121,
+        "pivotX": 0.495455,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -832,7 +832,7 @@
         "altura": 424,
         "folhaLargura": 511,
         "folhaAltura": 432,
-        "pivotX": 0.612121,
+        "pivotX": 0.489394,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -850,7 +850,7 @@
         "altura": 424,
         "folhaLargura": 520,
         "folhaAltura": 432,
-        "pivotX": 0.696429,
+        "pivotX": 0.574405,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -868,7 +868,7 @@
         "altura": 424,
         "folhaLargura": 520,
         "folhaAltura": 432,
-        "pivotX": 0.696429,
+        "pivotX": 0.574405,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -886,7 +886,7 @@
         "altura": 424,
         "folhaLargura": 520,
         "folhaAltura": 432,
-        "pivotX": 0.696429,
+        "pivotX": 0.574405,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -904,7 +904,7 @@
         "altura": 425,
         "folhaLargura": 538,
         "folhaAltura": 433,
-        "pivotX": 0.448276,
+        "pivotX": 0.563218,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -922,7 +922,7 @@
         "altura": 425,
         "folhaLargura": 538,
         "folhaAltura": 433,
-        "pivotX": 0.448276,
+        "pivotX": 0.568966,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -940,7 +940,7 @@
         "altura": 425,
         "folhaLargura": 538,
         "folhaAltura": 433,
-        "pivotX": 0.448276,
+        "pivotX": 0.563218,
         "pivotY": 0.004706,
         "alturaReferencia": 420.0
       }
@@ -958,7 +958,7 @@
         "altura": 423,
         "folhaLargura": 559,
         "folhaAltura": 431,
-        "pivotX": 0.58011,
+        "pivotX": 0.494475,
         "pivotY": 0.004728,
         "alturaReferencia": 419.0
       }
@@ -976,7 +976,7 @@
         "altura": 423,
         "folhaLargura": 559,
         "folhaAltura": 431,
-        "pivotX": 0.58011,
+        "pivotX": 0.494475,
         "pivotY": 0.004728,
         "alturaReferencia": 419.0
       }
@@ -994,7 +994,7 @@
         "altura": 423,
         "folhaLargura": 559,
         "folhaAltura": 431,
-        "pivotX": 0.58011,
+        "pivotX": 0.494475,
         "pivotY": 0.004728,
         "alturaReferencia": 419.0
       }
@@ -1012,7 +1012,7 @@
         "altura": 424,
         "folhaLargura": 604,
         "folhaAltura": 432,
-        "pivotX": 0.377551,
+        "pivotX": 0.497449,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1030,7 +1030,7 @@
         "altura": 424,
         "folhaLargura": 604,
         "folhaAltura": 432,
-        "pivotX": 0.377551,
+        "pivotX": 0.492347,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1048,7 +1048,7 @@
         "altura": 424,
         "folhaLargura": 604,
         "folhaAltura": 432,
-        "pivotX": 0.377551,
+        "pivotX": 0.497449,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1066,7 +1066,7 @@
         "altura": 424,
         "folhaLargura": 643,
         "folhaAltura": 432,
-        "pivotX": 0.363636,
+        "pivotX": 0.502392,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1084,7 +1084,7 @@
         "altura": 424,
         "folhaLargura": 643,
         "folhaAltura": 432,
-        "pivotX": 0.363636,
+        "pivotX": 0.502392,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1102,7 +1102,7 @@
         "altura": 424,
         "folhaLargura": 643,
         "folhaAltura": 432,
-        "pivotX": 0.363636,
+        "pivotX": 0.502392,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1120,7 +1120,7 @@
         "altura": 424,
         "folhaLargura": 553,
         "folhaAltura": 432,
-        "pivotX": 0.413408,
+        "pivotX": 0.539106,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1138,7 +1138,7 @@
         "altura": 424,
         "folhaLargura": 553,
         "folhaAltura": 432,
-        "pivotX": 0.413408,
+        "pivotX": 0.539106,
         "pivotY": 0.004717,
         "alturaReferencia": 413.98
       }
@@ -1156,7 +1156,7 @@
         "altura": 424,
         "folhaLargura": 553,
         "folhaAltura": 432,
-        "pivotX": 0.413408,
+        "pivotX": 0.539106,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1174,7 +1174,7 @@
         "altura": 424,
         "folhaLargura": 547,
         "folhaAltura": 432,
-        "pivotX": 0.451977,
+        "pivotX": 0.454802,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1192,7 +1192,7 @@
         "altura": 424,
         "folhaLargura": 547,
         "folhaAltura": 432,
-        "pivotX": 0.451977,
+        "pivotX": 0.539548,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1210,7 +1210,7 @@
         "altura": 424,
         "folhaLargura": 547,
         "folhaAltura": 432,
-        "pivotX": 0.451977,
+        "pivotX": 0.556497,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1228,7 +1228,7 @@
         "altura": 424,
         "folhaLargura": 514,
         "folhaAltura": 432,
-        "pivotX": 0.668675,
+        "pivotX": 0.572289,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1246,7 +1246,7 @@
         "altura": 424,
         "folhaLargura": 514,
         "folhaAltura": 432,
-        "pivotX": 0.668675,
+        "pivotX": 0.572289,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1264,7 +1264,7 @@
         "altura": 424,
         "folhaLargura": 514,
         "folhaAltura": 432,
-        "pivotX": 0.668675,
+        "pivotX": 0.578313,
         "pivotY": 0.004717,
         "alturaReferencia": 420.0
       }
@@ -1281,7 +1281,7 @@
         "altura": 400,
         "folhaLargura": 540,
         "folhaAltura": 404,
-        "pivotX": 0.46791,
+        "pivotX": 0.494186,
         "pivotY": 0.005,
         "alturaReferencia": 400
       }
@@ -1298,7 +1298,7 @@
         "altura": 400,
         "folhaLargura": 540,
         "folhaAltura": 404,
-        "pivotX": 0.460816,
+        "pivotX": 0.485207,
         "pivotY": 0.005,
         "alturaReferencia": 400
       }
@@ -1315,7 +1315,7 @@
         "altura": 400,
         "folhaLargura": 540,
         "folhaAltura": 404,
-        "pivotX": 0.476613,
+        "pivotX": 0.5,
         "pivotY": 0.005,
         "alturaReferencia": 400
       }
@@ -1333,7 +1333,7 @@
         "altura": 424,
         "folhaLargura": 517,
         "folhaAltura": 432,
-        "pivotX": 0.323353,
+        "pivotX": 0.437126,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1351,7 +1351,7 @@
         "altura": 424,
         "folhaLargura": 517,
         "folhaAltura": 432,
-        "pivotX": 0.323353,
+        "pivotX": 0.437126,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
       }
@@ -1369,9 +1369,279 @@
         "altura": 424,
         "folhaLargura": 517,
         "folhaAltura": 432,
-        "pivotX": 0.323353,
+        "pivotX": 0.437126,
         "pivotY": 0.004717,
         "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "cida_00",
+      "texturaOrigem": "",
+      "ponto": "pdf_moradora",
+      "quadro": {
+        "id": "Moradora_cida_00",
+        "folha": "PersonagensRevisados/Moradores/Moradora",
+        "x": 4,
+        "y": 4,
+        "largura": 189,
+        "altura": 423,
+        "folhaLargura": 583,
+        "folhaAltura": 431,
+        "pivotX": 0.566138,
+        "pivotY": 0.004728,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "cida_01",
+      "texturaOrigem": "",
+      "ponto": "pdf_moradora",
+      "quadro": {
+        "id": "Moradora_cida_01",
+        "folha": "PersonagensRevisados/Moradores/Moradora",
+        "x": 197,
+        "y": 4,
+        "largura": 189,
+        "altura": 423,
+        "folhaLargura": 583,
+        "folhaAltura": 431,
+        "pivotX": 0.507937,
+        "pivotY": 0.004728,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "cida_02",
+      "texturaOrigem": "",
+      "ponto": "pdf_moradora",
+      "quadro": {
+        "id": "Moradora_cida_02",
+        "folha": "PersonagensRevisados/Moradores/Moradora",
+        "x": 390,
+        "y": 4,
+        "largura": 189,
+        "altura": 423,
+        "folhaLargura": 583,
+        "folhaAltura": 431,
+        "pivotX": 0.502646,
+        "pivotY": 0.004728,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_00",
+      "texturaOrigem": "",
+      "ponto": "pdf_morador_placa",
+      "quadro": {
+        "id": "MoradorPlaca_zeca_00",
+        "folha": "PersonagensRevisados/Moradores/MoradorPlaca",
+        "x": 4,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.490964,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_01",
+      "texturaOrigem": "",
+      "ponto": "pdf_morador_placa",
+      "quadro": {
+        "id": "MoradorPlaca_zeca_01",
+        "folha": "PersonagensRevisados/Moradores/MoradorPlaca",
+        "x": 174,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.490964,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_02",
+      "texturaOrigem": "",
+      "ponto": "pdf_morador_placa",
+      "quadro": {
+        "id": "MoradorPlaca_zeca_02",
+        "folha": "PersonagensRevisados/Moradores/MoradorPlaca",
+        "x": 344,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.490964,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_00",
+      "texturaOrigem": "",
+      "ponto": "pdf_ajuda_morador",
+      "quadro": {
+        "id": "MoradorPlaca_pdf_ajuda_morador_zeca_00",
+        "folha": "PersonagensRevisados/Moradores/MoradorPlaca",
+        "x": 4,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.490964,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_01",
+      "texturaOrigem": "",
+      "ponto": "pdf_ajuda_morador",
+      "quadro": {
+        "id": "MoradorPlaca_pdf_ajuda_morador_zeca_01",
+        "folha": "PersonagensRevisados/Moradores/MoradorPlaca",
+        "x": 174,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.490964,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "zeca_02",
+      "texturaOrigem": "",
+      "ponto": "pdf_ajuda_morador",
+      "quadro": {
+        "id": "MoradorPlaca_pdf_ajuda_morador_zeca_02",
+        "folha": "PersonagensRevisados/Moradores/MoradorPlaca",
+        "x": 344,
+        "y": 4,
+        "largura": 166,
+        "altura": 424,
+        "folhaLargura": 514,
+        "folhaAltura": 432,
+        "pivotX": 0.490964,
+        "pivotY": 0.004717,
+        "alturaReferencia": 419.0
+      }
+    },
+    {
+      "origem": "feirante_00",
+      "texturaOrigem": "",
+      "ponto": "pdf_artesao",
+      "quadro": {
+        "id": "Artesao_feirante_00",
+        "folha": "PersonagensRevisados/Moradores/Artesao",
+        "x": 4,
+        "y": 4,
+        "largura": 165,
+        "altura": 424,
+        "folhaLargura": 511,
+        "folhaAltura": 432,
+        "pivotX": 0.425758,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "feirante_01",
+      "texturaOrigem": "",
+      "ponto": "pdf_artesao",
+      "quadro": {
+        "id": "Artesao_feirante_01",
+        "folha": "PersonagensRevisados/Moradores/Artesao",
+        "x": 173,
+        "y": 4,
+        "largura": 165,
+        "altura": 424,
+        "folhaLargura": 511,
+        "folhaAltura": 432,
+        "pivotX": 0.534848,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "feirante_02",
+      "texturaOrigem": "",
+      "ponto": "pdf_artesao",
+      "quadro": {
+        "id": "Artesao_feirante_02",
+        "folha": "PersonagensRevisados/Moradores/Artesao",
+        "x": 342,
+        "y": 4,
+        "largura": 165,
+        "altura": 424,
+        "folhaLargura": 511,
+        "folhaAltura": 432,
+        "pivotX": 0.534848,
+        "pivotY": 0.004717,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "zeca_00",
+      "texturaOrigem": "",
+      "ponto": "pdf_morador_rio",
+      "quadro": {
+        "id": "MoradorMargem_zeca_00",
+        "folha": "PersonagensRevisados/Moradores/MoradorMargem",
+        "x": 4,
+        "y": 4,
+        "largura": 215,
+        "altura": 425,
+        "folhaLargura": 661,
+        "folhaAltura": 433,
+        "pivotX": 0.572093,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "zeca_01",
+      "texturaOrigem": "",
+      "ponto": "pdf_morador_rio",
+      "quadro": {
+        "id": "MoradorMargem_zeca_01",
+        "folha": "PersonagensRevisados/Moradores/MoradorMargem",
+        "x": 223,
+        "y": 4,
+        "largura": 215,
+        "altura": 425,
+        "folhaLargura": 661,
+        "folhaAltura": 433,
+        "pivotX": 0.488372,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
+      }
+    },
+    {
+      "origem": "zeca_02",
+      "texturaOrigem": "",
+      "ponto": "pdf_morador_rio",
+      "quadro": {
+        "id": "MoradorMargem_zeca_02",
+        "folha": "PersonagensRevisados/Moradores/MoradorMargem",
+        "x": 442,
+        "y": 4,
+        "largura": 215,
+        "altura": 425,
+        "folhaLargura": 661,
+        "folhaAltura": 433,
+        "pivotX": 0.493023,
+        "pivotY": 0.004706,
+        "alturaReferencia": 420.0
       }
     }
   ],
@@ -1460,6 +1730,31 @@
       "ponto": "",
       "origem": "feliciana",
       "textura": "FelicianaRetrato"
+    },
+    {
+      "ponto": "pdf_moradora",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/Moradora"
+    },
+    {
+      "ponto": "pdf_morador_placa",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/MoradorPlaca"
+    },
+    {
+      "ponto": "pdf_ajuda_morador",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/MoradorPlaca"
+    },
+    {
+      "ponto": "pdf_artesao",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/Artesao"
+    },
+    {
+      "ponto": "pdf_morador_rio",
+      "origem": "",
+      "textura": "PersonagensRevisados/Retratos/MoradorMargem"
     }
   ],
   "netoCorrida": [
@@ -1878,6 +2173,236 @@
       "pivotX": 0.475936,
       "pivotY": 0.006873,
       "alturaReferencia": 291.0
+    }
+  ],
+  "caminhadas": [
+    {
+      "frente": "PersonagensRevisados/Moradores/Zeca",
+      "quadros": [
+        {
+          "id": "Zeca_lado_00",
+          "folha": "PersonagensRevisados/Moradores/ZecaLado",
+          "x": 4,
+          "y": 4,
+          "largura": 265,
+          "altura": 424,
+          "folhaLargura": 1080,
+          "folhaAltura": 432,
+          "pivotX": 0.483019,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "Zeca_lado_01",
+          "folha": "PersonagensRevisados/Moradores/ZecaLado",
+          "x": 273,
+          "y": 4,
+          "largura": 265,
+          "altura": 424,
+          "folhaLargura": 1080,
+          "folhaAltura": 432,
+          "pivotX": 0.483019,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "Zeca_lado_02",
+          "folha": "PersonagensRevisados/Moradores/ZecaLado",
+          "x": 542,
+          "y": 4,
+          "largura": 265,
+          "altura": 424,
+          "folhaLargura": 1080,
+          "folhaAltura": 432,
+          "pivotX": 0.483019,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "Zeca_lado_03",
+          "folha": "PersonagensRevisados/Moradores/ZecaLado",
+          "x": 811,
+          "y": 4,
+          "largura": 265,
+          "altura": 424,
+          "folhaLargura": 1080,
+          "folhaAltura": 432,
+          "pivotX": 0.483019,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        }
+      ]
+    },
+    {
+      "frente": "PersonagensRevisados/Moradores/SeuBento",
+      "quadros": [
+        {
+          "id": "SeuBento_lado_00",
+          "folha": "PersonagensRevisados/Moradores/SeuBentoLado",
+          "x": 4,
+          "y": 4,
+          "largura": 223,
+          "altura": 424,
+          "folhaLargura": 912,
+          "folhaAltura": 432,
+          "pivotX": 0.511211,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "SeuBento_lado_01",
+          "folha": "PersonagensRevisados/Moradores/SeuBentoLado",
+          "x": 231,
+          "y": 4,
+          "largura": 223,
+          "altura": 424,
+          "folhaLargura": 912,
+          "folhaAltura": 432,
+          "pivotX": 0.511211,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "SeuBento_lado_02",
+          "folha": "PersonagensRevisados/Moradores/SeuBentoLado",
+          "x": 458,
+          "y": 4,
+          "largura": 223,
+          "altura": 424,
+          "folhaLargura": 912,
+          "folhaAltura": 432,
+          "pivotX": 0.511211,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "SeuBento_lado_03",
+          "folha": "PersonagensRevisados/Moradores/SeuBentoLado",
+          "x": 685,
+          "y": 4,
+          "largura": 223,
+          "altura": 424,
+          "folhaLargura": 912,
+          "folhaAltura": 432,
+          "pivotX": 0.511211,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        }
+      ]
+    },
+    {
+      "frente": "PersonagensRevisados/Moradores/Cida",
+      "quadros": [
+        {
+          "id": "Cida_lado_00",
+          "folha": "PersonagensRevisados/Moradores/CidaLado",
+          "x": 4,
+          "y": 4,
+          "largura": 215,
+          "altura": 424,
+          "folhaLargura": 880,
+          "folhaAltura": 432,
+          "pivotX": 0.516279,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "Cida_lado_01",
+          "folha": "PersonagensRevisados/Moradores/CidaLado",
+          "x": 223,
+          "y": 4,
+          "largura": 215,
+          "altura": 424,
+          "folhaLargura": 880,
+          "folhaAltura": 432,
+          "pivotX": 0.516279,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "Cida_lado_02",
+          "folha": "PersonagensRevisados/Moradores/CidaLado",
+          "x": 442,
+          "y": 4,
+          "largura": 215,
+          "altura": 424,
+          "folhaLargura": 880,
+          "folhaAltura": 432,
+          "pivotX": 0.516279,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "Cida_lado_03",
+          "folha": "PersonagensRevisados/Moradores/CidaLado",
+          "x": 661,
+          "y": 4,
+          "largura": 215,
+          "altura": 424,
+          "folhaLargura": 880,
+          "folhaAltura": 432,
+          "pivotX": 0.516279,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        }
+      ]
+    },
+    {
+      "frente": "PersonagensRevisados/Moradores/MoradorPlaca",
+      "quadros": [
+        {
+          "id": "MoradorPlaca_lado_00",
+          "folha": "PersonagensRevisados/Moradores/MoradorPlacaLado",
+          "x": 4,
+          "y": 4,
+          "largura": 230,
+          "altura": 424,
+          "folhaLargura": 940,
+          "folhaAltura": 432,
+          "pivotX": 0.504348,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "MoradorPlaca_lado_01",
+          "folha": "PersonagensRevisados/Moradores/MoradorPlacaLado",
+          "x": 238,
+          "y": 4,
+          "largura": 230,
+          "altura": 424,
+          "folhaLargura": 940,
+          "folhaAltura": 432,
+          "pivotX": 0.504348,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "MoradorPlaca_lado_02",
+          "folha": "PersonagensRevisados/Moradores/MoradorPlacaLado",
+          "x": 472,
+          "y": 4,
+          "largura": 230,
+          "altura": 424,
+          "folhaLargura": 940,
+          "folhaAltura": 432,
+          "pivotX": 0.504348,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        },
+        {
+          "id": "MoradorPlaca_lado_03",
+          "folha": "PersonagensRevisados/Moradores/MoradorPlacaLado",
+          "x": 706,
+          "y": 4,
+          "largura": 230,
+          "altura": 424,
+          "folhaLargura": 940,
+          "folhaAltura": 432,
+          "pivotX": 0.504348,
+          "pivotY": 0.004717,
+          "alturaReferencia": 419.0
+        }
+      ]
     }
   ]
 }

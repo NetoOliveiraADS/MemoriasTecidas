@@ -132,7 +132,7 @@ namespace MemoriasTecidas.MundoV2
                 return;
             }
 
-            if (inicioAbertoUI || painel == "pausa" || painel == "visual" || painel == "ajuda" || painel == "sobre" || painel == "mapaCidade")
+            if (inicioAbertoUI || painel == "pausa" || painel == "visual" || painel == "ajuda" || painel == "sobre" || painel == "creditos" || painel == "mapaCidade")
             {
                 Parar();
                 return;

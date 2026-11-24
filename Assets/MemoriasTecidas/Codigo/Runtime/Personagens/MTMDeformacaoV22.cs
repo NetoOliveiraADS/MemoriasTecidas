@@ -154,9 +154,10 @@ namespace MemoriasTecidas.MundoV2
             renderizador.SetPropertyBlock(propriedades);
             vento *= MTMConfiguracaoVisual.Atual.vento;
             float rapidez = ator != null ? ator.RapidezReal : caminhante != null ? caminhante.Velocidade.magnitude : 0f;
-            // A folha do protagonista já desenha as pernas. Evita somar outro passo sobre ela.
-            bool jogador = ator != null && ator.tipo == MTMAtorV22.Tipo.Jogador;
-            float andar = jogador ? 0f : Mathf.Clamp01(rapidez * 2f);
+            // A folha do protagonista (e a caminhada de perfil dos moradores) já desenha as pernas.
+            // Evita somar outro passo sobre ela.
+            bool desenhaPassos = ator != null && ator.DesenhaPassos;
+            float andar = desenhaPassos ? 0f : Mathf.Clamp01(rapidez * 2f);
             // Em jogo a passada entra e sai aos poucos; nas capturas do editor (tempo fixo) vale na hora.
             float dt = float.IsNaN(MTMAmbienteV2.TempoFixo) ? Time.deltaTime : 1f;
             andarSuave = Mathf.MoveTowards(andarSuave, andar, dt * 4f);

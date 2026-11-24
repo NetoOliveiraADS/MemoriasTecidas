@@ -1,6 +1,6 @@
 {
     "versao": 2,
-    "titulo": "Jaguaruana Rede de Memórias • Entre Memórias e Lendas",
+    "titulo": "Memórias Tecidas • Jaguaruana • Entre Memórias e Lendas",
     "subtitulo": "MEMÓRIAS TECIDAS",
     "paleta": {
         "petroleo": "#163C3B",
@@ -3610,7 +3610,7 @@
         {
             "id": "npc_neto",
             "nome": "Miguel · morador",
-            "fonte": "Rede de Memorias - Memorias Tecidas",
+            "fonte": "Personagem e falas ficcionais criados para o jogo. Não representam depoimento de uma pessoa real.",
             "falas": [
                 "Miguel: Estou organizando a mostra do Memorial Carnaúba, aqui atrás. Quando a visita abrir, entre para conhecer o acervo.",
                 "No caderno, você pode acompanhar as missões e rever os lugares e as lembranças da jornada."

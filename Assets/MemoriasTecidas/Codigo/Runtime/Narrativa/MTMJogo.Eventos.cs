@@ -58,6 +58,7 @@ namespace MemoriasTecidas.MundoV2
             var ator = go.AddComponent<MTMAtorV22>();
             ator.tipo = MTMAtorV22.Tipo.Morador;
             ator.quadros = modelo.quadros;
+            ator.quadrosLado = modelo.quadrosLado;
             ator.jogo = this;
             ator.vida = GetComponent<MTMVidaV22>();
             ator.nomeDaConversa = nome;

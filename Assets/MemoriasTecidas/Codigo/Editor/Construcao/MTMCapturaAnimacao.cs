@@ -91,20 +91,7 @@ namespace MemoriasTecidas.MundoV2
             foreach (var antigo in Directory.GetFiles(pasta, "quadro_*.png"))
                 File.Delete(antigo);
 
-            // Ambiente de um dia claro, como o jogo calcula em MTMAmbienteV2.
-            var arte = MTMConfiguracaoVisual.Atual;
-            float sol = MTMCalculosVisuais.Sol(hora);
-            bool interior = regiao.dados.interior;
-            MTMAmbienteV2.Qualidade = 2;
-            MTMAmbienteV2.Fase = hora;
-            MTMAmbienteV2.Sol = sol;
-            Shader.SetGlobalFloat("_MTV_Active", 1f);
-            Shader.SetGlobalFloat("_MTV_Quality", 2f);
-            Shader.SetGlobalFloat("_MTV_Motion", 1f);
-            Shader.SetGlobalColor("_MTV_Ambient", interior ? arte.luzInterior : Color.Lerp(arte.luzNoite, arte.luzDia, sol));
-            Shader.SetGlobalVector("_MTV_Art", new Vector4(arte.exposicao, arte.saturacao, arte.detalhe, interior ? 0f : arte.vento));
-            Shader.SetGlobalVector("_MTV_Sun", new Vector4(Mathf.Sin((hora - .5f) * Mathf.PI * 2f), sol, interior ? 1f : 0f, arte.sombrasContato));
-            Shader.SetGlobalInt("_MTV_Count", 0);
+            Iluminar(regiao.dados.interior, hora);
 
             // Superfícies (água e pisos) e malhas vivas (copas e redes) só existem em jogo: monta aqui.
             foreach (var s in regiao.GetComponentsInChildren<MTMSuperficieV23>(false))
@@ -184,6 +171,195 @@ namespace MemoriasTecidas.MundoV2
             Debug.Log("Captura animada: " + quadros + " quadros de " + regiao.dados.id + " em " + Path.GetFullPath(pasta));
         }
 
+        // Ambiente de um dia claro, como o jogo calcula em MTMAmbienteV2.
+        private static void Iluminar(bool interior, float hora)
+        {
+            var arte = MTMConfiguracaoVisual.Atual;
+            float sol = MTMCalculosVisuais.Sol(hora);
+            MTMAmbienteV2.Qualidade = 2;
+            MTMAmbienteV2.Fase = hora;
+            MTMAmbienteV2.Sol = sol;
+            Shader.SetGlobalFloat("_MTV_Active", 1f);
+            Shader.SetGlobalFloat("_MTV_Quality", 2f);
+            Shader.SetGlobalFloat("_MTV_Motion", 1f);
+            Shader.SetGlobalColor("_MTV_Ambient", interior ? arte.luzInterior : Color.Lerp(arte.luzNoite, arte.luzDia, sol));
+            Shader.SetGlobalVector("_MTV_Art", new Vector4(arte.exposicao, arte.saturacao, arte.detalhe, interior ? 0f : arte.vento));
+            Shader.SetGlobalVector("_MTV_Sun", new Vector4(Mathf.Sin((hora - .5f) * Mathf.PI * 2f), sol, interior ? 1f : 0f, arte.sombrasContato));
+            Shader.SetGlobalInt("_MTV_Count", 0);
+        }
+
+        // Cada pessoa de perto, como aparece no jogo (arte revisada, malha viva e luz do dia), parada e andando.
+        //   unity run <projeto> -- -executeMethod MemoriasTecidas.MundoV2.MTMCapturaAnimacao.Elenco
+        //     -saida Builds/Capturas/elenco [-quadros 14 -fps 10 -largura 220 -altura 340 -vista 2.3]
+        // Grava <saida>/<arte>_parado.png, <arte>_andar_000.png... e elenco.txt com as medidas de cada um.
+        public static void Elenco()
+        {
+            try
+            {
+                var cultura = CultureInfo.InvariantCulture;
+                string saida = Argumento("-saida") ?? Path.Combine("Builds", "Capturas", "elenco");
+                int quadros = int.TryParse(Argumento("-quadros"), NumberStyles.Integer, cultura, out var q) ? Mathf.Clamp(q, 0, 120) : 14;
+                float fps = float.TryParse(Argumento("-fps"), NumberStyles.Float, cultura, out var f) ? Mathf.Max(1f, f) : 10f;
+                int largura = int.TryParse(Argumento("-largura"), NumberStyles.Integer, cultura, out var w) ? w : 220;
+                int altura = int.TryParse(Argumento("-altura"), NumberStyles.Integer, cultura, out var a) ? a : 340;
+                float vista = float.TryParse(Argumento("-vista"), NumberStyles.Float, cultura, out var v) ? Mathf.Max(.5f, v) : 2.3f;
+                // -filtro Zeca,Cida: só as artes cujo nome contém um dos textos.
+                filtroElenco = Argumento("-filtro")?.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                Directory.CreateDirectory(saida);
+                foreach (var antigo in Directory.GetFiles(saida, "*.png"))
+                    File.Delete(antigo);
+
+                EditorSceneManager.OpenScene(Cena, OpenSceneMode.Single);
+                using var kit = AplicarKit();
+                var regioes = UnityEngine.Object.FindObjectsByType<MTMRegiao>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+                Array.Sort(regioes, (x, y) => string.CompareOrdinal(x.dados != null ? x.dados.id : "", y.dados != null ? y.dados.id : ""));
+                var relatorio = new System.Text.StringBuilder("arte\tregião\tobjeto\tcabeça\tcorpo\tpivôX(px)\tlargura(px)\tppu\taltura(u)\n");
+                var feitos = new System.Collections.Generic.HashSet<string>();
+                // O Neto entra como referência de altura.
+                foreach (var ator in UnityEngine.Object.FindObjectsByType<MTMAtorV22>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+                    if (ator.tipo == MTMAtorV22.Tipo.Jogador && ator.GetComponentInParent<MTMRegiao>(true) == null)
+                    {
+                        foreach (var r in regioes)
+                            r.gameObject.SetActive(false);
+                        Retratar(null, ator, saida, quadros, fps, largura, altura, vista, relatorio, feitos);
+                        break;
+                    }
+
+                foreach (var regiao in regioes)
+                {
+                    if (regiao.dados == null)
+                        continue;
+                    foreach (var r in regioes)
+                        r.gameObject.SetActive(r == regiao);
+                    foreach (var ator in regiao.GetComponentsInChildren<MTMAtorV22>(true))
+                        if (ator.tipo == MTMAtorV22.Tipo.Morador)
+                            Retratar(regiao, ator, saida, quadros, fps, largura, altura, vista, relatorio, feitos);
+                }
+
+                File.WriteAllText(Path.Combine(saida, "elenco.txt"), relatorio.ToString());
+                Debug.Log("Elenco: " + feitos.Count + " pessoas em " + Path.GetFullPath(saida));
+            }
+            catch (Exception erro)
+            {
+                Debug.LogError("Elenco: " + erro);
+                EditorApplication.Exit(1);
+            }
+            finally
+            {
+                MTMAmbienteV2.TempoFixo = float.NaN;
+            }
+        }
+
+        private static string[] filtroElenco;
+
+        // Fotografa uma pessoa sozinha (numa camada só dela, com a sombra), a primeira de cada arte.
+        private static void Retratar(MTMRegiao regiao, MTMAtorV22 ator, string pasta, int quadros, float fps, int largura, int altura, float vista,
+            System.Text.StringBuilder relatorio, System.Collections.Generic.HashSet<string> feitos)
+        {
+            const int Camada = 31;
+            var sr = ator.GetComponent<SpriteRenderer>();
+            if (sr == null || sr.sprite == null ||
+                (filtroElenco != null && !Array.Exists(filtroElenco, f => sr.sprite.name.IndexOf(f, StringComparison.OrdinalIgnoreCase) >= 0)) ||
+                !feitos.Add(sr.sprite.name))
+                return;
+            var spriteParado = sr.sprite;
+            // Pessoas que só entram mais tarde na história ficam desligadas: liga só durante a foto.
+            var ligados = new System.Collections.Generic.List<GameObject>();
+            for (var t = ator.transform; t != null && (regiao == null || t != regiao.transform); t = t.parent)
+                if (!t.gameObject.activeSelf)
+                {
+                    t.gameObject.SetActive(true);
+                    ligados.Add(t.gameObject);
+                }
+
+            var malha = ator.GetComponent<MTMDeformacaoV22>();
+            var visual = ator.GetComponentInParent<MTMVisualV2>();
+            var camadas = new System.Collections.Generic.Dictionary<GameObject, int>();
+            void Isolar(GameObject g)
+            {
+                if (g != null && !camadas.ContainsKey(g))
+                {
+                    camadas[g] = g.layer;
+                    g.layer = Camada;
+                }
+            }
+
+            Iluminar(regiao != null && regiao.dados.interior, .40f);
+            if (visual != null)
+                Chamar(visual, "Awake");
+            if (malha != null)
+                Chamar(malha, "OnEnable");
+            Isolar(sr.gameObject);
+            var filho = malha != null ? malha.transform.Find("Malha_Viva_V22") : null;
+            if (filho != null)
+                Isolar(filho.gameObject);
+            if (visual != null && visual.sombra != null)
+                Isolar(visual.sombra.gameObject);
+
+            var go = new GameObject("Captura_Elenco");
+            var cam = go.AddComponent<Camera>();
+            cam.orthographic = true;
+            cam.orthographicSize = vista * .5f;
+            cam.clearFlags = CameraClearFlags.SolidColor;
+            cam.backgroundColor = new Color(.23f, .21f, .19f);
+            cam.cullingMask = 1 << Camada;
+            Vector3 pe = sr.transform.position;
+            cam.transform.position = new Vector3(pe.x, pe.y + vista * .43f, pe.z - 10f);
+            var rt = new RenderTexture(largura, altura, 24, RenderTextureFormat.ARGB32) { antiAliasing = 4 };
+            cam.targetTexture = rt;
+            cam.aspect = largura / (float)altura;
+            var tex = new Texture2D(largura, altura, TextureFormat.RGB24, false);
+            string nome = sr.sprite.name.Replace("HD2D_", "");
+            var atores = new[] { ator };
+            var fases = new float[1];
+            try
+            {
+                // -1: parado; depois, a passada no lugar.
+                for (int i = -1; i < quadros; i++)
+                {
+                    float tempo = 20f + Mathf.Max(0, i) / fps;
+                    MTMAmbienteV2.TempoFixo = tempo;
+                    Shader.SetGlobalFloat("_MTV_Time", tempo);
+                    if (i >= 0)
+                        AndarNoLugar(atores, fases, 1f / fps);
+                    if (visual != null)
+                        Chamar(visual, "LateUpdate");
+                    if (malha != null)
+                    {
+                        Definir(malha, "posePendente", true);
+                        Chamar(malha, "LateUpdate");
+                    }
+
+                    cam.Render();
+                    RenderTexture.active = rt;
+                    tex.ReadPixels(new Rect(0, 0, largura, altura), 0, 0);
+                    tex.Apply();
+                    RenderTexture.active = null;
+                    File.WriteAllBytes(Path.Combine(pasta, nome + (i < 0 ? "_parado" : "_andar_" + i.ToString("000")) + ".png"), tex.EncodeToPNG());
+                }
+
+                var s = sr.sprite;
+                relatorio.AppendLine(string.Format(CultureInfo.InvariantCulture, "{0}\t{1}\t{2}\t{3}\t{4}\t{5:0.0}\t{6:0}\t{7:0.0}\t{8:0.000}",
+                    nome, regiao != null ? regiao.dados.id : "-", Caminho(ator.transform), malha != null ? malha.escalaCabeca : 1f, malha != null ? malha.alongamentoCorpo : 1f,
+                    s.pivot.x, s.rect.width, s.pixelsPerUnit, s.bounds.size.y * Mathf.Abs(ator.transform.lossyScale.y)));
+            }
+            finally
+            {
+                cam.targetTexture = null;
+                UnityEngine.Object.DestroyImmediate(go);
+                UnityEngine.Object.DestroyImmediate(rt);
+                UnityEngine.Object.DestroyImmediate(tex);
+                sr.sprite = spriteParado;
+                if (malha != null)
+                    Chamar(malha, "OnDisable");
+                foreach (var par in camadas)
+                    if (par.Key != null)
+                        par.Key.layer = par.Value;
+                for (int i = ligados.Count - 1; i >= 0; i--)
+                    ligados[i].SetActive(false);
+            }
+        }
+
         // Faz cada morador "andar" para a direita na velocidade dos moradores, sem sair do lugar:
         // avança a fase da passada pela distância, como MTMAtorV22 faz em jogo.
         private static void AndarNoLugar(MTMAtorV22[] atores, float[] fases, float dt)
@@ -202,6 +378,13 @@ namespace MemoriasTecidas.MundoV2
                 Definir(a, "RapidezReal", rapidez);
                 Definir(a, "FaseCaminhada", fases[i]);
                 Definir(a, "VelocidadeReal", new Vector2(rapidez, 0f));
+                // Quem tem caminhada de perfil troca de pose como no jogo: a folha inteira a cada passada.
+                if (sr != null && a.quadrosLado != null && a.quadrosLado.Length > 0)
+                {
+                    int n = a.quadrosLado.Length;
+                    sr.sprite = a.quadrosLado[Mathf.Clamp(Mathf.FloorToInt(fases[i] / (Mathf.PI * 2f) * n), 0, n - 1)];
+                    sr.flipX = false;
+                }
             }
         }
 

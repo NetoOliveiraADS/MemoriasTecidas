@@ -61,6 +61,18 @@ namespace MemoriasTecidas.MundoV2
         public MTMQuadroHD2D[] netoCorrida;
         public MTMMoradorHD2D[] moradores;
         public MTMRetratoHD2D[] retratos;
+        // Opcional: caminhada de perfil dos moradores que andam pela cidade.
+        public MTMCaminhadaHD2D[] caminhadas;
+    }
+
+    // Caminhada de perfil (virada para a direita) de quem usa a folha de frente "frente".
+    // Andando, o morador troca para estes quadros (o jogo espelha para a esquerda); parado ou
+    // conversando, volta à arte de frente.
+    [Serializable]
+    internal sealed class MTMCaminhadaHD2D
+    {
+        public string frente;
+        public MTMQuadroHD2D[] quadros;
     }
 
     // Retrato revisado dos diálogos e do caderno: vale para o ponto "ponto" e para qualquer
@@ -92,6 +104,8 @@ namespace MemoriasTecidas.MundoV2
         private readonly Dictionary<string, MTMQuadroHD2D> objetos = new Dictionary<string, MTMQuadroHD2D>();
         private readonly Dictionary<string, Texture2D> cartoes = new Dictionary<string, Texture2D>();
         private readonly Dictionary<string, MTMMoradorHD2D> moradores = new Dictionary<string, MTMMoradorHD2D>(StringComparer.Ordinal);
+        // Folha de frente ("PersonagensRevisados/Moradores/Zeca") -> quadros da caminhada de perfil.
+        private readonly Dictionary<string, MTMQuadroHD2D[]> caminhadas = new Dictionary<string, MTMQuadroHD2D[]>(StringComparer.Ordinal);
         private readonly Dictionary<string, Texture2D> retratosPorPonto = new Dictionary<string, Texture2D>(StringComparer.Ordinal);
         private readonly Dictionary<string, Texture2D> retratosPorOrigem = new Dictionary<string, Texture2D>(StringComparer.Ordinal);
         private readonly List<Action> restaurar = new List<Action>();
@@ -192,6 +206,7 @@ namespace MemoriasTecidas.MundoV2
             artePersonagens = null;
             retratoNeto = null;
             moradores.Clear();
+            caminhadas.Clear();
             retratosPorPonto.Clear();
             retratosPorOrigem.Clear();
             var json = Resources.Load<TextAsset>(Pasta + PastaPersonagens + "quadros");
@@ -232,6 +247,7 @@ namespace MemoriasTecidas.MundoV2
             if (arte != null)
             {
                 ValidarMoradores(arte.moradores);
+                ValidarCaminhadas(arte.caminhadas);
                 ValidarRetratos(arte.retratos);
                 if (artePersonagens != null)
                     ValidarNetoCorrida(arte.netoCorrida);
@@ -310,6 +326,27 @@ namespace MemoriasTecidas.MundoV2
                 catch (Exception e)
                 {
                     Debug.LogWarning("HD2D: pose revisada ignorada (" + (m == null ? "vazia" : m.origem) + "): " + e.Message);
+                }
+        }
+
+        // Uma caminhada com problema é ignorada: o morador continua andando com a arte de frente.
+        private void ValidarCaminhadas(MTMCaminhadaHD2D[] lista)
+        {
+            if (lista == null)
+                return;
+            foreach (var c in lista)
+                try
+                {
+                    if (c == null || string.IsNullOrEmpty(c.frente) || c.quadros == null || c.quadros.Length < 2 || caminhadas.ContainsKey(c.frente))
+                        throw new InvalidOperationException("caminhada sem folha de frente, com menos de 2 quadros ou repetida.");
+                    var ids = new HashSet<string>();
+                    foreach (var q in c.quadros)
+                        ValidarQuadro(q, ids);
+                    caminhadas.Add(c.frente, c.quadros);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogWarning("HD2D: caminhada de perfil ignorada (" + (c == null ? "vazia" : c.frente) + "): " + e.Message);
                 }
         }
 
@@ -458,9 +495,29 @@ namespace MemoriasTecidas.MundoV2
             foreach (var ator in regiao.GetComponentsInChildren<MTMAtorV22>(true))
                 if (ator.tipo == MTMAtorV22.Tipo.Morador && ator.nomeDaConversa == ponto.dados.nome)
                 {
-                    AplicarQuadros(ator, artePersonagens.feliciana);
+                    if (AplicarQuadros(ator, artePersonagens.feliciana))
+                        ProporcoesDoDesenho(ator);
                     return;
                 }
+        }
+
+        // A arte revisada já vem com as proporções certas. O ajuste da malha feito para a arte antiga
+        // (corpo 12% mais comprido e cabeça menor, puxada para o pivô) deixava os moradores finos e tortos.
+        private void ProporcoesDoDesenho(MTMAtorV22 ator)
+        {
+            var malha = ator.GetComponent<MTMDeformacaoV22>();
+            if (malha == null || malha.tipo != MTMDeformacaoV22.Tipo.Pessoa || (malha.escalaCabeca == 1f && malha.alongamentoCorpo == 1f))
+                return;
+            float cabeca = malha.escalaCabeca, corpo = malha.alongamentoCorpo;
+            restaurar.Add(() =>
+            {
+                if (malha == null)
+                    return;
+                malha.escalaCabeca = cabeca;
+                malha.alongamentoCorpo = corpo;
+            });
+            malha.escalaCabeca = 1f;
+            malha.alongamentoCorpo = 1f;
         }
 
         private bool AplicarQuadros(MTMAtorV22 ator, MTMQuadroHD2D[] quadros)
@@ -524,6 +581,8 @@ namespace MemoriasTecidas.MundoV2
             });
             ator.quadros = novos;
             sr.sprite = atual;
+            ProporcoesDoDesenho(ator);
+            CaminhadaDeLado(ator, anterior, ponto, atual);
             Moradores++;
         }
 
@@ -553,16 +612,47 @@ namespace MemoriasTecidas.MundoV2
         // A pose revisada ocupa no mundo a mesma altura da pose antiga.
         private Sprite Revisado(Sprite antigo, string ponto)
         {
-            MTMMoradorHD2D m;
-            if (antigo == null)
-                return antigo;
-            if ((string.IsNullOrEmpty(ponto) || !moradores.TryGetValue(ChaveMorador(ponto, antigo.name), out m)) &&
-                !moradores.TryGetValue(ChaveMorador(null, antigo.name), out m))
-                return antigo;
-            if (!string.IsNullOrEmpty(m.texturaOrigem) && (antigo.texture == null || antigo.texture.name != m.texturaOrigem))
+            var m = MoradorRevisado(antigo, ponto);
+            if (m == null)
                 return antigo;
             float ppu = antigo.pixelsPerUnit * m.quadro.alturaReferencia / Mathf.Max(1f, antigo.rect.height);
             return CriarSprite(m.quadro, ppu, "morador:" + antigo.GetInstanceID() + ":" + m.quadro.id);
+        }
+
+        private MTMMoradorHD2D MoradorRevisado(Sprite antigo, string ponto)
+        {
+            MTMMoradorHD2D m;
+            if (antigo == null)
+                return null;
+            if ((string.IsNullOrEmpty(ponto) || !moradores.TryGetValue(ChaveMorador(ponto, antigo.name), out m)) &&
+                !moradores.TryGetValue(ChaveMorador(null, antigo.name), out m))
+                return null;
+            if (!string.IsNullOrEmpty(m.texturaOrigem) && (antigo.texture == null || antigo.texture.name != m.texturaOrigem))
+                return null;
+            return m;
+        }
+
+        // Quem tem caminhada de perfil ganha os quadros com a mesma altura no mundo da arte de frente revisada
+        // (a folha de perfil fica na resolução em que foi desenhada; só a escala muda).
+        private void CaminhadaDeLado(MTMAtorV22 ator, Sprite antigo, string ponto, Sprite frente)
+        {
+            var m = MoradorRevisado(antigo, ponto);
+            MTMQuadroHD2D[] lado;
+            if (m == null || frente == null || !caminhadas.TryGetValue(m.quadro.folha, out lado))
+                return;
+            var sprites = new Sprite[lado.Length];
+            for (int i = 0; i < lado.Length; i++)
+            {
+                float ppu = frente.pixelsPerUnit * lado[i].alturaReferencia / Mathf.Max(1f, m.quadro.alturaReferencia);
+                sprites[i] = CriarSprite(lado[i], ppu, "lado:" + antigo.GetInstanceID() + ":" + lado[i].id);
+            }
+            var anteriores = ator.quadrosLado;
+            restaurar.Add(() =>
+            {
+                if (ator != null)
+                    ator.quadrosLado = anteriores;
+            });
+            ator.quadrosLado = sprites;
         }
 
         private static string ChaveMorador(string ponto, string origem)
@@ -751,6 +841,7 @@ namespace MemoriasTecidas.MundoV2
             artePersonagens = null;
             netoCorrida = null;
             moradores.Clear();
+            caminhadas.Clear();
             retratosPorPonto.Clear();
             retratosPorOrigem.Clear();
             Personagens = Objetos = Superficies = Pisos = Retratos = Moradores = 0;

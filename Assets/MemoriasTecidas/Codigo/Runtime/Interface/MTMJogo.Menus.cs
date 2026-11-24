@@ -58,13 +58,13 @@ namespace MemoriasTecidas.MundoV2
         private void InicioUI()
         {
             FundoInicioUI();
-            TextoTecido(new Rect(52, 48, 392, 20), "MEMÓRIAS TECIDAS", 12, acentoTextoUI, true);
-            // Marca em texto real: Jaguaruana Rede de Memórias • Entre Memórias e Lendas.
-            TituloEditorial(new Rect(48, 92, 414, 72), "Jaguaruana", 54, textoSuperficieUI);
-            TituloEditorial(new Rect(52, 170, 392, 38), "Rede de Memórias", 27, acentoTextoUI);
-            TextoTecido(new Rect(52, 218, 392, 24), "Entre Memórias e Lendas", 15, textoSuperficieUI);
-            RedeDecorativaTecido(new Rect(52, 258, 100, 32), ouro);
-            Linha(new Vector2(172, 272), new Vector2(280, 272), AlfaTecido(ouro, .6f));
+            // Marca em texto real: o nome do jogo em destaque, colado ao lugar (Memórias Tecidas · Jaguaruana),
+            // e o subtítulo Entre Memórias e Lendas.
+            TituloEditorial(new Rect(50, 74, 440, 58), "Memórias Tecidas", 44, acentoTextoUI);
+            TituloEditorial(new Rect(47, 122, 430, 80), "Jaguaruana", 62, textoSuperficieUI);
+            TextoTecido(new Rect(52, 216, 392, 28), "Entre Memórias e Lendas", 19, textoSuperficieUI);
+            RedeDecorativaTecido(new Rect(52, 272, 100, 32), ouro);
+            Linha(new Vector2(172, 286), new Vector2(280, 286), AlfaTecido(ouro, .6f));
             if (confirmarNovo)
             {
                 ConfirmacaoJornadaUI();
@@ -73,7 +73,7 @@ namespace MemoriasTecidas.MundoV2
 
             // Os botões vêm logo abaixo do título; a nota só aparece quando há algo a dizer
             // (jornada salva ou aviso), sem deixar espaço vazio no jogo novo.
-            float y = 330f;
+            float y = 350f;
             if (BotaoTecido(new Rect(52, y, 392, 52), possuiJornadaUI ? "Continuar de onde parei  →" : "Começar a jornada  →", true))
                 EntrarNaJornadaUI();
             y += 52f;
@@ -203,6 +203,8 @@ namespace MemoriasTecidas.MundoV2
                 painel = retornoMapaCidadeUI == "inicio" ? "" : "pausa";
             else if (painel == "arteLugar")
                 painel = "mapa";
+            else if (painel == "creditos")
+                painel = "sobre";
             else if (painel == "visual" || painel == "ajuda" || painel == "sobre")
             {
                 SalvarPreferenciasVisuais();
@@ -355,10 +357,87 @@ namespace MemoriasTecidas.MundoV2
             CabecalhoOpcoesUI("Histórias que se entrelaçam.", "SOBRE O JOGO");
             IconeTecido("rede", new Rect(234, 230, 196, 138), terracotaUI);
             TextoTecido(new Rect(470, 222, 570, 112), "Memórias Tecidas aproxima lugares, personagens e saberes por meio da exploração e da criação de uma rede de lembranças.", 21, textoPapelUI);
-            TextoTecido(new Rect(214, 404, 852, 104), "Os diálogos e atividades são adaptações ficcionais e didáticas. As fontes dos encontros aparecem no caderno; os textos não devem ser tratados como depoimentos históricos autênticos.", 18, textoPapelUI);
-            TextoTecido(new Rect(214, 516, 852, 90), "Fontes DejaVu. Sons: Kenney e Blanket (CC0 e domínio público), gezortenplotz/Freesound (CC BY 3.0) e 0 A.D. © Wildfire Games, wildfiregames.com (CC BY-SA 3.0).\nLista completa em Resources/MemoriasTecidas/Sons/CREDITOS.txt.\nBandeira de Jaguaruana: símbolo oficial do município, redesenhado para a abertura.\nFotos: Matriz de Sant'Ana, @fotosdoceara; Raimundo Jaguaribe, Ivonete Maia e Padre Ducéu, blog Memórias de Jaguaruana.", 13, textoPapelUI);
-            if (prologo != null && BotaoTecido(new Rect(214, 616, 300, 40), "Assistir à abertura  →"))
-                ReverAbertura();
+            TextoTecido(new Rect(214, 404, 852, 104), "Os diálogos e atividades são adaptações ficcionais e didáticas. A fonte de cada encontro fica no caderno, na aba Fontes; os textos não devem ser tratados como depoimentos históricos autênticos.", 18, textoPapelUI);
+            TextoTecido(new Rect(214, 526, 852, 56), "Fotos, sons, letras e as fontes da pesquisa histórica estão reunidos em Créditos e referências.", 16, textoPapelUI);
+            float x = 214f;
+            if (prologo != null)
+            {
+                if (BotaoTecido(new Rect(x, 616, 300, 40), "Assistir à abertura  →"))
+                    ReverAbertura();
+                x += 316f;
+            }
+
+            if (BotaoTecido(new Rect(x, 616, 300, 40), "Créditos e referências  →"))
+            {
+                painel = "creditos";
+                LimparFocoUI();
+            }
+        }
+
+        // Créditos por assunto: o que foi usado, de quem é e de onde veio. Os endereços completos ficam no LEIA-ME.
+        private static readonly (string titulo, string[] itens)[] CreditosImagensSons =
+        {
+            ("FOTOGRAFIAS E SÍMBOLOS", new[]
+            {
+                "Igreja Matriz de Sant'Ana: foto de @fotosdoceara, na abertura e na Casa das Memórias.",
+                "Raimundo Jaguaribe, Ivonete Maia e Padre Ducéu: fotos do blog Memórias de Jaguaruana, \"Jaguaruanenses ilustres\" (2017).",
+                "Bandeira de Jaguaruana: símbolo oficial do município (imagem do Wikimedia Commons), redesenhado para a abertura."
+            }),
+            ("SONS", new[]
+            {
+                "Kenney (kenney.nl): passos, golpes, tear e interface. CC0.",
+                "Freesound, pelo app Blanket: felix.blume, kvgarlic e gluckose (CC0); gezortenplotz (CC BY 3.0).",
+                "SoundBible: Lisa Redfern e ezwa. Domínio público.",
+                "0 A.D. © Wildfire Games (wildfiregames.com): cavalo, escudo e mercado. CC BY-SA 3.0.",
+                "Som por som: \"Creditos dos sons.txt\", na pasta do jogo."
+            }),
+            ("LETRAS", new[]
+            {
+                "DejaVu Sans e DejaVu Serif, do projeto DejaVu Fonts. Licença livre."
+            })
+        };
+
+        private static readonly (string titulo, string[] itens)[] CreditosPesquisa =
+        {
+            ("PESQUISA HISTÓRICA", new[]
+            {
+                "IBGE. Jaguaruana. Coleção de Monografias, nº 314, 1965.",
+                "João Luiz de Oliveira. O Ceará tem memória – Jaguaruana: um povo, um lugar.",
+                "Prefeitura de Jaguaruana: \"A Cidade\" e \"E.E.F. Gerardo Correia Lima: 40 anos de história\".",
+                "Blog Memórias de Jaguaruana: \"Jaguaruanenses ilustres\" (2017), texto de Vicência Jaguaribe, entrevista com o prof. José Wilson Freitas e \"Jaguaruana em preto & branco\".",
+                "Vermelho, 14/02/2012: \"Morre aos 73 anos a jornalista cearense Ivonete Maia\".",
+                "O Povo, sobre Emília Freitas: \"De renegada a rainha\" (02/03/2021), \"Pioneira na ficção especulativa brasileira, Emília Freitas completa 170 anos\" (13/01/2025) e a reportagem sobre o filme (18/08/2026).",
+                "Lenda da assombração: Ah Duvido, \"Lendas urbanas – parte 5\" (2017), e Fantastipedia, \"Assombração de Jaguaruana\".",
+                "Exposição do museu: referências do Memorial Carnaúba e do MAUC/UFC."
+            })
+        };
+
+        private void CreditosUI()
+        {
+            CabecalhoOpcoesUI("Quem ajudou a tecer esta rede.", "CRÉDITOS E REFERÊNCIAS");
+            ColunaCreditosUI(new Rect(214, 204, 404, 450), CreditosImagensSons);
+            TracoHUD(new Rect(640, 210, 1, 420), AlfaTecido(ouro, .35f), true);
+            ColunaCreditosUI(new Rect(662, 204, 404, 450), CreditosPesquisa);
+        }
+
+        private void ColunaCreditosUI(Rect area, (string titulo, string[] itens)[] secoes)
+        {
+            float y = area.y;
+            foreach (var secao in secoes)
+            {
+                LosangoCompacta(new Rect(area.x, y + 3, 10, 10), ouro);
+                TextoTecido(new Rect(area.x + 18, y, area.width - 18, 18), secao.titulo, 12, terracotaUI, true);
+                y += 24f;
+                foreach (var item in secao.itens)
+                {
+                    float altura = AlturaTecido(item, area.width - 14, 13);
+                    Fundo(new Rect(area.x + 3, y + 7, 4, 4), AlfaTecido(textoPapelUI, .55f));
+                    TextoTecido(new Rect(area.x + 14, y, area.width - 14, altura), item, 13, textoPapelUI);
+                    y += altura + 6f;
+                }
+
+                y += 12f;
+            }
         }
 
         private void SairDoJogoUI()

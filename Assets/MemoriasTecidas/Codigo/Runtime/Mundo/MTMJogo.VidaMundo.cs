@@ -174,7 +174,7 @@ namespace MemoriasTecidas.MundoV2
             Fundo(new Rect(44, 108, 1192, 556), tinta);
             Fundo(new Rect(44, 108, 1192, 4), ouro);
             Fundo(new Rect(44, 660, 1192, 4), new Color(.72f, .36f, .23f));
-            string titulo = painel == "mapa" ? "Redes de Memórias" : painel == "bolsa" ? "Sua bolsa" : "Diário de memórias";
+            string titulo = painel == "mapa" ? "Mapa de Jaguaruana" : painel == "bolsa" ? "Sua bolsa" : "Diário de memórias";
             GUI.Label(new Rect(70, 126, 1015, 42), titulo, tituloUI);
             if (BotaoTecido(new Rect(1104, 126, 104, 36), "Fechar"))
             {

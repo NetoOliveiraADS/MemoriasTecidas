@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MemoriasTecidas.MundoV2
 {
-    // Som do jogo: música (exploração e tensão), ambiente de vento, passos e efeitos.
+    // Som do jogo: música (exploração, noite, festa e tensão), ambiente de vento, passos e efeitos.
     // Os arquivos ficam em Resources/MemoriasTecidas/Sons; variações terminam em _1, _2...
     // Música e ambiente trocam com fade cruzado; os efeitos variam levemente o tom a cada toque.
     public sealed partial class MTMJogo
@@ -105,10 +105,10 @@ namespace MemoriasTecidas.MundoV2
             bool lutando = EmConfronto && confrontoAtual != null && !encerrandoConfronto;
 
             // Música: na tela inicial em meio volume; no jogo desce devagar até ficar abaixo dos efeitos.
-            // Tensão nas lutas, exploração no resto.
+            // Tensão nas lutas; festa na praça decorada; noite nas horas escuras; exploração no resto.
             // Na abertura de cinema a música sobe e o vento acompanha a bandeira.
             bool abertura = painel == "prologo";
-            string musica = lutando ? "musica_tensao" : "musica_exploracao";
+            string musica = lutando ? "musica_tensao" : abertura || inicioAbertoUI ? "musica_exploracao" : MusicaDoLugar();
             float alvoMusica = volumeMusica * (abertura ? .55f : inicioAbertoUI ? .7f : lutando ? .34f : menu || falas != null ? .2f : .16f);
             TrocarLoop(musicaSom, ref musicaAtiva, ref musicaTocando, musica, alvoMusica, abertura || inicioAbertoUI || lutando ? 1.5f : 6f, dt);
 
@@ -128,6 +128,22 @@ namespace MemoriasTecidas.MundoV2
             AtualizarPassosSom(menu, dt);
             AtualizarTearSom();
             AtualizarConfrontoSom(lutando, dt);
+        }
+
+        // Música do momento fora das lutas. Sem o arquivo da festa ou da noite, fica a de exploração.
+        private string MusicaDoLugar()
+        {
+            if (FestaNaPraca && SonsDe("musica_festa").Length > 0)
+                return "musica_festa";
+            if (Noite && SonsDe("musica_noite").Length > 0)
+                return "musica_noite";
+            return "musica_exploracao";
+        }
+
+        // A decoração da celebração (missão 14) fica dentro da praça: só está ativa com o Neto lá.
+        private bool FestaNaPraca
+        {
+            get { return festaRoteiro != null && festaRoteiro.activeInHierarchy; }
         }
 
         // Tear: batida de madeira ao trocar o pedal, pano ao trocar o fio.

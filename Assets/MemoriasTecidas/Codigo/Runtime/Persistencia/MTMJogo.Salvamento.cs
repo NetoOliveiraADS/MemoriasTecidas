@@ -6,11 +6,14 @@ namespace MemoriasTecidas.MundoV2
 {
     public sealed partial class MTMJogo
     {
+        // Só o teste automático preenche: salva e carrega na pasta do teste, nunca no save do jogador.
+        private string caminhoSaveTeste;
+
         private string CaminhoSave
         {
             get
             {
-                return Path.Combine(Application.persistentDataPath, "memorias-tecidas-mundo-v2.json");
+                return !string.IsNullOrEmpty(caminhoSaveTeste) ? caminhoSaveTeste : Path.Combine(Application.persistentDataPath, "memorias-tecidas-mundo-v2.json");
             }
         }
 

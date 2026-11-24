@@ -8,7 +8,8 @@ namespace MemoriasTecidas.MundoV2
     {
         private MTMTrama tramaTecida;
         private readonly HashSet<string> pontosControladosRoteiro = new HashSet<string>();
-        private const string FonteRoteiro = "Memorias Tecidas - Rede de Memorias";
+        // Fonte das cenas que o próprio roteiro cria (aparece no caderno, na aba Fontes e em Memórias).
+        private const string FonteRoteiro = "Cena e falas criadas para o roteiro do jogo.";
         private string missaoFixadaTecido = "", missaoSelecionadaTecido = "";
         private void PrepararTramaTecida()
         {
@@ -431,7 +432,10 @@ namespace MemoriasTecidas.MundoV2
             Salvar();
             AtualizarVisibilidadeRoteiro();
             if (MTMTrama.Concluida(estado, m))
+            {
                 Avisar("Missão concluída: " + m.titulo + ".");
+                TocarSom("vinheta_missao", .8f, 0f);
+            }
             else
                 NovoObjetivoHUD();
             AoConcluirEtapaPrimeiroFio(e, motivosAntes);

@@ -6,7 +6,7 @@ namespace MemoriasTecidas.MundoV2
 {
     public static class MTMTextoDialogo
     {
-        public const string Assinatura = "Rede de Memorias - Memorias Tecidas";
+        public const string Assinatura = "Memórias Tecidas";
         private static readonly string[] Vozes =
         {
             "Neto",

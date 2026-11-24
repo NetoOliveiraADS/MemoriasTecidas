@@ -9,7 +9,7 @@ namespace MemoriasTecidas.MundoV2
 {
     // Monta o acervo da Casa das Memórias: importa a arte de Arte/Objetos/Memorias, cria os prefabs em
     // Prefabs/Memorias e coloca na região "memorias" a galeria de retratos, o canto de cada personagem,
-    // o tapete com tamboretes, a tradição da rede e duas leituras (galeria e moldura vazia).
+    // o tapete com tamboretes, a tradição da rede e as leituras (galeria, moldura vazia, escolas de 1965 e cheia de 1985).
     // Pode rodar de novo: refaz o grupo "Acervo" e as leituras, sem duplicar nada.
     // Linha de comando (Unity fechado):
     //   unity run <projeto> -- -executeMethod MemoriasTecidas.MundoV2.MTMMontagemMemorias.Montar
@@ -57,6 +57,8 @@ namespace MemoriasTecidas.MundoV2
             new Peca("galeria_bandeira", 220f, .07160f, Tipo.Parede),
             new Peca("galeria_duceu", 220f, .06199f, Tipo.Parede),
             new Peca("galeria_ivonete", 220f, .06199f, Tipo.Parede),
+            new Peca("galeria_escolas1965", 220f, .06250f, Tipo.Parede),
+            new Peca("galeria_cheia1985", 220f, .07160f, Tipo.Parede),
             new Peca("tapete_varandas", 100f, .50052f, Tipo.Piso),
             new Peca("lousa_mestre", 200f, .02909f, Tipo.Movel, 1.7f, .34f),
             new Peca("carteira_escolar", 200f, .04000f, Tipo.Movel, 1.3f, .42f),
@@ -113,6 +115,8 @@ namespace MemoriasTecidas.MundoV2
                 AssetDatabase.CreateFolder("Assets/MemoriasTecidas/Prefabs", "Memorias");
 
             ConfigurarTextura(PastaArte + "/retrato_raimundo.png", null);
+            ConfigurarTextura(PastaArte + "/retrato_escolas1965.png", null);
+            ConfigurarTextura(PastaArte + "/retrato_cheia1985.png", null);
             foreach (var peca in Pecas)
                 ConfigurarTextura(PastaArte + "/" + peca.arte + ".png", peca);
 
@@ -253,6 +257,10 @@ namespace MemoriasTecidas.MundoV2
             Por(galeria, prefabs["galeria_bandeira"], "Quadro · Bandeira de Jaguaruana", 3.43f, 8.19f, .82f);
             Por(galeria, prefabs["galeria_praca"], "Quadro · Praça antiga", 5.53f, 8.08f, .85f);
             Por(galeria, prefabs["expositor_galeria"], "Expositor da galeria", -3.3f, 3.5f);
+            // Painéis laterais, no lugar dos cestinhos pequenos e na mesma altura (centro em 8,72):
+            // as escolas acima do canto do Mestre Gerardinho, a cheia acima da estante de Emília.
+            Por(galeria, prefabs["galeria_escolas1965"], "Quadro · Escolas de antigamente", -9.3f, 7.93f);
+            Por(galeria, prefabs["galeria_cheia1985"], "Quadro · A cheia de 1985", 12.15f, 8.07f);
 
             // Canto de cada personagem, atrás de onde ele fica.
             var gerardinho = Grupo(acervo, "Canto · Mestre Gerardinho");
@@ -352,6 +360,38 @@ namespace MemoriasTecidas.MundoV2
                     "Por isso, a Emília desta casa é uma representação artística. Um filme em produção, A Paladina da Ilha do Nevoeiro, parte justamente dessa busca pelo rosto perdido da escritora."
                 }
             }, AssetDatabase.LoadAssetAtPath<Texture2D>(PastaArte + "/moldura_vazia.png"), new Rect(.05f, .36f, .9f, .62f));
+
+            Leitura(placas, "Leitura · Escolas de antigamente", new Vector2(-9.3f, 4.6f), 1.5f, new MTMPontoDados
+            {
+                id = "memorias_escolas",
+                nome = "Escolas de antigamente",
+                tipo = "leitura",
+                fonte = "IBGE. Jaguaruana. Coleção de Monografias, nº 314, 1965 (fotos). Memórias de Jaguaruana (blog, 2017): entrevista com o prof. José Wilson Freitas.",
+                falas = new[]
+                {
+                    "Estas fotos são de 1965, da monografia do IBGE sobre Jaguaruana. Em cima, o Grupo Escolar Manuel Sátiro; embaixo, o Ginásio Cônego Agostinho.",
+                    "Antes delas, as aulas aconteciam na casa dos professores. O Mestre Gerardinho ensinou na casa dele, na rua Padre Rocha, de 1909 a 1953.",
+                    "O Manuel Sátiro foi construído com ajuda do governo e é a escola mais antiga da cidade. Os alunos tinham farda do dia a dia e uma farda de gala para festas, inaugurações e enterros.",
+                    "Depois veio o Cônego Agostinho, com o ginásio, do quinto ao oitavo ano. Para entrar, era preciso passar num exame de admissão: quase um vestibular."
+                }
+            }, AssetDatabase.LoadAssetAtPath<Texture2D>(PastaArte + "/retrato_escolas1965.png"), new Rect(0f, 0f, 1f, 1f));
+
+            // Ao lado da estante: bem embaixo do quadro, o Neto ficaria escondido atrás dela.
+            Leitura(placas, "Leitura · A cheia de 1985", new Vector2(13.3f, 4.2f), 1.5f, new MTMPontoDados
+            {
+                id = "memorias_cheia1985",
+                nome = "A cheia de 1985",
+                tipo = "leitura",
+                fonte = "Memórias de Jaguaruana (blog): \"Cheia de 1985\", trechos da monografia do prof. Kamillo Karol Ribeiro e Silva, com entrevistas de moradores; O Povo, 14/06/1985. Foto: acervo pessoal de Lígia Maria Santiago.",
+                falas = new[]
+                {
+                    "Maio de 1985: um helicóptero pousa na Avenida Antônio José de Freitas, no meio da cheia. A foto é do acervo pessoal de Lígia Maria Santiago.",
+                    "O Jaguaribe já tinha enchido outras vezes, em 1924, 1960 e 1974, mas a cheia de 1985 é a que ficou mais forte na memória da cidade.",
+                    "No dia 6 de maio, técnicos do DNOCS mediram 10.300 metros cúbicos de água por segundo no rio, em Aracati. Em Jaguaruana, quase tudo ficou debaixo d'água.",
+                    "O hospital não dava conta. Quando não havia jeito, um helicóptero levava doentes e mulheres grávidas para Russas. Moradores lembram dele baixando de meia em meia hora.",
+                    "Muita gente saiu de casa levando nos braços o que podia: uma mala, uma cama, um fogão, o pote d'água. Depois vieram as vilas novas para quem perdeu tudo."
+                }
+            }, AssetDatabase.LoadAssetAtPath<Texture2D>(PastaArte + "/retrato_cheia1985.png"), new Rect(0f, 0f, 1f, 1f));
         }
 
         private static void Leitura(Transform pai, string nome, Vector2 posicao, float alcance, MTMPontoDados dados, Texture2D retrato, Rect recorte)
@@ -361,7 +401,9 @@ namespace MemoriasTecidas.MundoV2
             go.transform.localPosition = new Vector3(posicao.x, posicao.y, 0f);
             dados.x = posicao.x;
             dados.y = posicao.y;
-            dados.destino = dados.evento = dados.condicao = "";
+            dados.destino = dados.condicao = "";
+            // Lida uma vez, a leitura entra na jornada e a fonte dela aparece no caderno (aba Fontes).
+            dados.evento = "leitura_" + dados.id;
             var ponto = go.AddComponent<MTMPonto>();
             ponto.dados = dados;
             ponto.retrato = retrato;

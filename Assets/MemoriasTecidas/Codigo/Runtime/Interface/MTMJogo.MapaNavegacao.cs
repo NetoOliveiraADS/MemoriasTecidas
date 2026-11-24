@@ -128,7 +128,7 @@ namespace MemoriasTecidas.MundoV2
             Fundo(new Rect(0, 0, 1280, 720), profundoUI);
             LosangoCompacta(new Rect(24, 19, 12, 12), ouro);
             TextoTecido(new Rect(44, 15, 720, 20), "SUA JORNADA", 12, acentoTextoUI, true);
-            TituloEditorial(new Rect(22, 40, 790, 42), "Redes de Memórias", 28, textoSuperficieUI);
+            TituloEditorial(new Rect(22, 40, 790, 42), "Mapa de Jaguaruana", 28, textoSuperficieUI);
             if (BotaoTecido(new Rect(864, 30, 126, 42), "Bolsa " + AtalhoUI("I")))
             {
                 SoltarArrastoMapaUI();

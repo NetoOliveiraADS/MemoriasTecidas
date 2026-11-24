@@ -56,7 +56,7 @@ namespace MemoriasTecidas.MundoV2
             if (e.rawType == EventType.MouseUp || !possuiFoco)
                 pressionadoUI = "";
             bool campo = GUI.GetNameOfFocusedControl() == "MT_BuscaBolsa";
-            bool seta = (inicioAbertoUI || painel == "pausa" || painel == "visual" || painel == "ajuda" || painel == "sobre") && !campo && painel != "mapaCidade";
+            bool seta = (inicioAbertoUI || painel == "pausa" || painel == "visual" || painel == "ajuda" || painel == "sobre" || painel == "creditos") && !campo && painel != "mapaCidade";
             // Controle: o direcional escolhe o botão mais próximo naquela direção e A confirma.
             // Só com algum painel ou conversa aberta; no mundo, o direcional anda.
             bool painelAberto = inicioAbertoUI || falas != null || !string.IsNullOrEmpty(painel);

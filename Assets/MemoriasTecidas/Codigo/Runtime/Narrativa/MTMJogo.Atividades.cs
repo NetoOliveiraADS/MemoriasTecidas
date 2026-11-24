@@ -13,6 +13,31 @@ namespace MemoriasTecidas.MundoV2
         private string retornoAtividade = "", pistaSelecionadaRoteiro = "", registroSelecionadoRoteiro = "";
         private bool referenciasAtividade;
         private Vector2 rolagemAtividade;
+        // Botão "Conferir e concluir" (o teste automático também passa por aqui). Devolve true se a etapa
+        // foi concluída e a atividade fechou; senão deixa o motivo em retornoAtividade.
+        private bool ConferirAtividadeRoteiro(MTMPuzzleTecido a)
+        {
+            if (!MTMMotorMissoes.RespostaCorreta(estado, tramaTecida, a, respostaAtividade))
+            {
+                retornoAtividade = "Ainda não corresponde às referências. Você pode corrigir e tentar novamente.";
+                return false;
+            }
+
+            if (ConcluirEtapaRoteiro(missaoAtividade, etapaAtividade, respostaAtividade, false))
+            {
+                var concluida = etapaAtividade;
+                string titulo = a.titulo;
+                LimparAtividadeRoteiro();
+                painel = "";
+                if (concluida.falasConclusao != null && concluida.falasConclusao.Length > 0)
+                    Abrir(titulo, FonteRoteiro, concluida.falasConclusao, null);
+                return true;
+            }
+
+            retornoAtividade = "Confira o horário e os materiais necessários para concluir.";
+            return false;
+        }
+
         private void AbrirAtividadeRoteiro(MTMMissaoTecido m, MTMEtapaTecido e)
         {
             atividadeRoteiro = Array.Find(tramaTecida.atividades, a => a.id == e.atividade);
@@ -171,24 +196,8 @@ namespace MemoriasTecidas.MundoV2
             if (BotaoTecido(new Rect(740, 609, 478, 44), "Conferir e concluir", true, !referenciasAtividade) && quadroDaAcao != Time.frameCount)
             {
                 quadroDaAcao = Time.frameCount;
-                if (!MTMMotorMissoes.RespostaCorreta(estado, tramaTecida, a, respostaAtividade))
-                {
-                    retornoAtividade = "Ainda não corresponde às referências. Você pode corrigir e tentar novamente.";
+                if (ConferirAtividadeRoteiro(a))
                     return;
-                }
-
-                if (ConcluirEtapaRoteiro(missaoAtividade, etapaAtividade, respostaAtividade, false))
-                {
-                    var concluida = etapaAtividade;
-                    string titulo = a.titulo;
-                    LimparAtividadeRoteiro();
-                    painel = "";
-                    if (concluida.falasConclusao != null && concluida.falasConclusao.Length > 0)
-                        Abrir(titulo, FonteRoteiro, concluida.falasConclusao, null);
-                    return;
-                }
-
-                retornoAtividade = "Confira o horário e os materiais necessários para concluir.";
             }
 
             TextoTecido(new Rect(58, 666, 1150, 16), "Esc sai sem concluir esta atividade. As etapas anteriores permanecem salvas.", 11, AlfaTecido(textoPapelUI, .75f));
@@ -279,10 +288,13 @@ namespace MemoriasTecidas.MundoV2
             if (registro.falasConclusao != null && registro.falasConclusao.Length > 0)
                 conteudo += "\n\n" + string.Join("\n\n", registro.falasConclusao);
             float altura = AlturaTecido(conteudo, 700, 18);
-            rolagemDetalhe = IniciarRolagemUI(new Rect(460, 338, 730, 212), rolagemDetalhe, new Rect(0, 0, 704, Mathf.Max(212, altura)));
+            rolagemDetalhe = IniciarRolagemUI(new Rect(460, 338, 730, 204), rolagemDetalhe, new Rect(0, 0, 704, Mathf.Max(204, altura)));
             TextoTecido(new Rect(0, 0, 700, altura), conteudo, 18, textoPapelUI);
             TerminarRolagemUI();
-            TextoTecido(new Rect(460, 576, 730, 38), FonteRoteiro, 12, AlfaTecido(textoPapelUI, .8f));
+            // A fonte do encontro em que a etapa acontece (a mesma da aba Fontes); sem ela, a assinatura do roteiro.
+            var pontoRegistro = PontoTecido(registro.regiao, registro.ponto);
+            string fonteRegistro = "Fonte: " + (pontoRegistro != null && !string.IsNullOrEmpty(pontoRegistro.dados.fonte) ? pontoRegistro.dados.fonte : FonteRoteiro);
+            TextoTecido(new Rect(460, 556, 730, 64), fonteRegistro, 12, AlfaTecido(textoPapelUI, .8f));
         }
     }
 }

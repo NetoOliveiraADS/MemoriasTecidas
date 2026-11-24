@@ -126,7 +126,7 @@ namespace MemoriasTecidas.MundoV2
         {
             Fundo(new Rect(0, 0, 1280, 720), profundoUI);
             TextoTecido(new Rect(28, 16, 540, 20), "MEMÓRIAS TECIDAS / MAPA", 12, acentoTextoUI, true);
-            TituloEditorial(new Rect(26, 40, 600, 42), "Redes de Memórias", 28, textoSuperficieUI);
+            TituloEditorial(new Rect(26, 40, 600, 42), "Mapa de Jaguaruana", 28, textoSuperficieUI);
             if (BotaoTecido(new Rect(1144, 30, 108, 42), "Voltar"))
             {
                 SoltarArrastoMapaUI();
